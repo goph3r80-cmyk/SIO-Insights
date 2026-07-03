@@ -82,12 +82,18 @@ capability, or event) and write one serial per cluster.
 | `age` | number | Editions/cycles since raised (integer) |
 | `dlabel` | string | Short decision label, or `""` if none |
 | `ao` | string | Action officer / owning cell (free text) |
-| `suspense` | string | Deadline or forcing event (free text, e.g. `"Next capability board"`) |
+| `suspense` | string | Deadline or timeframe (free text, e.g. `"By 28 Jul"`, `"+30 days"`, `"Next edition"`). **Do not name internal meetings, boards, committees, or forums** (e.g. ACC(AI), capability board) — use a neutral date or timeframe instead. |
 | `decision` | string | The decision sought this cycle |
 | `signal` | string | The intelligence signal — what the open sources show |
 | `sowhat` | string | SIO relevance — why it matters to CapDev / which capability line it feeds |
 | `action` | string | The recommended action and owner |
 | `src` | object[] | Supporting sources — see below |
+
+> **House style — no internal meeting names.** Do not reference named internal
+> governance events (ACC(AI), capability boards, committees, working groups, etc.)
+> anywhere in a serial — not in `suspense`, `ao`, `decision`, or `action`. Refer
+> to deadlines as dates or timeframes and to owners by branch code. The dataset
+> is for open downstream use; keep internal forum names out of it.
 
 ### `src[]` (inside a serial)
 
