@@ -100,9 +100,30 @@ SIO-Insights/
 ├── TRAWLER-PROMPT.md          ← Instructions for Step 1 (source list, extraction rules)
 ├── GENERATOR-PROMPT.md        ← Instructions for Step 2 (schema, validation, sorting)
 ├── data.js                    ← Output (window.SIO_DATA browser module: serials[] + feed[])
+├── index.html                 ← Dashboard that renders data.js (serials + feed)
 ├── docs/GITHUB-APP.md         ← GitHub App setup for programmatic/automated refreshes
 └── scripts/webhook-verify.js  ← Webhook signature verification helper
 ```
+
+---
+
+## Viewing the Dashboard
+
+`index.html` is a self-contained dashboard that reads `data.js` and renders the
+serials (grouped by section, with verdict/priority state and the signal → so-what
+→ action analysis) and the source feed. It has client-side filters (tech, desk,
+verdict, search) and follows the viewer's light/dark theme.
+
+Because it loads `./data.js`, open it from a server, not `file://`:
+
+```bash
+python3 -m http.server 8000
+# then open http://localhost:8000/
+```
+
+To publish it, enable **GitHub Pages** (Settings → Pages → Deploy from branch →
+`main` / root). The dashboard then updates automatically whenever a refresh PR
+lands a new `data.js`.
 
 ---
 
