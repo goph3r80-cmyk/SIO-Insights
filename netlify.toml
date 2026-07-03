@@ -1,0 +1,26 @@
+# Netlify configuration for the SIO Insights dashboard.
+# The site is pure static files (index.html + data.js) with no build step —
+# Netlify just publishes the repo root and serves index.html at "/".
+
+[build]
+  publish = "."
+  # No build command: nothing to compile or bundle.
+  command = ""
+
+# data.js changes with every refresh — never let a CDN serve a stale copy.
+[[headers]]
+  for = "/data.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Baseline hardening for everything served.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
