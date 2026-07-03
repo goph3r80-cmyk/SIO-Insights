@@ -276,6 +276,21 @@ The trawler's output includes a "Signals to Watch" section — emerging themes t
 
 ---
 
+## GitHub App (programmatic access)
+
+For automated commits, refresh PRs, and webhook-driven workflows, this repo
+ships a configured **GitHub App** ("SIO Insights Bot") instead of relying on
+personal access tokens:
+
+- `.github/github-app-manifest.yml` — permissions, events, and webhook config
+- `docs/github-app/register.html` — one-click registration (App Manifest flow)
+- `docs/GITHUB-APP.md` — full setup, credential storage, and usage guide
+- `scripts/webhook-verify.js` — signature verification for webhook deliveries
+
+See **[docs/GITHUB-APP.md](docs/GITHUB-APP.md)** to register and install it.
+
+---
+
 ## Questions?
 
 - **How do I add a new source?** Edit `TRAWLER-PROMPT.md` under the appropriate tier (Tier 1 daily or Tier 2 analysis), then restart the trawler.
