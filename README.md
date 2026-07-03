@@ -1,10 +1,10 @@
 # SIO Insights
 
-A weekly automated pipeline for curating defence-technology industry news and analysis into a clean, structured dataset for the Systems Integration Office (SIO).
+An automated pipeline for curating defence-technology industry news and analysis into a clean, structured dataset for the Systems Integration Office (SIO). Runs on a daily schedule (and on demand), opening a pull request for review each refresh.
 
 ## What This Is
 
-**SIO Insights** scans 40+ open-source defence trade publications, think tanks, and business newswires each week to identify emerging industry developments, funding, contracts, and doctrine analysis in defence-tech capability areas (AI, autonomy, EW, space, cyber, materials, etc.). The pipeline deduplicates stories, adds metadata (capability tags, region, source credibility flags), and exports a structured JSON/JS module ready for downstream dashboard, API, or newsletter applications.
+**SIO Insights** scans open-source defence trade publications, think tanks, and business newswires each cycle to identify emerging industry developments, funding, contracts, and doctrine analysis in defence-tech capability areas (AI, autonomy, EW, space, cyber, materials, etc.). The pipeline deduplicates stories, tags them (capability, region, source credibility), synthesises them into SIO decision products, and exports a structured JS module (`window.SIO_DATA`) ready for downstream dashboard, API, or newsletter applications.
 
 ---
 
@@ -50,36 +50,42 @@ A weekly automated pipeline for curating defence-technology industry news and an
 **Input:** The trawler's Markdown table + signals (copy-paste into the generator prompt)
 
 **Process:**
-1. Parse table rows into JavaScript objects
-2. Validate schema (all 17 fields present; null for empty fields)
-3. Assign unique IDs (`YYYYMMDD-NNN`, reset weekly)
-4. Deduplicate within generator (catch any trawler misses)
-5. Sort newest first
-6. Add metadata (`generated` timestamp, window, total count, source count)
+1. Parse the feed rows into `feed[]` entries (set `saved`/`flagged` to `false`)
+2. Cluster related feed items into **serials** — the synthesised SIO products
+3. Write each serial's SIO framing (signal → so-what → action, owner, verdict, priority, decision)
+4. Cross-link feed items to serials via the `serial` field
+5. Carry over still-live serials from the previous edition (keep `id`, bump `age`)
+6. Update the header (`edition`, `feedAsOf`) and sort (feed newest-first)
 
-**Output:** A valid CommonJS module (`data.js`) with this shape:
+**Output:** A browser module (`data.js`) — a `window.SIO_DATA` global (not a
+CommonJS export) with two collections:
 
 ```javascript
-module.exports = {
-  items: [
-    { id, date, headline, summary, outlet, capabilityTag, countryDesk, url, corroborators, quoteSnippet, fundingAmount, companyName, programName, flag, dateCertainty },
-    // ...
+/* SIO Insights edition data — generated. Replace to refresh. */
+window.SIO_DATA = {
+  "edition": "Jul 2026",
+  "feedAsOf": "2026-07-01",
+  "serials": [
+    // Synthesised SIO products: id, pf, tech[], dom, owner, desk, verdict,
+    // priority, status, raised, age, dlabel, ao, suspense, decision, signal,
+    // sowhat, action, src[]
   ],
-  meta: {
-    generated: "2026-07-03T14:22:00Z",
-    trawlerWindow: "2026-06-26 to 2026-07-03",
-    totalItems: 42,
-    sources: 28
-  }
+  "feed": [
+    // Raw trawler stream, one per story: date, out, ttl, sum, tech[], pf,
+    // desk, url, f, serial, saved, flagged
+  ]
 };
 ```
+
+See **`GENERATOR-PROMPT.md`** for the full field-by-field schema and allowed
+values.
 
 **Time estimate:** 15–20 minutes (if trawler output is clean)
 
 ### Step 3: Deploy (Friday evening)
 
 **Actions:**
-1. Test `data.js` locally: `node -e "const d = require('./data.js'); console.log(d.meta.totalItems, 'items');"`
+1. Test `data.js` locally: `node -e "globalThis.window={}; require('./data.js'); console.log(window.SIO_DATA.serials.length, 'serials,', window.SIO_DATA.feed.length, 'feed items');"`
 2. Commit to main with message: `Update data.js with latest SIO Insights (YYYYMMDD)`
 3. Push to origin
 4. (Optional) Trigger downstream systems (dashboards, newsletters, APIs) via webhook or manual trigger
@@ -93,8 +99,9 @@ SIO-Insights/
 ├── README.md                  ← You are here
 ├── TRAWLER-PROMPT.md          ← Instructions for Step 1 (source list, extraction rules)
 ├── GENERATOR-PROMPT.md        ← Instructions for Step 2 (schema, validation, sorting)
-├── data.js                    ← Output (valid CommonJS module; import immediately)
-└── .github/workflows/         ← (Optional) CI/CD automation for weekly runs
+├── data.js                    ← Output (window.SIO_DATA browser module: serials[] + feed[])
+├── docs/GITHUB-APP.md         ← GitHub App setup for programmatic/automated refreshes
+└── scripts/webhook-verify.js  ← Webhook signature verification helper
 ```
 
 ---
@@ -130,7 +137,7 @@ SIO-Insights/
 2. Replace `data.js` with the newly generated version
 3. Verify locally:
    ```bash
-   node -e "const d = require('./data.js'); console.log('✓ data.js loaded:', d.meta.totalItems, 'items');"
+   node -e "globalThis.window={}; require('./data.js'); const d = window.SIO_DATA; console.log('✓ data.js loaded:', d.serials.length, 'serials,', d.feed.length, 'feed items');"
    ```
 4. Commit and push:
    ```bash
@@ -143,47 +150,50 @@ SIO-Insights/
 
 ## Consuming data.js
 
-### Node.js / CommonJS
-
-```javascript
-const sioData = require('./data.js');
-console.log(`Loaded ${sioData.meta.totalItems} items, generated ${sioData.meta.generated}`);
-
-sioData.items.forEach(item => {
-  console.log(`[${item.date}] ${item.headline} (${item.outlet})`);
-});
-```
-
-### ES6 Module (via transpiler or dynamic import)
-
-```javascript
-const { items, meta } = await import('./data.js').then(m => m.default || m);
-```
+`data.js` assigns a global, `window.SIO_DATA`, with two collections: `serials`
+(synthesised SIO products) and `feed` (the raw story stream).
 
 ### Frontend / Web App
 
-```javascript
-fetch('/api/sio-insights')
-  .then(r => r.json())
-  .then(data => {
-    data.items.forEach(item => {
-      // Render item
-    });
+```html
+<script src="data.js"></script>
+<script>
+  const { edition, feedAsOf, serials, feed } = window.SIO_DATA;
+
+  serials.forEach(s => {
+    console.log(`[${s.id}] ${s.dlabel || s.decision} — ${s.verdict}/${s.priority}`);
   });
+
+  feed.forEach(item => {
+    console.log(`[${item.date}] ${item.ttl} (${item.out})`);
+  });
+</script>
+```
+
+### Node.js (for validation / tooling)
+
+The module targets the browser, so provide a `window` global before requiring:
+
+```javascript
+globalThis.window = {};
+require('./data.js');
+const { serials, feed, edition } = window.SIO_DATA;
+console.log(`${edition}: ${serials.length} serials, ${feed.length} feed items`);
 ```
 
 ---
 
 ## Capability Tags
 
-Every item is labeled with one of four capability domains:
+Every item is labeled with one or more capability domains. The `tech` field
+stores the short **code**; the domain name is for display:
 
-| Tag | Examples |
-|-----|----------|
-| **AI** | AI-driven C2, targeting systems, autonomous decision support, large language models for defence |
-| **Data & Digital** | Digital transformation, cyber resilience, comms/beamforming, command infrastructure |
-| **Robotics** | Uncrewed systems (UGVs, UAVs), counter-UAS, loitering munitions, MUM-T, swarms |
-| **DE/EMS/Materials** | Directed energy, electronic warfare, advanced materials, energetics, manufacturing |
+| Code (`tech`) | Domain | Examples |
+|------|--------|----------|
+| `ai` | **AI** | AI-driven C2, targeting systems, autonomous decision support, large language models for defence |
+| `data` | **Data & Digital** | Digital transformation, cyber resilience, comms/beamforming, command infrastructure, common data layers |
+| `robo` | **Robotics** | Uncrewed systems (UGVs, UAVs), counter-UAS, loitering munitions, MUM-T, swarms |
+| `dews` | **DE/EMS/Materials** | Directed energy, electronic warfare, spectrum, advanced materials, energetics, manufacturing |
 
 ---
 
@@ -216,57 +226,44 @@ Every item carries one of three credibility/availability flags:
 
 ### Deduplication
 
-- Same story, multiple outlets → one entry with `corroborators` array
+- Same story, multiple outlets → one `feed` entry (most authoritative outlet);
+  the corroborating outlets become the serial's `src[]` list
 - Subtle re-writes of the same news (same date, company, event) → consolidated into one entry
-- Markedly different angles on the same event (e.g., tech capability vs geopolitical impact) → both kept, flagged as corroborated
+- Markedly different angles on the same event (e.g., tech capability vs geopolitical impact) → both kept only if each carries distinct capability signal
 
-### Missing Fields
+### Optional / empty fields
 
-- No company name (e.g., policy analysis) → `companyName: null`
-- No funding mentioned → `fundingAmount: null`
-- No secondary corroborators → `corroborators: null`
-- Uncertain date (e.g., ~YYYY-MM) → `date: "YYYY-MM-01"` + `dateCertainty: "uncertain"`
+- Unassigned feed item (no serial yet) → `serial: null`
+- No second owner / desk → omit `owner2` / `desk2`
+- Paywalled or unreachable source → set `f` to `paywall`/`unverified` and add a `note`
+- Uncertain date → use the first of the month and add a `note`
 
 ### Validation
 
 Before committing `data.js`, verify:
-- All dates are ISO 8601 (`YYYY-MM-DD`)
-- All URLs are valid and start with `https://`
-- All `id` values are unique and formatted `YYYYMMDD-NNN`
-- All `capabilityTag` and `countryDesk` values are canonical
-- No duplicate items (same outlet, date, headline)
-- Items sorted newest first
+- File starts with `window.SIO_DATA = {` (not `module.exports`) and loads in Node with a `window` shim
+- All `feed[].date` are ISO 8601 (`YYYY-MM-DD`); all `url` start with `https://`
+- All enum values are canonical — `tech` ∈ {ai, data, robo, dews}; `desk` ∈ {US, EU, APAC, ME}; `f` ∈ {verified, paywall, unverified}; `verdict` ∈ {gap, emerging, proven}; `priority` ∈ {decision, monitor}; `dom` ∈ {solution, safety, te}; `status` ∈ {open, actioned}
+- Every serial `id` is unique; every `feed[].serial` matches a serial id or is `null`
+- No duplicate feed items (same outlet, date, headline); feed sorted newest first
 
 ---
 
-## Automation (Optional)
+## Automation
 
-To automate weekly runs, add a GitHub Actions workflow (`.github/workflows/weekly-refresh.yml`):
+The refresh runs automatically via a **scheduled Claude session** ("Daily SIO
+Insights refresh"): each run spins up a fresh session, executes the Trawler and
+Generator steps against these prompt files with web search, regenerates
+`data.js`, and **opens a pull request** for human review (never pushing straight
+to `main`). It authenticates via the configured GitHub App — see
+[`docs/GITHUB-APP.md`](docs/GITHUB-APP.md).
 
-```yaml
-name: Weekly SIO Insights Refresh
-on:
-  schedule:
-    - cron: "0 9 * * 1"  # Monday 09:00 UTC (trawler trigger)
-    - cron: "0 16 * * 5" # Friday 16:00 UTC (generator trigger)
+Because trawling needs an LLM with web search, a pure GitHub Actions workflow
+can't do the research on its own; the scheduled Claude session is the engine,
+and Actions (if added) would only run validation on the resulting PR.
 
-jobs:
-  refresh:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Trigger trawler (Claude + web search)
-        run: echo "TODO: Integrate with Claude API or trigger manual task"
-      - name: Commit updated data.js
-        run: |
-          git config user.name "SIO Bot"
-          git config user.email "bot@sio.local"
-          git add data.js
-          git commit -m "Update data.js with latest SIO Insights ($(date +%Y%m%d))" || true
-          git push
-```
-
-(Manual trigger recommended until Claude API integration is available.)
+Every automated edition lands as a PR so a human vets low-confidence, paywalled,
+and unverified items before it ships.
 
 ---
 
@@ -294,9 +291,9 @@ See **[docs/GITHUB-APP.md](docs/GITHUB-APP.md)** to register and install it.
 ## Questions?
 
 - **How do I add a new source?** Edit `TRAWLER-PROMPT.md` under the appropriate tier (Tier 1 daily or Tier 2 analysis), then restart the trawler.
-- **Can I filter by capability or region?** Yes: the `capabilityTag` and `countryDesk` fields in `data.js` enable filtering in downstream apps.
-- **What if a source is always paywalled?** Mark it as such in the flag. If it's consistently high-value despite paywall, consider a manual subscription or API access.
-- **How often should we refresh?** Weekly (recommended Friday). Can be scaled to biweekly if bandwidth is limited.
+- **Can I filter by capability or region?** Yes: the `tech` and `desk` fields (on both `serials` and `feed`) enable filtering in downstream apps.
+- **What if a source is always paywalled?** Mark it `paywall` in the `f` flag with a `note`. If it's consistently high-value despite the paywall, consider a manual subscription or API access.
+- **How often should we refresh?** A scheduled daily run opens a refresh PR each morning; you can also run the pipeline manually any time. Adjust or pause the schedule as bandwidth requires.
 
 ---
 
@@ -307,4 +304,4 @@ See **[docs/GITHUB-APP.md](docs/GITHUB-APP.md)** to register and install it.
 ---
 
 **Last updated:** 2026-07-03  
-**Next scheduled refresh:** 2026-07-11 (Friday)
+**Refresh cadence:** daily at 07:00 SGT (automated PR)
