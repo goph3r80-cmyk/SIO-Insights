@@ -27,36 +27,142 @@ consumer-tech noise.
 
 ## Sources
 
-### Tier 1 — daily news (scan every run)
+**How to work the list.** You cannot open everything every run. Each run: sweep
+**all of Tier 1**; dip into **Tier 2** analysis and the **domain specialists**
+relevant to the week's stories; and rotate through the **regional desks** and
+**Tier 3 wires** to catch what the trade press missed. Prefer primary reporting;
+use aggregators only to corroborate. Respect the flag conventions — `paywall`
+for subscription walls, `unverified` for blocked/unconfirmed. Treat
+**state-controlled outlets** (marked ⚠) as *signals of what an actor wants said*,
+never as confirmed fact — always corroborate and flag.
+
+### Tier 1 — Greater: daily defence trade press (scan every run)
 
 - Defense News — https://www.defensenews.com
-- DefenseScoop — https://defensescoop.com
 - Breaking Defense — https://breakingdefense.com
+- DefenseScoop — https://defensescoop.com
 - C4ISRNET — https://www.c4isrnet.com
-- The Defense Post — https://thedefensepost.com
 - Defense One — https://www.defenseone.com
-- Janes — https://www.janes.com  *(often paywalled — flag `paywall`)*
-- Reuters (Aerospace & Defense) — https://www.reuters.com/business/aerospace-defense/
-- The War Zone — https://www.twz.com
+- The Defense Post — https://thedefensepost.com
+- Inside Defense — https://insidedefense.com  *(paywall)*
+- Janes — https://www.janes.com  *(paywall)*
+- Defense Daily — https://www.defensedaily.com  *(paywall)*
+- National Defense (NDIA) — https://www.nationaldefensemagazine.org
+- Shephard Media — https://www.shephardmedia.com
+- Defense Industry Daily — https://www.defenseindustrydaily.com
+- Military.com — https://www.military.com
+- Military Times family (Army/Navy/AF/Marine Corps Times) — https://www.militarytimes.com
+- Stars and Stripes — https://www.stripes.com
+- Task & Purpose — https://taskandpurpose.com
+- The War Zone (TWZ) — https://www.twz.com
+- Army Recognition — https://www.armyrecognition.com
+- The Defence Blog — https://defence-blog.com
 
-### Tier 2 — periodic analysis (harvest when fresh)
+### Tier 2 — Analysis, journals & think tanks (harvest when fresh)
 
 - RUSI — https://www.rusi.org
-- War on the Rocks — https://warontherocks.com
-- CSIS — https://www.csis.org
-- SIPRI — https://www.sipri.org
-- IISS — https://www.iiss.org
+- IISS (+ Military Balance) — https://www.iiss.org
+- CSIS — https://www.csis.org  *(see also Missile Threat, Aerospace Security)*
 - CNAS — https://www.cnas.org
+- RAND — https://www.rand.org
+- SIPRI — https://www.sipri.org
+- Chatham House — https://www.chathamhouse.org
+- Atlantic Council — https://www.atlanticcouncil.org
+- Hudson Institute — https://www.hudson.org
+- War on the Rocks — https://warontherocks.com
+- Modern War Institute (West Point) — https://mwi.westpoint.edu
+- CIMSEC (maritime) — https://cimsec.org
+- Texas National Security Review — https://tnsr.org
+- Lawfare — https://www.lawfaremedia.org
+- Institute for the Study of War (ISW) — https://www.understandingwar.org
+- Jamestown Foundation — https://jamestown.org
+- NATO Review — https://www.nato.int/review
 
-### Tier 3 — regional / specialist (scan for APAC/EU/ME desks)
+### Domain specialists (pull for the matching capability tag)
 
-- SCMP (Asia) — https://www.scmp.com  *(often paywalled — flag `paywall`)*
-- United24 Media — https://united24media.com
-- TechRadar Pro (defence tech) — https://www.techradar.com/pro
-- Task & Purpose — https://taskandpurpose.com
+- **Naval** — USNI News https://news.usni.org · Naval News https://www.navalnews.com · Naval Technology https://www.naval-technology.com
+- **Air / aerospace** — Aviation Week https://aviationweek.com · FlightGlobal https://www.flightglobal.com · Air & Space Forces Magazine https://www.airandspaceforces.com · The Aviationist https://theaviationist.com
+- **Space** — SpaceNews https://spacenews.com · Payload https://payloadspace.com · Via Satellite https://www.satellitetoday.com
+- **Cyber / EW / signals** — The Record https://therecord.media · CyberScoop https://cyberscoop.com · Breaking Defense (Networks) · C4ISRNET (above)
+- **Land / autonomy** — Army Recognition (above) · The War Zone (above) · Overt Defense https://www.overtdefense.com
+- **Missiles / nuclear / arms control** — Arms Control Wonk https://www.armscontrolwonk.com · Bulletin of the Atomic Scientists https://thebulletin.org
 
-Add or remove sources here as coverage needs change. Prefer primary reporting;
-use aggregators only to corroborate.
+### Tier 3 — Wire services & general press (breaking + corroboration)
+
+- Reuters (Aerospace & Defense) — https://www.reuters.com/business/aerospace-defense/
+- Associated Press — https://apnews.com
+- Agence France-Presse — https://www.afp.com/en
+- Bloomberg — https://www.bloomberg.com  *(paywall)*
+- Financial Times — https://www.ft.com  *(paywall)*
+- Wall Street Journal — https://www.wsj.com  *(paywall)*
+- The Economist — https://www.economist.com  *(paywall)*
+- Politico (Morning Defense / Pro) — https://www.politico.com/defense
+- Axios — https://www.axios.com
+- CNBC Defense — https://www.cnbc.com/defense
+- BBC — https://www.bbc.com/news/world
+- The Guardian — https://www.theguardian.com/world
+
+### Regional desks — Lesser / national outlets
+
+**US desk** — RealClearDefense https://www.realcleardefense.com · The Hill (Defense) https://thehill.com/policy/defense · Breaking Defense (above) · DoD News https://www.defense.gov/News/
+
+**EU / UK / NATO desk**
+- European Security & Defence — https://euro-sd.com
+- European Defence Review (EDR) — https://www.edrmagazine.eu
+- UK Defence Journal — https://ukdefencejournal.org.uk
+- Forces News (UK) — https://www.forces.net
+- Euronews (Defence) — https://www.euronews.com/tag/defence
+- Opex360 / Zone Militaire (France) — https://www.opex360.com
+- Meta-Defense (France) — https://www.meta-defense.fr/en/
+- Mer et Marine (France, naval) — https://www.meretmarine.com
+- Analisi Difesa (Italy) — https://www.analisidifesa.it
+- Defensa.com (Spain) — https://www.defensa.com
+- Hartpunkt (Germany) — https://www.hartpunkt.de
+- Defence24 (Poland) — https://defence24.com
+- **Ukraine war** — Defense Express https://en.defence-ua.com · Militarnyi https://mil.in.ua/en/ · Kyiv Independent https://kyivindependent.com · United24 Media https://united24media.com · Oryx (OSINT losses) https://www.oryxspioenkop.com
+
+**APAC desk**
+- Nikkei Asia (Defense) — https://asia.nikkei.com/Politics/Defense  *(paywall)*
+- The Diplomat (Asia Defense) — https://thediplomat.com/category/asia-defense/
+- Asia Pacific Defence Reporter (Australia) — https://asiapacificdefencereporter.com
+- Australian Defence Magazine — https://www.australiandefence.com.au
+- ASPI The Strategist (Australia) — https://www.aspistrategist.org.au
+- Asian Military Review — https://www.asianmilitaryreview.com
+- Defence Security Asia (SE Asia) — https://defencesecurityasia.com
+- Defence Review Asia (Singapore) — https://defencereviewasia.com
+- The Straits Times (Singapore) — https://www.straitstimes.com  *(paywall)*
+- Yonhap (Korea) — https://en.yna.co.kr · NK News — https://www.nknews.org  *(paywall)*
+- **India** — idrw.org https://idrw.org · Raksha Anirveda https://raksha-anirveda.com · Livefist https://www.livefistdefence.com · ThePrint (Defence) https://theprint.in/category/defence/ · Indian Defence News https://www.indiandefensenews.in
+- SCMP (China/Asia) — https://www.scmp.com  *(paywall)*
+- Military Watch Magazine — https://militarywatchmagazine.com  *(opinionated — corroborate)*
+- ⚠ Global Times / Xinhua (China state) — https://www.globaltimes.cn
+
+**ME desk**
+- Times of Israel (IDF) — https://www.timesofisrael.com/topic/idf-israel-defense-forces/
+- The Jerusalem Post — https://www.jpost.com
+- i24NEWS — https://www.i24news.tv/en
+- Ynetnews — https://www.ynetnews.com
+- AGBI (Gulf business/defence) — https://www.agbi.com/sectors/defence/
+- The National (UAE) — https://www.thenationalnews.com
+- Al-Monitor — https://www.al-monitor.com
+- Middle East Eye — https://www.middleeasteye.net
+- Al Jazeera — https://www.aljazeera.com
+- ⚠ Press TV / Tasnim (Iran state) — treat as adversary signalling
+
+**Other regions (lesser)**
+- Africa — defenceWeb — https://www.defenceweb.co.za
+- Latin America — Infodefensa https://www.infodefensa.com · Zona Militar https://www.zona-militar.com
+- ⚠ Russia state — TASS https://tass.com · RIA/Sputnik — adversary signalling only
+
+### Primary & OSINT sources (high-signal, use directly)
+
+- **Government / procurement** — DoD contract announcements https://www.defense.gov/News/Contracts/ · DARPA https://www.darpa.mil · SAM.gov · GAO https://www.gao.gov · UK MoD/DE&S · European Defence Agency https://eda.europa.eu
+- **Industry** — prime & startup press releases (Anduril, Palantir, Lockheed Martin, RTX, etc.), SEC filings, and defence-VC announcements — for funding/contract items
+- **OSINT** — Oryx (equipment losses), ISW daily updates, and reputable open-source analysts — corroborate before treating as fact
+
+Add or remove sources here as coverage needs change. When you add one, note its
+typical flag (open / `paywall` / ⚠ state-controlled) so downstream runs handle it
+consistently.
 
 ---
 

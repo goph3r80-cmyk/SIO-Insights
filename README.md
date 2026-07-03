@@ -22,7 +22,7 @@ An automated pipeline for curating defence-technology industry news and analysis
   ┌─────────────────────┐       ┌──────────────────────┐         ┌──────────┐
   │ TRAWLER-PROMPT.md   │       │ GENERATOR-PROMPT.md  │         │ data.js  │
   ├─────────────────────┤   →   ├──────────────────────┤   →     ├──────────┤
-  │ • Scans 40+ sources │       │ • Transforms table   │         │ Valid JS │
+  │ • Scans 80+ sources │       │ • Transforms table   │         │ Valid JS │
   │ • 7-day window      │       │   → JavaScript object│         │ module   │
   │ • Deduplicates      │       │ • Validates schema   │         │ (ready   │
   │ • Outputs: table +  │       │ • Outputs: data.js   │         │  to use) │
@@ -32,7 +32,7 @@ An automated pipeline for curating defence-technology industry news and analysis
 
 ### Step 1: Trawler (Monday–Friday)
 
-**Input:** Open internet, 40+ curated sources (see `TRAWLER-PROMPT.md` for full list)
+**Input:** Open internet, 80+ curated sources across daily trade press, think tanks, domain specialists, wire services, and regional desks (see `TRAWLER-PROMPT.md` for the full catalog)
 
 **Process:**
 1. Scan Tier 1 daily news sources (Defense News, DefenseScoop, Breaking Defense, etc.)
