@@ -1,0 +1,8 @@
+# GitHub App credentials — never commit
+.env
+*.pem
+*.private-key.pem
+
+# Node
+node_modules/
+npm-debug.log*
