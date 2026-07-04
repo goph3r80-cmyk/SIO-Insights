@@ -1,7 +1,7 @@
 /* SIO Insights edition data — generated. Replace to refresh. */
 window.SIO_DATA = {
   "edition": "Jul 2026",
-  "feedAsOf": "2026-07-01",
+  "feedAsOf": "2026-07-03",
   "serials": [
     {
       "id": "I-1",
@@ -18,14 +18,14 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Apr 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "Concept-design sprint",
       "ao": "SIO Concepts cell",
       "suspense": "By 28 Jul",
       "decision": "Endorse a first-principles concept-design sprint across the portfolios.",
       "signal": "A recurring argument holds that standing operational plans are overtaken by cheap autonomy, compressed kill chains and commercial-grade capability — with once-peripheral firms now present-tense operational realities.",
       "sowhat": "This is the CapDev mandate in one signal: shape future operating concepts as emerging tech reshapes the possible. The gap is concept currency — designs built on legacy assumptions lose relevance as autonomy compresses decision cycles.",
-      "action": "SIO to run a first-principles “design it today” concept prompt across the portfolios — autonomy and AI as primary design constraints, not bolt-ons.",
+      "action": "SIO to run a first-principles \"design it today\" concept prompt across the portfolios — autonomy and AI as primary design constraints, not bolt-ons.",
       "src": [
         {
           "out": "DefenseScoop",
@@ -38,31 +38,33 @@ window.SIO_DATA = {
     },
     {
       "id": "I-2",
-      "pf": "P4",
+      "pf": "X",
       "tech": [
-        "robo"
+        "ai",
+        "data"
       ],
       "dom": "solution",
-      "owner": "ASB1",
-      "desk": "EU",
+      "owner": "SIO",
+      "owner2": "ADO",
+      "desk": "US",
       "verdict": "emerging",
       "priority": "monitor",
       "status": "open",
-      "raised": "May 2026",
-      "age": 3,
+      "raised": "Jul 2026",
+      "age": 1,
       "dlabel": "",
-      "ao": "ASB1 Manoeuvre Concepts",
-      "suspense": "Scope when matured",
-      "decision": "Awareness this cycle; scope a concept note as the trend matures.",
-      "signal": "A frontline unit is building a formation around machines rather than men — a brigade intends to replace ~30% of its infantry with UGVs, operating without existing doctrine, reporting 100+ strike operations and a 10–15% robot loss rate with many repaired and returned.",
-      "sowhat": "A direct input to Intelligent Future Mounted Manoeuvre: robots displacing a share of the manoeuvre force reshapes task organisation. The doctrine vacuum others are filling is an opening to shape ours early.",
-      "action": "ASB1, with SIO concept support, to develop a UGV–manoeuvre integration concept — task organisation, the human-specialist residual role, and design-for-loss.",
+      "ao": "SIO + ADO",
+      "suspense": "Next edition",
+      "decision": "Awareness; study the modular, multi-vendor AI acquisition model as a portfolio pattern.",
+      "signal": "The Pentagon is reported to be rewriting how it buys AI — shifting from monolithic, all-in-one platforms toward modular, interoperable, multi-vendor architectures, with a stated expectation that military AI be auditable rather than a black box, open to scrutiny by operators and oversight.",
+      "sowhat": "An acquisition-shaping signal for the whole portfolio: buying AI as composable services rather than platforms changes how CapDev writes requirements and avoids vendor lock. Auditability becomes a design constraint, not an afterthought.",
+      "action": "SIO with ADO to study the modular AI acquisition pattern and how we specify, assure and audit AI capability across the portfolios.",
       "src": [
         {
-          "out": "TechRadar Pro",
-          "date": "2 Jun 2026",
-          "ttl": "Inside the Ukrainian UGV brigade where robots outnumber soldiers",
-          "url": "https://www.techradar.com/pro/ugvs-are-the-new-future-of-warfare-inside-the-ukrainian-unit-set-to-become-the-worlds-first-military-brigade-where-robots-outnumber-human-soldiers",
+          "out": "Federal News Network",
+          "date": "18 Jun 2026",
+          "ttl": "The Pentagon is rewriting how it buys AI",
+          "url": "https://federalnewsnetwork.com/commentary/2026/06/the-pentagon-is-rewriting-how-it-buys-ai-control-of-the-future-of-warfare/",
           "f": "verified"
         }
       ]
@@ -71,7 +73,8 @@ window.SIO_DATA = {
       "id": "I-3",
       "pf": "P2",
       "tech": [
-        "robo"
+        "ai",
+        "data"
       ],
       "dom": "solution",
       "owner": "ASB3",
@@ -80,61 +83,60 @@ window.SIO_DATA = {
       "verdict": "emerging",
       "priority": "monitor",
       "status": "open",
-      "raised": "Jun 2026",
-      "age": 2,
+      "raised": "Jul 2026",
+      "age": 1,
       "dlabel": "",
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
-      "decision": "Awareness — net-assessment watch; figures unconfirmed.",
-      "signal": "Regional unmanned scaling featured prominently — a report of one neighbour expanding drone forces and training a very large operator cohort, alongside framing of Singapore's weaponised-drone trials against a regional rush toward unmanned systems.",
-      "sowhat": "Capability and operator scaling across the neighbourhood reshapes the grey-zone operating picture — a net-assessment input to keep CapDev ahead of the threat. Operators-as-mass, not just platforms, is the part to track.",
-      "action": "ASB3, with SIO net-assessment, to log regional unmanned scaling as a concept-shaping trend and note the operators-as-mass angle.",
+      "decision": "Awareness — net-assessment watch on adversary AI-enabled command and control.",
+      "signal": "Commercial AI providers — reported to include DeepSeek, Alibaba, Tencent, Zhipu and Huawei-linked infrastructure — are being folded into a national military ecosystem supporting surveillance, target recognition, war-gaming and command-and-control functions.",
+      "sowhat": "A net-assessment input: an adversary fusing commercial-grade AI into the kill chain compresses its decision cycle and raises the bar our own C2 and EW must clear. The pathway to watch is civil-military fusion, not just the platforms.",
+      "action": "ASB3, with SIO net-assessment, to log adversary commercial-AI-into-C2 fusion as a threat-shaping trend and flag the implications for our counter-C2 and deception concepts.",
       "src": [
         {
-          "out": "Reuters",
-          "date": "26 Jun 2026",
-          "ttl": "South Korea to expand drone forces, train 500,000 operators",
-          "url": "https://www.reuters.com/world/asia-pacific/south-korea-expand-drone-forces-train-500000-operators-ministry-says-2026-06-26/",
-          "f": "unverified",
-          "note": "Source blocked — reported operator figure needs confirmation against the article."
-        },
-        {
-          "out": "SCMP Week Asia",
-          "date": "May 2026",
-          "ttl": "Singapore's weaponised-drone trial spotlights regional rush",
-          "url": "https://www.scmp.com/week-asia/politics/article/3354246/singapores-weaponised-drone-trial-spotlights-regional-rush-unmanned-systems",
-          "f": "paywall",
-          "note": "Headline framing only — body behind paywall."
+          "out": "Atlantic Council",
+          "date": "16 Jun 2026",
+          "ttl": "How NATO can integrate AI to prevail in future algorithmic warfare",
+          "url": "https://www.atlanticcouncil.org/in-depth-research-reports/report/how-nato-can-integrate-ai-to-prevail-in-future-algorithmic-warfare/",
+          "f": "verified",
+          "note": "Analysis piece — adversary AI-C2 fusion framing; corroborate specific claims."
         }
       ]
     },
     {
       "id": "II-1",
-      "pf": "P7",
+      "pf": "P6",
       "tech": [
-        "robo"
+        "dews"
       ],
-      "dom": "safety",
-      "owner": "CESS",
-      "desk": "EU",
-      "verdict": "emerging",
-      "priority": "monitor",
+      "dom": "solution",
+      "owner": "ASB2",
+      "desk": "US",
+      "verdict": "gap",
+      "priority": "decision",
       "status": "open",
-      "raised": "May 2026",
-      "age": 3,
-      "dlabel": "",
-      "ao": "CESS Sustainment Plans",
-      "suspense": "+90 days",
-      "decision": "Awareness; scope a watching brief on UGV-enabled sustainment.",
-      "signal": "Ground robots are taking on the contested-logistics and casualty-evacuation load — logistics UGVs reported moving 200–600kg forward against ~20kg for a dismounted soldier, with operators controlling a position from up to 50km away.",
-      "sowhat": "A Multidimensional Force Sustenance input: standoff resupply and evacuation with fewer exposed personnel, central to sustainment under denial. A baseline UGV is put at ~$30,000, rising to ~$50,000 armed.",
-      "action": "CESS to scope a development brief on UGV-enabled forward logistics and casualty evacuation — carry capacity, standoff control, and attrition economics.",
+      "raised": "Apr 2026",
+      "age": 5,
+      "dlabel": "Spectrum-survivable C2",
+      "ao": "ASB2 Sense-Strike",
+      "suspense": "+30 days",
+      "decision": "Prioritise spectrum-survivable, low-signature C2 as a CapDev line.",
+      "signal": "Spectrum and command-post survivability remain a live contest — electronic warfare described as an hourly fight with fixed assets treated as liabilities — and it is accelerating: AI-enabled EW (automated signal analysis, adaptive jamming) is maturing fast while peer forces routinely jam and spoof GNSS.",
+      "sowhat": "An Intelligent Cloud-Based C2 gap: resilient command that survives the spectrum fight. The EMS contest sits in the DE/EMS/Advanced-Materials priority, and the capability must be developed before it is needed.",
+      "action": "ASB2 to prioritise spectrum-survivable, low-signature C2 as a capability-development line, accounting for AI-accelerated EW.",
       "src": [
         {
-          "out": "TechRadar Pro",
-          "date": "2 Jun 2026",
-          "ttl": "Ukraine UGV brigade — logistics & casualty evacuation (cites The Independent)",
-          "url": "https://www.techradar.com/pro/ugvs-are-the-new-future-of-warfare-inside-the-ukrainian-unit-set-to-become-the-worlds-first-military-brigade-where-robots-outnumber-human-soldiers",
+          "out": "DefenseScoop",
+          "date": "26 Jun 2026",
+          "ttl": "Hiding in the spectrum: making the command post disappear",
+          "url": "https://defensescoop.com/2026/06/26/hiding-in-the-spectrum-army-command-posts/",
+          "f": "verified"
+        },
+        {
+          "out": "DefenseScoop",
+          "date": "11 May 2026",
+          "ttl": "The future of war arrived (EW as an hourly contest)",
+          "url": "https://defensescoop.com/2026/05/11/the-future-of-war-arrived-we-arent-ready/",
           "f": "verified"
         }
       ]
@@ -148,69 +150,119 @@ window.SIO_DATA = {
       "dom": "solution",
       "owner": "ASB2",
       "desk": "US",
-      "verdict": "gap",
+      "verdict": "emerging",
       "priority": "decision",
       "status": "open",
-      "raised": "Apr 2026",
-      "age": 4,
-      "dlabel": "Spectrum-survivable C2",
+      "raised": "Jul 2026",
+      "age": 1,
+      "dlabel": "Directed-energy counter-swarm",
       "ao": "ASB2 Sense-Strike",
-      "suspense": "+30 days",
-      "decision": "Prioritise spectrum-survivable, low-signature C2 as a CapDev line.",
-      "signal": "Spectrum and command-post survivability recur as a live contest — electronic warfare described as an hourly fight with fixed assets treated as liabilities, alongside efforts to make command posts harder to find in the spectrum.",
-      "sowhat": "An Intelligent Cloud-Based C2 gap: resilient command that survives the spectrum fight. The EMS contest sits in the DE/EMS/Advanced-Materials priority, and the capability must be developed before it is needed.",
-      "action": "ASB2 to prioritise spectrum-survivable, low-signature C2 as a capability-development line.",
+      "suspense": "By 15 Aug",
+      "decision": "Assess directed-energy (laser + high-power microwave) counter-swarm for base and manoeuvre air defence.",
+      "signal": "Directed energy is moving from trials toward fielding — a US pilot is placing high-energy lasers and high-power microwave systems at five bases for counter-drone defence, alongside vehicle-mounted DE M-SHORAD and container-based high-power-microwave systems that disable drone clusters per pulse at near-zero cost per shot.",
+      "sowhat": "An All-Echelon Sense-and-Strike input and a magazine-depth answer to mass drone attack: ammunition-free defeat changes the attrition economics of air defence. The gap is integration — directed energy only works layered with sensing, C2 and kinetic effectors.",
+      "action": "ASB2 to assess a layered directed-energy counter-swarm capability — laser plus high-power microwave — with integration and adoption criteria for base and manoeuvre air defence.",
       "src": [
         {
-          "out": "DefenseScoop",
-          "date": "11 May 2026",
-          "ttl": "The future of war arrived (EW as an hourly contest)",
-          "url": "https://defensescoop.com/2026/05/11/the-future-of-war-arrived-we-arent-ready/",
+          "out": "Stars and Stripes",
+          "date": "7 May 2026",
+          "ttl": "Five US bases to get directed-energy weapons to counter drones",
+          "url": "https://www.stripes.com/theaters/us/2026-05-07/directed-energy-weapons-to-counter-drones-21606215.html",
           "f": "verified"
         },
         {
-          "out": "DefenseScoop",
+          "out": "Army Recognition",
+          "date": "6 May 2026",
+          "ttl": "US Army accelerates laser and microwave weapons to defeat mass drone attacks",
+          "url": "https://www.armyrecognition.com/news/army-news/2026/us-accelerates-laser-and-microwave-weapons-deployment-to-counter-drone-swarms",
+          "f": "verified"
+        }
+      ]
+    },
+    {
+      "id": "II-3",
+      "pf": "P7",
+      "tech": [
+        "robo",
+        "dews"
+      ],
+      "dom": "safety",
+      "owner": "CESS",
+      "owner2": "ASB1",
+      "desk": "EU",
+      "verdict": "gap",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 1,
+      "dlabel": "",
+      "ao": "CESS + ASB1",
+      "suspense": "+90 days",
+      "decision": "Awareness; scope EW-resilient control and assured navigation as design requirements for uncrewed systems.",
+      "signal": "Ground robots face intense electronic-warfare pressure — Russian wide-area GNSS jammers and comms-disruption systems degrade UGV datalinks and navigation — and Ukraine has cleared a control system that detects positioning anomalies and applies countermeasures to keep robots operating under jamming and GNSS spoofing.",
+      "sowhat": "A Multidimensional Force Sustenance and manoeuvre input: uncrewed mass is only as good as its resilience in a contested spectrum. EW-resilient control and assured position/navigation/timing are prerequisites, not options, for our own UGV concepts.",
+      "action": "CESS with ASB1 to scope EW-resilient control and assured PNT as baseline requirements for uncrewed logistics and manoeuvre systems.",
+      "src": [
+        {
+          "out": "Militarnyi",
           "date": "26 Jun 2026",
-          "ttl": "Hiding in the spectrum: making the command post disappear",
-          "url": "https://defensescoop.com/2026/06/26/hiding-in-the-spectrum-army-command-posts/",
+          "ttl": "Ukrainian Defense Ministry clears Droid Box UGV control system for military use",
+          "url": "https://militarnyi.com/en/news/ukrainian-defense-ministry-clears-droid-box-ugv-control-system-for-military-use/",
+          "f": "verified"
+        },
+        {
+          "out": "Modern War Institute",
+          "date": "23 Jun 2026",
+          "ttl": "Networked for war: lessons from Ukraine's ground robots",
+          "url": "https://mwi.westpoint.edu/networked-for-war-lessons-from-ukraines-ground-robots/",
           "f": "verified"
         }
       ]
     },
     {
       "id": "III-1",
-      "pf": "P9",
+      "pf": "P5",
       "tech": [
-        "data"
+        "robo",
+        "ai",
+        "dews"
       ],
-      "dom": "te",
-      "owner": "AOTO",
+      "dom": "solution",
+      "owner": "ASB2",
       "desk": "US",
+      "desk2": "EU",
       "verdict": "proven",
       "priority": "decision",
-      "status": "actioned",
-      "raised": "Jun 2026",
-      "age": 2,
-      "dlabel": "Open-range fielding model",
-      "ao": "AOTO Test & Evaluation",
-      "suspense": "+30 days",
-      "decision": "Approve a study of the open-range / representative-environment model.",
-      "signal": "Testing-and-fielding pathways are being reshaped to compress the transition gap — ranges reported opening to defence vendors to speed testing, with some sites built to mimic frontline conditions observed in Ukraine.",
-      "sowhat": "An Immersive Training Environment and Test-&-Evaluation input: vendor-accessible, representative environments compress the valley of death and support transition toward full-scale development and equipping.",
-      "action": "AOTO to study the open-range / representative-environment model as a delivery enabler worth adapting locally.",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 1,
+      "dlabel": "Autonomous C-UAS at scale",
+      "ao": "ASB2 Sense-Strike",
+      "suspense": "By 20 Aug",
+      "decision": "Assess adoption of a proven, autonomous, layered counter-UAS capability at production scale.",
+      "signal": "Counter-UAS is scaling into production — the US Army placed a ~$500M commercial C-UAS/C-sUAS order in early July covering everything from larger UAS to commercial quadcopters, following a ~$500M counter-drone interceptor award to a vendor whose systems were proven in Ukraine, and a military-wide approval of a long-range autonomous C-UAS after border testing.",
+      "sowhat": "An All-Echelon Sense-and-Strike signal: multiple independent programmes now field autonomous, layered defeat against small UAS — the capability our manned engagement loop struggles to match — and at production scale, not experiment.",
+      "action": "ASB2 to assess adoption of an autonomous, layered C-UAS capability at scale against our small-UAS threat envelope, drawing on the fielded US and Ukrainian systems.",
       "src": [
         {
           "out": "DefenseScoop",
-          "date": "23 Jun 2026",
-          "ttl": "Army will 'open up' ranges for defense vendors to speed testing",
-          "url": "https://defensescoop.com/2026/06/23/army-open-up-ranges-to-defense-companies-speed-up-testing/",
+          "date": "2 Jul 2026",
+          "ttl": "Pentagon awards $500M contract to AeroVironment for counter-drone technology",
+          "url": "https://defensescoop.com/2026/07/02/pentagon-awards-500m-contract-aerovironment-counter-drone-technology/",
           "f": "verified"
         },
         {
-          "out": "The Defense Post",
-          "date": "24 Jun 2026",
-          "ttl": "US Army eyes new EW test ranges inspired by Ukraine",
-          "url": "https://thedefensepost.com/2026/06/24/us-army-test-ranges-ukraine/",
+          "out": "Inside Unmanned Systems",
+          "date": "19 May 2026",
+          "ttl": "Pentagon awards $500M to Perennial Autonomy for counter-drone interceptors proven in Ukraine",
+          "url": "https://insideunmannedsystems.com/pentagon-awards-500m-to-perennial-autonomy-for-counter-drone-interceptors-proven-in-ukraine/",
+          "f": "verified"
+        },
+        {
+          "out": "DefenseScoop",
+          "date": "9 Jun 2026",
+          "ttl": "Pentagon approves autonomous counter-UAS system after border testing",
+          "url": "https://defensescoop.com/2026/06/09/pentagon-approves-autonomous-counter-drone-system-after-border-testing/",
           "f": "verified"
         }
       ]
@@ -222,28 +274,28 @@ window.SIO_DATA = {
         "data",
         "ai"
       ],
-      "dom": "solution",
+      "dom": "te",
       "owner": "ADO",
       "desk": "US",
       "desk2": "EU",
       "verdict": "proven",
-      "priority": "monitor",
+      "priority": "decision",
       "status": "open",
       "raised": "Jun 2026",
       "age": 2,
-      "dlabel": "",
+      "dlabel": "Common data layer to delivery",
       "ao": "ADO",
-      "suspense": "Next edition",
-      "decision": "Awareness; study the common-data-layer pattern as an integration enabler.",
-      "signal": "A lead vendor is named for a common data-layer baseline as groundwork for rapid scaling, alongside a large labelled dataset drawn from conflict drone footage now reported available for training.",
-      "sowhat": "The integration substrate for Intelligent Cloud-Based C2: a common data layer lets separately-developed capabilities operate as one. The value is integrated delivery across the portfolio, not data held in isolation.",
-      "action": "ADO to study the common-data-layer pattern as an integration enabler for the capability portfolio.",
+      "suspense": "By 31 Jul",
+      "decision": "Approve a study of the common-data-layer pattern as our integration substrate, informed by the NGC2 delivery model.",
+      "signal": "The US Army's Next Generation Command and Control moved from prototyping toward delivery — a named common data-layer baseline (Anduril lead; Palantir edge-to-cloud data mesh) heads to a division-scale force-on-force validation at Project Convergence Capstone 6 in July, and Project Maven is reported transmitting near-fully machine-generated intelligence to commanders using large language models.",
+      "sowhat": "The integration substrate for Intelligent Cloud-Based C2: a common data layer lets separately-developed capabilities operate as one, and machine-speed intelligence changes the tempo C2 must sustain. The value is integrated delivery, tested at scale.",
+      "action": "ADO to study the common-data-layer pattern and the NGC2 delivery model as an integration enabler for the capability portfolio.",
       "src": [
         {
-          "out": "DefenseScoop",
-          "date": "16 Jun 2026",
-          "ttl": "Half a million hours of Ukraine drone footage now available to train AI",
-          "url": "https://defensescoop.com/2026/06/16/data-from-half-a-million-hours-of-ukraine-conflict-drone-footage-now-available-to-train-ai/",
+          "out": "The Army (army.mil)",
+          "date": "20 Jun 2026",
+          "ttl": "Army and industry align on common data baseline as NGC2 moves to delivery",
+          "url": "https://www.army.mil/article/293409/army_and_industry_align_on_common_data_baseline_as_next_generation_command_and_control_moves_from_prototyping_to_delivery",
           "f": "verified"
         },
         {
@@ -252,45 +304,12 @@ window.SIO_DATA = {
           "ttl": "Army taps Anduril as lead for NGC2 common data layer baseline",
           "url": "https://defensescoop.com/2026/06/22/army-taps-anduril-lead-ngc2-common-data-layer-baseline/",
           "f": "verified"
-        }
-      ]
-    },
-    {
-      "id": "II-3",
-      "pf": "P5",
-      "tech": [
-        "ai",
-        "robo"
-      ],
-      "dom": "te",
-      "owner": "ASB2",
-      "desk": "US",
-      "desk2": "EU",
-      "verdict": "proven",
-      "priority": "decision",
-      "status": "open",
-      "raised": "Jul 2026",
-      "age": 1,
-      "dlabel": "Autonomous C-UAS defeat",
-      "ao": "ASB2 Sense-Strike",
-      "suspense": "+30 days",
-      "decision": "Assess an autonomous, layered counter-UAS detect-and-defeat capability for adoption.",
-      "signal": "A long-range, 24/7 autonomous counter-UAS system was validated for Joint Force use after border testing, using non-kinetic defeat against small UAS at extended range; a combat-proven Ukrainian networked C-UAS suite showed a parallel path in Europe.",
-      "sowhat": "An All-Echelon Sense-and-Strike input: autonomous target recognition and layered defeat against small UAS addresses a gap the manned engagement loop struggles with, and both a US programme and a European combat user now demonstrate it.",
-      "action": "ASB2 to assess an autonomous, layered C-UAS defeat capability against our small-UAS threat envelope, with adoption criteria.",
-      "src": [
-        {
-          "out": "DefenseScoop",
-          "date": "9 Jun 2026",
-          "ttl": "Pentagon approves autonomous counter-UAS system after border testing",
-          "url": "https://defensescoop.com/2026/06/09/pentagon-approves-autonomous-counter-drone-system-after-border-testing/",
-          "f": "verified"
         },
         {
-          "out": "United24 Media",
-          "date": "20 Jun 2026",
-          "ttl": "Ukraine's Phantom Defense networked counter-drone ecosystem at Eurosatory",
-          "url": "https://united24media.com/defense-tech/ukraine-showcases-complete-counter-drone-network-after-neutralizing-7000-enemy-uavs-20131",
+          "out": "CSIS",
+          "date": "15 Jun 2026",
+          "ttl": "What is the Maven Smart System, and what does it do?",
+          "url": "https://www.csis.org/analysis/what-maven-smart-system-and-what-does-it-do",
           "f": "verified"
         }
       ]
@@ -309,27 +328,99 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 1,
+      "age": 2,
       "dlabel": "Autonomous UGV to production",
       "ao": "ASB1 Manoeuvre Concepts / AOTO",
-      "suspense": "+45 days",
+      "suspense": "By 15 Aug",
       "decision": "Assess the autonomous-UGV production model and its fit for our manoeuvre and forward-sustainment concepts.",
-      "signal": "A ground-autonomy firm won a ~$20M production contract for autonomous ground vehicles supporting air-defence resupply — reported as the first time such a company primed a production deal, marking a shift from experimentation to fielding.",
-      "sowhat": "An Intelligent Future Mounted Manoeuvre and delivery signal: autonomous ground vehicles are crossing into programmes of record abroad, in resupply and sensor-extension roles that mirror our own manoeuvre and sustainment gaps.",
+      "signal": "Autonomous ground vehicles are crossing into programmes of record — a ground-autonomy firm primed a Marine Corps production contract for autonomous ground vehicles, and the Corps is modernising its MADIS counter-drone system with autonomous ground vehicles, extending ground autonomy into air-defence roles.",
+      "sowhat": "An Intelligent Future Mounted Manoeuvre and delivery signal: autonomous ground vehicles are moving from experimentation to fielding abroad, in resupply, sensor-extension and now air-defence roles that mirror our own manoeuvre and sustainment gaps.",
       "action": "ASB1 with AOTO to assess the autonomous-UGV production pathway and adoption criteria for our manoeuvre and forward-sustainment concepts.",
       "src": [
         {
           "out": "Breaking Defense",
-          "date": "30 Jun 2026",
+          "date": "29 Jun 2026",
           "ttl": "Overland AI nets Marine Corps autonomous ground vehicle contract",
           "url": "https://breakingdefense.com/2026/06/overland-ai-nets-marine-corps-autonomous-ground-vehicle-contract/",
           "f": "verified"
         },
         {
-          "out": "DefenseScoop",
-          "date": "29 Jun 2026",
-          "ttl": "Overland AI production contract for autonomous ground vehicles, Marine Corps",
-          "url": "https://defensescoop.com/2026/06/29/autonomous-ground-vehicle-marine-corps-overland-ai-contract/",
+          "out": "Army Recognition",
+          "date": "27 Jun 2026",
+          "ttl": "US Marine Corps modernizes MADIS counter-drone system with autonomous ground vehicles",
+          "url": "https://www.armyrecognition.com/news/army-news/2026/u-s-marine-corps-modernizes-madis-counter-drone-system-with-autonomous-ground-vehicles",
+          "f": "verified"
+        }
+      ]
+    },
+    {
+      "id": "III-4",
+      "pf": "P4",
+      "tech": [
+        "robo"
+      ],
+      "dom": "solution",
+      "owner": "ASB3",
+      "owner2": "SIO",
+      "desk": "APAC",
+      "desk2": "EU",
+      "verdict": "emerging",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 1,
+      "dlabel": "",
+      "ao": "ASB3 + SIO",
+      "suspense": "Next edition",
+      "decision": "Awareness; track AUKUS Pillar 2 uncrewed-undersea cooperation as a partnering and technology pathway.",
+      "signal": "AUKUS signed its first officially announced Pillar 2 project — joint development of uncrewed underwater vehicles — with first payload deliveries slated for 2027, alongside allied autonomous-swarm experimentation and multi-year undersea-autonomy procurement.",
+      "sowhat": "A partnering and capability signal for maritime autonomy: allied co-development of uncrewed undersea systems sets standards and supply chains our own concepts should track and, where useful, plug into.",
+      "action": "ASB3 with SIO to track AUKUS Pillar 2 uncrewed-undersea development for interoperability and technology-insertion opportunities.",
+      "src": [
+        {
+          "out": "Breaking Defense",
+          "date": "31 May 2026",
+          "ttl": "AUKUS partners sign agreement on underwater drones, speed up sub plan",
+          "url": "https://breakingdefense.com/2026/05/aukus-partners-sign-agreement-on-underwater-drones-speed-up-sub-plan/",
+          "f": "verified"
+        }
+      ]
+    },
+    {
+      "id": "III-5",
+      "pf": "P7",
+      "tech": [
+        "robo",
+        "dews"
+      ],
+      "dom": "safety",
+      "owner": "CESS",
+      "desk": "EU",
+      "verdict": "emerging",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 1,
+      "dlabel": "",
+      "ao": "CESS Sustainment Plans",
+      "suspense": "+90 days",
+      "decision": "Awareness; add UGV-enabled air defence and standoff logistics to the sustainment watching brief.",
+      "signal": "Ukraine is expanding armed and logistics UGVs — the Protector is fielded for high-risk frontline logistics and is being turned into a mobile launch platform for interceptor drones and a Tryzub laser (FPV intercept to ~900m, long-range Shahed to ~5km), with a stated goal of 25,000 ground robotic systems by mid-2026.",
+      "sowhat": "A Multidimensional Force Sustenance and air-defence input: uncrewed systems now carry logistics, casualty-evacuation and short-range air defence together, at industrial scale. The design lesson is multi-role, attritable platforms.",
+      "action": "CESS to extend the UGV watching brief to armed and air-defence roles and to design-for-scale and attrition lessons from the Ukrainian model.",
+      "src": [
+        {
+          "out": "Defense Express",
+          "date": "26 Jun 2026",
+          "ttl": "Ukraine's largest Protector UGV to receive anti-aircraft drones alongside a laser",
+          "url": "https://en.defence-ua.com/news/ukraines_largest_protector_ugv_to_receive_anti_aircraft_drones_alongside_mysterious_laser-18425.html",
+          "f": "verified"
+        },
+        {
+          "out": "United24 Media",
+          "date": "24 Jun 2026",
+          "ttl": "Ukraine plans 25,000 ground robotic systems by mid-2026",
+          "url": "https://united24media.com/war-in-ukraine/how-ukraine-builds-its-ground-robots-for-the-kill-zone-18666",
           "f": "verified"
         }
       ]
@@ -337,10 +428,27 @@ window.SIO_DATA = {
   ],
   "feed": [
     {
-      "date": "2026-06-30",
+      "date": "2026-07-02",
+      "out": "DefenseScoop",
+      "ttl": "Pentagon awards $500M contract to AeroVironment for counter-drone technology",
+      "sum": "A firm-fixed-price US Army order for commercial C-UAS/C-sUAS through 2029, spanning larger UAS down to commercial quadcopters and fixed-wing drones.",
+      "tech": [
+        "robo",
+        "dews"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://defensescoop.com/2026/07/02/pentagon-awards-500m-contract-aerovironment-counter-drone-technology/",
+      "f": "verified",
+      "serial": "III-1",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-06-29",
       "out": "Breaking Defense",
       "ttl": "Overland AI nets Marine Corps autonomous ground vehicle contract",
-      "sum": "A ~$20M production deal for autonomous ground vehicles supporting Marine air defence — the first ground-autonomy firm to prime a production contract, marking a shift from experimentation to fielding.",
+      "sum": "A production OTA under APFIT — reported as the first ground-autonomy firm to prime a US military production contract, for AGVs supporting the MADIS air-defence system.",
       "tech": [
         "robo"
       ],
@@ -353,67 +461,68 @@ window.SIO_DATA = {
       "flagged": false
     },
     {
-      "date": "2026-06-26",
-      "out": "DefenseScoop",
-      "ttl": "Hiding in the spectrum: the race to make command posts disappear",
-      "sum": "Electronic warfare turns command-post survivability into an hourly contest; fixed assets treated as liabilities.",
+      "date": "2026-06-27",
+      "out": "Army Recognition",
+      "ttl": "US Marine Corps modernizes MADIS counter-drone system with autonomous ground vehicles",
+      "sum": "Ground autonomy extended into air defence — AGVs integrated into the Marine Air Defense Integrated System.",
       "tech": [
-        "dews"
+        "robo"
       ],
-      "pf": "P6",
+      "pf": "P4",
       "desk": "US",
-      "url": "https://defensescoop.com/2026/06/26/hiding-in-the-spectrum-army-command-posts/",
+      "url": "https://www.armyrecognition.com/news/army-news/2026/u-s-marine-corps-modernizes-madis-counter-drone-system-with-autonomous-ground-vehicles",
       "f": "verified",
-      "serial": "II-2",
+      "serial": "III-3",
       "saved": false,
       "flagged": false
     },
     {
       "date": "2026-06-26",
-      "out": "Reuters",
-      "ttl": "South Korea to expand drone forces, train 500,000 operators",
-      "sum": "Seoul reported scaling unmanned forces and a very large operator-training cohort.",
+      "out": "Defense Express",
+      "ttl": "Ukraine's largest Protector UGV to receive anti-aircraft drones alongside a laser",
+      "sum": "The Protector UGV, fielded for high-risk logistics, is being turned into a mobile interceptor-drone launcher and fitted with the Tryzub laser (FPV to ~900m; Shahed to ~5km).",
       "tech": [
-        "robo"
+        "robo",
+        "dews"
       ],
-      "pf": "P2",
-      "desk": "APAC",
-      "url": "https://www.reuters.com/world/asia-pacific/south-korea-expand-drone-forces-train-500000-operators-ministry-says-2026-06-26/",
-      "f": "unverified",
-      "note": "Source blocked — 500,000 figure unconfirmed against the article.",
-      "serial": "I-3",
+      "pf": "P7",
+      "desk": "EU",
+      "url": "https://en.defence-ua.com/news/ukraines_largest_protector_ugv_to_receive_anti_aircraft_drones_alongside_mysterious_laser-18425.html",
+      "f": "verified",
+      "serial": "III-5",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-06-26",
+      "out": "Militarnyi",
+      "ttl": "Ukrainian Defense Ministry clears Droid Box UGV control system for military use",
+      "sum": "Control system monitors positioning anomalies and applies countermeasures to sustain comms and navigation under EW and GNSS spoofing.",
+      "tech": [
+        "robo",
+        "dews"
+      ],
+      "pf": "P7",
+      "desk": "EU",
+      "url": "https://militarnyi.com/en/news/ukrainian-defense-ministry-clears-droid-box-ugv-control-system-for-military-use/",
+      "f": "verified",
+      "serial": "II-3",
       "saved": false,
       "flagged": false
     },
     {
       "date": "2026-06-24",
-      "out": "The Defense Post",
-      "ttl": "US Army eyes new electronic-warfare test ranges inspired by Ukraine",
-      "sum": "At least two domestic ranges to replicate Ukraine's EW conditions for drone and counter-drone testing — corroborating the open-range fielding shift across four outlets.",
+      "out": "United24 Media",
+      "ttl": "Ukraine plans 25,000 ground robotic systems by mid-2026",
+      "sum": "Confirmation of the scale of Ukraine's ground-robot build-out for logistics, strike and casualty evacuation in the kill zone.",
       "tech": [
-        "dews"
+        "robo"
       ],
-      "pf": "P9",
-      "desk": "US",
-      "url": "https://thedefensepost.com/2026/06/24/us-army-test-ranges-ukraine/",
+      "pf": "P4",
+      "desk": "EU",
+      "url": "https://united24media.com/war-in-ukraine/how-ukraine-builds-its-ground-robots-for-the-kill-zone-18666",
       "f": "verified",
-      "serial": "III-1",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-06-23",
-      "out": "DefenseScoop",
-      "ttl": "Army to open ranges to defense vendors to speed testing",
-      "sum": "Vendor-accessible ranges, some built to mimic Ukrainian frontline conditions, to compress test timelines.",
-      "tech": [
-        "data"
-      ],
-      "pf": "P9",
-      "desk": "US",
-      "url": "https://defensescoop.com/2026/06/23/army-open-up-ranges-to-defense-companies-speed-up-testing/",
-      "f": "verified",
-      "serial": "III-1",
+      "serial": "III-5",
       "saved": false,
       "flagged": false
     },
@@ -421,7 +530,7 @@ window.SIO_DATA = {
       "date": "2026-06-22",
       "out": "DefenseScoop",
       "ttl": "Army taps Anduril as lead for NGC2 common data layer baseline",
-      "sum": "A named common data-layer baseline as groundwork for rapid scaling of connected capability.",
+      "sum": "A named common data-layer baseline (Anduril lead, Palantir data mesh) as groundwork for rapid scaling of connected capability.",
       "tech": [
         "data",
         "ai"
@@ -436,43 +545,60 @@ window.SIO_DATA = {
     },
     {
       "date": "2026-06-20",
-      "out": "United24 Media",
-      "ttl": "Ukraine's Phantom Defense shows networked counter-drone ecosystem at Eurosatory 2026",
-      "sum": "Combat-proven Ukrainian C-UAS suite integrating detection, EW, kinetic intercept and C2; claimed 7,000 hostile drones neutralised.",
+      "out": "The Army (army.mil)",
+      "ttl": "Army and industry align on common data baseline as NGC2 moves to delivery",
+      "sum": "NGC2 shifts from prototyping toward delivery after division-scale validations, heading to Project Convergence Capstone 6 in July.",
       "tech": [
-        "dews",
-        "robo"
-      ],
-      "pf": "P5",
-      "desk": "EU",
-      "url": "https://united24media.com/defense-tech/ukraine-showcases-complete-counter-drone-network-after-neutralizing-7000-enemy-uavs-20131",
-      "f": "verified",
-      "serial": "II-3",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-06-16",
-      "out": "DefenseScoop",
-      "ttl": "Half a million hours of Ukraine drone footage now available to train AI",
-      "sum": "A large labelled dataset drawn from conflict drone footage reported available for AI training.",
-      "tech": [
-        "data",
-        "ai"
+        "data"
       ],
       "pf": "P6",
-      "desk": "EU",
-      "url": "https://defensescoop.com/2026/06/16/data-from-half-a-million-hours-of-ukraine-conflict-drone-footage-now-available-to-train-ai/",
+      "desk": "US",
+      "url": "https://www.army.mil/article/293409/army_and_industry_align_on_common_data_baseline_as_next_generation_command_and_control_moves_from_prototyping_to_delivery",
       "f": "verified",
       "serial": "III-2",
       "saved": false,
       "flagged": false
     },
     {
+      "date": "2026-06-18",
+      "out": "Federal News Network",
+      "ttl": "The Pentagon is rewriting how it buys AI",
+      "sum": "A reported shift toward modular, interoperable, multi-vendor AI architectures with auditable models rather than monolithic black-box platforms.",
+      "tech": [
+        "ai",
+        "data"
+      ],
+      "pf": "X",
+      "desk": "US",
+      "url": "https://federalnewsnetwork.com/commentary/2026/06/the-pentagon-is-rewriting-how-it-buys-ai-control-of-the-future-of-warfare/",
+      "f": "verified",
+      "serial": "I-2",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-06-16",
+      "out": "Atlantic Council",
+      "ttl": "How NATO can integrate AI to prevail in future algorithmic warfare",
+      "sum": "Analysis framing adversary civil-military AI fusion — commercial providers folded into military surveillance, target recognition and C2 — as an algorithmic-warfare challenge.",
+      "tech": [
+        "ai",
+        "data"
+      ],
+      "pf": "P2",
+      "desk": "APAC",
+      "url": "https://www.atlanticcouncil.org/in-depth-research-reports/report/how-nato-can-integrate-ai-to-prevail-in-future-algorithmic-warfare/",
+      "f": "verified",
+      "note": "Analysis piece — corroborate specific vendor/military-fusion claims.",
+      "serial": "I-3",
+      "saved": false,
+      "flagged": false
+    },
+    {
       "date": "2026-06-09",
       "out": "DefenseScoop",
-      "ttl": "Pentagon approves autonomous counter-UAS system (SkyValor) for military-wide use",
-      "sum": "CACI's long-range, 24/7 non-kinetic detect-and-defeat C-UAS validated for Joint Force use after southern-border testing.",
+      "ttl": "Pentagon approves autonomous counter-UAS system after border testing",
+      "sum": "A long-range, 24/7 non-kinetic detect-and-defeat C-UAS validated for Joint Force use after southern-border testing.",
       "tech": [
         "ai",
         "robo"
@@ -481,57 +607,40 @@ window.SIO_DATA = {
       "desk": "US",
       "url": "https://defensescoop.com/2026/06/09/pentagon-approves-autonomous-counter-drone-system-after-border-testing/",
       "f": "verified",
-      "serial": "II-3",
+      "serial": "III-1",
       "saved": false,
       "flagged": false
     },
     {
-      "date": "2026-06-03",
-      "out": "TechRadar Pro",
-      "ttl": "Inside the Ukrainian UGV brigade where robots outnumber soldiers",
-      "sum": "A brigade aims to replace ~30% of infantry with UGVs; logistics and casualty-evac robots operate at standoff.",
+      "date": "2026-05-31",
+      "out": "Breaking Defense",
+      "ttl": "AUKUS partners sign agreement on underwater drones, speed up sub plan",
+      "sum": "First officially announced AUKUS Pillar 2 project — joint uncrewed-underwater-vehicle development, first payloads slated for 2027.",
       "tech": [
         "robo"
       ],
       "pf": "P4",
-      "desk": "EU",
-      "url": "https://www.techradar.com/pro/ugvs-are-the-new-future-of-warfare-inside-the-ukrainian-unit-set-to-become-the-worlds-first-military-brigade-where-robots-outnumber-human-soldiers",
-      "f": "verified",
-      "serial": "I-2",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-05-21",
-      "out": "SCMP Week Asia",
-      "ttl": "Singapore's weaponised-drone trials spotlight regional rush",
-      "sum": "Regional-tension framing around Singapore's weaponised-drone trials and the neighbourhood's move to unmanned systems.",
-      "tech": [
-        "robo"
-      ],
-      "pf": "P2",
       "desk": "APAC",
-      "url": "https://www.scmp.com/week-asia/politics/article/3354246/singapores-weaponised-drone-trial-spotlights-regional-rush-unmanned-systems",
-      "f": "paywall",
-      "note": "Headline framing only — body behind paywall.",
-      "serial": "I-3",
+      "url": "https://breakingdefense.com/2026/05/aukus-partners-sign-agreement-on-underwater-drones-speed-up-sub-plan/",
+      "f": "verified",
+      "serial": "III-4",
       "saved": false,
       "flagged": false
     },
     {
-      "date": "2026-05-18",
-      "out": "Task & Purpose",
-      "ttl": "The US Army's expanding drone programme in 2026",
-      "sum": "Reported feature on the scope of the US Army's drone effort. Shared source, not yet reviewed.",
+      "date": "2026-05-19",
+      "out": "Inside Unmanned Systems",
+      "ttl": "Pentagon awards $500M to Perennial Autonomy for counter-drone interceptors proven in Ukraine",
+      "sum": "A three-year IDIQ (up to $500M) for autonomous counter-drone interceptors with combat provenance in Ukraine.",
       "tech": [
-        "robo"
+        "robo",
+        "ai"
       ],
-      "pf": "P4",
+      "pf": "P5",
       "desk": "US",
-      "url": "https://taskandpurpose.com/news/army-drone-scope-2026/",
-      "f": "unverified",
-      "note": "Shared link, not yet reviewed — headline only.",
-      "serial": null,
+      "url": "https://insideunmannedsystems.com/pentagon-awards-500m-to-perennial-autonomy-for-counter-drone-interceptors-proven-in-ukraine/",
+      "f": "verified",
+      "serial": "III-1",
       "saved": false,
       "flagged": false
     },
@@ -549,6 +658,56 @@ window.SIO_DATA = {
       "url": "https://defensescoop.com/2026/05/11/the-future-of-war-arrived-we-arent-ready/",
       "f": "verified",
       "serial": "I-1",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-05-07",
+      "out": "Stars and Stripes",
+      "ttl": "Five US bases to get directed-energy weapons to counter drones",
+      "sum": "A federal pilot fields high-energy laser and high-power microwave systems at five bases to protect critical infrastructure and airbases from small UAS.",
+      "tech": [
+        "dews"
+      ],
+      "pf": "P6",
+      "desk": "US",
+      "url": "https://www.stripes.com/theaters/us/2026-05-07/directed-energy-weapons-to-counter-drones-21606215.html",
+      "f": "verified",
+      "serial": "II-2",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-05-06",
+      "out": "Anduril",
+      "ttl": "Anduril announces $5B Series H raise at a $61B valuation",
+      "sum": "A record defence-tech round as Arsenal-1 scales production (Fury, Roadrunner, Barracuda) — a marker of the industrial base behind autonomous mass.",
+      "tech": [
+        "robo",
+        "ai"
+      ],
+      "pf": "P4",
+      "desk": "US",
+      "url": "https://www.anduril.com/news/anduril-announces-usd5b-series-h-raise",
+      "f": "verified",
+      "serial": null,
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-04-24",
+      "out": "DefenseScoop",
+      "ttl": "Space Force names 12 companies to develop Golden Dome space-based interceptors",
+      "sum": "Up to $3.2B in OTAs for space-based interceptors, targeted for integration into the Golden Dome architecture by 2028.",
+      "tech": [
+        "data",
+        "dews"
+      ],
+      "pf": "P9",
+      "desk": "US",
+      "url": "https://defensescoop.com/2026/04/24/golden-dome-space-based-interceptor-missile-defense-contractors/",
+      "f": "verified",
+      "serial": null,
       "saved": false,
       "flagged": false
     }
