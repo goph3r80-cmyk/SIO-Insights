@@ -222,6 +222,44 @@
     .brand h1 { font-size:15px; }
     .search { margin-left:0; max-width:none; }
   }
+  /* CSIO brief pane */
+  .brief { display:grid; grid-template-columns:1.5fr 1fr; gap:12px; margin:22px 0 8px; }
+  .brief-col { background:var(--surface); border:1px solid var(--hair); border-radius:var(--radius); box-shadow:var(--shadow); padding:14px 16px; min-width:0; }
+  .brief-h { display:flex; align-items:baseline; gap:10px; margin-bottom:11px; flex-wrap:wrap; }
+  .brief-h h2 { font-size:14px; margin:0; font-weight:650; letter-spacing:-.005em; }
+  .brief-eyebrow { font-size:10px; text-transform:uppercase; letter-spacing:.11em; color:var(--accent-ink); background:var(--accent); padding:2px 7px; border-radius:5px; font-weight:700; }
+  .brief-sub { font-size:11.5px; color:var(--faint); }
+  .lead { display:block; width:100%; text-align:left; cursor:pointer; background:var(--surface-2); border:1px solid var(--hair); border-left:4px solid var(--vc,var(--accent)); border-radius:8px; padding:12px 13px; font:inherit; color:inherit; margin-bottom:8px; }
+  .lead:hover { border-color:var(--faint); border-left-color:var(--vc,var(--accent)); }
+  .lead.v-gap{--vc:var(--v-gap);} .lead.v-emerging{--vc:var(--v-emerging);} .lead.v-proven{--vc:var(--v-proven);}
+  .lead-top { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:6px; }
+  .lead-decision { font-size:15px; line-height:1.35; font-weight:600; letter-spacing:-.01em; text-wrap:pretty; }
+  .lead-signal { font-size:12.5px; color:var(--muted); margin-top:5px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .lead-meta { font-size:11.5px; color:var(--muted); margin-top:8px; }
+  .lead-meta .k { color:var(--faint); }
+  .brief-list { list-style:none; margin:0; padding:0; }
+  .hl { display:flex; align-items:center; gap:9px; width:100%; text-align:left; cursor:pointer; background:transparent; border:0; border-top:1px solid var(--hair); padding:9px 2px; font:inherit; color:inherit; }
+  .hl:hover .hl-title { color:var(--accent); }
+  .hl-dot { width:8px; height:8px; border-radius:50%; background:var(--vc,var(--faint)); flex:none; }
+  .hl.v-gap{--vc:var(--v-gap);} .hl.v-emerging{--vc:var(--v-emerging);} .hl.v-proven{--vc:var(--v-proven);}
+  .id.sm { font-size:11px; padding:1px 5px; }
+  .hl-title { flex:1; min-width:0; font-size:13px; line-height:1.35; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .newpill { font-size:9.5px; font-weight:700; letter-spacing:.05em; color:#fff; background:var(--v-gap); padding:1px 5px; border-radius:4px; flex:none; }
+  .newpill.sm { font-size:9px; }
+  .chip.sm { font-size:10px; padding:1px 6px; flex:none; }
+  .brief-feed { list-style:none; margin:0; padding:0; }
+  .fi { display:block; text-decoration:none; color:inherit; border-top:1px solid var(--hair); padding:9px 2px; }
+  .brief-feed li:first-child .fi { border-top:0; }
+  .fi:hover .fi-title { color:var(--accent); }
+  .fi-date { font-family:ui-monospace,Menlo,monospace; font-size:11px; color:var(--faint); display:inline-flex; align-items:center; gap:5px; }
+  .fi-title { display:block; font-size:12.5px; line-height:1.35; margin:2px 0; color:var(--ink); }
+  .fi-out { font-size:11px; color:var(--muted); }
+  .newdot { width:6px; height:6px; border-radius:50%; background:var(--v-gap); display:inline-block; }
+  .flash { animation:flashbg 1.3s ease; }
+  @keyframes flashbg { 0%,100%{ background:var(--surface); } 14%{ background:color-mix(in srgb, var(--accent) 16%, var(--surface)); } }
+  @media (max-width:860px){ .brief { grid-template-columns:1fr; } }
+  @media (prefers-reduced-motion:reduce){ .flash { animation:none; } }
+
   @media (prefers-reduced-motion:no-preference) {
     .card, .tile { transition:opacity .2s ease; }
   }
@@ -242,6 +280,18 @@
 
 <main class="wrap">
   <section class="tiles" id="tiles"></section>
+
+  <section class="brief" id="brief" aria-label="CSIO brief">
+    <div class="brief-col">
+      <div class="brief-h"><span class="brief-eyebrow">For the CSIO</span><h2>Priority brief</h2><span class="brief-sub">decisions &amp; new signals, ranked</span></div>
+      <div id="brief-lead"></div>
+      <ul class="brief-list" id="brief-list"></ul>
+    </div>
+    <div class="brief-col">
+      <div class="brief-h"><h2>Latest intake</h2><span class="brief-sub">newest source items</span></div>
+      <ul class="brief-feed" id="brief-feed"></ul>
+    </div>
+  </section>
 
   <section class="controls" aria-label="Filters">
     <div class="fgroup" id="f-tech"><span class="glabel">Tech</span></div>
@@ -375,6 +425,66 @@
     }).join('');
   }
 
+  /* ---- CSIO brief: rank "new & relevant" to the top ---- */
+  var MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var asOf = new Date(D.feedAsOf + 'T00:00:00');
+  function fmtDate(iso){ var p = iso.split('-'); return (+p[2]) + ' ' + MON[(+p[1]) - 1]; }
+  function serialIsNew(s){ return s.age <= 1; }
+  function feedIsNew(f){ return (asOf - new Date(f.date + 'T00:00:00')) / 86400000 <= 5; }
+  function relevance(s){
+    var v = s.verdict === 'gap' ? 2 : s.verdict === 'proven' ? 1 : 0;   // gaps most urgent
+    var p = s.priority === 'decision' ? 3 : 0;                          // needs a call
+    var n = s.age <= 1 ? 2 : s.age === 2 ? 1 : 0;                       // newness
+    return p + v + n;
+  }
+  function miniTags(arr){ return (arr||[]).map(function(t){ return '<span class="minitag mt-'+t+'" title="'+(TECH[t]||t)+'"></span>'; }).join(''); }
+
+  function leadCard(s){
+    return '<button type="button" class="lead v-'+s.verdict+'" data-goto="'+esc(s.id)+'">'
+      + '<div class="lead-top"><span class="id">'+esc(s.id)+'</span>'
+      +   '<span class="chip verdict">'+esc(s.verdict)+'</span>'
+      +   '<span class="chip prio-'+s.priority+'">'+s.priority.toUpperCase()+'</span>'
+      +   (serialIsNew(s) ? '<span class="newpill">NEW</span>' : '')
+      +   '<span class="grow"></span>'
+      +   serialDesks(s).map(function(d){return '<span class="chip desk">'+esc(d)+'</span>';}).join('')
+      + '</div>'
+      + (s.dlabel ? '<div class="dlabel">'+esc(s.dlabel)+'</div>' : '')
+      + '<div class="lead-decision">'+esc(s.decision)+'</div>'
+      + '<div class="lead-signal">'+esc(s.signal)+'</div>'
+      + '<div class="lead-meta"><span class="k">Suspense</span> <b>'+esc(s.suspense)+'</b> · <span class="k">Owner</span> '+esc(s.owner)+'</div>'
+      + '</button>';
+  }
+  function hlRow(s){
+    return '<li><button type="button" class="hl v-'+s.verdict+'" data-goto="'+esc(s.id)+'">'
+      + '<span class="hl-dot"></span><span class="id sm">'+esc(s.id)+'</span>'
+      + '<span class="hl-title">'+esc(s.decision)+'</span>'
+      + (serialIsNew(s) ? '<span class="newpill sm">NEW</span>' : '')
+      + '<span class="chip prio-'+s.priority+' sm">'+s.priority.toUpperCase()+'</span>'
+      + '</button></li>';
+  }
+  function fiRow(f){
+    return '<li><a class="fi" href="'+esc(f.url)+'" target="_blank" rel="noopener">'
+      + '<span class="fi-date">'+fmtDate(f.date)+(feedIsNew(f) ? ' <span class="newdot" title="new"></span>' : '')+'</span>'
+      + '<span class="fi-title">'+esc(f.ttl)+'</span>'
+      + '<span class="fi-out">'+esc(f.out)+' · '+miniTags(f.tech)+' '+esc(f.desk)+'</span>'
+      + '</a></li>';
+  }
+  function renderBrief(serials, feed){
+    var ranked = serials.slice().sort(function(a,b){
+      var d = relevance(b) - relevance(a); if (d) return d;
+      if (a.age !== b.age) return a.age - b.age;
+      return a.id.localeCompare(b.id);
+    });
+    document.getElementById('brief-lead').innerHTML = ranked.length ? leadCard(ranked[0]) : '<div class="empty" style="padding:14px">No items.</div>';
+    document.getElementById('brief-list').innerHTML = ranked.slice(1, 5).map(hlRow).join('');
+    document.getElementById('brief-feed').innerHTML = feed.length ? feed.slice(0, 6).map(fiRow).join('') : '<li class="empty" style="padding:14px">No items.</li>';
+  }
+  document.getElementById('brief').addEventListener('click', function(e){
+    var el = e.target.closest('[data-goto]'); if (!el) return;
+    var t = document.getElementById('serial-' + el.getAttribute('data-goto'));
+    if (t){ t.scrollIntoView({ behavior:'smooth', block:'center' }); t.classList.remove('flash'); void t.offsetWidth; t.classList.add('flash'); }
+  });
+
   function serialCard(s) {
     var top = '<div class="card-top">'
       + '<span class="id">'+esc(s.id)+'</span>'
@@ -402,7 +512,7 @@
       + '</div>'
       + srcBlock(s.src)
       + '</div>';
-    return '<article class="card v-'+s.verdict+'">'+top+body+'</article>';
+    return '<article id="serial-'+esc(s.id)+'" class="card v-'+s.verdict+'">'+top+body+'</article>';
   }
   function srcBlock(src) {
     if (!src || !src.length) return '';
@@ -449,6 +559,8 @@
         + '<td>'+ser+'</td>'
         + '</tr>';
     }).join('') : '<tr><td colspan="6" class="empty">No feed items match the current filters.</td></tr>';
+
+    renderBrief(shown, feed);
   }
 
   render();
