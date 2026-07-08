@@ -1,0 +1,341 @@
+From 5be8fa508809ad59678753fa93f3483dedc16120 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 7 Jul 2026 23:13:21 +0000
+Subject: [PATCH] =?UTF-8?q?Daily=20SIO=20Insights=20refresh=20=E2=80=94=20?=
+ =?UTF-8?q?20260707?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Trawler window 2026-07-03 to 2026-07-07 (bridging the gap since the last
+edition, which was current as of 2026-07-03).
+
+- 6 new feed items across US/EU/ME desks
+- New serial I-4: Pentagon consolidates unmanned/autonomous program
+  oversight under DRPM-UxS (Army PEO realignment + DIU restructuring)
+- III-1 (autonomous C-UAS at scale) extended with the AeroVironment
+  Titan task order and Griffen's first confirmed interceptor kill
+  against a jet-powered Shahed
+- I-1 (future-of-war concept gap) gets a corroborating Bloomberg feature
+- All 11 carried-over serials bumped age +1
+- One item (Fortune: Gulf cyber resilience) left unassigned (serial:
+  null) — single-source, non-core-trade-press coverage
+
+Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01WiuB3VYSaxfCeHg2EWCpR2
+---
+ data.js | 189 ++++++++++++++++++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 176 insertions(+), 13 deletions(-)
+
+diff --git a/data.js b/data.js
+index f1fe35d..1ebcf29 100644
+--- a/data.js
++++ b/data.js
+@@ -1,7 +1,7 @@
+ /* SIO Insights edition data — generated. Replace to refresh. */
+ window.SIO_DATA = {
+   "edition": "Jul 2026",
+-  "feedAsOf": "2026-07-03",
++  "feedAsOf": "2026-07-07",
+   "serials": [
+     {
+       "id": "I-1",
+@@ -18,7 +18,7 @@ window.SIO_DATA = {
+       "priority": "decision",
+       "status": "open",
+       "raised": "Apr 2026",
+-      "age": 5,
++      "age": 6,
+       "dlabel": "Concept-design sprint",
+       "ao": "SIO Concepts cell",
+       "suspense": "By 28 Jul",
+@@ -33,6 +33,14 @@ window.SIO_DATA = {
+           "ttl": "The future of war arrived. We aren't ready.",
+           "url": "https://defensescoop.com/2026/05/11/the-future-of-war-arrived-we-arent-ready/",
+           "f": "verified"
++        },
++        {
++          "out": "Bloomberg",
++          "date": "5 Jul 2026",
++          "ttl": "AI, Drones and Space Weapons: Governments Plan for Future of Warfare",
++          "url": "https://www.bloomberg.com/news/features/2026-07-05/ai-drones-and-space-weapons-governments-plan-for-future-of-warfare",
++          "f": "paywall",
++          "note": "Feature analysis behind paywall; headline/framing captured via secondary reporting only."
+         }
+       ]
+     },
+@@ -51,7 +59,7 @@ window.SIO_DATA = {
+       "priority": "monitor",
+       "status": "open",
+       "raised": "Jul 2026",
+-      "age": 1,
++      "age": 2,
+       "dlabel": "",
+       "ao": "SIO + ADO",
+       "suspense": "Next edition",
+@@ -84,7 +92,7 @@ window.SIO_DATA = {
+       "priority": "monitor",
+       "status": "open",
+       "raised": "Jul 2026",
+-      "age": 1,
++      "age": 2,
+       "dlabel": "",
+       "ao": "ASB3 + SIO net-assessment",
+       "suspense": "Next edition",
+@@ -103,6 +111,45 @@ window.SIO_DATA = {
+         }
+       ]
+     },
++    {
++      "id": "I-4",
++      "pf": "X",
++      "tech": [
++        "robo"
++      ],
++      "dom": "solution",
++      "owner": "SIO",
++      "owner2": "ADO",
++      "desk": "US",
++      "verdict": "emerging",
++      "priority": "monitor",
++      "status": "open",
++      "raised": "Jul 2026",
++      "age": 1,
++      "dlabel": "",
++      "ao": "SIO + ADO",
++      "suspense": "Next edition",
++      "decision": "Awareness; track DRPM-UxS consolidation of unmanned/autonomous program oversight and its effect on portfolio autonomy lines.",
++      "signal": "The Pentagon's new joint integrator for unmanned and autonomous programs (DRPM-UxS) is reshaping how autonomy work is organised — the Army has realigned its Mission Autonomy office into its Layered Protection and Integration portfolio, and the Defense Innovation Unit has restructured its technology priorities around a new formal role as DRPM-UxS's primary industry-engagement interface.",
++      "sowhat": "An acquisition-governance signal for every robo-tagged line in the portfolio: a single joint integrator for unmanned/autonomous programs changes who owns requirements, funding and industry engagement for ground, air and sea drone efforts — CapDev's autonomy programmes should expect a new counterpart structure.",
++      "action": "SIO with ADO to track DRPM-UxS's consolidation of autonomy-program oversight and identify the new points of contact for the portfolio's uncrewed-systems lines.",
++      "src": [
++        {
++          "out": "Breaking Defense",
++          "date": "6 Jul 2026",
++          "ttl": "Army makes new tweaks to acquisition portfolios, realigns autonomy office",
++          "url": "https://breakingdefense.com/2026/07/army-makes-new-tweaks-to-acquisition-portfolios-realigns-autonomy-office/",
++          "f": "verified"
++        },
++        {
++          "out": "DefenseScoop",
++          "date": "6 Jul 2026",
++          "ttl": "DIU reshaping its tech priorities and portfolio teams under new leadership",
++          "url": "https://defensescoop.com/2026/07/06/diu-reshaping-tech-priorities-under-new-leadership-owen-west/",
++          "f": "verified"
++        }
++      ]
++    },
+     {
+       "id": "II-1",
+       "pf": "P6",
+@@ -116,7 +163,7 @@ window.SIO_DATA = {
+       "priority": "decision",
+       "status": "open",
+       "raised": "Apr 2026",
+-      "age": 5,
++      "age": 6,
+       "dlabel": "Spectrum-survivable C2",
+       "ao": "ASB2 Sense-Strike",
+       "suspense": "+30 days",
+@@ -154,7 +201,7 @@ window.SIO_DATA = {
+       "priority": "decision",
+       "status": "open",
+       "raised": "Jul 2026",
+-      "age": 1,
++      "age": 2,
+       "dlabel": "Directed-energy counter-swarm",
+       "ao": "ASB2 Sense-Strike",
+       "suspense": "By 15 Aug",
+@@ -194,7 +241,7 @@ window.SIO_DATA = {
+       "priority": "monitor",
+       "status": "open",
+       "raised": "Jul 2026",
+-      "age": 1,
++      "age": 2,
+       "dlabel": "",
+       "ao": "CESS + ASB1",
+       "suspense": "+90 days",
+@@ -235,12 +282,12 @@ window.SIO_DATA = {
+       "priority": "decision",
+       "status": "open",
+       "raised": "Jul 2026",
+-      "age": 1,
++      "age": 2,
+       "dlabel": "Autonomous C-UAS at scale",
+       "ao": "ASB2 Sense-Strike",
+       "suspense": "By 20 Aug",
+       "decision": "Assess adoption of a proven, autonomous, layered counter-UAS capability at production scale.",
+-      "signal": "Counter-UAS is scaling into production — the US Army placed a ~$500M commercial C-UAS/C-sUAS order in early July covering everything from larger UAS to commercial quadcopters, following a ~$500M counter-drone interceptor award to a vendor whose systems were proven in Ukraine, and a military-wide approval of a long-range autonomous C-UAS after border testing.",
++      "signal": "Counter-UAS is scaling into production — the US Army placed a ~$500M commercial C-UAS/C-sUAS order in early July covering everything from larger UAS to commercial quadcopters, following a ~$500M counter-drone interceptor award to a vendor whose systems were proven in Ukraine, and a military-wide approval of a long-range autonomous C-UAS after border testing. The first task order under the AeroVironment IDIQ (~$80M) is now fielding AI-enabled RF detect-and-defeat systems at Air Force bases, and a UK-Ukrainian jet-powered interceptor (Griffen) scored its first confirmed kill against a jet-powered Shahed variant — US and Ukrainian layered C-UAS lines are converging on the same problem.",
+       "sowhat": "An All-Echelon Sense-and-Strike signal: multiple independent programmes now field autonomous, layered defeat against small UAS — the capability our manned engagement loop struggles to match — and at production scale, not experiment.",
+       "action": "ASB2 to assess adoption of an autonomous, layered C-UAS capability at scale against our small-UAS threat envelope, drawing on the fielded US and Ukrainian systems.",
+       "src": [
+@@ -264,6 +311,20 @@ window.SIO_DATA = {
+           "ttl": "Pentagon approves autonomous counter-UAS system after border testing",
+           "url": "https://defensescoop.com/2026/06/09/pentagon-approves-autonomous-counter-drone-system-after-border-testing/",
+           "f": "verified"
++        },
++        {
++          "out": "DefenseScoop",
++          "date": "6 Jul 2026",
++          "ttl": "Pentagon awards $80M task order for AI-enabled tech to defend Air Force bases against small drones",
++          "url": "https://defensescoop.com/2026/07/06/pentagon-awards-task-order-to-av-for-titan-drone-defense/",
++          "f": "verified"
++        },
++        {
++          "out": "Militarnyi",
++          "date": "7 Jul 2026",
++          "ttl": "Griffen intercepts and downs Shahed drone for the first time",
++          "url": "https://militarnyi.com/en/news/griffen-intercepts-and-downs-shahed-drone-for-the-first-time/",
++          "f": "verified"
+         }
+       ]
+     },
+@@ -282,7 +343,7 @@ window.SIO_DATA = {
+       "priority": "decision",
+       "status": "open",
+       "raised": "Jun 2026",
+-      "age": 2,
++      "age": 3,
+       "dlabel": "Common data layer to delivery",
+       "ao": "ADO",
+       "suspense": "By 31 Jul",
+@@ -328,7 +389,7 @@ window.SIO_DATA = {
+       "priority": "decision",
+       "status": "open",
+       "raised": "Jul 2026",
+-      "age": 2,
++      "age": 3,
+       "dlabel": "Autonomous UGV to production",
+       "ao": "ASB1 Manoeuvre Concepts / AOTO",
+       "suspense": "By 15 Aug",
+@@ -368,7 +429,7 @@ window.SIO_DATA = {
+       "priority": "monitor",
+       "status": "open",
+       "raised": "Jul 2026",
+-      "age": 1,
++      "age": 2,
+       "dlabel": "",
+       "ao": "ASB3 + SIO",
+       "suspense": "Next edition",
+@@ -400,7 +461,7 @@ window.SIO_DATA = {
+       "priority": "monitor",
+       "status": "open",
+       "raised": "Jul 2026",
+-      "age": 1,
++      "age": 2,
+       "dlabel": "",
+       "ao": "CESS Sustainment Plans",
+       "suspense": "+90 days",
+@@ -427,6 +488,108 @@ window.SIO_DATA = {
+     }
+   ],
+   "feed": [
++    {
++      "date": "2026-07-07",
++      "out": "Militarnyi",
++      "ttl": "Griffen intercepts and downs Shahed drone for the first time",
++      "sum": "The UK-Ukrainian jet-powered interceptor Griffen (Firebolt Engineering), capable of over 350 km/h, scored its first confirmed combat kill against a Russian Shahed/Geran-2 drone — built to counter newer jet-powered Shahed variants that outrun older interceptors.",
++      "tech": [
++        "robo"
++      ],
++      "pf": "P5",
++      "desk": "EU",
++      "url": "https://militarnyi.com/en/news/griffen-intercepts-and-downs-shahed-drone-for-the-first-time/",
++      "f": "verified",
++      "serial": "III-1",
++      "saved": false,
++      "flagged": false
++    },
++    {
++      "date": "2026-07-07",
++      "out": "Fortune",
++      "ttl": "From missiles to malware: Why the Gulf is stepping up its operational resilience",
++      "sum": "Citing Help AG (e&) data, AI is reported to have cut cyberattack-to-damage time by 65% amid US-Iran war fallout; UAE daily attack attempts reportedly surged from ~200,000 to ~700,000, with coverage gaps emerging in Gulf cyber-insurance for state-linked incidents.",
++      "tech": [
++        "data",
++        "ai"
++      ],
++      "pf": "X",
++      "desk": "ME",
++      "url": "https://fortune.com/2026/07/07/missiles-to-malware-gulf-stepping-up-operational-resilience/",
++      "f": "verified",
++      "serial": null,
++      "saved": false,
++      "flagged": false
++    },
++    {
++      "date": "2026-07-06",
++      "out": "DefenseScoop",
++      "ttl": "Pentagon awards $80M task order for AI-enabled tech to defend Air Force bases against small drones",
++      "sum": "The first (~$80.5M) task order under AeroVironment's $500M Army C-UAS IDIQ, fielding Titan 4 RF detect-and-defeat systems with AI/ML-supported signal analysis to protect Air Force bases from small UAS.",
++      "tech": [
++        "robo",
++        "dews"
++      ],
++      "pf": "P5",
++      "desk": "US",
++      "url": "https://defensescoop.com/2026/07/06/pentagon-awards-task-order-to-av-for-titan-drone-defense/",
++      "f": "verified",
++      "serial": "III-1",
++      "saved": false,
++      "flagged": false
++    },
++    {
++      "date": "2026-07-06",
++      "out": "Breaking Defense",
++      "ttl": "Army makes new tweaks to acquisition portfolios, realigns autonomy office",
++      "sum": "The Army moved its Mission Autonomy office from PAE Maneuver Air to PAE Layered Protection and Integration, nesting cross-disciplinary autonomy functions ahead of the Pentagon's new DRPM-UxS joint integrator for unmanned/autonomous programs.",
++      "tech": [
++        "robo"
++      ],
++      "pf": "X",
++      "desk": "US",
++      "url": "https://breakingdefense.com/2026/07/army-makes-new-tweaks-to-acquisition-portfolios-realigns-autonomy-office/",
++      "f": "verified",
++      "serial": "I-4",
++      "saved": false,
++      "flagged": false
++    },
++    {
++      "date": "2026-07-06",
++      "out": "DefenseScoop",
++      "ttl": "DIU reshaping its tech priorities and portfolio teams under new leadership",
++      "sum": "DIU's new director, Owen West, is restructuring the unit's technology priorities and portfolio teams, coinciding with DIU's new formal role as primary industry-engagement interface for the Pentagon's unmanned-systems portfolio office (DRPM-UxS).",
++      "tech": [
++        "data",
++        "robo"
++      ],
++      "pf": "X",
++      "desk": "US",
++      "url": "https://defensescoop.com/2026/07/06/diu-reshaping-tech-priorities-under-new-leadership-owen-west/",
++      "f": "verified",
++      "serial": "I-4",
++      "saved": false,
++      "flagged": false
++    },
++    {
++      "date": "2026-07-05",
++      "out": "Bloomberg",
++      "ttl": "AI, Drones and Space Weapons: Governments Plan for Future of Warfare",
++      "sum": "Feature framing AI, hypersonics, space weapons and drones as displacing Cold War-style nuclear-stockpile deterrence, grounded in Ukraine strike reporting.",
++      "tech": [
++        "ai",
++        "robo",
++        "dews"
++      ],
++      "pf": "X",
++      "desk": "US",
++      "url": "https://www.bloomberg.com/news/features/2026-07-05/ai-drones-and-space-weapons-governments-plan-for-future-of-warfare",
++      "f": "paywall",
++      "note": "Feature analysis behind Bloomberg paywall; headline/framing captured via secondary reporting only.",
++      "serial": "I-1",
++      "saved": false,
++      "flagged": false
++    },
+     {
+       "date": "2026-07-02",
+       "out": "DefenseScoop",
+-- 
+2.43.0
+
