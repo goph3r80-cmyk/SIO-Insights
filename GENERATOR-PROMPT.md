@@ -139,7 +139,10 @@ serial persists (a carried-over item keeps its id and increments `age`).
 5. **Carry-over.** Persist still-relevant serials from the previous edition:
    keep their `id`, refresh `src`/`signal` if there's news, and increment `age`.
    Retire items that are fully actioned and no longer live (or set
-   `status: "actioned"`).
+   `status: "actioned"`). **Maintain the standing China / PLA net-assessment
+   serials (e.g. `I-3`, `I-6`, `II-4`) as a permanent coverage line** — carry
+   them forward every edition, refreshing sources when there's news; do not drop
+   them just because a given week is quiet.
 6. **Update the header:** `edition` (e.g. `"Jul 2026"`) and `feedAsOf` (ISO date
    of the trawler window's end).
 7. **Sort:** `feed` newest-first by `date`; `serials` by section then index.

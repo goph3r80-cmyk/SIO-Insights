@@ -36,6 +36,18 @@ for subscription walls, `unverified` for blocked/unconfirmed. Treat
 **state-controlled outlets** (marked ⚠) as *signals of what an actor wants said*,
 never as confirmed fact — always corroborate and flag.
 
+**Standing priority — China / PLA (every run).** Chinese military-technology
+developments are a permanent coverage requirement, not a rotation. On **every
+run**, sweep the China/PLA sources on the APAC desk — Global Times, Xinhua,
+CCTV / PLA Daily (⚠ state), SCMP, and Chinese-outlet reporting surfaced via
+Western trade press — across at least: autonomous drones and swarms; AI-enabled
+C2 / "intelligentised warfare"; directed energy and counter-UAS; unmanned
+ground/surface/undersea systems; and space / EW. Apply the ⚠ state-outlet rule
+above — capture the claim, flag provenance, corroborate against independent
+reporting before treating anything as fact. Aim to carry at least one fresh
+China-desk item into each edition, and keep the standing China net-assessment
+serials (e.g. `I-3`, `I-6`, `II-4`) alive across editions.
+
 ### Tier 1 — Greater: daily defence trade press (scan every run)
 
 - Defense News — https://www.defensenews.com
@@ -133,9 +145,9 @@ never as confirmed fact — always corroborate and flag.
 - The Straits Times (Singapore) — https://www.straitstimes.com  *(paywall)*
 - Yonhap (Korea) — https://en.yna.co.kr · NK News — https://www.nknews.org  *(paywall)*
 - **India** — idrw.org https://idrw.org · Raksha Anirveda https://raksha-anirveda.com · Livefist https://www.livefistdefence.com · ThePrint (Defence) https://theprint.in/category/defence/ · Indian Defence News https://www.indiandefensenews.in
-- SCMP (China/Asia) — https://www.scmp.com  *(paywall)*
+- SCMP (China/Asia) — https://www.scmp.com  *(paywall — **sweep every run**)*
 - Military Watch Magazine — https://militarywatchmagazine.com  *(opinionated — corroborate)*
-- ⚠ Global Times / Xinhua (China state) — https://www.globaltimes.cn
+- ⚠ Global Times / Xinhua / CCTV / PLA Daily (China state) — https://www.globaltimes.cn  *(**sweep every run**; treat as intent signalling — corroborate and flag)*
 
 **ME desk**
 - Times of Israel (IDF) — https://www.timesofisrael.com/topic/idf-israel-defense-forces/
