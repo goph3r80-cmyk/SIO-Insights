@@ -1,7 +1,7 @@
 /* SIO Insights edition data — generated. Replace to refresh. */
 window.SIO_DATA = {
   "edition": "Jul 2026",
-  "feedAsOf": "2026-07-07",
+  "feedAsOf": "2026-07-11",
   "serials": [
     {
       "id": "I-1",
@@ -18,7 +18,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Apr 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "Concept-design sprint",
       "ao": "SIO Concepts cell",
       "suspense": "By 28 Jul",
@@ -59,7 +59,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -92,7 +92,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "",
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
@@ -125,15 +125,29 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 1,
+      "age": 2,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
       "decision": "Awareness; track DRPM-UxS consolidation of unmanned/autonomous program oversight and its effect on portfolio autonomy lines.",
-      "signal": "The Pentagon's new joint integrator for unmanned and autonomous programs (DRPM-UxS) is reshaping how autonomy work is organised — the Army has realigned its Mission Autonomy office into its Layered Protection and Integration portfolio, and the Defense Innovation Unit has restructured its technology priorities around a new formal role as DRPM-UxS's primary industry-engagement interface.",
+      "signal": "A Defense Secretary memo (dated 29 June, made public 1 July) formally created the Direct Reporting Portfolio Manager for Unmanned Systems (DRPM-UxS) — a single integrator reporting to the Deputy Secretary of Defense that pulls almost all unmanned programs (UAS groups 1-3, all autonomous ground vehicles, and all unmanned surface vessels except MUSV) under one office, with the Defense Autonomous Warfare Group and JIATF-401 as deputy offices and a FY27 request of ~$75B for drones and counter-drone tech. Downstream, the Army realigned its Mission Autonomy office into its Layered Protection and Integration portfolio, and the Defense Innovation Unit took on the primary industry-engagement interface role.",
       "sowhat": "An acquisition-governance signal for every robo-tagged line in the portfolio: a single joint integrator for unmanned/autonomous programs changes who owns requirements, funding and industry engagement for ground, air and sea drone efforts — CapDev's autonomy programmes should expect a new counterpart structure.",
       "action": "SIO with ADO to track DRPM-UxS's consolidation of autonomy-program oversight and identify the new points of contact for the portfolio's uncrewed-systems lines.",
       "src": [
+        {
+          "out": "USNI News",
+          "date": "1 Jul 2026",
+          "ttl": "New Pentagon unmanned czar will oversee most drone programs, memo reads",
+          "url": "https://news.usni.org/2026/07/01/new-pentagon-unmanned-czar-will-oversee-most-drone-programs-memo-reads",
+          "f": "verified"
+        },
+        {
+          "out": "DefenseScoop",
+          "date": "1 Jul 2026",
+          "ttl": "Hegseth realigning DOD's scattered unmanned and autonomy work under new drone boss",
+          "url": "https://defensescoop.com/2026/07/01/hegseth-realigning-unmanned-systems-programs-under-new-drone-boss/",
+          "f": "verified"
+        },
         {
           "out": "Breaking Defense",
           "date": "6 Jul 2026",
@@ -151,6 +165,40 @@ window.SIO_DATA = {
       ]
     },
     {
+      "id": "I-5",
+      "pf": "X",
+      "tech": [
+        "ai",
+        "robo",
+        "data"
+      ],
+      "dom": "solution",
+      "owner": "SIO",
+      "owner2": "ASB3",
+      "desk": "ME",
+      "verdict": "emerging",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 1,
+      "dlabel": "",
+      "ao": "SIO + ASB3 net-assessment",
+      "suspense": "Next edition",
+      "decision": "Awareness; benchmark allied force-structure moves that consolidate AI, robotics and unmanned systems under a single command.",
+      "signal": "The IDF Chief of Staff announced (8 Jul) that the military will soon finalise a new General Staff structure dedicated to robotics, drones and AI, stating a goal for the IDF to be \"a global leader in unmanned systems in both defense and offense\" — mirroring, in force-structure terms, the US move to consolidate unmanned/autonomous oversight under a single integrator (see I-4).",
+      "sowhat": "A force-design benchmark for CapDev: two reference militaries are now reorganising command and acquisition around autonomy as a core function rather than a bolt-on. How partners structure ownership of unmanned and AI capability is both a template and a pace-setter for our own force design.",
+      "action": "SIO with ASB3 to track allied force-structure consolidation around autonomy — the US DRPM-UxS and the IDF's new AI/robotics/drone command — and draw force-design lessons for the portfolio.",
+      "src": [
+        {
+          "out": "JNS",
+          "date": "8 Jul 2026",
+          "ttl": "Zamir: IDF to finalize new AI, drone, robotics unit structure",
+          "url": "https://www.jns.org/news/israel-news/zamir-idf-to-finalize-new-ai-drone-robotics-unit-structure",
+          "f": "verified"
+        }
+      ]
+    },
+    {
       "id": "II-1",
       "pf": "P6",
       "tech": [
@@ -163,7 +211,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Apr 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "Spectrum-survivable C2",
       "ao": "ASB2 Sense-Strike",
       "suspense": "+30 days",
@@ -201,7 +249,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "Directed-energy counter-swarm",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Aug",
@@ -241,7 +289,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "",
       "ao": "CESS + ASB1",
       "suspense": "+90 days",
@@ -282,12 +330,12 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "Autonomous C-UAS at scale",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 20 Aug",
       "decision": "Assess adoption of a proven, autonomous, layered counter-UAS capability at production scale.",
-      "signal": "Counter-UAS is scaling into production — the US Army placed a ~$500M commercial C-UAS/C-sUAS order in early July covering everything from larger UAS to commercial quadcopters, following a ~$500M counter-drone interceptor award to a vendor whose systems were proven in Ukraine, and a military-wide approval of a long-range autonomous C-UAS after border testing. The first task order under the AeroVironment IDIQ (~$80M) is now fielding AI-enabled RF detect-and-defeat systems at Air Force bases, and a UK-Ukrainian jet-powered interceptor (Griffen) scored its first confirmed kill against a jet-powered Shahed variant — US and Ukrainian layered C-UAS lines are converging on the same problem.",
+      "signal": "Counter-UAS is scaling into production — the US Army placed a ~$500M commercial C-UAS/C-sUAS order in early July covering everything from larger UAS to commercial quadcopters, following a ~$500M counter-drone interceptor award to a vendor whose systems were proven in Ukraine, and a military-wide approval of a long-range autonomous C-UAS after border testing. The first task order under the AeroVironment IDIQ (~$80M) is now fielding AI-enabled RF detect-and-defeat systems at Air Force bases, and a UK-Ukrainian jet-powered interceptor (Griffen) scored its first confirmed kill against a jet-powered Shahed variant — US and Ukrainian layered C-UAS lines are converging on the same problem. In parallel, NATO allies committed a five-year package of more than $40B for counter-drone defence, drone procurement and operator training (Ankara, 7 Jul), adding an alliance-wide counter-drone marketplace — C-UAS is now scaling as coordinated policy, not just national buys.",
       "sowhat": "An All-Echelon Sense-and-Strike signal: multiple independent programmes now field autonomous, layered defeat against small UAS — the capability our manned engagement loop struggles to match — and at production scale, not experiment.",
       "action": "ASB2 to assess adoption of an autonomous, layered C-UAS capability at scale against our small-UAS threat envelope, drawing on the fielded US and Ukrainian systems.",
       "src": [
@@ -325,6 +373,13 @@ window.SIO_DATA = {
           "ttl": "Griffen intercepts and downs Shahed drone for the first time",
           "url": "https://militarnyi.com/en/news/griffen-intercepts-and-downs-shahed-drone-for-the-first-time/",
           "f": "verified"
+        },
+        {
+          "out": "Army Recognition",
+          "date": "7 Jul 2026",
+          "ttl": "NATO approves $40 billion counter-drone initiative to defeat low-cost UAV threats",
+          "url": "https://www.armyrecognition.com/news/aerospace-news/2026/nato-approves-40-billion-counter-drone-initiative-to-defeat-low-cost-uav-threats",
+          "f": "verified"
         }
       ]
     },
@@ -343,7 +398,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jun 2026",
-      "age": 3,
+      "age": 4,
       "dlabel": "Common data layer to delivery",
       "ao": "ADO",
       "suspense": "By 31 Jul",
@@ -389,7 +444,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 3,
+      "age": 4,
       "dlabel": "Autonomous UGV to production",
       "ao": "ASB1 Manoeuvre Concepts / AOTO",
       "suspense": "By 15 Aug",
@@ -429,7 +484,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "",
       "ao": "ASB3 + SIO",
       "suspense": "Next edition",
@@ -461,7 +516,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "",
       "ao": "CESS Sustainment Plans",
       "suspense": "+90 days",
@@ -485,9 +540,106 @@ window.SIO_DATA = {
           "f": "verified"
         }
       ]
+    },
+    {
+      "id": "III-6",
+      "pf": "P4",
+      "tech": [
+        "robo"
+      ],
+      "dom": "solution",
+      "owner": "ASB3",
+      "owner2": "SIO",
+      "desk": "US",
+      "desk2": "EU",
+      "verdict": "emerging",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 1,
+      "dlabel": "",
+      "ao": "ASB3 + SIO",
+      "suspense": "Next edition",
+      "decision": "Awareness; track maturing maritime uncrewed-surface-vessel deployment and delivery models.",
+      "signal": "Uncrewed surface vessels are maturing on two tracks — the US Navy is opening the next phase of its MUSV \"marketplace\", with a high-capacity MUSV request for prototype proposals due 1 August, while a UK-US team (Kraken/Capewell), supported by the Royal Navy under Project Beehive, completed the world's first airdrop of a USV from an A400M transport, delivering an uncrewed boat by parachute ready for immediate operations.",
+      "sowhat": "A maritime-autonomy and force-projection signal: surface drones are moving toward flexible, rapidly-deployable fielding — air-delivered or bought through modular marketplaces — that our own maritime and littoral concepts should track for delivery models and rapid-positioning options.",
+      "action": "ASB3 with SIO to track maritime USV delivery models — modular acquisition and air-deployable fielding — for relevance to littoral surveillance and force-protection concepts.",
+      "src": [
+        {
+          "out": "Defense One",
+          "date": "9 Jul 2026",
+          "ttl": "Navy teases next step in key drone boat program",
+          "url": "https://www.defenseone.com/defense-systems/2026/07/navy-teases-next-step-key-drone-boat-program/414683/",
+          "f": "verified"
+        },
+        {
+          "out": "The Defense Post",
+          "date": "10 Jul 2026",
+          "ttl": "UK-US team pulls off 'world's first' airdrop of USV from A400M aircraft",
+          "url": "https://thedefensepost.com/2026/07/10/uk-us-airdrop-usv-aircraft/",
+          "f": "verified"
+        },
+        {
+          "out": "Naval News",
+          "date": "10 Jul 2026",
+          "ttl": "World's first USV airdrop accomplished by Kraken and Capewell",
+          "url": "https://www.navalnews.com/naval-news/2026/07/worlds-first-usv-airdrop-accomplished-by-kraken-and-capewell/",
+          "f": "verified"
+        }
+      ]
     }
   ],
   "feed": [
+    {
+      "date": "2026-07-10",
+      "out": "The Defense Post",
+      "ttl": "UK-US team pulls off 'world's first' airdrop of USV from A400M aircraft",
+      "sum": "Kraken Technology Group and Capewell, supported by the Royal Navy under Project Beehive, completed the world's first extracted-load airdrop of an uncrewed surface vessel — a K3 SCOUT USV parachuted from an A400M at 1,300 ft into up to Sea State 4, ready for immediate operations.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P4",
+      "desk": "EU",
+      "url": "https://thedefensepost.com/2026/07/10/uk-us-airdrop-usv-aircraft/",
+      "f": "verified",
+      "serial": "III-6",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-09",
+      "out": "Defense One",
+      "ttl": "Navy teases next step in key drone boat program",
+      "sum": "The US Navy plans to open the next phase of its Medium Unmanned Surface Vessel (MUSV) 'marketplace' on 1 August, issuing a request for prototype proposals for a new high-capacity MUSV variant — the one unmanned surface program carved out of the Pentagon's new DRPM-UxS consolidation.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P4",
+      "desk": "US",
+      "url": "https://www.defenseone.com/defense-systems/2026/07/navy-teases-next-step-key-drone-boat-program/414683/",
+      "f": "verified",
+      "serial": "III-6",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-08",
+      "out": "JNS",
+      "ttl": "Zamir: IDF to finalize new AI, drone, robotics unit structure",
+      "sum": "IDF Chief of Staff Lt. Gen. Eyal Zamir said the military will soon finalise a new General Staff structure dedicated to robotics, drones and AI, setting a goal for the IDF to be a global leader in unmanned systems in both defence and offence.",
+      "tech": [
+        "ai",
+        "robo",
+        "data"
+      ],
+      "pf": "X",
+      "desk": "ME",
+      "url": "https://www.jns.org/news/israel-news/zamir-idf-to-finalize-new-ai-drone-robotics-unit-structure",
+      "f": "verified",
+      "serial": "I-5",
+      "saved": false,
+      "flagged": false
+    },
     {
       "date": "2026-07-07",
       "out": "Militarnyi",
@@ -499,6 +651,23 @@ window.SIO_DATA = {
       "pf": "P5",
       "desk": "EU",
       "url": "https://militarnyi.com/en/news/griffen-intercepts-and-downs-shahed-drone-for-the-first-time/",
+      "f": "verified",
+      "serial": "III-1",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-07",
+      "out": "Army Recognition",
+      "ttl": "NATO approves $40 billion counter-drone initiative to defeat low-cost UAV threats",
+      "sum": "NATO allies announced a five-year package of more than $40B for counter-drone defence, drone procurement and operator training (Ankara, 7 Jul), adding an alliance-wide counter-drone marketplace and expanded operator training — a shift from national efforts to coordinated C-UAS scaling.",
+      "tech": [
+        "robo",
+        "dews"
+      ],
+      "pf": "P5",
+      "desk": "EU",
+      "url": "https://www.armyrecognition.com/news/aerospace-news/2026/nato-approves-40-billion-counter-drone-initiative-to-defeat-low-cost-uav-threats",
       "f": "verified",
       "serial": "III-1",
       "saved": false,
