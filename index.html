@@ -322,7 +322,12 @@
   </footer>
 </main>
 
-<script src="./data.js"></script>
+<!-- Load data.js with a per-load cache-buster so a refresh always fetches the
+     latest edition. GitHub Pages ignores netlify.toml headers and caches assets,
+     so without this a browser can keep serving a stale data.js after a refresh.
+     document.write injects the script synchronously during parse, so the init
+     script below still sees window.SIO_DATA. -->
+<script>document.write('<scr' + 'ipt src="./data.js?v=' + Date.now() + '"></scr' + 'ipt>');</script>
 <script>
 (function () {
   var D = window.SIO_DATA;
