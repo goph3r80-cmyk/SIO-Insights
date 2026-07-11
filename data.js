@@ -97,7 +97,7 @@ window.SIO_DATA = {
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
       "decision": "Awareness — net-assessment watch on adversary AI-enabled command and control.",
-      "signal": "Commercial AI providers — reported to include DeepSeek, Alibaba, Tencent, Zhipu and Huawei-linked infrastructure — are being folded into a national military ecosystem supporting surveillance, target recognition, war-gaming and command-and-control functions.",
+      "signal": "Commercial AI providers — reported to include DeepSeek, Alibaba, Tencent, Zhipu and Huawei-linked infrastructure — are being folded into a national military ecosystem supporting surveillance, target recognition, war-gaming and command-and-control functions. PRC military press is now codifying this as doctrine — a PLA Daily article (30 Jun) frames future 'technological strategy' around manipulating, suppressing and reconstructing intelligent networks and AI-enabled command and control resistant to electromagnetic interference — while Hong Kong reporting describes an 'AI Plus' push into PLA electronic warfare and warns PLA training may lag the hardware.",
       "sowhat": "A net-assessment input: an adversary fusing commercial-grade AI into the kill chain compresses its decision cycle and raises the bar our own C2 and EW must clear. The pathway to watch is civil-military fusion, not just the platforms.",
       "action": "ASB3, with SIO net-assessment, to log adversary commercial-AI-into-C2 fusion as a threat-shaping trend and flag the implications for our counter-C2 and deception concepts.",
       "src": [
@@ -108,6 +108,22 @@ window.SIO_DATA = {
           "url": "https://www.atlanticcouncil.org/in-depth-research-reports/report/how-nato-can-integrate-ai-to-prevail-in-future-algorithmic-warfare/",
           "f": "verified",
           "note": "Analysis piece — adversary AI-C2 fusion framing; corroborate specific claims."
+        },
+        {
+          "out": "South China Morning Post",
+          "date": "18 May 2026",
+          "ttl": "Can PLA training catch up with China's rapid weapon development?",
+          "url": "https://www.scmp.com/news/china/military/article/3353974/can-pla-training-catch-chinas-rapid-weapon-development",
+          "f": "verified",
+          "note": "Hong Kong outlet citing PLA commentary on unmanned/intelligent-systems fielding."
+        },
+        {
+          "out": "AEI (China-Taiwan Update)",
+          "date": "10 Jul 2026",
+          "ttl": "PLA Daily frames intelligentised warfare around manipulating and reconstructing intelligent networks",
+          "url": "https://www.aei.org/articles/china-taiwan-update-july-10-2026/",
+          "f": "verified",
+          "note": "Summarises a 30 Jun PLA Daily doctrine article; PRC state-authored source — treat as intent signalling."
         }
       ]
     },
@@ -194,6 +210,55 @@ window.SIO_DATA = {
           "date": "8 Jul 2026",
           "ttl": "Zamir: IDF to finalize new AI, drone, robotics unit structure",
           "url": "https://www.jns.org/news/israel-news/zamir-idf-to-finalize-new-ai-drone-robotics-unit-structure",
+          "f": "verified"
+        }
+      ]
+    },
+    {
+      "id": "I-6",
+      "pf": "P2",
+      "tech": [
+        "ai",
+        "robo"
+      ],
+      "dom": "solution",
+      "owner": "ASB3",
+      "owner2": "SIO",
+      "desk": "APAC",
+      "verdict": "emerging",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 1,
+      "dlabel": "",
+      "ao": "ASB3 + SIO net-assessment",
+      "suspense": "Next edition",
+      "decision": "Awareness — net-assessment watch on PLA operational autonomous drone swarms.",
+      "signal": "Chinese state and Hong Kong media show the PLA moving autonomous mass from demonstration toward doctrine — CETC's \"Atlas\" system stages a full-process demonstration launching up to ~96 drones in minutes under one operator with autonomous task division, and a separate PLA demonstration puts ~200 jam-resistant drones under a single soldier, using an anti-jamming algorithm that lets units keep cooperating after losing the operator link. Western analysis assesses these as selective but real PLA bets on battlefield AI. State/vendor claims — corroborated across independent trade press.",
+      "sowhat": "A net-assessment input on adversary autonomous mass: single-operator swarms with resilient, comms-independent autonomy change the volume and persistence of the threat our sensing, C2 and counter-UAS lines must beat — the pacing challenge is scale plus autonomy, not any single platform.",
+      "action": "ASB3 with SIO net-assessment to track PLA autonomous-swarm maturation as a threat-shaping trend and feed it into our counter-UAS and C2 concept work.",
+      "src": [
+        {
+          "out": "Global Times",
+          "date": "25 Mar 2026",
+          "ttl": "China unveils full-process demonstration of Atlas drone swarm operations system",
+          "url": "https://www.globaltimes.cn/page/202603/1357519.shtml",
+          "f": "verified",
+          "note": "Chinese state media — treat as intent signalling; corroborated by Western trade press."
+        },
+        {
+          "out": "South China Morning Post",
+          "date": "22 Jan 2026",
+          "ttl": "1 soldier, 200 drones: China showcases rapid launch and agility in swarm warfare tactics",
+          "url": "https://www.scmp.com/news/china/military/article/3340972/1-soldier-200-drones-china-showcases-rapid-launch-and-agility-swarm-warfare-tactics",
+          "f": "verified",
+          "note": "Hong Kong outlet reporting a PLA/CCTV demonstration; state/vendor claims — corroborate."
+        },
+        {
+          "out": "Defense News",
+          "date": "7 Apr 2026",
+          "ttl": "Outpaced by the US, China's military places selective bets on artificial intelligence",
+          "url": "https://www.defensenews.com/global/asia-pacific/2026/04/07/outpaced-by-the-us-chinas-military-places-selective-bets-on-artificial-intelligence/",
           "f": "verified"
         }
       ]
@@ -310,6 +375,55 @@ window.SIO_DATA = {
           "date": "23 Jun 2026",
           "ttl": "Networked for war: lessons from Ukraine's ground robots",
           "url": "https://mwi.westpoint.edu/networked-for-war-lessons-from-ukraines-ground-robots/",
+          "f": "verified"
+        }
+      ]
+    },
+    {
+      "id": "II-4",
+      "pf": "P6",
+      "tech": [
+        "dews",
+        "robo"
+      ],
+      "dom": "solution",
+      "owner": "ASB2",
+      "owner2": "SIO",
+      "desk": "APAC",
+      "verdict": "emerging",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 1,
+      "dlabel": "",
+      "ao": "ASB2 + SIO net-assessment",
+      "suspense": "Next edition",
+      "decision": "Awareness — net-assessment watch on Chinese directed-energy counter-UAS across the man-portable-to-naval range, including for export.",
+      "signal": "Chinese media are surfacing a broad directed-energy counter-UAS line — Harbin Xinguang's man-portable \"Lijian\" lasers (25-30kg, ~2kW, AI-aided targeting) shown in Beijing, vehicle-mounted and shipborne naval lasers, and export systems (CPMIEC LW-30, Novasky NI-L3K) marketed to Gulf and Southeast Asian customers — with state commentary claiming China is at the global forefront of laser counter-drone tech. Vendor/state claims — corroborate against demonstrated performance.",
+      "sowhat": "A capability-contest signal mirroring our own directed-energy counter-swarm line (II-2): a peer competitor is fielding and exporting ammunition-free C-UAS across echelons, which both validates the concept and shapes the export market and threat picture our systems will meet.",
+      "action": "ASB2 with SIO to benchmark Chinese directed-energy C-UAS claims against our II-2 line and track proliferation via exports as a threat- and market-shaping trend.",
+      "src": [
+        {
+          "out": "South China Morning Post",
+          "date": "23 Jun 2026",
+          "ttl": "China showcases portable laser weapons for a single soldier to shoot down drones",
+          "url": "https://www.scmp.com/news/china/military/article/3357667/china-showcases-portable-laser-weapons-single-soldier-shoot-down-drones",
+          "f": "verified",
+          "note": "Hong Kong outlet; systems shown at a Beijing exhibition — vendor claims, corroborate."
+        },
+        {
+          "out": "Global Times",
+          "date": "26 Mar 2026",
+          "ttl": "Two new types of Chinese anti-drone laser weapons revealed in official media report",
+          "url": "https://www.globaltimes.cn/page/202603/1357573.shtml",
+          "f": "verified",
+          "note": "Chinese state media — treat as intent signalling; corroborate performance claims."
+        },
+        {
+          "out": "Army Recognition",
+          "date": "8 Feb 2026",
+          "ttl": "WDS 2026: China's CPMIEC unveils LW-30 laser weapon system for Gulf counter-drone defense",
+          "url": "https://www.armyrecognition.com/archives/archives-defense-exhibitions/2026-archives-news-defense-exhibitions/world-defense-show-2026/wds-2026-chinas-cpmiec-unveils-lw-30-laser-weapon-system-for-gulf-counter-drone-defense",
           "f": "verified"
         }
       ]
@@ -777,6 +891,24 @@ window.SIO_DATA = {
       "flagged": false
     },
     {
+      "date": "2026-06-30",
+      "out": "PLA Daily",
+      "ttl": "Intelligentised warfare: manipulating, suppressing and reconstructing intelligent networks",
+      "sum": "A PLA Academy of Military Science article frames future 'technological strategy' around AI-enabled command and control resistant to electromagnetic interference, and around paralysing an enemy's operational system by deceiving its information and AI algorithms.",
+      "tech": [
+        "ai",
+        "data"
+      ],
+      "pf": "P2",
+      "desk": "APAC",
+      "url": "https://www.aei.org/articles/china-taiwan-update-july-10-2026/",
+      "f": "verified",
+      "note": "PRC military-press doctrine (PLA Daily, 30 Jun); captured via AEI China-Taiwan Update (10 Jul) — state-authored, treat as intent signalling.",
+      "serial": "I-3",
+      "saved": false,
+      "flagged": false
+    },
+    {
       "date": "2026-06-29",
       "out": "Breaking Defense",
       "ttl": "Overland AI nets Marine Corps autonomous ground vehicle contract",
@@ -855,6 +987,23 @@ window.SIO_DATA = {
       "url": "https://united24media.com/war-in-ukraine/how-ukraine-builds-its-ground-robots-for-the-kill-zone-18666",
       "f": "verified",
       "serial": "III-5",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-06-23",
+      "out": "South China Morning Post",
+      "ttl": "China showcases portable laser weapons for a single soldier to shoot down drones",
+      "sum": "Harbin Xinguang's man-portable 'Lijian' II/III lasers (25-30kg, ~2kW, AI-aided targeting, ~500m) were displayed at a Beijing defence exhibition — part of a broad Chinese directed-energy counter-drone line spanning portable to naval systems.",
+      "tech": [
+        "dews"
+      ],
+      "pf": "P6",
+      "desk": "APAC",
+      "url": "https://www.scmp.com/news/china/military/article/3357667/china-showcases-portable-laser-weapons-single-soldier-shoot-down-drones",
+      "f": "verified",
+      "note": "Hong Kong outlet reporting vendor claims from a Beijing exhibition — corroborate performance.",
+      "serial": "II-4",
       "saved": false,
       "flagged": false
     },
@@ -1040,6 +1189,59 @@ window.SIO_DATA = {
       "url": "https://defensescoop.com/2026/04/24/golden-dome-space-based-interceptor-missile-defense-contractors/",
       "f": "verified",
       "serial": null,
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-03-26",
+      "out": "Global Times",
+      "ttl": "Two new types of Chinese anti-drone laser weapons revealed in official media report",
+      "sum": "Chinese state media revealed two new anti-drone laser systems, with an expert claiming China's laser-based counter-drone technologies are at the global forefront.",
+      "tech": [
+        "dews"
+      ],
+      "pf": "P6",
+      "desk": "APAC",
+      "url": "https://www.globaltimes.cn/page/202603/1357573.shtml",
+      "f": "verified",
+      "note": "Chinese state media (Global Times) — treat as intent signalling; corroborated by Western trade press.",
+      "serial": "II-4",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-03-25",
+      "out": "Global Times",
+      "ttl": "China unveils full-process demonstration of Atlas drone swarm operations system",
+      "sum": "State media presented CETC's 'Atlas' system linking target identification, launcher activation, drone deployment and precision strike into one chain — launching up to ~96 drones in minutes under a single operator, with autonomous task division.",
+      "tech": [
+        "ai",
+        "robo"
+      ],
+      "pf": "P2",
+      "desk": "APAC",
+      "url": "https://www.globaltimes.cn/page/202603/1357519.shtml",
+      "f": "verified",
+      "note": "Chinese state media (Global Times); corroborated by Army Recognition and SCMP.",
+      "serial": "I-6",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-01-22",
+      "out": "South China Morning Post",
+      "ttl": "1 soldier, 200 drones: China showcases rapid launch and agility in swarm warfare tactics",
+      "sum": "A PLA/CCTV demonstration showed ~200 jam-resistant drones controlled by a single soldier, using an intelligent algorithm that lets individual units keep cooperating autonomously after losing the operator link.",
+      "tech": [
+        "ai",
+        "robo"
+      ],
+      "pf": "P2",
+      "desk": "APAC",
+      "url": "https://www.scmp.com/news/china/military/article/3340972/1-soldier-200-drones-china-showcases-rapid-launch-and-agility-swarm-warfare-tactics",
+      "f": "verified",
+      "note": "Hong Kong outlet reporting a PLA/CCTV demonstration; state/vendor claims — corroborate.",
+      "serial": "I-6",
       "saved": false,
       "flagged": false
     }
