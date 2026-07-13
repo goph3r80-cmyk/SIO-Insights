@@ -1,7 +1,7 @@
 /* SIO Insights edition data — generated. Replace to refresh. */
 window.SIO_DATA = {
   "edition": "Jul 2026",
-  "feedAsOf": "2026-07-11",
+  "feedAsOf": "2026-07-12",
   "serials": [
     {
       "id": "I-1",
@@ -18,7 +18,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Apr 2026",
-      "age": 7,
+      "age": 8,
       "dlabel": "Concept-design sprint",
       "ao": "SIO Concepts cell",
       "suspense": "By 28 Jul",
@@ -59,7 +59,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 3,
+      "age": 4,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -92,7 +92,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 3,
+      "age": 4,
       "dlabel": "",
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
@@ -141,7 +141,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -196,7 +196,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 1,
+      "age": 2,
       "dlabel": "",
       "ao": "SIO + ASB3 net-assessment",
       "suspense": "Next edition",
@@ -229,7 +229,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 1,
+      "age": 2,
       "dlabel": "",
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
@@ -272,16 +272,17 @@ window.SIO_DATA = {
       "dom": "solution",
       "owner": "ASB2",
       "desk": "US",
+      "desk2": "EU",
       "verdict": "gap",
       "priority": "decision",
       "status": "open",
       "raised": "Apr 2026",
-      "age": 7,
+      "age": 8,
       "dlabel": "Spectrum-survivable C2",
       "ao": "ASB2 Sense-Strike",
       "suspense": "+30 days",
       "decision": "Prioritise spectrum-survivable, low-signature C2 as a CapDev line.",
-      "signal": "Spectrum and command-post survivability remain a live contest — electronic warfare described as an hourly fight with fixed assets treated as liabilities — and it is accelerating: AI-enabled EW (automated signal analysis, adaptive jamming) is maturing fast while peer forces routinely jam and spoof GNSS.",
+      "signal": "Spectrum and command-post survivability remain a live contest — electronic warfare described as an hourly fight with fixed assets treated as liabilities — and it is accelerating: AI-enabled EW (automated signal analysis, adaptive jamming) is maturing fast while peer forces routinely jam and spoof GNSS. Russia has now fielded a dedicated counter-Starlink system (Volna Kupol Garant) able to suppress satellite-comms links across ~20 sq km, underscoring that comms-dependent C2 and uncrewed links are themselves now a contested spectrum target, not just navigation.",
       "sowhat": "An Intelligent Cloud-Based C2 gap: resilient command that survives the spectrum fight. The EMS contest sits in the DE/EMS/Advanced-Materials priority, and the capability must be developed before it is needed.",
       "action": "ASB2 to prioritise spectrum-survivable, low-signature C2 as a capability-development line, accounting for AI-accelerated EW.",
       "src": [
@@ -298,6 +299,14 @@ window.SIO_DATA = {
           "ttl": "The future of war arrived (EW as an hourly contest)",
           "url": "https://defensescoop.com/2026/05/11/the-future-of-war-arrived-we-arent-ready/",
           "f": "verified"
+        },
+        {
+          "out": "Militarnyi",
+          "date": "8 Jul 2026",
+          "ttl": "Russia deploys new Volna Kupol Garant EW system to jam Starlink",
+          "url": "https://militarnyi.com/en/news/russia-deploys-new-volna-kupol-garant-ew-systems-to-jam-starlink-ukraine-already-destroying-them/",
+          "f": "verified",
+          "note": "Citing Reuters reporting; Ukrainian MoD adviser Serhii Beskrestnov cited on system parameters."
         }
       ]
     },
@@ -310,16 +319,17 @@ window.SIO_DATA = {
       "dom": "solution",
       "owner": "ASB2",
       "desk": "US",
+      "desk2": "EU",
       "verdict": "emerging",
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 3,
+      "age": 4,
       "dlabel": "Directed-energy counter-swarm",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Aug",
       "decision": "Assess directed-energy (laser + high-power microwave) counter-swarm for base and manoeuvre air defence.",
-      "signal": "Directed energy is moving from trials toward fielding — a US pilot is placing high-energy lasers and high-power microwave systems at five bases for counter-drone defence, alongside vehicle-mounted DE M-SHORAD and container-based high-power-microwave systems that disable drone clusters per pulse at near-zero cost per shot.",
+      "signal": "Directed energy is moving from trials toward fielding on multiple fronts at once. In the US, the Pentagon's Joint Laser Weapon System program awarded Lockheed Martin Aculight and nLIGHT Defense OTAs (initial $86M, ceiling $847M) to turn 150kW counter-drone laser prototypes into fielded systems scaling to 300-500kW for cruise-missile defense, while Aurelius Systems and American Rheinmetall are integrating an autonomous laser (Archimedes) onto the Ox robotic combat vehicle bid for the Army's GOAT program. In Germany, BAAINBw commissioned Rheinmetall and MBDA to develop a high-energy naval laser for the German Navy, building on a demonstrator that logged 28,000nm aboard the frigate Sachsen, targeted for service by 2029 — alongside the existing US base-defense pilot and vehicle-mounted DE M-SHORAD.",
       "sowhat": "An All-Echelon Sense-and-Strike input and a magazine-depth answer to mass drone attack: ammunition-free defeat changes the attrition economics of air defence. The gap is integration — directed energy only works layered with sensing, C2 and kinetic effectors.",
       "action": "ASB2 to assess a layered directed-energy counter-swarm capability — laser plus high-power microwave — with integration and adoption criteria for base and manoeuvre air defence.",
       "src": [
@@ -335,6 +345,27 @@ window.SIO_DATA = {
           "date": "6 May 2026",
           "ttl": "US Army accelerates laser and microwave weapons to defeat mass drone attacks",
           "url": "https://www.armyrecognition.com/news/army-news/2026/us-accelerates-laser-and-microwave-weapons-deployment-to-counter-drone-swarms",
+          "f": "verified"
+        },
+        {
+          "out": "DefenseScoop",
+          "date": "9 Jul 2026",
+          "ttl": "Pentagon awards deals for laser weapons that could shoot down drone swarms",
+          "url": "https://defensescoop.com/2026/07/09/pentagon-joint-laser-weapon-system-defeat-drone-swarms/",
+          "f": "verified"
+        },
+        {
+          "out": "Defense News",
+          "date": "10 Jul 2026",
+          "ttl": "Rheinmetall, MBDA to develop laser weapon for German Navy",
+          "url": "https://www.defensenews.com/global/europe/2026/07/10/rheinmetall-mbda-to-develop-laser-weapon-for-german-navy/",
+          "f": "verified"
+        },
+        {
+          "out": "BusinessWire",
+          "date": "7 Jul 2026",
+          "ttl": "Aurelius Systems and American Rheinmetall Partner to Advance Autonomous Counter-Drone Defense",
+          "url": "https://www.businesswire.com/news/home/20260707583744/en/Aurelius-Systems-and-American-Rheinmetall-Partner-to-Advance-Autonomous-Counter-Drone-Defense",
           "f": "verified"
         }
       ]
@@ -354,7 +385,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 3,
+      "age": 4,
       "dlabel": "",
       "ao": "CESS + ASB1",
       "suspense": "+90 days",
@@ -394,7 +425,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 1,
+      "age": 2,
       "dlabel": "",
       "ao": "ASB2 + SIO net-assessment",
       "suspense": "Next edition",
@@ -444,7 +475,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 3,
+      "age": 4,
       "dlabel": "Autonomous C-UAS at scale",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 20 Aug",
@@ -512,7 +543,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jun 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "Common data layer to delivery",
       "ao": "ADO",
       "suspense": "By 31 Jul",
@@ -558,7 +589,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "Autonomous UGV to production",
       "ao": "ASB1 Manoeuvre Concepts / AOTO",
       "suspense": "By 15 Aug",
@@ -598,7 +629,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 3,
+      "age": 4,
       "dlabel": "",
       "ao": "ASB3 + SIO",
       "suspense": "Next edition",
@@ -630,12 +661,12 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 3,
+      "age": 4,
       "dlabel": "",
       "ao": "CESS Sustainment Plans",
       "suspense": "+90 days",
       "decision": "Awareness; add UGV-enabled air defence and standoff logistics to the sustainment watching brief.",
-      "signal": "Ukraine is expanding armed and logistics UGVs — the Protector is fielded for high-risk frontline logistics and is being turned into a mobile launch platform for interceptor drones and a Tryzub laser (FPV intercept to ~900m, long-range Shahed to ~5km), with a stated goal of 25,000 ground robotic systems by mid-2026.",
+      "signal": "Ukraine is expanding armed and logistics UGVs — the Protector is fielded for high-risk frontline logistics and is being turned into a mobile launch platform for interceptor drones and a Tryzub laser (FPV intercept to ~900m, long-range Shahed to ~5km), with a stated goal of 25,000 ground robotic systems by mid-2026. Brave1 has now opened a grant competition for humanoid combat robots, aiming to robotise as much of the first line of contact as possible and further reduce personnel risk — a new ground-robot form factor added to the existing wheeled/tracked UGV line.",
       "sowhat": "A Multidimensional Force Sustenance and air-defence input: uncrewed systems now carry logistics, casualty-evacuation and short-range air defence together, at industrial scale. The design lesson is multi-role, attritable platforms.",
       "action": "CESS to extend the UGV watching brief to armed and air-defence roles and to design-for-scale and attrition lessons from the Ukrainian model.",
       "src": [
@@ -651,6 +682,13 @@ window.SIO_DATA = {
           "date": "24 Jun 2026",
           "ttl": "Ukraine plans 25,000 ground robotic systems by mid-2026",
           "url": "https://united24media.com/war-in-ukraine/how-ukraine-builds-its-ground-robots-for-the-kill-zone-18666",
+          "f": "verified"
+        },
+        {
+          "out": "The Defense Post",
+          "date": "3 Jul 2026",
+          "ttl": "The next soldier? Ukraine begins hunt for more humanoid combat robots",
+          "url": "https://thedefensepost.com/2026/07/03/ukraine-humanoid-combat-robots/",
           "f": "verified"
         }
       ]
@@ -670,7 +708,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 1,
+      "age": 2,
       "dlabel": "",
       "ao": "ASB3 + SIO",
       "suspense": "Next edition",
@@ -706,6 +744,22 @@ window.SIO_DATA = {
   "feed": [
     {
       "date": "2026-07-10",
+      "out": "Defense News",
+      "ttl": "Rheinmetall, MBDA to develop laser weapon for German Navy",
+      "sum": "BAAINBw commissioned a Rheinmetall-MBDA joint venture (ARGE HEL) to develop a high-energy naval laser weapon system, building on a demonstrator that logged 28,000nm aboard the frigate Sachsen; the system is slated for service by 2029.",
+      "tech": [
+        "dews"
+      ],
+      "pf": "P6",
+      "desk": "EU",
+      "url": "https://www.defensenews.com/global/europe/2026/07/10/rheinmetall-mbda-to-develop-laser-weapon-for-german-navy/",
+      "f": "verified",
+      "serial": "II-2",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-10",
       "out": "The Defense Post",
       "ttl": "UK-US team pulls off 'world's first' airdrop of USV from A400M aircraft",
       "sum": "Kraken Technology Group and Capewell, supported by the Royal Navy under Project Beehive, completed the world's first extracted-load airdrop of an uncrewed surface vessel — a K3 SCOUT USV parachuted from an A400M at 1,300 ft into up to Sea State 4, ready for immediate operations.",
@@ -717,6 +771,22 @@ window.SIO_DATA = {
       "url": "https://thedefensepost.com/2026/07/10/uk-us-airdrop-usv-aircraft/",
       "f": "verified",
       "serial": "III-6",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-09",
+      "out": "DefenseScoop",
+      "ttl": "Pentagon awards deals for laser weapons that could shoot down drone swarms",
+      "sum": "The Joint Laser Weapon System program awarded Lockheed Martin Aculight and nLIGHT Defense OTAs (initial $86M, ceiling $847M) to mature 150kW counter-drone laser prototypes and scale toward 300-500kW systems for cruise-missile defense.",
+      "tech": [
+        "dews"
+      ],
+      "pf": "P6",
+      "desk": "US",
+      "url": "https://defensescoop.com/2026/07/09/pentagon-joint-laser-weapon-system-defeat-drone-swarms/",
+      "f": "verified",
+      "serial": "II-2",
       "saved": false,
       "flagged": false
     },
@@ -738,6 +808,23 @@ window.SIO_DATA = {
     },
     {
       "date": "2026-07-08",
+      "out": "Militarnyi",
+      "ttl": "Russia deploys new Volna Kupol Garant EW systems to jam Starlink",
+      "sum": "Russia has fielded roughly 10 Volna Kupol Garant electronic-warfare complexes able to suppress Starlink satellite-comms links across ~20 sq km each; Ukrainian forces have already destroyed at least two of the $1.5M systems.",
+      "tech": [
+        "dews"
+      ],
+      "pf": "P6",
+      "desk": "EU",
+      "url": "https://militarnyi.com/en/news/russia-deploys-new-volna-kupol-garant-ew-systems-to-jam-starlink-ukraine-already-destroying-them/",
+      "f": "verified",
+      "note": "Citing Reuters reporting.",
+      "serial": "II-1",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-08",
       "out": "JNS",
       "ttl": "Zamir: IDF to finalize new AI, drone, robotics unit structure",
       "sum": "IDF Chief of Staff Lt. Gen. Eyal Zamir said the military will soon finalise a new General Staff structure dedicated to robotics, drones and AI, setting a goal for the IDF to be a global leader in unmanned systems in both defence and offence.",
@@ -751,6 +838,23 @@ window.SIO_DATA = {
       "url": "https://www.jns.org/news/israel-news/zamir-idf-to-finalize-new-ai-drone-robotics-unit-structure",
       "f": "verified",
       "serial": "I-5",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-07",
+      "out": "BusinessWire",
+      "ttl": "Aurelius Systems and American Rheinmetall Partner to Advance Autonomous Counter-Drone Defense",
+      "sum": "Aurelius Systems is integrating its autonomous Archimedes directed-energy counter-drone system onto American Rheinmetall's Ox unmanned ground vehicle, the company's bid for the US Army's Ground Optionally Autonomous Transport (GOAT) program.",
+      "tech": [
+        "dews",
+        "robo"
+      ],
+      "pf": "P6",
+      "desk": "US",
+      "url": "https://www.businesswire.com/news/home/20260707583744/en/Aurelius-Systems-and-American-Rheinmetall-Partner-to-Advance-Autonomous-Counter-Drone-Defense",
+      "f": "verified",
+      "serial": "II-2",
       "saved": false,
       "flagged": false
     },
@@ -870,6 +974,22 @@ window.SIO_DATA = {
       "f": "paywall",
       "note": "Feature analysis behind Bloomberg paywall; headline/framing captured via secondary reporting only.",
       "serial": "I-1",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-03",
+      "out": "The Defense Post",
+      "ttl": "The next soldier? Ukraine begins hunt for more humanoid combat robots",
+      "sum": "Brave1 launched a grant competition for humanoid combat robots for Ukraine's Defense Forces, aiming to robotise as much of the first line of contact as possible and reduce risk to personnel.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P7",
+      "desk": "EU",
+      "url": "https://thedefensepost.com/2026/07/03/ukraine-humanoid-combat-robots/",
+      "f": "verified",
+      "serial": "III-5",
       "saved": false,
       "flagged": false
     },
