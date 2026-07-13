@@ -46,7 +46,7 @@ Carry the trawler rows through, adding the three linkage/UI fields:
 | `ttl` | string | Headline |
 | `sum` | string | 1–2 sentence factual summary |
 | `tech` | string[] | `ai` / `data` / `robo` / `dews` |
-| `pf` | string | Portfolio code (`P2`…`P9`, or `X`) |
+| `pf` | string | Portfolio code (`P1`…`P9`, or `X`) — see the Capability Development Portfolio table in TRAWLER-PROMPT.md |
 | `desk` | string | `US` / `EU` / `APAC` / `ME` |
 | `url` | string | `https://…` |
 | `f` | string | `verified` / `paywall` / `unverified` |
@@ -67,7 +67,7 @@ capability, or event) and write one serial per cluster.
 | Field | Type | Notes |
 |-------|------|-------|
 | `id` | string | `<section>-<n>`: Roman-numeral section + index, e.g. `I-1`, `II-3`, `III-2`. See Sections below. |
-| `pf` | string | Portfolio code — reuse existing (`P2`…`P9`, `X`) |
+| `pf` | string | Portfolio code — assign by operational outcome, not technology (`P1`…`P9`, `X`) — see TRAWLER-PROMPT.md |
 | `tech` | string[] | Capability tags for the cluster |
 | `dom` | string | Lane: `solution` (capability solution) / `safety` (protection/sustainment) / `te` (test & evaluation) |
 | `owner` | string | Owning branch — reuse existing codes: `SIO`, `ASB1`, `ASB2`, `ASB3`, `CESS`, `AOTO`, `ADO` |

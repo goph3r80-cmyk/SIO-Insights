@@ -215,10 +215,34 @@ The Generator adds `serial`, `saved`, and `flagged`; you do **not** set those.
 
 ### `pf` — portfolio codes
 
-Reuse the codes already present in `data.js` (e.g. `P2`, `P4`, `P5`, `P6`,
-`P7`, `P9`, and `X` for cross-cutting/overarching signals). Assign the closest
-existing portfolio; if a story genuinely fits none, tag `X` and flag it in
-Signals to Watch rather than inventing a new code.
+The Army's nine Capability Development portfolios are the principal
+organising framework for Army 2040 capability development. They group
+capability needs by operational outcome rather than by formation, platform or
+individual project — assign each story to the portfolio whose operational
+outcome it most directly serves. Use `X` only for genuinely cross-cutting or
+overarching signals that don't belong to one portfolio; flag it in Signals to
+Watch rather than inventing a new code.
+
+| Code | Acronym | Capability Development Portfolio | Examples of technologies |
+|------|---------|-----------------------------------|---------------------------|
+| `P1` | FSNK | Full-Spectrum Non-Kinetic Capabilities | Electronic warfare systems; cyber tools; signals intelligence; spectrum sensing; information-effects platforms; AI-enabled influence analysis; deception technologies; directed-energy systems |
+| `P2` | GZC | Grey-Zone Capabilities | Open-source intelligence platforms; social-media analytics; anomaly detection; persistent surveillance; digital forensics; attribution tools; geospatial intelligence; inter-agency information-sharing systems |
+| `P3` | ISCS | Integrated Soldier Combat System | Soldier-worn sensors; augmented-reality displays; tactical radios; body-worn computing; integrated weapon sights; exoskeletons; wearable health monitoring; advanced body armour; portable power systems |
+| `P4` | IFMM | Intelligent Future Mounted Manoeuvre | Unmanned ground vehicles; optionally crewed platforms; autonomous navigation; active protection systems; vehicle-mounted drones; robotic wingmen; AI-enabled crew decision support; open vehicle architectures |
+| `P5` | AESS | All-Echelon Sensing and Strike | Unmanned aerial systems; loitering munitions; counter-UAS systems; ground surveillance radar; acoustic sensing; computer vision; sensor fusion; precision fires; automated target recognition; sensor-to-shooter networks |
+| `P6` | IC2 | Intelligent Cloud-Based Command and Control | Cloud-edge computing; tactical data platforms; AI decision-support tools; common operating pictures; data fabrics; battle-management systems; software-defined networks; digital command posts; zero-trust architecture; resilient communications |
+| `P7` | MFS | Multidimensional Force Sustenance | Predictive maintenance; autonomous resupply; logistics optimisation; digital inventory systems; condition-based monitoring; additive manufacturing; robotic warehousing; energy-management systems; supply-chain digital twins |
+| `P8` | MFP | Multidimensional Force Projection | Autonomous convoy systems; heavy-lift drones; unmanned bridging systems; robotic breaching; deployable infrastructure; smart mobility planning; air and sea lift optimisation; rapid route-clearance systems |
+| `P9` | ITE | Immersive Training Environment | Virtual and augmented reality; synthetic training environments; digital twins; constructive simulation; AI-generated scenarios; instrumented training systems; wearable tracking; after-action analytics; distributed mission training |
+| `X` | — | Cross-cutting / overarching | Signals that span multiple portfolios or shape the portfolio structure itself (e.g. force-design, acquisition-governance, or concept-shaping developments) |
+
+Each portfolio defines the future operating concept and required operational
+outcomes for its area; identifies capability gaps across doctrine,
+organisation, training, technology and people; and provides an enduring owner
+for capability coherence. These are not nine acquisition programmes or
+platform categories — a single technology (AI, autonomy, robotics, data) can
+and does apply across several portfolios, so tag by operational outcome, not
+by technology alone (`tech` already captures the technology dimension).
 
 ### `f` — flags
 
