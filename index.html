@@ -335,6 +335,18 @@
     '<div class="empty">data.js not found — serve this page from the repo root so <code>./data.js</code> loads.</div>'; return; }
 
   var TECH = { ai:'AI', data:'Data', robo:'Robotics', dews:'DE/EMS' };
+  var PF = {
+    P1:'Full-Spectrum Non-Kinetic Capabilities',
+    P2:'Grey-Zone Capabilities',
+    P3:'Integrated Soldier Combat System',
+    P4:'Intelligent Future Mounted Manoeuvre',
+    P5:'All-Echelon Sensing and Strike',
+    P6:'Intelligent Cloud-Based Command and Control',
+    P7:'Multidimensional Force Sustenance',
+    P8:'Multidimensional Force Projection',
+    P9:'Immersive Training Environment',
+    X:'Cross-cutting / overarching'
+  };
   var DESKS = ['US','EU','APAC','ME'];
   var VERDICTS = ['gap','emerging','proven'];
   var SECTIONS = {
@@ -497,7 +509,7 @@
       + '<span class="chip prio-'+s.priority+'">'+s.priority.toUpperCase()+'</span>'
       + (s.status==='actioned' ? '<span class="chip status">actioned</span>' : '')
       + '<span class="grow"></span>'
-      + '<span class="pf">'+esc(s.pf)+'</span>'
+      + '<span class="pf" title="'+esc(PF[s.pf]||s.pf)+'">'+esc(s.pf)+'</span>'
       + serialDesks(s).map(function(d){return '<span class="chip desk">'+esc(d)+'</span>';}).join('')
       + techChips(s.tech)
       + '</div>';
