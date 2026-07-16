@@ -174,6 +174,7 @@
   .meta { display:flex; flex-wrap:wrap; gap:6px 18px; margin-top:12px; padding-top:11px; border-top:1px dashed var(--hair);
     font-size:12px; color:var(--muted); }
   .meta b { color:var(--ink); font-weight:600; }
+  .ownercode { font-family:ui-monospace,Menlo,monospace; font-size:10.5px; color:var(--faint); font-weight:500; }
   .meta .k { color:var(--faint); }
 
   details.src { margin-top:10px; }
@@ -235,14 +236,19 @@
   .brief-h h2 { font-size:14px; margin:0; font-weight:650; letter-spacing:-.005em; }
   .brief-eyebrow { font-size:10px; text-transform:uppercase; letter-spacing:.11em; color:var(--accent-ink); background:var(--accent); padding:2px 7px; border-radius:5px; font-weight:700; }
   .brief-sub { font-size:11.5px; color:var(--faint); }
-  .lead { display:block; width:100%; text-align:left; cursor:pointer; background:var(--surface-2); border:1px solid var(--hair); border-left:4px solid var(--vc,var(--accent)); border-radius:8px; padding:12px 13px; font:inherit; color:inherit; margin-bottom:8px; }
+  .lead { display:block; width:100%; background:var(--surface-2); border:1px solid var(--hair); border-left:4px solid var(--vc,var(--accent)); border-radius:8px; padding:12px 13px; margin-bottom:8px; }
   .lead:hover { border-color:var(--faint); border-left-color:var(--vc,var(--accent)); }
   .lead.v-gap{--vc:var(--v-gap);} .lead.v-emerging{--vc:var(--v-emerging);} .lead.v-proven{--vc:var(--v-proven);}
+  .lead-hit { all:unset; display:block; width:100%; box-sizing:border-box; text-align:left; cursor:pointer; font:inherit; color:inherit; }
   .lead-top { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:6px; }
   .lead-decision { font-size:15px; line-height:1.35; font-weight:600; letter-spacing:-.01em; text-wrap:pretty; }
   .lead-signal { font-size:12.5px; color:var(--muted); margin-top:5px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
   .lead-meta { font-size:11.5px; color:var(--muted); margin-top:8px; }
   .lead-meta .k { color:var(--faint); }
+  .lead-video { margin-top:11px; }
+  .lead-video .frame { position:relative; width:100%; padding-top:56.25%; border-radius:8px; overflow:hidden; background:#000; border:1px solid var(--hair); }
+  .lead-video .frame iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .lead-video .vcap { margin-top:6px; font-size:11px; color:var(--faint); line-height:1.4; }
   .brief-list { list-style:none; margin:0; padding:0; }
   .hl { display:flex; align-items:center; gap:9px; width:100%; text-align:left; cursor:pointer; background:transparent; border:0; border-top:1px solid var(--hair); padding:9px 2px; font:inherit; color:inherit; }
   .hl:hover .hl-title { color:var(--accent); }
@@ -357,6 +363,21 @@
     P9:'Immersive Training Environment',
     X:'Cross-cutting / overarching'
   };
+  var OWNER = {
+    SIO:  { code:'SIO', label:'Office-level coordination & net-assessment' },
+    ASB1: { code:'A1',  label:'Manoeuvre concepts' },
+    ASB2: { code:'A2',  label:'Sense-strike — precision fires, counter-UAS, directed energy' },
+    ASB3: { code:'A3',  label:'PSO, HADR, CT, CUAS, GZ — peace support, humanitarian assistance/disaster relief, counter-terrorism, counter-UAS, grey-zone' },
+    CESS: { code:'CS',  label:'Sustainment planning' },
+    AOTO: { code:'OTO', label:'Acquisition / test-to-operations transition' },
+    ADO:  { code:'D4',  label:'Army Data Office — data integration & cloud, AI, digitalisation front-end planning' }
+  };
+  function ownerTag(o) {
+    var m = OWNER[o];
+    if (!m) return esc(o);
+    var codeTag = m.code !== o ? ' <span class="ownercode">'+esc(m.code)+'</span>' : '';
+    return '<span title="'+esc(m.label)+'">'+esc(o)+codeTag+'</span>';
+  }
   var DESKS = ['US','EU','APAC','ME'];
   var VERDICTS = ['gap','emerging','proven'];
   var SECTIONS = {
@@ -466,20 +487,37 @@
   }
   function miniTags(arr){ return (arr||[]).map(function(t){ return '<span class="minitag mt-'+t+'" title="'+(TECH[t]||t)+'"></span>'; }).join(''); }
 
+  function ytId(url) {
+    var m = /(?:youtu\.be\/|youtube(?:-nocookie)?\.com\/(?:watch\?v=|embed\/|shorts\/))([A-Za-z0-9_-]{6,})/.exec(url || '');
+    return m ? m[1] : null;
+  }
+  function videoEmbed(media) {
+    var yt = (media || []).find(function(m){ return m.platform === 'youtube'; });
+    if (!yt) return '';
+    var id = ytId(yt.url);
+    if (!id) return '';
+    return '<div class="lead-video"><div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/'+id+'" '
+      + 'title="'+esc(yt.ttl)+'" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" '
+      + 'referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>'
+      + '<div class="vcap">▸ '+esc(yt.ttl)+'</div></div>';
+  }
   function leadCard(s){
-    return '<button type="button" class="lead v-'+s.verdict+'" data-goto="'+esc(s.id)+'">'
-      + '<div class="lead-top"><span class="id">'+esc(s.id)+'</span>'
-      +   '<span class="chip verdict">'+esc(s.verdict)+'</span>'
-      +   '<span class="chip prio-'+s.priority+'">'+s.priority.toUpperCase()+'</span>'
-      +   (serialIsNew(s) ? '<span class="newpill">NEW</span>' : '')
-      +   '<span class="grow"></span>'
-      +   serialDesks(s).map(function(d){return '<span class="chip desk">'+esc(d)+'</span>';}).join('')
-      + '</div>'
-      + (s.dlabel ? '<div class="dlabel">'+esc(s.dlabel)+'</div>' : '')
-      + '<div class="lead-decision">'+esc(s.decision)+'</div>'
-      + '<div class="lead-signal">'+esc(s.signal)+'</div>'
-      + '<div class="lead-meta"><span class="k">Suspense</span> <b>'+esc(s.suspense)+'</b> · <span class="k">Owner</span> '+esc(s.owner)+'</div>'
-      + '</button>';
+    return '<div class="lead v-'+s.verdict+'">'
+      + '<button type="button" class="lead-hit" data-goto="'+esc(s.id)+'">'
+      +   '<div class="lead-top"><span class="id">'+esc(s.id)+'</span>'
+      +     '<span class="chip verdict">'+esc(s.verdict)+'</span>'
+      +     '<span class="chip prio-'+s.priority+'">'+s.priority.toUpperCase()+'</span>'
+      +     (serialIsNew(s) ? '<span class="newpill">NEW</span>' : '')
+      +     '<span class="grow"></span>'
+      +     serialDesks(s).map(function(d){return '<span class="chip desk">'+esc(d)+'</span>';}).join('')
+      +   '</div>'
+      +   (s.dlabel ? '<div class="dlabel">'+esc(s.dlabel)+'</div>' : '')
+      +   '<div class="lead-decision">'+esc(s.decision)+'</div>'
+      +   '<div class="lead-signal">'+esc(s.signal)+'</div>'
+      +   '<div class="lead-meta"><span class="k">Suspense</span> <b>'+esc(s.suspense)+'</b> · <span class="k">Owner</span> '+ownerTag(s.owner)+'</div>'
+      + '</button>'
+      + videoEmbed(s.media)
+      + '</div>';
   }
   function hlRow(s){
     return '<li><button type="button" class="hl v-'+s.verdict+'" data-goto="'+esc(s.id)+'">'
@@ -532,7 +570,7 @@
       +   '<div class="field action"><div class="k">Action</div><div class="v">'+esc(s.action)+'</div></div>'
       + '</div>'
       + '<div class="meta">'
-      +   '<span><span class="k">Owner</span> <b>'+esc(s.owner)+(s.owner2?' + '+esc(s.owner2):'')+'</b></span>'
+      +   '<span><span class="k">Owner</span> <b>'+ownerTag(s.owner)+(s.owner2?' + '+ownerTag(s.owner2):'')+'</b></span>'
       +   '<span><span class="k">AO</span> '+esc(s.ao)+'</span>'
       +   '<span><span class="k">Suspense</span> <b>'+esc(s.suspense)+'</b></span>'
       +   '<span><span class="k">Raised</span> '+esc(s.raised)+' <span class="k">· age</span> '+s.age+'</span>'
