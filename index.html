@@ -158,6 +158,7 @@
   .chip.tech.t-ai { --c:var(--tech-ai); } .chip.tech.t-data { --c:var(--tech-data); }
   .chip.tech.t-robo { --c:var(--tech-robo); } .chip.tech.t-dews { --c:var(--tech-dews); }
   .chip.desk { background:var(--surface-2); color:var(--muted); border-color:var(--hair); font-variant:small-caps; letter-spacing:.02em; }
+  .chip.media { background:var(--surface-2); color:var(--muted); border-color:var(--hair); text-transform:capitalize; }
   .grow { flex:1; }
 
   .card-body { padding:11px 16px 15px; }
@@ -537,8 +538,21 @@
       +   '<span><span class="k">Raised</span> '+esc(s.raised)+' <span class="k">· age</span> '+s.age+'</span>'
       + '</div>'
       + srcBlock(s.src)
+      + mediaBlock(s.media)
       + '</div>';
     return '<article id="serial-'+esc(s.id)+'" class="card v-'+s.verdict+'">'+top+body+'</article>';
+  }
+  function mediaBlock(media) {
+    if (!media || !media.length) return '';
+    var items = media.map(function(m){
+      return '<li><span class="chip media">'+esc(m.platform)+'</span>'
+        + '<span><a href="'+esc(m.url)+'" target="_blank" rel="noopener">'+esc(m.ttl)+'</a> '
+        + '<span class="sd">'+esc(m.date)+'</span>'
+        + (m.note ? '<br><span class="note">'+esc(m.note)+'</span>' : '')
+        + '</span></li>';
+    }).join('');
+    return '<details class="src"><summary>▸ <span class="tw">'+media.length+'</span> video'+(media.length>1?'s':'')+'</summary>'
+      + '<ul class="srclist">'+items+'</ul></details>';
   }
   function srcBlock(src) {
     if (!src || !src.length) return '';

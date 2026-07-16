@@ -276,6 +276,22 @@ window.SIO_DATA = {
           "f": "verified",
           "note": "Chinese state media — treat force-posture framing as intent signalling; corroborated by TASS and Defence Security Asia, both confirming the unmanned-systems/counter-drone emphasis."
         }
+      ],
+      "media": [
+        {
+          "platform": "youtube",
+          "ttl": "China Unveils Atlas Drone Swarm System | Next-Gen Military Technology | WION",
+          "url": "https://www.youtube.com/watch?v=OND7dcbKTVA",
+          "date": "27 Mar 2026",
+          "note": "Third-party news coverage (WION) of the CETC demonstration, not official PLA footage; upload date approximate."
+        },
+        {
+          "platform": "youtube",
+          "ttl": "Joint Sea-2026: China And Russia Flex Maritime Muscle In High-Stakes Naval Exercise",
+          "url": "https://www.youtube.com/watch?v=GKg0zxeAbbI",
+          "date": "13 Jul 2026",
+          "note": "Independent-outlet coverage of the exercise; underlying footage traces to CGTN/Xinhua — state-linked, treat as intent signalling."
+        }
       ]
     },
     {
@@ -597,6 +613,15 @@ window.SIO_DATA = {
           "f": "verified",
           "note": "Corroborated by a parallel same-week Terra Drone ATLA interceptor-drone selection and UASweekly coverage."
         }
+      ],
+      "media": [
+        {
+          "platform": "youtube",
+          "ttl": "Griffen | The FIRST Ukrainian Jet-Powered Interceptor",
+          "url": "https://www.youtube.com/watch?v=8rtSdMRigjY",
+          "date": "7 Jul 2026",
+          "note": "Upload date approximate, matched to the 7 Jul first-kill event; Firebolt Engineering-linked footage."
+        }
       ]
     },
     {
@@ -876,6 +901,15 @@ window.SIO_DATA = {
           "url": "https://news.usni.org/2026/07/13/video-3-lethal-u-s-drones-attack-iranian-sub-port-facility",
           "f": "verified",
           "note": "Corroborated by Naval News, TWZ, Stars and Stripes, Military Times and The Aviationist."
+        }
+      ],
+      "media": [
+        {
+          "platform": "youtube",
+          "ttl": "Iran War: CENTCOM Video Shows US' 1st Use Of Sea Drones In Combat Ops Included In Attacks",
+          "url": "https://www.youtube.com/watch?v=KRhrz2SJiTI",
+          "date": "13 Jul 2026",
+          "note": "Repost of official CENTCOM-released strike footage; also mirrored as YouTube Shorts (e.g. youtube.com/shorts/OcfuUc5MfeY)."
         }
       ]
     },

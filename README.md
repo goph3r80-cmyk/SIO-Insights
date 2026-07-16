@@ -68,7 +68,7 @@ window.SIO_DATA = {
   "serials": [
     // Synthesised SIO products: id, pf, tech[], dom, owner, desk, verdict,
     // priority, status, raised, age, dlabel, ao, suspense, decision, signal,
-    // sowhat, action, src[]
+    // sowhat, action, src[], media[] (optional — verified video coverage)
   ],
   "feed": [
     // Raw trawler stream, one per story: date, out, ttl, sum, tech[], pf,
