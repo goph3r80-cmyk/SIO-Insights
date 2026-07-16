@@ -73,6 +73,11 @@
   }
   .brand h1 { font-size:17px; margin:0; font-weight:650; letter-spacing:-.01em; }
   .brand .ed { color:var(--muted); font-size:13px; }
+  .tabs { display:flex; gap:4px; }
+  .tabs a { text-decoration:none; font-size:13px; padding:6px 12px; border-radius:8px; color:var(--muted);
+    border:1px solid transparent; }
+  .tabs a:hover { color:var(--ink); }
+  .tabs a.active { color:var(--ink); background:var(--surface-2); border-color:var(--hair); font-weight:600; }
   .mast-spacer { flex:1 1 auto; }
   .themebtn {
     border:1px solid var(--hair); background:var(--surface); color:var(--muted);
@@ -273,6 +278,10 @@
       <h1>SIO Insights</h1>
       <span class="ed" id="ed"></span>
     </div>
+    <nav class="tabs">
+      <a href="./index.html" class="active" aria-current="page">Dashboard</a>
+      <a href="./explainer.html">How it works</a>
+    </nav>
     <span class="mast-spacer"></span>
     <button class="themebtn" id="theme" title="Toggle light / dark" aria-label="Toggle theme">◐</button>
   </div>
