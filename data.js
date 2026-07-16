@@ -1,7 +1,7 @@
 /* SIO Insights edition data — generated. Replace to refresh. */
 window.SIO_DATA = {
   "edition": "Jul 2026",
-  "feedAsOf": "2026-07-12",
+  "feedAsOf": "2026-07-15",
   "serials": [
     {
       "id": "I-1",
@@ -18,7 +18,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Apr 2026",
-      "age": 8,
+      "age": 9,
       "dlabel": "Concept-design sprint",
       "ao": "SIO Concepts cell",
       "suspense": "By 28 Jul",
@@ -59,7 +59,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -92,7 +92,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "",
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
@@ -141,14 +141,14 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 3,
+      "age": 4,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
       "decision": "Awareness; track DRPM-UxS consolidation of unmanned/autonomous program oversight and its effect on portfolio autonomy lines.",
-      "signal": "A Defense Secretary memo (dated 29 June, made public 1 July) formally created the Direct Reporting Portfolio Manager for Unmanned Systems (DRPM-UxS) — a single integrator reporting to the Deputy Secretary of Defense that pulls almost all unmanned programs (UAS groups 1-3, all autonomous ground vehicles, and all unmanned surface vessels except MUSV) under one office, with the Defense Autonomous Warfare Group and JIATF-401 as deputy offices and a FY27 request of ~$75B for drones and counter-drone tech. Downstream, the Army realigned its Mission Autonomy office into its Layered Protection and Integration portfolio, and the Defense Innovation Unit took on the primary industry-engagement interface role.",
+      "signal": "A Defense Secretary memo (dated 29 June, made public 1 July) formally created the Direct Reporting Portfolio Manager for Unmanned Systems (DRPM-UxS) — a single integrator reporting to the Deputy Secretary of Defense that pulls almost all unmanned programs (UAS groups 1-3, all autonomous ground vehicles, and all unmanned surface vessels except MUSV) under one office, with the Defense Autonomous Warfare Group and JIATF-401 as deputy offices and a FY27 request of ~$75B for drones and counter-drone tech. Downstream, the Army realigned its Mission Autonomy office into its Layered Protection and Integration portfolio, and the Defense Innovation Unit took on the primary industry-engagement interface role. On 15 July, DIU director Owen West outlined the unit's own reorganisation into new portfolio teams — drones/autonomous warfare, commercial-space \"kill webs\", and \"10x technologies\" — with AI treated as a horizontal capability across all DIU activity rather than a standalone office, extending the DRPM-UxS-era realignment into DIU's internal structure.",
       "sowhat": "An acquisition-governance signal for every robo-tagged line in the portfolio: a single joint integrator for unmanned/autonomous programs changes who owns requirements, funding and industry engagement for ground, air and sea drone efforts — CapDev's autonomy programmes should expect a new counterpart structure.",
-      "action": "SIO with ADO to track DRPM-UxS's consolidation of autonomy-program oversight and identify the new points of contact for the portfolio's uncrewed-systems lines.",
+      "action": "SIO with ADO to track DRPM-UxS's consolidation of autonomy-program oversight and DIU's new portfolio-team structure, and identify the new points of contact for the portfolio's uncrewed-systems lines.",
       "src": [
         {
           "out": "USNI News",
@@ -177,6 +177,13 @@ window.SIO_DATA = {
           "ttl": "DIU reshaping its tech priorities and portfolio teams under new leadership",
           "url": "https://defensescoop.com/2026/07/06/diu-reshaping-tech-priorities-under-new-leadership-owen-west/",
           "f": "verified"
+        },
+        {
+          "out": "DefenseScoop",
+          "date": "15 Jul 2026",
+          "ttl": "In its next chapter, DIU aims to reduce the military's 'cost per kill'",
+          "url": "https://defensescoop.com/2026/07/15/diu-owen-west-aims-to-reduce-the-militarys-cost-per-kill/",
+          "f": "verified"
         }
       ]
     },
@@ -196,7 +203,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "",
       "ao": "SIO + ASB3 net-assessment",
       "suspense": "Next edition",
@@ -229,14 +236,14 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "",
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
       "decision": "Awareness — net-assessment watch on PLA operational autonomous drone swarms.",
-      "signal": "Chinese state and Hong Kong media show the PLA moving autonomous mass from demonstration toward doctrine — CETC's \"Atlas\" system stages a full-process demonstration launching up to ~96 drones in minutes under one operator with autonomous task division, and a separate PLA demonstration puts ~200 jam-resistant drones under a single soldier, using an anti-jamming algorithm that lets units keep cooperating after losing the operator link. Western analysis assesses these as selective but real PLA bets on battlefield AI. State/vendor claims — corroborated across independent trade press.",
+      "signal": "Chinese state and Hong Kong media show the PLA moving autonomous mass from demonstration toward doctrine — CETC's \"Atlas\" system stages a full-process demonstration launching up to ~96 drones in minutes under one operator with autonomous task division, and a separate PLA demonstration puts ~200 jam-resistant drones under a single soldier, using an anti-jamming algorithm that lets units keep cooperating after losing the operator link. Western analysis assesses these as selective but real PLA bets on battlefield AI. State/vendor claims — corroborated across independent trade press. The 12th China-Russia \"Joint Sea-2026\" exercise wrapped at Qingdao (6-13 Jul) with Russian officials citing extensive use of unmanned surface vessels and counter-unmanned-system tactics as a \"key feature\" alongside reconnaissance and air-defence drills — state-media framing corroborated independently by Defence Security Asia.",
       "sowhat": "A net-assessment input on adversary autonomous mass: single-operator swarms with resilient, comms-independent autonomy change the volume and persistence of the threat our sensing, C2 and counter-UAS lines must beat — the pacing challenge is scale plus autonomy, not any single platform.",
-      "action": "ASB3 with SIO net-assessment to track PLA autonomous-swarm maturation as a threat-shaping trend and feed it into our counter-UAS and C2 concept work.",
+      "action": "ASB3 with SIO net-assessment to track PLA autonomous-swarm maturation, including joint China-Russia unmanned-systems exercises, as a threat-shaping trend and feed it into our counter-UAS and C2 concept work.",
       "src": [
         {
           "out": "Global Times",
@@ -260,6 +267,55 @@ window.SIO_DATA = {
           "ttl": "Outpaced by the US, China's military places selective bets on artificial intelligence",
           "url": "https://www.defensenews.com/global/asia-pacific/2026/04/07/outpaced-by-the-us-chinas-military-places-selective-bets-on-artificial-intelligence/",
           "f": "verified"
+        },
+        {
+          "out": "Xinhua",
+          "date": "13 Jul 2026",
+          "ttl": "China, Russia wrap up joint naval exercise",
+          "url": "https://english.news.cn/20260713/9379d756304e40088458553afd2c8264/c.html",
+          "f": "verified",
+          "note": "Chinese state media — treat force-posture framing as intent signalling; corroborated by TASS and Defence Security Asia, both confirming the unmanned-systems/counter-drone emphasis."
+        }
+      ]
+    },
+    {
+      "id": "I-7",
+      "pf": "X",
+      "tech": [
+        "ai",
+        "data"
+      ],
+      "dom": "solution",
+      "owner": "SIO",
+      "owner2": "ADO",
+      "desk": "US",
+      "desk2": "EU",
+      "verdict": "emerging",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 1,
+      "dlabel": "",
+      "ao": "SIO + ADO",
+      "suspense": "Next edition",
+      "decision": "Awareness; track the CMMC Reform Task Force and the non-traditional-vendor capital wave for near-term contracting and partnership opportunities.",
+      "signal": "Two barrier-lowering moves landed the same week on opposite sides of the Atlantic. Germany's Helsing closed a $1.8B Series E (Europe's largest-ever defence-tech round, at an $18B valuation) to scale AI-enabled drone, EW/underwater-sensing and C2 software platforms across partner nations, while the Pentagon suspended CMMC Phase 2 third-party cybersecurity certification requirements — citing ~$600K per-firm compliance cost and an assessor shortfall of roughly 100 assessors for 100,000+ defence-industrial-base firms — standing up a 60-day CMMC Reform Task Force.",
+      "sowhat": "Both moves loosen the on-ramp for non-traditional and smaller vendors into defence AI/autonomy work — capital availability in Europe, compliance friction removed in the US — shaping who the portfolio can realistically contract and partner with next cycle.",
+      "action": "SIO with ADO to track the CMMC Reform Task Force's output and the non-traditional-vendor funding wave (Helsing and peers) for near-term contracting and partnership opportunities.",
+      "src": [
+        {
+          "out": "Defense News",
+          "date": "13 Jul 2026",
+          "ttl": "Helsing raises $1.8 billion in Europe's biggest defense-startup round",
+          "url": "https://www.defensenews.com/global/europe/2026/07/13/helsing-raises-18-billion-in-europes-biggest-defense-startup-round/",
+          "f": "verified"
+        },
+        {
+          "out": "DefenseScoop",
+          "date": "13 Jul 2026",
+          "ttl": "DOD halts cybersecurity requirements for CMMC Phase 2",
+          "url": "https://defensescoop.com/2026/07/13/dod-halts-cmmc-cybersecurity-requirements-phase-2/",
+          "f": "verified"
         }
       ]
     },
@@ -277,7 +333,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Apr 2026",
-      "age": 8,
+      "age": 9,
       "dlabel": "Spectrum-survivable C2",
       "ao": "ASB2 Sense-Strike",
       "suspense": "+30 days",
@@ -324,7 +380,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "Directed-energy counter-swarm",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Aug",
@@ -385,7 +441,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "",
       "ao": "CESS + ASB1",
       "suspense": "+90 days",
@@ -425,7 +481,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "",
       "ao": "ASB2 + SIO net-assessment",
       "suspense": "Next edition",
@@ -475,14 +531,14 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "Autonomous C-UAS at scale",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 20 Aug",
       "decision": "Assess adoption of a proven, autonomous, layered counter-UAS capability at production scale.",
-      "signal": "Counter-UAS is scaling into production — the US Army placed a ~$500M commercial C-UAS/C-sUAS order in early July covering everything from larger UAS to commercial quadcopters, following a ~$500M counter-drone interceptor award to a vendor whose systems were proven in Ukraine, and a military-wide approval of a long-range autonomous C-UAS after border testing. The first task order under the AeroVironment IDIQ (~$80M) is now fielding AI-enabled RF detect-and-defeat systems at Air Force bases, and a UK-Ukrainian jet-powered interceptor (Griffen) scored its first confirmed kill against a jet-powered Shahed variant — US and Ukrainian layered C-UAS lines are converging on the same problem. In parallel, NATO allies committed a five-year package of more than $40B for counter-drone defence, drone procurement and operator training (Ankara, 7 Jul), adding an alliance-wide counter-drone marketplace — C-UAS is now scaling as coordinated policy, not just national buys.",
+      "signal": "Counter-UAS is scaling into production — the US Army placed a ~$500M commercial C-UAS/C-sUAS order in early July covering everything from larger UAS to commercial quadcopters, following a ~$500M counter-drone interceptor award to a vendor whose systems were proven in Ukraine, and a military-wide approval of a long-range autonomous C-UAS after border testing. The first task order under the AeroVironment IDIQ (~$80M) is now fielding AI-enabled RF detect-and-defeat systems at Air Force bases, and a UK-Ukrainian jet-powered interceptor (Griffen) scored its first confirmed kill against a jet-powered Shahed variant — US and Ukrainian layered C-UAS lines are converging on the same problem. In parallel, NATO allies committed a five-year package of more than $40B for counter-drone defence, drone procurement and operator training (Ankara, 7 Jul), adding an alliance-wide counter-drone marketplace — C-UAS is now scaling as coordinated policy, not just national buys. The low-cost-interceptor pattern is spreading to allies: France's DGA cleared the Rafale to fire Thales Aculeus LG 68mm laser-guided rockets (\"LADAC\", ~$25-40K/shot) against Shahed-type drones, versus $680K-1.14M MICA missiles, while Japan's ATLA opened two parallel counter-UAS interceptor-drone tracks (Quantum Systems and Terra Drone) under its Early Acquisition Program.",
       "sowhat": "An All-Echelon Sense-and-Strike signal: multiple independent programmes now field autonomous, layered defeat against small UAS — the capability our manned engagement loop struggles to match — and at production scale, not experiment.",
-      "action": "ASB2 to assess adoption of an autonomous, layered C-UAS capability at scale against our small-UAS threat envelope, drawing on the fielded US and Ukrainian systems.",
+      "action": "ASB2 to assess adoption of an autonomous, layered C-UAS capability at scale against our small-UAS threat envelope, drawing on the fielded US and Ukrainian systems and the emerging low-cost-interceptor pattern among allies (France, Japan).",
       "src": [
         {
           "out": "DefenseScoop",
@@ -525,6 +581,21 @@ window.SIO_DATA = {
           "ttl": "NATO approves $40 billion counter-drone initiative to defeat low-cost UAV threats",
           "url": "https://www.armyrecognition.com/news/aerospace-news/2026/nato-approves-40-billion-counter-drone-initiative-to-defeat-low-cost-uav-threats",
           "f": "verified"
+        },
+        {
+          "out": "The Aviationist",
+          "date": "14 Jul 2026",
+          "ttl": "France Clears Rafale to Use 68mm Rockets Against Drones",
+          "url": "https://theaviationist.com/2026/07/14/france-clears-rafale-to-use-68-mm-rockets-against-drones/",
+          "f": "verified"
+        },
+        {
+          "out": "The Defence Blog",
+          "date": "15 Jul 2026",
+          "ttl": "Japan taps German firm for its \"drone-killer\" program",
+          "url": "https://defence-blog.com/japan-taps-a-german-company-for-its-drone-killer-program/",
+          "f": "verified",
+          "note": "Corroborated by a parallel same-week Terra Drone ATLA interceptor-drone selection and UASweekly coverage."
         }
       ]
     },
@@ -543,7 +614,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jun 2026",
-      "age": 5,
+      "age": 6,
       "dlabel": "Common data layer to delivery",
       "ao": "ADO",
       "suspense": "By 31 Jul",
@@ -589,7 +660,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 5,
+      "age": 6,
       "dlabel": "Autonomous UGV to production",
       "ao": "ASB1 Manoeuvre Concepts / AOTO",
       "suspense": "By 15 Aug",
@@ -629,7 +700,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "",
       "ao": "ASB3 + SIO",
       "suspense": "Next edition",
@@ -661,7 +732,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "",
       "ao": "CESS Sustainment Plans",
       "suspense": "+90 days",
@@ -708,7 +779,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "",
       "ao": "ASB3 + SIO",
       "suspense": "Next edition",
@@ -739,9 +810,402 @@ window.SIO_DATA = {
           "f": "verified"
         }
       ]
+    },
+    {
+      "id": "III-7",
+      "pf": "P5",
+      "tech": [
+        "ai",
+        "robo"
+      ],
+      "dom": "solution",
+      "owner": "ASB2",
+      "owner2": "SIO",
+      "desk": "US",
+      "verdict": "proven",
+      "priority": "decision",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 1,
+      "dlabel": "CCA autonomous weapons release",
+      "ao": "ASB2 Sense-Strike",
+      "suspense": "By 15 Sep",
+      "decision": "Assess autonomous strike-authority safeguards and CONOPS implications now that a Collaborative Combat Aircraft has released a live weapon.",
+      "signal": "An Anduril YFQ-44A Collaborative Combat Aircraft fired an AIM-120 AMRAAM at a digital target over the Mojave Desert from Edwards AFB — the first live weapons release from a CCA drone. The Air Force says humans retain exclusive control over weapon release; a General Atomics YFQ-42A live-fire test is expected this fall.",
+      "sowhat": "Tests the edge of All-Echelon Sensing and Strike autonomy: the sensor-to-shooter chain now includes an uncrewed strike node. It shapes rules for autonomous strike authority and human-machine teaming that the wider portfolio will need to answer for its own manned-unmanned teaming lines.",
+      "action": "ASB2 with SIO to assess the implications of CCA weapons release for autonomous strike doctrine and human-authority safeguards, and monitor the General Atomics YFQ-42A test this fall.",
+      "src": [
+        {
+          "out": "DefenseScoop",
+          "date": "15 Jul 2026",
+          "ttl": "Air Force reaches CCA milestone with live-firing of missile from Anduril's robotic fighter jet",
+          "url": "https://defensescoop.com/2026/07/15/air-force-live-fire-test-missile-anduril-cca-drone/",
+          "f": "verified",
+          "note": "Corroborated by Breaking Defense and Air & Space Forces Magazine."
+        }
+      ]
+    },
+    {
+      "id": "III-8",
+      "pf": "P5",
+      "tech": [
+        "robo"
+      ],
+      "dom": "solution",
+      "owner": "ASB2",
+      "owner2": "SIO",
+      "desk": "ME",
+      "desk2": "US",
+      "verdict": "proven",
+      "priority": "decision",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 1,
+      "dlabel": "Armed USV combat debut",
+      "ao": "ASB2 Sense-Strike",
+      "suspense": "By 15 Sep",
+      "decision": "Assess the maritime autonomous-strike model demonstrated by the Corsair USV strike, including its command-authority pathway, for portfolio relevance.",
+      "signal": "CENTCOM conducted the first-ever US combat use of lethal unmanned surface vessels: three armed Saronic Corsair one-way-attack USVs struck Iran's Bandar Abbas naval base on 12 July, hitting a Ghadir-class midget submarine and port infrastructure. The strike was run as a CENTCOM operation outside the Navy's existing Task Force 59 unmanned-systems framework.",
+      "sowhat": "Crosses a threshold for maritime Sense-and-Strike ambitions: a lethal robotic surface vessel used in live combat, commanded outside the standing unmanned-systems task force structure — both a template and a threat model for maritime strike autonomy the portfolio should account for.",
+      "action": "ASB2 with SIO net-assessment to study the Corsair USV strike as a proof-of-concept for maritime autonomous-strike capability and its command-authority model.",
+      "src": [
+        {
+          "out": "USNI News",
+          "date": "13 Jul 2026",
+          "ttl": "VIDEO: 3 Lethal U.S. Drones Attack Iranian Sub, Port Facility",
+          "url": "https://news.usni.org/2026/07/13/video-3-lethal-u-s-drones-attack-iranian-sub-port-facility",
+          "f": "verified",
+          "note": "Corroborated by Naval News, TWZ, Stars and Stripes, Military Times and The Aviationist."
+        }
+      ]
+    },
+    {
+      "id": "III-9",
+      "pf": "P5",
+      "tech": [
+        "data"
+      ],
+      "dom": "solution",
+      "owner": "ASB2",
+      "desk": "US",
+      "verdict": "emerging",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 1,
+      "dlabel": "",
+      "ao": "ASB2 Sense-Strike",
+      "suspense": "Next edition",
+      "decision": "Awareness; track Golden Dome's satellite contract awards and acquisition-authority consolidation for sensing/targeting relevance to the portfolio.",
+      "signal": "Golden Dome's satellite architecture is moving from contractor selection to hardware buys. After naming 12 companies for space-based interceptors in April (up to $3.2B in OTAs, 2028 target), the Space Development Agency awarded L3Harris (~$955M, 18 satellites) and Sierra Space (~$798M, 18 satellites) to build 36 Accelerated Missile Defense Tranche 3 tracking/warning satellites, while a stalled Tranche 1 Transport Layer relaunch (21 satellites) and a draft NDAA provision folding SDA into Space Force's acquisition executive show the programme both accelerating and consolidating.",
+      "sowhat": "The space-based sensing and tracking layer for missile defence is now backed by real contract dollars and a consolidating acquisition structure — an All-Echelon Sensing and Strike input for any sensor-to-shooter or space-enabled targeting concept the portfolio develops.",
+      "action": "ASB2 to track Golden Dome's satellite contract awards and SDA's acquisition-authority consolidation for space-enabled sensing/targeting relevance to the portfolio.",
+      "src": [
+        {
+          "out": "DefenseScoop",
+          "date": "24 Apr 2026",
+          "ttl": "Space Force names 12 companies to develop Golden Dome space-based interceptors",
+          "url": "https://defensescoop.com/2026/04/24/golden-dome-space-based-interceptor-missile-defense-contractors/",
+          "f": "verified"
+        },
+        {
+          "out": "DefenseScoop",
+          "date": "14 Jul 2026",
+          "ttl": "SDA awards $1.75B in deals for additional Golden Dome missile tracking sats",
+          "url": "https://defensescoop.com/2026/07/14/sda-contract-awards-additional-golden-dome-missile-tracking-sats/",
+          "f": "verified"
+        },
+        {
+          "out": "Defense One",
+          "date": "15 Jul 2026",
+          "ttl": "Space Development Agency resumes key satellite launches after delays, watchdog criticisms",
+          "url": "https://www.defenseone.com/policy/2026/07/space-development-agency-satellite-launches-criticisms/414781/",
+          "f": "unverified",
+          "note": "Source could not be independently corroborated in this window; treat Tranche 1 relaunch details as provisional pending confirmation."
+        }
+      ]
     }
   ],
   "feed": [
+    {
+      "date": "2026-07-15",
+      "out": "DefenseScoop",
+      "ttl": "Air Force reaches CCA milestone with live-firing of missile from Anduril's robotic fighter jet",
+      "sum": "An Anduril YFQ-44A Collaborative Combat Aircraft fired an AIM-120 AMRAAM at a digital target over the Mojave Desert from Edwards AFB — the first live weapons release from a CCA drone; the Air Force says humans retain exclusive control over weapon release.",
+      "tech": [
+        "ai",
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://defensescoop.com/2026/07/15/air-force-live-fire-test-missile-anduril-cca-drone/",
+      "f": "verified",
+      "note": "Corroborated by Breaking Defense and Air & Space Forces Magazine.",
+      "serial": "III-7",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-15",
+      "out": "DefenseScoop",
+      "ttl": "In its next chapter, DIU aims to reduce the military's 'cost per kill'",
+      "sum": "DIU director Owen West outlined a reorganisation into new portfolio teams — drones/autonomous warfare, commercial-space \"kill webs\", and \"10x technologies\" — with AI treated as a horizontal capability across all DIU activity rather than a standalone unit.",
+      "tech": [
+        "ai",
+        "robo",
+        "data"
+      ],
+      "pf": "X",
+      "desk": "US",
+      "url": "https://defensescoop.com/2026/07/15/diu-owen-west-aims-to-reduce-the-militarys-cost-per-kill/",
+      "f": "verified",
+      "serial": "I-4",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-15",
+      "out": "Defense One",
+      "ttl": "Space Development Agency resumes key satellite launches after delays, watchdog criticisms",
+      "sum": "SDA is set to resume Tranche 1 Transport Layer launches (21 satellites, the data-transport layer of the Proliferated Warfighter Space Architecture) via SpaceX Falcon 9 after a nine-month pause; a draft NDAA provision would fold SDA into Space Force's portfolio acquisition executive.",
+      "tech": [
+        "data"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://www.defenseone.com/policy/2026/07/space-development-agency-satellite-launches-criticisms/414781/",
+      "f": "unverified",
+      "note": "Could not be independently corroborated in this window; treat details as provisional pending confirmation.",
+      "serial": "III-9",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-15",
+      "out": "The Defence Blog",
+      "ttl": "Japan taps German firm for its \"drone-killer\" program",
+      "sum": "Japan's ATLA selected German drone-maker Quantum Systems for its Counter-UAS Proof-of-Concept Program, an evaluation track under ATLA's Early Acquisition Program to fast-track interceptor-drone technology into the JSDF.",
+      "tech": [
+        "robo",
+        "ai"
+      ],
+      "pf": "P5",
+      "desk": "APAC",
+      "url": "https://defence-blog.com/japan-taps-a-german-company-for-its-drone-killer-program/",
+      "f": "verified",
+      "note": "Corroborated by a parallel same-week Terra Drone ATLA interceptor-drone selection and UASweekly coverage.",
+      "serial": "III-1",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-14",
+      "out": "Defense News",
+      "ttl": "9 nations back Ukraine's Patriot alternative, Freyja — and want it flying in a year",
+      "sum": "Ukraine, Denmark, France, Germany, Italy, the Netherlands, Norway, Spain, Sweden and the UK formed an Integrated Anti-Ballistic Missile Coalition in Paris, aiming to mass-produce Ukraine's Freyja system (built around Fire Point's FP-7.X interceptor, ~$700K/shot vs ~$3.8M for Patriot) within 12 months.",
+      "tech": [
+        "dews"
+      ],
+      "pf": "P5",
+      "desk": "EU",
+      "url": "https://www.defensenews.com/global/europe/2026/07/14/9-nations-back-ukraines-patriot-alternative-freyja-and-want-it-flying-in-a-year/",
+      "f": "verified",
+      "note": "Corroborated by Euronews, Al Jazeera, Foreign Policy, Kyiv Post, United24 Media and Opex360.",
+      "serial": null,
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-14",
+      "out": "DefenseScoop",
+      "ttl": "SDA awards $1.75B in deals for additional Golden Dome missile tracking sats",
+      "sum": "The Space Development Agency awarded L3Harris (~$955M, 18 HBTSS-variant satellites) and Sierra Space (~$798M, 18 missile-warning/tracking satellites) to build 36 Accelerated Missile Defense Tranche 3 satellites for Golden Dome, targeted for 2028 launch.",
+      "tech": [
+        "data"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://defensescoop.com/2026/07/14/sda-contract-awards-additional-golden-dome-missile-tracking-sats/",
+      "f": "verified",
+      "note": "Corroborated by SpaceNews, Via Satellite, Defense Daily, Military Times, Breaking Defense and SDA's own release.",
+      "serial": "III-9",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-14",
+      "out": "Kyiv Independent",
+      "ttl": "Ukraine hits 2 Russian oil refineries, 11 vessels in strike spanning hundreds of miles",
+      "sum": "Ukrainian long-range drones struck the Gazprom Neftekhim Salavat complex (Bashkortostan, ~1,300 km from the front) and the Afipsky refinery (Krasnodar) alongside vessel and logistics targets.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "EU",
+      "url": "https://kyivindependent.com/drones-attack-major-oil-refinery-in-bashkortostan/",
+      "f": "verified",
+      "note": "Corroborated by The Moscow Times, Kyiv Post, Ukrainska Pravda and ISW's 14 July assessment.",
+      "serial": null,
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-14",
+      "out": "Military Times",
+      "ttl": "Army to move aerial intelligence brigade to Texas for HADES program",
+      "sum": "The 224th Military Intelligence Battalion relocates from Hunter Army Airfield, GA to Fort Hood, TX by 2027, standing up the Army's first dedicated unmanned-aircraft battalion (two MQ-1C Gray Eagle companies) alongside incoming ME-11B HADES signals-intelligence jets.",
+      "tech": [
+        "data",
+        "robo"
+      ],
+      "pf": "P2",
+      "desk": "US",
+      "url": "https://www.militarytimes.com/news/your-military/2026/07/14/army-to-move-aerial-intelligence-brigade-to-texas-for-hades-program/",
+      "f": "verified",
+      "note": "Corroborated by The War Zone and an Army.mil/DVIDS release.",
+      "serial": null,
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-14",
+      "out": "The Aviationist",
+      "ttl": "France Clears Rafale to Use 68mm Rockets Against Drones",
+      "sum": "France's DGA cleared the Rafale for \"LADAC\" — a 12-round pod firing Thales Aculeus LG laser-guided 68mm rockets — reaching initial operational capability as a low-cost (~$25-40K/shot) counter to Shahed-type drones versus $680K-1.14M MICA missiles.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "EU",
+      "url": "https://theaviationist.com/2026/07/14/france-clears-rafale-to-use-68-mm-rockets-against-drones/",
+      "f": "verified",
+      "note": "Corroborated by Army Recognition, The Defense Post, Aviation Week and Militarnyi.",
+      "serial": "III-1",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-13",
+      "out": "USNI News",
+      "ttl": "VIDEO: 3 Lethal U.S. Drones Attack Iranian Sub, Port Facility",
+      "sum": "CENTCOM confirmed three Saronic Corsair one-way-attack unmanned surface vessels struck a Ghadir-class midget submarine and port infrastructure at Iran's Bandar Abbas Naval Base on 12 July — the first-ever US combat use of armed sea drones.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "ME",
+      "desk2": "US",
+      "url": "https://news.usni.org/2026/07/13/video-3-lethal-u-s-drones-attack-iranian-sub-port-facility",
+      "f": "verified",
+      "note": "Corroborated by Naval News, TWZ, Stars and Stripes, Military Times and The Aviationist.",
+      "serial": "III-8",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-13",
+      "out": "Defense News",
+      "ttl": "Helsing raises $1.8 billion in Europe's biggest defense-startup round",
+      "sum": "German AI-defence firm Helsing closed a Series E raising $1.8B at an $18B valuation — Europe's largest-ever defence-tech funding round — earmarked to scale AI platforms (drones, EW/underwater sensing, C2 software) across partner nations.",
+      "tech": [
+        "ai",
+        "robo"
+      ],
+      "pf": "X",
+      "desk": "EU",
+      "url": "https://www.defensenews.com/global/europe/2026/07/13/helsing-raises-18-billion-in-europes-biggest-defense-startup-round/",
+      "f": "verified",
+      "note": "Corroborated by CNBC, Axios and SiliconANGLE.",
+      "serial": "I-7",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-13",
+      "out": "DefenseScoop",
+      "ttl": "DOD halts cybersecurity requirements for CMMC Phase 2",
+      "sum": "DoD CIO Kirsten Davies and USD(A&S) Michael Duffey suspended CMMC Phase 2 third-party cybersecurity certification requirements (was to take effect 10 Nov), citing prohibitive compliance costs (~$600K per firm) and an assessor shortfall; a new CMMC Reform Task Force has 60 days to report.",
+      "tech": [
+        "data"
+      ],
+      "pf": "P6",
+      "desk": "US",
+      "url": "https://defensescoop.com/2026/07/13/dod-halts-cmmc-cybersecurity-requirements-phase-2/",
+      "f": "verified",
+      "note": "Corroborated by Breaking Defense and Federal News Network.",
+      "serial": "I-7",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-13",
+      "out": "Xinhua",
+      "ttl": "China, Russia wrap up joint naval exercise",
+      "sum": "The 12th 'Joint Sea-2026' China-Russia exercise concluded at Qingdao after live-force drills from 6-13 July; Russian officials said extensive use of unmanned surface vessels and counter-unmanned-system tactics was a key feature alongside reconnaissance and air-defence drills.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "APAC",
+      "url": "https://english.news.cn/20260713/9379d756304e40088458553afd2c8264/c.html",
+      "f": "verified",
+      "note": "Chinese state media — treat force-posture framing as intent signalling; corroborated by TASS and Defence Security Asia.",
+      "serial": "I-6",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-13",
+      "out": "The Defense Post",
+      "ttl": "Philippine Military to Establish Space Arm",
+      "sum": "AFP chief Gen. Romeo Brawner Jr. said the Philippine military will stand up a space centre — intended to grow into a Space Command/Force by 2028 — to strengthen satellite-enabled ISR, comms, C2, missile systems and drone operations amid South China Sea tensions.",
+      "tech": [
+        "data",
+        "robo"
+      ],
+      "pf": "P6",
+      "desk": "APAC",
+      "url": "https://thedefensepost.com/2026/07/13/philippines-military-space-arm/",
+      "f": "verified",
+      "note": "Corroborated by Rappler and Inquirer.net; a Manila Times precursor item ran 8 Jul.",
+      "serial": null,
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-13",
+      "out": "Geopolitical Monitor",
+      "ttl": "Who Fires the Shot? Closing the Authority Gap in Indo-Pacific Autonomous Warfare",
+      "sum": "Analysis argues the fielding of unmanned/autonomous systems across Indo-Pacific coalitions (AUKUS Pillar 2, Quad) has outpaced agreement on who may authorise lethal autonomous force, given divergent US/Japan/India/Australia/South Korea legal ceilings.",
+      "tech": [
+        "ai"
+      ],
+      "pf": "P6",
+      "desk": "APAC",
+      "url": "https://www.geopoliticalmonitor.com/who-fires-the-shot-closing-the-authority-gap-in-indo-pacific-autonomous-warfare/",
+      "f": "verified",
+      "note": "Doctrine/analysis piece rather than spot news; also syndicated via Eurasia Review.",
+      "serial": null,
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-13",
+      "out": "Aerospace Global News",
+      "ttl": "Houthis shoot down Saudi drone as airspace warning issued",
+      "sum": "Houthi spokesman Yahya Saree claimed Yemeni forces downed a Saudi-operated Wing Loong II reconnaissance drone over Al-Bayda governorate, part of a broader escalation in which Houthi forces fired missiles/drones toward Abha airport following strikes on Sanaa airport.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "ME",
+      "url": "https://aerospaceglobalnews.com/news/houthis-saudi-wing-loong-shootdown/",
+      "f": "unverified",
+      "note": "Single-source adversary claim (Houthi spokesman); no Saudi MoD confirmation of a drone loss found.",
+      "serial": null,
+      "saved": false,
+      "flagged": false
+    },
     {
       "date": "2026-07-10",
       "out": "Defense News",
@@ -1308,7 +1772,7 @@ window.SIO_DATA = {
       "desk": "US",
       "url": "https://defensescoop.com/2026/04/24/golden-dome-space-based-interceptor-missile-defense-contractors/",
       "f": "verified",
-      "serial": null,
+      "serial": "III-9",
       "saved": false,
       "flagged": false
     },
