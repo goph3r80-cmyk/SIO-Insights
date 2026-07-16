@@ -174,7 +174,6 @@
   .meta { display:flex; flex-wrap:wrap; gap:6px 18px; margin-top:12px; padding-top:11px; border-top:1px dashed var(--hair);
     font-size:12px; color:var(--muted); }
   .meta b { color:var(--ink); font-weight:600; }
-  .ownercode { font-family:ui-monospace,Menlo,monospace; font-size:10.5px; color:var(--faint); font-weight:500; }
   .meta .k { color:var(--faint); }
 
   details.src { margin-top:10px; }
@@ -375,8 +374,7 @@
   function ownerTag(o) {
     var m = OWNER[o];
     if (!m) return esc(o);
-    var codeTag = m.code !== o ? ' <span class="ownercode">'+esc(m.code)+'</span>' : '';
-    return '<span title="'+esc(m.label)+'">'+esc(o)+codeTag+'</span>';
+    return '<span title="'+esc(o)+' — '+esc(m.label)+'">'+esc(m.code)+'</span>';
   }
   var DESKS = ['US','EU','APAC','ME'];
   var VERDICTS = ['gap','emerging','proven'];
