@@ -1,0 +1,47 @@
+{% extends "base.html" %}{% block title %}Data quality{% endblock %}
+{% block content %}
+<h2>Data quality</h2>
+<h3>Staged transactions awaiting reconciliation</h3>
+{% if staged %}
+<div class="tablewrap"><table><thead>
+<tr><th>ID</th><th>Ticker</th><th>Type</th><th>Date</th><th class="n">Qty</th>
+<th class="n">Price</th><th>Ccy</th><th>Verification</th><th>Note</th></tr>
+</thead><tbody>
+{% for t in staged %}
+<tr><td>{{ t.id }}</td><td>{{ t.ticker }}</td><td>{{ t.type }}</td>
+<td>{{ t.trade_date }}</td><td class="n">{{ t.quantity }}</td>
+<td class="n">{{ t.price|money }}</td><td>{{ t.currency }}</td>
+<td>{{ t.verification_status }}</td><td style="white-space:normal">{{ t.note }}</td></tr>
+{% endfor %}</tbody></table></div>
+<p class="muted">Confirm or void with: <code>portfolio confirm-transaction &lt;id&gt; [--void]</code></p>
+{% else %}<p class="muted">None.</p>{% endif %}
+<h3>Unresolved instruments</h3>
+{% for u in dq.unresolved_instruments %}
+<p>⚠ {{ u.ticker }}.{{ u.exchange }} — {{ u.verification_status or u.source_status or 'unresolved' }}</p>
+{% else %}<p class="muted">None.</p>{% endfor %}
+<h3>Missing prices</h3>
+{% for h in dq.missing_prices %}<p>⚠ {{ h.ticker }}.{{ h.exchange }}</p>
+{% else %}<p class="muted">None.</p>{% endfor %}
+<h3>Stale prices</h3>
+{% for h in dq.stale_prices %}<p>⚠ {{ h.ticker }} — last price {{ h.price_date }}
+({{ h.price_source }})</p>{% else %}<p class="muted">None.</p>{% endfor %}
+<h3>Missing FX rates</h3>
+{% for c in dq.missing_fx %}<p>⚠ {{ c }} → base</p>
+{% else %}<p class="muted">None.</p>{% endfor %}
+<h3>Possible duplicate transactions</h3>
+{% for d in dq.possible_duplicates %}<p>⚠ transaction ids {{ d.ids }}</p>
+{% else %}<p class="muted">None.</p>{% endfor %}
+<h3>Quantity reconciliation issues / negative holdings</h3>
+{% for i in dq.reconciliation_issues %}<p>⚠ {{ i.ticker }}: {{ i.issues|join('; ') }}</p>
+{% else %}<p class="muted">None.</p>{% endfor %}
+{% for h in dq.negative_holdings %}<p>⚠ {{ h.ticker }} quantity {{ h.quantity }}</p>{% endfor %}
+<h3>Unconfirmed corporate actions</h3>
+{% for t in dq.unconfirmed_corporate_actions %}
+<p>⚠ #{{ t.id }} {{ t.type }} on {{ t.trade_date }}</p>
+{% else %}<p class="muted">None.</p>{% endfor %}
+<h3>Securities missing exchange</h3>
+{% for s_ in dq.missing_exchange %}<p>⚠ {{ s_.ticker }} (exchange UNKNOWN)</p>
+{% else %}<p class="muted">None.</p>{% endfor %}
+<h3>Import freshness</h3>
+<p>Last import: {{ dq.last_import or 'never' }}</p>
+{% endblock %}

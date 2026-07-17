@@ -1,0 +1,45 @@
+{
+  "_comment": "Seed context supplied by the owner in the project brief (2026-07-17). Quantities/prices are NOT invented: only items explicitly stated in the brief appear here. Remove this file from the repository if you prefer to keep it private; `portfolio setup --seed` reads it once.",
+  "provisional_securities": [
+    {"ticker": "MSFT", "exchange": "NASDAQ", "name": "Microsoft", "asset_type": "equity", "currency": "USD", "country": "US"},
+    {"ticker": "NVDA", "exchange": "NASDAQ", "name": "NVIDIA", "asset_type": "equity", "currency": "USD", "country": "US"},
+    {"ticker": "GOOGL", "exchange": "NASDAQ", "name": "Alphabet Class A", "asset_type": "equity", "currency": "USD", "country": "US"},
+    {"ticker": "PLTR", "exchange": "NASDAQ", "name": "Palantir Technologies", "asset_type": "equity", "currency": "USD", "country": "US"},
+    {"ticker": "BP", "exchange": "NYSE", "name": "BP (ADR)", "asset_type": "adr", "currency": "USD", "country": "GB"}
+  ],
+  "provisional_marking": {
+    "status": "provisional_current",
+    "source_status": "identified_from_prior_portfolio_discussion",
+    "verification_status": "awaiting_latest_broker_statement"
+  },
+  "staged_transactions": [
+    {
+      "ticker": "MU", "exchange": "NASDAQ", "name": "Micron Technology",
+      "type": "buy", "date": "2026-05-08", "quantity": 30, "price": 650.0,
+      "fees": 32.0, "currency": "USD",
+      "source_status": "explicit_prior_purchase_record",
+      "verification_status": "requires_statement_reconciliation",
+      "note": "Recorded price US$650/share preserved exactly as entered; flagged unusual — verify against broker statement whether price is correct, a different currency/unit, or split-adjusted, and whether the 30 shares are still held."
+    }
+  ],
+  "watchlist": [
+    {"ticker": "OV8", "exchange": "SGX", "name": "Sheng Siong Group", "currency": "SGD", "country": "SG"},
+    {"ticker": "D05", "exchange": "SGX", "name": "DBS Group Holdings", "currency": "SGD", "country": "SG"},
+    {"ticker": "U11", "exchange": "SGX", "name": "United Overseas Bank", "currency": "SGD", "country": "SG"},
+    {"ticker": "O39", "exchange": "SGX", "name": "Oversea-Chinese Banking Corp", "currency": "SGD", "country": "SG"}
+  ],
+  "historical_2012": [
+    {"code": "ASR", "name": "Ascott REIT", "quantity": 18000},
+    {"code": "ATRA", "name": "Abterra", "quantity": 520},
+    {"code": "CCT", "name": "CapitaCommercial Trust", "quantity": 19000},
+    {"code": "CIT", "name": "Cambridge Industrial Trust", "quantity": 27500},
+    {"code": "CSIT", "name": "CitySpring Infrastructure Trust", "quantity": 21000},
+    {"code": "FRET", "name": "First REIT", "quantity": 16000},
+    {"code": "FST", "name": "FSL Trust", "quantity": 88000},
+    {"code": "MTLT", "name": "Mapletree Logistics Trust", "quantity": 15000},
+    {"code": "SGX", "name": "Singapore Exchange", "quantity": 2000},
+    {"code": "SPL", "name": "Singapore Post", "quantity": 13000},
+    {"code": "STRH", "name": "StarHub", "quantity": 2750},
+    {"code": "SUN", "name": "Suntec REIT", "quantity": 11000}
+  ]
+}

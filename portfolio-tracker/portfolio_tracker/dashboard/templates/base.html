@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Portfolio{% endblock %}</title>
+<style>
+:root{--bg:#f7f8fa;--card:#fff;--ink:#1c2733;--muted:#6b7684;--line:#e3e7ec;
+--good:#1a7f37;--bad:#c0392b;--warn:#8a6d1a;--warnbg:#fff8e1;--accent:#4e79a7}
+*{box-sizing:border-box}body{margin:0;font:14px/1.45 system-ui,Segoe UI,Roboto,
+sans-serif;background:var(--bg);color:var(--ink)}
+header{background:#243447;color:#fff;padding:10px 18px;display:flex;gap:16px;
+align-items:baseline;flex-wrap:wrap}
+header h1{font-size:16px;margin:0}
+nav a{color:#cfd8e3;text-decoration:none;margin-right:12px;font-size:13px}
+nav a:hover{color:#fff}
+main{max-width:1180px;margin:18px auto;padding:0 16px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));
+gap:10px;margin-bottom:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;
+padding:10px 12px}
+.card .k{font-size:11px;color:var(--muted);text-transform:uppercase;
+letter-spacing:.04em}
+.card .v{font-size:19px;font-weight:600;margin-top:2px}
+.good{color:var(--good)}.bad{color:var(--bad)}.muted{color:var(--muted)}
+.warnbox{background:var(--warnbg);border:1px solid #e7d9a0;color:var(--warn);
+border-radius:8px;padding:8px 12px;margin:8px 0}
+table{width:100%;border-collapse:collapse;background:var(--card);
+border:1px solid var(--line);border-radius:8px;overflow:hidden;font-size:13px}
+th,td{padding:6px 9px;text-align:left;border-bottom:1px solid var(--line);
+white-space:nowrap}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+th{background:#eef1f5;cursor:pointer;user-select:none;font-size:12px}
+tr:hover td{background:#f4f7fb}
+.tablewrap{overflow-x:auto;margin:10px 0}
+.badge{font-size:11px;border-radius:10px;padding:1px 8px;border:1px solid}
+.badge.prov{color:var(--warn);border-color:#d8c27a;background:var(--warnbg)}
+.badge.conf{color:var(--good);border-color:#a9d2b5;background:#eef8f0}
+.badge.stale{color:var(--bad);border-color:#e2b0aa;background:#fdf1f0}
+h2{font-size:16px;margin:20px 0 8px}h3{font-size:14px;margin:14px 0 6px}
+.ax{font-size:10px;fill:var(--muted)}
+svg{max-width:100%;background:var(--card);border:1px solid var(--line);
+border-radius:8px}
+.donut{display:flex;gap:14px;align-items:center;background:var(--card);
+border:1px solid var(--line);border-radius:8px;padding:8px}
+.donut svg{border:0;width:170px;flex:none}
+.legend{font-size:12px}.legend .dot{display:inline-block;width:9px;height:9px;
+border-radius:5px;margin-right:6px}
+form.inline{display:inline}
+input,select,button{font:inherit;padding:4px 7px;border:1px solid var(--line);
+border-radius:6px;background:#fff}
+button{background:var(--accent);color:#fff;border:0;cursor:pointer}
+.filter{margin:8px 0;display:flex;gap:8px;flex-wrap:wrap}
+footer{max-width:1180px;margin:24px auto;padding:0 16px 24px;font-size:12px;
+color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <h1>📁 Portfolio</h1>
+  <nav>{% for endpoint, label in nav %}<a href="{{ url_for(endpoint) }}">{{ label }}</a>{% endfor %}</nav>
+  <span style="margin-left:auto;font-size:12px;color:#9fb0c3">
+    base {{ s.base_currency }} · {{ s.cost_basis_method }} ·
+    refresh {{ s.last_refresh or 'never' }}</span>
+</header>
+<main>
+{% if s.warnings %}<div class="warnbox">⚠ {{ s.warnings|join(' · ') }}</div>{% endif %}
+{% block content %}{% endblock %}
+</main>
+<footer>Local-only dashboard (127.0.0.1). Prices show source + timestamp; stale
+prices are flagged. Risk figures are descriptive indicators, not investment
+advice.</footer>
+<script>
+document.querySelectorAll("table.sortable th").forEach((th,i)=>{
+ th.addEventListener("click",()=>{
+  const tb=th.closest("table").tBodies[0];
+  const dir=th.dataset.dir==="1"?-1:1; th.dataset.dir=dir===1?"1":"-1";
+  [...tb.rows].sort((a,b)=>{
+   const x=a.cells[i].dataset.v??a.cells[i].textContent.trim();
+   const y=b.cells[i].dataset.v??b.cells[i].textContent.trim();
+   const nx=parseFloat(String(x).replace(/,/g,"")),ny=parseFloat(String(y).replace(/,/g,""));
+   if(!isNaN(nx)&&!isNaN(ny))return (nx-ny)*dir;
+   return String(x).localeCompare(y)*dir;
+  }).forEach(r=>tb.appendChild(r));
+ });
+});
+function tableFilter(input,tableId){
+ const q=input.value.toLowerCase();
+ document.querySelectorAll("#"+tableId+" tbody tr").forEach(r=>{
+  r.style.display=r.textContent.toLowerCase().includes(q)?"":"none";});
+}
+</script>
+</body>
+</html>

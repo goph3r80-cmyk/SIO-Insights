@@ -6,3 +6,18 @@
 # Node
 node_modules/
 npm-debug.log*
+
+# Portfolio tracker — private data never committed
+portfolio-tracker/.env
+portfolio-tracker/data/
+portfolio-tracker/backups/
+portfolio-tracker/*.db
+portfolio-tracker/*.db-wal
+portfolio-tracker/*.db-shm
+portfolio-tracker/portfolio_inputs/*
+!portfolio-tracker/portfolio_inputs/README.md
+portfolio-tracker/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/

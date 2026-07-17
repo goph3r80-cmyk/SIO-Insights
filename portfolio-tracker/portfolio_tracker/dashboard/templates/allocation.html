@@ -1,0 +1,16 @@
+{% extends "base.html" %}{% block title %}Allocation{% endblock %}
+{% block content %}
+<h2>Allocation</h2>
+{% for dim, groups in alloc.items() %}
+<h3>By {{ dim.replace('_', ' ') }}</h3>
+{% if charts.get(dim) %}{{ charts[dim]|safe }}{% endif %}
+<div class="tablewrap"><table><thead>
+<tr><th>{{ dim }}</th><th class="n">Value ({{ s.base_currency }})</th><th class="n">%</th></tr>
+</thead><tbody>
+{% for g in groups %}
+<tr><td>{{ g.label }}</td><td class="n">{{ g.value|money }}</td>
+<td class="n">{{ g.pct|pct }}</td></tr>
+{% endfor %}
+</tbody></table></div>
+{% endfor %}
+{% endblock %}

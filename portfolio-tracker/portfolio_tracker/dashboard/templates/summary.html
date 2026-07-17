@@ -1,0 +1,39 @@
+{% extends "base.html" %}{% block title %}Summary{% endblock %}
+{% block content %}
+<h2>Portfolio summary</h2>
+{% if s.provisional_count %}
+<div class="warnbox">⚠ Totals include {{ s.provisional_count }} provisional
+holding(s) awaiting your latest broker statement — they are labelled on the
+Holdings page and excluded nowhere silently.</div>
+{% endif %}
+<div class="cards">
+  <div class="card"><div class="k">Total value</div>
+    <div class="v">{{ s.total_value|money }} {{ s.base_currency }}</div></div>
+  <div class="card"><div class="k">Invested capital</div>
+    <div class="v">{{ s.invested_capital|money }}</div></div>
+  <div class="card"><div class="k">Unrealised P/L</div>
+    <div class="v {{ 'good' if s.unrealised >= 0 else 'bad' }}">{{ s.unrealised|money }}</div></div>
+  <div class="card"><div class="k">Realised P/L</div>
+    <div class="v {{ 'good' if s.realised >= 0 else 'bad' }}">{{ s.realised|money }}</div></div>
+  <div class="card"><div class="k">Today's movement*</div>
+    <div class="v {{ 'good' if s.day_change_local_mixed >= 0 else 'bad' }}">{{ s.day_change_local_mixed|money }}</div></div>
+  <div class="card"><div class="k">Dividends (net)</div>
+    <div class="v">{{ s.dividends|money }}</div></div>
+  <div class="card"><div class="k">Cash</div>
+    <div class="v">{{ s.cash|money }}</div></div>
+  <div class="card"><div class="k">Holdings</div>
+    <div class="v">{{ s.holdings_count }}</div></div>
+</div>
+<p class="muted">*Today's movement is summed in each security's trading
+currency (mixed currencies) — see Performance for base-currency series.</p>
+<h2>Value history</h2>
+{{ chart|safe }}
+<h2>Unacknowledged alerts</h2>
+{% if alerts %}
+<div class="tablewrap"><table><thead>
+<tr><th>Time</th><th>Kind</th><th>Message</th></tr></thead><tbody>
+{% for a in alerts %}<tr><td>{{ a.triggered_at }}</td><td>{{ a.kind }}</td>
+<td>{{ a.message }}</td></tr>{% endfor %}
+</tbody></table></div>
+{% else %}<p class="muted">None.</p>{% endif %}
+{% endblock %}

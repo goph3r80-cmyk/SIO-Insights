@@ -1,0 +1,6 @@
+date,type,ticker,exchange,name,quantity,price,gross_amount,fees,tax,currency,account_broker,account_name,note,lot_id,split_ratio,external_id
+2026-01-15,buy,MSFT,NASDAQ,Microsoft,10,400.00,,5.00,,USD,MyBroker,main,,,,ORDER-123
+2026-02-01,dividend,MSFT,NASDAQ,Microsoft,,,7.50,,2.25,USD,MyBroker,main,quarterly dividend,,,
+2026-02-10,deposit,,,,,,5000.00,,,SGD,MyBroker,main,top-up,,,
+2026-03-05,sell,MSFT,NASDAQ,Microsoft,4,420.00,,5.00,,USD,MyBroker,main,,,,ORDER-456
+2026-06-10,split,NVDA,NASDAQ,NVIDIA,,,,,,USD,MyBroker,main,10-for-1 split,,10,

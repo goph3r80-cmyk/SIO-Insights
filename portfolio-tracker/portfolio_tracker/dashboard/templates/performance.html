@@ -1,0 +1,49 @@
+{% extends "base.html" %}{% block title %}Performance{% endblock %}
+{% block content %}
+<h2>Performance</h2>
+<div class="cards">
+  <div class="card"><div class="k">Time-weighted return</div>
+    <div class="v">{{ (p.twr * 100)|round(2) ~ '%' if p.twr is not none else '—' }}</div></div>
+  <div class="card"><div class="k">TWR annualised</div>
+    <div class="v">{{ (p.twr_annualised * 100)|round(2) ~ '%' if p.twr_annualised is not none else '—' }}</div></div>
+  <div class="card"><div class="k">Money-weighted (XIRR)</div>
+    <div class="v">{{ (p.mwr_annualised * 100)|round(2) ~ '%' if p.mwr_annualised is not none else '—' }}</div></div>
+  <div class="card"><div class="k">Contributions</div>
+    <div class="v">{{ p.contributions|money }}</div></div>
+  <div class="card"><div class="k">Withdrawals</div>
+    <div class="v">{{ p.withdrawals|money }}</div></div>
+  <div class="card"><div class="k">Realised</div>
+    <div class="v {{ 'good' if p.realised >= 0 else 'bad' }}">{{ p.realised|money }}</div></div>
+  <div class="card"><div class="k">Unrealised</div>
+    <div class="v {{ 'good' if p.unrealised >= 0 else 'bad' }}">{{ p.unrealised|money }}</div></div>
+  <div class="card"><div class="k">Dividends</div>
+    <div class="v">{{ p.dividends|money }}</div></div>
+</div>
+<p class="muted">Money-weighted return reflects your experience as an investor;
+time-weighted return removes the effect of deposits and withdrawals (the
+portfolio-manager view). Deposits are never counted as gains.</p>
+<h2>Portfolio value ({{ s.base_currency }})</h2>
+{{ chart|safe }}
+{% for name, bchart in benches.items() %}
+<h3>Benchmark: {{ name }} (rebased to 100)</h3>{{ bchart|safe }}
+{% endfor %}
+{% macro perftable(data, label) %}
+<h3>By {{ label }}</h3>
+<div class="tablewrap"><table class="sortable"><thead>
+<tr><th>{{ label }}</th><th class="n">Market value</th><th class="n">Cost</th>
+<th class="n">Unrealised</th><th class="n">Realised</th><th class="n">Dividends</th></tr>
+</thead><tbody>
+{% for k, v in data.items() %}
+<tr><td>{{ k }}</td>
+<td class="n" data-v="{{ v.market_value }}">{{ v.market_value|money }}</td>
+<td class="n" data-v="{{ v.cost }}">{{ v.cost|money }}</td>
+<td class="n {{ 'good' if v.unrealised >= 0 else 'bad' }}" data-v="{{ v.unrealised }}">{{ v.unrealised|money }}</td>
+<td class="n" data-v="{{ v.realised }}">{{ v.realised|money }}</td>
+<td class="n" data-v="{{ v.dividends }}">{{ v.dividends|money }}</td></tr>
+{% endfor %}
+</tbody></table></div>
+{% endmacro %}
+{{ perftable(p.by_account, 'account') }}
+{{ perftable(p.by_security, 'security') }}
+{{ perftable(p.by_currency, 'currency') }}
+{% endblock %}

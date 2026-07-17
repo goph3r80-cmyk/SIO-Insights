@@ -1,0 +1,47 @@
+{% extends "base.html" %}{% block title %}Transactions{% endblock %}
+{% block content %}
+<h2>Transactions</h2>
+<form class="filter" method="get">
+  <input name="ticker" placeholder="Ticker" value="{{ args.get('ticker','') }}">
+  <input name="type" placeholder="Type (buy/sell/…)" value="{{ args.get('type','') }}">
+  <input name="from" type="date" value="{{ args.get('from','') }}">
+  <input name="to" type="date" value="{{ args.get('to','') }}">
+  <button>Filter</button>
+</form>
+<div class="tablewrap"><table class="sortable" id="txns"><thead>
+<tr><th>ID</th><th>Date</th><th>Type</th><th>Ticker</th><th class="n">Qty</th>
+<th class="n">Price</th><th class="n">Gross</th><th class="n">Fees</th>
+<th class="n">Tax</th><th>Ccy</th><th>Status</th><th>Source</th><th>Edit</th></tr>
+</thead><tbody>
+{% for t in rows %}
+<tr>
+<td>{{ t.id }}{% if edits.get(t.id) %} <span class="badge prov" title="{% for e in edits[t.id] %}{{ e.field }}: {{ e.old_value }} → {{ e.new_value }} ({{ e.edited_at }}); {% endfor %}">edited</span>{% endif %}</td>
+<td>{{ t.trade_date }}</td><td>{{ t.type }}</td>
+<td>{{ t.ticker or '—' }}{{ '.' + t.exchange if t.ticker }}</td>
+<td class="n">{{ t.quantity if t.quantity is not none else '—' }}</td>
+<td class="n">{{ t.price|money }}</td>
+<td class="n">{{ t.gross_amount|money }}</td>
+<td class="n">{{ t.fees|money }}</td><td class="n">{{ t.tax|money }}</td>
+<td>{{ t.currency }}</td>
+<td>{{ t.status }}{% if t.status == 'staged' %} <span class="badge prov">needs reconciliation</span>{% endif %}</td>
+<td title="{{ t.verification_status or '' }}">{{ t.source }}</td>
+<td>
+<form class="inline" method="post" action="{{ url_for('edit_transaction', txn_id=t.id) }}">
+<select name="field"><option>quantity</option><option>price</option>
+<option>fees</option><option>tax</option><option>trade_date</option>
+<option>note</option></select>
+<input name="value" size="7" required>
+<input name="reason" size="8" placeholder="reason">
+<button>Save</button></form>
+</td></tr>
+{% if edits.get(t.id) %}
+<tr><td colspan="13" class="muted">audit:
+{% for e in edits[t.id] %} {{ e.edited_at }} {{ e.field }}:
+"{{ e.old_value }}" → "{{ e.new_value }}" ({{ e.reason or 'no reason' }});{% endfor %}
+</td></tr>
+{% endif %}
+{% endfor %}
+</tbody></table></div>
+<p class="muted">Edited imported transactions keep their original value — the
+full change history is shown under each row and stored in transaction_edits.</p>
+{% endblock %}

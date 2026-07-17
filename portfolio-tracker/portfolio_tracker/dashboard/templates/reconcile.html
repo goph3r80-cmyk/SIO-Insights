@@ -1,0 +1,44 @@
+{% extends "base.html" %}{% block title %}Reconciliation{% endblock %}
+{% block content %}
+<h2>Reconciliation</h2>
+{% if rec.material_issues %}
+<div class="warnbox"><strong>⚠ Unresolved issues that materially affect
+calculations:</strong><ul>
+{% for i in rec.material_issues %}<li>{{ i }}</li>{% endfor %}</ul></div>
+{% endif %}
+<h3>Holdings requiring confirmation</h3>
+<div class="tablewrap"><table><thead>
+<tr><th>Counter</th><th>Ticker</th><th>Prior indication</th>
+<th class="n">Latest broker qty</th><th class="n">Calculated qty</th>
+<th>Status</th><th>Issue</th></tr></thead><tbody>
+{% for r_ in rec.holdings_table %}
+<tr><td>{{ r_.counter }}</td><td>{{ r_.ticker }}.{{ r_.exchange }}</td>
+<td>{{ r_.prior_indication }}</td>
+<td class="n">{{ r_.broker_quantity if r_.broker_quantity is not none else '—' }}</td>
+<td class="n">{{ '%g'|format(r_.calculated_quantity) if r_.calculated_quantity is not none else '—' }}</td>
+<td>{{ r_.status }}</td><td style="white-space:normal">{{ r_.issue }}</td></tr>
+{% endfor %}</tbody></table></div>
+<h3>Historical positions (2012 Singapore) — never in current totals by default</h3>
+<div class="tablewrap"><table><thead>
+<tr><th>Code</th><th>Counter</th><th class="n">Historical qty</th>
+<th>Corporate actions</th><th>Delisted/renamed</th><th>Successor</th>
+<th>Disposal evidence</th><th>Confirmed open?</th></tr></thead><tbody>
+{% for h in rec.historical %}
+<tr><td>{{ h.historical_code }}</td><td>{{ h.counter_name }}</td>
+<td class="n">{{ '%g'|format(h.historical_quantity) }}</td>
+<td>{{ h.corporate_actions or 'uninvestigated' }}</td>
+<td>{{ h.delisted_status or '—' }}</td>
+<td>{{ h.successor_security or '—' }}</td>
+<td>{{ h.disposal_evidence or 'none' }}</td>
+<td>{{ h.current_holding_confirmed }}</td></tr>
+{% endfor %}</tbody></table></div>
+<h3>Watchlist — research only, never counted as owned</h3>
+{% for w in rec.watchlist %}
+<p>{{ w.name }} ({{ w.ticker }}.{{ w.exchange }})
+<span class="badge prov">watchlist_only</span></p>
+{% endfor %}
+<h3>Detected accounts</h3>
+{% for a in rec.accounts %}
+<p>{{ a.broker }} / {{ a.name }} ({{ a.currency }}, ref {{ a.masked_reference or 'n/a' }})</p>
+{% else %}<p class="muted">No accounts yet — none detected in imports.</p>{% endfor %}
+{% endblock %}

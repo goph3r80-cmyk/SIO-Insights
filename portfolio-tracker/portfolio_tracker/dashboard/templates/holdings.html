@@ -1,0 +1,49 @@
+{% extends "base.html" %}{% block title %}Holdings{% endblock %}
+{% macro htable(rows, id) %}
+<div class="tablewrap">
+<table class="sortable" id="{{ id }}">
+<thead><tr>
+<th>Company</th><th>Ticker</th><th>Exch</th><th>Account</th>
+<th class="n">Qty</th><th class="n">Avg cost</th><th class="n">Price</th>
+<th class="n">Mkt value</th><th class="n">Value ({{ s.base_currency }})</th>
+<th class="n">Weight</th><th class="n">Unreal P/L</th><th class="n">Total ret</th>
+<th class="n">Dividends</th><th>Ccy</th><th>Price as of</th>
+</tr></thead><tbody>
+{% for h in rows %}
+<tr>
+<td>{{ h.name or '—' }}</td>
+<td>{{ h.ticker }}{% if h.status == 'provisional_current' %} <span class="badge prov">provisional</span>{% endif %}</td>
+<td>{{ h.exchange }}</td><td>{{ h.account }}</td>
+<td class="n" data-v="{{ h.quantity }}">{{ '%g'|format(h.quantity) }}</td>
+<td class="n" data-v="{{ h.avg_cost }}">{{ h.avg_cost|money }}</td>
+<td class="n" data-v="{{ h.price or 0 }}">{{ h.price|money }}</td>
+<td class="n" data-v="{{ h.market_value_local or 0 }}">{{ h.market_value_local|money }}</td>
+<td class="n" data-v="{{ h.market_value_base or 0 }}">{{ h.market_value_base|money }}</td>
+<td class="n" data-v="{{ h.weight_pct or 0 }}">{{ h.weight_pct|pct }}</td>
+<td class="n {{ 'good' if (h.unrealised_base or 0) >= 0 else 'bad' }}"
+    data-v="{{ h.unrealised_base or 0 }}">{{ h.unrealised_base|money }}</td>
+<td class="n" data-v="{{ h.total_return_local or 0 }}">{{ h.total_return_local|money }} {{ h.currency }}</td>
+<td class="n" data-v="{{ h.dividends_local }}">{{ h.dividends_local|money }}</td>
+<td>{{ h.currency }}</td>
+<td>{{ h.price_date or '—' }} <span class="muted">({{ h.price_source or 'n/a' }}{{ ', ' + h.price_quality if h.price_quality }})</span>
+ {% if h.price_stale %}<span class="badge stale">stale</span>{% endif %}</td>
+</tr>
+{% endfor %}
+</tbody></table></div>
+{% endmacro %}
+{% block content %}
+<h2>Current holdings</h2>
+<div class="filter"><input placeholder="Search…" oninput="tableFilter(this,'confirmed');tableFilter(this,'provisional')"></div>
+<h3>Confirmed <span class="badge conf">confirmed_current</span></h3>
+{% if confirmed %}{{ htable(confirmed, 'confirmed') }}
+{% else %}<p class="muted">No confirmed holdings yet — import your latest
+brokerage statement/export to confirm positions.</p>{% endif %}
+<h3>Provisional <span class="badge prov">provisional_current — awaiting broker statement</span></h3>
+{% if provisional %}
+<div class="warnbox">⚠ These positions come from prior records
+(quantities only where transaction evidence exists). They are shown separately
+and never silently mixed into confirmed totals.</div>
+{{ htable(provisional, 'provisional') }}
+{% else %}<p class="muted">None.</p>{% endif %}
+{% if other %}<h3>Other open quantities</h3>{{ htable(other, 'other') }}{% endif %}
+{% endblock %}
