@@ -1,7 +1,7 @@
 /* SIO Insights edition data — generated. Replace to refresh. */
 window.SIO_DATA = {
   "edition": "Jul 2026",
-  "feedAsOf": "2026-07-15",
+  "feedAsOf": "2026-07-16",
   "serials": [
     {
       "id": "I-1",
@@ -18,7 +18,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Apr 2026",
-      "age": 9,
+      "age": 10,
       "dlabel": "Concept-design sprint",
       "ao": "SIO Concepts cell",
       "suspense": "By 28 Jul",
@@ -59,7 +59,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 5,
+      "age": 6,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -92,7 +92,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 5,
+      "age": 6,
       "dlabel": "",
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
@@ -141,7 +141,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -203,7 +203,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 3,
+      "age": 4,
       "dlabel": "",
       "ao": "SIO + ASB3 net-assessment",
       "suspense": "Next edition",
@@ -236,7 +236,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 3,
+      "age": 4,
       "dlabel": "",
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
@@ -310,7 +310,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 1,
+      "age": 2,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -349,7 +349,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Apr 2026",
-      "age": 9,
+      "age": 10,
       "dlabel": "Spectrum-survivable C2",
       "ao": "ASB2 Sense-Strike",
       "suspense": "+30 days",
@@ -396,7 +396,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 5,
+      "age": 6,
       "dlabel": "Directed-energy counter-swarm",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Aug",
@@ -457,7 +457,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 5,
+      "age": 6,
       "dlabel": "",
       "ao": "CESS + ASB1",
       "suspense": "+90 days",
@@ -497,7 +497,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 3,
+      "age": 4,
       "dlabel": "",
       "ao": "ASB2 + SIO net-assessment",
       "suspense": "Next edition",
@@ -547,7 +547,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 5,
+      "age": 6,
       "dlabel": "Autonomous C-UAS at scale",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 20 Aug",
@@ -639,7 +639,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jun 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "Common data layer to delivery",
       "ao": "ADO",
       "suspense": "By 31 Jul",
@@ -685,7 +685,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "Autonomous UGV to production",
       "ao": "ASB1 Manoeuvre Concepts / AOTO",
       "suspense": "By 15 Aug",
@@ -725,7 +725,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 5,
+      "age": 6,
       "dlabel": "",
       "ao": "ASB3 + SIO",
       "suspense": "Next edition",
@@ -757,7 +757,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 5,
+      "age": 6,
       "dlabel": "",
       "ao": "CESS Sustainment Plans",
       "suspense": "+90 days",
@@ -804,7 +804,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 3,
+      "age": 4,
       "dlabel": "",
       "ao": "ASB3 + SIO",
       "suspense": "Next edition",
@@ -851,7 +851,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 1,
+      "age": 2,
       "dlabel": "CCA autonomous weapons release",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Sep",
@@ -885,14 +885,14 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 1,
+      "age": 2,
       "dlabel": "Armed USV combat debut",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Sep",
       "decision": "Assess the maritime autonomous-strike model demonstrated by the Corsair USV strike, including its command-authority pathway, for portfolio relevance.",
-      "signal": "CENTCOM conducted the first-ever US combat use of lethal unmanned surface vessels: three armed Saronic Corsair one-way-attack USVs struck Iran's Bandar Abbas naval base on 12 July, hitting a Ghadir-class midget submarine and port infrastructure. The strike was run as a CENTCOM operation outside the Navy's existing Task Force 59 unmanned-systems framework.",
-      "sowhat": "Crosses a threshold for maritime Sense-and-Strike ambitions: a lethal robotic surface vessel used in live combat, commanded outside the standing unmanned-systems task force structure — both a template and a threat model for maritime strike autonomy the portfolio should account for.",
-      "action": "ASB2 with SIO net-assessment to study the Corsair USV strike as a proof-of-concept for maritime autonomous-strike capability and its command-authority model.",
+      "signal": "CENTCOM conducted the first-ever US combat use of lethal unmanned surface vessels: three armed Saronic Corsair one-way-attack USVs struck Iran's Bandar Abbas naval base on 12 July, hitting a Ghadir-class midget submarine and port infrastructure. The strike was run as a CENTCOM operation outside the Navy's existing Task Force 59 unmanned-systems framework. Days after the strike, Saronic announced a $3.2B \"Port Alpha\" shipyard at the Port of Brownsville, Texas — an 835-acre, up-to-850-foot-vessel facility that could employ up to 10,000 people — its third production site alongside existing Corsair and Marauder USV lines.",
+      "sowhat": "Crosses a threshold for maritime Sense-and-Strike ambitions: a lethal robotic surface vessel used in live combat, commanded outside the standing unmanned-systems task force structure — both a template and a threat model for maritime strike autonomy the portfolio should account for. The follow-on shipyard investment shows the combat debut is being matched with production capacity, not treated as an isolated demonstration — the portfolio should expect this vessel class to scale fast.",
+      "action": "ASB2 with SIO net-assessment to study the Corsair USV strike as a proof-of-concept for maritime autonomous-strike capability and its command-authority model, and track Saronic's Port Alpha shipyard as a leading indicator of production-scale maritime-autonomy delivery timelines.",
       "src": [
         {
           "out": "USNI News",
@@ -901,6 +901,13 @@ window.SIO_DATA = {
           "url": "https://news.usni.org/2026/07/13/video-3-lethal-u-s-drones-attack-iranian-sub-port-facility",
           "f": "verified",
           "note": "Corroborated by Naval News, TWZ, Stars and Stripes, Military Times and The Aviationist."
+        },
+        {
+          "out": "USNI News",
+          "date": "16 Jul 2026",
+          "ttl": "Saronic Announces Texas Site for New $3.2B Shipyard",
+          "url": "https://news.usni.org/2026/07/16/saronic-announces-texas-site-for-new-3-2b-shipyard",
+          "f": "verified"
         }
       ],
       "media": [
@@ -926,7 +933,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 1,
+      "age": 2,
       "dlabel": "",
       "ao": "ASB2 Sense-Strike",
       "suspense": "Next edition",
@@ -958,9 +965,72 @@ window.SIO_DATA = {
           "note": "Source could not be independently corroborated in this window; treat Tranche 1 relaunch details as provisional pending confirmation."
         }
       ]
+    },
+    {
+      "id": "III-10",
+      "pf": "P5",
+      "tech": [
+        "robo"
+      ],
+      "dom": "solution",
+      "owner": "ASB2",
+      "owner2": "SIO",
+      "desk": "EU",
+      "desk2": "US",
+      "verdict": "emerging",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 0,
+      "dlabel": "",
+      "ao": "ASB2 + SIO",
+      "suspense": "Next edition",
+      "decision": "Awareness; track allied drone/counter-drone production-mobilization funding (NATO's $40B commitment, the EU-Ukraine Drone Deal) for interoperability standards and co-production opportunities.",
+      "signal": "Alliance-level funding for drone and counter-drone mass production is scaling beyond national programmes. On 15 July the EU and Ukraine signed a Defense Industrial Partnership — the \"Drone Deal\" — releasing €1B immediately and unlocking €10B more for FPV drones, counter-drone systems, deep-strike missiles and Gripen jets, with a nine-company Ukrainian industry consortium (Skyfall Industries, Deviro, ATHLON AVIA and others) and provision to build and store drones on EU territory before transfer. This follows NATO's 7 July five-year, $40B+ counter-drone package (marketplace, expanded operator training, a Triton procurement) agreed in Ankara.",
+      "sowhat": "A production-and-funding-model signal distinct from the individual capability contests already tracked (III-1's C-UAS fielding, I-7's vendor-capital wave): this is how the Alliance is choosing to fund and co-produce drone/counter-drone capability at scale — joint ventures, forward-stored stock, and marketplace procurement — patterns the portfolio may want to benchmark or plug into for interoperability and co-production.",
+      "action": "SIO with ASB2 to monitor the NATO counter-drone marketplace and the EU-Ukraine Drone Deal consortium for interoperability standards, co-production openings and delivery timelines relevant to our own portfolio lines.",
+      "src": [
+        {
+          "out": "Army Recognition",
+          "date": "7 Jul 2026",
+          "ttl": "NATO approves $40 billion counter-drone initiative to defeat low-cost UAV threats",
+          "url": "https://www.armyrecognition.com/news/aerospace-news/2026/nato-approves-40-billion-counter-drone-initiative-to-defeat-low-cost-uav-threats",
+          "f": "verified"
+        },
+        {
+          "out": "Euronews",
+          "date": "15 Jul 2026",
+          "ttl": "Von der Leyen and Zelenskyy sign EU-Ukraine drone deal",
+          "url": "https://www.euronews.com/my-europe/2026/07/15/von-der-leyen-and-zelenskyy-sign-eu-ukraine-drone-deal",
+          "f": "verified"
+        },
+        {
+          "out": "Kyiv Independent",
+          "date": "15 Jul 2026",
+          "ttl": "EU signs Drone Deal with Ukraine, releases 1 billion euros for unmanned systems",
+          "url": "https://kyivindependent.com/ukraine-signs-drone-deal-with-eu/",
+          "f": "verified"
+        }
+      ]
     }
   ],
   "feed": [
+    {
+      "date": "2026-07-16",
+      "out": "USNI News",
+      "ttl": "Saronic Announces Texas Site for New $3.2B Shipyard",
+      "sum": "Saronic will build an 835-acre \"Port Alpha\" autonomous-vessel shipyard at the Port of Brownsville, Texas — its third facility — following the Corsair USV's first combat use against Iranian naval targets on 12 July.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://news.usni.org/2026/07/16/saronic-announces-texas-site-for-new-3-2b-shipyard",
+      "f": "verified",
+      "serial": "III-8",
+      "saved": false,
+      "flagged": false
+    },
     {
       "date": "2026-07-15",
       "out": "DefenseScoop",
@@ -1029,6 +1099,88 @@ window.SIO_DATA = {
       "f": "verified",
       "note": "Corroborated by a parallel same-week Terra Drone ATLA interceptor-drone selection and UASweekly coverage.",
       "serial": "III-1",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-15",
+      "out": "USNI News",
+      "ttl": "Blue Water Autonomy, Saildrone Sue Navy Over MUSV Rejection",
+      "sum": "Two unmanned-surface-vessel makers filed separate suits in the US Court of Federal Claims alleging the Navy's Medium USV vendor-selection process was arbitrary and capricious after each was passed over in favor of seven other companies.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P4",
+      "desk": "US",
+      "url": "https://news.usni.org/2026/07/15/blue-water-autonomy-saildrone-sue-navy-over-musv-rejection",
+      "f": "verified",
+      "serial": "III-6",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-15",
+      "out": "Euronews",
+      "ttl": "Von der Leyen and Zelenskyy sign EU-Ukraine drone deal",
+      "sum": "The EU and Ukraine signed a Defense Industrial Partnership (\"Drone Deal\") releasing €1B immediately and unlocking €10B more for FPV drones, counter-drone systems, deep-strike missiles and Gripen jets, with a Ukrainian-industry consortium and EU-based joint production facilities planned.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "EU",
+      "url": "https://www.euronews.com/my-europe/2026/07/15/von-der-leyen-and-zelenskyy-sign-eu-ukraine-drone-deal",
+      "f": "verified",
+      "serial": "III-10",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-15",
+      "out": "Defense One",
+      "ttl": "Defense Business Brief: Pennsylvania's DIB — Gecko Robotics manufacturing hub",
+      "sum": "At a Pennsylvania Defense and Innovation Summit featuring prime-contractor and investor leadership, Gecko Robotics announced a new 10,000-sq-ft manufacturing and integration hub in Pittsburgh to bring its AI-powered robotic non-destructive-testing tech to defense-industrial-base partners.",
+      "tech": [
+        "robo",
+        "data"
+      ],
+      "pf": "P7",
+      "desk": "US",
+      "url": "https://www.defenseone.com/business/2026/07/defense-business-brief-farnborough-preview-thoughts-trends-trade-groups-balk-ndaa-buyback-provision-pennsylvanias-dib/414806/",
+      "f": "verified",
+      "serial": null,
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-15",
+      "out": "UPI",
+      "ttl": "Korean Air unveils AI pilot technology at South Korea expo",
+      "sum": "At the Korea Drone & UAM Expo in Incheon, Korean Air showcased an \"AI Pilot\" autonomous fighter-drone concept, a low-observability unmanned formation, a jointly developed prototype with Anduril, and an AI aircraft-inspection system cutting exterior checks from about 10 hours to under an hour.",
+      "tech": [
+        "ai",
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "APAC",
+      "url": "https://www.upi.com/Top_News/World-News/2026/07/15/korean-air-ai-tech/3141784154992/",
+      "f": "verified",
+      "serial": null,
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-15",
+      "out": "USNI News",
+      "ttl": "Taiwan Mobilizes HIMARS, Anti-ship Missiles For Major Defense Drill",
+      "sum": "Taiwan ran a five-day (13–17 Jul) joint drill using US-supplied HIMARS and domestic Hsiung Feng anti-ship missiles to rehearse decentralized, distributed command-and-control against a simulated Chinese amphibious/maritime incursion, ahead of the August Han Kuang exercise.",
+      "tech": [
+        "data"
+      ],
+      "pf": "P6",
+      "desk": "APAC",
+      "url": "https://news.usni.org/2026/07/15/taiwan-mobilizes-himars-anti-ship-missiles-for-major-defense-drill",
+      "f": "verified",
+      "serial": null,
       "saved": false,
       "flagged": false
     },
