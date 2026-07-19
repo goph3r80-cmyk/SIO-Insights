@@ -1,7 +1,7 @@
 /* SIO Insights edition data — generated. Replace to refresh. */
 window.SIO_DATA = {
   "edition": "Jul 2026",
-  "feedAsOf": "2026-07-16",
+  "feedAsOf": "2026-07-18",
   "serials": [
     {
       "id": "I-1",
@@ -18,7 +18,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Apr 2026",
-      "age": 10,
+      "age": 11,
       "dlabel": "Concept-design sprint",
       "ao": "SIO Concepts cell",
       "suspense": "By 28 Jul",
@@ -59,7 +59,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -92,7 +92,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "",
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
@@ -141,7 +141,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 5,
+      "age": 6,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -193,7 +193,8 @@ window.SIO_DATA = {
       "tech": [
         "ai",
         "robo",
-        "data"
+        "data",
+        "dews"
       ],
       "dom": "solution",
       "owner": "SIO",
@@ -203,12 +204,12 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "",
       "ao": "SIO + ASB3 net-assessment",
       "suspense": "Next edition",
       "decision": "Awareness; benchmark allied force-structure moves that consolidate AI, robotics and unmanned systems under a single command.",
-      "signal": "The IDF Chief of Staff announced (8 Jul) that the military will soon finalise a new General Staff structure dedicated to robotics, drones and AI, stating a goal for the IDF to be \"a global leader in unmanned systems in both defense and offense\" — mirroring, in force-structure terms, the US move to consolidate unmanned/autonomous oversight under a single integrator (see I-4).",
+      "signal": "The IDF Chief of Staff announced (8 Jul) that the military will soon finalise a new General Staff structure dedicated to robotics, drones and AI, stating a goal for the IDF to be \"a global leader in unmanned systems in both defense and offense\" — mirroring, in force-structure terms, the US move to consolidate unmanned/autonomous oversight under a single integrator (see I-4). A first concrete manifestation followed on 16 July when Israel Aerospace Industries unveiled \"Hypnosis,\" a non-kinetic electronic-warfare system that disrupts the satellite navigation guiding large-scale drone swarms — an early capability output of the AI/robotics/drone force-structure push.",
       "sowhat": "A force-design benchmark for CapDev: two reference militaries are now reorganising command and acquisition around autonomy as a core function rather than a bolt-on. How partners structure ownership of unmanned and AI capability is both a template and a pace-setter for our own force design.",
       "action": "SIO with ASB3 to track allied force-structure consolidation around autonomy — the US DRPM-UxS and the IDF's new AI/robotics/drone command — and draw force-design lessons for the portfolio.",
       "src": [
@@ -217,6 +218,13 @@ window.SIO_DATA = {
           "date": "8 Jul 2026",
           "ttl": "Zamir: IDF to finalize new AI, drone, robotics unit structure",
           "url": "https://www.jns.org/news/israel-news/zamir-idf-to-finalize-new-ai-drone-robotics-unit-structure",
+          "f": "verified"
+        },
+        {
+          "out": "Ynetnews",
+          "date": "16 Jul 2026",
+          "ttl": "IAI reveals 'Hypnosis' system to disrupt and neutralize drone swarms",
+          "url": "https://www.ynetnews.com/article/sjsdeuwezx",
           "f": "verified"
         }
       ]
@@ -236,7 +244,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "",
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
@@ -310,7 +318,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -349,7 +357,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Apr 2026",
-      "age": 10,
+      "age": 11,
       "dlabel": "Spectrum-survivable C2",
       "ao": "ASB2 Sense-Strike",
       "suspense": "+30 days",
@@ -396,7 +404,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "Directed-energy counter-swarm",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Aug",
@@ -457,7 +465,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "",
       "ao": "CESS + ASB1",
       "suspense": "+90 days",
@@ -497,7 +505,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "",
       "ao": "ASB2 + SIO net-assessment",
       "suspense": "Next edition",
@@ -547,7 +555,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "Autonomous C-UAS at scale",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 20 Aug",
@@ -639,7 +647,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jun 2026",
-      "age": 7,
+      "age": 8,
       "dlabel": "Common data layer to delivery",
       "ao": "ADO",
       "suspense": "By 31 Jul",
@@ -685,7 +693,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 7,
+      "age": 8,
       "dlabel": "Autonomous UGV to production",
       "ao": "ASB1 Manoeuvre Concepts / AOTO",
       "suspense": "By 15 Aug",
@@ -725,7 +733,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "",
       "ao": "ASB3 + SIO",
       "suspense": "Next edition",
@@ -757,7 +765,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "",
       "ao": "CESS Sustainment Plans",
       "suspense": "+90 days",
@@ -804,7 +812,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "",
       "ao": "ASB3 + SIO",
       "suspense": "Next edition",
@@ -851,7 +859,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "CCA autonomous weapons release",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Sep",
@@ -885,7 +893,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "Armed USV combat debut",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Sep",
@@ -933,12 +941,12 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "",
       "ao": "ASB2 Sense-Strike",
       "suspense": "Next edition",
       "decision": "Awareness; track Golden Dome's satellite contract awards and acquisition-authority consolidation for sensing/targeting relevance to the portfolio.",
-      "signal": "Golden Dome's satellite architecture is moving from contractor selection to hardware buys. After naming 12 companies for space-based interceptors in April (up to $3.2B in OTAs, 2028 target), the Space Development Agency awarded L3Harris (~$955M, 18 satellites) and Sierra Space (~$798M, 18 satellites) to build 36 Accelerated Missile Defense Tranche 3 tracking/warning satellites, while a stalled Tranche 1 Transport Layer relaunch (21 satellites) and a draft NDAA provision folding SDA into Space Force's acquisition executive show the programme both accelerating and consolidating.",
+      "signal": "Golden Dome's satellite architecture is moving from contractor selection to hardware buys and delivery. After naming 12 companies for space-based interceptors in April (up to $3.2B in OTAs, 2028 target), the Space Development Agency awarded L3Harris (~$955M, 18 satellites) and Sierra Space (~$798M, 18 satellites) to build 36 Accelerated Missile Defense Tranche 3 tracking/warning satellites. The previously provisional Tranche 1 Transport Layer relaunch is now confirmed: SDA launched 21 more York Space Systems satellites on 16 July, ending a nine-month pause and bringing the data-relay mesh to 63 of its planned 126 satellites — while the Missile Defense Agency separately selected Hanwha Philly Shipyard and TOTE Services to build \"Golden Defender\" missile-range instrumentation vessels, extending the tracking architecture from space to sea.",
       "sowhat": "The space-based sensing and tracking layer for missile defence is now backed by real contract dollars and a consolidating acquisition structure — an All-Echelon Sensing and Strike input for any sensor-to-shooter or space-enabled targeting concept the portfolio develops.",
       "action": "ASB2 to track Golden Dome's satellite contract awards and SDA's acquisition-authority consolidation for space-enabled sensing/targeting relevance to the portfolio.",
       "src": [
@@ -963,6 +971,20 @@ window.SIO_DATA = {
           "url": "https://www.defenseone.com/policy/2026/07/space-development-agency-satellite-launches-criticisms/414781/",
           "f": "unverified",
           "note": "Source could not be independently corroborated in this window; treat Tranche 1 relaunch details as provisional pending confirmation."
+        },
+        {
+          "out": "DefenseScoop",
+          "date": "16 Jul 2026",
+          "ttl": "SDA resumes satellite launch campaign following months-long pause, tech issues",
+          "url": "https://defensescoop.com/2026/07/16/sda-resumes-satellite-launch-campaign-following-tech-issues/",
+          "f": "verified"
+        },
+        {
+          "out": "USNI News",
+          "date": "17 Jul 2026",
+          "ttl": "Philly Shipyard to Build 'Golden Defender' Ship as part of New Missile Defense Program",
+          "url": "https://news.usni.org/2026/07/17/philly-shipyard-to-build-golden-defender-ship-as-part-of-new-missile-defense-program",
+          "f": "verified"
         }
       ]
     },
@@ -981,12 +1003,12 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 0,
+      "age": 1,
       "dlabel": "",
       "ao": "ASB2 + SIO",
       "suspense": "Next edition",
       "decision": "Awareness; track allied drone/counter-drone production-mobilization funding (NATO's $40B commitment, the EU-Ukraine Drone Deal) for interoperability standards and co-production opportunities.",
-      "signal": "Alliance-level funding for drone and counter-drone mass production is scaling beyond national programmes. On 15 July the EU and Ukraine signed a Defense Industrial Partnership — the \"Drone Deal\" — releasing €1B immediately and unlocking €10B more for FPV drones, counter-drone systems, deep-strike missiles and Gripen jets, with a nine-company Ukrainian industry consortium (Skyfall Industries, Deviro, ATHLON AVIA and others) and provision to build and store drones on EU territory before transfer. This follows NATO's 7 July five-year, $40B+ counter-drone package (marketplace, expanded operator training, a Triton procurement) agreed in Ankara.",
+      "signal": "Alliance-level funding for drone and counter-drone mass production is scaling beyond national programmes. On 15 July the EU and Ukraine signed a Defense Industrial Partnership — the \"Drone Deal\" — releasing €1B immediately and unlocking €10B more for FPV drones, counter-drone systems, deep-strike missiles and Gripen jets, with a nine-company Ukrainian industry consortium (Skyfall Industries, Deviro, ATHLON AVIA and others) and provision to build and store drones on EU territory before transfer. This follows NATO's 7 July five-year, $40B+ counter-drone package (marketplace, expanded operator training, a Triton procurement) agreed in Ankara. Two days later, Ukraine's Defense Ministry reported the operational payoff this funding wave is racing to sustain: UAVs now account for roughly 90% of engaged targets, having struck more than 1 million verified targets and killed or wounded about 193,500 Russian troops since the start of 2026.",
       "sowhat": "A production-and-funding-model signal distinct from the individual capability contests already tracked (III-1's C-UAS fielding, I-7's vendor-capital wave): this is how the Alliance is choosing to fund and co-produce drone/counter-drone capability at scale — joint ventures, forward-stored stock, and marketplace procurement — patterns the portfolio may want to benchmark or plug into for interoperability and co-production.",
       "action": "SIO with ASB2 to monitor the NATO counter-drone marketplace and the EU-Ukraine Drone Deal consortium for interoperability standards, co-production openings and delivery timelines relevant to our own portfolio lines.",
       "src": [
@@ -1010,11 +1032,116 @@ window.SIO_DATA = {
           "ttl": "EU signs Drone Deal with Ukraine, releases 1 billion euros for unmanned systems",
           "url": "https://kyivindependent.com/ukraine-signs-drone-deal-with-eu/",
           "f": "verified"
+        },
+        {
+          "out": "Kyiv Independent",
+          "date": "17 Jul 2026",
+          "ttl": "Ukrainian drone units strike over 1 million targets since start of 2026, including nearly 200,000 Russian troops, ministry says",
+          "url": "https://kyivindependent.com/ukrainian-drone-units-strike-over-1-million-targets-in-6-months-including-nearly-200-000-russian-troops-ministry-says/",
+          "f": "verified"
         }
       ]
     }
   ],
   "feed": [
+    {
+      "date": "2026-07-17",
+      "out": "Kyiv Independent",
+      "ttl": "Ukrainian drone units strike over 1 million targets since start of 2026, including nearly 200,000 Russian troops, ministry says",
+      "sum": "Ukraine's Defense Ministry says UAVs now account for roughly 90% of engaged targets, having struck more than 1 million verified targets and killed or wounded about 193,500 Russian troops since the start of 2026.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "EU",
+      "url": "https://kyivindependent.com/ukrainian-drone-units-strike-over-1-million-targets-in-6-months-including-nearly-200-000-russian-troops-ministry-says/",
+      "f": "verified",
+      "serial": "III-10",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-17",
+      "out": "DefenseScoop",
+      "ttl": "Air commandos seek 'SOF-peculiar' attack drones with automatic target recognition capabilities",
+      "sum": "US Special Operations Command is seeking Group 1/2 one-way-attack drones with automatic target recognition, launchable from aircraft via a common 5.9-inch by 42-inch tube, for SOF-specific missions.",
+      "tech": [
+        "robo",
+        "ai"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://defensescoop.com/2026/07/17/air-commandos-attack-drones-automatic-target-recognition/",
+      "f": "verified",
+      "serial": null,
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-17",
+      "out": "USNI News",
+      "ttl": "Philly Shipyard to Build 'Golden Defender' Ship as part of New Missile Defense Program",
+      "sum": "Hanwha Philly Shipyard and TOTE Services were selected to build Missile Defense Agency missile-range instrumentation/tracking vessels, dubbed \"Golden Defender,\" based on the National Security Multi-Mission Vessel design, to support the Golden Dome missile-tracking effort.",
+      "tech": [
+        "data"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://news.usni.org/2026/07/17/philly-shipyard-to-build-golden-defender-ship-as-part-of-new-missile-defense-program",
+      "f": "verified",
+      "serial": "III-9",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-16",
+      "out": "DefenseScoop",
+      "ttl": "SDA resumes satellite launch campaign following months-long pause, tech issues",
+      "sum": "The Space Development Agency launched 21 more York Space Systems Transport Layer satellites on a Falcon 9 on 16 July, resuming Tranche 1 launches after a nine-month pause and bringing the PWSA data-relay constellation to 63 of its planned 126 satellites.",
+      "tech": [
+        "data"
+      ],
+      "pf": "P6",
+      "desk": "US",
+      "url": "https://defensescoop.com/2026/07/16/sda-resumes-satellite-launch-campaign-following-tech-issues/",
+      "f": "verified",
+      "serial": "III-9",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-16",
+      "out": "Ynetnews",
+      "ttl": "IAI reveals 'Hypnosis' system to disrupt and neutralize drone swarms",
+      "sum": "Israel Aerospace Industries unveiled Hypnosis, a non-kinetic electronic-warfare system that disrupts the satellite navigation guiding large-scale drone swarms and other GNSS-dependent aerial threats.",
+      "tech": [
+        "dews",
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "ME",
+      "url": "https://www.ynetnews.com/article/sjsdeuwezx",
+      "f": "verified",
+      "serial": "I-5",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-16",
+      "out": "Aviation Week",
+      "ttl": "Northrop Grumman Sets Launch Date For Robotic Servicing Spacecraft",
+      "sum": "DARPA and Northrop Grumman set a 21 July launch for the Mission Robotic Vehicle, a dexterous dual-arm spacecraft built with the US Naval Research Laboratory to inspect, repair and extend the life of satellites in geosynchronous orbit under the decade-long RSGS program.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P7",
+      "desk": "US",
+      "url": "https://aviationweek.com/space/operations-safety/northrop-grumman-sets-launch-date-robotic-servicing-spacecraft",
+      "f": "verified",
+      "serial": null,
+      "saved": false,
+      "flagged": false
+    },
     {
       "date": "2026-07-16",
       "out": "USNI News",
