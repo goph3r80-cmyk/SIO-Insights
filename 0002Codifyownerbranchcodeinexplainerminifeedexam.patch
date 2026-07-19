@@ -1,0 +1,31 @@
+From 11bf350960462697d83e471cd0600e91f37c655b Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Sun, 19 Jul 2026 13:04:13 +0000
+Subject: [PATCH 2/3] Codify owner branch code in explainer mini-feed example
+
+The walkthrough's mini-feed preview for III-8 showed the full branch
+code (ASB2) instead of the shorthand (A2) used by the annotated card
+directly below it and by the live dashboard's owner-tag rendering.
+
+Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01E4nFqBzkkZeasGtQc5zVum
+---
+ explainer.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/explainer.html b/explainer.html
+index c85705f..b0b4489 100644
+--- a/explainer.html
++++ b/explainer.html
+@@ -309,7 +309,7 @@
+         <span class="chip prio-decision" style="margin-left:6px">DECISION</span>
+         <div class="t1" style="margin-top:8px">Assess the maritime autonomous-strike model demonstrated by the Corsair
+           USV strike…</div>
+-        <div class="m1"><span class="id">III-8</span> Armed USV combat debut · owner ASB2 + SIO</div>
++        <div class="m1"><span class="id">III-8</span> Armed USV combat debut · owner A2 + SIO</div>
+       </div>
+     </div>
+   </div>
+-- 
+2.43.0
+

@@ -1,0 +1,51 @@
+From 6272f24635a01ab232e59dddd3795a46180b744a Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Sun, 19 Jul 2026 14:06:07 +0000
+Subject: [PATCH 3/3] Recodify AOTO and ADO owner shorthand to AO and A4
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+AOTO was OTO, ADO was D4 — both changed to keep the branch-shorthand
+scheme uniform (single-digit-suffixed two-letter codes: A1-A4, AO, CS).
+
+Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01E4nFqBzkkZeasGtQc5zVum
+---
+ explainer.html | 4 ++--
+ index.html     | 4 ++--
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/explainer.html b/explainer.html
+index b0b4489..f0bf646 100644
+--- a/explainer.html
++++ b/explainer.html
+@@ -510,8 +510,8 @@
+       <div class="term-card"><div class="row1"><span class="val">ASB2 · A2</span></div><p>Sense-strike — precision fires, counter-UAS, directed energy.</p></div>
+       <div class="term-card"><div class="row1"><span class="val">ASB3 · A3</span></div><p>PSO, HADR, CT, CUAS, GZ — peace support operations, humanitarian assistance/disaster relief, counter-terrorism, counter-UAS, grey-zone.</p></div>
+       <div class="term-card"><div class="row1"><span class="val">CESS · CS</span></div><p>Sustainment planning.</p></div>
+-      <div class="term-card"><div class="row1"><span class="val">AOTO · OTO</span></div><p>Acquisition / test-to-operations transition.</p></div>
+-      <div class="term-card"><div class="row1"><span class="val">ADO · D4</span></div><p>Army Data Office / ASB4 — data integration and cloud, AI, and digitalisation front-end planning.</p></div>
++      <div class="term-card"><div class="row1"><span class="val">AOTO · AO</span></div><p>Acquisition / test-to-operations transition.</p></div>
++      <div class="term-card"><div class="row1"><span class="val">ADO · A4</span></div><p>Army Data Office / ASB4 — data integration and cloud, AI, and digitalisation front-end planning.</p></div>
+     </div>
+   </div>
+ 
+diff --git a/index.html b/index.html
+index 3d0bb6c..6fcad08 100644
+--- a/index.html
++++ b/index.html
+@@ -368,8 +368,8 @@
+     ASB2: { code:'A2',  label:'Sense-strike — precision fires, counter-UAS, directed energy' },
+     ASB3: { code:'A3',  label:'PSO, HADR, CT, CUAS, GZ — peace support, humanitarian assistance/disaster relief, counter-terrorism, counter-UAS, grey-zone' },
+     CESS: { code:'CS',  label:'Sustainment planning' },
+-    AOTO: { code:'OTO', label:'Acquisition / test-to-operations transition' },
+-    ADO:  { code:'D4',  label:'Army Data Office — data integration & cloud, AI, digitalisation front-end planning' }
++    AOTO: { code:'AO',  label:'Acquisition / test-to-operations transition' },
++    ADO:  { code:'A4',  label:'Army Data Office — data integration & cloud, AI, digitalisation front-end planning' }
+   };
+   function ownerTag(o) {
+     var m = OWNER[o];
+-- 
+2.43.0
+
