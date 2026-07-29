@@ -1,7 +1,7 @@
 /* SIO Insights edition data — generated. Replace to refresh. */
 window.SIO_DATA = {
   "edition": "Jul 2026",
-  "feedAsOf": "2026-07-18",
+  "feedAsOf": "2026-07-29",
   "serials": [
     {
       "id": "I-1",
@@ -18,7 +18,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Apr 2026",
-      "age": 11,
+      "age": 12,
       "dlabel": "Concept-design sprint",
       "ao": "SIO Concepts cell",
       "suspense": "By 28 Jul",
@@ -59,7 +59,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 7,
+      "age": 8,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -92,7 +92,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 7,
+      "age": 8,
       "dlabel": "",
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
@@ -141,7 +141,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -204,7 +204,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 5,
+      "age": 6,
       "dlabel": "",
       "ao": "SIO + ASB3 net-assessment",
       "suspense": "Next edition",
@@ -244,7 +244,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 5,
+      "age": 6,
       "dlabel": "",
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
@@ -318,7 +318,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 3,
+      "age": 4,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -344,6 +344,79 @@ window.SIO_DATA = {
       ]
     },
     {
+      "id": "I-8",
+      "pf": "X",
+      "tech": [
+        "ai",
+        "data"
+      ],
+      "dom": "solution",
+      "owner": "SIO",
+      "owner2": "ADO",
+      "desk": "ME",
+      "desk2": "US",
+      "verdict": "emerging",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 0,
+      "dlabel": "",
+      "ao": "SIO + ADO",
+      "suspense": "Next edition",
+      "decision": "Awareness; track Task Force Talon Synapse as a bilateral AI-C2 interoperability model and watch how classification-sharing constraints are resolved.",
+      "signal": "CENTCOM and the UAE stood up Task Force Talon Synapse, their first bilateral AI task force — roughly 20 US and Emirati personnel working from Abu Dhabi on AI for intelligence support, critical-infrastructure protection and regional security monitoring. A former defense official quoted alongside the announcement flagged the unresolved core problem: what classified information can be shared, at what level, and with whom.",
+      "sowhat": "A coalition AI/C2 interoperability signal: allied task forces built around shared AI tooling only work if classification and data-sharing rules keep pace — the same friction our own multinational data-fabric and common-operating-picture lines will hit as partners are added.",
+      "action": "SIO with ADO to track Task Force Talon Synapse's information-sharing model and flag any classification-sharing precedent transferable to our own coalition AI/C2 work.",
+      "src": [
+        {
+          "out": "DefenseScoop",
+          "date": "28 Jul 2026",
+          "ttl": "U.S. military forms first bilateral AI task force with United Arab Emirates",
+          "url": "https://defensescoop.com/2026/07/28/us-military-ai-task-force-united-arab-emirates/",
+          "f": "verified"
+        },
+        {
+          "out": "Breaking Defense",
+          "date": "28 Jul 2026",
+          "ttl": "CENTCOM announces US-UAE task force on AI",
+          "url": "https://breakingdefense.com/2026/07/centcom-announces-us-uae-task-force-on-ai/",
+          "f": "verified"
+        }
+      ]
+    },
+    {
+      "id": "I-9",
+      "pf": "X",
+      "tech": [
+        "dews"
+      ],
+      "dom": "solution",
+      "owner": "SIO",
+      "owner2": "CESS",
+      "desk": "US",
+      "verdict": "emerging",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 0,
+      "dlabel": "",
+      "ao": "SIO + CESS",
+      "suspense": "Next edition",
+      "decision": "Awareness; track DARPA's Rads to Watts miniature nuclear-power program for cross-portfolio power-source relevance.",
+      "signal": "DARPA's new Rads to Watts program is funding seven competing teams to build radiovoltaic cells that convert radiation directly into electricity without a heat-conversion step, aiming for miniature nuclear batteries able to run for years or decades without recharging in applications spanning satellites, tactical radios and sensors.",
+      "sowhat": "A cross-cutting enabling-technology signal: a maintenance-free, multi-year power source would remove a standing constraint — recharging and battery logistics — on any soldier-worn, sensor, or space-based system the portfolios field.",
+      "action": "SIO with CESS to track Rads to Watts team selections and flag power-source implications for soldier systems, sensors and space platforms.",
+      "src": [
+        {
+          "out": "Breaking Defense",
+          "date": "29 Jul 2026",
+          "ttl": "How DARPA plans to get nuclear power in the size of a 'AA battery'",
+          "url": "https://breakingdefense.com/2026/07/how-darpa-plans-to-get-nuclear-power-in-the-size-of-aa-battery/",
+          "f": "verified"
+        }
+      ]
+    },
+    {
       "id": "II-1",
       "pf": "P6",
       "tech": [
@@ -357,7 +430,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Apr 2026",
-      "age": 11,
+      "age": 12,
       "dlabel": "Spectrum-survivable C2",
       "ao": "ASB2 Sense-Strike",
       "suspense": "+30 days",
@@ -404,7 +477,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 7,
+      "age": 8,
       "dlabel": "Directed-energy counter-swarm",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Aug",
@@ -465,7 +538,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 7,
+      "age": 8,
       "dlabel": "",
       "ao": "CESS + ASB1",
       "suspense": "+90 days",
@@ -505,7 +578,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 5,
+      "age": 6,
       "dlabel": "",
       "ao": "ASB2 + SIO net-assessment",
       "suspense": "Next edition",
@@ -555,7 +628,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 7,
+      "age": 8,
       "dlabel": "Autonomous C-UAS at scale",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 20 Aug",
@@ -647,7 +720,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jun 2026",
-      "age": 8,
+      "age": 9,
       "dlabel": "Common data layer to delivery",
       "ao": "ADO",
       "suspense": "By 31 Jul",
@@ -693,7 +766,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 8,
+      "age": 9,
       "dlabel": "Autonomous UGV to production",
       "ao": "ASB1 Manoeuvre Concepts / AOTO",
       "suspense": "By 15 Aug",
@@ -733,7 +806,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 7,
+      "age": 8,
       "dlabel": "",
       "ao": "ASB3 + SIO",
       "suspense": "Next edition",
@@ -765,7 +838,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 7,
+      "age": 8,
       "dlabel": "",
       "ao": "CESS Sustainment Plans",
       "suspense": "+90 days",
@@ -812,7 +885,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 5,
+      "age": 6,
       "dlabel": "",
       "ao": "ASB3 + SIO",
       "suspense": "Next edition",
@@ -859,7 +932,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 3,
+      "age": 4,
       "dlabel": "CCA autonomous weapons release",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Sep",
@@ -893,7 +966,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 3,
+      "age": 4,
       "dlabel": "Armed USV combat debut",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Sep",
@@ -941,7 +1014,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 3,
+      "age": 4,
       "dlabel": "",
       "ao": "ASB2 Sense-Strike",
       "suspense": "Next edition",
@@ -1003,13 +1076,13 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 1,
+      "age": 2,
       "dlabel": "",
       "ao": "ASB2 + SIO",
       "suspense": "Next edition",
       "decision": "Awareness; track allied drone/counter-drone production-mobilization funding (NATO's $40B commitment, the EU-Ukraine Drone Deal) for interoperability standards and co-production opportunities.",
-      "signal": "Alliance-level funding for drone and counter-drone mass production is scaling beyond national programmes. On 15 July the EU and Ukraine signed a Defense Industrial Partnership — the \"Drone Deal\" — releasing €1B immediately and unlocking €10B more for FPV drones, counter-drone systems, deep-strike missiles and Gripen jets, with a nine-company Ukrainian industry consortium (Skyfall Industries, Deviro, ATHLON AVIA and others) and provision to build and store drones on EU territory before transfer. This follows NATO's 7 July five-year, $40B+ counter-drone package (marketplace, expanded operator training, a Triton procurement) agreed in Ankara. Two days later, Ukraine's Defense Ministry reported the operational payoff this funding wave is racing to sustain: UAVs now account for roughly 90% of engaged targets, having struck more than 1 million verified targets and killed or wounded about 193,500 Russian troops since the start of 2026.",
-      "sowhat": "A production-and-funding-model signal distinct from the individual capability contests already tracked (III-1's C-UAS fielding, I-7's vendor-capital wave): this is how the Alliance is choosing to fund and co-produce drone/counter-drone capability at scale — joint ventures, forward-stored stock, and marketplace procurement — patterns the portfolio may want to benchmark or plug into for interoperability and co-production.",
+      "signal": "Alliance-level funding for drone and counter-drone mass production is scaling beyond national programmes. On 15 July the EU and Ukraine signed a Defense Industrial Partnership — the \"Drone Deal\" — releasing €1B immediately and unlocking €10B more for FPV drones, counter-drone systems, deep-strike missiles and Gripen jets, with a nine-company Ukrainian industry consortium (Skyfall Industries, Deviro, ATHLON AVIA and others) and provision to build and store drones on EU territory before transfer. This follows NATO's 7 July five-year, $40B+ counter-drone package (marketplace, expanded operator training, a Triton procurement) agreed in Ankara. Two days later, Ukraine's Defense Ministry reported the operational payoff this funding wave is racing to sustain: UAVs now account for roughly 90% of engaged targets, having struck more than 1 million verified targets and killed or wounded about 193,500 Russian troops since the start of 2026. That payoff kept scaling into late July: Ukraine's deep-strike arm gained the AGM-188A Rusty Dagger — a US-Norwegian, 500+ nautical-mile cruise missile flown from fighter aircraft since June and credited with \"extreme survivability\" against Russian air defences, including a strike on a Russian semiconductor plant — while on 27 July Ukrainian drones hit oil facilities in Udmurtia and Yaroslavl (over 1,300km inside Russia), Belgorod and a Rostov export terminal in what regional officials called the most massive drone attack yet; Russia's MoD reported downing 276 UAVs overnight.",
+      "sowhat": "A production-and-funding-model signal distinct from the individual capability contests already tracked (III-1's C-UAS fielding, I-7's vendor-capital wave): this is how the Alliance is choosing to fund and co-produce drone/counter-drone capability at scale — joint ventures, forward-stored stock, and marketplace procurement — patterns the portfolio may want to benchmark or plug into for interoperability and co-production. Reinforced by Ukraine's continued scaling of both deep-strike missile reach (Rusty Dagger) and mass drone-raid tempo.",
       "action": "SIO with ASB2 to monitor the NATO counter-drone marketplace and the EU-Ukraine Drone Deal consortium for interoperability standards, co-production openings and delivery timelines relevant to our own portfolio lines.",
       "src": [
         {
@@ -1039,11 +1112,350 @@ window.SIO_DATA = {
           "ttl": "Ukrainian drone units strike over 1 million targets since start of 2026, including nearly 200,000 Russian troops, ministry says",
           "url": "https://kyivindependent.com/ukrainian-drone-units-strike-over-1-million-targets-in-6-months-including-nearly-200-000-russian-troops-ministry-says/",
           "f": "verified"
+        },
+        {
+          "out": "Naval News",
+          "date": "27 Jul 2026",
+          "ttl": "Inside Ukraine's Long-Range Strike Campaign with the AGM-188A Rusty Dagger",
+          "url": "https://www.navalnews.com/naval-news/2026/07/inside-ukraines-long-range-strike-campaign-with-the-agm-188a-rusty-dagger/",
+          "f": "verified"
+        },
+        {
+          "out": "Kyiv Independent",
+          "date": "27 Jul 2026",
+          "ttl": "Ukrainian drones reportedly strike neighboring Belgorod, cities across southern Russia",
+          "url": "https://kyivindependent.com/ukrainian-drones-reportedly-strike-russian-cities-of-belgorod-rostov-on-don/",
+          "f": "verified"
+        }
+      ]
+    },
+    {
+      "id": "III-11",
+      "pf": "P5",
+      "tech": [
+        "robo"
+      ],
+      "dom": "solution",
+      "owner": "ASB2",
+      "owner2": "SIO",
+      "desk": "APAC",
+      "verdict": "emerging",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 0,
+      "dlabel": "",
+      "ao": "ASB2 + SIO",
+      "suspense": "Next edition",
+      "decision": "Awareness; track allied Collaborative Combat Aircraft maturity as a model for multinational loyal-wingman interoperability.",
+      "signal": "Australia's MQ-28 Ghost Bat collaborative combat aircraft flew alongside crewed fighters for the first time in a major multinational exercise, during Valiant Shield 26. PACAF commander Gen. Kevin Schneider said he was \"impressed\" with the programme's progress and cited it as a model for allied loyal-wingman development. Schneider added that PACAF and the Royal Australian Air Force are exploring \"operator-to-operator\" command architectures that would let US pilots command Ghost Bat drones directly, building on the aircraft's joint flights alongside US F-15EXs in the exercise.",
+      "sowhat": "An All-Echelon Sensing and Strike input on allied CCA maturity: a partner nation's uncrewed teaming aircraft is now exercising in a live multinational scenario, ahead of some US CCA variants — a benchmark and potential interoperability pathway for our own manned-unmanned teaming concepts. That operator-to-operator model is itself an interoperability precedent — allied pilots commanding each other's uncrewed teaming aircraft — worth tracking for our own coalition manned-unmanned teaming concepts.",
+      "action": "ASB2 with SIO to track Ghost Bat's exercise integration and assess interoperability implications for allied loyal-wingman concepts.",
+      "src": [
+        {
+          "out": "DefenseScoop",
+          "date": "27 Jul 2026",
+          "ttl": "After Valiant Shield exercise, PACAF commander says he's 'impressed' with Australia's Ghost Bat drone program",
+          "url": "https://defensescoop.com/2026/07/27/ghost-bat-drone-cca-valiant-shield-pacific-air-forces/",
+          "f": "verified"
+        },
+        {
+          "out": "The War Zone",
+          "date": "27 Jul 2026",
+          "ttl": "Australian MQ-28 Ghost Bat Fighter Drones Could Be Commanded By U.S. Pilots",
+          "url": "https://www.twz.com/air/australian-mq-28-ghost-bat-fighter-drones-could-be-commanded-by-u-s-pilots",
+          "f": "verified"
+        }
+      ]
+    },
+    {
+      "id": "III-12",
+      "pf": "P5",
+      "tech": [
+        "robo"
+      ],
+      "dom": "solution",
+      "owner": "ASB2",
+      "owner2": "SIO",
+      "desk": "US",
+      "verdict": "proven",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 0,
+      "dlabel": "",
+      "ao": "ASB2 + SIO",
+      "suspense": "Next edition",
+      "decision": "Awareness; track attritable USV lethality demonstrations for littoral force-protection and sea-denial concepts.",
+      "signal": "The Navy's Global Autonomous Reconnaissance Craft (GARC), an uncrewed surface attack drone from USVDIV 32, detonated against the decommissioned USS Peleliu during a RIMPAC 2026 sinking exercise — the Navy's first GARC live-fire kill, explicitly built on lessons from Ukraine's Black Sea USV campaign.",
+      "sowhat": "A proven-capability input for All-Echelon Sensing and Strike: low-cost attritable USVs have now demonstrated real kinetic lethality against a hulled target in a US Navy exercise, not just a demonstrator context — relevant to any littoral force-protection or sea-denial concept the portfolio develops.",
+      "action": "ASB2 with SIO to track USVDIV 32's GARC fielding timeline and assess attritable-USV lethality for littoral and sea-denial concepts.",
+      "src": [
+        {
+          "out": "The War Zone",
+          "date": "27 Jul 2026",
+          "ttl": "Navy's GARC Kamikaze Drone Boat Blew A Hole In Ex-USS Peleliu During Sinking Exercise",
+          "url": "https://www.twz.com/sea/navys-garc-kamikaze-drone-boat-blew-a-hole-in-ex-uss-peleliu-during-sinking-exercise",
+          "f": "verified"
+        },
+        {
+          "out": "Naval News",
+          "date": "25 Jul 2026",
+          "ttl": "U.S. Navy Deploys Ukraine-Style Kamikaze Sea Drones During Pacific SINKEX",
+          "url": "https://www.navalnews.com/naval-news/2026/07/u-s-navy-deploys-ukraine-style-kamikaze-sea-drones-during-pacific-sinkex/",
+          "f": "verified"
+        }
+      ]
+    },
+    {
+      "id": "III-13",
+      "pf": "P7",
+      "tech": [
+        "ai",
+        "data"
+      ],
+      "dom": "safety",
+      "owner": "CESS",
+      "desk": "US",
+      "verdict": "emerging",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 0,
+      "dlabel": "",
+      "ao": "CESS",
+      "suspense": "Next edition",
+      "decision": "Awareness; track computer-vision inventory automation as a model for sustainment digitisation.",
+      "signal": "Marine Forces Special Operations Command and SOFWERX are developing an \"automated armory\" that uses computer vision and optical recognition — deliberately excluding RF-emitting tags — to track thousands of serialized weapons and equipment in place of manual inventory checks.",
+      "sowhat": "A Multidimensional Force Sustenance input: image-based, RF-free inventory automation is a low-signature digitisation model for classified or OPSEC-sensitive stores, relevant to any digital-inventory or robotic-warehousing line the portfolio pursues.",
+      "action": "CESS to track MARSOC/SOFWERX's automated-armory pilot and assess computer-vision inventory automation for sustainment digitisation.",
+      "src": [
+        {
+          "out": "DefenseScoop",
+          "date": "28 Jul 2026",
+          "ttl": "Marine commandos aim to automate armories with computer vision, other tech",
+          "url": "https://defensescoop.com/2026/07/28/marine-forces-special-operations-command-automated-armory-marsoc/",
+          "f": "verified"
+        }
+      ]
+    },
+    {
+      "id": "III-14",
+      "pf": "P5",
+      "tech": [
+        "ai",
+        "robo"
+      ],
+      "dom": "solution",
+      "owner": "ASB2",
+      "owner2": "SIO",
+      "desk": "US",
+      "verdict": "emerging",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 0,
+      "dlabel": "",
+      "ao": "ASB2 + SIO",
+      "suspense": "Next edition",
+      "decision": "Awareness; track AV/Applied Intuition's single-operator swarm control for relevance to sensor-to-shooter and loitering-munition concepts.",
+      "signal": "AeroVironment and Applied Intuition are integrating Applied Intuition's Acuity ISR/Strike autonomy software into AV's Mayhem 10 loitering munition, letting a single operator control multiple collaborating drones across ISR and strike roles — aimed at the Army's Launched Effects program.",
+      "sowhat": "An All-Echelon Sensing and Strike input on operator-to-drone ratio: vendor-integrated collaborative autonomy is pushing single-operator swarm control from demonstrator toward a program of record, changing the manpower assumptions behind any loitering-munition or launched-effects concept.",
+      "action": "ASB2 with SIO to track the Mayhem 10/Acuity integration and the Launched Effects program for single-operator swarm-control implications.",
+      "src": [
+        {
+          "out": "DefenseScoop",
+          "date": "29 Jul 2026",
+          "ttl": "AV and Applied Intuition team up to bring collaborative autonomy to new Mayhem 10 drone",
+          "url": "https://defensescoop.com/2026/07/29/av-applied-intuition-collaborative-autonomy-mayhem-10-drone/",
+          "f": "verified"
         }
       ]
     }
   ],
   "feed": [
+    {
+      "date": "2026-07-29",
+      "out": "DefenseScoop",
+      "ttl": "AV and Applied Intuition team up to bring collaborative autonomy to new Mayhem 10 drone",
+      "sum": "AeroVironment and Applied Intuition are integrating Applied Intuition's Acuity ISR/Strike autonomy software into AV's Mayhem 10 loitering munition, enabling single-operator control of multiple collaborating drones for the Army's Launched Effects program.",
+      "tech": [
+        "ai",
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://defensescoop.com/2026/07/29/av-applied-intuition-collaborative-autonomy-mayhem-10-drone/",
+      "f": "verified",
+      "serial": "III-14",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-29",
+      "out": "Breaking Defense",
+      "ttl": "How DARPA plans to get nuclear power in the size of a 'AA battery'",
+      "sum": "DARPA's new Rads to Watts program is funding seven teams to build radiovoltaic cells that convert radiation directly into electricity, aiming for miniature nuclear batteries that could power satellites, tactical radios and sensors for years without recharging.",
+      "tech": [
+        "dews"
+      ],
+      "pf": "X",
+      "desk": "US",
+      "url": "https://breakingdefense.com/2026/07/how-darpa-plans-to-get-nuclear-power-in-the-size-of-aa-battery/",
+      "f": "verified",
+      "serial": "I-9",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-28",
+      "out": "DefenseScoop",
+      "ttl": "U.S. military forms first bilateral AI task force with United Arab Emirates",
+      "sum": "CENTCOM and the UAE launched Task Force Talon Synapse, a ~20-person bilateral AI cell based in Abu Dhabi focused on intelligence support, critical-infrastructure protection and regional security monitoring.",
+      "tech": [
+        "ai",
+        "data"
+      ],
+      "pf": "X",
+      "desk": "ME",
+      "url": "https://defensescoop.com/2026/07/28/us-military-ai-task-force-united-arab-emirates/",
+      "f": "verified",
+      "serial": "I-8",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-28",
+      "out": "DefenseScoop",
+      "ttl": "Marine commandos aim to automate armories with computer vision, other tech",
+      "sum": "MARSOC and SOFWERX are developing an RF-free, computer-vision \"automated armory\" to track thousands of serialized weapons and equipment by image recognition instead of manual inventory.",
+      "tech": [
+        "ai",
+        "data"
+      ],
+      "pf": "P7",
+      "desk": "US",
+      "url": "https://defensescoop.com/2026/07/28/marine-forces-special-operations-command-automated-armory-marsoc/",
+      "f": "verified",
+      "serial": "III-13",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-27",
+      "out": "DefenseScoop",
+      "ttl": "After Valiant Shield exercise, PACAF commander says he's 'impressed' with Australia's Ghost Bat drone program",
+      "sum": "PACAF commander Gen. Kevin Schneider praised Australia's MQ-28 Ghost Bat collaborative combat aircraft after it flew alongside crewed fighters for the first time in the multinational Valiant Shield 26 exercise.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "APAC",
+      "url": "https://defensescoop.com/2026/07/27/ghost-bat-drone-cca-valiant-shield-pacific-air-forces/",
+      "f": "verified",
+      "serial": "III-11",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-27",
+      "out": "The War Zone",
+      "ttl": "Navy's GARC Kamikaze Drone Boat Blew A Hole In Ex-USS Peleliu During Sinking Exercise",
+      "sum": "A Navy Global Autonomous Reconnaissance Craft (GARC) uncrewed surface vessel from USVDIV 32 detonated against the decommissioned USS Peleliu during a RIMPAC 2026 SINKEX, the Navy's first live-fire kill by the attritable USV.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://www.twz.com/sea/navys-garc-kamikaze-drone-boat-blew-a-hole-in-ex-uss-peleliu-during-sinking-exercise",
+      "f": "verified",
+      "note": "Corroborated by Naval News.",
+      "serial": "III-12",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-27",
+      "out": "The War Zone",
+      "ttl": "Aerostar High-Altitude Balloons Being Turned Into Drone Motherships",
+      "sum": "Aerostar demonstrated its Lightning stratospheric balloon carrying a single Apollo-R surveillance drone, with plans to scale toward a multi-drone \"mothership\" platform for persistent surveillance, EW and comms relay.",
+      "tech": [
+        "robo",
+        "dews"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://www.twz.com/news-features/aerostar-high-altitude-balloons-being-turned-into-drone-motherships",
+      "f": "verified",
+      "serial": null,
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-27",
+      "out": "Naval News",
+      "ttl": "Inside Ukraine's Long-Range Strike Campaign with the AGM-188A Rusty Dagger",
+      "sum": "Ukraine has fielded the American-Norwegian AGM-188A Rusty Dagger cruise missile (500+nm range) from fighter aircraft since June 2026, using it to strike targets including a semiconductor plant deep inside Russia.",
+      "tech": [
+        "robo",
+        "dews"
+      ],
+      "pf": "P5",
+      "desk": "EU",
+      "url": "https://www.navalnews.com/naval-news/2026/07/inside-ukraines-long-range-strike-campaign-with-the-agm-188a-rusty-dagger/",
+      "f": "verified",
+      "serial": "III-10",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-27",
+      "out": "Kyiv Independent",
+      "ttl": "Ukrainian drones reportedly strike neighboring Belgorod, cities across southern Russia",
+      "sum": "Ukrainian drones struck Belgorod, Rostov-on-Don and oil facilities in Udmurtia and Yaroslavl -- over 1,300km inside Russia -- in what regional officials called the most massive drone attack yet; Russia's defence ministry said it downed 276 UAVs overnight.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "EU",
+      "url": "https://kyivindependent.com/ukrainian-drones-reportedly-strike-russian-cities-of-belgorod-rostov-on-don/",
+      "f": "verified",
+      "serial": "III-10",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-27",
+      "out": "The War Zone",
+      "ttl": "Australian MQ-28 Ghost Bat Fighter Drones Could Be Commanded By U.S. Pilots",
+      "sum": "PACAF commander Gen. Kevin Schneider said the US and Australia are exploring \"operator-to-operator\" command architectures that would let American pilots command Australian MQ-28 Ghost Bat drones, building on their joint flights in Valiant Shield 26.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "APAC",
+      "url": "https://www.twz.com/air/australian-mq-28-ghost-bat-fighter-drones-could-be-commanded-by-u-s-pilots",
+      "f": "verified",
+      "serial": "III-11",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-26",
+      "out": "The War Zone",
+      "ttl": "Meet BARB, The Robot That's A Glimpse At Future Jet Engine Assembly",
+      "sum": "Pratt & Whitney is testing BARB, a robotic arm system for automating jet-engine assembly steps, as part of a broader push toward more automated production lines.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P7",
+      "desk": "US",
+      "url": "https://www.twz.com/air/meet-barb-the-robot-thats-a-glimpse-future-jet-engine-assembly",
+      "f": "verified",
+      "serial": null,
+      "saved": false,
+      "flagged": false
+    },
     {
       "date": "2026-07-17",
       "out": "Kyiv Independent",
