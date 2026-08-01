@@ -397,7 +397,13 @@
   });
 
   /* Header */
-  document.getElementById('ed').textContent = '— ' + D.edition + ' edition';
+  var MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function fmtDate(iso) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
+    if (!m) return iso;
+    return parseInt(m[3], 10) + ' ' + MONTHS[parseInt(m[2], 10) - 1] + ' ' + m[1];
+  }
+  document.getElementById('ed').textContent = '— updated ' + fmtDate(D.feedAsOf);
   document.getElementById('asof').textContent = 'Feed as of ' + D.feedAsOf + ' · ' +
     D.serials.length + ' serials · ' + D.feed.length + ' items';
 
