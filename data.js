@@ -1,7 +1,7 @@
 /* SIO Insights edition data — generated. Replace to refresh. */
 window.SIO_DATA = {
   "edition": "Jul 2026",
-  "feedAsOf": "2026-07-29",
+  "feedAsOf": "2026-07-31",
   "serials": [
     {
       "id": "I-1",
@@ -18,7 +18,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Apr 2026",
-      "age": 12,
+      "age": 13,
       "dlabel": "Concept-design sprint",
       "ao": "SIO Concepts cell",
       "suspense": "By 28 Jul",
@@ -59,7 +59,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 8,
+      "age": 9,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -92,13 +92,13 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 8,
+      "age": 9,
       "dlabel": "",
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
       "decision": "Awareness — net-assessment watch on adversary AI-enabled command and control.",
-      "signal": "Commercial AI providers — reported to include DeepSeek, Alibaba, Tencent, Zhipu and Huawei-linked infrastructure — are being folded into a national military ecosystem supporting surveillance, target recognition, war-gaming and command-and-control functions. PRC military press is now codifying this as doctrine — a PLA Daily article (30 Jun) frames future 'technological strategy' around manipulating, suppressing and reconstructing intelligent networks and AI-enabled command and control resistant to electromagnetic interference — while Hong Kong reporting describes an 'AI Plus' push into PLA electronic warfare and warns PLA training may lag the hardware.",
-      "sowhat": "A net-assessment input: an adversary fusing commercial-grade AI into the kill chain compresses its decision cycle and raises the bar our own C2 and EW must clear. The pathway to watch is civil-military fusion, not just the platforms.",
+      "signal": "Commercial AI providers — reported to include DeepSeek, Alibaba, Tencent, Zhipu and Huawei-linked infrastructure — are being folded into a national military ecosystem supporting surveillance, target recognition, war-gaming and command-and-control functions. PRC military press is now codifying this as doctrine — a PLA Daily article (30 Jun) frames future 'technological strategy' around manipulating, suppressing and reconstructing intelligent networks and AI-enabled command and control resistant to electromagnetic interference — while Hong Kong reporting describes an 'AI Plus' push into PLA electronic warfare and warns PLA training may lag the hardware. A Reuters review (31 Jul) of more than 80 Chinese academic papers and patents found PLA-linked units — Unit 96941, the National University of Defense Technology, and the Academy of Military Sciences — using \"model distillation\" to train domestic defence AI on outputs from US models (OpenAI GPT-3.5/GPT-3, Anthropic Claude 3 Haiku) for code analysis, UAV image processing/navigation and target recognition, a route that sidesteps US chip export controls. Days later, Xi Jinping told a Politburo study session (30 Jul) to \"strengthen the military application of unmanned intelligent technologies\" and build an \"intelligent military system\" — elevating this fusion from technical practice to explicit top-down doctrine.",
+      "sowhat": "A net-assessment input: an adversary fusing commercial-grade AI into the kill chain compresses its decision cycle and raises the bar our own C2 and EW must clear. The pathway to watch is civil-military fusion, not just the platforms. Xi's direct endorsement now confirms this is a stated national priority rather than an emergent practice, and the specific use of distilled US-model outputs sharpens the export-control and model-security angle for our own AI safeguards.",
       "action": "ASB3, with SIO net-assessment, to log adversary commercial-AI-into-C2 fusion as a threat-shaping trend and flag the implications for our counter-C2 and deception concepts.",
       "src": [
         {
@@ -124,6 +124,22 @@ window.SIO_DATA = {
           "url": "https://www.aei.org/articles/china-taiwan-update-july-10-2026/",
           "f": "verified",
           "note": "Summarises a 30 Jun PLA Daily doctrine article; PRC state-authored source — treat as intent signalling."
+        },
+        {
+          "out": "Defense News",
+          "date": "31 Jul 2026",
+          "ttl": "Chinese military researchers tap US AI models to train defense systems",
+          "url": "https://www.defensenews.com/industry/techwatch/2026/07/31/chinese-military-researchers-tap-us-ai-models-to-train-defense-systems/",
+          "f": "verified",
+          "note": "Reuters exclusive; independently carried by multiple outlets."
+        },
+        {
+          "out": "CGTN",
+          "date": "31 Jul 2026",
+          "ttl": "Xi stresses political guidance, innovation in military modernization",
+          "url": "https://news.cgtn.com/news/2026-07-31/Xi-stresses-political-guidance-innovation-in-military-modernization-1PdTkTGx6wM/p.html",
+          "f": "verified",
+          "note": "Chinese state media readout of a 30 Jul Politburo study session; treat as PRC intent signalling — corroborated independently by Bloomberg and SCMP."
         }
       ]
     },
@@ -141,7 +157,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 7,
+      "age": 8,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -204,7 +220,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "",
       "ao": "SIO + ASB3 net-assessment",
       "suspense": "Next edition",
@@ -244,7 +260,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "",
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
@@ -318,7 +334,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -359,7 +375,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 0,
+      "age": 1,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -398,7 +414,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 0,
+      "age": 1,
       "dlabel": "",
       "ao": "SIO + CESS",
       "suspense": "Next edition",
@@ -430,7 +446,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Apr 2026",
-      "age": 12,
+      "age": 13,
       "dlabel": "Spectrum-survivable C2",
       "ao": "ASB2 Sense-Strike",
       "suspense": "+30 days",
@@ -477,7 +493,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 8,
+      "age": 9,
       "dlabel": "Directed-energy counter-swarm",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Aug",
@@ -538,7 +554,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 8,
+      "age": 9,
       "dlabel": "",
       "ao": "CESS + ASB1",
       "suspense": "+90 days",
@@ -578,7 +594,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "",
       "ao": "ASB2 + SIO net-assessment",
       "suspense": "Next edition",
@@ -613,6 +629,38 @@ window.SIO_DATA = {
       ]
     },
     {
+      "id": "II-5",
+      "pf": "P5",
+      "tech": [
+        "robo"
+      ],
+      "dom": "solution",
+      "owner": "ASB2",
+      "owner2": "SIO",
+      "desk": "US",
+      "verdict": "emerging",
+      "priority": "decision",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 0,
+      "dlabel": "Attack-USV solicitation",
+      "ao": "ASB2 + SIO",
+      "suspense": "By 10 Aug",
+      "decision": "Determine whether to track or engage DIU's SWAP-USV solicitation for read-across to attritable maritime-strike concepts.",
+      "signal": "The Defense Innovation Unit and Navy issued the SWAP-USV solicitation for \"market-ready\" unmanned surface vessels that carry and launch two or more market-ready attack drones to detect, identify, track and defeat maritime threats, deployable within 120 days of award. The programme carries a $100M prize purse across competitive phases plus a $200M follow-on procurement budget; responses are due 10 August. It lands alongside two other attritable-USV signals already tracked in this edition (III-8's Corsair strike, III-12's GARC live-fire kill), suggesting the pair-a-boat-with-drones model is moving from demonstration toward acquisition.",
+      "sowhat": "A demand-signal input distinct from the fielding demonstrations already tracked: the Pentagon is now formally soliciting the attritable-USV-launches-drones model at acquisition scale, which shapes both the vendor field and the near-term opportunity window for anyone with a relevant capability.",
+      "action": "ASB2 with SIO to monitor SWAP-USV submissions and awards (due 10 Aug) and assess read-across to counter-swarm and littoral-strike concepts.",
+      "src": [
+        {
+          "out": "Military Times",
+          "date": "29 Jul 2026",
+          "ttl": "Pentagon puts out call for robot boats that launch attack drones",
+          "url": "https://www.militarytimes.com/industry/techwatch/2026/07/29/pentagon-puts-out-call-for-robot-boats-that-launch-attack-drones/",
+          "f": "verified"
+        }
+      ]
+    },
+    {
       "id": "III-1",
       "pf": "P5",
       "tech": [
@@ -628,7 +676,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 8,
+      "age": 9,
       "dlabel": "Autonomous C-UAS at scale",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 20 Aug",
@@ -720,7 +768,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jun 2026",
-      "age": 9,
+      "age": 10,
       "dlabel": "Common data layer to delivery",
       "ao": "ADO",
       "suspense": "By 31 Jul",
@@ -766,7 +814,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 9,
+      "age": 10,
       "dlabel": "Autonomous UGV to production",
       "ao": "ASB1 Manoeuvre Concepts / AOTO",
       "suspense": "By 15 Aug",
@@ -806,7 +854,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 8,
+      "age": 9,
       "dlabel": "",
       "ao": "ASB3 + SIO",
       "suspense": "Next edition",
@@ -838,7 +886,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 8,
+      "age": 9,
       "dlabel": "",
       "ao": "CESS Sustainment Plans",
       "suspense": "+90 days",
@@ -885,7 +933,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "",
       "ao": "ASB3 + SIO",
       "suspense": "Next edition",
@@ -932,7 +980,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "CCA autonomous weapons release",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Sep",
@@ -966,7 +1014,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "Armed USV combat debut",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Sep",
@@ -1014,7 +1062,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "",
       "ao": "ASB2 Sense-Strike",
       "suspense": "Next edition",
@@ -1076,12 +1124,12 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "",
       "ao": "ASB2 + SIO",
       "suspense": "Next edition",
       "decision": "Awareness; track allied drone/counter-drone production-mobilization funding (NATO's $40B commitment, the EU-Ukraine Drone Deal) for interoperability standards and co-production opportunities.",
-      "signal": "Alliance-level funding for drone and counter-drone mass production is scaling beyond national programmes. On 15 July the EU and Ukraine signed a Defense Industrial Partnership — the \"Drone Deal\" — releasing €1B immediately and unlocking €10B more for FPV drones, counter-drone systems, deep-strike missiles and Gripen jets, with a nine-company Ukrainian industry consortium (Skyfall Industries, Deviro, ATHLON AVIA and others) and provision to build and store drones on EU territory before transfer. This follows NATO's 7 July five-year, $40B+ counter-drone package (marketplace, expanded operator training, a Triton procurement) agreed in Ankara. Two days later, Ukraine's Defense Ministry reported the operational payoff this funding wave is racing to sustain: UAVs now account for roughly 90% of engaged targets, having struck more than 1 million verified targets and killed or wounded about 193,500 Russian troops since the start of 2026. That payoff kept scaling into late July: Ukraine's deep-strike arm gained the AGM-188A Rusty Dagger — a US-Norwegian, 500+ nautical-mile cruise missile flown from fighter aircraft since June and credited with \"extreme survivability\" against Russian air defences, including a strike on a Russian semiconductor plant — while on 27 July Ukrainian drones hit oil facilities in Udmurtia and Yaroslavl (over 1,300km inside Russia), Belgorod and a Rostov export terminal in what regional officials called the most massive drone attack yet; Russia's MoD reported downing 276 UAVs overnight.",
+      "signal": "Alliance-level funding for drone and counter-drone mass production is scaling beyond national programmes. On 15 July the EU and Ukraine signed a Defense Industrial Partnership — the \"Drone Deal\" — releasing €1B immediately and unlocking €10B more for FPV drones, counter-drone systems, deep-strike missiles and Gripen jets, with a nine-company Ukrainian industry consortium (Skyfall Industries, Deviro, ATHLON AVIA and others) and provision to build and store drones on EU territory before transfer. This follows NATO's 7 July five-year, $40B+ counter-drone package (marketplace, expanded operator training, a Triton procurement) agreed in Ankara. Two days later, Ukraine's Defense Ministry reported the operational payoff this funding wave is racing to sustain: UAVs now account for roughly 90% of engaged targets, having struck more than 1 million verified targets and killed or wounded about 193,500 Russian troops since the start of 2026. That payoff kept scaling into late July: Ukraine's deep-strike arm gained the AGM-188A Rusty Dagger — a US-Norwegian, 500+ nautical-mile cruise missile flown from fighter aircraft since June and credited with \"extreme survivability\" against Russian air defences, including a strike on a Russian semiconductor plant — while on 27 July Ukrainian drones hit oil facilities in Udmurtia and Yaroslavl (over 1,300km inside Russia), Belgorod and a Rostov export terminal in what regional officials called the most massive drone attack yet; Russia's MoD reported downing 276 UAVs overnight. On 30 July, Ukraine and Latvia signed memorandums covering investment, technology transfer and shared testing infrastructure for UAV production, with plans for a joint drone-manufacturing facility in Latvia's border Latgale region — a bilateral instance of the wider co-production wave this funding is unlocking.",
       "sowhat": "A production-and-funding-model signal distinct from the individual capability contests already tracked (III-1's C-UAS fielding, I-7's vendor-capital wave): this is how the Alliance is choosing to fund and co-produce drone/counter-drone capability at scale — joint ventures, forward-stored stock, and marketplace procurement — patterns the portfolio may want to benchmark or plug into for interoperability and co-production. Reinforced by Ukraine's continued scaling of both deep-strike missile reach (Rusty Dagger) and mass drone-raid tempo.",
       "action": "SIO with ASB2 to monitor the NATO counter-drone marketplace and the EU-Ukraine Drone Deal consortium for interoperability standards, co-production openings and delivery timelines relevant to our own portfolio lines.",
       "src": [
@@ -1126,6 +1174,13 @@ window.SIO_DATA = {
           "ttl": "Ukrainian drones reportedly strike neighboring Belgorod, cities across southern Russia",
           "url": "https://kyivindependent.com/ukrainian-drones-reportedly-strike-russian-cities-of-belgorod-rostov-on-don/",
           "f": "verified"
+        },
+        {
+          "out": "Militarnyi",
+          "date": "30 Jul 2026",
+          "ttl": "Ukraine and Latvia Sign Memorandums on Joint UAV Development",
+          "url": "https://militarnyi.com/en/news/ukraine-latvia-memorandums-uav-development/",
+          "f": "verified"
         }
       ]
     },
@@ -1143,12 +1198,12 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 0,
+      "age": 1,
       "dlabel": "",
       "ao": "ASB2 + SIO",
       "suspense": "Next edition",
       "decision": "Awareness; track allied Collaborative Combat Aircraft maturity as a model for multinational loyal-wingman interoperability.",
-      "signal": "Australia's MQ-28 Ghost Bat collaborative combat aircraft flew alongside crewed fighters for the first time in a major multinational exercise, during Valiant Shield 26. PACAF commander Gen. Kevin Schneider said he was \"impressed\" with the programme's progress and cited it as a model for allied loyal-wingman development. Schneider added that PACAF and the Royal Australian Air Force are exploring \"operator-to-operator\" command architectures that would let US pilots command Ghost Bat drones directly, building on the aircraft's joint flights alongside US F-15EXs in the exercise.",
+      "signal": "Australia's MQ-28 Ghost Bat collaborative combat aircraft flew alongside crewed fighters for the first time in a major multinational exercise, during Valiant Shield 26. PACAF commander Gen. Kevin Schneider said he was \"impressed\" with the programme's progress and cited it as a model for allied loyal-wingman development. Schneider added that PACAF and the Royal Australian Air Force are exploring \"operator-to-operator\" command architectures that would let US pilots command Ghost Bat drones directly, building on the aircraft's joint flights alongside US F-15EXs in the exercise. Separately, as the US Air Force refines requirements for Collaborative Combat Aircraft Increment 2, officials including Secretary Frank Kendall indicated the next-generation loyal-wingman design won't radically depart from Increment 1, prioritising affordability (20-30% cost growth deemed acceptable) over an \"exquisite\" sensor/weapons loadout — reinforcing that CCA designs are maturing rather than being reinvented.",
       "sowhat": "An All-Echelon Sensing and Strike input on allied CCA maturity: a partner nation's uncrewed teaming aircraft is now exercising in a live multinational scenario, ahead of some US CCA variants — a benchmark and potential interoperability pathway for our own manned-unmanned teaming concepts. That operator-to-operator model is itself an interoperability precedent — allied pilots commanding each other's uncrewed teaming aircraft — worth tracking for our own coalition manned-unmanned teaming concepts.",
       "action": "ASB2 with SIO to track Ghost Bat's exercise integration and assess interoperability implications for allied loyal-wingman concepts.",
       "src": [
@@ -1165,8 +1220,16 @@ window.SIO_DATA = {
           "ttl": "Australian MQ-28 Ghost Bat Fighter Drones Could Be Commanded By U.S. Pilots",
           "url": "https://www.twz.com/air/australian-mq-28-ghost-bat-fighter-drones-could-be-commanded-by-u-s-pilots",
           "f": "verified"
+        },
+        {
+          "out": "Aviation Week",
+          "date": "30 Jul 2026",
+          "ttl": "Second-Generation U.S. Autonomous Fighters May Look Like the First",
+          "url": "https://aviationweek.com/defense/budget-policy-operations/second-generation-us-autonomous-fighters-may-look-first",
+          "f": "verified"
         }
-      ]
+      ],
+      "desk2": "US"
     },
     {
       "id": "III-12",
@@ -1182,12 +1245,12 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 0,
+      "age": 1,
       "dlabel": "",
       "ao": "ASB2 + SIO",
       "suspense": "Next edition",
       "decision": "Awareness; track attritable USV lethality demonstrations for littoral force-protection and sea-denial concepts.",
-      "signal": "The Navy's Global Autonomous Reconnaissance Craft (GARC), an uncrewed surface attack drone from USVDIV 32, detonated against the decommissioned USS Peleliu during a RIMPAC 2026 sinking exercise — the Navy's first GARC live-fire kill, explicitly built on lessons from Ukraine's Black Sea USV campaign.",
+      "signal": "The Navy's Global Autonomous Reconnaissance Craft (GARC), an uncrewed surface attack drone from USVDIV 32, detonated against the decommissioned USS Peleliu during a RIMPAC 2026 sinking exercise — the Navy's first GARC live-fire kill, explicitly built on lessons from Ukraine's Black Sea USV campaign. Military Times' follow-up reporting adds specifications: the 16-foot GARC (built by BlackSea Technologies) carries a 1,000lb payload over 700nm at 22 knots and is designed to operate as a swarm.",
       "sowhat": "A proven-capability input for All-Echelon Sensing and Strike: low-cost attritable USVs have now demonstrated real kinetic lethality against a hulled target in a US Navy exercise, not just a demonstrator context — relevant to any littoral force-protection or sea-denial concept the portfolio develops.",
       "action": "ASB2 with SIO to track USVDIV 32's GARC fielding timeline and assess attritable-USV lethality for littoral and sea-denial concepts.",
       "src": [
@@ -1203,6 +1266,13 @@ window.SIO_DATA = {
           "date": "25 Jul 2026",
           "ttl": "U.S. Navy Deploys Ukraine-Style Kamikaze Sea Drones During Pacific SINKEX",
           "url": "https://www.navalnews.com/naval-news/2026/07/u-s-navy-deploys-ukraine-style-kamikaze-sea-drones-during-pacific-sinkex/",
+          "f": "verified"
+        },
+        {
+          "out": "Military Times",
+          "date": "29 Jul 2026",
+          "ttl": "US Navy deploys GARC uncrewed surface vessel in first live-fire training exercise",
+          "url": "https://www.militarytimes.com/news/your-military/2026/07/29/us-navy-deploys-garc-uncrewed-surface-vessel-in-first-live-fire-training-exercise/",
           "f": "verified"
         }
       ]
@@ -1221,7 +1291,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 0,
+      "age": 1,
       "dlabel": "",
       "ao": "CESS",
       "suspense": "Next edition",
@@ -1254,7 +1324,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 0,
+      "age": 1,
       "dlabel": "",
       "ao": "ASB2 + SIO",
       "suspense": "Next edition",
@@ -1271,9 +1341,158 @@ window.SIO_DATA = {
           "f": "verified"
         }
       ]
+    },
+    {
+      "id": "III-15",
+      "pf": "P8",
+      "tech": [
+        "robo"
+      ],
+      "dom": "te",
+      "owner": "CESS",
+      "desk": "US",
+      "verdict": "emerging",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Jul 2026",
+      "age": 0,
+      "dlabel": "",
+      "ao": "CESS logistics-autonomy watch",
+      "suspense": "Next edition",
+      "decision": "Awareness — track DARPA's Lift Challenge results for heavy-lift drone payload-to-weight benchmarks relevant to autonomous resupply and deployable-lift concepts.",
+      "signal": "DARPA opened its Lift Challenge, with more than 100 teams competing 2-9 August in Dayton, Ohio for $6.5M in prizes. Drones capped at 55lb must lift a 110lb payload around a 5-nautical-mile course — a 2:1 payload-to-weight ratio that targets the ceiling of current multirotor designs.",
+      "sowhat": "Directly relevant to the Force Projection and Force Sustenance portfolios (heavy-lift drones, autonomous resupply): the competition will produce an open benchmark for achievable payload fractions that bears on any contested-logistics or deployable-lift concept the portfolios pursue.",
+      "action": "CESS to track competition outcomes after 9 Aug and flag winning payload-to-weight ratios for the sustainment and force-projection concept lines.",
+      "src": [
+        {
+          "out": "Military Times",
+          "date": "30 Jul 2026",
+          "ttl": "DARPA challenge pushes limits of heavy-lift drone technology",
+          "url": "https://www.militarytimes.com/news/your-military/2026/07/30/darpa-challenge-pushes-limits-of-heavy-lift-drone-technology/",
+          "f": "verified"
+        }
+      ]
     }
   ],
   "feed": [
+    {
+      "date": "2026-07-31",
+      "out": "Defense News",
+      "ttl": "Chinese military researchers tap US AI models to train defense systems",
+      "sum": "A Reuters review of 80+ Chinese academic papers/patents found PLA-linked units — Unit 96941, National University of Defense Technology, Academy of Military Sciences — using OpenAI GPT-3.5/GPT-3 and Anthropic Claude 3 Haiku outputs via model distillation to train smaller domestic AI systems for code analysis, UAV image processing/navigation, and target recognition, sidestepping chip export controls.",
+      "tech": [
+        "ai"
+      ],
+      "pf": "P2",
+      "desk": "APAC",
+      "url": "https://www.defensenews.com/industry/techwatch/2026/07/31/chinese-military-researchers-tap-us-ai-models-to-train-defense-systems/",
+      "f": "verified",
+      "note": "Reuters exclusive; independently carried by multiple outlets.",
+      "serial": "I-3",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-30",
+      "out": "South China Morning Post",
+      "ttl": "Xi Jinping urges Chinese armed forces to 'strengthen military application' of AI",
+      "sum": "At a Politburo group study session, Xi directed the PLA to \"strengthen the military application of unmanned intelligent technologies\" and deepen network information systems to build an \"intelligent military system,\" per the official readout.",
+      "tech": [
+        "ai",
+        "robo"
+      ],
+      "pf": "P2",
+      "desk": "APAC",
+      "url": "https://www.scmp.com/news/china/military/article/3362496/xi-jinping-urges-chinese-armed-forces-strengthen-military-application-ai",
+      "f": "paywall",
+      "note": "Body behind SCMP paywall; underlying claim is a state-media (Xinhua/CGTN) readout — treat as PRC intent signal, independently corroborated by Bloomberg and CGTN.",
+      "serial": "I-3",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-30",
+      "out": "Militarnyi",
+      "ttl": "Ukraine and Latvia Sign Memorandums on Joint UAV Development",
+      "sum": "Kyiv and Riga signed memorandums to build UAV production and dual-use testing infrastructure in Latvia, including a planned drone-manufacturing facility in the Latgale border region, transferring Ukrainian combat-derived UAV technology to Latvian industry.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "EU",
+      "url": "https://militarnyi.com/en/news/ukraine-latvia-memorandums-uav-development/",
+      "f": "verified",
+      "serial": "III-10",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-30",
+      "out": "Military Times",
+      "ttl": "DARPA challenge pushes limits of heavy-lift drone technology",
+      "sum": "DARPA opened its Lift Challenge, with 100+ teams competing Aug 2-9 in Dayton, OH for $6.5M in prizes; drones capped at 55lb must lift a 110lb payload around a 5-nautical-mile course, targeting the payload-to-weight ceiling of current multirotor designs.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P8",
+      "desk": "US",
+      "url": "https://www.militarytimes.com/news/your-military/2026/07/30/darpa-challenge-pushes-limits-of-heavy-lift-drone-technology/",
+      "f": "verified",
+      "serial": "III-15",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-30",
+      "out": "Aviation Week",
+      "ttl": "Second-Generation U.S. Autonomous Fighters May Look Like the First",
+      "sum": "As the Air Force refines Collaborative Combat Aircraft Increment 2 requirements, officials including Secretary Frank Kendall indicated the next-gen loyal-wingman design won't radically depart from Increment 1, prioritizing affordability (20-30% cost growth acceptable) over an \"exquisite\" sensor/weapons loadout.",
+      "tech": [
+        "ai",
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://aviationweek.com/defense/budget-policy-operations/second-generation-us-autonomous-fighters-may-look-first",
+      "f": "verified",
+      "serial": "III-11",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-29",
+      "out": "USNI News",
+      "ttl": "More than 35 Experiments Test Unmanned Systems, Emerging Technologies During RIMPAC",
+      "sum": "RIMPAC 2026 embedded 35+ unmanned-systems experiments into live fleet operations across 30 nations, including shipboard additive-manufacturing-to-drone delivery, a Typhoon USV autonomously entering USS Essex's well deck, and long-range ISR trials with uncrewed surface and underwater vehicles.",
+      "tech": [
+        "robo",
+        "data"
+      ],
+      "pf": "P7",
+      "desk": "US",
+      "url": "https://news.usni.org/2026/07/29/more-than-35-experiments-test-unmanned-systems-emerging-technologies-during-rimpac",
+      "f": "verified",
+      "note": "Corroborated by Army Recognition and Indo-Pacific Defense FORUM.",
+      "serial": null,
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-29",
+      "out": "Military Times",
+      "ttl": "Pentagon puts out call for robot boats that launch attack drones",
+      "sum": "DIU/Navy issued the SWAP-USV solicitation for \"market-ready\" unmanned surface vessels integrated with two or more market-ready aerial drones to detect, identify, track, and defeat maritime threats, deployable within 120 days; $100M prize purse plus a $200M follow-on procurement budget, responses due 10 Aug.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://www.militarytimes.com/industry/techwatch/2026/07/29/pentagon-puts-out-call-for-robot-boats-that-launch-attack-drones/",
+      "f": "verified",
+      "serial": "II-5",
+      "saved": false,
+      "flagged": false
+    },
     {
       "date": "2026-07-29",
       "out": "DefenseScoop",
