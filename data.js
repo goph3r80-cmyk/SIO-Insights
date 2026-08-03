@@ -1,7 +1,7 @@
 /* SIO Insights edition data — generated. Replace to refresh. */
 window.SIO_DATA = {
-  "edition": "Jul 2026",
-  "feedAsOf": "2026-07-31",
+  "edition": "Aug 2026",
+  "feedAsOf": "2026-08-02",
   "serials": [
     {
       "id": "I-1",
@@ -18,7 +18,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Apr 2026",
-      "age": 13,
+      "age": 14,
       "dlabel": "Concept-design sprint",
       "ao": "SIO Concepts cell",
       "suspense": "By 28 Jul",
@@ -59,7 +59,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 9,
+      "age": 10,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -92,7 +92,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 9,
+      "age": 10,
       "dlabel": "",
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
@@ -157,7 +157,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 8,
+      "age": 9,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -220,7 +220,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 7,
+      "age": 8,
       "dlabel": "",
       "ao": "SIO + ASB3 net-assessment",
       "suspense": "Next edition",
@@ -260,7 +260,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 7,
+      "age": 8,
       "dlabel": "",
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
@@ -334,7 +334,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 5,
+      "age": 6,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -375,7 +375,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 1,
+      "age": 2,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -414,7 +414,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 1,
+      "age": 2,
       "dlabel": "",
       "ao": "SIO + CESS",
       "suspense": "Next edition",
@@ -433,6 +433,61 @@ window.SIO_DATA = {
       ]
     },
     {
+      "id": "I-10",
+      "pf": "P5",
+      "tech": [
+        "dews"
+      ],
+      "dom": "solution",
+      "owner": "ASB3",
+      "owner2": "SIO",
+      "desk": "APAC",
+      "verdict": "emerging",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Aug 2026",
+      "age": 0,
+      "dlabel": "",
+      "ao": "ASB3 + SIO net-assessment",
+      "suspense": "Next edition",
+      "decision": "Awareness — net-assessment watch on PLA hypersonic anti-ship missile proliferation across the fleet's numerical core.",
+      "signal": "CCTV military-channel footage — released as a trailer for the documentary series \"Achieve Victory\" tied to the PLA's 99th-anniversary programming — showed China's first confirmed launch of the YJ-20 hypersonic anti-ship missile from a Type 052D (Luyang III) destroyer, rather than the flagship Type 055. The YJ-20 is assessed at Mach 6+ cruise with Mach 10 terminal speed and a 1,000-1,500km range, using quasi-ballistic skip-glide/porpoising manoeuvres and satellite mid-course guidance transitioning to active radar/infrared terminal seeking; it was cold-launched vertically from the destroyer's existing 64-cell VLS. Independent analysis notes roughly 35 Type 052D hulls are in service versus 10 Type 055s, so fielding the weapon on the smaller class turns a flagship-exclusive capability into a distributed fleet threat, at the cost of VLS cells otherwise carrying air-defence or ASW rounds. Chinese state media (Global Times/CCTV) is the source of the claim — treat as a capability/intent signal — independently corroborated by The War Zone and Army Recognition analysis.",
+      "sowhat": "A net-assessment input for fleet air-defence and distributed-strike concepts: spreading a Mach 6+/1,000km+ anti-ship weapon across ~35 numerically-dominant hulls (not just 10 flagships) complicates targeting the primary missile carrier and widens the surface threat envelope any allied fleet-defence or sensor-to-shooter concept must account for.",
+      "action": "ASB3, with SIO net-assessment, to track YJ-20 fielding pace across the Type 052D fleet and feed the distributed-hypersonic-threat implication into fleet air-defence and all-echelon sensing/strike concept work.",
+      "src": [
+        {
+          "out": "The War Zone",
+          "date": "29 Jul 2026",
+          "ttl": "China Fires YJ-20 Hypersonic Anti-Ship Missile From Smaller Destroyer",
+          "url": "https://www.twz.com/sea/china-fires-yj-20-hypersonic-anti-ship-missile-from-smaller-destroyer",
+          "f": "verified"
+        },
+        {
+          "out": "Army Recognition",
+          "date": "30 Jul 2026",
+          "ttl": "China Integrates YJ-20 Hypersonic Missile Across Its Most Numerous Modern Type 052D Destroyer Fleet",
+          "url": "https://www.armyrecognition.com/news/navy-news/2026/china-integrates-yj-20-hypersonic-missile-across-its-most-numerous-modern-type-052d-destroyer-fleet",
+          "f": "verified"
+        },
+        {
+          "out": "USNI News",
+          "date": "31 Jul 2026",
+          "ttl": "Chinese Navy Showcases Hypersonic Anti-ship Capability Aboard Destroyers",
+          "url": "https://news.usni.org/2026/07/31/chinese-navy-showcases-hypersonic-anti-ship-capability-aboard-destroyers",
+          "f": "unverified",
+          "note": "403 on direct fetch during this cycle; content corroborated via The War Zone and Army Recognition."
+        },
+        {
+          "out": "GlobalSecurity.org (mirroring Global Times)",
+          "date": "29 Jul 2026",
+          "ttl": "Official video debuts YJ-20 hypersonic missile launched from Type 052D destroyer, boosting anti-ship capabilities: experts",
+          "url": "https://www.globalsecurity.org/wmd/library/news/china/2026/07/china-260729-globaltimes05.htm",
+          "f": "verified",
+          "note": "Chinese state media (Global Times) — treat as intent/capability signalling, corroborated independently above."
+        }
+      ]
+    },
+    {
       "id": "II-1",
       "pf": "P6",
       "tech": [
@@ -446,7 +501,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Apr 2026",
-      "age": 13,
+      "age": 14,
       "dlabel": "Spectrum-survivable C2",
       "ao": "ASB2 Sense-Strike",
       "suspense": "+30 days",
@@ -493,7 +548,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 9,
+      "age": 10,
       "dlabel": "Directed-energy counter-swarm",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Aug",
@@ -554,7 +609,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 9,
+      "age": 10,
       "dlabel": "",
       "ao": "CESS + ASB1",
       "suspense": "+90 days",
@@ -594,7 +649,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 7,
+      "age": 8,
       "dlabel": "",
       "ao": "ASB2 + SIO net-assessment",
       "suspense": "Next edition",
@@ -642,7 +697,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 0,
+      "age": 1,
       "dlabel": "Attack-USV solicitation",
       "ao": "ASB2 + SIO",
       "suspense": "By 10 Aug",
@@ -657,6 +712,68 @@ window.SIO_DATA = {
           "ttl": "Pentagon puts out call for robot boats that launch attack drones",
           "url": "https://www.militarytimes.com/industry/techwatch/2026/07/29/pentagon-puts-out-call-for-robot-boats-that-launch-attack-drones/",
           "f": "verified"
+        }
+      ]
+    },
+    {
+      "id": "II-6",
+      "pf": "P5",
+      "tech": [
+        "dews"
+      ],
+      "dom": "solution",
+      "owner": "ASB2",
+      "desk": "US",
+      "desk2": "EU",
+      "verdict": "emerging",
+      "priority": "decision",
+      "status": "open",
+      "raised": "Aug 2026",
+      "age": 0,
+      "dlabel": "Interceptor cost arms race",
+      "ao": "ASB2 Sense-Strike",
+      "suspense": "By 20 Aug",
+      "decision": "Assess where a low-cost interceptor/strike-weapon track (Freyja-style or PAC-3 ACE-style) should complement our air-defence and long-range fires lines, versus continued reliance on exquisite systems.",
+      "signal": "Munitions depletion from the Iran war and sustained mass Russian/Iranian-pattern raids is driving a two-track affordability race. On the defence side: Lockheed's PAC-3 MSE remains the exquisite standard (~$3.9-4M/round) but the Army just converted a $4.7B one-year deal into a $58.6B, FY26-32 multiyear buy (30 Jul) — tripling PAC-3 MSE production to 2,000/year and funding $8-9B in facility upgrades across 20+ sites, including new munitions centres in Alabama and Arkansas. Nine days earlier, Lockheed unveiled the PAC-3 ACE, a sub-$2M interceptor for air-breathing/short-range threats (Farnborough, 20 Jul) — its own hedge against being undercut. The steeper hedge is external: a 10-nation coalition (Paris, 14 Jul) is backing Ukraine's Fire Point-built Freyja system, built around the ~$700K FP-7.X interceptor (~1/5 the cost of a PAC-3 round), which Ukraine estimates needs 18-24 months to reach pilot production despite a Zelenskyy pledge of technical readiness by end-2026. On the strike side, DIU issued a Ground-Based Affordable Mass (GBAM) call (27 Jul) for autonomously-guided, 600nm+-range munitions under $250K each, ready to demonstrate within three months and scale past 100 units/month within 18 — the same affordable-mass logic applied to offense.",
+      "sowhat": "A live capability-and-industrial-base gap: the Iran war exposed how fast exquisite interceptor stockpiles deplete, and every actor is now hedging between mass-producing the expensive-but-proven system and fielding an unproven cheaper alternative on an aggressive timeline. Any of our air-defence or long-range-fires concepts built solely around exquisite interceptors inherits the same stockpile-depletion risk; a credible low-cost track changes the sustainment math.",
+      "action": "ASB2 to assess whether a Freyja-style or PAC-3 ACE-style low-cost interceptor track (and the DIU GBAM affordable-strike model) should be tracked for read-across to our own air-defence and long-range fires concepts, given the credibility gap between pledged and estimated production timelines.",
+      "src": [
+        {
+          "out": "Defense News",
+          "date": "30 Jul 2026",
+          "ttl": "US strikes $58.6 billion Patriot missile deal amid rising stockpile concerns",
+          "url": "https://www.defensenews.com/industry/techwatch/2026/07/30/us-strikes-586-billion-patriot-missile-deal-amid-rising-stockpile-concerns/",
+          "f": "verified"
+        },
+        {
+          "out": "Defense News",
+          "date": "30 Jul 2026",
+          "ttl": "The arms race for cheaper anti-ballistic weapons is underway",
+          "url": "https://www.defensenews.com/industry/techwatch/2026/07/30/the-arms-race-for-cheaper-anti-ballistic-weapons-is-underway/",
+          "f": "verified"
+        },
+        {
+          "out": "Military Times",
+          "date": "20 Jul 2026",
+          "ttl": "Lockheed Martin announces cheaper Patriot interceptor missile",
+          "url": "https://www.militarytimes.com/news/your-military/2026/07/20/lockheed-martin-announces-cheaper-patriot-interceptor-missile/",
+          "f": "verified",
+          "note": "Syndication of the Defense News wire story; unveiled at Farnborough."
+        },
+        {
+          "out": "Defense News",
+          "date": "27 Jul 2026",
+          "ttl": "Pentagon calls for cheaper long-range strike weapons, with testing in just 3 months",
+          "url": "https://www.defensenews.com/news/2026/07/27/pentagon-calls-for-cheaper-long-range-strike-weapons-with-testing-in-just-3-months/",
+          "f": "verified"
+        },
+        {
+          "out": "Defense News",
+          "date": "14 Jul 2026",
+          "ttl": "9 nations back Ukraine's Patriot alternative, Freyja — and want it flying in a year",
+          "url": "https://www.defensenews.com/global/europe/2026/07/14/9-nations-back-ukraines-patriot-alternative-freyja-and-want-it-flying-in-a-year/",
+          "f": "verified",
+          "note": "Corroborated by Euronews, Al Jazeera, Foreign Policy, Kyiv Post, United24 Media and Opex360."
         }
       ]
     },
@@ -676,12 +793,12 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 9,
+      "age": 10,
       "dlabel": "Autonomous C-UAS at scale",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 20 Aug",
       "decision": "Assess adoption of a proven, autonomous, layered counter-UAS capability at production scale.",
-      "signal": "Counter-UAS is scaling into production — the US Army placed a ~$500M commercial C-UAS/C-sUAS order in early July covering everything from larger UAS to commercial quadcopters, following a ~$500M counter-drone interceptor award to a vendor whose systems were proven in Ukraine, and a military-wide approval of a long-range autonomous C-UAS after border testing. The first task order under the AeroVironment IDIQ (~$80M) is now fielding AI-enabled RF detect-and-defeat systems at Air Force bases, and a UK-Ukrainian jet-powered interceptor (Griffen) scored its first confirmed kill against a jet-powered Shahed variant — US and Ukrainian layered C-UAS lines are converging on the same problem. In parallel, NATO allies committed a five-year package of more than $40B for counter-drone defence, drone procurement and operator training (Ankara, 7 Jul), adding an alliance-wide counter-drone marketplace — C-UAS is now scaling as coordinated policy, not just national buys. The low-cost-interceptor pattern is spreading to allies: France's DGA cleared the Rafale to fire Thales Aculeus LG 68mm laser-guided rockets (\"LADAC\", ~$25-40K/shot) against Shahed-type drones, versus $680K-1.14M MICA missiles, while Japan's ATLA opened two parallel counter-UAS interceptor-drone tracks (Quantum Systems and Terra Drone) under its Early Acquisition Program.",
+      "signal": "Counter-UAS is scaling into production — the US Army placed a ~$500M commercial C-UAS/C-sUAS order in early July covering everything from larger UAS to commercial quadcopters, following a ~$500M counter-drone interceptor award to a vendor whose systems were proven in Ukraine, and a military-wide approval of a long-range autonomous C-UAS after border testing. The first task order under the AeroVironment IDIQ (~$80M) is now fielding AI-enabled RF detect-and-defeat systems at Air Force bases, and a UK-Ukrainian jet-powered interceptor (Griffen) scored its first confirmed kill against a jet-powered Shahed variant — US and Ukrainian layered C-UAS lines are converging on the same problem. In parallel, NATO allies committed a five-year package of more than $40B for counter-drone defence, drone procurement and operator training (Ankara, 7 Jul), adding an alliance-wide counter-drone marketplace — C-UAS is now scaling as coordinated policy, not just national buys. The low-cost-interceptor pattern is spreading to allies: France's DGA cleared the Rafale to fire Thales Aculeus LG 68mm laser-guided rockets (\"LADAC\", ~$25-40K/shot) against Shahed-type drones, versus $680K-1.14M MICA missiles, while Japan's ATLA opened two parallel counter-UAS interceptor-drone tracks (Quantum Systems and Terra Drone) under its Early Acquisition Program. JIATF-401 has now converted that border-tested evaluation into production: CACI won a three-year, up-to-$500M IDIQ for its SkyValor non-kinetic detect-and-defeat system (RF jamming plus net-capture), after a two-day operational demonstration at the Cannon Air Defense Complex, Yuma; the fixed-site CORIAN v3 variant is slated for deployment to critical sites under the Domestic Shield initiative.",
       "sowhat": "An All-Echelon Sense-and-Strike signal: multiple independent programmes now field autonomous, layered defeat against small UAS — the capability our manned engagement loop struggles to match — and at production scale, not experiment.",
       "action": "ASB2 to assess adoption of an autonomous, layered C-UAS capability at scale against our small-UAS threat envelope, drawing on the fielded US and Ukrainian systems and the emerging low-cost-interceptor pattern among allies (France, Japan).",
       "src": [
@@ -741,6 +858,13 @@ window.SIO_DATA = {
           "url": "https://defence-blog.com/japan-taps-a-german-company-for-its-drone-killer-program/",
           "f": "verified",
           "note": "Corroborated by a parallel same-week Terra Drone ATLA interceptor-drone selection and UASweekly coverage."
+        },
+        {
+          "out": "DefenseScoop",
+          "date": "31 Jul 2026",
+          "ttl": "Pentagon's counter-drone task force inks $500M contract for SkyValor 'detect and defeat' system after border testing",
+          "url": "https://defensescoop.com/2026/07/31/pentagon-counter-drone-task-force-500m-contract-caci-skyvalor/",
+          "f": "verified"
         }
       ],
       "media": [
@@ -768,7 +892,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jun 2026",
-      "age": 10,
+      "age": 11,
       "dlabel": "Common data layer to delivery",
       "ao": "ADO",
       "suspense": "By 31 Jul",
@@ -814,7 +938,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 10,
+      "age": 11,
       "dlabel": "Autonomous UGV to production",
       "ao": "ASB1 Manoeuvre Concepts / AOTO",
       "suspense": "By 15 Aug",
@@ -854,7 +978,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 9,
+      "age": 10,
       "dlabel": "",
       "ao": "ASB3 + SIO",
       "suspense": "Next edition",
@@ -886,7 +1010,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 9,
+      "age": 10,
       "dlabel": "",
       "ao": "CESS Sustainment Plans",
       "suspense": "+90 days",
@@ -933,7 +1057,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 7,
+      "age": 8,
       "dlabel": "",
       "ao": "ASB3 + SIO",
       "suspense": "Next edition",
@@ -980,7 +1104,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 5,
+      "age": 6,
       "dlabel": "CCA autonomous weapons release",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Sep",
@@ -1014,7 +1138,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 5,
+      "age": 6,
       "dlabel": "Armed USV combat debut",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Sep",
@@ -1062,7 +1186,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 5,
+      "age": 6,
       "dlabel": "",
       "ao": "ASB2 Sense-Strike",
       "suspense": "Next edition",
@@ -1124,12 +1248,12 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 3,
+      "age": 4,
       "dlabel": "",
       "ao": "ASB2 + SIO",
       "suspense": "Next edition",
       "decision": "Awareness; track allied drone/counter-drone production-mobilization funding (NATO's $40B commitment, the EU-Ukraine Drone Deal) for interoperability standards and co-production opportunities.",
-      "signal": "Alliance-level funding for drone and counter-drone mass production is scaling beyond national programmes. On 15 July the EU and Ukraine signed a Defense Industrial Partnership — the \"Drone Deal\" — releasing €1B immediately and unlocking €10B more for FPV drones, counter-drone systems, deep-strike missiles and Gripen jets, with a nine-company Ukrainian industry consortium (Skyfall Industries, Deviro, ATHLON AVIA and others) and provision to build and store drones on EU territory before transfer. This follows NATO's 7 July five-year, $40B+ counter-drone package (marketplace, expanded operator training, a Triton procurement) agreed in Ankara. Two days later, Ukraine's Defense Ministry reported the operational payoff this funding wave is racing to sustain: UAVs now account for roughly 90% of engaged targets, having struck more than 1 million verified targets and killed or wounded about 193,500 Russian troops since the start of 2026. That payoff kept scaling into late July: Ukraine's deep-strike arm gained the AGM-188A Rusty Dagger — a US-Norwegian, 500+ nautical-mile cruise missile flown from fighter aircraft since June and credited with \"extreme survivability\" against Russian air defences, including a strike on a Russian semiconductor plant — while on 27 July Ukrainian drones hit oil facilities in Udmurtia and Yaroslavl (over 1,300km inside Russia), Belgorod and a Rostov export terminal in what regional officials called the most massive drone attack yet; Russia's MoD reported downing 276 UAVs overnight. On 30 July, Ukraine and Latvia signed memorandums covering investment, technology transfer and shared testing infrastructure for UAV production, with plans for a joint drone-manufacturing facility in Latvia's border Latgale region — a bilateral instance of the wider co-production wave this funding is unlocking.",
+      "signal": "Alliance-level funding for drone and counter-drone mass production is scaling beyond national programmes. On 15 July the EU and Ukraine signed a Defense Industrial Partnership — the \"Drone Deal\" — releasing €1B immediately and unlocking €10B more for FPV drones, counter-drone systems, deep-strike missiles and Gripen jets, with a nine-company Ukrainian industry consortium (Skyfall Industries, Deviro, ATHLON AVIA and others) and provision to build and store drones on EU territory before transfer. This follows NATO's 7 July five-year, $40B+ counter-drone package (marketplace, expanded operator training, a Triton procurement) agreed in Ankara. Two days later, Ukraine's Defense Ministry reported the operational payoff this funding wave is racing to sustain: UAVs now account for roughly 90% of engaged targets, having struck more than 1 million verified targets and killed or wounded about 193,500 Russian troops since the start of 2026. That payoff kept scaling into late July: Ukraine's deep-strike arm gained the AGM-188A Rusty Dagger — a US-Norwegian, 500+ nautical-mile cruise missile flown from fighter aircraft since June and credited with \"extreme survivability\" against Russian air defences, including a strike on a Russian semiconductor plant — while on 27 July Ukrainian drones hit oil facilities in Udmurtia and Yaroslavl (over 1,300km inside Russia), Belgorod and a Rostov export terminal in what regional officials called the most massive drone attack yet; Russia's MoD reported downing 276 UAVs overnight. On 30 July, Ukraine and Latvia signed memorandums covering investment, technology transfer and shared testing infrastructure for UAV production, with plans for a joint drone-manufacturing facility in Latvia's border Latgale region — a bilateral instance of the wider co-production wave this funding is unlocking. The campaign continued into 1-2 August: Ukraine's General Staff confirmed strikes on Engels strategic air base (Tu-95MS/Tu-160 bomber hub) and the Saratov oil refinery (~7M tonnes/year capacity, reportedly hitting its ELOU-AVT-6 processing unit) in Saratov Oblast, the Lyudinovskaya fuel depot in Kaluga Oblast, and a drone storage/launch site near Navlya, Bryansk Oblast; Russian officials reported two deaths from the barrage, and full damage assessment was still pending as of publication.",
       "sowhat": "A production-and-funding-model signal distinct from the individual capability contests already tracked (III-1's C-UAS fielding, I-7's vendor-capital wave): this is how the Alliance is choosing to fund and co-produce drone/counter-drone capability at scale — joint ventures, forward-stored stock, and marketplace procurement — patterns the portfolio may want to benchmark or plug into for interoperability and co-production. Reinforced by Ukraine's continued scaling of both deep-strike missile reach (Rusty Dagger) and mass drone-raid tempo.",
       "action": "SIO with ASB2 to monitor the NATO counter-drone marketplace and the EU-Ukraine Drone Deal consortium for interoperability standards, co-production openings and delivery timelines relevant to our own portfolio lines.",
       "src": [
@@ -1181,6 +1305,14 @@ window.SIO_DATA = {
           "ttl": "Ukraine and Latvia Sign Memorandums on Joint UAV Development",
           "url": "https://militarnyi.com/en/news/ukraine-latvia-memorandums-uav-development/",
           "f": "verified"
+        },
+        {
+          "out": "Kyiv Independent",
+          "date": "2 Aug 2026",
+          "ttl": "Russian oil refinery, airbase, Wildberries warehouse reportedly struck by Ukrainian forces",
+          "url": "https://kyivindependent.com/russian-oil-refinery-airbase-reportedly-struck-by-ukrainian-forces/",
+          "f": "verified",
+          "note": "Ukraine's General Staff confirmed the Engels/Saratov/Kaluga/Bryansk strikes; corroborated by United24 Media. Kyiv Independent notes full damage extent independently unverified."
         }
       ]
     },
@@ -1198,7 +1330,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 1,
+      "age": 2,
       "dlabel": "",
       "ao": "ASB2 + SIO",
       "suspense": "Next edition",
@@ -1245,7 +1377,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 1,
+      "age": 2,
       "dlabel": "",
       "ao": "ASB2 + SIO",
       "suspense": "Next edition",
@@ -1291,7 +1423,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 1,
+      "age": 2,
       "dlabel": "",
       "ao": "CESS",
       "suspense": "Next edition",
@@ -1324,7 +1456,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 1,
+      "age": 2,
       "dlabel": "",
       "ao": "ASB2 + SIO",
       "suspense": "Next edition",
@@ -1355,7 +1487,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 0,
+      "age": 1,
       "dlabel": "",
       "ao": "CESS logistics-autonomy watch",
       "suspense": "Next edition",
@@ -1376,6 +1508,23 @@ window.SIO_DATA = {
   ],
   "feed": [
     {
+      "date": "2026-08-02",
+      "out": "Kyiv Independent",
+      "ttl": "Russian oil refinery, airbase, Wildberries warehouse reportedly struck by Ukrainian forces",
+      "sum": "Ukraine's General Staff confirmed overnight strikes on Engels strategic air base and the Saratov oil refinery in Saratov Oblast, the Lyudinovskaya fuel depot in Kaluga Oblast, and a drone storage/launch site near Navlya, Bryansk Oblast; Russian officials reported two deaths.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "EU",
+      "url": "https://kyivindependent.com/russian-oil-refinery-airbase-reportedly-struck-by-ukrainian-forces/",
+      "f": "verified",
+      "note": "Corroborated by United24 Media; Kyiv Independent notes full damage extent independently unverified.",
+      "serial": "III-10",
+      "saved": false,
+      "flagged": false
+    },
+    {
       "date": "2026-07-31",
       "out": "Defense News",
       "ttl": "Chinese military researchers tap US AI models to train defense systems",
@@ -1389,6 +1538,41 @@ window.SIO_DATA = {
       "f": "verified",
       "note": "Reuters exclusive; independently carried by multiple outlets.",
       "serial": "I-3",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-31",
+      "out": "DefenseScoop",
+      "ttl": "Pentagon's counter-drone task force inks $500M contract for SkyValor 'detect and defeat' system after border testing",
+      "sum": "JIATF-401 awarded CACI a three-year, up-to-$500M IDIQ for its non-kinetic SkyValor counter-UAS system (RF jamming, net-capture) after a two-day operational demonstration at the Cannon Air Defense Complex, Yuma; the fixed-site CORIAN v3 variant is slated for critical-site deployment under the Domestic Shield initiative.",
+      "tech": [
+        "robo",
+        "dews"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://defensescoop.com/2026/07/31/pentagon-counter-drone-task-force-500m-contract-caci-skyvalor/",
+      "f": "verified",
+      "serial": "III-1",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-31",
+      "out": "DefenseScoop",
+      "ttl": "Space Force establishes $981M contract vehicle to develop testing, training infrastructure",
+      "sum": "Space Force's NITE-STAR IDIQ pooled 15 vendors (incl. L3Harris, Northrop Grumman, Lockheed Martin, CACI) to build a combined digital/cyber/live test-and-training range — adversary-mimicking spacecraft plus ground systems that reproduce jamming and cyberattacks — addressing a self-identified simulator shortfall for orbital-warfare training.",
+      "tech": [
+        "data",
+        "dews"
+      ],
+      "pf": "P9",
+      "desk": "US",
+      "url": "https://defensescoop.com/2026/07/31/space-force-contract-vehicle-develop-testing-training-infrastructure/",
+      "f": "verified",
+      "note": "Corroborated by Breaking Defense and SpaceNews.",
+      "serial": null,
       "saved": false,
       "flagged": false
     },
@@ -1460,6 +1644,38 @@ window.SIO_DATA = {
       "flagged": false
     },
     {
+      "date": "2026-07-30",
+      "out": "Defense News",
+      "ttl": "US strikes $58.6 billion Patriot missile deal amid rising stockpile concerns",
+      "sum": "The Army converted a $4.7B one-year Patriot deal into a $58.6B, FY26-32 multiyear buy with Lockheed Martin, tripling PAC-3 MSE production to 2,000/year and funding $8-9B in facility upgrades across 20+ sites.",
+      "tech": [
+        "dews"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://www.defensenews.com/industry/techwatch/2026/07/30/us-strikes-586-billion-patriot-missile-deal-amid-rising-stockpile-concerns/",
+      "f": "verified",
+      "serial": "II-6",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-30",
+      "out": "Defense News",
+      "ttl": "The arms race for cheaper anti-ballistic weapons is underway",
+      "sum": "Analysis of the competing tracks to field cheaper interceptors post-Iran-war: Lockheed's sub-$2M PAC-3 ACE, Ukraine's ~$700K Freyja/FP-7.X coalition, and a US pledge to license Patriot production to Ukraine.",
+      "tech": [
+        "dews"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://www.defensenews.com/industry/techwatch/2026/07/30/the-arms-race-for-cheaper-anti-ballistic-weapons-is-underway/",
+      "f": "verified",
+      "serial": "II-6",
+      "saved": false,
+      "flagged": false
+    },
+    {
       "date": "2026-07-29",
       "out": "USNI News",
       "ttl": "More than 35 Experiments Test Unmanned Systems, Emerging Technologies During RIMPAC",
@@ -1523,6 +1739,22 @@ window.SIO_DATA = {
       "url": "https://breakingdefense.com/2026/07/how-darpa-plans-to-get-nuclear-power-in-the-size-of-aa-battery/",
       "f": "verified",
       "serial": "I-9",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-07-29",
+      "out": "The War Zone",
+      "ttl": "China Fires YJ-20 Hypersonic Anti-Ship Missile From Smaller Destroyer",
+      "sum": "CCTV footage confirmed China's first launch of the YJ-20 hypersonic anti-ship missile (Mach 6+, 1,000-1,500km range) from a Type 052D destroyer rather than the flagship Type 055, distributing the weapon across ~35 hulls instead of 10.",
+      "tech": [
+        "dews"
+      ],
+      "pf": "P5",
+      "desk": "APAC",
+      "url": "https://www.twz.com/sea/china-fires-yj-20-hypersonic-anti-ship-missile-from-smaller-destroyer",
+      "f": "verified",
+      "serial": "I-10",
       "saved": false,
       "flagged": false
     },
@@ -1955,7 +2187,7 @@ window.SIO_DATA = {
       "url": "https://www.defensenews.com/global/europe/2026/07/14/9-nations-back-ukraines-patriot-alternative-freyja-and-want-it-flying-in-a-year/",
       "f": "verified",
       "note": "Corroborated by Euronews, Al Jazeera, Foreign Policy, Kyiv Post, United24 Media and Opex360.",
-      "serial": null,
+      "serial": "II-6",
       "saved": false,
       "flagged": false
     },
