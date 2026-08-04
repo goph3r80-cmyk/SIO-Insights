@@ -172,9 +172,50 @@ serials (e.g. `I-3`, `I-6`, `II-4`) alive across editions.
 - **Industry** — prime & startup press releases (Anduril, Palantir, Lockheed Martin, RTX, etc.), SEC filings, and defence-VC announcements — for funding/contract items
 - **OSINT** — Oryx (equipment losses), ISW daily updates, and reputable open-source analysts — corroborate before treating as fact
 
+### Keyword dragnet — Google Alerts RSS (sweep every run)
+
+A merged Google Alerts RSS feed runs as a standing keyword dragnet alongside
+the source list above. It catches keyword matches from outlets *outside* the
+curated catalog — local press, university labs, corporate newsrooms, niche
+trade sites — that the tiered sweep would miss.
+
+<!-- Feed URL: paste the merged Google Alerts RSS URL here
+     (https://www.google.com/alerts/feeds/<user-id>/<alert-id>) -->
+
+The feed merges five standing alert queries. Use the query that matched to
+pre-seed the row's `tech` and `pf` tags, then confirm against the article
+itself:
+
+| # | Alert query | Typical `tech` | Typical `pf` |
+|---|-------------|----------------|--------------|
+| A1 | `"directed energy" OR "tactical power" OR "sensor-to-shooter" OR hypersonic OR ("advanced materials" AND military)` | `dews` | `P1`, `P5`, `P3` (tactical/portable power) |
+| A2 | `"military robotics" OR "unmanned systems" OR "cyber warfare" OR ("artificial intelligence" AND military)` | `robo`, `ai`, `data` | `P4`, `P5`, `P1`, `P6` |
+| A3 | `("autonomous weapons" OR "unmanned surface vessel" OR "drone swarm" OR "military AI") AND ("testing" OR "deployment" OR "capability" OR "unveiled")` | `robo`, `ai` | `P5`, `P4` |
+| A4 | `("directed energy weapon" OR "tactical laser" OR "high-power microwave" OR "electronic warfare") AND ("intercept" OR "successful test" OR "fielded" OR "demonstration")` | `dews` | `P1`, `P5` |
+| A5 | `("grey zone" OR "force sustenance" OR "military logistics" OR "island defense" OR "force projection" OR "military maneuver" OR "expeditionary") AND (technology OR tech OR system OR autonomous OR software)` | varies | `P2`, `P7`, `P8` |
+
+**How to work the dragnet.** Alert hits are *leads, not sources*:
+
+- **Resolve to the original article.** Google Alerts wraps links in a
+  `google.com/url?...` redirect — always extract and record the canonical
+  article URL, and set `out` to the real publishing outlet, never "Google
+  Alerts".
+- **Dedupe against the tiered sweep first.** Most hits will duplicate Tier 1
+  coverage; the dragnet's value is the residue that *doesn't*. Only carry a
+  hit forward if no curated source already covers the event.
+- **Apply the normal quality bar.** Keyword matching pulls in press-release
+  churn, opinion, and consumer-tech noise — the "genuine defence-tech
+  capability developments" filter and the `f` flag conventions apply
+  unchanged, and unknown outlets default to `unverified` until corroborated.
+- **Report the residue.** If a dragnet-only story survives filtering, note in
+  Signals to Watch which alert query surfaced it — recurring dragnet-only
+  themes are candidates for promotion into the curated source list.
+
 Add or remove sources here as coverage needs change. When you add one, note its
 typical flag (open / `paywall` / ⚠ state-controlled) so downstream runs handle it
-consistently.
+consistently. The alert queries above live in Google Alerts — if a query is
+added, retired, or reworded there, mirror the change in this table so tagging
+stays aligned.
 
 ---
 
