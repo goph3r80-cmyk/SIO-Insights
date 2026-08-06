@@ -1,7 +1,7 @@
 /* SIO Insights edition data — generated. Replace to refresh. */
 window.SIO_DATA = {
   "edition": "Aug 2026",
-  "feedAsOf": "2026-08-02",
+  "feedAsOf": "2026-08-04",
   "serials": [
     {
       "id": "I-1",
@@ -18,7 +18,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Apr 2026",
-      "age": 14,
+      "age": 15,
       "dlabel": "Concept-design sprint",
       "ao": "SIO Concepts cell",
       "suspense": "By 28 Jul",
@@ -59,7 +59,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 10,
+      "age": 11,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -92,14 +92,14 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 10,
+      "age": 11,
       "dlabel": "",
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
       "decision": "Awareness — net-assessment watch on adversary AI-enabled command and control.",
-      "signal": "Commercial AI providers — reported to include DeepSeek, Alibaba, Tencent, Zhipu and Huawei-linked infrastructure — are being folded into a national military ecosystem supporting surveillance, target recognition, war-gaming and command-and-control functions. PRC military press is now codifying this as doctrine — a PLA Daily article (30 Jun) frames future 'technological strategy' around manipulating, suppressing and reconstructing intelligent networks and AI-enabled command and control resistant to electromagnetic interference — while Hong Kong reporting describes an 'AI Plus' push into PLA electronic warfare and warns PLA training may lag the hardware. A Reuters review (31 Jul) of more than 80 Chinese academic papers and patents found PLA-linked units — Unit 96941, the National University of Defense Technology, and the Academy of Military Sciences — using \"model distillation\" to train domestic defence AI on outputs from US models (OpenAI GPT-3.5/GPT-3, Anthropic Claude 3 Haiku) for code analysis, UAV image processing/navigation and target recognition, a route that sidesteps US chip export controls. Days later, Xi Jinping told a Politburo study session (30 Jul) to \"strengthen the military application of unmanned intelligent technologies\" and build an \"intelligent military system\" — elevating this fusion from technical practice to explicit top-down doctrine.",
-      "sowhat": "A net-assessment input: an adversary fusing commercial-grade AI into the kill chain compresses its decision cycle and raises the bar our own C2 and EW must clear. The pathway to watch is civil-military fusion, not just the platforms. Xi's direct endorsement now confirms this is a stated national priority rather than an emergent practice, and the specific use of distilled US-model outputs sharpens the export-control and model-security angle for our own AI safeguards.",
-      "action": "ASB3, with SIO net-assessment, to log adversary commercial-AI-into-C2 fusion as a threat-shaping trend and flag the implications for our counter-C2 and deception concepts.",
+      "signal": "Commercial AI providers — reported to include DeepSeek, Alibaba, Tencent, Zhipu and Huawei-linked infrastructure — are being folded into a national military ecosystem supporting surveillance, target recognition, war-gaming and command-and-control functions. PRC military press is now codifying this as doctrine — a PLA Daily article (30 Jun) frames future 'technological strategy' around manipulating, suppressing and reconstructing intelligent networks and AI-enabled command and control resistant to electromagnetic interference — while Hong Kong reporting describes an 'AI Plus' push into PLA electronic warfare and warns PLA training may lag the hardware. A Reuters review (31 Jul) of more than 80 Chinese academic papers and patents found PLA-linked units — Unit 96941, the National University of Defense Technology, and the Academy of Military Sciences — using \"model distillation\" to train domestic defence AI on outputs from US models (OpenAI GPT-3.5/GPT-3, Anthropic Claude 3 Haiku) for code analysis, UAV image processing/navigation and target recognition, a route that sidesteps US chip export controls. Days later, Xi Jinping told a Politburo study session (30 Jul) to \"strengthen the military application of unmanned intelligent technologies\" and build an \"intelligent military system\" — elevating this fusion from technical practice to explicit top-down doctrine. A CCTV documentary series (制胜 / ‘Zhisheng’), broadcast to mark the PLA's 99th anniversary, revealed a PLA ‘intelligent strike planning system’ built by a team under Senior Colonel Deng Jianping: it prioritises targets, sequences attack waves and assigns unit tasking for large-scale aerial operations spanning hundreds of targets and dozens of formations — Deng described the core challenge as modelling ‘battlefield logic’ (targets, firepower, penetration, damage assessment) rather than the software itself (SCMP, 3 Aug).",
+      "sowhat": "A net-assessment input: an adversary fusing commercial-grade AI into the kill chain compresses its decision cycle and raises the bar our own C2 and EW must clear. The pathway to watch is civil-military fusion, not just the platforms. Xi's direct endorsement now confirms this is a stated national priority rather than an emergent practice, and the specific use of distilled US-model outputs sharpens the export-control and model-security angle for our own AI safeguards. The strike-planning system is a concrete instance of the AI-into-C2 fusion this serial tracks — moving from surveillance/target-recognition applications toward AI-assisted strike-package planning at the formation level.",
+      "action": "ASB3, with SIO net-assessment, to log adversary commercial-AI-into-C2 fusion — including the newly revealed AI strike-planning system — as a threat-shaping trend and flag the implications for our counter-C2 and deception concepts.",
       "src": [
         {
           "out": "Atlantic Council",
@@ -140,6 +140,14 @@ window.SIO_DATA = {
           "url": "https://news.cgtn.com/news/2026-07-31/Xi-stresses-political-guidance-innovation-in-military-modernization-1PdTkTGx6wM/p.html",
           "f": "verified",
           "note": "Chinese state media readout of a 30 Jul Politburo study session; treat as PRC intent signalling — corroborated independently by Bloomberg and SCMP."
+        },
+        {
+          "out": "South China Morning Post",
+          "date": "3 Aug 2026",
+          "ttl": "Chinese military unveils AI system to plan and coordinate mass air strikes",
+          "url": "https://www.scmp.com/news/china/military/article/3362824/chinese-military-unveils-ai-system-plan-and-coordinate-mass-air-strikes",
+          "f": "paywall",
+          "note": "Hong Kong outlet citing a CCTV PLA-99th-anniversary documentary; state-linked footage — treat as intent signalling."
         }
       ]
     },
@@ -157,7 +165,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 9,
+      "age": 10,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -220,7 +228,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 8,
+      "age": 9,
       "dlabel": "",
       "ao": "SIO + ASB3 net-assessment",
       "suspense": "Next edition",
@@ -260,7 +268,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 8,
+      "age": 9,
       "dlabel": "",
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
@@ -334,7 +342,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -375,7 +383,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "",
       "ao": "SIO + ADO",
       "suspense": "Next edition",
@@ -414,7 +422,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "",
       "ao": "SIO + CESS",
       "suspense": "Next edition",
@@ -446,7 +454,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Aug 2026",
-      "age": 0,
+      "age": 1,
       "dlabel": "",
       "ao": "ASB3 + SIO net-assessment",
       "suspense": "Next edition",
@@ -488,6 +496,47 @@ window.SIO_DATA = {
       ]
     },
     {
+      "id": "I-11",
+      "pf": "X",
+      "tech": [
+        "robo",
+        "ai"
+      ],
+      "dom": "solution",
+      "owner": "SIO",
+      "owner2": "ADO",
+      "desk": "APAC",
+      "verdict": "emerging",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Aug 2026",
+      "age": 0,
+      "dlabel": "Allied doctrine read-across",
+      "ao": "SIO + ADO",
+      "suspense": "Next edition",
+      "decision": "Awareness — track Japan's doctrine shift toward drones and AI as read-across for allied capability-development trends in the region.",
+      "signal": "Japan's Cabinet adopted its 2026 defence white paper (4 Aug), which for the first time gives dedicated treatment to a ‘new way of warfare’ — explicitly naming drones and AI, drawn from lessons of the Ukraine and Middle East wars, as central design elements alongside adequate munitions stockpiles for sustained operations. The paper reiterates China's expanding Pacific military reach (including simultaneous two-carrier deployments beyond the First Island Chain) as Japan's greatest strategic challenge, and calls for a stronger, export-enabled domestic defence-technology base. Concretely, Japan's Acquisition, Technology and Logistics Agency has shortlisted four drone makers (from 38 applicants) for a rapid-development track advancing to navy testing this month.",
+      "sowhat": "A doctrine-shaping signal from a first-tier regional ally: Japan is explicitly redesigning its operating concept around drones and AI in direct response to the same China Pacific-expansion trend our own net-assessment serials (I-3, I-6) track from the adversary side. It is a useful concept-design comparator and a potential interoperability/procurement-convergence signal for the region.",
+      "action": "SIO with ADO to monitor Japan's 'new way of warfare' doctrine implementation — including the ATLA rapid-drone-development shortlist's navy testing outcomes — for concept read-across and allied-interoperability implications.",
+      "src": [
+        {
+          "out": "Nippon.com (Jiji Press)",
+          "date": "4 Aug 2026",
+          "ttl": "Japan Sees Urgent Need to Prepare for New Ways of Warfare",
+          "url": "https://www.nippon.com/en/news/yjj2026080400394/",
+          "f": "verified"
+        },
+        {
+          "out": "The Diplomat",
+          "date": "4 Aug 2026",
+          "ttl": "Japan's 2026 Defense White Paper Warns of China's Expanding Military Reach in the Pacific",
+          "url": "https://thediplomat.com/2026/08/japans-2026-defense-white-paper-warns-of-chinas-expanding-military-reach-in-the-pacific/",
+          "f": "verified",
+          "note": "Corroborates the white paper's China-Pacific framing; drone/AI ‘new way of warfare’ section detail drawn primarily from the Jiji Press wire."
+        }
+      ]
+    },
+    {
       "id": "II-1",
       "pf": "P6",
       "tech": [
@@ -501,7 +550,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Apr 2026",
-      "age": 14,
+      "age": 15,
       "dlabel": "Spectrum-survivable C2",
       "ao": "ASB2 Sense-Strike",
       "suspense": "+30 days",
@@ -548,7 +597,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 10,
+      "age": 11,
       "dlabel": "Directed-energy counter-swarm",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Aug",
@@ -609,7 +658,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 10,
+      "age": 11,
       "dlabel": "",
       "ao": "CESS + ASB1",
       "suspense": "+90 days",
@@ -649,7 +698,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 8,
+      "age": 9,
       "dlabel": "",
       "ao": "ASB2 + SIO net-assessment",
       "suspense": "Next edition",
@@ -697,7 +746,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 1,
+      "age": 2,
       "dlabel": "Attack-USV solicitation",
       "ao": "ASB2 + SIO",
       "suspense": "By 10 Aug",
@@ -729,14 +778,14 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Aug 2026",
-      "age": 0,
+      "age": 1,
       "dlabel": "Interceptor cost arms race",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 20 Aug",
       "decision": "Assess where a low-cost interceptor/strike-weapon track (Freyja-style or PAC-3 ACE-style) should complement our air-defence and long-range fires lines, versus continued reliance on exquisite systems.",
-      "signal": "Munitions depletion from the Iran war and sustained mass Russian/Iranian-pattern raids is driving a two-track affordability race. On the defence side: Lockheed's PAC-3 MSE remains the exquisite standard (~$3.9-4M/round) but the Army just converted a $4.7B one-year deal into a $58.6B, FY26-32 multiyear buy (30 Jul) — tripling PAC-3 MSE production to 2,000/year and funding $8-9B in facility upgrades across 20+ sites, including new munitions centres in Alabama and Arkansas. Nine days earlier, Lockheed unveiled the PAC-3 ACE, a sub-$2M interceptor for air-breathing/short-range threats (Farnborough, 20 Jul) — its own hedge against being undercut. The steeper hedge is external: a 10-nation coalition (Paris, 14 Jul) is backing Ukraine's Fire Point-built Freyja system, built around the ~$700K FP-7.X interceptor (~1/5 the cost of a PAC-3 round), which Ukraine estimates needs 18-24 months to reach pilot production despite a Zelenskyy pledge of technical readiness by end-2026. On the strike side, DIU issued a Ground-Based Affordable Mass (GBAM) call (27 Jul) for autonomously-guided, 600nm+-range munitions under $250K each, ready to demonstrate within three months and scale past 100 units/month within 18 — the same affordable-mass logic applied to offense.",
-      "sowhat": "A live capability-and-industrial-base gap: the Iran war exposed how fast exquisite interceptor stockpiles deplete, and every actor is now hedging between mass-producing the expensive-but-proven system and fielding an unproven cheaper alternative on an aggressive timeline. Any of our air-defence or long-range-fires concepts built solely around exquisite interceptors inherits the same stockpile-depletion risk; a credible low-cost track changes the sustainment math.",
-      "action": "ASB2 to assess whether a Freyja-style or PAC-3 ACE-style low-cost interceptor track (and the DIU GBAM affordable-strike model) should be tracked for read-across to our own air-defence and long-range fires concepts, given the credibility gap between pledged and estimated production timelines.",
+      "signal": "Munitions depletion from the Iran war and sustained mass Russian/Iranian-pattern raids is driving a two-track affordability race. On the defence side: Lockheed's PAC-3 MSE remains the exquisite standard (~$3.9-4M/round) but the Army just converted a $4.7B one-year deal into a $58.6B, FY26-32 multiyear buy (30 Jul) — tripling PAC-3 MSE production to 2,000/year and funding $8-9B in facility upgrades across 20+ sites, including new munitions centres in Alabama and Arkansas. Nine days earlier, Lockheed unveiled the PAC-3 ACE, a sub-$2M interceptor for air-breathing/short-range threats (Farnborough, 20 Jul) — its own hedge against being undercut. The steeper hedge is external: a 10-nation coalition (Paris, 14 Jul) is backing Ukraine's Fire Point-built Freyja system, built around the ~$700K FP-7.X interceptor (~1/5 the cost of a PAC-3 round), which Ukraine estimates needs 18-24 months to reach pilot production despite a Zelenskyy pledge of technical readiness by end-2026. On the strike side, DIU issued a Ground-Based Affordable Mass (GBAM) call (27 Jul) for autonomously-guided, 600nm+-range munitions under $250K each, ready to demonstrate within three months and scale past 100 units/month within 18 — the same affordable-mass logic applied to offense. The industrial-base side of the same affordability race moved too: the Pentagon inked a combined $3B framework (3 Aug) covering seven-year Patriot and THAAD component supply — Northrop Grumman becomes a second-source Patriot solid-rocket-motor supplier under a $2B deal (partnered with Lockheed Martin), while L3Harris signed a concurrent $1B THAAD structural-components and PAC-3 propulsion agreement — both explicitly aimed at rebuilding stockpiles depleted by the Iran war.",
+      "sowhat": "A live capability-and-industrial-base gap: the Iran war exposed how fast exquisite interceptor stockpiles deplete, and every actor is now hedging between mass-producing the expensive-but-proven system and fielding an unproven cheaper alternative on an aggressive timeline. Any of our air-defence or long-range-fires concepts built solely around exquisite interceptors inherits the same stockpile-depletion risk; a credible low-cost track changes the sustainment math. This is the exquisite-track hedge in industrial-base terms: second-sourcing and multi-year component deals are how the expensive-but-proven track scales production, independent of whether a low-cost alternative also matures.",
+      "action": "ASB2 to assess whether a Freyja-style or PAC-3 ACE-style low-cost interceptor track (and the DIU GBAM affordable-strike model) should be tracked for read-across to our own air-defence and long-range fires concepts, alongside the parallel Patriot/THAAD industrial-base expansion, given the credibility gap between pledged and estimated production timelines.",
       "src": [
         {
           "out": "Defense News",
@@ -774,6 +823,13 @@ window.SIO_DATA = {
           "url": "https://www.defensenews.com/global/europe/2026/07/14/9-nations-back-ukraines-patriot-alternative-freyja-and-want-it-flying-in-a-year/",
           "f": "verified",
           "note": "Corroborated by Euronews, Al Jazeera, Foreign Policy, Kyiv Post, United24 Media and Opex360."
+        },
+        {
+          "out": "DefenseScoop",
+          "date": "3 Aug 2026",
+          "ttl": "Pentagon inks $3B framework agreement for Patriot, THAAD components",
+          "url": "https://defensescoop.com/2026/08/03/pentagon-inks-3b-framework-agreement-for-patriot-thaad-components/",
+          "f": "verified"
         }
       ]
     },
@@ -793,14 +849,14 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 10,
+      "age": 11,
       "dlabel": "Autonomous C-UAS at scale",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 20 Aug",
       "decision": "Assess adoption of a proven, autonomous, layered counter-UAS capability at production scale.",
-      "signal": "Counter-UAS is scaling into production — the US Army placed a ~$500M commercial C-UAS/C-sUAS order in early July covering everything from larger UAS to commercial quadcopters, following a ~$500M counter-drone interceptor award to a vendor whose systems were proven in Ukraine, and a military-wide approval of a long-range autonomous C-UAS after border testing. The first task order under the AeroVironment IDIQ (~$80M) is now fielding AI-enabled RF detect-and-defeat systems at Air Force bases, and a UK-Ukrainian jet-powered interceptor (Griffen) scored its first confirmed kill against a jet-powered Shahed variant — US and Ukrainian layered C-UAS lines are converging on the same problem. In parallel, NATO allies committed a five-year package of more than $40B for counter-drone defence, drone procurement and operator training (Ankara, 7 Jul), adding an alliance-wide counter-drone marketplace — C-UAS is now scaling as coordinated policy, not just national buys. The low-cost-interceptor pattern is spreading to allies: France's DGA cleared the Rafale to fire Thales Aculeus LG 68mm laser-guided rockets (\"LADAC\", ~$25-40K/shot) against Shahed-type drones, versus $680K-1.14M MICA missiles, while Japan's ATLA opened two parallel counter-UAS interceptor-drone tracks (Quantum Systems and Terra Drone) under its Early Acquisition Program. JIATF-401 has now converted that border-tested evaluation into production: CACI won a three-year, up-to-$500M IDIQ for its SkyValor non-kinetic detect-and-defeat system (RF jamming plus net-capture), after a two-day operational demonstration at the Cannon Air Defense Complex, Yuma; the fixed-site CORIAN v3 variant is slated for deployment to critical sites under the Domestic Shield initiative.",
-      "sowhat": "An All-Echelon Sense-and-Strike signal: multiple independent programmes now field autonomous, layered defeat against small UAS — the capability our manned engagement loop struggles to match — and at production scale, not experiment.",
-      "action": "ASB2 to assess adoption of an autonomous, layered C-UAS capability at scale against our small-UAS threat envelope, drawing on the fielded US and Ukrainian systems and the emerging low-cost-interceptor pattern among allies (France, Japan).",
+      "signal": "Counter-UAS is scaling into production — the US Army placed a ~$500M commercial C-UAS/C-sUAS order in early July covering everything from larger UAS to commercial quadcopters, following a ~$500M counter-drone interceptor award to a vendor whose systems were proven in Ukraine, and a military-wide approval of a long-range autonomous C-UAS after border testing. The first task order under the AeroVironment IDIQ (~$80M) is now fielding AI-enabled RF detect-and-defeat systems at Air Force bases, and a UK-Ukrainian jet-powered interceptor (Griffen) scored its first confirmed kill against a jet-powered Shahed variant — US and Ukrainian layered C-UAS lines are converging on the same problem. In parallel, NATO allies committed a five-year package of more than $40B for counter-drone defence, drone procurement and operator training (Ankara, 7 Jul), adding an alliance-wide counter-drone marketplace — C-UAS is now scaling as coordinated policy, not just national buys. The low-cost-interceptor pattern is spreading to allies: France's DGA cleared the Rafale to fire Thales Aculeus LG 68mm laser-guided rockets (\"LADAC\", ~$25-40K/shot) against Shahed-type drones, versus $680K-1.14M MICA missiles, while Japan's ATLA opened two parallel counter-UAS interceptor-drone tracks (Quantum Systems and Terra Drone) under its Early Acquisition Program. JIATF-401 has now converted that border-tested evaluation into production: CACI won a three-year, up-to-$500M IDIQ for its SkyValor non-kinetic detect-and-defeat system (RF jamming plus net-capture), after a two-day operational demonstration at the Cannon Air Defense Complex, Yuma; the fixed-site CORIAN v3 variant is slated for deployment to critical sites under the Domestic Shield initiative. The affordability logic is now reaching interceptors directly: the Army issued a Next Generation Counter-sUAS Missile (NGCM) request for information (4 Aug) for a sub-$150K-per-round interceptor (in 5,000+ bulk buys) against Group 2/3 UAS — all-weather RF seeker, launch within 5 seconds of tasking, 16km+/6km-altitude threshold range (25km+/8km objective), compatible with the existing Coyote launcher and IBCS-M, targeting TRL7 by Q4 FY27; responses due 20 Aug.",
+      "sowhat": "An All-Echelon Sense-and-Strike signal: multiple independent programmes now field autonomous, layered defeat against small UAS — the capability our manned engagement loop struggles to match — and at production scale, not experiment. A direct read-across to the interceptor-cost thread this serial and II-6 both track: the Army is now asking industry for a purpose-built cheap round rather than relying solely on adapted existing munitions.",
+      "action": "ASB2 to assess adoption of an autonomous, layered C-UAS capability at scale against our small-UAS threat envelope, drawing on the fielded US and Ukrainian systems, the emerging low-cost-interceptor pattern among allies (France, Japan), and the Army's new sub-$150K NGCM interceptor track (responses due 20 Aug).",
       "src": [
         {
           "out": "DefenseScoop",
@@ -865,6 +921,13 @@ window.SIO_DATA = {
           "ttl": "Pentagon's counter-drone task force inks $500M contract for SkyValor 'detect and defeat' system after border testing",
           "url": "https://defensescoop.com/2026/07/31/pentagon-counter-drone-task-force-500m-contract-caci-skyvalor/",
           "f": "verified"
+        },
+        {
+          "out": "DefenseScoop",
+          "date": "4 Aug 2026",
+          "ttl": "Army seeks next-gen missile that could shoot down small drones for less than $150K a pop",
+          "url": "https://defensescoop.com/2026/08/04/army-new-missile-shoot-down-drones/",
+          "f": "verified"
         }
       ],
       "media": [
@@ -892,7 +955,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jun 2026",
-      "age": 11,
+      "age": 12,
       "dlabel": "Common data layer to delivery",
       "ao": "ADO",
       "suspense": "By 31 Jul",
@@ -938,7 +1001,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 11,
+      "age": 12,
       "dlabel": "Autonomous UGV to production",
       "ao": "ASB1 Manoeuvre Concepts / AOTO",
       "suspense": "By 15 Aug",
@@ -978,7 +1041,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 10,
+      "age": 11,
       "dlabel": "",
       "ao": "ASB3 + SIO",
       "suspense": "Next edition",
@@ -1010,7 +1073,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 10,
+      "age": 11,
       "dlabel": "",
       "ao": "CESS Sustainment Plans",
       "suspense": "+90 days",
@@ -1057,7 +1120,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 8,
+      "age": 9,
       "dlabel": "",
       "ao": "ASB3 + SIO",
       "suspense": "Next edition",
@@ -1104,7 +1167,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "CCA autonomous weapons release",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Sep",
@@ -1138,7 +1201,7 @@ window.SIO_DATA = {
       "priority": "decision",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "Armed USV combat debut",
       "ao": "ASB2 Sense-Strike",
       "suspense": "By 15 Sep",
@@ -1186,7 +1249,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 6,
+      "age": 7,
       "dlabel": "",
       "ao": "ASB2 Sense-Strike",
       "suspense": "Next edition",
@@ -1248,7 +1311,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 4,
+      "age": 5,
       "dlabel": "",
       "ao": "ASB2 + SIO",
       "suspense": "Next edition",
@@ -1330,7 +1393,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "",
       "ao": "ASB2 + SIO",
       "suspense": "Next edition",
@@ -1377,7 +1440,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "",
       "ao": "ASB2 + SIO",
       "suspense": "Next edition",
@@ -1423,7 +1486,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "",
       "ao": "CESS",
       "suspense": "Next edition",
@@ -1456,7 +1519,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 2,
+      "age": 3,
       "dlabel": "",
       "ao": "ASB2 + SIO",
       "suspense": "Next edition",
@@ -1487,7 +1550,7 @@ window.SIO_DATA = {
       "priority": "monitor",
       "status": "open",
       "raised": "Jul 2026",
-      "age": 1,
+      "age": 2,
       "dlabel": "",
       "ao": "CESS logistics-autonomy watch",
       "suspense": "Next edition",
@@ -1504,9 +1567,125 @@ window.SIO_DATA = {
           "f": "verified"
         }
       ]
+    },
+    {
+      "id": "III-16",
+      "pf": "P5",
+      "tech": [
+        "robo",
+        "ai"
+      ],
+      "dom": "te",
+      "owner": "ASB2",
+      "owner2": "SIO",
+      "desk": "US",
+      "verdict": "proven",
+      "priority": "monitor",
+      "status": "open",
+      "raised": "Aug 2026",
+      "age": 0,
+      "dlabel": "Autonomous orbital pursuit demo",
+      "ao": "ASB2 Sense-Strike",
+      "suspense": "Next edition",
+      "decision": "Awareness — track escalating VICTUS HAZE non-cooperative rendezvous demonstrations as a maturing autonomous space-domain sensing capability.",
+      "signal": "On tasking from Space Systems Command, True Anomaly's Jackal-004 spacecraft executed the first space-to-space pursuit of an intentionally evading target: it produced a validated mission plan within 30 minutes of tasking, ran a 23-minute approach sequence, closed to roughly 10km of Rocket Lab's actively-manoeuvring Puma satellite, and used onboard multi-object detection algorithms to generate its own orbit estimates without ground-based cueing — capturing multi-aspect imagery via spiralling maneuvers. It is an escalation from Jackal's earlier VICTUS HAZE sortie (characterising a cooperative, non-manoeuvring Puma in 61 hours, beating a 72-hour deadline).",
+      "sowhat": "An autonomy and sensor-fusion signal outside the terrestrial/aerial domains we usually track: rapid (30-minute) autonomous mission re-planning against a non-cooperative, manoeuvring target is the same onboard decision-making and sensor-fusion problem our All-Echelon Sensing and Strike line is chasing on land, sea and air — space is now a proving ground for it too.",
+      "action": "ASB2 with SIO to monitor Space Systems Command's tactically-responsive-space demonstrations for autonomy and sensor-fusion techniques with read-across to terrestrial sense-strike concepts.",
+      "src": [
+        {
+          "out": "Payload",
+          "date": "3 Aug 2026",
+          "ttl": "True Anomaly Chases an Evading Target",
+          "url": "https://payloadspace.com/true-anomaly-chases-an-evading-target-in-orbit/",
+          "f": "verified"
+        }
+      ]
     }
   ],
   "feed": [
+    {
+      "date": "2026-08-04",
+      "out": "DefenseScoop",
+      "ttl": "Army seeks next-gen missile that could shoot down small drones for less than $150K a pop",
+      "sum": "The Army issued an RFI for the Next Generation Counter-sUAS Missile (NGCM), targeting a sub-$150K-per-round interceptor against Group 2/3 UAS, compatible with the existing Coyote launcher and IBCS-M, with responses due 20 Aug.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://defensescoop.com/2026/08/04/army-new-missile-shoot-down-drones/",
+      "f": "verified",
+      "serial": "III-1",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-08-04",
+      "out": "Nippon.com (Jiji Press)",
+      "ttl": "Japan Sees Urgent Need to Prepare for New Ways of Warfare",
+      "sum": "Japan's Cabinet adopted its 2026 defence white paper, giving dedicated treatment for the first time to a 'new way of warfare' centred on drones and AI, drawn from the Ukraine and Middle East wars, alongside China's expanding Pacific military reach.",
+      "tech": [
+        "robo",
+        "ai"
+      ],
+      "pf": "X",
+      "desk": "APAC",
+      "url": "https://www.nippon.com/en/news/yjj2026080400394/",
+      "f": "verified",
+      "serial": "I-11",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-08-03",
+      "out": "DefenseScoop",
+      "ttl": "Pentagon inks $3B framework agreement for Patriot, THAAD components",
+      "sum": "Northrop Grumman ($2B, Patriot solid-rocket motors, partnered with Lockheed Martin) and L3Harris ($1B, THAAD structural components and PAC-3 propulsion) signed seven-year framework deals to rebuild interceptor stockpiles depleted by the Iran war.",
+      "tech": [
+        "dews"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://defensescoop.com/2026/08/03/pentagon-inks-3b-framework-agreement-for-patriot-thaad-components/",
+      "f": "verified",
+      "serial": "II-6",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-08-03",
+      "out": "South China Morning Post",
+      "ttl": "Chinese military unveils AI system to plan and coordinate mass air strikes",
+      "sum": "A CCTV documentary marking the PLA's 99th anniversary revealed an 'intelligent strike planning system', built by a team under Senior Colonel Deng Jianping, that prioritises targets, sequences attack waves and assigns unit tasking for large-scale aerial operations.",
+      "tech": [
+        "ai"
+      ],
+      "pf": "P2",
+      "desk": "APAC",
+      "url": "https://www.scmp.com/news/china/military/article/3362824/chinese-military-unveils-ai-system-plan-and-coordinate-mass-air-strikes",
+      "f": "paywall",
+      "note": "Hong Kong outlet citing a CCTV PLA-99th-anniversary documentary; state-linked footage — treat as intent signalling.",
+      "serial": "I-3",
+      "saved": false,
+      "flagged": false
+    },
+    {
+      "date": "2026-08-03",
+      "out": "Payload",
+      "ttl": "True Anomaly Chases an Evading Target",
+      "sum": "True Anomaly's Jackal-004 executed the first space-to-space pursuit of an intentionally evading target, autonomously planning and closing on Rocket Lab's manoeuvring Puma satellite under Space Force VICTUS HAZE tasking.",
+      "tech": [
+        "robo",
+        "ai"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://payloadspace.com/true-anomaly-chases-an-evading-target-in-orbit/",
+      "f": "verified",
+      "serial": "III-16",
+      "saved": false,
+      "flagged": false
+    },
     {
       "date": "2026-08-02",
       "out": "Kyiv Independent",
