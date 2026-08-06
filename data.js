@@ -85,8 +85,7 @@ window.SIO_DATA = {
         "data"
       ],
       "dom": "solution",
-      "owner": "ASB3",
-      "owner2": "SIO",
+      "owner": "A4",
       "desk": "APAC",
       "verdict": "emerging",
       "priority": "monitor",
@@ -94,12 +93,12 @@ window.SIO_DATA = {
       "raised": "Jul 2026",
       "age": 11,
       "dlabel": "",
-      "ao": "ASB3 + SIO net-assessment",
+      "ao": "A4 net-assessment",
       "suspense": "Next edition",
       "decision": "Awareness — net-assessment watch on adversary AI-enabled command and control.",
       "signal": "Commercial AI providers — reported to include DeepSeek, Alibaba, Tencent, Zhipu and Huawei-linked infrastructure — are being folded into a national military ecosystem supporting surveillance, target recognition, war-gaming and command-and-control functions. PRC military press is now codifying this as doctrine — a PLA Daily article (30 Jun) frames future 'technological strategy' around manipulating, suppressing and reconstructing intelligent networks and AI-enabled command and control resistant to electromagnetic interference — while Hong Kong reporting describes an 'AI Plus' push into PLA electronic warfare and warns PLA training may lag the hardware. A Reuters review (31 Jul) of more than 80 Chinese academic papers and patents found PLA-linked units — Unit 96941, the National University of Defense Technology, and the Academy of Military Sciences — using \"model distillation\" to train domestic defence AI on outputs from US models (OpenAI GPT-3.5/GPT-3, Anthropic Claude 3 Haiku) for code analysis, UAV image processing/navigation and target recognition, a route that sidesteps US chip export controls. Days later, Xi Jinping told a Politburo study session (30 Jul) to \"strengthen the military application of unmanned intelligent technologies\" and build an \"intelligent military system\" — elevating this fusion from technical practice to explicit top-down doctrine. A CCTV documentary series (制胜 / ‘Zhisheng’), broadcast to mark the PLA's 99th anniversary, revealed a PLA ‘intelligent strike planning system’ built by a team under Senior Colonel Deng Jianping: it prioritises targets, sequences attack waves and assigns unit tasking for large-scale aerial operations spanning hundreds of targets and dozens of formations — Deng described the core challenge as modelling ‘battlefield logic’ (targets, firepower, penetration, damage assessment) rather than the software itself (SCMP, 3 Aug).",
       "sowhat": "A net-assessment input: an adversary fusing commercial-grade AI into the kill chain compresses its decision cycle and raises the bar our own C2 and EW must clear. The pathway to watch is civil-military fusion, not just the platforms. Xi's direct endorsement now confirms this is a stated national priority rather than an emergent practice, and the specific use of distilled US-model outputs sharpens the export-control and model-security angle for our own AI safeguards. The strike-planning system is a concrete instance of the AI-into-C2 fusion this serial tracks — moving from surveillance/target-recognition applications toward AI-assisted strike-package planning at the formation level.",
-      "action": "ASB3, with SIO net-assessment, to log adversary commercial-AI-into-C2 fusion — including the newly revealed AI strike-planning system — as a threat-shaping trend and flag the implications for our counter-C2 and deception concepts.",
+      "action": "A4 net-assessment to log adversary commercial-AI-into-C2 fusion — including the newly revealed AI strike-planning system — as a threat-shaping trend and flag the implications for our counter-C2 and deception concepts.",
       "src": [
         {
           "out": "Atlantic Council",
