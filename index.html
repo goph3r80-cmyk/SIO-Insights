@@ -170,6 +170,10 @@
   .field.signal { border-left:2px solid var(--hair); padding-left:11px; }
   .field .v { font-size:13.5px; color:var(--ink); }
   .field.sowhat .v, .field.signal .v { color:var(--muted); }
+  .optlist { margin:2px 0 0; padding-left:18px; }
+  .optlist li { margin-bottom:6px; font-size:13.5px; color:var(--ink); }
+  .muted-inline { color:var(--muted); font-size:12.5px; }
+  .decision-brief { border-left:2px solid var(--accent); padding-left:11px; }
 
   .meta { display:flex; flex-wrap:wrap; gap:6px 18px; margin-top:12px; padding-top:11px; border-top:1px dashed var(--hair);
     font-size:12px; color:var(--muted); }
@@ -311,7 +315,7 @@
   <section class="controls" aria-label="Filters">
     <div class="fgroup" id="f-tech"><span class="glabel">Tech</span></div>
     <div class="fgroup" id="f-desk"><span class="glabel">Desk</span></div>
-    <div class="fgroup" id="f-verdict"><span class="glabel">Verdict</span></div>
+    <div class="fgroup" id="f-verdict"><span class="glabel">Type</span></div>
     <input class="search" id="q" type="search" placeholder="Search signals, decisions…" aria-label="Search">
   </section>
 
@@ -369,7 +373,9 @@
     ASB3: { code:'A3',  label:'PSO, HADR, CT, CUAS, GZ — peace support, humanitarian assistance/disaster relief, counter-terrorism, counter-UAS, grey-zone' },
     CESS: { code:'CS',  label:'Sustainment planning' },
     AOTO: { code:'AO',  label:'Acquisition / test-to-operations transition' },
-    ADO:  { code:'A4',  label:'Army Data Office — data integration & cloud, AI, digitalisation front-end planning' }
+    ADIO: { code:'ADIO',label:'Army Data Integration Office — data integration & cloud, AI, digitalisation front-end planning' },
+    ADO:  { code:'ADIO',label:'Army Data Integration Office (legacy code ADO)' },
+    A4:   { code:'A4',  label:'PRC / adversary AI-C2 & autonomy net-assessment' }
   };
   function ownerTag(o) {
     var m = OWNER[o];
@@ -377,16 +383,35 @@
     return '<span title="'+esc(o)+' — '+esc(m.label)+'">'+esc(m.code)+'</span>';
   }
   var DESKS = ['US','EU','APAC','ME'];
-  var VERDICTS = ['gap','emerging','proven'];
-  var SECTIONS = {
-    'I':  'Strategic & concept-shaping signals',
-    'II': 'Capability contests & gaps',
-    'III':'Proven & fielding developments'
-  };
+  var KINDS = { decision:'Decisions', watchlist:'Watchlist', process:'Process' };
+  var GROUPS = [
+    { key:'decision', rn:'D', title:'CSIO Decisions', pred:function(s){ return s.category==='capability' && s.tier==='decision'; } },
+    { key:'watchlist', rn:'W', title:'Priority Watchlist', pred:function(s){ return s.tier==='watchlist'; } },
+    { key:'process', rn:'P', title:'SIO Internal Actions', pred:function(s){ return s.category==='process'; } }
+  ];
+  var MATURITY_LABEL = { reported:'Reported', demonstrated:'Demonstrated', operationally_evaluated:'Operationally evaluated', fielded:'Fielded', combat_proven:'Combat-proven' };
   var esc = function (s) { return String(s == null ? '' : s)
     .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); };
 
-  var state = { tech:new Set(), desk:new Set(), verdict:new Set(), q:'' };
+  function kindOf(s){ return s.category==='process' ? 'process' : s.tier; }
+  function tierColor(s){
+    var k = kindOf(s);
+    return k==='decision' ? getComputedStyle(root).getPropertyValue('--accent')
+         : k==='process'  ? getComputedStyle(root).getPropertyValue('--tech-robo')
+         : getComputedStyle(root).getPropertyValue('--tech-data');
+  }
+  function statusColor(s){
+    if (s.status==='overdue') return getComputedStyle(root).getPropertyValue('--v-gap');
+    if (s.status==='completed' || s.status==='closed') return getComputedStyle(root).getPropertyValue('--v-proven');
+    return getComputedStyle(root).getPropertyValue('--v-emerging');
+  }
+  function confColor(s){
+    return s.confidence==='high' ? getComputedStyle(root).getPropertyValue('--v-proven')
+         : s.confidence==='low'  ? getComputedStyle(root).getPropertyValue('--v-gap')
+         : getComputedStyle(root).getPropertyValue('--v-emerging');
+  }
+
+  var state = { tech:new Set(), desk:new Set(), kind:new Set(), q:'' };
 
   /* Theme */
   var root = document.documentElement, tbtn = document.getElementById('theme');
@@ -408,14 +433,14 @@
     D.serials.length + ' serials · ' + D.feed.length + ' items';
 
   /* Tiles */
-  var nGap = D.serials.filter(function(s){return s.verdict==='gap';}).length;
-  var nDec = D.serials.filter(function(s){return s.priority==='decision';}).length;
-  var nProv = D.serials.filter(function(s){return s.verdict==='proven';}).length;
+  var nDec = D.serials.filter(function(s){return kindOf(s)==='decision';}).length;
+  var nWatch = D.serials.filter(function(s){return kindOf(s)==='watchlist';}).length;
+  var nHighConf = D.serials.filter(function(s){return s.confidence==='high';}).length;
   document.getElementById('tiles').innerHTML =
-    tile('', D.serials.length, 'Serials') +
-    tile('dec', nDec, 'Decisions sought') +
-    tile('gap', nGap, 'Capability gaps') +
-    tile('prov', nProv, 'Proven / fielding') +
+    tile('', D.serials.length, 'Capability questions') +
+    tile('dec', nDec, 'Decisions (cap 3)') +
+    tile('gap', nWatch, 'Watchlist lines') +
+    tile('prov', nHighConf, 'High-confidence lines') +
     tile('feed', D.feed.length, 'Feed items');
   function tile(c,n,l){ return '<div class="tile '+c+'"><div class="n">'+n+'</div><div class="l">'+l+'</div></div>'; }
 
@@ -439,30 +464,32 @@
     function(k){ return getComputedStyle(root).getPropertyValue('--tech-'+k); });
   var deskObj = {}; DESKS.forEach(function(d){ deskObj[d]=d; });
   buildToggles(document.getElementById('f-desk'), deskObj, 'desk', null);
-  var vObj = {}; VERDICTS.forEach(function(v){ vObj[v]=v.charAt(0).toUpperCase()+v.slice(1); });
-  buildToggles(document.getElementById('f-verdict'), vObj, 'verdict',
-    function(k){ return getComputedStyle(root).getPropertyValue('--v-'+k); });
+  buildToggles(document.getElementById('f-verdict'), KINDS, 'kind',
+    function(k){ return k==='decision' ? getComputedStyle(root).getPropertyValue('--accent')
+                       : k==='process'  ? getComputedStyle(root).getPropertyValue('--tech-robo')
+                       : getComputedStyle(root).getPropertyValue('--tech-data'); });
   document.getElementById('q').addEventListener('input', function (e) {
     state.q = e.target.value.trim().toLowerCase(); render();
   });
 
   function serialDesks(s){ return [s.desk, s.desk2].filter(Boolean); }
+  function serialHaystack(s){
+    return [s.decision, s.signal, s.sowhat, s.action, s.dlabel, s.id, s.owner,
+      s.recommendation, s.armyProblem, s.latestDevelopment, s.armyRelevance].filter(Boolean).join(' ');
+  }
   function matchSerial(s) {
     if (state.tech.size && !s.tech.some(function(t){return state.tech.has(t);})) return false;
     if (state.desk.size && !serialDesks(s).some(function(d){return state.desk.has(d);})) return false;
-    if (state.verdict.size && !state.verdict.has(s.verdict)) return false;
-    if (state.q) {
-      var hay = (s.decision+' '+s.signal+' '+s.sowhat+' '+s.action+' '+(s.dlabel||'')+' '+s.id+' '+s.owner).toLowerCase();
-      if (hay.indexOf(state.q) < 0) return false;
-    }
+    if (state.kind.size && !state.kind.has(kindOf(s))) return false;
+    if (state.q && serialHaystack(s).toLowerCase().indexOf(state.q) < 0) return false;
     return true;
   }
   function matchFeed(f) {
     if (state.tech.size && !(f.tech||[]).some(function(t){return state.tech.has(t);})) return false;
     if (state.desk.size && !state.desk.has(f.desk)) return false;
-    if (state.verdict.size) { // feed has no verdict; match via linked serial
+    if (state.kind.size) { // feed has no kind of its own; match via linked serial
       var s = f.serial && D.serials.find(function(x){return x.id===f.serial;});
-      if (!s || !state.verdict.has(s.verdict)) return false;
+      if (!s || !state.kind.has(kindOf(s))) return false;
     }
     if (state.q) {
       var hay = (f.ttl+' '+f.sum+' '+f.out).toLowerCase();
@@ -484,10 +511,16 @@
   function serialIsNew(s){ return s.age <= 1; }
   function feedIsNew(f){ return (asOf - new Date(f.date + 'T00:00:00')) / 86400000 <= 5; }
   function relevance(s){
-    var v = s.verdict === 'gap' ? 2 : s.verdict === 'proven' ? 1 : 0;   // gaps most urgent
-    var p = s.priority === 'decision' ? 3 : 0;                          // needs a call
+    var k = kindOf(s);
+    var t = k === 'decision' ? 3 : k === 'process' ? 1 : 0;             // decisions need a call first
+    var st = s.status === 'overdue' ? 2 : 0;                            // overdue items surface
+    var c = s.confidence === 'high' ? 1 : 0;
     var n = s.age <= 1 ? 2 : s.age === 2 ? 1 : 0;                       // newness
-    return p + v + n;
+    return t + st + c + n;
+  }
+  function kindChip(s, sm){
+    var k = kindOf(s);
+    return '<span class="chip prio-'+(k==='decision'?'decision':'monitor')+(sm?' sm':'')+'">'+k.toUpperCase()+'</span>';
   }
   function miniTags(arr){ return (arr||[]).map(function(t){ return '<span class="minitag mt-'+t+'" title="'+(TECH[t]||t)+'"></span>'; }).join(''); }
 
@@ -506,29 +539,28 @@
       + '<div class="vcap">▸ '+esc(yt.ttl)+'</div></div>';
   }
   function leadCard(s){
-    return '<div class="lead v-'+s.verdict+'">'
+    return '<div class="lead" style="--vc:'+tierColor(s)+'">'
       + '<button type="button" class="lead-hit" data-goto="'+esc(s.id)+'">'
       +   '<div class="lead-top"><span class="id">'+esc(s.id)+'</span>'
-      +     '<span class="chip verdict">'+esc(s.verdict)+'</span>'
-      +     '<span class="chip prio-'+s.priority+'">'+s.priority.toUpperCase()+'</span>'
+      +     kindChip(s)
       +     (serialIsNew(s) ? '<span class="newpill">NEW</span>' : '')
       +     '<span class="grow"></span>'
       +     serialDesks(s).map(function(d){return '<span class="chip desk">'+esc(d)+'</span>';}).join('')
       +   '</div>'
       +   (s.dlabel ? '<div class="dlabel">'+esc(s.dlabel)+'</div>' : '')
-      +   '<div class="lead-decision">'+esc(s.decision)+'</div>'
-      +   '<div class="lead-signal">'+esc(s.signal)+'</div>'
+      +   '<div class="lead-decision">'+esc(s.recommendation||s.latestDevelopment||s.decision)+'</div>'
+      +   '<div class="lead-signal">'+esc(s.whyNow||s.signal)+'</div>'
       +   '<div class="lead-meta"><span class="k">Suspense</span> <b>'+esc(s.suspense)+'</b> · <span class="k">Owner</span> '+ownerTag(s.owner)+'</div>'
       + '</button>'
       + videoEmbed(s.media)
       + '</div>';
   }
   function hlRow(s){
-    return '<li><button type="button" class="hl v-'+s.verdict+'" data-goto="'+esc(s.id)+'">'
+    return '<li><button type="button" class="hl" style="--vc:'+tierColor(s)+'" data-goto="'+esc(s.id)+'">'
       + '<span class="hl-dot"></span><span class="id sm">'+esc(s.id)+'</span>'
       + '<span class="hl-title">'+esc(s.decision)+'</span>'
       + (serialIsNew(s) ? '<span class="newpill sm">NEW</span>' : '')
-      + '<span class="chip prio-'+s.priority+' sm">'+s.priority.toUpperCase()+'</span>'
+      + kindChip(s, true)
       + '</button></li>';
   }
   function fiRow(f){
@@ -554,12 +586,43 @@
     if (t){ t.scrollIntoView({ behavior:'smooth', block:'center' }); t.classList.remove('flash'); void t.offsetWidth; t.classList.add('flash'); }
   });
 
+  function optionsBlock(options) {
+    if (!options || !options.length) return '';
+    var items = options.map(function(o){
+      return '<li><b>'+esc(o.course)+'</b>'+(o.tradeoff ? '<br><span class="muted-inline">'+esc(o.tradeoff)+'</span>' : '')+'</li>';
+    }).join('');
+    return '<div class="field"><div class="k">Options</div><ol class="optlist">'+items+'</ol></div>';
+  }
+  function decisionBlock(s) {
+    if (kindOf(s) !== 'decision') return '';
+    return '<div class="analysis decision-brief">'
+      + '<div class="field"><div class="k">Recommendation</div><div class="v">'+esc(s.recommendation)+'</div></div>'
+      + '<div class="field"><div class="k">Why now</div><div class="v">'+esc(s.whyNow)+'</div></div>'
+      + '<div class="field"><div class="k">Army problem</div><div class="v">'+esc(s.armyProblem)+'</div></div>'
+      + optionsBlock(s.options)
+      + '<div class="field"><div class="k">Implications</div><div class="v">'+esc(s.implications)+'</div></div>'
+      + '<div class="field"><div class="k">Direction sought</div><div class="v">'+esc(s.directionSought)+'</div></div>'
+      + '<div class="field"><div class="k">Deliverable</div><div class="v">'+esc(s.deliverable)+' — <b>'+esc(s.deliverableDate)+'</b></div></div>'
+      + '</div>';
+  }
+  function watchlistBlock(s) {
+    if (kindOf(s) !== 'watchlist') return '';
+    return '<div class="analysis">'
+      + '<div class="field"><div class="k">Latest development</div><div class="v">'+esc(s.latestDevelopment)+'</div></div>'
+      + '<div class="field"><div class="k">Change from previous</div><div class="v">'+esc(s.changeFromPrevious)+'</div></div>'
+      + '<div class="field"><div class="k">Army relevance</div><div class="v">'+esc(s.armyRelevance)+'</div></div>'
+      + '<div class="field"><div class="k">Escalation trigger</div><div class="v">'+esc(s.escalationTrigger)+'</div></div>'
+      + (s.note ? '<div class="field"><div class="k">Note</div><div class="v">'+esc(s.note)+'</div></div>' : '')
+      + '</div>';
+  }
   function serialCard(s) {
     var top = '<div class="card-top">'
       + '<span class="id">'+esc(s.id)+'</span>'
-      + '<span class="chip verdict">'+esc(s.verdict)+'</span>'
-      + '<span class="chip prio-'+s.priority+'">'+s.priority.toUpperCase()+'</span>'
-      + (s.status==='actioned' ? '<span class="chip status">actioned</span>' : '')
+      + kindChip(s)
+      + (s.maturity ? '<span class="chip status" title="Maturity">'+esc(MATURITY_LABEL[s.maturity]||s.maturity)+'</span>' : '')
+      + (s.confidence ? '<span class="chip status" style="color:'+confColor(s)+';border-color:'+confColor(s)+'" title="Confidence">'+esc(s.confidence)+' confidence</span>' : '')
+      + '<span class="chip status" style="color:'+statusColor(s)+';border-color:'+statusColor(s)+'">'+esc((s.status||'').replace('_',' '))+'</span>'
+      + (serialIsNew(s) ? '<span class="newpill">NEW</span>' : '')
       + '<span class="grow"></span>'
       + '<span class="pf" title="'+esc(PF[s.pf]||s.pf)+'">'+esc(s.pf)+'</span>'
       + serialDesks(s).map(function(d){return '<span class="chip desk">'+esc(d)+'</span>';}).join('')
@@ -568,21 +631,26 @@
     var body = '<div class="card-body">'
       + (s.dlabel ? '<div class="dlabel">'+esc(s.dlabel)+'</div>' : '')
       + '<div class="decision">'+esc(s.decision)+'</div>'
-      + '<div class="analysis">'
-      +   '<div class="field signal"><div class="k">Signal</div><div class="v">'+esc(s.signal)+'</div></div>'
-      +   '<div class="field sowhat"><div class="k">So what</div><div class="v">'+esc(s.sowhat)+'</div></div>'
-      +   '<div class="field action"><div class="k">Action</div><div class="v">'+esc(s.action)+'</div></div>'
-      + '</div>'
+      + decisionBlock(s)
+      + watchlistBlock(s)
+      + '<details class="src"><summary>▸ Background signal</summary>'
+      +   '<div class="analysis" style="margin-top:8px">'
+      +     '<div class="field signal"><div class="k">Signal</div><div class="v">'+esc(s.signal)+'</div></div>'
+      +     '<div class="field sowhat"><div class="k">So what</div><div class="v">'+esc(s.sowhat)+'</div></div>'
+      +     '<div class="field action"><div class="k">Action</div><div class="v">'+esc(s.action)+'</div></div>'
+      +   '</div>'
+      + '</details>'
       + '<div class="meta">'
-      +   '<span><span class="k">Owner</span> <b>'+ownerTag(s.owner)+(s.owner2?' + '+ownerTag(s.owner2):'')+'</b></span>'
+      +   '<span><span class="k">Owner</span> <b>'+ownerTag(s.owner)+((s.supporting&&s.supporting.length)?' + '+s.supporting.map(ownerTag).join(', '):'')+'</b></span>'
       +   '<span><span class="k">AO</span> '+esc(s.ao)+'</span>'
       +   '<span><span class="k">Suspense</span> <b>'+esc(s.suspense)+'</b></span>'
       +   '<span><span class="k">Raised</span> '+esc(s.raised)+' <span class="k">· age</span> '+s.age+'</span>'
+      +   (s.supersedes && s.supersedes.length ? '<span><span class="k">Supersedes</span> '+esc(s.supersedes.join(', '))+'</span>' : '')
       + '</div>'
       + srcBlock(s.src)
       + mediaBlock(s.media)
       + '</div>';
-    return '<article id="serial-'+esc(s.id)+'" class="card v-'+s.verdict+'">'+top+body+'</article>';
+    return '<article id="serial-'+esc(s.id)+'" class="card" style="--vc:'+tierColor(s)+'">'+top+body+'</article>';
   }
   function mediaBlock(media) {
     if (!media || !media.length) return '';
@@ -612,14 +680,13 @@
   function render() {
     var host = document.getElementById('serials'); host.innerHTML = '';
     var shown = D.serials.filter(matchSerial);
-    var order = Object.keys(SECTIONS);
     var any = false;
-    order.forEach(function (sec) {
-      var group = shown.filter(function(s){ return s.id.split('-')[0] === sec; })
-        .sort(function(a,b){ return (+a.id.split('-')[1]) - (+b.id.split('-')[1]); });
+    GROUPS.forEach(function (g) {
+      var group = shown.filter(g.pred)
+        .sort(function(a,b){ return (+(a.id.split('-')[1]||0)) - (+(b.id.split('-')[1]||0)); });
       if (!group.length) return;
       any = true;
-      var h = '<div class="sec-h"><span class="rn">'+sec+'</span><h2>'+SECTIONS[sec]+'</h2>'
+      var h = '<div class="sec-h"><span class="rn">'+g.rn+'</span><h2>'+g.title+'</h2>'
         + '<span class="rule"></span><span class="ct">'+group.length+'</span></div>';
       host.insertAdjacentHTML('beforeend', h + '<div class="cards">' + group.map(serialCard).join('') + '</div>');
     });
