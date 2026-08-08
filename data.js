@@ -2,8 +2,12 @@
 window.SIO_DATA = {
   "edition": "Aug 2026",
   "feedAsOf": "2026-08-04",
-  "productVersion": "2.1",
+  "productVersion": "3.0",
   "changelog": [
+    {
+      "date": "2026-08-08",
+      "note": "Decision-support evolution per Master Prompt (8 Aug 2026) — see DOCTRINE.md. Organising principle changed from news-derived serials to persistent Army questions: added a top-level questions[] register (Q1-Q7) carrying, per question: the enduring Army question, decision horizon, current Army baseline (internal-authorised information only — 'not established' where the pipeline holds none), external change, delta (which Army assumption/requirement may need reassessment), split confidence (evidence vs inference), typed escalation triggers (threat/technology/internal/programme/cost/partnership), direction required (typed), linked threads, decision log (direction given → responsible staff → deliverable → result → effect → assessment → follow-on), and next question. Serials become decision threads attached to questions via a 'question' field; threads persist after papers/baselines deliver and preserve decision history. Senior direction typed per the new taxonomy (priority_direction / capability_decision / resource_decision / policy_doctrine_decision / staff_action) replacing the undifferentiated 'CSIO decision'. W-3 elevated from watchlist to a Foundational Enabler / Dependency (tier: foundational) under Q5 — the question is whether Army can discover, integrate, govern and expose trusted data at the required classification, echelon and tempo; NGC2/Maven are comparators, not templates. W-7 reframed problem-first: the line now starts from which Army inventory/logistics processes carry the largest manpower burden, error rate or reconciliation effort — computer vision is a candidate technology assessed only after that process inventory, not a technology to find uses for. I-1 reframed from concept-note pilot to decision-workflow pilot: one real Army question run through define-question → data → minimum data view → AI-assisted triage → staff-user trial → measured time/quality → captured corrections → iterate, with a functioning measured workflow as the preferred output. Added decision-advantage metrics scaffold (provenance, internal-data coverage, closed-loop rate) replacing information-volume as the measure of value; the feed-item count is no longer surfaced as a headline indicator. Dashboard IA restructured: Army Question Register on top, then CSIO Direction Required, Active Force-Development Threads, Foundational Dependencies, Staff Actions, Below-the-line Watch, with material-changes and overdue surfaced and the source feed kept below the decision layer for provenance. Standing regeneration behaviour, material-change test, problem-first rule and QA checklist codified in GENERATORPROMPT.md (Schema v3.0)."
+    },
     {
       "date": "2026-08-08",
       "note": "CSIO/COS-GS vetting revision per direction dated 8 Aug 2026. Ownership model corrected: retired the single 'owner'/'ao' fields in favour of insightSponsor / fdLead (force-development lead) / functionalLead / supporting — force-development ownership is no longer assigned presumptively; G5 force development is the default lead for Army-level integration questions, with 'to be determined by G5' where the lead cannot be established. Removed all 'sole executive agent' framing (D-1). D-1 reframed: endorse affordable layered C-UAS as an Army force-development priority; G5 to establish the requirement and integrated capability roadmap with ASB2 as functional lead; immediate deliverable is an Army C-UAS force-development baseline (threat classes, protected assets/echelons, existing/planned capabilities, residual gaps, static vs manoeuvre, kinetic/non-kinetic options, cost exchange, magazine depth, integration/C2, candidate trial areas); a layered trial is proposed only after that baseline; supporting evidence reorganised by operational effect / threat class. D-2 reframed: endorse spectrum survivability and low-signature operation as Army C2 force-development requirements with a G5-led baseline; the 'funded CapDev line under ASB2' recommendation is withdrawn pending baseline, scope and resource implications. D-3 downgraded from CSIO decision to SIO staff action (now S-1): SIO frames the cross-portfolio policy question and identifies stakeholders; SIO is not the authority for Army lethal-autonomy policy. Internal-baseline discipline applied across all serials: external evidence establishes threat/opportunity, not confirmed Army gaps — 'Army has no X' assertions replaced with 'establish whether existing and planned capabilities adequately address X against the force-development baseline'. W-1: capability ownership removed (fdLead unassigned pending a defined Army littoral requirement). W-2 narrowed to uncrewed last-mile sustainment under contested conditions; fixed logistics/inventory automation split out to new W-7; DARPA Lift Challenge scoped to the heavy-lift element only. W-3: 'pending ADIO input' converted to a defined internal tasking (ADIO architecture baseline due 15 Sep 2026). W-4: net-assessment relevance (design margins, red-teaming, resilience — actionable now) separated from force-development escalation (higher evidence bar); external maturity alone is not a procurement trigger. W-5 narrowed per COS-GS filter to developments creating force-design lessons, acquisition-model change, interoperability, co-development, classification-sharing precedent or concrete partnership opportunity — Helsing capital raise and IAI Hypnosis reveal moved to source-feed-only. W-6 moved below the priority watchlist (tier: background). I-1 reclassified from decision to staff action per the tightened decision test (approval to study/pilot is CSIO-taskable within existing authority). Decision count now 2 of a possible 3 — two genuine decisions preferred over three artificially elevated ones. COS-GS filter and the tightened decision test codified as standing logic in GENERATORPROMPT.md."
@@ -309,7 +313,10 @@ window.SIO_DATA = {
       ],
       "insightSponsor": "SIO",
       "fdLead": "G5",
-      "functionalLead": "ASB2"
+      "functionalLead": "ASB2",
+      "question": "Q1",
+      "directionType": "priority_direction",
+      "decisionLog": []
     },
     {
       "id": "D-2",
@@ -381,7 +388,10 @@ window.SIO_DATA = {
       ],
       "insightSponsor": "SIO",
       "fdLead": "G5",
-      "functionalLead": "To be determined by G5"
+      "functionalLead": "To be determined by G5",
+      "question": "Q2",
+      "directionType": "priority_direction",
+      "decisionLog": []
     },
     {
       "id": "S-1",
@@ -432,7 +442,10 @@ window.SIO_DATA = {
       ],
       "insightSponsor": "SIO",
       "fdLead": "To be determined — stakeholders identified via the framing paper",
-      "functionalLead": "—"
+      "functionalLead": "—",
+      "question": "Q6",
+      "directionType": "staff_action",
+      "decisionLog": []
     },
     {
       "id": "W-1",
@@ -543,7 +556,9 @@ window.SIO_DATA = {
       ],
       "insightSponsor": "SIO",
       "fdLead": "Unassigned — to be determined if an Army requirement emerges",
-      "functionalLead": "—"
+      "functionalLead": "—",
+      "question": "Q6",
+      "decisionLog": []
     },
     {
       "id": "W-2",
@@ -636,7 +651,9 @@ window.SIO_DATA = {
       ],
       "insightSponsor": "SIO",
       "fdLead": "G5",
-      "functionalLead": "CESS"
+      "functionalLead": "CESS",
+      "question": "Q4",
+      "decisionLog": []
     },
     {
       "id": "W-7",
@@ -661,16 +678,16 @@ window.SIO_DATA = {
       "supersedes": [
         "III-13"
       ],
-      "dlabel": "Automation of fixed logistics & inventory processes",
+      "dlabel": "Sustainment process burden — problem-first automation",
       "suspense": "Trigger-based — see escalationTrigger",
-      "latestDevelopment": "MARSOC/SOFWERX are developing an RF-free, computer-vision 'automated armory' for serialized-weapon inventory tracking (DefenseScoop, 28 Jul).",
+      "latestDevelopment": "External candidate technology observed: MARSOC/SOFWERX RF-free computer-vision 'automated armory' for serialized-weapon inventory tracking (DefenseScoop, 28 Jul). Held as candidate evidence, not as the organising object of this line.",
       "changeFromPrevious": "New line this edition — split from the former combined ground-autonomy cluster (W-2) per CSIO direction to separate fixed-process automation from operational sustainment under contested conditions.",
-      "armyRelevance": "Potential — computer-vision inventory automation is a plausible read-across for Army fixed-site logistics and armoury processes, but no Army requirement, project or process baseline has been identified; relevance is not yet established.",
-      "escalationTrigger": "Escalate if an Army logistics/inventory process owner identifies a candidate process and baseline for automation, or if a comparable system reaches operational evaluation with published performance data.",
-      "decision": "Hold at watchlist — fixed-process automation tracked separately from operational sustainment (W-2).",
+      "armyRelevance": "Problem-first: the Army question is which inventory/logistics processes carry the largest manpower burden, error rate or reconciliation effort — established from Army process data, not inferred. Only once that inventory identifies a high-burden process is computer vision (or another technology) assessed as a candidate solution. No Army process baseline is held by this pipeline.",
+      "escalationTrigger": "Escalate when an Army logistics/inventory process owner identifies a candidate high-burden process with a measurable baseline (manpower hours, error rate, reconciliation effort), or when a comparable system publishes operational-evaluation performance data worth benchmarking against such a process.",
+      "decision": "Hold — problem-first: identify the highest-burden Army processes before assessing any technology.",
       "signal": "[Reported] MARSOC and SOFWERX are developing an RF-free 'automated armory' that uses computer vision to track serialized weapons and inventory without tags or manual counts (DefenseScoop, 28 Jul) — commercial computer-vision inventory technology applied to a fixed military logistics process.",
-      "sowhat": "Fixed-site process automation is a different problem from contested last-mile sustainment — different process owners, risk profile and evidence bar — and is held as its own narrow line so the operational-sustainment question (W-2) stays sharp.",
-      "action": "SIO to monitor; escalate via G5 only against the defined trigger.",
+      "sowhat": "Discovering technologies and then searching for Army use cases is the failure mode this line now guards against. The evidence base (MARSOC armory et al.) is retained as candidate-technology reference for whenever the Army process inventory identifies a target.",
+      "action": "SIO to hold candidate-technology evidence; escalation requires an Army process owner's burden data, via G5 where a force-development question emerges.",
       "src": [
         {
           "out": "DefenseScoop",
@@ -679,12 +696,14 @@ window.SIO_DATA = {
           "url": "https://defensescoop.com/2026/07/28/marine-forces-special-operations-command-automated-armory-marsoc/",
           "f": "verified"
         }
-      ]
+      ],
+      "question": "Q4",
+      "decisionLog": []
     },
     {
       "id": "W-3",
       "category": "capability",
-      "tier": "watchlist",
+      "tier": "foundational",
       "pf": "P6",
       "tech": [
         "data",
@@ -701,16 +720,16 @@ window.SIO_DATA = {
       "supersedes": [
         "III-2"
       ],
-      "dlabel": "C2 / data-layer integration architecture",
+      "dlabel": "Army data layer — foundational dependency",
       "suspense": "ADIO baseline due 15 Sep 2026",
       "latestDevelopment": "No new open-source development since 4 Aug; the last confirmed movement was Project Convergence Capstone 6 (July) validating the NGC2 common-data-layer baseline at division scale.",
       "changeFromPrevious": "Unchanged.",
-      "armyRelevance": "Not yet established against Army's own architecture. This pipeline holds no verified open-source information on the internal systems concerned and will not fabricate the comparison. The precondition is now a tasked internal action with a due date — the ADIO architecture baseline — rather than an indefinite external watch condition.",
-      "escalationTrigger": "Escalate once the ADIO baseline (due 15 Sep 2026) is received and the SIO/G5 comparison against relevant NGC2/common-data-layer lessons identifies a genuine force-development gap or opportunity. Until then this remains an open-source NGC2/Maven watch item, not an Army-specific integration study.",
+      "armyRelevance": "Foundational — every persistent question in the register depends on whether Army can discover, integrate, govern and expose trusted data to the people and applications that need it, at the required classification, echelon and tempo. This is not an ordinary technology watch item, and it is not 'should Army copy NGC2' — NGC2/Maven are comparators; the starting point is the Singapore Army's operational requirements and existing architecture. This pipeline holds no verified information on the internal systems concerned and will not fabricate the comparison.",
+      "escalationTrigger": "Escalate once the ADIO baseline (due 15 Sep 2026) is received and the SIO/G5 comparison identifies what data exists, where it resides, who owns it, whether it is reusable, how it is exposed, whether it moves across required environments, where duplication exists, what blocks decision workflows, and which NGC2/Maven patterns are relevant vs inappropriate for the Singapore Army.",
       "note": "CSIO critique (6 Aug 2026) directed this entry be reframed against existing Army data architecture rather than approved as a generic NGC2 study. That reframe requires internal Army-architecture facts not available to this open-source pipeline. Per COS-GS vetting (8 Aug 2026), the precondition is converted into a defined internal tasking: ADIO to provide the current Army Data Store, ENCLAVE, STRONGWATCH and OUTREACH/SYNTEX architecture baseline by 15 Sep 2026 for comparison against relevant NGC2/common-data-layer lessons.",
-      "decision": "Hold at watchlist — ADIO architecture baseline tasked (due 15 Sep 2026); no generic NGC2 study approved.",
+      "decision": "Foundational dependency (Q5) — ADIO architecture baseline tasked (due 15 Sep 2026); comparison focuses on the Army decision workflows the data architecture must enable, not technology imitation.",
       "signal": "[Operationally evaluating] The US Army's Next Generation Command and Control (NGC2) programme moved from prototyping toward delivery: a named common-data-layer baseline (Anduril lead; Palantir edge-to-cloud data mesh) underwent division-scale force-on-force validation at Project Convergence Capstone 6 (July; Army.mil/DefenseScoop, 20-22 Jun). [Reported — single source, not independently corroborated] Project Maven is reported to be transmitting near-fully machine-generated intelligence to commanders using large language models (CSIS, 15 Jun).",
-      "sowhat": "The open-source evidence describes a US programme's maturity, not an Army-specific integration decision. Per CSIO's correction, this cannot be responsibly converted into 'approve a study of the NGC2 delivery model' without first anchoring it to Army's own Data Store/ENCLAVE/STRONGWATCH/ADIO roadmap — information this pipeline does not hold.",
+      "sowhat": "The open-source evidence describes a US programme's maturity, not an Army-specific integration decision. As a foundational enabler, the line is assessed by whether Army's data architecture enables persistent decision workflows — including the workflows this register itself requires.",
       "action": "Tasking: ADIO to provide the current Army Data Store, ENCLAVE, STRONGWATCH and OUTREACH/SYNTEX architecture baseline by 15 Sep 2026, for comparison against relevant NGC2/common-data-layer lessons. Once the baseline is available, SIO/G5 determine whether a genuine force-development gap or opportunity exists.",
       "src": [
         {
@@ -737,7 +756,9 @@ window.SIO_DATA = {
       ],
       "insightSponsor": "SIO",
       "fdLead": "G5 — determination pending ADIO baseline",
-      "functionalLead": "ADIO"
+      "functionalLead": "ADIO",
+      "question": "Q5",
+      "decisionLog": []
     },
     {
       "id": "W-4",
@@ -888,7 +909,9 @@ window.SIO_DATA = {
       ],
       "insightSponsor": "SIO",
       "fdLead": "N/A at net-assessment stage — G5 determination on any escalation",
-      "functionalLead": "A4"
+      "functionalLead": "A4",
+      "question": "Q3",
+      "decisionLog": []
     },
     {
       "id": "W-5",
@@ -1041,7 +1064,9 @@ window.SIO_DATA = {
       ],
       "insightSponsor": "SIO",
       "fdLead": "Unassigned — comparator line",
-      "functionalLead": "—"
+      "functionalLead": "—",
+      "question": "Q7",
+      "decisionLog": []
     },
     {
       "id": "W-6",
@@ -1122,7 +1147,9 @@ window.SIO_DATA = {
       ],
       "insightSponsor": "SIO",
       "fdLead": "Unassigned",
-      "functionalLead": "—"
+      "functionalLead": "—",
+      "question": null,
+      "decisionLog": []
     },
     {
       "id": "I-1",
@@ -1139,19 +1166,19 @@ window.SIO_DATA = {
       "status": "overdue",
       "raised": "Apr 2026",
       "age": 16,
-      "dlabel": "Concept-design pilot sprint",
+      "dlabel": "Decision-workflow pilot sprint",
       "suspense": "5 Sep 2026",
-      "recommendation": "Run a time-boxed (approx. 2-week) first-principles concept-design pilot sprint on 2-3 named operational problems (not the full portfolio at once), with confirmed SIO Concepts-cell participants and a defined output (one concept note per problem), before any portfolio-wide rollout is considered.",
+      "recommendation": "Run a time-boxed pilot that takes 1-2 named Army questions from the question register through the full decision workflow: define the decision question → identify relevant external and internal data → establish the minimum data view → apply AI-assisted triage/fusion → put the output before the intended staff user → measure time and quality improvements → capture corrections → iterate. The preferred output is a functioning decision workflow with measured results; concept notes are the by-product, not the deliverable.",
       "whyNow": "The underlying signal — that standing plans are being overtaken by cheap autonomy and compressed kill chains — hasn't changed since April, but the original framing ('design it today' across the portfolios) was open-ended enough that CSIO could not endorse it as written (6 Aug critique). A bounded pilot lets SIO demonstrate the method before committing portfolio-wide.",
       "armyProblem": "SIO's own concept-design method has not been tested at pilot scale; endorsing a portfolio-wide sprint without first proving the method on a bounded problem set risks a diffuse, unresourced effort.",
       "implications": "SIO Concepts-cell time only, at pilot scale; no broader resourcing commitment until the pilot reports out.",
       "directionSought": "None — staff action. Per the tightened decision test (8 Aug), approval to run a bounded pilot is within existing authority: SIO runs the pilot and reports the concept notes to CSIO. A portfolio-wide rollout, if proposed, returns as a resourced decision.",
-      "deliverable": "One concept note per named operational problem (2-3 notes)",
+      "deliverable": "Functioning pilot decision workflow on 1-2 named Army questions, with measured results (signal-to-assessment time, analyst effort, user corrections captured) and one short concept note per question",
       "deliverableDate": "2026-09-05",
-      "decision": "Staff action — bounded, time-boxed concept-design pilot sprint on named problems under SIO authority; concept notes reported to CSIO by 5 Sep 2026.",
+      "decision": "Staff action — decision-workflow pilot on named Army questions under SIO authority; measured results reported to CSIO by 5 Sep 2026.",
       "signal": "Unchanged since April: a recurring argument holds that standing operational plans are overtaken by cheap autonomy, compressed kill chains and commercial-grade capability, with once-peripheral firms now present-tense operational realities (DefenseScoop, 11 May; Bloomberg feature, 5 Jul, paywalled).",
-      "sowhat": "This is the CapDev mandate in one signal: shape future operating concepts as emerging tech reshapes the possible. Reclassified from the decision slate per the tightened decision test — a pilot the staff can task within existing authority is a staff action, not a command decision; two genuine decisions this edition are preferable to three artificially elevated ones.",
-      "action": "SIO Concepts cell to scope and run the pilot sprint per the approved option, reporting concept notes by 5 Sep 2026.",
+      "sowhat": "Reframed from producing concept notes to testing whether the entire decision process can be improved on real Army questions — the internal testbed for the question-organised, AI-assisted operating model this register implements.",
+      "action": "SIO Concepts cell to run the pilot per the workflow above, reporting measured results and concept notes by 5 Sep 2026.",
       "src": [
         {
           "out": "DefenseScoop",
@@ -1171,7 +1198,10 @@ window.SIO_DATA = {
       ],
       "insightSponsor": "SIO",
       "fdLead": "—",
-      "functionalLead": "SIO Concepts cell"
+      "functionalLead": "SIO Concepts cell",
+      "question": "Q7",
+      "directionType": "staff_action",
+      "decisionLog": []
     }
   ],
   "feed": [
@@ -3320,5 +3350,273 @@ window.SIO_DATA = {
       "unverifiedClaims": null,
       "dateLastChecked": "2026-08-04"
     }
-  ]
+  ],
+  "questions": [
+    {
+      "id": "Q1",
+      "title": "Affordable Layered C-UAS",
+      "category": "capability",
+      "question": "How is the changing UAS threat altering the protection architecture, cost exchange and magazine depth required by Army — and how should Army defeat increasingly numerous, affordable UAS at a sustainable cost?",
+      "decisionHorizon": "Near-term: allied and peer programmes are committing at production scale now; the G5 baseline (due 15 Sep 2026) defines when Army-side choices become consequential.",
+      "armyBaseline": "Not established from internal information. A G5-led Army C-UAS force-development baseline is directed (due 15 Sep 2026) covering threat classes, protected assets/echelons, existing and planned capabilities, residual gaps, static vs manoeuvre requirements, kinetic/non-kinetic options, cost exchange, magazine depth, integration/C2 and candidate trial areas.",
+      "externalChange": "Every layer of a layered counter-UAS architecture (soft-kill RF/EW, low-cost kinetic interceptors, directed energy, swarm-control autonomy) moved from demonstration toward production within a single 30-day window, while allied production packages (NATO $40B+, EU-Ukraine €11B) and sub-$150K interceptor programmes reset the cost-exchange curve.",
+      "delta": "Whether Army's assumed protection architecture, interceptor cost-exchange position and magazine depth remain adequate against proliferating low-cost UAS — and whether the affordability trade peers are making (cheap mass vs exquisite systems) is one Army has explicitly made.",
+      "confidence": {
+        "evidence": "high",
+        "inference": "moderate"
+      },
+      "triggers": [
+        {
+          "type": "threat",
+          "trigger": "A new UAS class, tactic or operational use materially alters the threat envelope the baseline assumes."
+        },
+        {
+          "type": "cost",
+          "trigger": "Interceptor cost-exchange shifts materially (e.g. a sub-$150K class interceptor fielded at scale)."
+        },
+        {
+          "type": "internal",
+          "trigger": "The G5 baseline confirms residual gaps and defines trial questions."
+        },
+        {
+          "type": "programme",
+          "trigger": "An existing Army protection or sense-strike capability line approaches requirement freeze or a major decision."
+        }
+      ],
+      "directionRequired": {
+        "type": "priority_direction",
+        "statement": "Endorse affordable layered C-UAS as an Army force-development priority and direct the G5 baseline (thread D-1)."
+      },
+      "threads": [
+        "D-1"
+      ],
+      "decisionLog": [],
+      "nextQuestion": "Which residual gaps survive the baseline, and what trial questions do they define? Trial design should produce decision-relevant measurements (detection probability, classification accuracy, engagement success, leakage, cost per engagement, magazine expenditure, operator workload, integration latency).",
+      "status": "active",
+      "materialChange": "New consolidated question this edition (supersedes five separate threads); direction sought at D-1."
+    },
+    {
+      "id": "Q2",
+      "title": "Spectrum-Survivable C2",
+      "category": "capability",
+      "question": "What level of connectivity degradation, electromagnetic exposure and communications disruption must future Army C2 remain effective through — and what survivability and signature standards follow?",
+      "decisionHorizon": "Near-term: the threat side is fielded (counter-satellite-communications jamming, AI-accelerated EW); the G5 baseline (due 15 Sep 2026) determines when Army design-standard decisions are required.",
+      "armyBaseline": "Not established from internal information. A G5-led C2 spectrum-survivability baseline is directed (due 15 Sep 2026): current dependencies, PACE communications, datalink resilience, anti-jam requirements, degraded-mode operation, network/terminal dependencies, procedural and doctrinal mitigations, affected programmes, and T&E needs.",
+      "externalChange": "Russia fielded a dedicated counter-Starlink jammer (~20km² suppression); AI-enabled EW (automated signal analysis, adaptive jamming) is maturing; peer forces treat fixed C2 nodes as targets and the spectrum as an hourly fight.",
+      "delta": "Whether Army command posts, C2 links and uncrewed datalinks meet any defensible survivability/signature standard — and what that standard should be. Exercise-derived measurements (connectivity availability, latency, degradation, link-switching, recovery time, emission/signature, effect on decision timelines) should progressively replace theoretical assumptions.",
+      "confidence": {
+        "evidence": "high",
+        "inference": "moderate"
+      },
+      "triggers": [
+        {
+          "type": "threat",
+          "trigger": "A comparable EW capability is employed against a partner force, or a new jamming class is confirmed fielded."
+        },
+        {
+          "type": "internal",
+          "trigger": "An Army exercise or trial produces evidence of C2 degradation or signature exposure."
+        },
+        {
+          "type": "programme",
+          "trigger": "An Army C2 programme approaches requirement freeze where survivability standards must be settled."
+        }
+      ],
+      "directionRequired": {
+        "type": "priority_direction",
+        "statement": "Endorse spectrum survivability and low-signature operation as Army C2 force-development requirements; direct the G5 baseline (thread D-2)."
+      },
+      "threads": [
+        "D-2"
+      ],
+      "decisionLog": [],
+      "nextQuestion": "Which capability lines and design standards does the baseline implicate, and which exercise measurements will replace theoretical assumptions first?",
+      "status": "active",
+      "materialChange": "Open since April; suspense reset to 15 Sep 2026 with the reframed baseline-first direction at D-2."
+    },
+    {
+      "id": "Q3",
+      "title": "Adversary AI-Enabled C2 & Autonomy",
+      "category": "net_assessment",
+      "question": "How should adversary AI-enabled planning, sensing and command — and distributed long-range strike — alter Army design assumptions, red-teaming and resilience?",
+      "decisionHorizon": "Continuous: net-assessment input is actionable now against design margins and red-teaming; force-development escalation awaits stronger evidence.",
+      "armyBaseline": "Not held by this pipeline. Design margins, red-teaming assumptions and resilience standards rest with Army concept and functional owners; this question feeds them current adversary-capability assessments.",
+      "externalChange": "PLA reveal of an AI 'intelligent strike planning system'; commercial-AI-into-military-ecosystem integration (incl. model distillation from US models); ~96-200-drone single-operator swarm demonstrations; YJ-20 hypersonic anti-ship distribution across the numerically dominant destroyer class. Majority of specific claims are state-linked; the broad trend is independently corroborated.",
+      "delta": "Whether Army C2, EW and resilience design margins assume an adversary planning/sensing tempo and strike distribution that is now outdated.",
+      "confidence": {
+        "evidence": "moderate",
+        "inference": "moderate"
+      },
+      "triggers": [
+        {
+          "type": "threat",
+          "trigger": "Independent (non-PRC-state) confirmation of operational fielding of AI strike-planning, or a comparable capability confirmed against a partner force."
+        },
+        {
+          "type": "internal",
+          "trigger": "Army red-teaming or exercise play identifies a design assumption invalidated by the assessed capability."
+        }
+      ],
+      "directionRequired": null,
+      "threads": [
+        "W-4"
+      ],
+      "decisionLog": [],
+      "nextQuestion": "Which specific Army design assumptions (C2 tempo, EW resilience, dispersal, deception) are most sensitive to the assessed adversary trajectory — a question for red-teaming, not procurement.",
+      "status": "active",
+      "materialChange": "New: PLA AI strike-planning-system reveal (3 Aug) extends the line beyond surveillance/target-recognition applications."
+    },
+    {
+      "id": "Q4",
+      "title": "Contested Sustainment & Autonomy",
+      "category": "capability",
+      "question": "Where can autonomy materially reduce exposure, manpower, sustainment burden or decision latency for Army — starting with sustainment under contested conditions?",
+      "decisionHorizon": "Medium-term: partner fielding (Ukraine UGV logistics) proves feasibility now; Army timing depends on a framed requirement and the problem-first process inventory.",
+      "armyBaseline": "Not established from internal information. No Army sustainment-autonomy requirement or trial is identified in material available to this pipeline. The problem-first inventory — which Army sustainment and inventory processes carry the largest manpower burden, exposure, error rate or reconciliation effort — is the missing baseline.",
+      "externalChange": "Ukraine fielded EW-resilient UGV control (Droid Box) and UGV frontline logistics at scale (25,000-system goal); a US ground-autonomy production contract; DARPA Lift Challenge targeting 2:1 payload-to-weight heavy-lift drones; radiovoltaic maintenance-free power in development.",
+      "delta": "Whether Army last-mile resupply and fixed logistics processes carry exposure and manpower burdens that autonomy could materially reduce — to be established from Army process data, not inferred from foreign fielding.",
+      "confidence": {
+        "evidence": "high",
+        "inference": "low"
+      },
+      "triggers": [
+        {
+          "type": "internal",
+          "trigger": "G5 frames an Army last-mile sustainment requirement, or a process owner identifies a high-burden inventory/logistics process (W-7)."
+        },
+        {
+          "type": "technology",
+          "trigger": "DARPA Lift Challenge validates a payload-to-weight ratio usable against an Army lift requirement (heavy-lift element only)."
+        },
+        {
+          "type": "internal",
+          "trigger": "An Army exercise or trial produces sustainment-burden or exposure evidence (manpower saved, delivery time, intervention rate)."
+        }
+      ],
+      "directionRequired": null,
+      "threads": [
+        "W-2",
+        "W-7"
+      ],
+      "decisionLog": [],
+      "nextQuestion": "Which Army sustainment/inventory processes have the largest measured manpower burden, exposure or error rate? That inventory precedes any technology selection.",
+      "status": "active",
+      "materialChange": "W-2 narrowed to last-mile sustainment; W-7 reframed problem-first (process burden before technology)."
+    },
+    {
+      "id": "Q5",
+      "title": "Army Data for Decision Advantage",
+      "category": "foundational",
+      "question": "Can Army discover, integrate, govern and exploit the data needed for operational and force-development decisions at the required echelon, classification and tempo?",
+      "decisionHorizon": "Foundational: every other question's decision workflow depends on it; the ADIO baseline (due 15 Sep 2026) starts the internal assessment.",
+      "armyBaseline": "Tasked, not yet held: ADIO to provide the current Army Data Store, ENCLAVE, STRONGWATCH and OUTREACH/SYNTEX architecture baseline by 15 Sep 2026. The subsequent SIO/G5 comparison assesses what data exists, where it resides, who owns it, whether it is reusable, how it is exposed, whether it moves across required environments, where duplication exists, and what prevents decision workflows from accessing it.",
+      "externalChange": "US NGC2 common-data-layer baseline validated at division scale (Project Convergence Capstone 6); Maven reported delivering near-fully machine-generated intelligence. These are comparators for pattern relevance — not templates; the starting point is the Singapore Army's operational requirements and existing architecture.",
+      "delta": "Whether Army's data architecture enables or blocks persistent decision workflows — which NGC2/Maven patterns are relevant, and which are inappropriate for Singapore Army scale, security constraints and structure.",
+      "confidence": {
+        "evidence": "moderate",
+        "inference": "moderate"
+      },
+      "triggers": [
+        {
+          "type": "internal",
+          "trigger": "The ADIO baseline (due 15 Sep 2026) is received; SIO/G5 comparison identifies a genuine force-development gap or opportunity."
+        },
+        {
+          "type": "programme",
+          "trigger": "An Army data/C2 programme approaches a decision that depends on the architecture assessment."
+        }
+      ],
+      "directionRequired": null,
+      "threads": [
+        "W-3"
+      ],
+      "decisionLog": [],
+      "nextQuestion": "Which Army decision workflows (starting with the questions in this register) does the architecture currently enable, and which does it block?",
+      "status": "active",
+      "materialChange": "Elevated from ordinary watchlist item to Foundational Enabler / Dependency; ADIO baseline converted to a dated tasking."
+    },
+    {
+      "id": "Q6",
+      "title": "Human Authority in Autonomous Systems",
+      "category": "policy",
+      "question": "What safeguards, command relationships and assurance requirements are necessary as autonomy enters weapon-capable systems?",
+      "decisionHorizon": "Medium-term: no Army platform decision is imminent, but the policy question recurs across every autonomous-strike-capable line; framing now avoids answering reactively later.",
+      "armyBaseline": "Whether an Army position on human-authority safeguards, assurance/test standards and CONOPS exists — and where it sits — is itself being confirmed by the S-1 framing paper (due 15 Sep 2026).",
+      "externalChange": "First live weapons release from an uncrewed CCA (human authority retained throughout); first US combat use of lethal USVs under a combatant-command construct outside standing task-force frameworks.",
+      "delta": "Whether Army manned-unmanned teaming concepts assume command-authority and assurance arrangements that these precedents are already redefining.",
+      "confidence": {
+        "evidence": "high",
+        "inference": "moderate"
+      },
+      "triggers": [
+        {
+          "type": "technology",
+          "trigger": "An autonomous weapons-release capability (vs human-authorised) is demonstrated or fielded."
+        },
+        {
+          "type": "programme",
+          "trigger": "An Army programme with weapon-capable autonomy approaches a decision requiring a stated authority position."
+        },
+        {
+          "type": "partnership",
+          "trigger": "A defined Army littoral/riverine requirement or participation mechanism emerges (W-1 escalation)."
+        }
+      ],
+      "directionRequired": null,
+      "threads": [
+        "S-1",
+        "W-1"
+      ],
+      "decisionLog": [],
+      "nextQuestion": "Which Army stakeholders own each facet (authority, assurance, legal, CONOPS), per the S-1 stakeholder map — SIO frames; it does not determine policy.",
+      "status": "active",
+      "materialChange": "S-1 downgraded from command decision to staff action; W-1 attached here for its command-authority precedent value."
+    },
+    {
+      "id": "Q7",
+      "title": "Organising for the AI/Autonomy Shift",
+      "category": "organisational",
+      "question": "How should Army organise, acquire and learn in order to absorb AI and autonomy at the pace peer institutions are setting?",
+      "decisionHorizon": "Continuous: comparator evidence accumulates; Army-side timing is set by the I-1 decision-workflow pilot and any concrete partnership opportunity.",
+      "armyBaseline": "SIO's own working method is the internal testbed: the I-1 pilot measures whether a question-organised, AI-assisted decision workflow improves assessment speed and quality on real Army questions.",
+      "externalChange": "US DRPM-UxS consolidation (~$75B portfolio); Pentagon shift to modular multi-vendor AI acquisition and CMMC pause; IDF robotics/AI restructure; CENTCOM-UAE bilateral AI task force (classification-sharing precedent); Ghost Bat operator-to-operator command precedent; Japan's 'new way of warfare' white paper.",
+      "delta": "Whether Army's organisational and acquisition patterns for AI/autonomy match the tempo peers now demonstrate — assessed via the comparator line (W-5), not asserted.",
+      "confidence": {
+        "evidence": "high",
+        "inference": "low"
+      },
+      "triggers": [
+        {
+          "type": "partnership",
+          "trigger": "A comparator thread produces a concrete interoperability, co-development or classification-sharing opportunity Army could join."
+        },
+        {
+          "type": "internal",
+          "trigger": "The I-1 pilot produces measured results warranting scale-up (or refutation) of the decision-workflow approach."
+        }
+      ],
+      "directionRequired": null,
+      "threads": [
+        "W-5",
+        "I-1"
+      ],
+      "decisionLog": [],
+      "nextQuestion": "Does the measured I-1 pilot justify scaling the decision-workflow model across the question register?",
+      "status": "active",
+      "materialChange": "Japan white paper added to comparator line; I-1 reframed from concept notes to a measured decision-workflow pilot."
+    }
+  ],
+  "metrics": {
+    "asOf": "2026-08-04",
+    "note": "Decision-advantage metrics per DOCTRINE.md §21 — measured where practicable; information volume is not an outcome. Time-based metrics (signal-to-assessment, assessment-to-direction, decision-to-action) require timestamps captured across future editions and are not yet measurable.",
+    "provenanceTraceablePct": 98,
+    "internalDataCoveragePct": 0,
+    "internalDataCoverageNote": "0% — every thread currently rests on external evidence alone; internal baselines are tasked (G5 × 2 due 15 Sep 2026, ADIO due 15 Sep 2026) and this figure is the register's most important number to move.",
+    "closedLoop": {
+      "directed": 0,
+      "resultCaptured": 0,
+      "note": "No senior direction has yet completed the direction → action → observed effect → updated assessment loop; decisionLog fields are in place to capture it."
+    },
+    "materialChangesThisEdition": 7
+  }
 };

@@ -493,3 +493,142 @@ relevant issues into a separate, concise command decision brief.
   (or first-directed) internal baseline.
 - "Army has no…" style assertions appear only where verified internal
   information supports them.
+
+---
+
+## Schema v3.0 — Decision-support model (8 Aug 2026)
+
+**Read `DOCTRINE.md` before generating — it is the standing intent that
+governs every edition.** This section implements it in the data model and
+supersedes conflicting guidance above. The organising principle is no
+longer the news-derived serial: it is the **persistent Army question**.
+Operating model: `Army Question → Relevant Data → Insight → Decision →
+Action → Observed Effect → Updated Assessment`. External news remains an
+input, not the organising principle.
+
+### `questions[]` — the Army Question Register (top-level collection)
+
+`window.SIO_DATA.questions` holds ~6–10 persistent Army questions. Each:
+
+| Field | Meaning |
+|-------|---------|
+| `id` | `Q<n>` — stable across editions. |
+| `title` | Short name (e.g. "Affordable Layered C-UAS"). |
+| `category` | `capability` / `foundational` / `net_assessment` / `policy` / `organisational`. |
+| `question` | The enduring Army question — framed as what Army must answer, never "what technologies are appearing". |
+| `decisionHorizon` | When the issue is likely to become consequential. |
+| `armyBaseline` | What Army possesses/plans/does — **authorised internal information only**; write "Not established…" + the tasked baseline where the pipeline holds none. |
+| `externalChange` | What materially changed externally. |
+| `delta` | Which Army assumption, requirement or capability may need reassessment. |
+| `confidence` | `{evidence, inference}` — factual-evidence confidence and analytical-inference confidence, separately. |
+| `triggers` | Array of `{type, trigger}`; `type` ∈ {`threat`,`technology`,`internal`,`programme`,`cost`,`partnership`}. |
+| `directionRequired` | `{type, statement}` or `null`; `type` per the direction taxonomy below. |
+| `threads` | Serial ids attached to this question. |
+| `decisionLog` | Closed-loop history — see below. |
+| `nextQuestion` | What Army now needs to understand. |
+| `status` | `active` / `dormant` / `closed`. |
+| `materialChange` | Short statement of what materially changed this edition, or `null` — drives the "Material changes since last review" view. |
+
+A question does **not** terminate because a paper or baseline was
+delivered; preserve it and its decision history. Merge/split/close/
+reprioritise questions only on evidence.
+
+### Serials become decision threads
+
+Every serial carries `question` (a `Q<n>` id, or `null` only for
+below-the-line lines) and `decisionLog: []`. Decisions and staff actions
+also carry `directionType`. Create a new thread only where no existing Army
+question adequately contains the issue; if a news item does not materially
+affect an Army question, it stays in `feed[]` — never promoted for being
+technologically interesting.
+
+### Direction taxonomy (replaces the undifferentiated "CSIO decision")
+
+`directionType` ∈ {`priority_direction`, `capability_decision`,
+`resource_decision`, `policy_doctrine_decision`, `staff_action`}:
+priority direction (is focused staff effort warranted), capability decision
+(choice between solutions/architectures), resource decision
+(funding/manpower/programme commitment), policy/doctrine decision, staff
+action (existing authority — no CSIO decision). Requests merely to study /
+monitor / assess / produce another paper are staff actions or priority
+directions, never capability/resource decisions. The high bar of v2.1 §6
+stands; do not fill slots.
+
+### Closed decision loop
+
+When senior direction is given on any thread or question, append to
+`decisionLog`: `{date, direction, responsibleStaff, deliverable, result,
+effect, assessment, followOn}` — filling later fields as the action
+completes. Never delete entries; this is institutional memory for why
+decisions were taken and what resulted.
+
+### Foundational enablers
+
+`tier: "foundational"` marks foundational dependencies (currently the Army
+data layer, W-3/Q5). These are assessed by whether they enable persistent
+Army decision workflows — never reduced to "should Army copy <foreign
+system>"; NGC2/Maven are comparators, not templates.
+
+### Material-change test (apply before surfacing anything)
+
+Surface an update to the decision layer only if it changed the assessed
+threat, technology maturity or affordability; challenged an Army
+assumption; exposed or closed a confirmed gap; created an actionable
+opportunity; changed a recommended course; or crossed a decision trigger.
+Otherwise update the evidence base (feed, `src[]`, confidence) silently.
+Never escalate because a reporting cycle arrived — escalation is
+trigger-driven only.
+
+### Problem-first rule
+
+Never track a technology and then search for an Army use case. Lines start
+from an operational problem, workload bottleneck, manpower burden,
+capability gap, decision latency or survivability issue; external systems
+are candidate evidence against that problem (see W-7 for the worked
+pattern).
+
+### Metrics
+
+`window.SIO_DATA.metrics` carries decision-advantage indicators —
+provenance-traceable share, internal-data coverage (share of threads
+incorporating validated Army data — the most important number to move),
+closed-loop rate, material changes this edition. Information volume
+(source/feed counts) is never presented as an indicator of value.
+
+### Regeneration behaviour (every edition)
+
+1. Preserve established questions and thread ids; increment `age`.
+2. Ingest and deduplicate new information against existing evidence.
+3. Apply the material-change test per thread; set each question's
+   `materialChange` honestly (`null` when nothing material changed).
+4. Never infer internal Army facts; never assign ownership without
+   authority (v2.1 rules stand in full).
+5. Update `confidence` (evidence vs inference separately), `maturity` and
+   triggers.
+6. Track directions given and overdue actions; append to `decisionLog` —
+   never rewrite history.
+7. Explicitly identify where internal Army data is required to mature an
+   assessment (the W-3/Q5 pattern).
+8. Prefer concise decision-relevant language over technology description.
+
+### QA before publishing (act as CSIO)
+
+Relevance — why should Army care? · Baseline — known or assumed? ·
+Materiality — what actually changed? · Decision — does anyone genuinely
+need to decide? · Ownership — presumed? · Duplication — does an existing
+question cover it? · Evidence — strength and provenance? · Army data —
+what internal data could confirm/reject the hypothesis? · Action — what
+happens if accepted? · Feedback — how will we know it worked?
+If unanswerable, downgrade the item rather than overstate maturity.
+
+### v3.0 validation additions
+
+- `questions[]` present (6–10 entries); every `questions[].threads` id
+  exists; every serial `question` is a valid `Q<n>` or `null` (null only
+  for `background` tier).
+- Every question carries `armyBaseline` that is either authorised internal
+  information or an explicit "Not established…" statement — never an
+  OSINT-inferred baseline.
+- `tier` ∈ {`decision`,`watchlist`,`foundational`,`background`,`staff_action`};
+  `directionType` valid where present.
+- `decisionLog` arrays present (may be empty) on questions and serials.
