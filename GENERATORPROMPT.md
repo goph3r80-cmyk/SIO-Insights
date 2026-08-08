@@ -340,3 +340,156 @@ the precondition (who needs to provide what) instead — see `W-3` for the
 worked example. Fabricating that kind of specificity is a worse failure mode
 than leaving the item under-developed, because it manufactures false
 confidence in exactly the way CSIO's critique warns against.
+
+---
+
+## Schema v2.1 — CSIO/COS-GS vetting rules (8 Aug 2026)
+
+**This section supersedes conflicting guidance above** (in particular the
+"Single accountable owner" rule in v2). CSIO/COS-GS vetted the v2.0 output
+on 8 Aug 2026 and corrected the organisational-ownership model and the
+transition from external insight to Army force-development action. Every
+future edition must follow these rules. The improved v2 analytical
+architecture is **retained**: consolidation into capability questions, the
+three-decision cap, the thematic watchlist, maturity and confidence labels,
+the reported/demonstrated/fielded/combat-proven distinction, source
+traceability, explicit qualification of state-linked/vendor claims,
+superseded-thread tracking, and escalation triggers.
+
+### 1. Ownership — never assign force-development ownership presumptuously
+
+`owner`, `owner2` and `ao` are **retired**. Every serial instead carries
+four role fields:
+
+| Field | Meaning |
+|-------|---------|
+| `insightSponsor` | SIO, where SIO is responsible for maintaining the issue, sense-making and triggering further staff work. |
+| `fdLead` | Force Development Lead — the G5 force-development element (`G5`) wherever the matter requires integration across capabilities, force design, concepts, doctrine, equipping, manpower or multiple functional branches. Where the correct lead cannot be established from available information, write `"To be determined by G5"` (or `"Unassigned — to be determined if an Army requirement emerges"` for watch lines with no Army requirement yet) — **never guess**. |
+| `functionalLead` | The relevant capability branch where appropriate (e.g. `ASB2` for Sense-Strike/C-UAS matters); `"—"` or `"To be determined by G5"` otherwise. |
+| `supporting` | Array of other relevant functional, C2, EW, logistics, protection, acquisition, doctrine, legal or technical stakeholders. Do not lump several organisations into one ambiguous owner field. |
+
+Never use terms such as "sole executive agent", "sole accountable owner"
+or equivalents unless the existing Army organisational arrangement
+explicitly establishes that authority. `G5` is a valid branch code alongside
+the existing ones.
+
+### 2. Sense-making, not tasking
+
+SIO Insights is a sense-making and decision-support product. Its chain is:
+
+> External signal → assess Army relevance → identify the force-development
+> question → establish whether an internal baseline is required → recommend
+> staff action.
+
+It must **not** automatically convert *signal → named branch → tasking*.
+The established Army staff system determines formal ownership where
+organisational authority is not already known.
+
+### 3. External evidence is not a confirmed Army gap
+
+Open-source evidence can establish that an external threat, opportunity or
+capability trend exists. It **cannot** by itself establish the Army's
+internal baseline or a confirmed gap. Never assert "Army has no X" /
+"Army lacks Y" unless supported by verified internal Army information.
+Where the internal baseline has not been provided, use formulations such
+as: *"External developments indicate a requirement to establish whether
+Army's existing and planned capabilities adequately address…"* or *"The
+extent of the Army gap should be established against the current
+force-development baseline."* Apply this standard to every serial,
+including `armyProblem` fields and the internal-posture half of `maturity`.
+
+### 4. Internal baseline before trials or programmes
+
+For capability-development issues, follow this sequence and do not skip
+steps:
+
+> Threat / Opportunity → Army Operational Problem → Existing Army Baseline →
+> Confirmed Gap → Required Effects → Architecture / Options → Trial
+> Questions → Trial → Equipping / Programme Decision
+
+Never jump from foreign technology developments straight to recommending a
+large Army trial or a funded capability line. Recommend a trial only when
+the operational requirement, baseline, gap and trial questions are
+sufficiently defined; the usual first deliverable is a G5-led
+force-development baseline (see D-1/D-2 for the worked pattern).
+
+### 5. Organise decision evidence by effect or threat class
+
+Programmes that collectively demonstrate a trend (e.g. layered defence,
+changing cost exchange) rarely all solve the same Army threat class.
+In a decision serial's `signal`, group supporting evidence by operational
+effect or threat class — not as an aggregation of programme announcements
+(see D-1 for the worked pattern).
+
+### 6. Tightened definition of a "Decision"
+
+A CSIO Decision requires an actual choice with consequences. Approval to
+*study, assess, monitor, produce another paper, or conduct generic further
+analysis* is **not** a decision. A mature decision contains: the Army
+problem; a confirmed or bounded baseline; a recommendation; meaningful
+alternatives; operational consequence; resource/programme implications
+where applicable; the consequence of inaction; and direction genuinely
+required from CSIO. If CSIO can reasonably task the work within existing
+authority, classify it as a **Staff Action** instead: `category:
+"process"`, `tier: "staff_action"`, id prefix `S-<n>` (legacy process ids
+like `I-1` may persist), `directionSought: "None — staff action…"`. The
+three-decision cap stands, but there is no requirement to fill all three
+slots — two genuine decisions are preferable to three artificially
+elevated ones.
+
+### 7. Tiers — including below-the-line watch
+
+`tier` ∈ {`decision`, `watchlist`, `background`, `staff_action`}. Use
+`background` for lines held **below** the main priority watchlist —
+interesting technological read-across with no direct Army requirement or
+identified terrestrial/aerial analogue (e.g. space-domain autonomy) does
+not merit senior-leadership attention on the priority list. Promote only
+against a defined escalation trigger.
+
+### 8. Watchlist breadth filters
+
+- **Allied acquisition / doctrine / ecosystem lines (W-5 pattern):** retain
+  only developments that could plausibly create a force-design lesson, an
+  acquisition-model change, an interoperability opportunity, a
+  co-development/co-production opportunity, a classification /
+  information-sharing precedent, or a concrete Army partnership
+  opportunity. General defence-industry or organisational developments
+  remain in the source feed without becoming priority watchlist lines.
+- **Net-assessment lines (W-4 pattern):** separate *net-assessment
+  relevance* — which can already influence Army design margins,
+  red-teaming and resilience, and does **not** wait for confirmed
+  operational employment — from *force-development escalation*, which
+  requires stronger evidence or a clear implication for Army capabilities.
+  Never convert a net-assessment item into a procurement task merely
+  because the external technology appears mature.
+- **Preconditions become tasked actions (W-3 pattern):** where a line is
+  blocked on internal input, convert "pending X input" into a defined
+  internal action — named provider, named deliverable, dated suspense —
+  not an indefinite external watch condition.
+
+### 9. COS-GS filter
+
+For any item intended for eventual COS-GS consideration, apply an
+additional filter: COS-GS sees only matters that materially affect Army
+operating concepts, force structure, readiness, capability priorities,
+resource allocation, major programmes, significant organisational changes,
+or strategic partnerships. A COS-GS output must answer: (1) What is the
+Army problem? (2) What is the current Army baseline? (3) Why does it
+matter now? (4) What changes if we act? (5) What are the options and
+trade-offs? (6) What are the manpower/funding/programme implications?
+(7) What specific decision is required today? **Do not send the full
+horizon-scanning dashboard upwards as the decision product** — mature
+relevant issues into a separate, concise command decision brief.
+
+### v2.1 validation additions
+
+- No serial carries `owner`, `owner2` or `ao`; every serial carries
+  `insightSponsor`, `fdLead`, `functionalLead` and `supporting`.
+- The strings "sole executive agent" / "sole accountable owner" appear
+  nowhere in serial content.
+- `tier` ∈ {`decision`,`watchlist`,`background`,`staff_action`}; capability
+  decisions number at most three (fewer is fine).
+- No decision recommends a trial or funded programme without a delivered
+  (or first-directed) internal baseline.
+- "Army has no…" style assertions appear only where verified internal
+  information supports them.

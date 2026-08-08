@@ -375,7 +375,8 @@
     AOTO: { code:'AO',  label:'Acquisition / test-to-operations transition' },
     ADIO: { code:'ADIO',label:'Army Data Integration Office — data integration & cloud, AI, digitalisation front-end planning' },
     ADO:  { code:'ADIO',label:'Army Data Integration Office (legacy code ADO)' },
-    A4:   { code:'A4',  label:'PRC / adversary AI-C2 & autonomy net-assessment' }
+    A4:   { code:'A4',  label:'PRC / adversary AI-C2 & autonomy net-assessment' },
+    G5:   { code:'G5',  label:'G5 force development — integration across capabilities, force design, concepts, doctrine, equipping, manpower and functional branches' }
   };
   function ownerTag(o) {
     var m = OWNER[o];
@@ -383,11 +384,13 @@
     return '<span title="'+esc(o)+' — '+esc(m.label)+'">'+esc(m.code)+'</span>';
   }
   var DESKS = ['US','EU','APAC','ME'];
-  var KINDS = { decision:'Decisions', watchlist:'Watchlist', process:'Process' };
+  var KINDS = { decision:'Decisions', watchlist:'Watchlist', background:'Background', process:'Staff actions' };
+  var KIND_CHIP = { decision:'DECISION', watchlist:'WATCHLIST', background:'BACKGROUND', process:'STAFF ACTION' };
   var GROUPS = [
     { key:'decision', rn:'D', title:'CSIO Decisions', pred:function(s){ return s.category==='capability' && s.tier==='decision'; } },
     { key:'watchlist', rn:'W', title:'Priority Watchlist', pred:function(s){ return s.tier==='watchlist'; } },
-    { key:'process', rn:'P', title:'SIO Internal Actions', pred:function(s){ return s.category==='process'; } }
+    { key:'background', rn:'B', title:'Below-the-line Watch', pred:function(s){ return s.tier==='background'; } },
+    { key:'process', rn:'S', title:'SIO Internal Actions & Staff Work', pred:function(s){ return s.category==='process'; } }
   ];
   var MATURITY_LABEL = { reported:'Reported', demonstrated:'Demonstrated', operationally_evaluated:'Operationally evaluated', fielded:'Fielded', combat_proven:'Combat-proven' };
   var esc = function (s) { return String(s == null ? '' : s)
@@ -396,8 +399,9 @@
   function kindOf(s){ return s.category==='process' ? 'process' : s.tier; }
   function tierColor(s){
     var k = kindOf(s);
-    return k==='decision' ? getComputedStyle(root).getPropertyValue('--accent')
-         : k==='process'  ? getComputedStyle(root).getPropertyValue('--tech-robo')
+    return k==='decision'   ? getComputedStyle(root).getPropertyValue('--accent')
+         : k==='process'    ? getComputedStyle(root).getPropertyValue('--tech-robo')
+         : k==='background' ? getComputedStyle(root).getPropertyValue('--tech-dews')
          : getComputedStyle(root).getPropertyValue('--tech-data');
   }
   function statusColor(s){
@@ -465,8 +469,9 @@
   var deskObj = {}; DESKS.forEach(function(d){ deskObj[d]=d; });
   buildToggles(document.getElementById('f-desk'), deskObj, 'desk', null);
   buildToggles(document.getElementById('f-verdict'), KINDS, 'kind',
-    function(k){ return k==='decision' ? getComputedStyle(root).getPropertyValue('--accent')
-                       : k==='process'  ? getComputedStyle(root).getPropertyValue('--tech-robo')
+    function(k){ return k==='decision'   ? getComputedStyle(root).getPropertyValue('--accent')
+                       : k==='process'    ? getComputedStyle(root).getPropertyValue('--tech-robo')
+                       : k==='background' ? getComputedStyle(root).getPropertyValue('--tech-dews')
                        : getComputedStyle(root).getPropertyValue('--tech-data'); });
   document.getElementById('q').addEventListener('input', function (e) {
     state.q = e.target.value.trim().toLowerCase(); render();
@@ -474,7 +479,8 @@
 
   function serialDesks(s){ return [s.desk, s.desk2].filter(Boolean); }
   function serialHaystack(s){
-    return [s.decision, s.signal, s.sowhat, s.action, s.dlabel, s.id, s.owner,
+    return [s.decision, s.signal, s.sowhat, s.action, s.dlabel, s.id,
+      s.insightSponsor, s.fdLead, s.functionalLead, (s.supporting||[]).join(' '),
       s.recommendation, s.armyProblem, s.latestDevelopment, s.armyRelevance].filter(Boolean).join(' ');
   }
   function matchSerial(s) {
@@ -520,7 +526,7 @@
   }
   function kindChip(s, sm){
     var k = kindOf(s);
-    return '<span class="chip prio-'+(k==='decision'?'decision':'monitor')+(sm?' sm':'')+'">'+k.toUpperCase()+'</span>';
+    return '<span class="chip prio-'+(k==='decision'?'decision':'monitor')+(sm?' sm':'')+'">'+(KIND_CHIP[k]||k.toUpperCase())+'</span>';
   }
   function miniTags(arr){ return (arr||[]).map(function(t){ return '<span class="minitag mt-'+t+'" title="'+(TECH[t]||t)+'"></span>'; }).join(''); }
 
@@ -550,7 +556,7 @@
       +   (s.dlabel ? '<div class="dlabel">'+esc(s.dlabel)+'</div>' : '')
       +   '<div class="lead-decision">'+esc(s.recommendation||s.latestDevelopment||s.decision)+'</div>'
       +   '<div class="lead-signal">'+esc(s.whyNow||s.signal)+'</div>'
-      +   '<div class="lead-meta"><span class="k">Suspense</span> <b>'+esc(s.suspense)+'</b> · <span class="k">Owner</span> '+ownerTag(s.owner)+'</div>'
+      +   '<div class="lead-meta"><span class="k">Suspense</span> <b>'+esc(s.suspense)+'</b> · <span class="k">FD lead</span> '+ownerTag(s.fdLead)+' · <span class="k">Functional</span> '+ownerTag(s.functionalLead)+'</div>'
       + '</button>'
       + videoEmbed(s.media)
       + '</div>';
@@ -594,7 +600,7 @@
     return '<div class="field"><div class="k">Options</div><ol class="optlist">'+items+'</ol></div>';
   }
   function decisionBlock(s) {
-    if (kindOf(s) !== 'decision') return '';
+    if (!s.recommendation) return '';
     return '<div class="analysis decision-brief">'
       + '<div class="field"><div class="k">Recommendation</div><div class="v">'+esc(s.recommendation)+'</div></div>'
       + '<div class="field"><div class="k">Why now</div><div class="v">'+esc(s.whyNow)+'</div></div>'
@@ -606,7 +612,7 @@
       + '</div>';
   }
   function watchlistBlock(s) {
-    if (kindOf(s) !== 'watchlist') return '';
+    if (!s.latestDevelopment) return '';
     return '<div class="analysis">'
       + '<div class="field"><div class="k">Latest development</div><div class="v">'+esc(s.latestDevelopment)+'</div></div>'
       + '<div class="field"><div class="k">Change from previous</div><div class="v">'+esc(s.changeFromPrevious)+'</div></div>'
@@ -641,8 +647,10 @@
       +   '</div>'
       + '</details>'
       + '<div class="meta">'
-      +   '<span><span class="k">Owner</span> <b>'+ownerTag(s.owner)+((s.supporting&&s.supporting.length)?' + '+s.supporting.map(ownerTag).join(', '):'')+'</b></span>'
-      +   '<span><span class="k">AO</span> '+esc(s.ao)+'</span>'
+      +   '<span><span class="k">Sponsor</span> <b>'+ownerTag(s.insightSponsor)+'</b></span>'
+      +   '<span><span class="k">FD lead</span> <b>'+ownerTag(s.fdLead)+'</b></span>'
+      +   '<span><span class="k">Functional lead</span> <b>'+ownerTag(s.functionalLead)+'</b></span>'
+      +   '<span><span class="k">Supporting</span> '+((s.supporting&&s.supporting.length)?s.supporting.map(ownerTag).join(', '):'—')+'</span>'
       +   '<span><span class="k">Suspense</span> <b>'+esc(s.suspense)+'</b></span>'
       +   '<span><span class="k">Raised</span> '+esc(s.raised)+' <span class="k">· age</span> '+s.age+'</span>'
       +   (s.supersedes && s.supersedes.length ? '<span><span class="k">Supersedes</span> '+esc(s.supersedes.join(', '))+'</span>' : '')
