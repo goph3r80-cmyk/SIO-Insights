@@ -2,6 +2,15 @@
 
 An automated pipeline for curating defence-technology industry news and analysis into a clean, structured dataset for the Systems Integration Office (SIO). Runs on a daily schedule (and on demand), opening a pull request for review each refresh.
 
+> **v3.0 — decision-support evolution.** SIO Insights is evolving from a
+> news-organised digest into an Army decision-support and
+> organisational-learning system, organised around a persistent **Army
+> Question Register** (`window.SIO_DATA.questions`) rather than
+> story-derived serials. The standing intent governing all future changes
+> is **[`DOCTRINE.md`](DOCTRINE.md)**; the implementing schema and
+> regeneration rules are in `GENERATORPROMPT.md` (Schema v2/v2.1/v3.0
+> sections, which supersede the v1 description below where they conflict).
+
 ## What This Is
 
 **SIO Insights** scans open-source defence trade publications, think tanks, and business newswires each cycle to identify emerging industry developments, funding, contracts, and doctrine analysis in defence-tech capability areas (AI, autonomy, EW, space, cyber, materials, etc.). The pipeline deduplicates stories, tags them (capability, region, source credibility), synthesises them into SIO decision products, and exports a structured JS module (`window.SIO_DATA`) ready for downstream dashboard, API, or newsletter applications.

@@ -278,6 +278,16 @@
   @media (prefers-reduced-motion:no-preference) {
     .card, .tile { transition:opacity .2s ease; }
   }
+  /* v3 — Army Question Register */
+  .qcards { display:grid; grid-template-columns:repeat(auto-fit, minmax(360px, 1fr)); gap:14px; margin:6px 0 22px; }
+  .qcard .qtext { font-weight:600; margin:6px 0 10px; line-height:1.45; }
+  .chip.qcat { text-transform:uppercase; letter-spacing:.04em; }
+  .chip.dirreq { color:var(--accent); border-color:var(--accent); font-weight:700; }
+  .qthreads a, .qthreads button { cursor:pointer; }
+  .changes { margin:0 0 20px; }
+  .changes ul { list-style:none; margin:8px 0 0; padding:0; display:grid; gap:6px; }
+  .changes li { display:flex; gap:10px; align-items:baseline; font-size:.86rem; }
+  .changes .id { flex:0 0 auto; }
 </style>
 </head>
 <body>
@@ -299,6 +309,10 @@
 
 <main class="wrap">
   <section class="tiles" id="tiles"></section>
+
+  <div id="questions" aria-label="Army Question Register"></div>
+
+  <section class="changes" id="changes" aria-label="Material changes since last review"></section>
 
   <section class="brief" id="brief" aria-label="CSIO brief">
     <div class="brief-col">
@@ -384,13 +398,19 @@
     return '<span title="'+esc(o)+' — '+esc(m.label)+'">'+esc(m.code)+'</span>';
   }
   var DESKS = ['US','EU','APAC','ME'];
-  var KINDS = { decision:'Decisions', watchlist:'Watchlist', background:'Background', process:'Staff actions' };
-  var KIND_CHIP = { decision:'DECISION', watchlist:'WATCHLIST', background:'BACKGROUND', process:'STAFF ACTION' };
+  var KINDS = { decision:'Direction', watchlist:'Threads', foundational:'Foundational', background:'Background', process:'Staff actions' };
+  var KIND_CHIP = { decision:'DECISION', watchlist:'THREAD', foundational:'FOUNDATIONAL', background:'BACKGROUND', process:'STAFF ACTION' };
+  var DIRTYPE = { priority_direction:'PRIORITY DIRECTION', capability_decision:'CAPABILITY DECISION', resource_decision:'RESOURCE DECISION', policy_doctrine_decision:'POLICY/DOCTRINE DECISION', staff_action:'STAFF ACTION' };
+  var QCAT = { capability:'Capability', foundational:'Foundational enabler', net_assessment:'Net-assessment', policy:'Policy', organisational:'Organisational' };
+  var QBY = {}; (D.questions||[]).forEach(function(q){ QBY[q.id]=q; });
+  function qcatOf(s){ var q = s.question && QBY[s.question]; return q ? q.category : null; }
   var GROUPS = [
-    { key:'decision', rn:'D', title:'CSIO Decisions', pred:function(s){ return s.category==='capability' && s.tier==='decision'; } },
-    { key:'watchlist', rn:'W', title:'Priority Watchlist', pred:function(s){ return s.tier==='watchlist'; } },
-    { key:'background', rn:'B', title:'Below-the-line Watch', pred:function(s){ return s.tier==='background'; } },
-    { key:'process', rn:'S', title:'SIO Internal Actions & Staff Work', pred:function(s){ return s.category==='process'; } }
+    { key:'decision', rn:'D', title:'CSIO Direction Required', pred:function(s){ return s.category==='capability' && s.tier==='decision'; } },
+    { key:'watchlist', rn:'W', title:'Active Force-Development Threads', pred:function(s){ return s.tier==='watchlist' && qcatOf(s)!=='net_assessment'; } },
+    { key:'watchlist', rn:'N', title:'Net-Assessment / Threat Questions', pred:function(s){ return s.tier==='watchlist' && qcatOf(s)==='net_assessment'; } },
+    { key:'foundational', rn:'F', title:'Foundational Dependencies', pred:function(s){ return s.tier==='foundational'; } },
+    { key:'process', rn:'S', title:'Staff Actions', pred:function(s){ return s.category==='process'; } },
+    { key:'background', rn:'B', title:'Below-the-line Watch', pred:function(s){ return s.tier==='background'; } }
   ];
   var MATURITY_LABEL = { reported:'Reported', demonstrated:'Demonstrated', operationally_evaluated:'Operationally evaluated', fielded:'Fielded', combat_proven:'Combat-proven' };
   var esc = function (s) { return String(s == null ? '' : s)
@@ -399,9 +419,10 @@
   function kindOf(s){ return s.category==='process' ? 'process' : s.tier; }
   function tierColor(s){
     var k = kindOf(s);
-    return k==='decision'   ? getComputedStyle(root).getPropertyValue('--accent')
-         : k==='process'    ? getComputedStyle(root).getPropertyValue('--tech-robo')
-         : k==='background' ? getComputedStyle(root).getPropertyValue('--tech-dews')
+    return k==='decision'     ? getComputedStyle(root).getPropertyValue('--accent')
+         : k==='process'      ? getComputedStyle(root).getPropertyValue('--tech-robo')
+         : k==='background'   ? getComputedStyle(root).getPropertyValue('--tech-dews')
+         : k==='foundational' ? getComputedStyle(root).getPropertyValue('--tech-ai')
          : getComputedStyle(root).getPropertyValue('--tech-data');
   }
   function statusColor(s){
@@ -436,17 +457,86 @@
   document.getElementById('asof').textContent = 'Feed as of ' + D.feedAsOf + ' · ' +
     D.serials.length + ' serials · ' + D.feed.length + ' items';
 
-  /* Tiles */
+  /* Tiles — decision-advantage indicators, not information volume */
+  var nQ = (D.questions||[]).length;
   var nDec = D.serials.filter(function(s){return kindOf(s)==='decision';}).length;
-  var nWatch = D.serials.filter(function(s){return kindOf(s)==='watchlist';}).length;
-  var nHighConf = D.serials.filter(function(s){return s.confidence==='high';}).length;
+  var nThreads = D.serials.filter(function(s){return s.tier==='watchlist';}).length;
+  var nFound = D.serials.filter(function(s){return s.tier==='foundational';}).length;
+  var nChanged = (D.questions||[]).filter(function(q){return q.materialChange;}).length;
+  var nOverdue = D.serials.filter(function(s){return s.status==='overdue';}).length;
   document.getElementById('tiles').innerHTML =
-    tile('', D.serials.length, 'Capability questions') +
-    tile('dec', nDec, 'Decisions (cap 3)') +
-    tile('gap', nWatch, 'Watchlist lines') +
-    tile('prov', nHighConf, 'High-confidence lines') +
-    tile('feed', D.feed.length, 'Feed items');
+    tile('', nQ, 'Army questions') +
+    tile('dec', nDec, 'CSIO direction required') +
+    tile('gap', nThreads, 'Active threads') +
+    tile('prov', nFound, 'Foundational dependencies') +
+    tile('', nChanged, 'Material changes') +
+    tile('feed', nOverdue, 'Overdue actions');
   function tile(c,n,l){ return '<div class="tile '+c+'"><div class="n">'+n+'</div><div class="l">'+l+'</div></div>'; }
+
+  /* Army Question Register */
+  function qTriggers(q){
+    if (!q.triggers || !q.triggers.length) return '';
+    var items = q.triggers.map(function(t){
+      return '<li><b>'+esc((t.type||'').replace('_',' '))+'</b> — '+esc(t.trigger)+'</li>';
+    }).join('');
+    return '<details class="src"><summary>▸ <span class="tw">'+q.triggers.length+'</span> escalation trigger'+(q.triggers.length>1?'s':'')+'</summary><ul class="srclist">'+items+'</ul></details>';
+  }
+  function qCard(q){
+    var conf = q.confidence ? ('evidence '+esc(q.confidence.evidence)+' · inference '+esc(q.confidence.inference)) : '';
+    var threads = (q.threads||[]).map(function(t){
+      return '<button type="button" class="hl" style="--vc:var(--accent);display:inline-flex;width:auto;padding:2px 8px" data-goto="'+esc(t)+'"><span class="id sm">'+esc(t)+'</span></button>';
+    }).join(' ');
+    return '<article class="card qcard" id="question-'+esc(q.id)+'" style="--vc:var(--accent)">'
+      + '<div class="card-top">'
+      +   '<span class="id">'+esc(q.id)+'</span>'
+      +   '<span class="chip qcat">'+esc(QCAT[q.category]||q.category)+'</span>'
+      +   (q.directionRequired ? '<span class="chip dirreq">'+esc(DIRTYPE[q.directionRequired.type]||q.directionRequired.type)+'</span>' : '')
+      +   (q.materialChange ? '<span class="newpill">CHANGED</span>' : '')
+      +   '<span class="grow"></span>'
+      + '</div>'
+      + '<div class="card-body">'
+      +   '<div class="dlabel">'+esc(q.title)+'</div>'
+      +   '<div class="qtext">'+esc(q.question)+'</div>'
+      +   '<div class="analysis">'
+      +     '<div class="field"><div class="k">Decision horizon</div><div class="v">'+esc(q.decisionHorizon)+'</div></div>'
+      +     '<div class="field"><div class="k">Army baseline</div><div class="v">'+esc(q.armyBaseline)+'</div></div>'
+      +     '<div class="field"><div class="k">External change</div><div class="v">'+esc(q.externalChange)+'</div></div>'
+      +     '<div class="field"><div class="k">Delta</div><div class="v">'+esc(q.delta)+'</div></div>'
+      +     (q.directionRequired ? '<div class="field"><div class="k">Direction required</div><div class="v">'+esc(q.directionRequired.statement)+'</div></div>' : '')
+      +     '<div class="field"><div class="k">Next question</div><div class="v">'+esc(q.nextQuestion)+'</div></div>'
+      +   '</div>'
+      +   qTriggers(q)
+      +   '<div class="meta">'
+      +     '<span><span class="k">Confidence</span> '+conf+'</span>'
+      +     '<span class="qthreads"><span class="k">Threads</span> '+(threads||'—')+'</span>'
+      +   '</div>'
+      + '</div>'
+      + '</article>';
+  }
+  function renderQuestions(){
+    var host = document.getElementById('questions');
+    if (!D.questions || !D.questions.length) { host.innerHTML=''; return; }
+    host.innerHTML = '<div class="sec-h"><span class="rn">Q</span><h2>Army Question Register</h2>'
+      + '<span class="rule"></span><span class="ct">'+D.questions.length+'</span></div>'
+      + '<div class="qcards">' + D.questions.map(qCard).join('') + '</div>';
+  }
+  renderQuestions();
+  document.getElementById('questions').addEventListener('click', function(e){
+    var el = e.target.closest('[data-goto]'); if (!el) return;
+    var t = document.getElementById('serial-' + el.getAttribute('data-goto'));
+    if (t){ t.scrollIntoView({ behavior:'smooth', block:'center' }); t.classList.remove('flash'); void t.offsetWidth; t.classList.add('flash'); }
+  });
+
+  /* Material changes since last review */
+  (function(){
+    var host = document.getElementById('changes');
+    var changed = (D.questions||[]).filter(function(q){ return q.materialChange; });
+    if (!changed.length) { host.innerHTML=''; return; }
+    host.innerHTML = '<div class="sec-h"><span class="rn">Δ</span><h2>Material changes since last review</h2><span class="rule"></span><span class="ct">'+changed.length+'</span></div>'
+      + '<ul>' + changed.map(function(q){
+          return '<li><span class="id sm">'+esc(q.id)+'</span><span>'+esc(q.materialChange)+'</span></li>';
+        }).join('') + '</ul>';
+  })();
 
   /* Filter chips */
   function buildToggles(host, items, kind, colorVar) {
@@ -469,9 +559,10 @@
   var deskObj = {}; DESKS.forEach(function(d){ deskObj[d]=d; });
   buildToggles(document.getElementById('f-desk'), deskObj, 'desk', null);
   buildToggles(document.getElementById('f-verdict'), KINDS, 'kind',
-    function(k){ return k==='decision'   ? getComputedStyle(root).getPropertyValue('--accent')
-                       : k==='process'    ? getComputedStyle(root).getPropertyValue('--tech-robo')
-                       : k==='background' ? getComputedStyle(root).getPropertyValue('--tech-dews')
+    function(k){ return k==='decision'     ? getComputedStyle(root).getPropertyValue('--accent')
+                       : k==='process'      ? getComputedStyle(root).getPropertyValue('--tech-robo')
+                       : k==='background'   ? getComputedStyle(root).getPropertyValue('--tech-dews')
+                       : k==='foundational' ? getComputedStyle(root).getPropertyValue('--tech-ai')
                        : getComputedStyle(root).getPropertyValue('--tech-data'); });
   document.getElementById('q').addEventListener('input', function (e) {
     state.q = e.target.value.trim().toLowerCase(); render();
@@ -526,7 +617,8 @@
   }
   function kindChip(s, sm){
     var k = kindOf(s);
-    return '<span class="chip prio-'+(k==='decision'?'decision':'monitor')+(sm?' sm':'')+'">'+(KIND_CHIP[k]||k.toUpperCase())+'</span>';
+    var label = (s.directionType && DIRTYPE[s.directionType]) || KIND_CHIP[k] || k.toUpperCase();
+    return '<span class="chip prio-'+(k==='decision'?'decision':'monitor')+(sm?' sm':'')+'">'+label+'</span>';
   }
   function miniTags(arr){ return (arr||[]).map(function(t){ return '<span class="minitag mt-'+t+'" title="'+(TECH[t]||t)+'"></span>'; }).join(''); }
 
@@ -653,12 +745,28 @@
       +   '<span><span class="k">Supporting</span> '+((s.supporting&&s.supporting.length)?s.supporting.map(ownerTag).join(', '):'—')+'</span>'
       +   '<span><span class="k">Suspense</span> <b>'+esc(s.suspense)+'</b></span>'
       +   '<span><span class="k">Raised</span> '+esc(s.raised)+' <span class="k">· age</span> '+s.age+'</span>'
+      +   (s.question ? '<span><span class="k">Question</span> <b>'+esc(s.question)+(QBY[s.question]?' — '+esc(QBY[s.question].title):'')+'</b></span>' : '')
       +   (s.supersedes && s.supersedes.length ? '<span><span class="k">Supersedes</span> '+esc(s.supersedes.join(', '))+'</span>' : '')
       + '</div>'
+      + decisionLogBlock(s.decisionLog)
       + srcBlock(s.src)
       + mediaBlock(s.media)
       + '</div>';
     return '<article id="serial-'+esc(s.id)+'" class="card" style="--vc:'+tierColor(s)+'">'+top+body+'</article>';
+  }
+  function decisionLogBlock(log) {
+    if (!log || !log.length) return '';
+    var items = log.map(function(e){
+      var rows = [
+        ['Direction given', e.direction], ['Responsible staff', e.responsibleStaff],
+        ['Deliverable', e.deliverable], ['Result', e.result], ['Effect', e.effect],
+        ['Assessment', e.assessment], ['Follow-on', e.followOn]
+      ].filter(function(r){ return r[1]; })
+       .map(function(r){ return '<div class="field"><div class="k">'+r[0]+'</div><div class="v">'+esc(r[1])+'</div></div>'; }).join('');
+      return '<li><b>'+esc(e.date||'')+'</b><div class="analysis" style="margin-top:6px">'+rows+'</div></li>';
+    }).join('');
+    return '<details class="src"><summary>▸ <span class="tw">'+log.length+'</span> decision-history entr'+(log.length>1?'ies':'y')+'</summary>'
+      + '<ul class="srclist">'+items+'</ul></details>';
   }
   function mediaBlock(media) {
     if (!media || !media.length) return '';
