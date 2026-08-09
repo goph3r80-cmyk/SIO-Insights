@@ -36,6 +36,17 @@ for subscription walls, `unverified` for blocked/unconfirmed. Treat
 **state-controlled outlets** (marked ⚠) as *signals of what an actor wants said*,
 never as confirmed fact — always corroborate and flag.
 
+**Native-language sources.** Sources marked "search/read in German" or
+"search/read in Chinese" are not reachable via English-language queries alone —
+an English search will surface only their English-edition or Western-pickup
+coverage, missing native-language-only reporting entirely. For these outlets,
+query in the source language (German terms, or Chinese characters/pinyin for
+PLA/Chinese-military terminology) and read the retrieved article in its
+original language; translate only the extracted `ttl`/`sum` fields into
+English for the feed row. Note the outlet's native-language headline in `sum`
+or `note` where a precise translation matters (e.g. a system name or unit
+designation) so downstream review can spot-check the rendering.
+
 **Standing priority — China / PLA (every run).** Chinese military-technology
 developments are a permanent coverage requirement, not a rotation. On **every
 run**, sweep the China/PLA sources on the APAC desk — Global Times, Xinhua,
@@ -129,7 +140,9 @@ serials (e.g. `I-3`, `I-6`, `II-4`) alive across editions.
 - Mer et Marine (France, naval) — https://www.meretmarine.com
 - Analisi Difesa (Italy) — https://www.analisidifesa.it
 - Defensa.com (Spain) — https://www.defensa.com
-- Hartpunkt (Germany) — https://www.hartpunkt.de
+- Hartpunkt (Germany) — https://www.hartpunkt.de  *(RSS available — search/read in German)*
+- Augen geradeaus! (Germany, independent) — https://augengeradeaus.net  *(RSS available; well-regarded independent defence blog — search/read in German)*
+- ESUT — Europäische Sicherheit & Technik (Germany) — https://esut.de  *(search/read in German)*
 - Defence24 (Poland) — https://defence24.com
 - **Ukraine war** — Defense Express https://en.defence-ua.com · Militarnyi https://mil.in.ua/en/ · Kyiv Independent https://kyivindependent.com · United24 Media https://united24media.com · Oryx (OSINT losses) https://www.oryxspioenkop.com
 
@@ -143,11 +156,31 @@ serials (e.g. `I-3`, `I-6`, `II-4`) alive across editions.
 - Defence Security Asia (SE Asia) — https://defencesecurityasia.com
 - Defence Review Asia (Singapore) — https://defencereviewasia.com
 - The Straits Times (Singapore) — https://www.straitstimes.com  *(paywall)*
-- Yonhap (Korea) — https://en.yna.co.kr · NK News — https://www.nknews.org  *(paywall)*
+- Yonhap (Korea, English edition) — https://en.yna.co.kr · NK News — https://www.nknews.org  *(paywall)*
 - **India** — idrw.org https://idrw.org · Raksha Anirveda https://raksha-anirveda.com · Livefist https://www.livefistdefence.com · ThePrint (Defence) https://theprint.in/category/defence/ · Indian Defence News https://www.indiandefensenews.in
+- **Japan (native-language-only — search/read in Japanese):**
+  Asagumo Shimbun (朝雲新聞), the JSDF's own paper — https://www.asagumo-news.com ·
+  Sankei Shimbun (産経新聞) defence desk, known for extensive MOD/JSDF coverage — https://www.sankei.com/category/politics-defense/ ·
+  NHK News (defence/security) — https://www3.nhk.or.jp/news/.
+  These run MOD/JSDF announcements and domestic defence-industry stories days ahead of (or never reaching) the English-language Japan coverage already in this list (Nippon.com/Jiji Press).
+- **South Korea (native-language-only — search/read in Korean):**
+  Kookbang Ilbo (국방일보), the ROK MND's own paper — https://kookbang.dema.mil.kr ·
+  Yonhap News (연합뉴스), Korean edition — https://www.yna.co.kr  *(broader and faster than the English edition above)*.
+- **Taiwan (native-language — search/read in Traditional Chinese; ROC-official or Taiwan-domestic, distinct from PRC ⚠ state media):**
+  Youth Daily News (青年日報), the ROC MND's own paper — https://www.ydn.com.tw ·
+  Liberty Times Net (自由時報) defence section — https://news.ltn.com.tw/list/breakingnews/military ·
+  Central News Agency Taiwan (中央社/CNA) — https://www.cna.com.tw/list/aall.aspx.
+  Treat MND-run outlets (Youth Daily News) as Taiwan's own official messaging — authoritative for Taiwan's stated posture, not neutral — same discipline as for any official source.
+- **Vietnam (native-language — search/read in Vietnamese):**
+  Quân đội nhân dân (People's Army Newspaper), the VPA's own paper — https://www.qdnd.vn.
 - SCMP (China/Asia) — https://www.scmp.com  *(paywall — **sweep every run**)*
 - Military Watch Magazine — https://militarywatchmagazine.com  *(opinionated — corroborate)*
-- ⚠ Global Times / Xinhua / CCTV / PLA Daily (China state) — https://www.globaltimes.cn  *(**sweep every run**; treat as intent signalling — corroborate and flag)*
+- ⚠ Global Times / Xinhua / CCTV / PLA Daily (China state, English editions) — https://www.globaltimes.cn  *(**sweep every run**; treat as intent signalling — corroborate and flag)*
+- ⚠ Chinese-language-only sources (not covered by the English editions above — **sweep every run**, search/read in Chinese):
+  PLA Daily Chinese site — https://www.81.cn / https://www.chinamil.com.cn ·
+  Sina Military — https://mil.news.sina.com.cn ·
+  Guancha (观察者网) — https://www.guancha.cn  *(independent-leaning commentary, not state-run, but nationalist-leaning — corroborate)*.
+  These carry stories the English editions omit or run days later; apply the same ⚠ state-outlet discipline to PLA Daily/Sina Military and treat Guancha as opinionated-but-independent (same bar as Military Watch Magazine).
 
 **ME desk**
 - Times of Israel (IDF) — https://www.timesofisrael.com/topic/idf-israel-defense-forces/
@@ -323,11 +356,5 @@ by technology alone (`tech` already captures the technology dimension).
    corroboration (which stories reinforce each other), and any capability area
    worth a future serial. This is the raw material the Generator uses to cluster
    feed rows into serials.
-3. **Video sightings (optional)** — if a story's own coverage includes or
-   references real public video of the system/event (an outlet headline like
-   "VIDEO: …", an embedded clip, a linked YouTube/Douyin/Instagram post), note
-   the platform and link alongside that row's entry. This is the raw material
-   the Generator uses to populate a serial's optional `media[]` field — see
-   GENERATOR-PROMPT.md. Only note a link you actually saw; never guess one.
 
 Hand the full output to the Generator (Step 2) unchanged.
