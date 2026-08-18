@@ -1,12 +1,16 @@
 /* SIO Insights edition data — generated. Replace to refresh. */
 window.SIO_DATA = {
   "edition": "Aug 2026",
-  "feedAsOf": "2026-08-17",
+  "feedAsOf": "2026-08-18",
   "productVersion": "3.0",
   "changelog": [
     {
+      "date": "2026-08-18",
+      "note": "Edition refresh: tiered-source sweep to 18 Aug (complementing the 17 Aug dragnet intake — five substantive items the keyword alerts missed). Material changes: Q4 — US Army Project Sustainment awarded the TALUS autonomous-distribution prototype (Stratom team, 10 Aug; five-firm Medium Autonomous Tactical Logistics selection 27 Jul; field testing with a Transformation in Contact unit from early 2027) — a funded peer programme squarely on the last-mile-sustainment question; Q5 — US Army declared NGC2 'ready to scale' at the close of Project Convergence-Capstone 6 (10-month prototyping concluded; I Corps next) — the comparator moved from operational evaluation to scaling, raising the value of the tasked ADIO baseline without changing its precondition status; Q7 — the US Army abandoned its unified autonomy-software strategy in favour of vendor-led, mission-specific autonomy (Breaking Defense, 13 Aug) — an explicit acquisition-model change on the comparator line; Q1 — appended: the Marine Corps is moving to a production-ready vehicle-mounted high-power-microwave swarm-defeat system (Epirus HAVOC, 10 Aug), advancing the counter-swarm DE layer's maturity. Evidence-base update without escalation: W-4 adds a PLA UAV-cued PHL-03 maritime-strike and rapid-displacement drill (China Military Online footage, 6 Aug — state-linked, corroborate) extending the sensor-to-shooter compression pattern. feedAsOf 2026-08-18; metrics recomputed."
+    },
+    {
       "date": "2026-08-17",
-      "note": "Daily automated refresh. Trawled Tier 1-3 sources and the standing China/PLA desk for defence-tech developments since the 8 Aug edition. Added 9 feed items spanning US/EU/ME/APAC desks (ai, robo, dews). Cross-linked and refreshed src/signal for D-1 (Ukraine’s largest drone attack on Moscow, a fourth NATO airspace drone shoot-down over Romania, and a new Boeing/RTX SM-3 production framework), W-4 (PRC LY-1 shipborne laser first afloat sighting), W-5 (Israel ‘Digital Bat’ tender and IDF 100,000-drones/year production plan), and W-6 (Army counter-space directed-energy development). One item (NODA AI $100M contract) flagged unverified — source page returned HTTP 403 on direct fetch; content is aggregator-derived only and should be independently confirmed. Bumped age +1 on all carried serials."
+      "note": "Evidence refresh from the Google Alerts keyword dragnet (intake 11-16 Aug), processed per DOCTRINE.md: 36 alert hits triaged; 8 carried into the feed after resolution to canonical sources; the rest dropped (event promos, aggregator/clickbait, general diplomacy and opinion without capability content, or no material effect on any Army question). Material changes (2): Q1 — WSJ-reported Combined Resolve result (Ukrainian 412th Regiment drone operators repeatedly defeated a US armored brigade; US mitigations improved over two weeks) is direct evidence for the manoeuvre-force protection and static-vs-manoeuvre elements of the C-UAS baseline; Q4 — South Korea's Army commissioned a manpower-decline-driven study to automate field maintenance and logistics (ArmyTiger L; one supply group already ~70% automated), a problem-first comparator from a similarly conscription-based force. Evidence-base updates without escalation (per the material-change test): W-1 HII Watcher sUSV completed DIU PRIME (no Army trigger met); W-4 Type 054B VLS capacity +50% via corroborated commercial imagery (below material-change threshold); W-3 DoDIIS reporting corroborates data-access-in-enclaves as the AI bottleneck; D-1 adds airborne/lighter directed-energy transition hurdles; W-7 adds Lockheed AI-driven sustainment expansion as candidate-technology evidence. Feed-only: DARPA NGHCM affordable-mass hypersonic RFI (cost-exchange/magazine-depth context; no Army question owns hypersonic strike). Dropped without carry: North Korea possible-hypersonic launches, Nvidia-chip-in-Russian-missile, Mecca-agreement diplomacy, and similar items not materially affecting a registered question."
     },
     {
       "date": "2026-08-08",
@@ -19,10 +23,6 @@ window.SIO_DATA = {
     {
       "date": "2026-08-06",
       "note": "CSIO restructure per critique dated 6 Aug 2026, 8:46 PM SGT. Consolidated 33 serials into 10 (3 decisions, capped per CSIO direction; 6 watchlist capability questions; 1 SIO-internal process item). Added maturity ladder (reported/demonstrated/operationally_evaluated/fielded/combat_proven), confidence rating (high/moderate/low), single accountable owner + supporting agencies (replacing owner2/joint 'X + Y' framing), CSIO Page-1 decision format (recommendation/whyNow/armyProblem/options/implications/directionSought/deliverable/deliverableDate) and Page-2 watchlist format (latestDevelopment/changeFromPrevious/armyRelevance/escalationTrigger). Renamed owner code ADO -> ADIO. Fixed stale suspenses (I-1, III-2 now W-3) to dated deliverables or explicit trigger conditions; replaced 'Next edition' suspenses across the board. Reclassified III-7 (CCA weapons release) from 'proven' to 'demonstrated' per CSIO's maturity correction, and moved it from an ASB2 platform matter to a cross-portfolio SIO-owned decision (D-3). W-3 (was III-2, common data layer) explicitly NOT reframed against Army Data Store/ENCLAVE/STRONGWATCH/ADIO — this pipeline holds no verified information on those internal systems and flags that ADIO input is required before the line can mature into a decision, rather than fabricating the comparison. Annex (feed[]) enriched with sourceType, confidence, corroborated, primarySourceUrl, unverifiedClaims and dateLastChecked per item. NOTE: index.html has not yet been updated to render the new tier/category/decision/watchlist fields — this is flagged follow-up work; the dashboard will need a rendering update to display Page 1 / Page 2 / Annex structure and the new fields."
-    },
-    {
-      "date": "2026-08-08",
-      "note": "Daily refresh. Trawled Tier 1/2/3 defence trade press, the standing China/PLA desk, and EU/Ukraine/ME desks for the 2026-08-06 to 2026-08-08 window (plus a small number of high-significance 2026-08-01/04/05 items missed by the prior trawl). Added 23 new feed[] items, none duplicating existing coverage. Applied the material-change test per DOCTRINE.md §23: refreshed evidence (src[], latestDevelopment/changeFromPrevious, signal) on D-1, D-2, S-1, W-1, W-2, W-3, W-4 and W-5 where genuinely new; W-6 and W-7 carried forward unchanged (no new evidence found). No thread's ownership, decision status, or direction sought changed this cycle. All seven active questions (Q1-Q7) received a materialChange note; no question opened, closed, merged or split. Every serial's age incremented by one edition cycle."
     }
   ],
   "serials": [
@@ -44,7 +44,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 2,
+      "age": 0,
       "supersedes": [
         "II-2",
         "II-4",
@@ -77,7 +77,7 @@ window.SIO_DATA = {
       "deliverable": "Army C-UAS force-development baseline covering: priority UAS threat classes; operational scenarios and assets/echelons requiring protection; existing and planned Army capabilities; residual capability gaps; static versus manoeuvre requirements; kinetic and non-kinetic defeat options; cost-exchange considerations; magazine-depth considerations; integration and C2 requirements; and candidate areas requiring trials",
       "deliverableDate": "2026-09-15",
       "decision": "Endorse affordable layered counter-UAS as an Army force-development priority; direct G5 (ASB2 as functional lead) to deliver the Army C-UAS force-development baseline by 15 Sep 2026. Trial proposal only after the baseline.",
-      "signal": "Evidence is organised by the operational effect or threat class each programme addresses — these programmes collectively demonstrate the layered-defence need and the changing cost exchange, but they do not all solve the same Army threat class. — DEFEAT OF SMALL UAS BY SOFT-KILL (RF/EW): [Fielded] JIATF-401 converted a border-tested evaluation into a three-year, up-to-$500M IDIQ for CACI's SkyValor non-kinetic detect-and-defeat system (RF jamming plus net-capture) after a two-day Yuma demonstration (DefenseScoop, 31 Jul); AeroVironment's Titan task order (~$80M) is fielding AI-enabled RF detect-and-defeat at Air Force bases; the Marine Corps is integrating UGVs into its MADIS counter-drone system (Army Recognition, 27 Jun). — DEFEAT OF SMALL / ONE-WAY-ATTACK UAS BY LOW-COST KINETIC INTERCEPTOR: [Reported] the Army's Next Generation Counter-sUAS Missile RFI (4 Aug) seeks a purpose-built sub-$150K interceptor (responses due 20 Aug); [Combat-proven — single event] Ukraine's Griffen interceptor drone downed a Shahed one-way-attack drone for the first time (Militarnyi, 7 Jul). — CRUISE/BALLISTIC-CLASS AIR DEFENCE AND THE COST-EXCHANGE / MAGAZINE-DEPTH TREND (context for the affordability trade, not small-UAS defeat): [Fielded] the $58.6B FY26-32 Patriot multiyear (30 Jul) and $3B Patriot/THAAD component framework (3 Aug) triple PAC-3 MSE production; [Reported] Lockheed's sub-$2M PAC-3 ACE interceptor (Farnborough, 20 Jul) and the 10-nation coalition behind Ukraine's ~$700K Freyja/FP-7.X (Paris, 14 Jul) hedge against exquisite-interceptor cost; DIU's Ground-Based Affordable Mass call (27 Jul) applies the same cost logic to offensive fires. — COUNTER-SWARM DIRECTED ENERGY: [Demonstrated] the Pentagon's Joint Laser Weapon System programme (Lockheed Aculight, nLIGHT — up to $847M ceiling) is scaling 150kW counter-drone lasers toward 300-500kW cruise-missile defence, and Germany has commissioned a naval laser targeted for fielding by 2029 after 28,000nm of at-sea demonstration. [Reported — state-linked, corroborate] China is showcasing and exporting a man-portable-to-naval laser C-UAS line (Harbin Xinguang 'Lijian', CPMIEC LW-30, Novasky NI-L3K) to Gulf and SE Asian markets — vendor/state claims not independently verified at declared performance levels. — SWARM-CONTROL AUTONOMY LAYER: [Reported] AeroVironment/Applied Intuition's Acuity autonomy software (29 Jul) is moving single-operator, multi-drone swarm control from demonstrator toward the Army Launched Effects programme of record. — ALLIED PRODUCTION MASS AND INTEROPERABILITY: [Reported] NATO's $40B+ five-year counter-drone package (7 Jul) and the €11B EU-Ukraine Drone Deal (15 Jul) fund allied counter-drone mass production and interoperability standards at alliance scale, while Ukraine's drone campaign (1M+ targets struck since January; deep strikes into Russia) continues to define the threat's operational envelope. Since 4 Aug, further evidence of the marketplace/production-scale shift the baseline is being built against: [Reported] JIATF-401 funded Kaizen Laboratories ($15M) to build an AI-driven marketplace listing vetted counter-UAS vendors (Anduril, AeroVironment, DroneShield, SMARTSHOOTER) for military, allied and law-enforcement buyers (DefenseScoop, 4 Aug); [Reported] the Army is separately negotiating with AeroVironment to make the Enduring High Energy Laser (E-HEL) a permanent counter-drone capability, building on M-SHORAD directed-energy experimentation (Army Recognition, 7 Aug); and [Reported] Paramount (South Africa) integrated an AI-enhanced Aselsan EO/IR sensor onto its Mwari aircraft for a dedicated counter-UAS configuration (FlightGlobal, 6 Aug) — allied international uptake of the same layered architecture. SINCE 8 AUG: [Reported] Ukraine's largest aerial attack of the war to date sent roughly 600 one-way-attack drones toward Moscow (16 Aug), with Russia claiming 822 destroyed, and NATO member Romania downed its fourth airspace-incursion drone of the year via a Spanish Air Force F-18 (16 Aug) — both events corroborate the accelerating small-UAS threat tempo the layered C-UAS baseline is being built against. Separately, the Pentagon signed seven-year framework agreements with Boeing and RTX (14 Aug) to expand SM-3 Block IB/IIA component production, extending the interceptor-mass-production trend already noted for Patriot/THAAD.",
+      "signal": "Evidence is organised by the operational effect or threat class each programme addresses — these programmes collectively demonstrate the layered-defence need and the changing cost exchange, but they do not all solve the same Army threat class. — DEFEAT OF SMALL UAS BY SOFT-KILL (RF/EW): [Fielded] JIATF-401 converted a border-tested evaluation into a three-year, up-to-$500M IDIQ for CACI's SkyValor non-kinetic detect-and-defeat system (RF jamming plus net-capture) after a two-day Yuma demonstration (DefenseScoop, 31 Jul); AeroVironment's Titan task order (~$80M) is fielding AI-enabled RF detect-and-defeat at Air Force bases; the Marine Corps is integrating UGVs into its MADIS counter-drone system (Army Recognition, 27 Jun). — DEFEAT OF SMALL / ONE-WAY-ATTACK UAS BY LOW-COST KINETIC INTERCEPTOR: [Reported] the Army's Next Generation Counter-sUAS Missile RFI (4 Aug) seeks a purpose-built sub-$150K interceptor (responses due 20 Aug); [Combat-proven — single event] Ukraine's Griffen interceptor drone downed a Shahed one-way-attack drone for the first time (Militarnyi, 7 Jul). — CRUISE/BALLISTIC-CLASS AIR DEFENCE AND THE COST-EXCHANGE / MAGAZINE-DEPTH TREND (context for the affordability trade, not small-UAS defeat): [Fielded] the $58.6B FY26-32 Patriot multiyear (30 Jul) and $3B Patriot/THAAD component framework (3 Aug) triple PAC-3 MSE production; [Reported] Lockheed's sub-$2M PAC-3 ACE interceptor (Farnborough, 20 Jul) and the 10-nation coalition behind Ukraine's ~$700K Freyja/FP-7.X (Paris, 14 Jul) hedge against exquisite-interceptor cost; DIU's Ground-Based Affordable Mass call (27 Jul) applies the same cost logic to offensive fires. — COUNTER-SWARM DIRECTED ENERGY: [Demonstrated] the Pentagon's Joint Laser Weapon System programme (Lockheed Aculight, nLIGHT — up to $847M ceiling) is scaling 150kW counter-drone lasers toward 300-500kW cruise-missile defence, and Germany has commissioned a naval laser targeted for fielding by 2029 after 28,000nm of at-sea demonstration. [Reported — state-linked, corroborate] China is showcasing and exporting a man-portable-to-naval laser C-UAS line (Harbin Xinguang 'Lijian', CPMIEC LW-30, Novasky NI-L3K) to Gulf and SE Asian markets — vendor/state claims not independently verified at declared performance levels. — SWARM-CONTROL AUTONOMY LAYER: [Reported] AeroVironment/Applied Intuition's Acuity autonomy software (29 Jul) is moving single-operator, multi-drone swarm control from demonstrator toward the Army Launched Effects programme of record. — ALLIED PRODUCTION MASS AND INTEROPERABILITY: [Reported] NATO's $40B+ five-year counter-drone package (7 Jul) and the €11B EU-Ukraine Drone Deal (15 Jul) fund allied counter-drone mass production and interoperability standards at alliance scale, while Ukraine's drone campaign (1M+ targets struck since January; deep strikes into Russia) continues to define the threat's operational envelope. — THREAT ENVELOPE VS MANOEUVRE FORCES: [Demonstrated — exercise] At Combined Resolve (Hohenfels, Apr-May; WSJ via Meduza, 13 Aug), Ukraine's 412th Unmanned Systems Regiment repeatedly 'destroyed' a ~3,500-strong US armored brigade with recon-cued FPV/bomber drones; US outcomes improved over two weeks through dispersal, concealment, EW and counter-drone systems — direct evidence for the baseline's static-vs-manoeuvre and protected-echelon elements. — DE TRANSITION HURDLES: [Reported] the Pentagon's critical-technologies office wants smaller/lighter/more-efficient DE for airborne and expeditionary use and routine realistic field testing with operating units (Aviation Week, 13 Aug) — naming integration and T&E, not raw power, as the fielding constraints. [Reported — production-track] The Marine Corps is moving to a vehicle-mounted, production-ready Epirus HAVOC high-power-microwave swarm-defeat system (Military Times, 10 Aug) — HPM soft-kill crossing from demonstration toward fielding, notable for effectiveness against fiber-optic-guided drones that defeat RF jamming.",
       "sowhat": "Every element of a layered C-UAS/sense-strike architecture (sensing, soft-kill, directed energy, kinetic interceptors) is moving from demonstration to production somewhere in the alliance within the same 30-day window, at costs and quantities well characterised in open reporting. Treated as one force-development question, this is the most evidenced and most immediately actionable capability issue this edition — but the external evidence establishes the threat and the cost-exchange trend, not Army's internal baseline. The G5-led baseline step is what converts it from an external signal into a decision-grade confirmed gap.",
       "action": "G5 force-development element to produce the Army C-UAS force-development baseline by 15 Sep 2026, with ASB2 leading the C-UAS/Sense-Strike functional analysis and SIO maintaining the external evidence base as insight sponsor.",
       "src": [
@@ -319,49 +319,25 @@ window.SIO_DATA = {
           "f": "verified"
         },
         {
-          "out": "DefenseScoop",
-          "date": "4 Aug 2026",
-          "ttl": "Pentagon's counter-drone hub picks software startup Kaizen to develop c-UAS marketplace for $15M",
-          "url": "https://defensescoop.com/2026/08/04/pentagon-counter-drone-hub-picks-software-startup-kaizen-to-develop-c-uas-marketplace-for-15m/",
+          "out": "Meduza (citing WSJ)",
+          "date": "13 Aug 2026",
+          "ttl": "WSJ: Ukrainian drone operators 'easily defeated' U.S. troops in military exercise",
+          "url": "https://meduza.io/en/news/2026/08/13/wsj-ukrainian-drone-operators-easily-defeated-us-troops-in-military-exercise",
           "f": "verified",
-          "note": "Corroborated by Defense One, DroneLife, Inside Unmanned Systems."
+          "note": "WSJ original paywalled; corroborated by Liga.net, RBC-Ukraine and To Vima syndications."
         },
         {
-          "out": "Army Recognition",
-          "date": "7 Aug 2026",
-          "ttl": "U.S. Army Moves to Make High-Energy Lasers a Permanent Counter-Drone Weapon",
-          "url": "https://www.armyrecognition.com/news/army-news/2026/u-s-army-moves-to-make-high-energy-lasers-a-permanent-counter-drone-weapon",
+          "out": "Aviation Week",
+          "date": "13 Aug 2026",
+          "ttl": "Pentagon Wants Lighter Directed-Energy Weapons For Airborne Use",
+          "url": "https://aviationweek.com/defense/missile-defense-weapons/pentagon-wants-lighter-directed-energy-weapons-airborne-use",
           "f": "verified"
         },
         {
-          "out": "FlightGlobal",
-          "date": "6 Aug 2026",
-          "ttl": "Paramount's Mwari gets Aselsan sensor as focus shifts to counter-drone mission",
-          "url": "https://www.flightglobal.com/defence/2026/08/paramounts-mwari-gets-aselsan-sensor-as-focus-shifts-to-counter-drone-mission/",
-          "f": "verified",
-          "note": "Corroborating: EDR Magazine, DefenceWeb."
-        },
-        {
-          "out": "PBS NewsHour",
-          "date": "16 Aug 2026",
-          "ttl": "Ukraine launches one of its largest aerial attacks of the war, killing at least 6 people in Russia",
-          "url": "https://www.pbs.org/newshour/world/ukraine-launches-one-of-its-largest-aerial-attacks-of-the-war-killing-at-least-6-people-in-russia",
-          "f": "verified",
-          "note": "Corroborated by CNN, Euronews, NPR, CNBC and Al Jazeera."
-        },
-        {
-          "out": "Euronews",
-          "date": "16 Aug 2026",
-          "ttl": "NATO fighter jets shoot down drone over Romania near Moldova border",
-          "url": "https://www.euronews.com/my-europe/2026/08/16/nato-fighter-jets-shoot-down-drone-over-romania-near-moldova-border",
-          "f": "verified",
-          "note": "Fourth drone shot down over Romania in 2026; corroborated by CNN, CBS News, UPI, NBC News."
-        },
-        {
-          "out": "Defense News",
-          "date": "14 Aug 2026",
-          "ttl": "Pentagon inks deals with Boeing, RTX to boost production of SM-3 components",
-          "url": "https://www.defensenews.com/industry/techwatch/2026/08/14/pentagon-inks-deals-with-boeing-rtx-to-boost-production-of-sm-3-components/",
+          "out": "Military Times",
+          "date": "10 Aug 2026",
+          "ttl": "Marine Corps to get 'production-ready' microwave drone swarm killer",
+          "url": "https://www.militarytimes.com/news/your-military/2026/08/10/marine-corps-to-get-production-ready-microwave-drone-swarm-killer/",
           "f": "verified"
         }
       ],
@@ -389,7 +365,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "overdue",
       "raised": "Apr 2026",
-      "age": 18,
+      "age": 16,
       "supersedes": [
         "II-1"
       ],
@@ -413,7 +389,7 @@ window.SIO_DATA = {
       "deliverable": "Army C2 spectrum-survivability baseline covering: current command-post and C2 electromagnetic-signature considerations; primary, alternate, contingency and emergency communications; datalink resilience; anti-jam requirements; degraded-mode operations; network and terminal dependencies; procedural and doctrinal mitigations; implications for existing and planned Army C2 programmes; and test & evaluation requirements",
       "deliverableDate": "2026-09-15",
       "decision": "Endorse spectrum survivability and low-signature operation as Army C2 force-development requirements; direct G5 to deliver the baseline by 15 Sep 2026. No funded programme sought before the baseline.",
-      "signal": "[Fielded — adversary system] Electronic warfare is described as an hourly fight in which fixed C2 assets are treated as liabilities, and it is accelerating: AI-enabled EW (automated signal analysis, adaptive jamming) is maturing fast (DefenseScoop, 11 May / 26 Jun) while peer forces routinely jam and spoof GNSS. Russia has fielded a dedicated counter-Starlink system, Volna Kupol Garant, able to suppress satellite-comms links across roughly 20km² (Reuters via Militarnyi, 8 Jul) — a fielded, not theoretical, EW capability confirming that comms-dependent C2 and uncrewed links are now a contested spectrum target in their own right, not just a navigation/GNSS problem. [Fielded — adversary] Since 4 Aug: ISW assesses Russia's Rubicon Center for Advanced Unmanned Technologies is now coordinating with the Aerospace Forces to strike Ukrainian drone control points and operator concentrations near Druzhkivka (Critical Threats, 6 Aug) — a concrete instance of an adversary locating and striking C2/control nodes, not merely jamming their links, reinforcing the fixed-C2-as-liability threat this baseline addresses.",
+      "signal": "[Fielded — adversary system] Electronic warfare is described as an hourly fight in which fixed C2 assets are treated as liabilities, and it is accelerating: AI-enabled EW (automated signal analysis, adaptive jamming) is maturing fast (DefenseScoop, 11 May / 26 Jun) while peer forces routinely jam and spoof GNSS. Russia has fielded a dedicated counter-Starlink system, Volna Kupol Garant, able to suppress satellite-comms links across roughly 20km² (Reuters via Militarnyi, 8 Jul) — a fielded, not theoretical, EW capability confirming that comms-dependent C2 and uncrewed links are now a contested spectrum target in their own right, not just a navigation/GNSS problem.",
       "sowhat": "The clearest candidate capability-gap question this edition: the adversary EW threat is fielded, not projected. What remains to be established — and what this decision directs — is the Army-side baseline against which any gap, design standard and resource implication can be confirmed.",
       "action": "G5 to deliver the Army C2 spectrum-survivability baseline by 15 Sep 2026, with C2, EW, communications and operational stakeholders contributing; SIO to maintain the external threat evidence as insight sponsor.",
       "src": [
@@ -438,13 +414,6 @@ window.SIO_DATA = {
           "url": "https://militarnyi.com/en/news/russia-deploys-new-volna-kupol-garant-ew-systems-to-jam-starlink-ukraine-already-destroying-them/",
           "f": "verified",
           "note": "Citing Reuters reporting; Ukrainian MoD adviser Serhii Beskrestnov cited on system parameters."
-        },
-        {
-          "out": "ISW/Critical Threats",
-          "date": "6 Aug 2026",
-          "ttl": "Russia's Rubicon unmanned-systems centre boosts strikes on Ukrainian drone control points",
-          "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-august-6-2026",
-          "f": "verified"
         }
       ],
       "insightSponsor": "SIO",
@@ -473,7 +442,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 2,
+      "age": 0,
       "supersedes": [
         "D-3",
         "III-7"
@@ -488,7 +457,7 @@ window.SIO_DATA = {
       "deliverable": "Framing paper: the cross-portfolio autonomous strike-authority policy question (human authority, human-machine command relationships, assurance, testing, legal/policy interfaces, CONOPS) and the Army stakeholder map for subsequent consideration",
       "deliverableDate": "2026-09-15",
       "decision": "Staff action — SIO to frame the cross-portfolio autonomous strike-authority policy question and identify the appropriate Army stakeholders. Not a CSIO command decision this cycle.",
-      "signal": "[Demonstrated — single developmental test, human-in-the-loop] An Anduril YFQ-44A Collaborative Combat Aircraft fired an AIM-120 AMRAAM at a digital target over the Mojave Desert from Edwards AFB — the first live weapons release from a CCA drone (DefenseScoop, 15 Jul; corroborated by Breaking Defense and Air & Space Forces Magazine). The Air Force states humans retain exclusive control over weapon release throughout; a General Atomics YFQ-42A live-fire test is expected this autumn. Framing note: this is a controlled test of a human-authorised release, not autonomous weapon employment — on the maturity ladder this sits at 'demonstrated', not 'proven' in an operational-employment sense. [Demonstrated] Since 4 Aug: the Air Force's X-62 VISTA testbed flew 27 autonomous air-to-air intercepts across eight flights, with AI agents processing live infrared sensor data to direct real-time interception (DefenseScoop, 5 Aug) — a further data point on the maturing autonomous-engagement chain this framing paper must address. Tier-2 analysis the same week (Breaking Defense, 5 Aug) cautions against 'best drone wins'/full-autonomy narratives, noting Ukrainian battlefield practice still favours human-in-the-loop control — a relevant caution for the framing paper's starting assumptions.",
+      "signal": "[Demonstrated — single developmental test, human-in-the-loop] An Anduril YFQ-44A Collaborative Combat Aircraft fired an AIM-120 AMRAAM at a digital target over the Mojave Desert from Edwards AFB — the first live weapons release from a CCA drone (DefenseScoop, 15 Jul; corroborated by Breaking Defense and Air & Space Forces Magazine). The Air Force states humans retain exclusive control over weapon release throughout; a General Atomics YFQ-42A live-fire test is expected this autumn. Framing note: this is a controlled test of a human-authorised release, not autonomous weapon employment — on the maturity ladder this sits at 'demonstrated', not 'proven' in an operational-employment sense.",
       "sowhat": "Tests the edge of sensor-to-shooter autonomy and is the concrete trigger to begin framing a doctrine question that will recur across the portfolio. Downgraded from the decision slate per the tightened decision test: the staff work is within existing authority and no choice with operational or resource consequence is yet required of CSIO.",
       "action": "SIO, with ASB2 and ASB3 supporting, to deliver the framing paper and stakeholder map by 15 Sep 2026.",
       "src": [
@@ -499,20 +468,6 @@ window.SIO_DATA = {
           "url": "https://defensescoop.com/2026/07/15/air-force-live-fire-test-missile-anduril-cca-drone/",
           "f": "verified",
           "note": "Corroborated by Breaking Defense and Air & Space Forces Magazine."
-        },
-        {
-          "out": "DefenseScoop",
-          "date": "5 Aug 2026",
-          "ttl": "Air Force expands autonomous flight tests with live, AI-enabled intercepts",
-          "url": "https://defensescoop.com/2026/08/05/air-force-x-62-vista-have-heat-have-holiday/",
-          "f": "verified"
-        },
-        {
-          "out": "Breaking Defense",
-          "date": "5 Aug 2026",
-          "ttl": "Everyone is learning the wrong lessons from Ukraine's drone war",
-          "url": "https://breakingdefense.com/2026/08/everyone-is-learning-the-wrong-lessons-from-ukraines-drone-war/",
-          "f": "verified"
         }
       ],
       "insightSponsor": "SIO",
@@ -538,7 +493,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 2,
+      "age": 0,
       "supersedes": [
         "II-5",
         "III-4",
@@ -548,12 +503,12 @@ window.SIO_DATA = {
       ],
       "dlabel": "Maritime autonomy — attritable USV strike & sensing",
       "suspense": "Trigger-based — see escalationTrigger",
-      "latestDevelopment": "Four new maritime-autonomy events since 4 Aug: Ukraine's Unmanned Systems Forces report their shadow-fleet interdiction campaign (Operation Molochka) has struck 218 Russian tankers since 6 Jul (Kyiv Independent, 8 Aug — Ukraine's own claim, unverified); the Royal Navy's 'Dragon Rider' trial linked aerial and surface drones via a MANET relay across 200 miles of southern England (Naval Today, 6 Aug); the Dutch MoD authorised design of a 12m uncrewed ASW surface vessel to extend sonar coverage for future Dutch/Belgian frigates (Meta-Defense, 6 Aug, paywalled); and an unidentified USV sank a vessel off Yemen's Al Mukha near Bab al-Mandeb, blamed by Yemen's government on the Houthis but not confirmed by UKMTO (Marine Insight, 6 Aug) — the clearest signal yet of armed/attritable USV tactics diffusing beyond the Black Sea to a third theatre.",
-      "changeFromPrevious": "Material since the last edition (4 Aug), which reported no new maritime-autonomy events: four new items above, most notably an unconfirmed but reported USV attack outside Ukraine/CENTCOM waters (Yemen) — still does not meet the escalation trigger absent a defined Army littoral requirement.",
+      "latestDevelopment": "DIU recognised completion of HII's PRIME prototype project (11 Aug): the Watcher sUSV passed government-led autonomy, seakeeping, performance and degraded-environment assessments — autonomous contested-waterspace transit, loiter surveillance, sprint interdiction of a non-cooperative vessel — and is positioned for potential production transition for the Marine Corps.",
+      "changeFromPrevious": "New since 8 Aug review: the Watcher/PRIME completion adds a production-track attritable interceptor USV to the cluster. Evidence-base update only — no Army littoral requirement, use case, participation mechanism or sponsor has emerged, so no escalation trigger is met.",
       "armyRelevance": "Indirect — Army has no identified littoral operating requirement in the material available to this pipeline; relevance is currently limited to the command-authority and production-model precedent this cluster feeds into S-1. No Army capability ownership is assigned at this stage.",
       "escalationTrigger": "Escalate only when there is a defined Army littoral/riverine requirement, an identified Army operational use case, a specific participation mechanism (e.g. in the SWAP-USV or MUSV programmes), or a force-development sponsor.",
       "decision": "Hold at watchlist — no Army capability ownership assigned pending a defined littoral requirement.",
-      "signal": "[Combat-proven] CENTCOM conducted the first US combat use of lethal unmanned surface vessels: three armed Saronic Corsair one-way-attack USVs struck Iran's Bandar Abbas naval base (12 Jul), hitting a Ghadir-class midget submarine and port infrastructure, run as a CENTCOM operation outside the Navy's standing Task Force 59 framework (USNI News, 13 Jul; corroborated by Naval News, TWZ, Stars and Stripes, Military Times, The Aviationist). Saronic followed with a $3.2B 'Port Alpha' shipyard announcement at Port of Brownsville, TX (USNI News, 16 Jul) — production capacity, not an isolated demonstration. [Demonstrated] The Navy's GARC attritable USV detonated against the decommissioned USS Peleliu in a RIMPAC 2026 SINKEX (25-29 Jul; Naval News/TWZ/Military Times) — first GARC live-fire kill, built explicitly on lessons from Ukraine's Black Sea USV campaign; the 16ft BlackSea Technologies craft carries a 1,000lb payload over 700nm at 22kt and is designed to swarm. [Reported] DIU/Navy issued the SWAP-USV solicitation for market-ready attack-drone-carrying USVs ($100M prize purse + $200M follow-on procurement; responses due 10 Aug, Military Times, 29 Jul). [Reported] The Navy opened the next MUSV 'marketplace' phase (a high-capacity variant RPP from 1 Aug, Defense One) atop an existing 47-vessel-by-2031 acquisition goal; separately a UK-US team (Kraken/Capewell, Royal Navy Project Beehive) completed the first airdrop of a USV from an A400M (The Defense Post/Naval News, 10 Jul). [Reported] AUKUS signed its first Pillar 2 project — joint uncrewed-underwater-vehicle development, first payloads due 2027 (Breaking Defense, 31 May). [Reported — unverified] Ukraine's Unmanned Systems Forces claim their Sea of Azov/Black Sea shadow-fleet interdiction campaign has struck 218 Russian tankers since 6 Jul, including 12 in the week to 8 Aug (Kyiv Independent, 8 Aug) — Ukraine's own figures, independently unconfirmed. [Demonstrated] The Royal Navy's 'Dragon Rider' trial demonstrated coordinated aerial/surface drone operation with crewed assets over 200 miles, using a MANET relay to extend range past radio line-of-sight ahead of a planned satcom phase (Naval Today, 6 Aug). [Reported] The Dutch MoD authorised Dutch Naval Design to begin designing a 12m ASW USV to multiply sonar 'listening points' for future Dutch/Belgian frigates (Meta-Defense, 6 Aug). [Reported — unverified attribution] An unidentified USV sank a vessel off Yemen's Al Mukha near Bab al-Mandeb; UKMTO did not confirm responsibility, but Yemen's government blamed the Houthis (Marine Insight, 6 Aug) — if confirmed, the first reported armed-USV attack outside the Ukraine/CENTCOM theatres tracked in this line.",
+      "signal": "[Combat-proven] CENTCOM conducted the first US combat use of lethal unmanned surface vessels: three armed Saronic Corsair one-way-attack USVs struck Iran's Bandar Abbas naval base (12 Jul), hitting a Ghadir-class midget submarine and port infrastructure, run as a CENTCOM operation outside the Navy's standing Task Force 59 framework (USNI News, 13 Jul; corroborated by Naval News, TWZ, Stars and Stripes, Military Times, The Aviationist). Saronic followed with a $3.2B 'Port Alpha' shipyard announcement at Port of Brownsville, TX (USNI News, 16 Jul) — production capacity, not an isolated demonstration. [Demonstrated] The Navy's GARC attritable USV detonated against the decommissioned USS Peleliu in a RIMPAC 2026 SINKEX (25-29 Jul; Naval News/TWZ/Military Times) — first GARC live-fire kill, built explicitly on lessons from Ukraine's Black Sea USV campaign; the 16ft BlackSea Technologies craft carries a 1,000lb payload over 700nm at 22kt and is designed to swarm. [Reported] DIU/Navy issued the SWAP-USV solicitation for market-ready attack-drone-carrying USVs ($100M prize purse + $200M follow-on procurement; responses due 10 Aug, Military Times, 29 Jul). [Reported] The Navy opened the next MUSV 'marketplace' phase (a high-capacity variant RPP from 1 Aug, Defense One) atop an existing 47-vessel-by-2031 acquisition goal; separately a UK-US team (Kraken/Capewell, Royal Navy Project Beehive) completed the first airdrop of a USV from an A400M (The Defense Post/Naval News, 10 Jul). [Reported] AUKUS signed its first Pillar 2 project — joint uncrewed-underwater-vehicle development, first payloads due 2027 (Breaking Defense, 31 May).",
       "sowhat": "Five separate maritime-autonomy threads (attack-USV solicitation, AUKUS UUV cooperation, MUSV/airdrop delivery models, armed-USV combat debut, GARC live-fire kill) are one thematic watch line, not five items — held at watchlist with force-development ownership deliberately unassigned because no Army littoral requirement has been identified.",
       "action": "SIO to monitor SWAP-USV and MUSV outcomes; escalate only against the defined Army triggers.",
       "src": [
@@ -629,35 +584,12 @@ window.SIO_DATA = {
           "f": "verified"
         },
         {
-          "out": "Kyiv Independent",
-          "date": "8 Aug 2026",
-          "ttl": "Ukraine's naval drone campaign passes 218 struck Russian 'shadow fleet' vessels",
-          "url": "https://kyivindependent.com/12-russian-shadow-fleet-vessels-struck-in-black-sea-and-azov-sea-over-past-week-ukraine-says/",
-          "f": "unverified",
-          "note": "Ukraine's own claim, independently unconfirmed."
-        },
-        {
-          "out": "Naval Today",
-          "date": "6 Aug 2026",
-          "ttl": "Royal Navy tests drone armada concept",
-          "url": "https://www.navaltoday.com/2026/08/06/royal-navy-tests-drone-armada-concept",
-          "f": "verified"
-        },
-        {
-          "out": "Meta-Defense",
-          "date": "6 Aug 2026",
-          "ttl": "Dutch Naval Design enters design phase for uncrewed anti-submarine surface vessel",
-          "url": "https://meta-defense.fr/2026/08/06/lutte-anti-sous-marine-drone-neerlandai/",
-          "f": "paywall",
-          "note": "Detail beyond the lede is subscriber-only."
-        },
-        {
-          "out": "Marine Insight",
-          "date": "6 Aug 2026",
-          "ttl": "Uncrewed surface vessel sinks ship off Yemen's Al Mukha near Bab al-Mandeb",
-          "url": "https://www.marineinsight.com/ship-sinks-off-southwest-yemen-after-being-targeted-by-an-uncrewed-surface-vessel/",
-          "f": "unverified",
-          "note": "UKMTO did not confirm Houthi responsibility; attribution via Yemeni government statement only."
+          "out": "Naval News",
+          "date": "11 Aug 2026",
+          "ttl": "HII Watcher Autonomous USV Passes Critical DIU Performance Tests",
+          "url": "https://www.navalnews.com/naval-news/2026/08/hii-watcher-autonomous-usv-passes-critical-diu-performance-tests",
+          "f": "verified",
+          "note": "HII release and DIU memorandum cited; corroborated by Naval Today and Soldier Systems."
         }
       ],
       "insightSponsor": "SIO",
@@ -686,7 +618,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 2,
+      "age": 0,
       "supersedes": [
         "II-3",
         "III-3",
@@ -696,12 +628,12 @@ window.SIO_DATA = {
       ],
       "dlabel": "Uncrewed last-mile sustainment under contested conditions",
       "suspense": "Trigger-based — see escalationTrigger",
-      "latestDevelopment": "Firestorm Labs demonstrated at-sea, shore-independent drone manufacturing aboard USS Essex — a containerized 3D-printing 'xCell' microfactory produced over 1,000 parts and 12 Squall FPV drones during transit to RIMPAC 2026 (Navy Times, 5 Aug). DARPA's Lift Challenge (2-9 Aug, Dayton OH) remains mid-competition; results expected after this edition's close.",
-      "changeFromPrevious": "New since 4 Aug: the Firestorm Labs at-sea manufacturing demonstration is a concrete instance of shore-independent, contested-logistics production — directly on point for the last-mile sustainment question this line tracks. Lift Challenge results still pending (due after 9 Aug), affecting only the heavy-lift element.",
+      "latestDevelopment": "US Army Project Sustainment moved to award: a Stratom-led team won the TALUS autonomous-distribution prototype (10 Aug), following the five-firm Medium Autonomous Tactical Logistics selection (27 Jul) — automated battlefield resupply to keep soldiers off high-risk routes, delivering toward a Transformation in Contact CTC rotation with field testing from early 2027.",
+      "changeFromPrevious": "Material since last review: the last-mile-sustainment question now has a funded, schedule-bound peer programme (Project Sustainment/TALUS) alongside Ukraine's fielded practice and the ROK Army's manpower-driven study — three independent forces converging on the same requirement framing this line holds for Army. No Army (Singapore) trigger is met; the comparator evidence continues to accumulate.",
       "armyRelevance": "Direct — EW-resilient UGV control, autonomous ground resupply and heavy-lift aerial resupply map onto Army's contested-logistics and forward-sustainment problem. G5 force development should frame the Army requirement, with functional organisations contributing according to their responsibilities; no Army-specific trial is yet underway.",
       "escalationTrigger": "Escalate if G5 frames an Army last-mile-sustainment requirement or a sustainment-autonomy trial is sponsored. DARPA Lift Challenge results (due after 9 Aug) affect only the heavy-lift / aerial-resupply element — they are not a trigger for the wider ground-autonomy portfolio.",
       "decision": "Hold at watchlist — narrowed to uncrewed last-mile sustainment under contested conditions; fixed-process automation split to W-7.",
-      "signal": "[Fielded — adversary/partner] Ground robots face intense EW pressure — Russian wide-area GNSS jammers degrade UGV datalinks and navigation — and Ukraine has fielded a control system (Droid Box, cleared 26 Jun) that detects positioning anomalies and applies countermeasures under jamming/spoofing (Militarnyi/Modern War Institute). [Fielded] Ukraine's Protector UGV is fielded for frontline logistics, against a stated goal of 25,000 ground robotic systems by mid-2026 (Defense Express/United24 Media). [Reported→fielding] Overland AI won a Marine Corps production contract for autonomous ground vehicles (Breaking Defense, 29 Jun) — ground-resupply autonomy crossing into production. [Reported] DARPA's Lift Challenge (100+ teams, 2-9 Aug, $6.5M prizes) targets a 2:1 payload-to-weight ratio for 55lb-class drones lifting 110lb payloads (Military Times, 30 Jul) — the aerial-resupply element of this line. [Reported] DARPA's Rads to Watts programme (7 competing teams) is developing radiovoltaic cells for maintenance-free, multi-year power in soldier-worn, sensor and remote applications (Breaking Defense, 29 Jul) — an enabling-power signal for sustainment autonomy. [Demonstrated] Firestorm Labs used a containerized 3D-printing 'xCell' microfactory to manufacture over 1,000 parts and 12 Squall FPV drones aboard USS Essex en route to RIMPAC 2026, without shore resupply (Navy Times, 5 Aug) — evidence that distributed, resupply-independent production is now demonstrated afloat, not just discussed conceptually.",
+      "signal": "[Fielded — adversary/partner] Ground robots face intense EW pressure — Russian wide-area GNSS jammers degrade UGV datalinks and navigation — and Ukraine has fielded a control system (Droid Box, cleared 26 Jun) that detects positioning anomalies and applies countermeasures under jamming/spoofing (Militarnyi/Modern War Institute). [Fielded] Ukraine's Protector UGV is fielded for frontline logistics, against a stated goal of 25,000 ground robotic systems by mid-2026 (Defense Express/United24 Media). [Reported→fielding] Overland AI won a Marine Corps production contract for autonomous ground vehicles (Breaking Defense, 29 Jun) — ground-resupply autonomy crossing into production. [Reported] DARPA's Lift Challenge (100+ teams, 2-9 Aug, $6.5M prizes) targets a 2:1 payload-to-weight ratio for 55lb-class drones lifting 110lb payloads (Military Times, 30 Jul) — the aerial-resupply element of this line. [Reported] DARPA's Rads to Watts programme (7 competing teams) is developing radiovoltaic cells for maintenance-free, multi-year power in soldier-worn, sensor and remote applications (Breaking Defense, 29 Jul) — an enabling-power signal for sustainment autonomy. [Reported — contracted] The US Army's Project Sustainment selected five firms for Medium Autonomous Tactical Logistics platforms (27 Jul) and awarded the Stratom-led TALUS autonomous-distribution prototype (10 Aug) — 24/7 contested-environment resupply keeping soldiers off high-risk routes, field testing with operational units from early 2027.",
       "sowhat": "Narrowed per CSIO direction from a broad ground-autonomy cluster to one force-development question: uncrewed / autonomous last-mile sustainment under contested conditions. Fixed logistics and inventory-process automation is tracked separately (W-7), and counter-UAS-related ground platforms sit under D-1's architecture question.",
       "action": "SIO to maintain the evidence base and report Lift Challenge results against the heavy-lift element only; on escalation, G5 frames the requirement with CESS and other functional stakeholders contributing according to their responsibilities.",
       "src": [
@@ -755,11 +687,19 @@ window.SIO_DATA = {
           "f": "verified"
         },
         {
-          "out": "Navy Times",
-          "date": "5 Aug 2026",
-          "ttl": "Firestorm Labs builds drones aboard USS Essex without shore resupply",
-          "url": "https://www.navytimes.com/industry/techwatch/2026/08/05/firestorm-labs-builds-drones-aboard-uss-essex-without-shore-resupply/",
+          "out": "The Defense Post",
+          "date": "27 Jul 2026",
+          "ttl": "US Army Selects Five Firms to Develop Medium Autonomous Tactical Logistics Platforms",
+          "url": "https://thedefensepost.com/2026/07/27/us-army-autonomous-platforms/",
           "f": "verified"
+        },
+        {
+          "out": "GlobeNewswire (via The Manila Times)",
+          "date": "10 Aug 2026",
+          "ttl": "Stratom's TALUS Team Selected to Advance U.S. Army Project Sustainment",
+          "url": "https://www.manilatimes.net/2026/08/10/tmt-newswire/globenewswire/stratoms-talus-team-selected-to-advance-us-army-project-sustainment/2402161",
+          "f": "verified",
+          "note": "Vendor announcement wire; corroborated by Defense Daily and The Robot Report coverage."
         }
       ],
       "insightSponsor": "SIO",
@@ -787,18 +727,18 @@ window.SIO_DATA = {
       "confidence": "moderate",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 2,
+      "age": 0,
       "supersedes": [
         "III-13"
       ],
       "dlabel": "Sustainment process burden — problem-first automation",
       "suspense": "Trigger-based — see escalationTrigger",
-      "latestDevelopment": "External candidate technology observed: MARSOC/SOFWERX RF-free computer-vision 'automated armory' for serialized-weapon inventory tracking (DefenseScoop, 28 Jul). Held as candidate evidence, not as the organising object of this line.",
-      "changeFromPrevious": "Unchanged since last edition; still awaiting a process-owner-identified candidate process with a measurable baseline.",
-      "armyRelevance": "Problem-first: the Army question is which inventory/logistics processes carry the largest manpower burden, error rate or reconciliation effort — established from Army process data, not inferred. Only once that inventory identifies a high-burden process is computer vision (or another technology) assessed as a candidate solution. No Army process baseline is held by this pipeline.",
+      "latestDevelopment": "South Korea's Army Headquarters commissioned a study to automate field maintenance and logistics under ArmyTiger L — AI predictive maintenance (small language models), maintenance robots, exoskeletons, automated storage/handling, drone delivery and autonomous transport — explicitly driven by a sustained decline in available personnel; its 1st Supply Group unveiled a smart logistics centre with ~70% of processes automated (Korea Herald, 12 Aug). Vendor-side, Lockheed Martin is extending AI sustainment (predictive maintenance, supply forecasting) from the F-35 to the F-22/F-16/C-130 fleets (11 Aug).",
+      "changeFromPrevious": "Material since 8 Aug review: the ROK Army study is the problem-first pattern this line calls for — starting from a measured manpower decline, not a technology — from a conscription-based force facing constraints comparable to Singapore's. It provides a concrete comparator for which processes an army automates first and why.",
+      "armyRelevance": "Problem-first: the Army question is which inventory/logistics/maintenance processes carry the largest manpower burden, error rate or reconciliation effort — established from Army process data, not inferred. The ROK Army's manpower-driven automation study is a directly comparable force answering the same question and is now the line's primary comparator; the MARSOC armory and Lockheed sustainment-AI items are candidate-technology evidence. No Army process baseline is held by this pipeline.",
       "escalationTrigger": "Escalate when an Army logistics/inventory process owner identifies a candidate high-burden process with a measurable baseline (manpower hours, error rate, reconciliation effort), or when a comparable system publishes operational-evaluation performance data worth benchmarking against such a process.",
       "decision": "Hold — problem-first: identify the highest-burden Army processes before assessing any technology.",
-      "signal": "[Reported] MARSOC and SOFWERX are developing an RF-free 'automated armory' that uses computer vision to track serialized weapons and inventory without tags or manual counts (DefenseScoop, 28 Jul) — commercial computer-vision inventory technology applied to a fixed military logistics process.",
+      "signal": "[Reported] MARSOC and SOFWERX are developing an RF-free 'automated armory' that uses computer vision to track serialized weapons and inventory without tags or manual counts (DefenseScoop, 28 Jul) — commercial computer-vision inventory technology applied to a fixed military logistics process. [Reported — corroborated] South Korea's Army commissioned an automation study for field maintenance and logistics (ArmyTiger L; smart logistics centre ~70% automated) explicitly to offset a shrinking personnel pool (Korea Herald, 12 Aug). [Reported — vendor] Lockheed Martin is extending AI-driven sustainment from F-35 to F-22/F-16/C-130 fleets (11 Aug) — sustainment AI crossing from single-programme to fleet-wide practice.",
       "sowhat": "Discovering technologies and then searching for Army use cases is the failure mode this line now guards against. The evidence base (MARSOC armory et al.) is retained as candidate-technology reference for whenever the Army process inventory identifies a target.",
       "action": "SIO to hold candidate-technology evidence; escalation requires an Army process owner's burden data, via G5 where a force-development question emerges.",
       "src": [
@@ -808,6 +748,22 @@ window.SIO_DATA = {
           "ttl": "Marine commandos aim to automate armories with computer vision, other tech",
           "url": "https://defensescoop.com/2026/07/28/marine-forces-special-operations-command-automated-armory-marsoc/",
           "f": "verified"
+        },
+        {
+          "out": "The Korea Herald",
+          "date": "12 Aug 2026",
+          "ttl": "Army seeks to automate field maintenance as staff shrinks",
+          "url": "https://www.koreaherald.com/article/10838963",
+          "f": "verified",
+          "note": "Corroborated by Inquirer.net, TRT and Asia News Network syndications."
+        },
+        {
+          "out": "Defence Industry Europe",
+          "date": "11 Aug 2026",
+          "ttl": "Lockheed Martin expands AI-driven military logistics from F-35 to F-22, F-16 and C-130 fleets",
+          "url": "https://defence-industry.eu/lockheed-martin-expands-ai-driven-military-logistics-from-f-35-to-f-22-f-16-and-c-130-fleets-to-strengthen-aircraft-readiness/",
+          "f": "verified",
+          "note": "Vendor claims — no independent performance validation; primary source: Lockheed Martin feature."
         }
       ],
       "question": "Q4",
@@ -825,23 +781,23 @@ window.SIO_DATA = {
       "dom": "solution",
       "supporting": [],
       "desk": "US",
-      "maturity": "mixed (operationally evaluating – fielding-track)",
+      "maturity": "mixed (scaling — comparator; Army baseline pending)",
       "confidence": "moderate",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 2,
+      "age": 0,
       "supersedes": [
         "III-2"
       ],
       "dlabel": "Army data layer — foundational dependency",
       "suspense": "ADIO baseline due 15 Sep 2026",
-      "latestDevelopment": "Two comparator-system updates since 4 Aug: Army leaders declared NGC2 'ready to scale' following Project Convergence-Capstone 6, though 4th Infantry Division's commander called it 'functional but not optimised', with I Corps next to receive it (Washington Times, 6 Aug); separately, Accenture Federal Services won an $821M contract to integrate the Pentagon's War Data Platform (formerly Advana) to consolidate military data sources for AI-driven operations, with former officials questioning whether a traditional-consulting approach avoids past shortfalls (DefenseScoop, 7 Aug).",
-      "changeFromPrevious": "New since 4 Aug (previously unchanged): both are comparator maturity/caution signals, not Army-side movement — the ADIO baseline (due 15 Sep 2026) remains the escalation trigger.",
+      "latestDevelopment": "US Army leaders declared NGC2 'ready to scale' at the close of Project Convergence-Capstone 6 (29 Jul; army.mil, 3 Aug): the 10-month prototyping phase concluded and gradual force-wide rollout begins, I Corps next, on the Anduril-led common data layer with Palantir edge-to-cloud data mesh.",
+      "changeFromPrevious": "Comparator maturity moved since last review: NGC2 advanced from division-scale operational validation to a declared scaling decision. This raises the timeliness value of the tasked ADIO baseline (due 15 Sep 2026) — the comparison is now against a scaling programme, not a prototype — but changes nothing about the precondition: no Army-side assessment is possible until the internal architecture baseline arrives.",
       "armyRelevance": "Foundational — every persistent question in the register depends on whether Army can discover, integrate, govern and expose trusted data to the people and applications that need it, at the required classification, echelon and tempo. This is not an ordinary technology watch item, and it is not 'should Army copy NGC2' — NGC2/Maven are comparators; the starting point is the Singapore Army's operational requirements and existing architecture. This pipeline holds no verified information on the internal systems concerned and will not fabricate the comparison.",
       "escalationTrigger": "Escalate once the ADIO baseline (due 15 Sep 2026) is received and the SIO/G5 comparison identifies what data exists, where it resides, who owns it, whether it is reusable, how it is exposed, whether it moves across required environments, where duplication exists, what blocks decision workflows, and which NGC2/Maven patterns are relevant vs inappropriate for the Singapore Army.",
       "note": "CSIO critique (6 Aug 2026) directed this entry be reframed against existing Army data architecture rather than approved as a generic NGC2 study. That reframe requires internal Army-architecture facts not available to this open-source pipeline. Per COS-GS vetting (8 Aug 2026), the precondition is converted into a defined internal tasking: ADIO to provide the current Army Data Store, ENCLAVE, STRONGWATCH and OUTREACH/SYNTEX architecture baseline by 15 Sep 2026 for comparison against relevant NGC2/common-data-layer lessons.",
       "decision": "Foundational dependency (Q5) — ADIO architecture baseline tasked (due 15 Sep 2026); comparison focuses on the Army decision workflows the data architecture must enable, not technology imitation.",
-      "signal": "[Operationally evaluating] The US Army's Next Generation Command and Control (NGC2) programme moved from prototyping toward delivery: a named common-data-layer baseline (Anduril lead; Palantir edge-to-cloud data mesh) underwent division-scale force-on-force validation at Project Convergence Capstone 6 (July; Army.mil/DefenseScoop, 20-22 Jun). [Reported — single source, not independently corroborated] Project Maven is reported to be transmitting near-fully machine-generated intelligence to commanders using large language models (CSIS, 15 Jun).",
+      "signal": "[Operationally evaluating] The US Army's Next Generation Command and Control (NGC2) programme moved from prototyping toward delivery: a named common-data-layer baseline (Anduril lead; Palantir edge-to-cloud data mesh) underwent division-scale force-on-force validation at Project Convergence Capstone 6 (July; Army.mil/DefenseScoop, 20-22 Jun). [Reported — single source, not independently corroborated] Project Maven is reported to be transmitting near-fully machine-generated intelligence to commanders using large language models (CSIS, 15 Jun). [Reported] At DoDIIS Worldwide (11 Aug), US military intelligence leaders identified data access within the right security enclaves — not model development — as the biggest obstacle to battlefield AI (GovCIO, 12 Aug): independent corroboration of the data-layer-as-bottleneck thesis this foundational line rests on. [Fielding-track] Army leaders declared NGC2 ready to scale at PC-C6's close (29 Jul), concluding 10 months of prototyping; rollout begins with I Corps headquarters and downtrace units (army.mil, 3 Aug).",
       "sowhat": "The open-source evidence describes a US programme's maturity, not an Army-specific integration decision. As a foundational enabler, the line is assessed by whether Army's data architecture enables persistent decision workflows — including the workflows this register itself requires.",
       "action": "Tasking: ADIO to provide the current Army Data Store, ENCLAVE, STRONGWATCH and OUTREACH/SYNTEX architecture baseline by 15 Sep 2026, for comparison against relevant NGC2/common-data-layer lessons. Once the baseline is available, SIO/G5 determine whether a genuine force-development gap or opportunity exists.",
       "src": [
@@ -867,19 +823,20 @@ window.SIO_DATA = {
           "f": "verified"
         },
         {
-          "out": "Washington Times",
-          "date": "6 Aug 2026",
-          "ttl": "Army's AI-fusion system is 'ready but not done'",
-          "url": "https://www.washingtontimes.com/news/2026/aug/6/armys-ai-fusion-system-next-generation-command-control-ready-not-done/",
+          "out": "GovCIO Media & Research",
+          "date": "12 Aug 2026",
+          "ttl": "Military Leaders Say AI Needs Better Data to Reach the Battlefield",
+          "url": "https://govciomedia.com/military-leaders-say-ai-needs-better-data-to-reach-the-battlefield/",
           "f": "verified",
-          "note": "Corroborated by Army Times, Army.mil, Soldier Systems Daily and The Defense Post (3-4 Aug)."
+          "note": "Single-outlet conference reporting; thematically consistent with parallel Federal News Network coverage."
         },
         {
-          "out": "DefenseScoop",
-          "date": "7 Aug 2026",
-          "ttl": "War Data Platform integration plans under scrutiny as DOD hustles to weaponize AI",
-          "url": "https://defensescoop.com/2026/08/07/pentagon-war-data-platform-integration-plans-under-scrutiny/",
-          "f": "verified"
+          "out": "The Army (army.mil)",
+          "date": "3 Aug 2026",
+          "ttl": "Army leaders: Next Generation Command and Control 'ready to scale'",
+          "url": "https://www.army.mil/article/294284/army_leaders_next_generation_command_and_control_ready_to_scale",
+          "f": "verified",
+          "note": "Official announcement; corroborated by The Defense Post and Soldier Systems coverage."
         }
       ],
       "insightSponsor": "SIO",
@@ -908,7 +865,7 @@ window.SIO_DATA = {
       "confidence": "moderate",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 2,
+      "age": 0,
       "supersedes": [
         "I-3",
         "I-6",
@@ -916,12 +873,12 @@ window.SIO_DATA = {
       ],
       "dlabel": "PRC AI-C2, autonomy & missile net-assessment",
       "suspense": "Trigger-based — see escalationTrigger",
-      "latestDevelopment": "Four further PRC disclosures since the 3 Aug strike-planning-system reveal: CCTV footage (analysed by AEI, 7 Aug) showed the 72nd Group Army pairing armed quadrupedal UGVs, FPV drones and CH-4 UCAVs with largely unchanged massed-armour tactics in an amphibious drill; China Military Online (6 Aug) showed UAV-cued PHL-03 rocket strikes against a stationary maritime target with rapid-displacement re-engagement; Global Times (4 Aug) debuted the GJ-3A armed reconnaissance UAV as part of a claimed 'cross-service' ISR system feeding Army, Navy and Rocket Force; and SCMP (6 Aug) ran a feature framing PLA modernisation around AI/quantum/hypersonic/directed-energy 'disruptive' technology bets tied to Unrestricted Warfare thinking.",
-      "changeFromPrevious": "Material since 4 Aug: four new state-linked disclosures extend the AI-C2 line into ground/amphibious robotics, sensor-to-shooter artillery cueing, cross-service ISR drones and explicit strategic framing. All four are state-sourced or state-linked with no independent corroboration found; confidence remains capped at low/moderate and the line stays net-assessment, not force-development escalation.",
+      "latestDevelopment": "PLA 83rd Group Army footage (China Military Online, 6 Aug) shows UAV-cued PHL-03 300mm rocket strikes on a sea target with rapid detect-engage-displace-re-engage cycles — sensor-to-shooter compression applied to coastal-denial fires, alongside the corroborated Type 054B VLS-capacity imagery (12 Aug) already tracked.",
+      "changeFromPrevious": "Evidence-base update since last review: the PHL-03 drill (state-released footage — intent signalling, corroborate) extends the assessed sensor-to-shooter compression pattern from air operations into coastal-denial fires; the Type 054B imagery remains the period's corroborated data point. Both below the material-change threshold; no escalation.",
       "armyRelevance": "Net-assessment relevance is actionable now: this line should inform Army design margins, red-teaming and resilience assumptions without waiting for confirmed operational employment — conceptual and threat-assessment work begins on current evidence. Force-development escalation is a separate, higher bar; this is not a direct Army procurement question.",
       "escalationTrigger": "Escalate to force-development consideration only on stronger evidence — independent (non-PRC-state) confirmation of operational fielding, or a clear implication for a specific Army capability. Apparent maturity of the external technology is not by itself grounds to convert this line into a procurement task.",
       "decision": "Maintain as the standing PRC net-assessment line — feeding Army design margins, red-teaming and resilience work now; force-development escalation only on stronger evidence.",
-      "signal": "[Reported, state-linked — corroborate] Commercial AI providers (reported: DeepSeek, Alibaba, Tencent, Zhipu, Huawei-linked infrastructure) are being folded into a national military ecosystem for surveillance, target recognition, war-gaming and C2. PLA Daily (30 Jun) frames a future 'technological strategy' around AI-enabled C2 resistant to EW; Hong Kong reporting describes an 'AI Plus' push into PLA EW while warning PLA training may lag the hardware. A Reuters review (31 Jul) of 80+ Chinese academic papers/patents found PLA-linked units (Unit 96941, NUDT, Academy of Military Sciences) using 'model distillation' to train domestic defence AI on US-model outputs (OpenAI GPT-3.5/GPT-3, Anthropic Claude 3 Haiku) — a route sidestepping US chip export controls. Xi Jinping (Politburo study session, 30 Jul) directed the military to 'strengthen the military application of unmanned intelligent technologies' — elevating this to explicit top-down doctrine. [Reported, state-linked — 3 Aug] A CCTV PLA-99th-anniversary documentary revealed an 'intelligent strike planning system' (team under Senior Colonel Deng Jianping) that prioritises targets, sequences attack waves and assigns unit tasking across hundreds of targets/dozens of formations (SCMP, paywalled). [Reported, state-linked — corroborate] CETC's 'Atlas' system demonstrated ~96-drone single-operator swarm control, and a separate PLA demonstration put ~200 jam-resistant drones under one soldier using an anti-jamming algorithm for comms-independent cooperation — Western analysis assesses these as selective but real PLA bets on battlefield AI. The China-Russia 'Joint Sea-2026' exercise (Qingdao, 6-13 Jul) featured extensive unmanned-surface-vessel and counter-UAS tactics per Russian officials, independently corroborated by Defence Security Asia. [Reported, state-linked — corroborate] China's first confirmed YJ-20 hypersonic anti-ship missile (Mach 6+ cruise, ~1,000-1,500km range) launch came from a Type 052D destroyer rather than the Type 055 flagship (CCTV/Global Times trailer, 29 Jul; independently corroborated by The War Zone and Army Recognition) — with roughly 35 Type 052D hulls in service versus 10 Type 055s, this distributes a flagship-exclusive weapon across the fleet's numerical core. Further state-linked disclosures since 4 Aug (net-assessment value only; treat as intent signalling pending independent corroboration): [Reported — state-linked] CCTV footage analysed by AEI (7 Aug) showed the PLA 72nd Group Army pairing armed quadrupedal UGVs, FPV drones and CH-4 UCAVs with largely unchanged massed-armour tactics in an amphibious assault drill. [Reported — unverified, state media] China Military Online (6 Aug) showed forward UAVs cueing PHL-03 rocket-artillery strikes on a stationary maritime target with rapid-displacement re-engagement — a sensor-to-shooter drill against a stationary, not manoeuvring, target. [Reported — unverified, state media] Global Times (4 Aug) debuted the GJ-3A armed reconnaissance UAV as part of a claimed cross-service ISR system fielding to Army, Navy and Rocket Force. [Reported — Beijing-linked] SCMP (6 Aug) frames PLA modernisation around AI/quantum/hypersonic/directed-energy 'disruptive' technology bets tied explicitly to Unrestricted Warfare thinking. SINCE 8 AUG: [Reported] A Type 071 amphibious ship (Qilianshan) was observed carrying China's shipborne Liaoyuan-1 (LY-1, ~180-250kW) directed-energy counter-drone/missile system during a PLA exercise at Scarborough Shoal (1 Aug; reported 10 Aug) — the system's first observed afloat deployment since its Sep 2025 parade debut, read by analysts as signalling resolve toward the Philippines/US over the disputed shoal.",
+      "signal": "[Reported, state-linked — corroborate] Commercial AI providers (reported: DeepSeek, Alibaba, Tencent, Zhipu, Huawei-linked infrastructure) are being folded into a national military ecosystem for surveillance, target recognition, war-gaming and C2. PLA Daily (30 Jun) frames a future 'technological strategy' around AI-enabled C2 resistant to EW; Hong Kong reporting describes an 'AI Plus' push into PLA EW while warning PLA training may lag the hardware. A Reuters review (31 Jul) of 80+ Chinese academic papers/patents found PLA-linked units (Unit 96941, NUDT, Academy of Military Sciences) using 'model distillation' to train domestic defence AI on US-model outputs (OpenAI GPT-3.5/GPT-3, Anthropic Claude 3 Haiku) — a route sidestepping US chip export controls. Xi Jinping (Politburo study session, 30 Jul) directed the military to 'strengthen the military application of unmanned intelligent technologies' — elevating this to explicit top-down doctrine. [Reported, state-linked — 3 Aug] A CCTV PLA-99th-anniversary documentary revealed an 'intelligent strike planning system' (team under Senior Colonel Deng Jianping) that prioritises targets, sequences attack waves and assigns unit tasking across hundreds of targets/dozens of formations (SCMP, paywalled). [Reported, state-linked — corroborate] CETC's 'Atlas' system demonstrated ~96-drone single-operator swarm control, and a separate PLA demonstration put ~200 jam-resistant drones under one soldier using an anti-jamming algorithm for comms-independent cooperation — Western analysis assesses these as selective but real PLA bets on battlefield AI. The China-Russia 'Joint Sea-2026' exercise (Qingdao, 6-13 Jul) featured extensive unmanned-surface-vessel and counter-UAS tactics per Russian officials, independently corroborated by Defence Security Asia. [Reported, state-linked — corroborate] China's first confirmed YJ-20 hypersonic anti-ship missile (Mach 6+ cruise, ~1,000-1,500km range) launch came from a Type 052D destroyer rather than the Type 055 flagship (CCTV/Global Times trailer, 29 Jul; independently corroborated by The War Zone and Army Recognition) — with roughly 35 Type 052D hulls in service versus 10 Type 055s, this distributes a flagship-exclusive weapon across the fleet's numerical core. [Reported — corroborated commercial imagery] Vantor imagery of Hudong-Zhonghua shipyard indicates the third Type 054B frigate carries 48 VLS cells vs 32 on the first two hulls (+50%; SCMP 12 Aug, paywalled; corroborated by Bloomberg) — further distribution of missile capacity across the PLAN's numerical core. [Reported, state-linked — corroborate] PLA 83rd Group Army footage shows forward reconnaissance UAVs cueing PHL-03 300mm rocket strikes against a sea target, rehearsing rapid displacement between engagements for launcher survivability (China Military Online via Army Recognition, 6 Aug) — sensor-to-shooter compression extended to coastal-denial fires.",
       "sowhat": "One net-assessment line covering how the PLA is fusing commercial-grade AI into C2/strike-planning, fielding autonomous swarm doctrine, and distributing long-range strike capability across its numerically dominant hull classes — three facets of the same adversary capability trajectory that Army's C2, EW and fleet-defence-adjacent concepts should track together, not as three separate awareness lines. Confidence is capped at moderate because a majority of the specific capability claims trace to PRC state media or state-linked footage; independent corroboration exists for the broad trend (Reuters model-distillation review, Western analyst commentary, The War Zone/Army Recognition) but not for every individual performance claim.",
       "action": "A4, with ASB3 and SIO net-assessment in support, to maintain the standing line, feed current assessments into Army red-teaming, design-margin and resilience work now, and flag independently confirmed fielding events for force-development escalation.",
       "src": [
@@ -1035,44 +992,20 @@ window.SIO_DATA = {
           "note": "Chinese state media (Global Times) — treat as intent/capability signalling, corroborated independently above."
         },
         {
-          "out": "AEI",
-          "date": "7 Aug 2026",
-          "ttl": "China-Taiwan Update: PLA tests robot dogs, FPV drones and CH-4 UCAVs in amphibious assault drill",
-          "url": "https://www.aei.org/commentary/china-taiwan-update-august-7-2026/",
-          "f": "verified",
-          "note": "Underlying footage is PLA-controlled CCTV; AEI analysis is independent."
+          "out": "South China Morning Post",
+          "date": "12 Aug 2026",
+          "ttl": "Satellite images show 50 per cent boost to China's Type 054B missile capacity",
+          "url": "https://www.scmp.com/news/china/military/article/3363894/satellite-images-show-50-cent-boost-chinas-type-054b-missile-capacity",
+          "f": "paywall",
+          "note": "Hong Kong outlet; Vantor commercial imagery, corroborated by Bloomberg (12 Aug)."
         },
         {
-          "out": "China Military Online",
+          "out": "Army Recognition",
           "date": "6 Aug 2026",
-          "ttl": "China tests UAV-cued PHL-03 rocket strikes with rapid-displacement tactics",
+          "ttl": "China Tests UAV-Cued PHL-03 Maritime Strikes and Rapid-Displacement Tactics for Coastal Denial Operations",
           "url": "https://www.armyrecognition.com/news/navy-news/2026/china-tests-uav-cued-phl-03-maritime-strikes-and-rapid-displacement-tactics-for-coastal-denial-operations",
-          "f": "unverified",
-          "note": "State-controlled outlet; sole source."
-        },
-        {
-          "out": "Global Times",
-          "date": "4 Aug 2026",
-          "ttl": "PLA Air Force unveils three-drone system with GJ-3A debut",
-          "url": "https://www.globaltimes.cn/page/202608/1367510.shtml",
-          "f": "unverified",
-          "note": "State-controlled outlet; no independent corroboration."
-        },
-        {
-          "out": "South China Morning Post",
-          "date": "6 Aug 2026",
-          "ttl": "Why China's military is 'laser-focused' on disruptive technologies",
-          "url": "https://www.scmp.com/news/china/military/article/3362909/why-chinas-military-laser-focused-disruptive-technologies",
-          "f": "paywall",
-          "note": "Beijing-linked outlet; sole source for this framing."
-        },
-        {
-          "out": "South China Morning Post",
-          "date": "10 Aug 2026",
-          "ttl": "Powerful anti-drone laser spotted on PLA amphibious ship in South China Sea",
-          "url": "https://www.scmp.com/news/china/military/article/3363564/powerful-anti-drone-laser-spotted-pla-amphibious-ship-south-china-sea",
-          "f": "paywall",
-          "note": "Hong Kong outlet; LY-1 system performance claims via ship-spotting/analyst commentary — corroborate independently."
+          "f": "verified",
+          "note": "Based on PLA/China Military Online footage — state-released; treat as intent signalling, corroborate. Date approximate."
         }
       ],
       "insightSponsor": "SIO",
@@ -1102,7 +1035,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 2,
+      "age": 0,
       "supersedes": [
         "I-2",
         "I-4",
@@ -1114,12 +1047,12 @@ window.SIO_DATA = {
       ],
       "dlabel": "Allied acquisition, doctrine & vendor-ecosystem shifts",
       "suspense": "Trigger-based — see escalationTrigger",
-      "latestDevelopment": "The US Navy established a new direct-reporting portfolio-manager role for robotic and autonomous systems (RAS) and is weighing relocating RAS staff from Washington closer to fleet operations (DefenseScoop, 6 Aug) — an organisational-model data point alongside the DRPM-UxS consolidation already tracked here.",
-      "changeFromPrevious": "New since 4 Aug (the Japan white paper): a Navy RAS organisational-restructuring signal, in the same acquisition/organisation-model vein as DRPM-UxS. No concrete Army interoperability or co-development opportunity identified.",
+      "latestDevelopment": "The US Army abandoned its unified autonomy-software strategy in favour of vendor-led, case-specific autonomous capabilities per mission set (Breaking Defense, 13 Aug) — an explicit acquisition-model change from government-owned common autonomy software to mission-scoped vendor delivery.",
+      "changeFromPrevious": "Material since last review: the autonomy-strategy shift is a clean acquisition-model data point for the comparator line (and directly relevant to how any Army autonomy effort structures its software ownership). Previous entrants (Japan white paper) retained.",
       "armyRelevance": "Retained only for developments that could plausibly create a force-design lesson, an acquisition-model change, an interoperability opportunity, a co-development/co-production opportunity, a classification/information-sharing precedent, or a concrete Army partnership opportunity. General defence-industry and organisational developments remain in the source feed without joining this line. Informs Army's own concept-design and acquisition-pattern choices (see I-1) but does not itself require an Army decision.",
       "escalationTrigger": "Escalate to a decision if any single thread (e.g. DRPM-UxS consolidation, the Talon Synapse classification-sharing model) produces a concrete interoperability or co-production opportunity Army could join.",
       "decision": "Maintain as a standing comparator line for the I-1 concept-design pilot.",
-      "signal": "[Reported — acquisition-model change] The Pentagon is reportedly shifting AI acquisition from monolithic platforms toward modular, multi-vendor, auditable architectures (Federal News Network, 18 Jun), and suspended CMMC Phase 2 cybersecurity certification requirements pending a 60-day Reform Task Force (13 Jul) — both changing the acquisition model non-traditional vendors face. [Fielded — force-design lesson] A Defense Secretary memo (1 Jul) created the Direct Reporting Portfolio Manager for Unmanned Systems (DRPM-UxS), consolidating nearly all US unmanned programmes under one integrator (~$75B FY27 request); the Army realigned its Mission Autonomy office and DIU restructured around drones/autonomous-warfare, commercial-space 'kill webs' and '10x technologies' teams (USNI/DefenseScoop/Breaking Defense, 1-15 Jul). [Reported — force-design lesson] Israel's IDF Chief of Staff announced (8 Jul) a new General Staff structure for robotics/drones/AI, mirroring the US consolidation. [Fielded — classification/information-sharing precedent] CENTCOM and the UAE stood up Task Force Talon Synapse (28 Jul), the first bilateral AI task force (~20 personnel, Abu Dhabi), with classification-sharing rules flagged as the unresolved constraint. [Demonstrated — interoperability opportunity] Australia's MQ-28 Ghost Bat flew alongside crewed fighters in Valiant Shield 26 (27 Jul); PACAF and the RAAF are exploring 'operator-to-operator' command architectures letting US pilots command Ghost Bat drones directly. [Reported — force-design lesson] Japan's 2026 defence white paper (4 Aug) gives first dedicated treatment to a 'new way of warfare' naming drones and AI as central design elements, shortlisting four drone makers for rapid development. SINCE 8 AUG: [Reported] Israel's Ministry of Defense awarded Ondas the 'Digital Bat' next-generation low-cost tactical attack-drone tender, with startups Kela and eyesAtop separately selected to build the programme's autonomous C2 platform (13 Aug); Haaretz separately reports the IDF is planning to build up to 100,000 attack drones a year as the battlefield shifts to low-altitude systems (14 Aug) — a further allied signal of the mass-production/low-cost-autonomy shift W-5 is tracking.",
+      "signal": "[Reported — acquisition-model change] The Pentagon is reportedly shifting AI acquisition from monolithic platforms toward modular, multi-vendor, auditable architectures (Federal News Network, 18 Jun), and suspended CMMC Phase 2 cybersecurity certification requirements pending a 60-day Reform Task Force (13 Jul) — both changing the acquisition model non-traditional vendors face. [Fielded — force-design lesson] A Defense Secretary memo (1 Jul) created the Direct Reporting Portfolio Manager for Unmanned Systems (DRPM-UxS), consolidating nearly all US unmanned programmes under one integrator (~$75B FY27 request); the Army realigned its Mission Autonomy office and DIU restructured around drones/autonomous-warfare, commercial-space 'kill webs' and '10x technologies' teams (USNI/DefenseScoop/Breaking Defense, 1-15 Jul). [Reported — force-design lesson] Israel's IDF Chief of Staff announced (8 Jul) a new General Staff structure for robotics/drones/AI, mirroring the US consolidation. [Fielded — classification/information-sharing precedent] CENTCOM and the UAE stood up Task Force Talon Synapse (28 Jul), the first bilateral AI task force (~20 personnel, Abu Dhabi), with classification-sharing rules flagged as the unresolved constraint. [Demonstrated — interoperability opportunity] Australia's MQ-28 Ghost Bat flew alongside crewed fighters in Valiant Shield 26 (27 Jul); PACAF and the RAAF are exploring 'operator-to-operator' command architectures letting US pilots command Ghost Bat drones directly. [Reported — force-design lesson] Japan's 2026 defence white paper (4 Aug) gives first dedicated treatment to a 'new way of warfare' naming drones and AI as central design elements, shortlisting four drone makers for rapid development. [Reported — acquisition-model change] The US Army shifted its autonomy strategy from a unified government software approach to vendor-led, mission-specific autonomous capabilities (Breaking Defense, 13 Aug).",
       "sowhat": "A single 'how are peer institutions organising for the AI/autonomy shift' line, useful as a concept-design and acquisition-pattern comparator (feeds I-1's pilot directly). Scope is deliberately narrow: each retained thread maps to one of the six opportunity types in the COS-GS filter; everything else stays in the source feed. This is indicative relevance, not a demonstrated Army requirement, and is held at watchlist accordingly.",
       "action": "SIO to maintain this as a standing comparator line for the I-1 concept-design pilot and flag any thread that matures into a concrete Army interoperability, co-development or partnership opportunity.",
       "src": [
@@ -1230,26 +1163,11 @@ window.SIO_DATA = {
           "f": "verified"
         },
         {
-          "out": "DefenseScoop",
-          "date": "6 Aug 2026",
-          "ttl": "Navy considers relocating robotic and autonomous systems staff amid broader portfolio restructuring",
-          "url": "https://defensescoop.com/2026/08/06/navy-robotic-and-autonomous-systems-portfolio-staff/",
-          "f": "verified"
-        },
-        {
-          "out": "The Defense Post",
+          "out": "Breaking Defense",
           "date": "13 Aug 2026",
-          "ttl": "Israel's Next Tactical Drone Is About More Than Just Firepower",
-          "url": "https://thedefensepost.com/2026/08/13/israel-next-tactical-drone/",
+          "ttl": "Army shifts autonomy strategy to lean more on 'awesome vendors'",
+          "url": "https://breakingdefense.com/2026/08/army-shifts-autonomy-strategy-to-lean-more-on-awesome-vendors/",
           "f": "verified"
-        },
-        {
-          "out": "Haaretz",
-          "date": "14 Aug 2026",
-          "ttl": "As Battlefield Shifts to Low Altitudes, IDF Plans to Build 100,000 Attack Drones a Year",
-          "url": "https://www.haaretz.com/israel-news/israel-security/2026-08-14/ty-article/.premium/as-battlefield-shifts-to-low-altitudes-idf-plans-to-build-100-000-drones-a-year/0000019f-fcf0-df09-abff-fff684040000",
-          "f": "paywall",
-          "note": "Premium/subscriber article; headline and lede captured."
         }
       ],
       "insightSponsor": "SIO",
@@ -1275,7 +1193,7 @@ window.SIO_DATA = {
       "confidence": "moderate",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 2,
+      "age": 0,
       "supersedes": [
         "III-9",
         "III-16"
@@ -1283,11 +1201,11 @@ window.SIO_DATA = {
       "dlabel": "Space-domain sensing, autonomy & acquisition",
       "suspense": "Trigger-based — see escalationTrigger",
       "latestDevelopment": "True Anomaly's Jackal-004 executed the first space-to-space pursuit of an intentionally evading target under VICTUS HAZE tasking (Payload, 3 Aug) — an escalation from July's cooperative-target tracking demo.",
-      "changeFromPrevious": "Unchanged since 4 Aug; no new space-domain developments found in this window.",
+      "changeFromPrevious": "New since last edition: the VICTUS HAZE pursuit demo is the first development in this cluster since 17 Jul (Golden Defender shipbuilder award).",
       "armyRelevance": "Indirect only — the autonomy and sensor-fusion techniques (30-minute autonomous re-planning against a manoeuvring, non-cooperative target) are analogous to the onboard decision-making problem in Army sense-strike concepts, but the platform domain (space) is outside Army's mission set. Held below the priority watchlist: interesting technological read-across alone is insufficient for senior-leadership attention absent a direct Army requirement or an identified terrestrial/aerial analogue.",
       "escalationTrigger": "Escalate to a decision only if a terrestrial/aerial analogue of the autonomous non-cooperative-pursuit technique becomes available for Army evaluation.",
       "decision": "Hold below the priority watchlist; monitor for a terrestrial/aerial autonomy analogue or a direct Army requirement.",
-      "signal": "[Reported — one source unverified] Golden Dome's satellite architecture moved from contractor selection to hardware buys: after naming 12 companies for space-based interceptors (Apr, up to $3.2B), SDA awarded L3Harris (~$955M) and Sierra Space (~$798M) for 36 Tranche 3 tracking/warning satellites, and resumed the Tranche 1 Transport Layer launch campaign (21 more York Space satellites, 16 Jul) — a specific nine-month-pause narrative traces to one Defense One report not independently corroborated in this window. MDA separately selected Hanwha Philly Shipyard/TOTE Services to build 'Golden Defender' missile-range instrumentation vessels. [Demonstrated] True Anomaly's Jackal-004, on Space Systems Command tasking, produced a validated pursuit plan within 30 minutes, closed to ~10km of an actively-manoeuvring Rocket Lab Puma satellite, and used onboard multi-object detection to generate its own orbit estimates without ground cueing (Payload, 3 Aug) — the first space-to-space pursuit of an intentionally evading target, escalating from a cooperative-tracking demo in July. SINCE 8 AUG: [Reported] A senior Army Space and Missile Defense Command official said the Army is developing means to directly 'engage' adversary ISR satellites — favouring non-kinetic options (laser dazzling, high-power microwave) over debris-creating kinetic strikes — alongside stratospheric-balloon alternatives for degraded-SATCOM operations, with initial fielding eyed for FY27 (Breaking Defense, 13 Aug).",
+      "signal": "[Reported — one source unverified] Golden Dome's satellite architecture moved from contractor selection to hardware buys: after naming 12 companies for space-based interceptors (Apr, up to $3.2B), SDA awarded L3Harris (~$955M) and Sierra Space (~$798M) for 36 Tranche 3 tracking/warning satellites, and resumed the Tranche 1 Transport Layer launch campaign (21 more York Space satellites, 16 Jul) — a specific nine-month-pause narrative traces to one Defense One report not independently corroborated in this window. MDA separately selected Hanwha Philly Shipyard/TOTE Services to build 'Golden Defender' missile-range instrumentation vessels. [Demonstrated] True Anomaly's Jackal-004, on Space Systems Command tasking, produced a validated pursuit plan within 30 minutes, closed to ~10km of an actively-manoeuvring Rocket Lab Puma satellite, and used onboard multi-object detection to generate its own orbit estimates without ground cueing (Payload, 3 Aug) — the first space-to-space pursuit of an intentionally evading target, escalating from a cooperative-tracking demo in July.",
       "sowhat": "A space-domain sensing/autonomy watch line: the acquisition scale-up (Golden Dome) and the autonomy demonstration (VICTUS HAZE) are both relevant as technique/acquisition-model benchmarks, not as direct Army capability lines.",
       "action": "SIO to monitor for terrestrial/aerial read-across; promote to the priority watchlist only against the escalation trigger.",
       "src": [
@@ -1333,13 +1251,6 @@ window.SIO_DATA = {
           "ttl": "True Anomaly Chases an Evading Target",
           "url": "https://payloadspace.com/true-anomaly-chases-an-evading-target-in-orbit/",
           "f": "verified"
-        },
-        {
-          "out": "Breaking Defense",
-          "date": "13 Aug 2026",
-          "ttl": "Army gears up to 'engage' enemy surveillance satellites",
-          "url": "https://breakingdefense.com/2026/08/army-gears-up-to-engage-enemy-surveillance-satellites/",
-          "f": "verified"
         }
       ],
       "insightSponsor": "SIO",
@@ -1362,7 +1273,7 @@ window.SIO_DATA = {
       "desk": "US",
       "status": "overdue",
       "raised": "Apr 2026",
-      "age": 18,
+      "age": 16,
       "dlabel": "Decision-workflow pilot sprint",
       "suspense": "5 Sep 2026",
       "recommendation": "Run a time-boxed pilot that takes 1-2 named Army questions from the question register through the full decision workflow: define the decision question → identify relevant external and internal data → establish the minimum data view → apply AI-assisted triage/fusion → put the output before the intended staff user → measure time and quality improvements → capture corrections → iterate. The preferred output is a functioning decision workflow with measured results; concept notes are the by-product, not the deliverable.",
@@ -1403,670 +1314,276 @@ window.SIO_DATA = {
   ],
   "feed": [
     {
-      "date": "2026-08-17",
-      "out": "Stars and Stripes",
-      "ttl": "Purchase of Chinese DJI drones sought as threat training for US nuclear missile base",
-      "sum": "The 90th Missile Security Operations Squadron at F.E. Warren AFB (Wyoming) is buying Chinese-made DJI drones as realistic adversary-representative targets for missile-security training, loading each with U.S.-made RIZER software to air-gap it under the 'Unleashing U.S. Military Drone Dominance' exemption for minimal-quantity foreign drone purchases.",
-      "tech": [
-        "robo",
-        "data"
-      ],
-      "pf": "P5",
-      "desk": "US",
-      "url": "https://www.stripes.com/branches/air_force/2026-08-17/airforcechinesedronecontract-22578655.html",
-      "f": "verified",
-      "serial": null,
-      "sourceType": "trade_press",
-      "corroborated": true,
-      "confidence": "high",
-      "primarySourceUrl": null,
-      "dateLastChecked": "2026-08-17"
-    },
-    {
-      "date": "2026-08-17",
-      "out": "Defence Blog",
-      "ttl": "Pentagon awards NODA AI $100M for autonomy software",
-      "sum": "The Department of War awarded NODA AI a $100M contract to scale its MAESTRO autonomous mission-command software — which keeps custody of commander's intent across air/land/sea/underwater unmanned platforms under jamming — across the Joint Force, building on a $10M July award tied to the LUCAS attack-drone programme.",
+      "date": "2026-08-13",
+      "out": "Breaking Defense",
+      "ttl": "Army shifts autonomy strategy to lean more on 'awesome vendors'",
+      "sum": "After abandoning its original unified software strategy for autonomous vehicles, the US Army will lean on industry to build case-specific autonomous capabilities per mission set — an explicit acquisition-model change from government-owned common autonomy software to vendor-led, mission-scoped delivery.",
       "tech": [
         "ai",
         "robo"
       ],
-      "pf": "P5",
+      "pf": "X",
       "desk": "US",
-      "url": "https://defence-blog.com/pentagon-awards-noda-ai-100m-for-autonomy-software/",
-      "f": "unverified",
-      "note": "Original article returned HTTP 403 on direct fetch; content reconstructed from search-result excerpts and corroborating outlet snippets only. Exact publish date not independently confirmed (approx. 17 Aug 2026).",
-      "serial": null,
+      "url": "https://breakingdefense.com/2026/08/army-shifts-autonomy-strategy-to-lean-more-on-awesome-vendors/",
+      "f": "verified",
+      "serial": "W-5",
+      "saved": false,
+      "flagged": false,
       "sourceType": "trade_press",
       "corroborated": false,
-      "confidence": "low",
+      "confidence": "high",
       "primarySourceUrl": null,
-      "unverifiedClaims": "Contract value, scope and announcement date sourced from search excerpts of a single outlet; original page inaccessible for direct verification.",
-      "dateLastChecked": "2026-08-17"
+      "unverifiedClaims": null,
+      "dateLastChecked": "2026-08-18"
     },
     {
-      "date": "2026-08-16",
-      "out": "PBS NewsHour",
-      "ttl": "Ukraine launches one of its largest aerial attacks of the war, killing at least 6 people in Russia",
-      "sum": "Ukraine sent roughly 600 one-way-attack drones toward Russia overnight, targeting the Moscow region and other sites; Russia's MoD claimed 822 Ukrainian drones destroyed. Russia's retaliatory strikes killed at least 2 and wounded 14 at a Kryvyi Rih steel plant.",
+      "date": "2026-08-13",
+      "out": "Meduza (citing WSJ)",
+      "ttl": "WSJ: Ukrainian drone operators 'easily defeated' U.S. troops in military exercise",
+      "sum": "At Combined Resolve (Hohenfels, Apr-May), Ukraine's 412th Unmanned Systems Regiment repeatedly 'destroyed' a ~3,500-strong US armored brigade combat team with recon-cued FPV and bomber drones; US units improved over two weeks through dispersal, concealment, EW and counter-drone systems.",
       "tech": [
         "robo"
       ],
       "pf": "P5",
-      "desk": "EU",
-      "url": "https://www.pbs.org/newshour/world/ukraine-launches-one-of-its-largest-aerial-attacks-of-the-war-killing-at-least-6-people-in-russia",
+      "desk": "US",
+      "url": "https://meduza.io/en/news/2026/08/13/wsj-ukrainian-drone-operators-easily-defeated-us-troops-in-military-exercise",
       "f": "verified",
       "serial": "D-1",
+      "saved": false,
+      "flagged": false,
       "sourceType": "general_press",
       "corroborated": true,
       "confidence": "high",
       "primarySourceUrl": null,
+      "unverifiedClaims": null,
       "dateLastChecked": "2026-08-17"
     },
     {
-      "date": "2026-08-16",
-      "out": "Euronews",
-      "ttl": "NATO fighter jets shoot down drone over Romania near Moldova border",
-      "sum": "Two Spanish F-18s on NATO air-policing intercepted and destroyed a drone (NATO says likely Russian) that breached Romanian airspace near the Moldova border — the fourth such shoot-down over Romania in 2026.",
-      "tech": [
-        "robo"
-      ],
-      "pf": "P5",
-      "desk": "EU",
-      "url": "https://www.euronews.com/my-europe/2026/08/16/nato-fighter-jets-shoot-down-drone-over-romania-near-moldova-border",
-      "f": "verified",
-      "serial": "D-1",
-      "sourceType": "general_press",
-      "corroborated": true,
-      "confidence": "high",
-      "primarySourceUrl": null,
-      "dateLastChecked": "2026-08-17"
-    },
-    {
-      "date": "2026-08-14",
-      "out": "Haaretz",
-      "ttl": "As Battlefield Shifts to Low Altitudes, IDF Plans to Build 100,000 Attack Drones a Year",
-      "sum": "The IDF is planning to scale production of low-cost attack drones to roughly 100,000 units annually as low-altitude drone warfare (including Hezbollah's fibre-optic FPV drones) erodes Israeli air superiority in Lebanon.",
-      "tech": [
-        "robo"
-      ],
-      "pf": "P5",
-      "desk": "ME",
-      "url": "https://www.haaretz.com/israel-news/israel-security/2026-08-14/ty-article/.premium/as-battlefield-shifts-to-low-altitudes-idf-plans-to-build-100-000-drones-a-year/0000019f-fcf0-df09-abff-fff684040000",
-      "f": "paywall",
-      "note": "Premium/subscriber article; headline and lede captured via search excerpt.",
-      "serial": "W-5",
-      "sourceType": "general_press",
-      "corroborated": false,
-      "confidence": "moderate",
-      "primarySourceUrl": null,
-      "dateLastChecked": "2026-08-17"
-    },
-    {
-      "date": "2026-08-14",
-      "out": "Defense News",
-      "ttl": "Pentagon inks deals with Boeing, RTX to boost production of SM-3 components",
-      "sum": "The Pentagon signed seven-year framework agreements with Boeing and RTX to expand avionics/ejector-assembly production for SM-3 Block IB and Block IIA interceptors used in the Aegis Ballistic Missile Defense System.",
+      "date": "2026-08-13",
+      "out": "Aviation Week",
+      "ttl": "Pentagon Wants Lighter Directed-Energy Weapons For Airborne Use",
+      "sum": "The Pentagon's assistant secretary for critical technologies called for smaller, lighter, more efficient directed-energy systems for aircraft and high-altitude platforms (counter-drone, expeditionary, SOF, counter-C2), plus routine realistic field testing with operating units and better sensor fusion to pair DE with kinetic and non-kinetic options — naming the transition hurdles beyond raw power.",
       "tech": [
         "dews"
       ],
       "pf": "P5",
       "desk": "US",
-      "url": "https://www.defensenews.com/industry/techwatch/2026/08/14/pentagon-inks-deals-with-boeing-rtx-to-boost-production-of-sm-3-components/",
+      "url": "https://aviationweek.com/defense/missile-defense-weapons/pentagon-wants-lighter-directed-energy-weapons-airborne-use",
       "f": "verified",
       "serial": "D-1",
+      "saved": false,
+      "flagged": false,
       "sourceType": "trade_press",
       "corroborated": true,
       "confidence": "high",
-      "primarySourceUrl": "https://boeing.mediaroom.com/sm-3frameworkagreement",
+      "primarySourceUrl": null,
+      "unverifiedClaims": null,
       "dateLastChecked": "2026-08-17"
     },
     {
-      "date": "2026-08-13",
+      "date": "2026-08-12",
+      "out": "The Korea Herald",
+      "ttl": "Army seeks to automate field maintenance as staff shrinks",
+      "sum": "South Korea's Army Headquarters commissioned a study to automate field maintenance and logistics (AI predictive maintenance with small language models, maintenance robots, exoskeletons, automated storage, drone delivery, autonomous transport) under ArmyTiger L, driven by a sustained decline in available personnel; the 1st Supply Group unveiled a smart logistics centre with ~70% of processes automated.",
+      "tech": [
+        "ai",
+        "robo",
+        "data"
+      ],
+      "pf": "P7",
+      "desk": "APAC",
+      "url": "https://www.koreaherald.com/article/10838963",
+      "f": "verified",
+      "serial": "W-7",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "general_press",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": null,
+      "unverifiedClaims": null,
+      "dateLastChecked": "2026-08-17"
+    },
+    {
+      "date": "2026-08-12",
+      "out": "South China Morning Post",
+      "ttl": "Satellite images show 50 per cent boost to China's Type 054B missile capacity",
+      "sum": "Commercial imagery (Vantor, 28 Jun) of Hudong-Zhonghua shipyard indicates the third Type 054B frigate is being fitted with 48 VLS cells versus 32 on the first two hulls — a 50% missile-capacity increase on the PLAN's newest frigate class.",
+      "tech": [
+        "dews"
+      ],
+      "pf": "P2",
+      "desk": "APAC",
+      "url": "https://www.scmp.com/news/china/military/article/3363894/satellite-images-show-50-cent-boost-chinas-type-054b-missile-capacity",
+      "f": "paywall",
+      "serial": "W-4",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "general_press",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": null,
+      "unverifiedClaims": "Body behind paywall; imagery analysis corroborated by Bloomberg (12 Aug) and consistent with Janes construction reporting.",
+      "dateLastChecked": "2026-08-17"
+    },
+    {
+      "date": "2026-08-12",
+      "out": "GovCIO Media & Research",
+      "ttl": "Military Leaders Say AI Needs Better Data to Reach the Battlefield",
+      "sum": "At DoDIIS Worldwide (11 Aug), US military intelligence leaders said the biggest obstacle to battlefield AI is not the technology but giving AI access to the data it needs inside the right security enclaves — data access, cybersecurity and resilient infrastructure determine how quickly AI delivers operational advantage.",
+      "tech": [
+        "data",
+        "ai"
+      ],
+      "pf": "P6",
+      "desk": "US",
+      "url": "https://govciomedia.com/military-leaders-say-ai-needs-better-data-to-reach-the-battlefield/",
+      "f": "verified",
+      "serial": "W-3",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "trade_press",
+      "corroborated": false,
+      "confidence": "moderate",
+      "primarySourceUrl": null,
+      "unverifiedClaims": null,
+      "dateLastChecked": "2026-08-17"
+    },
+    {
+      "date": "2026-08-12",
       "out": "The Defense Post",
-      "ttl": "Israel's Next Tactical Drone Is About More Than Just Firepower",
-      "sum": "Israel's MoD awarded Ondas the 'Digital Bat' tender for a next-generation low-cost tactical attack drone; startups Kela and eyesAtop were separately selected to build the programme's autonomous command-and-control platform for future attack-drone swarms.",
+      "ttl": "US Seeks New Hypersonic Cruise Missile for Affordable Mass Production",
+      "sum": "DARPA's Next Generation Hypersonic Cruise Missile RFI (issued 7 Aug, responses due 6 Oct) seeks air-breathing designs launchable from air, ground or surface platforms with design-for-manufacturing from the outset — explicitly prioritising affordable high-rate production and magazine depth over exotic one-off capability.",
+      "tech": [
+        "dews"
+      ],
+      "pf": "X",
+      "desk": "US",
+      "url": "https://thedefensepost.com/2026/08/12/us-seeks-hypersonic-cruise-missile/",
+      "f": "verified",
+      "serial": null,
+      "saved": false,
+      "flagged": false,
+      "sourceType": "trade_press",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": null,
+      "unverifiedClaims": null,
+      "dateLastChecked": "2026-08-17"
+    },
+    {
+      "date": "2026-08-11",
+      "out": "Naval News",
+      "ttl": "HII Watcher Autonomous USV Passes Critical DIU Performance Tests",
+      "sum": "DIU recognised completion of HII's PRIME prototype project: the Watcher sUSV (ROMULUS-25 hull, Odyssey autonomy) passed government-led autonomy, seakeeping, performance and degraded-environment assessments — demonstrating autonomous transit through contested waterspace, loiter surveillance and sprint interdiction of a non-cooperative vessel — and is positioned for potential transition to production for the Marine Corps.",
       "tech": [
         "robo",
         "ai"
       ],
       "pf": "P5",
-      "desk": "ME",
-      "url": "https://thedefensepost.com/2026/08/13/israel-next-tactical-drone/",
+      "desk": "US",
+      "url": "https://www.navalnews.com/naval-news/2026/08/hii-watcher-autonomous-usv-passes-critical-diu-performance-tests",
       "f": "verified",
-      "serial": "W-5",
+      "serial": "W-1",
+      "saved": false,
+      "flagged": false,
       "sourceType": "trade_press",
-      "corroborated": false,
-      "confidence": "moderate",
-      "primarySourceUrl": null,
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": "https://www.hii.com/news/hiimetalcraft-marine-autonomous-romulus-usv-with-hii-autonomy-successfully-passed-a-critical-dow-test",
+      "unverifiedClaims": null,
       "dateLastChecked": "2026-08-17"
     },
     {
-      "date": "2026-08-13",
-      "out": "Breaking Defense",
-      "ttl": "Army gears up to 'engage' enemy surveillance satellites",
-      "sum": "A senior Army Space and Missile Defense Command official said the Army is developing non-kinetic means (laser dazzling, high-power microwave) to directly engage adversary ISR satellites targeting US forces, alongside stratospheric-balloon alternatives for degraded-SATCOM operations.",
+      "date": "2026-08-11",
+      "out": "Defence Industry Europe",
+      "ttl": "Lockheed Martin expands AI-driven military logistics from F-35 to F-22, F-16 and C-130 fleets",
+      "sum": "Lockheed Martin is extending its AI sustainment dashboard (parts-health forecasting, predictive maintenance, supply forecasting from real-time consumption, operating profiles and projected mission demand) from the F-35 to F-22, F-16 and C-130 fleets — vendor evidence of sustainment AI crossing from one programme to fleet-wide practice.",
       "tech": [
-        "dews"
+        "ai",
+        "data"
       ],
-      "pf": "P1",
+      "pf": "P7",
       "desk": "US",
-      "url": "https://breakingdefense.com/2026/08/army-gears-up-to-engage-enemy-surveillance-satellites/",
+      "url": "https://defence-industry.eu/lockheed-martin-expands-ai-driven-military-logistics-from-f-35-to-f-22-f-16-and-c-130-fleets-to-strengthen-aircraft-readiness/",
       "f": "verified",
-      "serial": "W-6",
-      "sourceType": "trade_press",
+      "serial": "W-7",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "vendor",
       "corroborated": false,
-      "confidence": "high",
-      "primarySourceUrl": null,
+      "confidence": "moderate",
+      "primarySourceUrl": "https://www.lockheedmartin.com/en-us/news/features/2026/ai-powered-sustainment--turning-complexity-into-readiness.html",
+      "unverifiedClaims": "Vendor-described capability claims; no independent performance validation cited.",
       "dateLastChecked": "2026-08-17"
     },
     {
       "date": "2026-08-10",
-      "out": "South China Morning Post",
-      "ttl": "Powerful anti-drone laser spotted on PLA amphibious ship in South China Sea",
-      "sum": "A Type 071 amphibious ship (Qilianshan) was observed carrying China's shipborne Liaoyuan-1 (LY-1, ~180-250kW) directed-energy counter-drone/missile system during a PLA exercise at Scarborough Shoal on 1 Aug — its first observed afloat deployment since the Sep 2025 parade debut.",
-      "tech": [
-        "dews"
-      ],
-      "pf": "P1",
-      "desk": "APAC",
-      "url": "https://www.scmp.com/news/china/military/article/3363564/powerful-anti-drone-laser-spotted-pla-amphibious-ship-south-china-sea",
-      "f": "paywall",
-      "note": "Hong Kong outlet; LY-1 performance/deployment read via ship-spotting and analyst commentary — corroborate independently.",
-      "serial": "W-4",
-      "sourceType": "general_press",
-      "corroborated": false,
-      "confidence": "moderate",
-      "primarySourceUrl": null,
-      "dateLastChecked": "2026-08-17"
-    },
-    {
-      "date": "2026-08-08",
-      "out": "Kyiv Independent",
-      "ttl": "Ukraine's naval drone campaign passes 218 struck Russian 'shadow fleet' vessels",
-      "sum": "Ukraine's Unmanned Systems Forces say Operation Molochka has hit 218 Russian shadow-fleet tankers (134 in the Sea of Azov, 84 in the Black Sea) with long-range strike drones and USVs since 6 Jul, including 12 more in the week to 8 Aug.",
-      "tech": [
-        "robo"
-      ],
-      "pf": "P5",
-      "desk": "EU",
-      "url": "https://kyivindependent.com/12-russian-shadow-fleet-vessels-struck-in-black-sea-and-azov-sea-over-past-week-ukraine-says/",
-      "f": "unverified",
-      "note": "Ukraine's own claim; Kyiv Independent states it could not independently verify the total, and no technical specs on the drones/USVs were disclosed.",
-      "serial": "W-1",
-      "sourceType": "general_press",
-      "corroborated": false,
-      "confidence": "low",
-      "primarySourceUrl": null,
-      "unverifiedClaims": "Total struck-vessel count and the 12-vessel weekly increment are the Ukrainian Unmanned Systems Forces' own claim, not independently verified.",
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-08-07",
-      "out": "AEI",
-      "ttl": "China-Taiwan Update: PLA tests robot dogs, FPV drones and CH-4 UCAVs in amphibious assault drill",
-      "sum": "AEI's tracker analyses CCTV footage (aired 1 Aug) of the PLA 72nd Group Army's Huangcaoling Hero Company using armed quadrupedal UGVs, FPV quadcopters and CH-4 UCAVs targeting simulated USVs in a mock beachhead assault; analysts note the new unmanned systems were paired with largely unchanged, vulnerability-prone armoured-vehicle massing tactics.",
-      "tech": [
-        "robo"
-      ],
-      "pf": "P5",
-      "desk": "APAC",
-      "url": "https://www.aei.org/commentary/china-taiwan-update-august-7-2026/",
-      "f": "verified",
-      "note": "Underlying footage originates from PLA-controlled CCTV; AEI's tactical critique is independent analysis — treat PLA capability claims as intent signalling, corroborate independently.",
-      "serial": "W-4",
-      "sourceType": "think_tank",
-      "corroborated": true,
-      "confidence": "moderate",
-      "primarySourceUrl": null,
-      "unverifiedClaims": "PLA capability performance during the drill is shown only via state-controlled footage; independent assessment is limited to AEI's tactical interpretation.",
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-08-07",
-      "out": "Bloomberg",
-      "ttl": "Golden Dome Space Shield Targets First Flight Tests in 2027, Pentagon Says",
-      "sum": "The Pentagon set funding and milestones for Golden Dome's space-based interceptor pillar, targeting first ground tests by end-2026 and orbital flight demonstrations in 2027, part of a $185B layered missile-defence shield with an AI-enabled command network.",
-      "tech": [
-        "dews",
-        "data",
-        "ai"
-      ],
-      "pf": "P5",
-      "desk": "US",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-07/pentagon-sets-funds-dates-for-secret-golden-dome-space-program",
-      "f": "paywall",
-      "note": "Bloomberg paywalled; corroborated by SpaceNews/Inside Defense/TWZ coverage of the same milestone.",
-      "serial": null,
-      "sourceType": "general_press",
-      "corroborated": true,
-      "confidence": "moderate",
-      "primarySourceUrl": null,
-      "unverifiedClaims": "Body behind paywall; schedule and cost figures per Pentagon statements, not independently audited.",
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-08-07",
-      "out": "DefenseScoop",
-      "ttl": "War Data Platform integration plans under scrutiny as DOD hustles to weaponize AI",
-      "sum": "Accenture Federal Services won an $821M contract to integrate the Pentagon's War Data Platform (formerly Advana), aiming to consolidate military data sources for AI-driven operations; former officials question whether the traditional-consulting approach will avoid past shortfalls.",
-      "tech": [
-        "data",
-        "ai"
-      ],
-      "pf": "P6",
-      "desk": "US",
-      "url": "https://defensescoop.com/2026/08/07/pentagon-war-data-platform-integration-plans-under-scrutiny/",
-      "f": "verified",
-      "serial": "W-3",
-      "sourceType": "trade_press",
-      "corroborated": true,
-      "confidence": "high",
-      "primarySourceUrl": null,
-      "unverifiedClaims": null,
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-08-07",
-      "out": "Army Recognition",
-      "ttl": "U.S. Army Moves to Make High-Energy Lasers a Permanent Counter-Drone Weapon",
-      "sum": "The Army is negotiating with AeroVironment to make the Enduring High Energy Laser (E-HEL) system a permanent part of its counter-drone arsenal, building on directed-energy M-SHORAD experimentation.",
-      "tech": [
-        "dews",
-        "robo"
-      ],
-      "pf": "P5",
-      "desk": "US",
-      "url": "https://www.armyrecognition.com/news/army-news/2026/u-s-army-moves-to-make-high-energy-lasers-a-permanent-counter-drone-weapon",
-      "f": "verified",
-      "serial": "D-1",
-      "sourceType": "trade_press",
-      "corroborated": true,
-      "confidence": "high",
-      "primarySourceUrl": null,
-      "unverifiedClaims": null,
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-08-07",
-      "out": "Army Recognition",
-      "ttl": "U.S. Marines Bring FPV Precision Strike to the Tactical Edge in South Korea With Neros Archer Attack Drones",
-      "sum": "U.S. Marines conducted their first live-fire FPV attack-drone operations in South Korea using Neros Archer drones, applying tactics drawn from Ukraine's battlefield experience.",
-      "tech": [
-        "robo"
-      ],
-      "pf": "P5",
-      "desk": "APAC",
-      "url": "https://www.armyrecognition.com/news/army-news/2026/u-s-marines-bring-fpv-precision-strike-to-the-tactical-edge-in-south-korea-with-neros-archer-attack-drones",
-      "f": "verified",
-      "serial": null,
-      "sourceType": "trade_press",
-      "corroborated": true,
-      "confidence": "high",
-      "primarySourceUrl": null,
-      "unverifiedClaims": null,
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-08-06",
-      "out": "China Military Online",
-      "ttl": "China tests UAV-cued PHL-03 rocket strikes with rapid-displacement tactics",
-      "sum": "Footage released by China Military Online showed the PLA's 83rd Group Army using forward UAVs to cue PHL-03 300mm rocket-artillery strikes on a stationary maritime target, then rapidly relocating launchers for a second engagement; the drill tested only a stationary target, not a manoeuvring warship.",
+      "out": "GlobeNewswire (via The Manila Times)",
+      "ttl": "Stratom's TALUS Team Selected to Advance U.S. Army Project Sustainment",
+      "sum": "A Stratom-led team (ND Defense, Forterra, GS Engineering, Waltonen) was awarded a US Army Project Sustainment contract to develop the Tactical Autonomous Logistics Utility System (TALUS) — modular autonomous distribution to resupply dispersed forces in contested environments and keep soldiers off high-risk resupply routes — delivering toward a Transformation in Contact unit's CTC rotation, with field testing from early 2027.",
       "tech": [
         "robo",
         "ai"
-      ],
-      "pf": "P5",
-      "desk": "APAC",
-      "url": "https://www.armyrecognition.com/news/navy-news/2026/china-tests-uav-cued-phl-03-maritime-strikes-and-rapid-displacement-tactics-for-coastal-denial-operations",
-      "f": "unverified",
-      "note": "State-controlled outlet (China Military Online) is the sole source of the claimed drill effectiveness; treat as intent signalling, corroborate independently.",
-      "serial": "W-4",
-      "sourceType": "state_media",
-      "corroborated": false,
-      "confidence": "low",
-      "primarySourceUrl": null,
-      "unverifiedClaims": "Drill effectiveness and rapid-displacement timing are the PLA's own claim via state media; no independent corroboration found.",
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-08-06",
-      "out": "South China Morning Post",
-      "ttl": "Why China's military is 'laser-focused' on disruptive technologies",
-      "sum": "SCMP feature frames PLA modernisation around asymmetric 'disruptive' technology bets — AI, quantum, hypersonic weapons and directed-energy systems — tracing the strategy to Qiao Liang's Unrestricted Warfare thesis of avoiding direct feature-for-feature competition with the US.",
-      "tech": [
-        "ai",
-        "dews"
-      ],
-      "pf": "X",
-      "desk": "APAC",
-      "url": "https://www.scmp.com/news/china/military/article/3362909/why-chinas-military-laser-focused-disruptive-technologies",
-      "f": "paywall",
-      "note": "SCMP is Beijing-linked/semi-independent and the sole outlet for this framing; treat strategic-intent claims as uncorroborated pending Western trade-press pickup.",
-      "serial": "W-4",
-      "sourceType": "general_press",
-      "corroborated": false,
-      "confidence": "low",
-      "primarySourceUrl": null,
-      "unverifiedClaims": "Body behind paywall; strategic-framing claims not yet seen in independent Western reporting.",
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-08-06",
-      "out": "Washington Times",
-      "ttl": "Army's AI-fusion system is 'ready but not done'",
-      "sum": "Army leaders declared the Next Generation Command and Control (NGC2) system 'ready to scale' after Project Convergence-Capstone 6 at Fort Irwin; 4th Infantry Division's commander called it 'functional but not optimized', with I Corps next to receive the AI-enabled, unified-data C2 capability.",
-      "tech": [
-        "ai",
-        "data"
-      ],
-      "pf": "P6",
-      "desk": "US",
-      "url": "https://www.washingtontimes.com/news/2026/aug/6/armys-ai-fusion-system-next-generation-command-control-ready-not-done/",
-      "f": "verified",
-      "note": "Corroborated by Army Times, Army.mil, Soldier Systems Daily and The Defense Post (3-4 Aug).",
-      "serial": "W-3",
-      "sourceType": "general_press",
-      "corroborated": true,
-      "confidence": "high",
-      "primarySourceUrl": null,
-      "unverifiedClaims": null,
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-08-06",
-      "out": "DefenseScoop",
-      "ttl": "Navy considers relocating robotic and autonomous systems staff amid broader portfolio restructuring",
-      "sum": "The Navy established a new direct-reporting portfolio-manager role for robotic and autonomous systems (RAS) and is weighing relocating RAS staff from Washington closer to fleet operations.",
-      "tech": [
-        "robo"
-      ],
-      "pf": "P4",
-      "desk": "US",
-      "url": "https://defensescoop.com/2026/08/06/navy-robotic-and-autonomous-systems-portfolio-staff/",
-      "f": "verified",
-      "serial": "W-5",
-      "sourceType": "trade_press",
-      "corroborated": true,
-      "confidence": "high",
-      "primarySourceUrl": null,
-      "unverifiedClaims": null,
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-08-06",
-      "out": "Naval Today",
-      "ttl": "Royal Navy tests drone armada concept",
-      "sum": "The Royal Navy's 'Dragon Rider' trial in southern England demonstrated coordinated operation of multiple aerial and surface drones alongside crewed naval assets, using a MANET data-relay system to extend drone range past radio line-of-sight ahead of a planned satcom phase.",
-      "tech": [
-        "robo",
-        "data"
-      ],
-      "pf": "P5",
-      "desk": "EU",
-      "url": "https://www.navaltoday.com/2026/08/06/royal-navy-tests-drone-armada-concept",
-      "f": "verified",
-      "note": "Corroborating: Royal Navy (royalnavy.mod.uk).",
-      "serial": "W-1",
-      "sourceType": "trade_press",
-      "corroborated": true,
-      "confidence": "high",
-      "primarySourceUrl": null,
-      "unverifiedClaims": null,
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-08-06",
-      "out": "Army Recognition",
-      "ttl": "U.S. Demonstrates First P-8A Poseidon Tasking of MQ-4C Triton Drone for Future Naval Teaming",
-      "sum": "Boeing and Northrop Grumman completed a lab demonstration where a P-8A Poseidon operator tasked an MQ-4C Triton drone and received ISR data via an open-architecture interface, validating crewed-uncrewed teaming for anti-surface warfare, ISR and targeting.",
-      "tech": [
-        "robo",
-        "data"
-      ],
-      "pf": "P5",
-      "desk": "US",
-      "url": "https://www.armyrecognition.com/news/navy-news/2026/u-s-demonstrates-first-p-8a-poseidon-tasking-of-mq-4c-triton-drone-for-future-naval-teaming",
-      "f": "verified",
-      "note": "Corroborating: FlightGlobal.",
-      "serial": null,
-      "sourceType": "trade_press",
-      "corroborated": true,
-      "confidence": "high",
-      "primarySourceUrl": null,
-      "unverifiedClaims": null,
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-08-06",
-      "out": "FlightGlobal",
-      "ttl": "Paramount's Mwari gets Aselsan sensor as focus shifts to counter-drone mission",
-      "sum": "Paramount integrated Aselsan's ASELFLIR-500 EO/IR sensor, with AI-enhanced image processing, onto its Mwari ISR/light-attack aircraft, creating a dedicated counter-UAS configuration for detecting and tracking drone threats.",
-      "tech": [
-        "dews",
-        "robo",
-        "ai"
-      ],
-      "pf": "P5",
-      "desk": "ME",
-      "url": "https://www.flightglobal.com/defence/2026/08/paramounts-mwari-gets-aselsan-sensor-as-focus-shifts-to-counter-drone-mission/",
-      "f": "verified",
-      "note": "Corroborating: EDR Magazine, DefenceWeb.",
-      "serial": "D-1",
-      "sourceType": "trade_press",
-      "corroborated": true,
-      "confidence": "high",
-      "primarySourceUrl": null,
-      "unverifiedClaims": null,
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-08-06",
-      "out": "CyberScoop",
-      "ttl": "Despite federal warnings, thousands of U.S. industrial controllers used in water systems remain exposed online",
-      "sum": "A Forescout scan found over 4,000 internet-exposed Rockwell Automation PLCs nationwide, including 22 in cities hit by an ongoing water-utility cyberattack campaign spanning at least 12 states since late July.",
-      "tech": [
-        "data"
-      ],
-      "pf": "P1",
-      "desk": "US",
-      "url": "https://cyberscoop.com/exposed-rockwell-controllers-water-system-attacks/",
-      "f": "verified",
-      "serial": null,
-      "sourceType": "trade_press",
-      "corroborated": true,
-      "confidence": "high",
-      "primarySourceUrl": null,
-      "unverifiedClaims": null,
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-08-06",
-      "out": "Meta-Defense",
-      "ttl": "Dutch Naval Design enters design phase for uncrewed anti-submarine surface vessel",
-      "sum": "The Dutch MoD authorised Dutch Naval Design to begin designing a 12m USV to multiply sonar 'listening points' for the future Dutch/Belgian ASW frigates, extending underwater surveillance and reducing reliance on NH90 helicopters.",
-      "tech": [
-        "robo"
-      ],
-      "pf": "P5",
-      "desk": "EU",
-      "url": "https://meta-defense.fr/2026/08/06/lutte-anti-sous-marine-drone-neerlandai/",
-      "f": "paywall",
-      "note": "Detail beyond the lede is subscriber-only.",
-      "serial": "W-1",
-      "sourceType": "trade_press",
-      "corroborated": false,
-      "confidence": "moderate",
-      "primarySourceUrl": null,
-      "unverifiedClaims": "Full design specifications and timeline are behind the Meta-Defense paywall.",
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-08-06",
-      "out": "ISW/Critical Threats",
-      "ttl": "Russia's Rubicon unmanned-systems centre boosts strikes on Ukrainian drone control points",
-      "sum": "ISW assesses coordination between Russia's Rubicon Center for Advanced Unmanned Technologies and the Aerospace Forces is increasing the effectiveness of strikes on Ukrainian drone control points and operator concentrations near Druzhkivka, degrading Ukrainian freedom of manoeuvre there.",
-      "tech": [
-        "dews",
-        "robo"
-      ],
-      "pf": "P1",
-      "desk": "EU",
-      "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-august-6-2026",
-      "f": "verified",
-      "serial": "D-2",
-      "sourceType": "think_tank",
-      "corroborated": true,
-      "confidence": "high",
-      "primarySourceUrl": null,
-      "unverifiedClaims": null,
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-08-06",
-      "out": "Marine Insight",
-      "ttl": "Uncrewed surface vessel sinks ship off Yemen's Al Mukha near Bab al-Mandeb",
-      "sum": "UKMTO reported a vessel attacked and sunk by an unidentified USV roughly 9nm off Al Mukha, Yemen; crew rescued, no fatalities. Yemen's internationally recognised government blamed the Houthis as part of an escalating campaign against Red Sea/Saudi-linked shipping.",
-      "tech": [
-        "robo"
-      ],
-      "pf": "P5",
-      "desk": "ME",
-      "url": "https://www.marineinsight.com/ship-sinks-off-southwest-yemen-after-being-targeted-by-an-uncrewed-surface-vessel/",
-      "f": "unverified",
-      "note": "UKMTO did not officially confirm Houthi responsibility or name the vessel; attribution is via a Yemeni government statement, cited by Türkiye Today.",
-      "serial": "W-1",
-      "sourceType": "general_press",
-      "corroborated": false,
-      "confidence": "low",
-      "primarySourceUrl": null,
-      "unverifiedClaims": "Houthi attribution and vessel identity are unconfirmed by UKMTO; based on a Yemeni government statement only.",
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-08-05",
-      "out": "DefenseScoop",
-      "ttl": "Air Force expands autonomous flight tests with live, AI-enabled intercepts",
-      "sum": "The Air Force's X-62 VISTA testbed flew 27 autonomous air intercepts across eight flights, with AI agents ingesting live infrared sensor data to direct real-time interception of an airborne target.",
-      "tech": [
-        "ai",
-        "robo"
-      ],
-      "pf": "P5",
-      "desk": "US",
-      "url": "https://defensescoop.com/2026/08/05/air-force-x-62-vista-have-heat-have-holiday/",
-      "f": "verified",
-      "serial": "S-1",
-      "sourceType": "trade_press",
-      "corroborated": true,
-      "confidence": "high",
-      "primarySourceUrl": null,
-      "unverifiedClaims": null,
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-08-05",
-      "out": "DefenseScoop",
-      "ttl": "Salesforce previews plans to deliver newly authorized 'AI agents' across DOD",
-      "sum": "Salesforce's Agentforce 360 received DOD Impact Level 5 authorization; the Army's Human Resources Command is the first DOD component deploying it, aiming to automate over 1,500 daily cases and assist millions of monthly soldier inquiries.",
-      "tech": [
-        "ai",
-        "data"
-      ],
-      "pf": "P6",
-      "desk": "US",
-      "url": "https://defensescoop.com/2026/08/05/salesforce-plans-deliver-newly-authorized-ai-agents-across-dod/",
-      "f": "verified",
-      "serial": null,
-      "sourceType": "trade_press",
-      "corroborated": true,
-      "confidence": "high",
-      "primarySourceUrl": null,
-      "unverifiedClaims": null,
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
-    },
-    {
-      "date": "2026-08-05",
-      "out": "Navy Times",
-      "ttl": "Firestorm Labs builds drones aboard USS Essex without shore resupply",
-      "sum": "Firestorm Labs used a containerized 3D-printing 'xCell' microfactory to manufacture over 1,000 parts and 12 Squall FPV drones aboard USS Essex en route to RIMPAC 2026, demonstrating at-sea drone production without shore resupply.",
-      "tech": [
-        "robo"
       ],
       "pf": "P7",
       "desk": "US",
-      "url": "https://www.navytimes.com/industry/techwatch/2026/08/05/firestorm-labs-builds-drones-aboard-uss-essex-without-shore-resupply/",
+      "url": "https://www.manilatimes.net/2026/08/10/tmt-newswire/globenewswire/stratoms-talus-team-selected-to-advance-us-army-project-sustainment/2402161",
       "f": "verified",
       "serial": "W-2",
-      "sourceType": "trade_press",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "vendor",
       "corroborated": true,
       "confidence": "high",
       "primarySourceUrl": null,
       "unverifiedClaims": null,
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
+      "dateLastChecked": "2026-08-18"
     },
     {
-      "date": "2026-08-05",
-      "out": "Breaking Defense",
-      "ttl": "Everyone is learning the wrong lessons from Ukraine's drone war",
-      "sum": "Analysis argues Western observers wrongly fixate on 'best drone wins' and full-autonomy narratives; Ukrainian battlefield practice favours human-in-the-loop control, distributed/resilient production and a whole-of-society adaptive-innovation ecosystem over any single platform or automation level.",
+      "date": "2026-08-10",
+      "out": "Military Times",
+      "ttl": "Marine Corps to get 'production-ready' microwave drone swarm killer",
+      "sum": "The Marine Corps is moving to a vehicle-mounted, production-ready Epirus HAVOC high-power-microwave system for defeating drone swarms — HPM soft-kill advancing from demonstration toward fielded counter-swarm capability, including effectiveness against fiber-optic-guided drones that defeat RF jamming.",
       "tech": [
-        "ai",
-        "robo"
+        "dews"
       ],
-      "pf": "X",
-      "desk": "EU",
-      "url": "https://breakingdefense.com/2026/08/everyone-is-learning-the-wrong-lessons-from-ukraines-drone-war/",
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://www.militarytimes.com/news/your-military/2026/08/10/marine-corps-to-get-production-ready-microwave-drone-swarm-killer/",
       "f": "verified",
-      "serial": "S-1",
+      "serial": "D-1",
+      "saved": false,
+      "flagged": false,
       "sourceType": "trade_press",
       "corroborated": true,
       "confidence": "high",
       "primarySourceUrl": null,
       "unverifiedClaims": null,
-      "dateLastChecked": "2026-08-08",
+      "dateLastChecked": "2026-08-18"
+    },
+    {
+      "date": "2026-08-06",
+      "out": "Army Recognition",
+      "ttl": "China Tests UAV-Cued PHL-03 Maritime Strikes and Rapid-Displacement Tactics for Coastal Denial Operations",
+      "sum": "China Military Online footage shows a PLA 83rd Group Army brigade pairing forward reconnaissance UAVs with PHL-03 300mm rocket artillery against a sea target — rehearsing rapid detect-engage-displace-re-engage cycles to compress the sensor-to-shooter loop while preserving launcher survivability in coastal denial missions.",
+      "tech": [
+        "robo",
+        "ai"
+      ],
+      "pf": "P2",
+      "desk": "APAC",
+      "url": "https://www.armyrecognition.com/news/navy-news/2026/china-tests-uav-cued-phl-03-maritime-strikes-and-rapid-displacement-tactics-for-coastal-denial-operations",
+      "f": "verified",
+      "serial": "W-4",
       "saved": false,
-      "flagged": false
+      "flagged": false,
+      "sourceType": "trade_press",
+      "corroborated": false,
+      "confidence": "moderate",
+      "primarySourceUrl": null,
+      "unverifiedClaims": "Based on PLA/China Military Online footage (6 Aug) — state-released material; treat tactical-proficiency claims as intent signalling pending independent corroboration. Article date approximate.",
+      "dateLastChecked": "2026-08-18"
     },
     {
       "date": "2026-08-04",
@@ -2114,29 +1631,27 @@ window.SIO_DATA = {
       "dateLastChecked": "2026-08-04"
     },
     {
-      "date": "2026-08-04",
-      "out": "Global Times",
-      "ttl": "PLA Air Force unveils three-drone system with GJ-3A debut",
-      "sum": "Chinese state media showed the PLA Air Force publicly debuting the GJ-3A armed reconnaissance UAV (over 6-ton MTOW, over 2-ton payload, air-to-ground and air-to-air capable) alongside WZ-10 and WZ-7 reconnaissance drones, described as a cross-service intelligence system feeding the Army, Navy and Rocket Force.",
+      "date": "2026-08-03",
+      "out": "The Army (army.mil)",
+      "ttl": "Army leaders: Next Generation Command and Control 'ready to scale'",
+      "sum": "At the close of Project Convergence-Capstone 6 (29 Jul), Army leaders declared NGC2 ready to scale across the force: the 10-month prototyping phase concluded and gradual rollout begins, with I Corps headquarters and downtrace units next, on the Anduril-led common data layer with Palantir edge-to-cloud data mesh.",
       "tech": [
-        "robo",
-        "ai",
-        "data"
+        "data",
+        "ai"
       ],
-      "pf": "P5",
-      "desk": "APAC",
-      "url": "https://www.globaltimes.cn/page/202608/1367510.shtml",
-      "f": "unverified",
-      "note": "State-controlled outlet (Global Times); no independent corroboration found of the specifications or the 'cross-service' integration claim — treat as intent signalling.",
-      "serial": "W-4",
-      "sourceType": "state_media",
-      "corroborated": false,
-      "confidence": "low",
-      "primarySourceUrl": null,
-      "unverifiedClaims": "GJ-3A specifications and the claimed cross-service ISR integration are unconfirmed outside PLA state media.",
-      "dateLastChecked": "2026-08-08",
+      "pf": "P6",
+      "desk": "US",
+      "url": "https://www.army.mil/article/294284/army_leaders_next_generation_command_and_control_ready_to_scale",
+      "f": "verified",
+      "serial": "W-3",
       "saved": false,
-      "flagged": false
+      "flagged": false,
+      "sourceType": "official",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": "https://www.army.mil/article/294284/army_leaders_next_generation_command_and_control_ready_to_scale",
+      "unverifiedClaims": null,
+      "dateLastChecked": "2026-08-18"
     },
     {
       "date": "2026-08-03",
@@ -2228,31 +1743,6 @@ window.SIO_DATA = {
       "primarySourceUrl": null,
       "unverifiedClaims": null,
       "dateLastChecked": "2026-08-04"
-    },
-    {
-      "date": "2026-08-01",
-      "out": "SSBCrack",
-      "ttl": "IAF Helicopters To Be Armed With Micro-Missiles And AI Systems For Drone Defence",
-      "sum": "The Indian Air Force, presenting at the IAF-SIDM SANKALP 2026 seminar, plans to equip AH-64E Apache and LCH Prachand helicopters with AI-driven target-identification systems, anti-drone micro-missiles and EW/jamming gear, validated via Exercise Rotor Clapp-III.",
-      "tech": [
-        "ai",
-        "robo",
-        "dews"
-      ],
-      "pf": "P5",
-      "desk": "APAC",
-      "url": "https://www.ssbcrack.com/2026/08/indian-air-force-plans-to-arm-helicopters-with-ai-radars-and-micro-missiles-for-anti-drone-operations.html",
-      "f": "verified",
-      "note": "Originally published 1 Aug, republished/updated 8 Aug; corroborated by Indian Defence News and Raksha Anirveda.",
-      "serial": null,
-      "sourceType": "general_press",
-      "corroborated": true,
-      "confidence": "moderate",
-      "primarySourceUrl": null,
-      "unverifiedClaims": null,
-      "dateLastChecked": "2026-08-08",
-      "saved": false,
-      "flagged": false
     },
     {
       "date": "2026-07-31",
@@ -2617,6 +2107,28 @@ window.SIO_DATA = {
       "primarySourceUrl": null,
       "unverifiedClaims": null,
       "dateLastChecked": "2026-08-04"
+    },
+    {
+      "date": "2026-07-27",
+      "out": "The Defense Post",
+      "ttl": "US Army Selects Five Firms to Develop Medium Autonomous Tactical Logistics Platforms",
+      "sum": "Under Project Sustainment, the Army selected AM General, American Rheinmetall, Carnegie Robotics, HDT Robotics and Stratom to prototype automated battlefield logistics — 24/7 resupply in contested environments without exposing soldiers on high-risk routes; field testing with operational units planned from early 2027.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P7",
+      "desk": "US",
+      "url": "https://thedefensepost.com/2026/07/27/us-army-autonomous-platforms/",
+      "f": "verified",
+      "serial": "W-2",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "trade_press",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": null,
+      "unverifiedClaims": null,
+      "dateLastChecked": "2026-08-18"
     },
     {
       "date": "2026-07-27",
@@ -4306,7 +3818,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which residual gaps survive the baseline, and what trial questions do they define? Trial design should produce decision-relevant measurements (detection probability, classification accuracy, engagement success, leakage, cost per engagement, magazine expenditure, operator workload, integration latency).",
       "status": "active",
-      "materialChange": "Continued production-scale and operational evidence (Ukraine’s largest-yet drone attack on Moscow, a fourth NATO airspace shoot-down over Romania, and a new Boeing/RTX SM-3 production framework) reinforces the layered C-UAS / cost-exchange trend the 15 Sep G5 baseline is being built against; no change to the baseline-first direction."
+      "materialChange": "Combined Resolve exercise result (WSJ, 13 Aug): Ukrainian 412th Regiment drone operators repeatedly defeated a US armored brigade — direct evidence for the baseline's manoeuvre-force protection and static-vs-manoeuvre elements. Also: the Marine Corps is moving to a production-ready vehicle-mounted HPM swarm-defeat system (10 Aug), advancing the counter-swarm directed-energy layer from demonstration toward fielding."
     },
     {
       "id": "Q2",
@@ -4345,7 +3857,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which capability lines and design standards does the baseline implicate, and which exercise measurements will replace theoretical assumptions first?",
       "status": "active",
-      "materialChange": "New evidence that Russia is actively locating and striking (not just jamming) Ukrainian drone control points reinforces the fixed-C2 threat; no change to the 15 Sep baseline-first direction."
+      "materialChange": null
     },
     {
       "id": "Q3",
@@ -4377,7 +3889,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which specific Army design assumptions (C2 tempo, EW resilience, dispersal, deception) are most sensitive to the assessed adversary trajectory — a question for red-teaming, not procurement.",
       "status": "active",
-      "materialChange": "A first observed afloat deployment of China’s LY-1 shipborne laser (Type 071 amphibious ship, Scarborough Shoal) adds a fresh, PRC-specific directed-energy data point to the net-assessment; net assessment continues at watchlist tier pending a materially new threat class or capability leap."
+      "materialChange": null
     },
     {
       "id": "Q4",
@@ -4414,7 +3926,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which Army sustainment/inventory processes have the largest measured manpower burden, exposure or error rate? That inventory precedes any technology selection.",
       "status": "active",
-      "materialChange": "New evidence for W-2 (at-sea, shore-independent drone manufacturing aboard USS Essex) strengthens the contested-sustainment case; still awaiting a G5-framed Army requirement (W-2) and a process-owner-identified candidate process (W-7) before either converts to a decision."
+      "materialChange": "Three independent forces converged on the last-mile-sustainment question: the US Army funded Project Sustainment prototypes (five firms 27 Jul; TALUS award 10 Aug, field tests from early 2027); South Korea's Army commissioned a manpower-decline-driven automation study (ArmyTiger L, 12 Aug); Ukraine's UGV logistics remain fielded practice. The requirement framing this line holds for Army is now externally well-evidenced — the Army-side process baseline remains the missing piece."
     },
     {
       "id": "Q5",
@@ -4446,7 +3958,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which Army decision workflows (starting with the questions in this register) does the architecture currently enable, and which does it block?",
       "status": "active",
-      "materialChange": "Comparator systems (NGC2, War Data Platform) both show maturity caveats this edition ('ready but not optimised'; scrutiny over the integration approach) — a useful caution for the ADIO baseline, not yet Army-side evidence."
+      "materialChange": "The NGC2 comparator moved from division-scale validation to a declared 'ready to scale' decision (29 Jul, reported 3 Aug) — raising the timeliness value of the tasked ADIO architecture baseline (due 15 Sep) while changing nothing about its precondition status."
     },
     {
       "id": "Q6",
@@ -4483,7 +3995,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which Army stakeholders own each facet (authority, assurance, legal, CONOPS), per the S-1 stakeholder map — SIO frames; it does not determine policy.",
       "status": "active",
-      "materialChange": "New evidence on both threads: X-62 VISTA autonomous-intercept tests and a Tier-2 caution against full-autonomy narratives inform the S-1 framing paper; W-1 gains four new maritime-autonomy events (Ukraine's shadow-fleet campaign passing 218 vessels, the RN Dragon Rider trial, a Dutch ASW USV design phase, and an unconfirmed Yemen-coast USV attack). Neither thread's ownership or decision status changes."
+      "materialChange": null
     },
     {
       "id": "Q7",
@@ -4516,13 +4028,13 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Does the measured I-1 pilot justify scaling the decision-workflow model across the question register?",
       "status": "active",
-      "materialChange": "Israel’s ‘Digital Bat’ low-cost attack-drone tender and a reported IDF plan to build up to 100,000 attack drones a year extend the allied mass-production / vendor-ecosystem shift W-5 is tracking; no change to organising direction this cycle."
+      "materialChange": "The US Army abandoned its unified autonomy-software strategy for vendor-led, mission-specific autonomy (13 Aug) — an explicit acquisition-model change relevant to how any Army autonomy effort structures software ownership."
     }
   ],
   "metrics": {
-    "asOf": "2026-08-17",
+    "asOf": "2026-08-18",
     "note": "Decision-advantage metrics per DOCTRINE.md §21 — measured where practicable; information volume is not an outcome. Time-based metrics (signal-to-assessment, assessment-to-direction, decision-to-action) require timestamps captured across future editions and are not yet measurable.",
-    "provenanceTraceablePct": 94.9,
+    "provenanceTraceablePct": 95,
     "internalDataCoveragePct": 0,
     "internalDataCoverageNote": "0% — every thread currently rests on external evidence alone; internal baselines are tasked (G5 × 2 due 15 Sep 2026, ADIO due 15 Sep 2026) and this figure is the register's most important number to move.",
     "closedLoop": {
@@ -4530,6 +4042,6 @@ window.SIO_DATA = {
       "resultCaptured": 0,
       "note": "No senior direction has yet completed the direction → action → observed effect → updated assessment loop; decisionLog fields are in place to capture it."
     },
-    "materialChangesThisEdition": 3
+    "materialChangesThisEdition": 4
   }
 };
