@@ -6,6 +6,10 @@ window.SIO_DATA = {
   "changelog": [
     {
       "date": "2026-08-22",
+      "note": "Recoded branch code ADIO -> ASB4 (AS Br 4, the reprofiled data/digitalisation/AI branch; lineage ADO -> ADIO -> ASB4) across all operative fields: W-3 ownership and tasking (the architecture baseline due 15 Sep 2026 is now tasked to ASB4), W-5 supporting stakeholders, Q5 register fields and metrics notes. Historical changelog entries retain the codes in use at the time. Dashboard owner map, explainer glossary, GENERATORPROMPT branch-code rule and DOCTRINE.md role descriptions updated to match."
+    },
+    {
+      "date": "2026-08-22",
       "note": "Intake supplement (17-19 Aug alerts batch): 26 dragnet hits triaged; 3 carried (the rest were duplicates of already-tracked items — e.g. the Marines HPM story, nine syndications of one Japan-Australia announcement — or noise). All three are evidence-base updates; no new material changes (Q4/Q5 remain this edition's flagged changes). W-5: Japan and Australia agreed a decade-long arrangement for Japanese missile tests (incl. hypersonics) on Australian ranges plus co-development of the 'Boobook' counter-threat laser with a ~$50M Mitsubishi manufacturing facility in Sydney — a concrete regional co-development/test-range partnership precedent. W-1: Taiwan's NCSIST signed an MoU with US startup Vatn Systems for AI-enabled C2, S12 autonomous underwater vehicles and Taiwan-based assembly — low-cost modular undersea autonomy arriving in Army's region; and Ukraine's Unmanned Systems Forces reported striking 12 more Russian shadow-fleet vessels in early August (Operation MoLoChKa total: 218 vessels since 6 Jul) — unmanned systems executing a sustained maritime blockade at campaign scale. Also this date: added scripts/ingest-alerts.js + scripts/alerts-feeds.json — programmatic Google Alerts RSS ingest (fetch, unwrap redirects, dedupe, pre-tag by question) replacing hand-copied alert digests; dragnet docs updated."
     },
     {
@@ -837,16 +841,16 @@ window.SIO_DATA = {
         "III-2"
       ],
       "dlabel": "Army data layer — foundational dependency",
-      "suspense": "ADIO baseline due 15 Sep 2026",
+      "suspense": "ASB4 baseline due 15 Sep 2026",
       "latestDevelopment": "A GAO report (reported 20 Aug) warns information gaps could hinder the Army's NGC2 modernisation planning, and notes NGC2 hardware suffered in extreme heat at the Mojave capstone — an independent watchdog assessment landing three weeks after Army leaders declared the programme 'ready to scale'.",
-      "changeFromPrevious": "Material since 18 Aug review: the comparator picture is now two-sided — a service 'ready to scale' declaration against a GAO warning of information gaps and environmental hardware issues. For the pending SIO/G5 comparison this is a useful discipline: NGC2 lessons carry both a scaling pattern worth studying and documented risks (planning-information gaps, environmental qualification) to weigh when judging which patterns are relevant vs inappropriate. The ADIO baseline precondition (due 15 Sep) is unchanged.",
+      "changeFromPrevious": "Material since 18 Aug review: the comparator picture is now two-sided — a service 'ready to scale' declaration against a GAO warning of information gaps and environmental hardware issues. For the pending SIO/G5 comparison this is a useful discipline: NGC2 lessons carry both a scaling pattern worth studying and documented risks (planning-information gaps, environmental qualification) to weigh when judging which patterns are relevant vs inappropriate. The ASB4 baseline precondition (due 15 Sep) is unchanged.",
       "armyRelevance": "Foundational — every persistent question in the register depends on whether Army can discover, integrate, govern and expose trusted data to the people and applications that need it, at the required classification, echelon and tempo. This is not an ordinary technology watch item, and it is not 'should Army copy NGC2' — NGC2/Maven are comparators; the starting point is the Singapore Army's operational requirements and existing architecture. This pipeline holds no verified information on the internal systems concerned and will not fabricate the comparison.",
-      "escalationTrigger": "Escalate once the ADIO baseline (due 15 Sep 2026) is received and the SIO/G5 comparison identifies what data exists, where it resides, who owns it, whether it is reusable, how it is exposed, whether it moves across required environments, where duplication exists, what blocks decision workflows, and which NGC2/Maven patterns are relevant vs inappropriate for the Singapore Army.",
-      "note": "CSIO critique (6 Aug 2026) directed this entry be reframed against existing Army data architecture rather than approved as a generic NGC2 study. That reframe requires internal Army-architecture facts not available to this open-source pipeline. Per COS-GS vetting (8 Aug 2026), the precondition is converted into a defined internal tasking: ADIO to provide the current Army Data Store, ENCLAVE, STRONGWATCH and OUTREACH/SYNTEX architecture baseline by 15 Sep 2026 for comparison against relevant NGC2/common-data-layer lessons.",
-      "decision": "Foundational dependency (Q5) — ADIO architecture baseline tasked (due 15 Sep 2026); comparison focuses on the Army decision workflows the data architecture must enable, not technology imitation.",
+      "escalationTrigger": "Escalate once the ASB4 baseline (due 15 Sep 2026) is received and the SIO/G5 comparison identifies what data exists, where it resides, who owns it, whether it is reusable, how it is exposed, whether it moves across required environments, where duplication exists, what blocks decision workflows, and which NGC2/Maven patterns are relevant vs inappropriate for the Singapore Army.",
+      "note": "CSIO critique (6 Aug 2026) directed this entry be reframed against existing Army data architecture rather than approved as a generic NGC2 study. That reframe requires internal Army-architecture facts not available to this open-source pipeline. Per COS-GS vetting (8 Aug 2026), the precondition is converted into a defined internal tasking: ASB4 to provide the current Army Data Store, ENCLAVE, STRONGWATCH and OUTREACH/SYNTEX architecture baseline by 15 Sep 2026 for comparison against relevant NGC2/common-data-layer lessons.",
+      "decision": "Foundational dependency (Q5) — ASB4 architecture baseline tasked (due 15 Sep 2026); comparison focuses on the Army decision workflows the data architecture must enable, not technology imitation.",
       "signal": "[Operationally evaluating] The US Army's Next Generation Command and Control (NGC2) programme moved from prototyping toward delivery: a named common-data-layer baseline (Anduril lead; Palantir edge-to-cloud data mesh) underwent division-scale force-on-force validation at Project Convergence Capstone 6 (July; Army.mil/DefenseScoop, 20-22 Jun). [Reported — single source, not independently corroborated] Project Maven is reported to be transmitting near-fully machine-generated intelligence to commanders using large language models (CSIS, 15 Jun). [Reported] At DoDIIS Worldwide (11 Aug), US military intelligence leaders identified data access within the right security enclaves — not model development — as the biggest obstacle to battlefield AI (GovCIO, 12 Aug): independent corroboration of the data-layer-as-bottleneck thesis this foundational line rests on. [Fielding-track] Army leaders declared NGC2 ready to scale at PC-C6's close (29 Jul), concluding 10 months of prototyping; rollout begins with I Corps headquarters and downtrace units (army.mil, 3 Aug). [Reported — watchdog] GAO warns information gaps could hinder Army NGC2 modernisation plans, and NGC2 hardware suffered in extreme Mojave heat, even as leaders call the capstone a success and prepare wider fielding (DefenseScoop, 20 Aug).",
       "sowhat": "The open-source evidence describes a US programme's maturity, not an Army-specific integration decision. As a foundational enabler, the line is assessed by whether Army's data architecture enables persistent decision workflows — including the workflows this register itself requires.",
-      "action": "Tasking: ADIO to provide the current Army Data Store, ENCLAVE, STRONGWATCH and OUTREACH/SYNTEX architecture baseline by 15 Sep 2026, for comparison against relevant NGC2/common-data-layer lessons. Once the baseline is available, SIO/G5 determine whether a genuine force-development gap or opportunity exists.",
+      "action": "Tasking: ASB4 to provide the current Army Data Store, ENCLAVE, STRONGWATCH and OUTREACH/SYNTEX architecture baseline by 15 Sep 2026, for comparison against relevant NGC2/common-data-layer lessons. Once the baseline is available, SIO/G5 determine whether a genuine force-development gap or opportunity exists.",
       "src": [
         {
           "out": "The Army (army.mil)",
@@ -894,8 +898,8 @@ window.SIO_DATA = {
         }
       ],
       "insightSponsor": "SIO",
-      "fdLead": "G5 — determination pending ADIO baseline",
-      "functionalLead": "ADIO",
+      "fdLead": "G5 — determination pending ASB4 baseline",
+      "functionalLead": "ASB4",
       "question": "Q5",
       "decisionLog": []
     },
@@ -1080,7 +1084,7 @@ window.SIO_DATA = {
       ],
       "dom": "solution",
       "supporting": [
-        "ADIO",
+        "ASB4",
         "ASB3"
       ],
       "desk": "US",
@@ -4183,8 +4187,8 @@ window.SIO_DATA = {
       "title": "Army Data for Decision Advantage",
       "category": "foundational",
       "question": "Can Army discover, integrate, govern and exploit the data needed for operational and force-development decisions at the required echelon, classification and tempo?",
-      "decisionHorizon": "Foundational: every other question's decision workflow depends on it; the ADIO baseline (due 15 Sep 2026) starts the internal assessment.",
-      "armyBaseline": "Tasked, not yet held: ADIO to provide the current Army Data Store, ENCLAVE, STRONGWATCH and OUTREACH/SYNTEX architecture baseline by 15 Sep 2026. The subsequent SIO/G5 comparison assesses what data exists, where it resides, who owns it, whether it is reusable, how it is exposed, whether it moves across required environments, where duplication exists, and what prevents decision workflows from accessing it.",
+      "decisionHorizon": "Foundational: every other question's decision workflow depends on it; the ASB4 baseline (due 15 Sep 2026) starts the internal assessment.",
+      "armyBaseline": "Tasked, not yet held: ASB4 to provide the current Army Data Store, ENCLAVE, STRONGWATCH and OUTREACH/SYNTEX architecture baseline by 15 Sep 2026. The subsequent SIO/G5 comparison assesses what data exists, where it resides, who owns it, whether it is reusable, how it is exposed, whether it moves across required environments, where duplication exists, and what prevents decision workflows from accessing it.",
       "externalChange": "US NGC2 common-data-layer baseline validated at division scale (Project Convergence Capstone 6); Maven reported delivering near-fully machine-generated intelligence. These are comparators for pattern relevance — not templates; the starting point is the Singapore Army's operational requirements and existing architecture.",
       "delta": "Whether Army's data architecture enables or blocks persistent decision workflows — which NGC2/Maven patterns are relevant, and which are inappropriate for Singapore Army scale, security constraints and structure.",
       "confidence": {
@@ -4194,7 +4198,7 @@ window.SIO_DATA = {
       "triggers": [
         {
           "type": "internal",
-          "trigger": "The ADIO baseline (due 15 Sep 2026) is received; SIO/G5 comparison identifies a genuine force-development gap or opportunity."
+          "trigger": "The ASB4 baseline (due 15 Sep 2026) is received; SIO/G5 comparison identifies a genuine force-development gap or opportunity."
         },
         {
           "type": "programme",
@@ -4208,7 +4212,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which Army decision workflows (starting with the questions in this register) does the architecture currently enable, and which does it block?",
       "status": "active",
-      "materialChange": "GAO warns information gaps could hinder NGC2 modernisation plans and notes hardware failures in extreme heat (20 Aug) — an independent counterweight to the 'ready to scale' declaration, sharpening which NGC2 patterns the pending ADIO-baseline comparison should treat as proven vs at-risk."
+      "materialChange": "GAO warns information gaps could hinder NGC2 modernisation plans and notes hardware failures in extreme heat (20 Aug) — an independent counterweight to the 'ready to scale' declaration, sharpening which NGC2 patterns the pending ASB4-baseline comparison should treat as proven vs at-risk."
     },
     {
       "id": "Q6",
@@ -4286,7 +4290,7 @@ window.SIO_DATA = {
     "note": "Decision-advantage metrics per DOCTRINE.md §21 — measured where practicable; information volume is not an outcome. Time-based metrics (signal-to-assessment, assessment-to-direction, decision-to-action) require timestamps captured across future editions and are not yet measurable.",
     "provenanceTraceablePct": 95,
     "internalDataCoveragePct": 0,
-    "internalDataCoverageNote": "0% — every thread currently rests on external evidence alone; internal baselines are tasked (G5 × 2 due 15 Sep 2026, ADIO due 15 Sep 2026) and this figure is the register's most important number to move.",
+    "internalDataCoverageNote": "0% — every thread currently rests on external evidence alone; internal baselines are tasked (G5 × 2 due 15 Sep 2026, ASB4 due 15 Sep 2026) and this figure is the register's most important number to move.",
     "closedLoop": {
       "directed": 0,
       "resultCaptured": 0,
