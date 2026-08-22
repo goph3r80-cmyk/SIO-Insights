@@ -1,9 +1,13 @@
 /* SIO Insights edition data — generated. Replace to refresh. */
 window.SIO_DATA = {
   "edition": "Aug 2026",
-  "feedAsOf": "2026-08-18",
+  "feedAsOf": "2026-08-22",
   "productVersion": "3.0",
   "changelog": [
+    {
+      "date": "2026-08-22",
+      "note": "Edition refresh: tiered-source sweep 18-22 Aug. Material changes (2): Q4 — the US Army awarded six prototype OTAs under the Infantry Last Tactical Mile (ILTM) programme (Maren-Go, Overland AI, Forterra, Hendrick's Motorsports, American Rheinmetall, HDT; four UGV prototypes each; operational assessment with Army units early 2027) for exactly the last-tactical-mile resupply/casevac problem W-2 holds — alongside the separate American Rheinmetall hybrid logistics UGV development (5 Aug); Q5 — a GAO report (20 Aug) warns information gaps could hinder the Army's NGC2 modernisation plans and notes NGC2 hardware suffered in extreme heat at the Mojave capstone — an independent watchdog assessment tempering the 'ready to scale' declaration the comparator carried into this register last edition. Evidence-base updates without escalation: D-1 adds NORTHCOM's warning (SMD Symposium, 13 Aug) that some US military installations lack both sensors and effectors against drone swarms alongside a ~$21B counter-drone/drone budget request — protection-scenario framing for the C-UAS baseline; W-5 adds SOCOM's plan to test mission-autonomy software under UxSAI with SOFWERX (18 Aug) as a further autonomy-software acquisition-pattern data point. Q1, Q2, Q3, Q6, Q7 correctly show no material change since the 18 Aug review. feedAsOf 2026-08-22; metrics recomputed."
+    },
     {
       "date": "2026-08-18",
       "note": "Edition refresh: tiered-source sweep to 18 Aug (complementing the 17 Aug dragnet intake — five substantive items the keyword alerts missed). Material changes: Q4 — US Army Project Sustainment awarded the TALUS autonomous-distribution prototype (Stratom team, 10 Aug; five-firm Medium Autonomous Tactical Logistics selection 27 Jul; field testing with a Transformation in Contact unit from early 2027) — a funded peer programme squarely on the last-mile-sustainment question; Q5 — US Army declared NGC2 'ready to scale' at the close of Project Convergence-Capstone 6 (10-month prototyping concluded; I Corps next) — the comparator moved from operational evaluation to scaling, raising the value of the tasked ADIO baseline without changing its precondition status; Q7 — the US Army abandoned its unified autonomy-software strategy in favour of vendor-led, mission-specific autonomy (Breaking Defense, 13 Aug) — an explicit acquisition-model change on the comparator line; Q1 — appended: the Marine Corps is moving to a production-ready vehicle-mounted high-power-microwave swarm-defeat system (Epirus HAVOC, 10 Aug), advancing the counter-swarm DE layer's maturity. Evidence-base update without escalation: W-4 adds a PLA UAV-cued PHL-03 maritime-strike and rapid-displacement drill (China Military Online footage, 6 Aug — state-linked, corroborate) extending the sensor-to-shooter compression pattern. feedAsOf 2026-08-18; metrics recomputed."
@@ -77,7 +81,7 @@ window.SIO_DATA = {
       "deliverable": "Army C-UAS force-development baseline covering: priority UAS threat classes; operational scenarios and assets/echelons requiring protection; existing and planned Army capabilities; residual capability gaps; static versus manoeuvre requirements; kinetic and non-kinetic defeat options; cost-exchange considerations; magazine-depth considerations; integration and C2 requirements; and candidate areas requiring trials",
       "deliverableDate": "2026-09-15",
       "decision": "Endorse affordable layered counter-UAS as an Army force-development priority; direct G5 (ASB2 as functional lead) to deliver the Army C-UAS force-development baseline by 15 Sep 2026. Trial proposal only after the baseline.",
-      "signal": "Evidence is organised by the operational effect or threat class each programme addresses — these programmes collectively demonstrate the layered-defence need and the changing cost exchange, but they do not all solve the same Army threat class. — DEFEAT OF SMALL UAS BY SOFT-KILL (RF/EW): [Fielded] JIATF-401 converted a border-tested evaluation into a three-year, up-to-$500M IDIQ for CACI's SkyValor non-kinetic detect-and-defeat system (RF jamming plus net-capture) after a two-day Yuma demonstration (DefenseScoop, 31 Jul); AeroVironment's Titan task order (~$80M) is fielding AI-enabled RF detect-and-defeat at Air Force bases; the Marine Corps is integrating UGVs into its MADIS counter-drone system (Army Recognition, 27 Jun). — DEFEAT OF SMALL / ONE-WAY-ATTACK UAS BY LOW-COST KINETIC INTERCEPTOR: [Reported] the Army's Next Generation Counter-sUAS Missile RFI (4 Aug) seeks a purpose-built sub-$150K interceptor (responses due 20 Aug); [Combat-proven — single event] Ukraine's Griffen interceptor drone downed a Shahed one-way-attack drone for the first time (Militarnyi, 7 Jul). — CRUISE/BALLISTIC-CLASS AIR DEFENCE AND THE COST-EXCHANGE / MAGAZINE-DEPTH TREND (context for the affordability trade, not small-UAS defeat): [Fielded] the $58.6B FY26-32 Patriot multiyear (30 Jul) and $3B Patriot/THAAD component framework (3 Aug) triple PAC-3 MSE production; [Reported] Lockheed's sub-$2M PAC-3 ACE interceptor (Farnborough, 20 Jul) and the 10-nation coalition behind Ukraine's ~$700K Freyja/FP-7.X (Paris, 14 Jul) hedge against exquisite-interceptor cost; DIU's Ground-Based Affordable Mass call (27 Jul) applies the same cost logic to offensive fires. — COUNTER-SWARM DIRECTED ENERGY: [Demonstrated] the Pentagon's Joint Laser Weapon System programme (Lockheed Aculight, nLIGHT — up to $847M ceiling) is scaling 150kW counter-drone lasers toward 300-500kW cruise-missile defence, and Germany has commissioned a naval laser targeted for fielding by 2029 after 28,000nm of at-sea demonstration. [Reported — state-linked, corroborate] China is showcasing and exporting a man-portable-to-naval laser C-UAS line (Harbin Xinguang 'Lijian', CPMIEC LW-30, Novasky NI-L3K) to Gulf and SE Asian markets — vendor/state claims not independently verified at declared performance levels. — SWARM-CONTROL AUTONOMY LAYER: [Reported] AeroVironment/Applied Intuition's Acuity autonomy software (29 Jul) is moving single-operator, multi-drone swarm control from demonstrator toward the Army Launched Effects programme of record. — ALLIED PRODUCTION MASS AND INTEROPERABILITY: [Reported] NATO's $40B+ five-year counter-drone package (7 Jul) and the €11B EU-Ukraine Drone Deal (15 Jul) fund allied counter-drone mass production and interoperability standards at alliance scale, while Ukraine's drone campaign (1M+ targets struck since January; deep strikes into Russia) continues to define the threat's operational envelope. — THREAT ENVELOPE VS MANOEUVRE FORCES: [Demonstrated — exercise] At Combined Resolve (Hohenfels, Apr-May; WSJ via Meduza, 13 Aug), Ukraine's 412th Unmanned Systems Regiment repeatedly 'destroyed' a ~3,500-strong US armored brigade with recon-cued FPV/bomber drones; US outcomes improved over two weeks through dispersal, concealment, EW and counter-drone systems — direct evidence for the baseline's static-vs-manoeuvre and protected-echelon elements. — DE TRANSITION HURDLES: [Reported] the Pentagon's critical-technologies office wants smaller/lighter/more-efficient DE for airborne and expeditionary use and routine realistic field testing with operating units (Aviation Week, 13 Aug) — naming integration and T&E, not raw power, as the fielding constraints. [Reported — production-track] The Marine Corps is moving to a vehicle-mounted, production-ready Epirus HAVOC high-power-microwave swarm-defeat system (Military Times, 10 Aug) — HPM soft-kill crossing from demonstration toward fielding, notable for effectiveness against fiber-optic-guided drones that defeat RF jamming.",
+      "signal": "Evidence is organised by the operational effect or threat class each programme addresses — these programmes collectively demonstrate the layered-defence need and the changing cost exchange, but they do not all solve the same Army threat class. — DEFEAT OF SMALL UAS BY SOFT-KILL (RF/EW): [Fielded] JIATF-401 converted a border-tested evaluation into a three-year, up-to-$500M IDIQ for CACI's SkyValor non-kinetic detect-and-defeat system (RF jamming plus net-capture) after a two-day Yuma demonstration (DefenseScoop, 31 Jul); AeroVironment's Titan task order (~$80M) is fielding AI-enabled RF detect-and-defeat at Air Force bases; the Marine Corps is integrating UGVs into its MADIS counter-drone system (Army Recognition, 27 Jun). — DEFEAT OF SMALL / ONE-WAY-ATTACK UAS BY LOW-COST KINETIC INTERCEPTOR: [Reported] the Army's Next Generation Counter-sUAS Missile RFI (4 Aug) seeks a purpose-built sub-$150K interceptor (responses due 20 Aug); [Combat-proven — single event] Ukraine's Griffen interceptor drone downed a Shahed one-way-attack drone for the first time (Militarnyi, 7 Jul). — CRUISE/BALLISTIC-CLASS AIR DEFENCE AND THE COST-EXCHANGE / MAGAZINE-DEPTH TREND (context for the affordability trade, not small-UAS defeat): [Fielded] the $58.6B FY26-32 Patriot multiyear (30 Jul) and $3B Patriot/THAAD component framework (3 Aug) triple PAC-3 MSE production; [Reported] Lockheed's sub-$2M PAC-3 ACE interceptor (Farnborough, 20 Jul) and the 10-nation coalition behind Ukraine's ~$700K Freyja/FP-7.X (Paris, 14 Jul) hedge against exquisite-interceptor cost; DIU's Ground-Based Affordable Mass call (27 Jul) applies the same cost logic to offensive fires. — COUNTER-SWARM DIRECTED ENERGY: [Demonstrated] the Pentagon's Joint Laser Weapon System programme (Lockheed Aculight, nLIGHT — up to $847M ceiling) is scaling 150kW counter-drone lasers toward 300-500kW cruise-missile defence, and Germany has commissioned a naval laser targeted for fielding by 2029 after 28,000nm of at-sea demonstration. [Reported — state-linked, corroborate] China is showcasing and exporting a man-portable-to-naval laser C-UAS line (Harbin Xinguang 'Lijian', CPMIEC LW-30, Novasky NI-L3K) to Gulf and SE Asian markets — vendor/state claims not independently verified at declared performance levels. — SWARM-CONTROL AUTONOMY LAYER: [Reported] AeroVironment/Applied Intuition's Acuity autonomy software (29 Jul) is moving single-operator, multi-drone swarm control from demonstrator toward the Army Launched Effects programme of record. — ALLIED PRODUCTION MASS AND INTEROPERABILITY: [Reported] NATO's $40B+ five-year counter-drone package (7 Jul) and the €11B EU-Ukraine Drone Deal (15 Jul) fund allied counter-drone mass production and interoperability standards at alliance scale, while Ukraine's drone campaign (1M+ targets struck since January; deep strikes into Russia) continues to define the threat's operational envelope. — THREAT ENVELOPE VS MANOEUVRE FORCES: [Demonstrated — exercise] At Combined Resolve (Hohenfels, Apr-May; WSJ via Meduza, 13 Aug), Ukraine's 412th Unmanned Systems Regiment repeatedly 'destroyed' a ~3,500-strong US armored brigade with recon-cued FPV/bomber drones; US outcomes improved over two weeks through dispersal, concealment, EW and counter-drone systems — direct evidence for the baseline's static-vs-manoeuvre and protected-echelon elements. — DE TRANSITION HURDLES: [Reported] the Pentagon's critical-technologies office wants smaller/lighter/more-efficient DE for airborne and expeditionary use and routine realistic field testing with operating units (Aviation Week, 13 Aug) — naming integration and T&E, not raw power, as the fielding constraints. [Reported — production-track] The Marine Corps is moving to a vehicle-mounted, production-ready Epirus HAVOC high-power-microwave swarm-defeat system (Military Times, 10 Aug) — HPM soft-kill crossing from demonstration toward fielding, notable for effectiveness against fiber-optic-guided drones that defeat RF jamming. — PROTECTION SCENARIOS (fixed sites): [Reported] NORTHCOM's deputy commander warned (SMD Symposium, 13 Aug) that some US military installations have neither the sensors to detect an incoming drone swarm nor the effectors to stop it, against a ~$21B Pentagon request spanning EW, kinetic interceptors, lasers and HPM — evidence that even well-resourced forces treat fixed-site protection as an open gap, reinforcing the baseline's protected-assets/echelons element.",
       "sowhat": "Every element of a layered C-UAS/sense-strike architecture (sensing, soft-kill, directed energy, kinetic interceptors) is moving from demonstration to production somewhere in the alliance within the same 30-day window, at costs and quantities well characterised in open reporting. Treated as one force-development question, this is the most evidenced and most immediately actionable capability issue this edition — but the external evidence establishes the threat and the cost-exchange trend, not Army's internal baseline. The G5-led baseline step is what converts it from an external signal into a decision-grade confirmed gap.",
       "action": "G5 force-development element to produce the Army C-UAS force-development baseline by 15 Sep 2026, with ASB2 leading the C-UAS/Sense-Strike functional analysis and SIO maintaining the external evidence base as insight sponsor.",
       "src": [
@@ -339,6 +343,14 @@ window.SIO_DATA = {
           "ttl": "Marine Corps to get 'production-ready' microwave drone swarm killer",
           "url": "https://www.militarytimes.com/news/your-military/2026/08/10/marine-corps-to-get-production-ready-microwave-drone-swarm-killer/",
           "f": "verified"
+        },
+        {
+          "out": "Army Recognition",
+          "date": "14 Aug 2026",
+          "ttl": "US Northern Command Warns Drone Defense Gaps Leave Military Bases Exposed to Domestic Swarm Attacks",
+          "url": "https://www.armyrecognition.com/news/army-news/2026/us-northern-command-warns-drone-defense-gaps-leave-military-bases-exposed-to-domestic-swarm-attacks",
+          "f": "verified",
+          "note": "Remarks delivered 13 Aug at the Space and Missile Defense Symposium; article date approximate."
         }
       ],
       "insightSponsor": "SIO",
@@ -628,12 +640,12 @@ window.SIO_DATA = {
       ],
       "dlabel": "Uncrewed last-mile sustainment under contested conditions",
       "suspense": "Trigger-based — see escalationTrigger",
-      "latestDevelopment": "US Army Project Sustainment moved to award: a Stratom-led team won the TALUS autonomous-distribution prototype (10 Aug), following the five-firm Medium Autonomous Tactical Logistics selection (27 Jul) — automated battlefield resupply to keep soldiers off high-risk routes, delivering toward a Transformation in Contact CTC rotation with field testing from early 2027.",
-      "changeFromPrevious": "Material since last review: the last-mile-sustainment question now has a funded, schedule-bound peer programme (Project Sustainment/TALUS) alongside Ukraine's fielded practice and the ROK Army's manpower-driven study — three independent forces converging on the same requirement framing this line holds for Army. No Army (Singapore) trigger is met; the comparator evidence continues to accumulate.",
+      "latestDevelopment": "The US Army awarded six prototype OTAs under the Infantry Last Tactical Mile programme (announced ~12 Aug): autonomous UGVs for resupply and casualty evacuation between rear support areas and the FLOT, four prototypes per vendor, operational assessment with Army units early 2027 — in parallel with the TALUS autonomous-distribution award (10 Aug) and an American Rheinmetall hybrid logistics UGV development (5 Aug; ~500-mile hybrid chassis, 350kW exportable power).",
+      "changeFromPrevious": "Material since 18 Aug review: the ILTM award turns the US comparator from one programme into a portfolio — Project Sustainment (distribution), ILTM (last tactical mile, incl. casevac) and hybrid-power development are now separately funded lines converging on the same contested-resupply problem, all pointed at operational assessment in early 2027. No Army (Singapore) trigger met; comparator evidence continues to accumulate.",
       "armyRelevance": "Direct — EW-resilient UGV control, autonomous ground resupply and heavy-lift aerial resupply map onto Army's contested-logistics and forward-sustainment problem. G5 force development should frame the Army requirement, with functional organisations contributing according to their responsibilities; no Army-specific trial is yet underway.",
       "escalationTrigger": "Escalate if G5 frames an Army last-mile-sustainment requirement or a sustainment-autonomy trial is sponsored. DARPA Lift Challenge results (due after 9 Aug) affect only the heavy-lift / aerial-resupply element — they are not a trigger for the wider ground-autonomy portfolio.",
       "decision": "Hold at watchlist — narrowed to uncrewed last-mile sustainment under contested conditions; fixed-process automation split to W-7.",
-      "signal": "[Fielded — adversary/partner] Ground robots face intense EW pressure — Russian wide-area GNSS jammers degrade UGV datalinks and navigation — and Ukraine has fielded a control system (Droid Box, cleared 26 Jun) that detects positioning anomalies and applies countermeasures under jamming/spoofing (Militarnyi/Modern War Institute). [Fielded] Ukraine's Protector UGV is fielded for frontline logistics, against a stated goal of 25,000 ground robotic systems by mid-2026 (Defense Express/United24 Media). [Reported→fielding] Overland AI won a Marine Corps production contract for autonomous ground vehicles (Breaking Defense, 29 Jun) — ground-resupply autonomy crossing into production. [Reported] DARPA's Lift Challenge (100+ teams, 2-9 Aug, $6.5M prizes) targets a 2:1 payload-to-weight ratio for 55lb-class drones lifting 110lb payloads (Military Times, 30 Jul) — the aerial-resupply element of this line. [Reported] DARPA's Rads to Watts programme (7 competing teams) is developing radiovoltaic cells for maintenance-free, multi-year power in soldier-worn, sensor and remote applications (Breaking Defense, 29 Jul) — an enabling-power signal for sustainment autonomy. [Reported — contracted] The US Army's Project Sustainment selected five firms for Medium Autonomous Tactical Logistics platforms (27 Jul) and awarded the Stratom-led TALUS autonomous-distribution prototype (10 Aug) — 24/7 contested-environment resupply keeping soldiers off high-risk routes, field testing with operational units from early 2027.",
+      "signal": "[Fielded — adversary/partner] Ground robots face intense EW pressure — Russian wide-area GNSS jammers degrade UGV datalinks and navigation — and Ukraine has fielded a control system (Droid Box, cleared 26 Jun) that detects positioning anomalies and applies countermeasures under jamming/spoofing (Militarnyi/Modern War Institute). [Fielded] Ukraine's Protector UGV is fielded for frontline logistics, against a stated goal of 25,000 ground robotic systems by mid-2026 (Defense Express/United24 Media). [Reported→fielding] Overland AI won a Marine Corps production contract for autonomous ground vehicles (Breaking Defense, 29 Jun) — ground-resupply autonomy crossing into production. [Reported] DARPA's Lift Challenge (100+ teams, 2-9 Aug, $6.5M prizes) targets a 2:1 payload-to-weight ratio for 55lb-class drones lifting 110lb payloads (Military Times, 30 Jul) — the aerial-resupply element of this line. [Reported] DARPA's Rads to Watts programme (7 competing teams) is developing radiovoltaic cells for maintenance-free, multi-year power in soldier-worn, sensor and remote applications (Breaking Defense, 29 Jul) — an enabling-power signal for sustainment autonomy. [Reported — contracted] The US Army's Project Sustainment selected five firms for Medium Autonomous Tactical Logistics platforms (27 Jul) and awarded the Stratom-led TALUS autonomous-distribution prototype (10 Aug) — 24/7 contested-environment resupply keeping soldiers off high-risk routes, field testing with operational units from early 2027. [Reported — contracted] The Army's Infantry Last Tactical Mile programme awarded prototype OTAs to six vendors for resupply/casevac UGVs across the rear-to-FLOT stretch (army.mil, ~12 Aug; four prototypes each, operational assessment early 2027); American Rheinmetall is separately developing hybrid-powered logistics UGVs with a ~500-mile, 350kW-exportable chassis (5 Aug) — addressing the endurance/power constraint on sustainment autonomy.",
       "sowhat": "Narrowed per CSIO direction from a broad ground-autonomy cluster to one force-development question: uncrewed / autonomous last-mile sustainment under contested conditions. Fixed logistics and inventory-process automation is tracked separately (W-7), and counter-UAS-related ground platforms sit under D-1's architecture question.",
       "action": "SIO to maintain the evidence base and report Lift Challenge results against the heavy-lift element only; on escalation, G5 frames the requirement with CESS and other functional stakeholders contributing according to their responsibilities.",
       "src": [
@@ -700,6 +712,21 @@ window.SIO_DATA = {
           "url": "https://www.manilatimes.net/2026/08/10/tmt-newswire/globenewswire/stratoms-talus-team-selected-to-advance-us-army-project-sustainment/2402161",
           "f": "verified",
           "note": "Vendor announcement wire; corroborated by Defense Daily and The Robot Report coverage."
+        },
+        {
+          "out": "The Army (army.mil)",
+          "date": "12 Aug 2026",
+          "ttl": "U.S. Army announces vendors for Infantry Last Tactical Mile Operations",
+          "url": "https://www.army.mil/article/294539/u_s_army_announces_vendors_for_infantry_last_tactical_mile_operations",
+          "f": "verified",
+          "note": "Official announcement; corroborated by Breaking Defense, Defense Daily, The Defense Post and Soldier Systems. Date approximate (11-14 Aug window)."
+        },
+        {
+          "out": "The Defense Post",
+          "date": "5 Aug 2026",
+          "ttl": "US Army Taps Rheinmetall to Build Hybrid Logistics UGVs",
+          "url": "https://thedefensepost.com/2026/08/05/us-hybrid-logistics-ugv/",
+          "f": "verified"
         }
       ],
       "insightSponsor": "SIO",
@@ -791,13 +818,13 @@ window.SIO_DATA = {
       ],
       "dlabel": "Army data layer — foundational dependency",
       "suspense": "ADIO baseline due 15 Sep 2026",
-      "latestDevelopment": "US Army leaders declared NGC2 'ready to scale' at the close of Project Convergence-Capstone 6 (29 Jul; army.mil, 3 Aug): the 10-month prototyping phase concluded and gradual force-wide rollout begins, I Corps next, on the Anduril-led common data layer with Palantir edge-to-cloud data mesh.",
-      "changeFromPrevious": "Comparator maturity moved since last review: NGC2 advanced from division-scale operational validation to a declared scaling decision. This raises the timeliness value of the tasked ADIO baseline (due 15 Sep 2026) — the comparison is now against a scaling programme, not a prototype — but changes nothing about the precondition: no Army-side assessment is possible until the internal architecture baseline arrives.",
+      "latestDevelopment": "A GAO report (reported 20 Aug) warns information gaps could hinder the Army's NGC2 modernisation planning, and notes NGC2 hardware suffered in extreme heat at the Mojave capstone — an independent watchdog assessment landing three weeks after Army leaders declared the programme 'ready to scale'.",
+      "changeFromPrevious": "Material since 18 Aug review: the comparator picture is now two-sided — a service 'ready to scale' declaration against a GAO warning of information gaps and environmental hardware issues. For the pending SIO/G5 comparison this is a useful discipline: NGC2 lessons carry both a scaling pattern worth studying and documented risks (planning-information gaps, environmental qualification) to weigh when judging which patterns are relevant vs inappropriate. The ADIO baseline precondition (due 15 Sep) is unchanged.",
       "armyRelevance": "Foundational — every persistent question in the register depends on whether Army can discover, integrate, govern and expose trusted data to the people and applications that need it, at the required classification, echelon and tempo. This is not an ordinary technology watch item, and it is not 'should Army copy NGC2' — NGC2/Maven are comparators; the starting point is the Singapore Army's operational requirements and existing architecture. This pipeline holds no verified information on the internal systems concerned and will not fabricate the comparison.",
       "escalationTrigger": "Escalate once the ADIO baseline (due 15 Sep 2026) is received and the SIO/G5 comparison identifies what data exists, where it resides, who owns it, whether it is reusable, how it is exposed, whether it moves across required environments, where duplication exists, what blocks decision workflows, and which NGC2/Maven patterns are relevant vs inappropriate for the Singapore Army.",
       "note": "CSIO critique (6 Aug 2026) directed this entry be reframed against existing Army data architecture rather than approved as a generic NGC2 study. That reframe requires internal Army-architecture facts not available to this open-source pipeline. Per COS-GS vetting (8 Aug 2026), the precondition is converted into a defined internal tasking: ADIO to provide the current Army Data Store, ENCLAVE, STRONGWATCH and OUTREACH/SYNTEX architecture baseline by 15 Sep 2026 for comparison against relevant NGC2/common-data-layer lessons.",
       "decision": "Foundational dependency (Q5) — ADIO architecture baseline tasked (due 15 Sep 2026); comparison focuses on the Army decision workflows the data architecture must enable, not technology imitation.",
-      "signal": "[Operationally evaluating] The US Army's Next Generation Command and Control (NGC2) programme moved from prototyping toward delivery: a named common-data-layer baseline (Anduril lead; Palantir edge-to-cloud data mesh) underwent division-scale force-on-force validation at Project Convergence Capstone 6 (July; Army.mil/DefenseScoop, 20-22 Jun). [Reported — single source, not independently corroborated] Project Maven is reported to be transmitting near-fully machine-generated intelligence to commanders using large language models (CSIS, 15 Jun). [Reported] At DoDIIS Worldwide (11 Aug), US military intelligence leaders identified data access within the right security enclaves — not model development — as the biggest obstacle to battlefield AI (GovCIO, 12 Aug): independent corroboration of the data-layer-as-bottleneck thesis this foundational line rests on. [Fielding-track] Army leaders declared NGC2 ready to scale at PC-C6's close (29 Jul), concluding 10 months of prototyping; rollout begins with I Corps headquarters and downtrace units (army.mil, 3 Aug).",
+      "signal": "[Operationally evaluating] The US Army's Next Generation Command and Control (NGC2) programme moved from prototyping toward delivery: a named common-data-layer baseline (Anduril lead; Palantir edge-to-cloud data mesh) underwent division-scale force-on-force validation at Project Convergence Capstone 6 (July; Army.mil/DefenseScoop, 20-22 Jun). [Reported — single source, not independently corroborated] Project Maven is reported to be transmitting near-fully machine-generated intelligence to commanders using large language models (CSIS, 15 Jun). [Reported] At DoDIIS Worldwide (11 Aug), US military intelligence leaders identified data access within the right security enclaves — not model development — as the biggest obstacle to battlefield AI (GovCIO, 12 Aug): independent corroboration of the data-layer-as-bottleneck thesis this foundational line rests on. [Fielding-track] Army leaders declared NGC2 ready to scale at PC-C6's close (29 Jul), concluding 10 months of prototyping; rollout begins with I Corps headquarters and downtrace units (army.mil, 3 Aug). [Reported — watchdog] GAO warns information gaps could hinder Army NGC2 modernisation plans, and NGC2 hardware suffered in extreme Mojave heat, even as leaders call the capstone a success and prepare wider fielding (DefenseScoop, 20 Aug).",
       "sowhat": "The open-source evidence describes a US programme's maturity, not an Army-specific integration decision. As a foundational enabler, the line is assessed by whether Army's data architecture enables persistent decision workflows — including the workflows this register itself requires.",
       "action": "Tasking: ADIO to provide the current Army Data Store, ENCLAVE, STRONGWATCH and OUTREACH/SYNTEX architecture baseline by 15 Sep 2026, for comparison against relevant NGC2/common-data-layer lessons. Once the baseline is available, SIO/G5 determine whether a genuine force-development gap or opportunity exists.",
       "src": [
@@ -837,6 +864,13 @@ window.SIO_DATA = {
           "url": "https://www.army.mil/article/294284/army_leaders_next_generation_command_and_control_ready_to_scale",
           "f": "verified",
           "note": "Official announcement; corroborated by The Defense Post and Soldier Systems coverage."
+        },
+        {
+          "out": "DefenseScoop",
+          "date": "20 Aug 2026",
+          "ttl": "GAO warns information gaps could hinder Army's battlefield network modernization plans",
+          "url": "https://defensescoop.com/2026/08/20/gao-report-army-ngc2-battlefield-network-modernization/",
+          "f": "verified"
         }
       ],
       "insightSponsor": "SIO",
@@ -1047,12 +1081,12 @@ window.SIO_DATA = {
       ],
       "dlabel": "Allied acquisition, doctrine & vendor-ecosystem shifts",
       "suspense": "Trigger-based — see escalationTrigger",
-      "latestDevelopment": "The US Army abandoned its unified autonomy-software strategy in favour of vendor-led, case-specific autonomous capabilities per mission set (Breaking Defense, 13 Aug) — an explicit acquisition-model change from government-owned common autonomy software to mission-scoped vendor delivery.",
-      "changeFromPrevious": "Material since last review: the autonomy-strategy shift is a clean acquisition-model data point for the comparator line (and directly relevant to how any Army autonomy effort structures its software ownership). Previous entrants (Japan white paper) retained.",
+      "latestDevelopment": "SOCOM's PEO for SOF digital applications will test and evaluate mission-autonomy software with SOFWERX under the UxSAI programme (DefenseScoop, 18 Aug) — following the Army's 13 Aug shift to vendor-led, mission-specific autonomy, a second data point in how US organisations are structuring autonomy-software ownership and T&E.",
+      "changeFromPrevious": "Evidence-base update since 18 Aug review: the SOCOM UxSAI test plan extends the autonomy-software acquisition-pattern picture; below the material-change threshold on its own.",
       "armyRelevance": "Retained only for developments that could plausibly create a force-design lesson, an acquisition-model change, an interoperability opportunity, a co-development/co-production opportunity, a classification/information-sharing precedent, or a concrete Army partnership opportunity. General defence-industry and organisational developments remain in the source feed without joining this line. Informs Army's own concept-design and acquisition-pattern choices (see I-1) but does not itself require an Army decision.",
       "escalationTrigger": "Escalate to a decision if any single thread (e.g. DRPM-UxS consolidation, the Talon Synapse classification-sharing model) produces a concrete interoperability or co-production opportunity Army could join.",
       "decision": "Maintain as a standing comparator line for the I-1 concept-design pilot.",
-      "signal": "[Reported — acquisition-model change] The Pentagon is reportedly shifting AI acquisition from monolithic platforms toward modular, multi-vendor, auditable architectures (Federal News Network, 18 Jun), and suspended CMMC Phase 2 cybersecurity certification requirements pending a 60-day Reform Task Force (13 Jul) — both changing the acquisition model non-traditional vendors face. [Fielded — force-design lesson] A Defense Secretary memo (1 Jul) created the Direct Reporting Portfolio Manager for Unmanned Systems (DRPM-UxS), consolidating nearly all US unmanned programmes under one integrator (~$75B FY27 request); the Army realigned its Mission Autonomy office and DIU restructured around drones/autonomous-warfare, commercial-space 'kill webs' and '10x technologies' teams (USNI/DefenseScoop/Breaking Defense, 1-15 Jul). [Reported — force-design lesson] Israel's IDF Chief of Staff announced (8 Jul) a new General Staff structure for robotics/drones/AI, mirroring the US consolidation. [Fielded — classification/information-sharing precedent] CENTCOM and the UAE stood up Task Force Talon Synapse (28 Jul), the first bilateral AI task force (~20 personnel, Abu Dhabi), with classification-sharing rules flagged as the unresolved constraint. [Demonstrated — interoperability opportunity] Australia's MQ-28 Ghost Bat flew alongside crewed fighters in Valiant Shield 26 (27 Jul); PACAF and the RAAF are exploring 'operator-to-operator' command architectures letting US pilots command Ghost Bat drones directly. [Reported — force-design lesson] Japan's 2026 defence white paper (4 Aug) gives first dedicated treatment to a 'new way of warfare' naming drones and AI as central design elements, shortlisting four drone makers for rapid development. [Reported — acquisition-model change] The US Army shifted its autonomy strategy from a unified government software approach to vendor-led, mission-specific autonomous capabilities (Breaking Defense, 13 Aug).",
+      "signal": "[Reported — acquisition-model change] The Pentagon is reportedly shifting AI acquisition from monolithic platforms toward modular, multi-vendor, auditable architectures (Federal News Network, 18 Jun), and suspended CMMC Phase 2 cybersecurity certification requirements pending a 60-day Reform Task Force (13 Jul) — both changing the acquisition model non-traditional vendors face. [Fielded — force-design lesson] A Defense Secretary memo (1 Jul) created the Direct Reporting Portfolio Manager for Unmanned Systems (DRPM-UxS), consolidating nearly all US unmanned programmes under one integrator (~$75B FY27 request); the Army realigned its Mission Autonomy office and DIU restructured around drones/autonomous-warfare, commercial-space 'kill webs' and '10x technologies' teams (USNI/DefenseScoop/Breaking Defense, 1-15 Jul). [Reported — force-design lesson] Israel's IDF Chief of Staff announced (8 Jul) a new General Staff structure for robotics/drones/AI, mirroring the US consolidation. [Fielded — classification/information-sharing precedent] CENTCOM and the UAE stood up Task Force Talon Synapse (28 Jul), the first bilateral AI task force (~20 personnel, Abu Dhabi), with classification-sharing rules flagged as the unresolved constraint. [Demonstrated — interoperability opportunity] Australia's MQ-28 Ghost Bat flew alongside crewed fighters in Valiant Shield 26 (27 Jul); PACAF and the RAAF are exploring 'operator-to-operator' command architectures letting US pilots command Ghost Bat drones directly. [Reported — force-design lesson] Japan's 2026 defence white paper (4 Aug) gives first dedicated treatment to a 'new way of warfare' naming drones and AI as central design elements, shortlisting four drone makers for rapid development. [Reported — acquisition-model change] The US Army shifted its autonomy strategy from a unified government software approach to vendor-led, mission-specific autonomous capabilities (Breaking Defense, 13 Aug). [Reported] SOCOM will test mission-autonomy software under its UxSAI programme with SOFWERX (18 Aug) — a further autonomy-software acquisition and T&E pattern alongside the Army's vendor-led shift.",
       "sowhat": "A single 'how are peer institutions organising for the AI/autonomy shift' line, useful as a concept-design and acquisition-pattern comparator (feeds I-1's pilot directly). Scope is deliberately narrow: each retained thread maps to one of the six opportunity types in the COS-GS filter; everything else stays in the source feed. This is indicative relevance, not a demonstrated Army requirement, and is held at watchlist accordingly.",
       "action": "SIO to maintain this as a standing comparator line for the I-1 concept-design pilot and flag any thread that matures into a concrete Army interoperability, co-development or partnership opportunity.",
       "src": [
@@ -1167,6 +1201,13 @@ window.SIO_DATA = {
           "date": "13 Aug 2026",
           "ttl": "Army shifts autonomy strategy to lean more on 'awesome vendors'",
           "url": "https://breakingdefense.com/2026/08/army-shifts-autonomy-strategy-to-lean-more-on-awesome-vendors/",
+          "f": "verified"
+        },
+        {
+          "out": "DefenseScoop",
+          "date": "18 Aug 2026",
+          "ttl": "SOCOM planning to test new mission autonomy software for unmanned systems program",
+          "url": "https://defensescoop.com/2026/08/18/mission-autonomy-software-unmanned-systems-special-operations/",
           "f": "verified"
         }
       ],
@@ -1314,6 +1355,75 @@ window.SIO_DATA = {
   ],
   "feed": [
     {
+      "date": "2026-08-20",
+      "out": "DefenseScoop",
+      "ttl": "GAO warns information gaps could hinder Army's battlefield network modernization plans",
+      "sum": "A GAO report flags issues with the Army's NGC2 effort: while leaders called the Mojave capstone a success and plan wider fielding, GAO warns information gaps could hinder modernisation planning, and NGC2-related hardware suffered in extreme desert heat — an independent assessment tempering the 'ready to scale' narrative.",
+      "tech": [
+        "data",
+        "ai"
+      ],
+      "pf": "P6",
+      "desk": "US",
+      "url": "https://defensescoop.com/2026/08/20/gao-report-army-ngc2-battlefield-network-modernization/",
+      "f": "verified",
+      "serial": "W-3",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "trade_press",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": null,
+      "unverifiedClaims": null,
+      "dateLastChecked": "2026-08-22"
+    },
+    {
+      "date": "2026-08-18",
+      "out": "DefenseScoop",
+      "ttl": "SOCOM planning to test new mission autonomy software for unmanned systems program",
+      "sum": "SOCOM's PEO for SOF digital applications will test and evaluate mission-autonomy software with SOFWERX under the Unmanned Systems Autonomy and Interoperability (UxSAI) programme — another data point in how US organisations structure autonomy-software ownership, testing and vendor engagement.",
+      "tech": [
+        "ai",
+        "robo"
+      ],
+      "pf": "X",
+      "desk": "US",
+      "url": "https://defensescoop.com/2026/08/18/mission-autonomy-software-unmanned-systems-special-operations/",
+      "f": "verified",
+      "serial": "W-5",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "trade_press",
+      "corroborated": false,
+      "confidence": "high",
+      "primarySourceUrl": null,
+      "unverifiedClaims": null,
+      "dateLastChecked": "2026-08-22"
+    },
+    {
+      "date": "2026-08-14",
+      "out": "Army Recognition",
+      "ttl": "US Northern Command Warns Drone Defense Gaps Leave Military Bases Exposed to Domestic Swarm Attacks",
+      "sum": "NORTHCOM's deputy commander told the Space and Missile Defense Symposium (13 Aug) that some US military locations have neither the sensors to detect an incoming drone swarm nor the effectors to stop it; the Pentagon has requested ~$21B for drones, counter-drone systems and related capabilities, and NORTHCOM is folding counter-UAS into Operation Noble Eagle with law-enforcement sensor interoperability.",
+      "tech": [
+        "robo",
+        "dews"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://www.armyrecognition.com/news/army-news/2026/us-northern-command-warns-drone-defense-gaps-leave-military-bases-exposed-to-domestic-swarm-attacks",
+      "f": "verified",
+      "serial": "D-1",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "trade_press",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": null,
+      "unverifiedClaims": "Article date approximate (remarks delivered 13 Aug at SMD Symposium).",
+      "dateLastChecked": "2026-08-22"
+    },
+    {
       "date": "2026-08-13",
       "out": "Breaking Defense",
       "ttl": "Army shifts autonomy strategy to lean more on 'awesome vendors'",
@@ -1379,6 +1489,29 @@ window.SIO_DATA = {
       "primarySourceUrl": null,
       "unverifiedClaims": null,
       "dateLastChecked": "2026-08-17"
+    },
+    {
+      "date": "2026-08-12",
+      "out": "The Army (army.mil)",
+      "ttl": "U.S. Army announces vendors for Infantry Last Tactical Mile Operations",
+      "sum": "The Army awarded prototype OTAs to six companies (Maren-Go, Overland AI, Forterra, Hendrick's Motorsports, American Rheinmetall, HDT) under the Infantry Last Tactical Mile programme — autonomous UGVs for resupply and casualty evacuation across the stretch between rear support areas and the FLOT, where logistics exposes personnel to enemy fire. Four prototypes each; production-ready prototypes to operational assessment with Army units in early 2027.",
+      "tech": [
+        "robo",
+        "ai"
+      ],
+      "pf": "P7",
+      "desk": "US",
+      "url": "https://www.army.mil/article/294539/u_s_army_announces_vendors_for_infantry_last_tactical_mile_operations",
+      "f": "verified",
+      "serial": "W-2",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "official",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": "https://www.army.mil/article/294539/u_s_army_announces_vendors_for_infantry_last_tactical_mile_operations",
+      "unverifiedClaims": null,
+      "dateLastChecked": "2026-08-22"
     },
     {
       "date": "2026-08-12",
@@ -1584,6 +1717,28 @@ window.SIO_DATA = {
       "primarySourceUrl": null,
       "unverifiedClaims": "Based on PLA/China Military Online footage (6 Aug) — state-released material; treat tactical-proficiency claims as intent signalling pending independent corroboration. Article date approximate.",
       "dateLastChecked": "2026-08-18"
+    },
+    {
+      "date": "2026-08-05",
+      "out": "The Defense Post",
+      "ttl": "US Army Taps Rheinmetall to Build Hybrid Logistics UGVs",
+      "sum": "American Rheinmetall won an 18-month contract to develop hybrid-powered UGVs for frontline tactical resupply, partnering with Harbinger for a military-adapted extended-range hybrid chassis (~500 miles range, 350kW exportable power) — endurance and exportable power addressing the power/endurance constraint on sustainment UGVs.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P7",
+      "desk": "US",
+      "url": "https://thedefensepost.com/2026/08/05/us-hybrid-logistics-ugv/",
+      "f": "verified",
+      "serial": "W-2",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "trade_press",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": null,
+      "unverifiedClaims": null,
+      "dateLastChecked": "2026-08-22"
     },
     {
       "date": "2026-08-04",
@@ -3818,7 +3973,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which residual gaps survive the baseline, and what trial questions do they define? Trial design should produce decision-relevant measurements (detection probability, classification accuracy, engagement success, leakage, cost per engagement, magazine expenditure, operator workload, integration latency).",
       "status": "active",
-      "materialChange": "Combined Resolve exercise result (WSJ, 13 Aug): Ukrainian 412th Regiment drone operators repeatedly defeated a US armored brigade — direct evidence for the baseline's manoeuvre-force protection and static-vs-manoeuvre elements. Also: the Marine Corps is moving to a production-ready vehicle-mounted HPM swarm-defeat system (10 Aug), advancing the counter-swarm directed-energy layer from demonstration toward fielding."
+      "materialChange": null
     },
     {
       "id": "Q2",
@@ -3926,7 +4081,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which Army sustainment/inventory processes have the largest measured manpower burden, exposure or error rate? That inventory precedes any technology selection.",
       "status": "active",
-      "materialChange": "Three independent forces converged on the last-mile-sustainment question: the US Army funded Project Sustainment prototypes (five firms 27 Jul; TALUS award 10 Aug, field tests from early 2027); South Korea's Army commissioned a manpower-decline-driven automation study (ArmyTiger L, 12 Aug); Ukraine's UGV logistics remain fielded practice. The requirement framing this line holds for Army is now externally well-evidenced — the Army-side process baseline remains the missing piece."
+      "materialChange": "The US Army's Infantry Last Tactical Mile award (six vendors, ~12 Aug; operational assessment early 2027) turns the US comparator into a funded portfolio — Project Sustainment (distribution), ILTM (last tactical mile incl. casevac) and hybrid-power UGV development — all converging on the contested-resupply problem this question holds for Army."
     },
     {
       "id": "Q5",
@@ -3958,7 +4113,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which Army decision workflows (starting with the questions in this register) does the architecture currently enable, and which does it block?",
       "status": "active",
-      "materialChange": "The NGC2 comparator moved from division-scale validation to a declared 'ready to scale' decision (29 Jul, reported 3 Aug) — raising the timeliness value of the tasked ADIO architecture baseline (due 15 Sep) while changing nothing about its precondition status."
+      "materialChange": "GAO warns information gaps could hinder NGC2 modernisation plans and notes hardware failures in extreme heat (20 Aug) — an independent counterweight to the 'ready to scale' declaration, sharpening which NGC2 patterns the pending ADIO-baseline comparison should treat as proven vs at-risk."
     },
     {
       "id": "Q6",
@@ -4028,11 +4183,11 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Does the measured I-1 pilot justify scaling the decision-workflow model across the question register?",
       "status": "active",
-      "materialChange": "The US Army abandoned its unified autonomy-software strategy for vendor-led, mission-specific autonomy (13 Aug) — an explicit acquisition-model change relevant to how any Army autonomy effort structures software ownership."
+      "materialChange": null
     }
   ],
   "metrics": {
-    "asOf": "2026-08-18",
+    "asOf": "2026-08-22",
     "note": "Decision-advantage metrics per DOCTRINE.md §21 — measured where practicable; information volume is not an outcome. Time-based metrics (signal-to-assessment, assessment-to-direction, decision-to-action) require timestamps captured across future editions and are not yet measurable.",
     "provenanceTraceablePct": 95,
     "internalDataCoveragePct": 0,
@@ -4042,6 +4197,6 @@ window.SIO_DATA = {
       "resultCaptured": 0,
       "note": "No senior direction has yet completed the direction → action → observed effect → updated assessment loop; decisionLog fields are in place to capture it."
     },
-    "materialChangesThisEdition": 4
+    "materialChangesThisEdition": 2
   }
 };
