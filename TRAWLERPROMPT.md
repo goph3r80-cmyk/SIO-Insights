@@ -212,8 +212,15 @@ the source list above. It catches keyword matches from outlets *outside* the
 curated catalog — local press, university labs, corporate newsrooms, niche
 trade sites — that the tiered sweep would miss.
 
-<!-- Feed URL: paste the merged Google Alerts RSS URL here
-     (https://www.google.com/alerts/feeds/<user-id>/<alert-id>) -->
+**Programmatic ingest:** the dragnet is tracked in code — feed URLs live in
+`scripts/alerts-feeds.json` (one entry per alert, plus an optional merged
+feed), and `node scripts/ingest-alerts.js` fetches them, unwraps Google's
+redirect links to canonical article URLs, dedupes against `data.js` and
+previously-seen items, pre-tags each hit from the alert→question mapping,
+and writes `intake/alerts-<date>.json` for triage. Prefer that intake file
+over hand-copied alert digests: it preserves URLs and dates and removes
+duplicates before triage begins. The script does discovery only — triage
+against the Army Question Register stays an analyst/Generator step.
 
 The feed merges five standing alert queries. Use the query that matched to
 pre-seed the row's `tech` and `pf` tags, then confirm against the article
