@@ -1,11 +1,11 @@
 ---
 name: sio-vetting-panel
-description: Convene the SIO appointment-holder vetting panel — eight Army staff perspectives (CSIO, COS-GS, ACGS(Plans), Hd AS Br 1, Hd AS Br 2, Hd AS Br 3, Hd CESS Br, Hd AOTO) — to review SIO Insights products before publication or escalation. Use whenever an SIO Insights edition, decision serial, Army Question, command decision brief, or staff paper needs vetting, red-teaming, clearance simulation, or "how would the boss react" review; whenever the user asks to review a product as/through any of these appointments (e.g. "review this as COS-GS", "what would CSIO say", "run the panel"); and before any product is framed for CSIO direction or COS-GS consideration. Also use to pressure-test ownership assignments, decision framing, or resource asks against the appointment most likely to challenge them.
+description: Convene the SIO appointment-holder vetting panel — nine Army staff perspectives (CSIO, COS-GS, ACGS(Plans), Hd AS Br 1, Hd AS Br 2, Hd AS Br 3, Hd AS Br 4 (formerly Hd ADO), Hd CESS Br, Hd AOTO) — to review SIO Insights products before publication or escalation. Use whenever an SIO Insights edition, decision serial, Army Question, command decision brief, or staff paper needs vetting, red-teaming, clearance simulation, or "how would the boss react" review; whenever the user asks to review a product as/through any of these appointments (e.g. "review this as COS-GS", "what would CSIO say", "run the panel"); and before any product is framed for CSIO direction or COS-GS consideration. Also use to pressure-test ownership assignments, decision framing, or resource asks against the appointment most likely to challenge them.
 ---
 
 # SIO Vetting Panel
 
-A panel of eight appointment personas that review SIO Insights products the
+A panel of nine appointment personas that review SIO Insights products the
 way the real staff system would — each from their charter, each with their
 characteristic questions and rejection triggers. Personas are defined **by
 appointment only**: they model the office and its institutional perspective,
@@ -20,7 +20,7 @@ pathway nobody can execute. Each persona covers one way products die.
 ## The personas
 
 Load only the reference files you need — one for a single-appointment
-review, all eight for a full panel:
+review, all nine for a full panel:
 
 | File | Appointment | Kills a product when… |
 |------|-------------|----------------------|
@@ -30,6 +30,7 @@ review, all eight for a full panel:
 | `references/hd-asb1.md` | Hd AS Br 1 | the force-design/concept implication is asserted, not argued |
 | `references/hd-asb2.md` | Hd AS Br 2 | the sense-strike/C-UAS technical case doesn't survive threat-class scrutiny |
 | `references/hd-asb3.md` | Hd AS Br 3 | grey-zone/partnership framing is naive or an engagement channel is squandered |
+| `references/hd-asb4.md` | Hd AS Br 4 (formerly Hd ADO) | the data can't support the claim, the build duplicates an existing system, or the workflow ignores where data actually lives |
 | `references/hd-cess.md` | Hd CESS Br | sustainment, manpower burden, or CSS equities are absent |
 | `references/hd-aoto.md` | Hd AOTO | there is no executable path from insight to trial to fielding |
 
@@ -51,7 +52,9 @@ value is the friction.
    persona; force-development framing to ACGS(Plans); anything touching
    sustainment/manpower to Hd CESS; anything proposing a trial, buy, or
    vendor engagement to Hd AOTO; partnerships and grey-zone to Hd AS Br 3;
-   concepts/force design to Hd AS Br 1.
+   concepts/force design to Hd AS Br 1; and anything touching data, AI
+   products, digital workflows or the data-layer/architecture dependency
+   to Hd AS Br 4.
 3. **Review in two passes.** Functional personas (branches, CESS, AOTO)
    first — their findings feed upward. Then the integrators (ACGS(Plans),
    COS-GS, CSIO), who see the product *plus* the functional findings, as
