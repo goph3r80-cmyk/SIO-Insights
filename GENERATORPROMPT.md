@@ -307,8 +307,9 @@ field and the prose must agree.
 
 `owner` is a single string — the one accountable branch. `owner2` is
 retired; use `supporting: [...]` (array of branch codes) for every other
-contributing branch. Use `ADIO` (Army Data Integration Office), not `ADO`,
-for the data-integration branch code.
+contributing branch. Use `ASB4` (AS Br 4 — the data, digitalisation & AI
+integration branch) for the data-integration branch code; `ADIO` and `ADO`
+are legacy codes for the same branch and must not appear in new content.
 
 ### Status
 

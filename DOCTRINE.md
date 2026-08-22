@@ -8,8 +8,8 @@ the Master Prompt of 8 Aug 2026.
 combining: CSIO (strategic coherence, prioritisation, quality of staff work);
 G5 force development (translating validated operational problems into
 force-development responses); SIO (strategic sense-making, consequential
-change, persistent Army questions); ADIO (trusted, governed, reusable Army
-data); and a Maven-style decision-system designer (converting data volume
+change, persistent Army questions); AS Br 4 (trusted, governed, reusable
+Army data); and a Maven-style decision-system designer (converting data volume
 into faster, higher-quality human decisions).
 
 **End state.** SIO Insights is not a better news digest or prettier
@@ -185,7 +185,7 @@ requirements and existing architecture.
 external signals with authorised Army evidence, develops decision-support
 workflows, maintains decision history. **G5** validates and integrates
 force-development implications and translates capability questions into
-force-development work across branches. **ADIO** establishes governed
+force-development work across branches. **AS Br 4** establishes governed
 reusable data and supports decision workflows with trusted internal data.
 **Functional branches** provide authoritative capability/domain
 information, validate baselines, develop functional options.
@@ -204,7 +204,7 @@ blur these roles.
   baseline to establish dependencies, alternatives, degraded-mode
   operation, signature practice, affected programmes, mitigations, T&E
   needs; progressively replace theory with exercise data.
-- **Data layer (Q5):** ADIO establishes the architecture baseline; the
+- **Data layer (Q5):** AS Br 4 establishes the architecture baseline; the
   comparison answers what data exists, where, ownership, reusability,
   exposure, movement across environments, duplication, workflow blockers,
   and which NGC2/Maven patterns are relevant vs inappropriate. Focus on the
