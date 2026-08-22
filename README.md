@@ -321,7 +321,8 @@ See **[docs/GITHUB-APP.md](docs/GITHUB-APP.md)** to register and install it.
 ## Questions?
 
 - **How do I add a new source?** Edit `TRAWLER-PROMPT.md` under the appropriate tier (Tier 1 daily or Tier 2 analysis), then restart the trawler.
-- **Where do the Google Alerts keywords live?** The merged Google Alerts RSS feed runs as a standing **keyword dragnet** — see the "Keyword dragnet" section in `TRAWLER-PROMPT.md` for the five alert queries and their `tech`/`pf` tag mapping. If you change a query in Google Alerts, mirror it there.
+- **Where do the Google Alerts keywords live?** The merged Google Alerts RSS feed runs as a standing **keyword dragnet** — see the "Keyword dragnet" section in `TRAWLER-PROMPT.md` for the five alert queries and their `tech`/`pf` tag mapping. If you change a query in Google Alerts, mirror it there **and** in `scripts/alerts-feeds.json`.
+- **How are the alert feeds tracked in code?** `scripts/alerts-feeds.json` holds each alert's RSS feed URL and its tech/pf/question mapping; `node scripts/ingest-alerts.js` fetches the feeds, unwraps Google redirect links to canonical URLs, dedupes against `data.js` and `intake/seen.json`, and writes a pre-tagged `intake/alerts-<date>.json` for triage — replacing hand-copied alert digests, which lose URLs and dates and re-introduce duplicates.
 - **Can I filter by capability or region?** Yes: the `tech` and `desk` fields (on both `serials` and `feed`) enable filtering in downstream apps.
 - **What if a source is always paywalled?** Mark it `paywall` in the `f` flag with a `note`. If it's consistently high-value despite the paywall, consider a manual subscription or API access.
 - **How often should we refresh?** A scheduled daily run opens a refresh PR each morning; you can also run the pipeline manually any time. Adjust or pause the schedule as bandwidth requires.

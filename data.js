@@ -6,6 +6,10 @@ window.SIO_DATA = {
   "changelog": [
     {
       "date": "2026-08-22",
+      "note": "Intake supplement (17-19 Aug alerts batch): 26 dragnet hits triaged; 3 carried (the rest were duplicates of already-tracked items — e.g. the Marines HPM story, nine syndications of one Japan-Australia announcement — or noise). All three are evidence-base updates; no new material changes (Q4/Q5 remain this edition's flagged changes). W-5: Japan and Australia agreed a decade-long arrangement for Japanese missile tests (incl. hypersonics) on Australian ranges plus co-development of the 'Boobook' counter-threat laser with a ~$50M Mitsubishi manufacturing facility in Sydney — a concrete regional co-development/test-range partnership precedent. W-1: Taiwan's NCSIST signed an MoU with US startup Vatn Systems for AI-enabled C2, S12 autonomous underwater vehicles and Taiwan-based assembly — low-cost modular undersea autonomy arriving in Army's region; and Ukraine's Unmanned Systems Forces reported striking 12 more Russian shadow-fleet vessels in early August (Operation MoLoChKa total: 218 vessels since 6 Jul) — unmanned systems executing a sustained maritime blockade at campaign scale. Also this date: added scripts/ingest-alerts.js + scripts/alerts-feeds.json — programmatic Google Alerts RSS ingest (fetch, unwrap redirects, dedupe, pre-tag by question) replacing hand-copied alert digests; dragnet docs updated."
+    },
+    {
+      "date": "2026-08-22",
       "note": "Edition refresh: tiered-source sweep 18-22 Aug. Material changes (2): Q4 — the US Army awarded six prototype OTAs under the Infantry Last Tactical Mile (ILTM) programme (Maren-Go, Overland AI, Forterra, Hendrick's Motorsports, American Rheinmetall, HDT; four UGV prototypes each; operational assessment with Army units early 2027) for exactly the last-tactical-mile resupply/casevac problem W-2 holds — alongside the separate American Rheinmetall hybrid logistics UGV development (5 Aug); Q5 — a GAO report (20 Aug) warns information gaps could hinder the Army's NGC2 modernisation plans and notes NGC2 hardware suffered in extreme heat at the Mojave capstone — an independent watchdog assessment tempering the 'ready to scale' declaration the comparator carried into this register last edition. Evidence-base updates without escalation: D-1 adds NORTHCOM's warning (SMD Symposium, 13 Aug) that some US military installations lack both sensors and effectors against drone swarms alongside a ~$21B counter-drone/drone budget request — protection-scenario framing for the C-UAS baseline; W-5 adds SOCOM's plan to test mission-autonomy software under UxSAI with SOFWERX (18 Aug) as a further autonomy-software acquisition-pattern data point. Q1, Q2, Q3, Q6, Q7 correctly show no material change since the 18 Aug review. feedAsOf 2026-08-22; metrics recomputed."
     },
     {
@@ -515,12 +519,12 @@ window.SIO_DATA = {
       ],
       "dlabel": "Maritime autonomy — attritable USV strike & sensing",
       "suspense": "Trigger-based — see escalationTrigger",
-      "latestDevelopment": "DIU recognised completion of HII's PRIME prototype project (11 Aug): the Watcher sUSV passed government-led autonomy, seakeeping, performance and degraded-environment assessments — autonomous contested-waterspace transit, loiter surveillance, sprint interdiction of a non-cooperative vessel — and is positioned for potential production transition for the Marine Corps.",
-      "changeFromPrevious": "New since 8 Aug review: the Watcher/PRIME completion adds a production-track attritable interceptor USV to the cluster. Evidence-base update only — no Army littoral requirement, use case, participation mechanism or sponsor has emerged, so no escalation trigger is met.",
+      "latestDevelopment": "Taiwan's NCSIST signed an MoU with US startup Vatn Systems (announced 11 Aug; reported 17-18 Aug) covering AI-enabled C2, low-cost modular S12 autonomous underwater vehicles and Taiwan-based assembly/sustainment; and Ukraine's Unmanned Systems Forces reported 12 more shadow-fleet vessels struck in early August — Operation MoLoChKa's claimed total reaching 218 vessels since 6 Jul, an unmanned maritime-interdiction campaign at blockade scale.",
+      "changeFromPrevious": "Evidence-base update since 22 Aug review: the Vatn-NCSIST MoU brings attritable undersea autonomy with local production into Army's region, and the MoLoChKa campaign scale is further combat-proven evidence for the cluster. Neither meets an Army escalation trigger (no defined Army littoral requirement, use case, participation mechanism or sponsor).",
       "armyRelevance": "Indirect — Army has no identified littoral operating requirement in the material available to this pipeline; relevance is currently limited to the command-authority and production-model precedent this cluster feeds into S-1. No Army capability ownership is assigned at this stage.",
       "escalationTrigger": "Escalate only when there is a defined Army littoral/riverine requirement, an identified Army operational use case, a specific participation mechanism (e.g. in the SWAP-USV or MUSV programmes), or a force-development sponsor.",
       "decision": "Hold at watchlist — no Army capability ownership assigned pending a defined littoral requirement.",
-      "signal": "[Combat-proven] CENTCOM conducted the first US combat use of lethal unmanned surface vessels: three armed Saronic Corsair one-way-attack USVs struck Iran's Bandar Abbas naval base (12 Jul), hitting a Ghadir-class midget submarine and port infrastructure, run as a CENTCOM operation outside the Navy's standing Task Force 59 framework (USNI News, 13 Jul; corroborated by Naval News, TWZ, Stars and Stripes, Military Times, The Aviationist). Saronic followed with a $3.2B 'Port Alpha' shipyard announcement at Port of Brownsville, TX (USNI News, 16 Jul) — production capacity, not an isolated demonstration. [Demonstrated] The Navy's GARC attritable USV detonated against the decommissioned USS Peleliu in a RIMPAC 2026 SINKEX (25-29 Jul; Naval News/TWZ/Military Times) — first GARC live-fire kill, built explicitly on lessons from Ukraine's Black Sea USV campaign; the 16ft BlackSea Technologies craft carries a 1,000lb payload over 700nm at 22kt and is designed to swarm. [Reported] DIU/Navy issued the SWAP-USV solicitation for market-ready attack-drone-carrying USVs ($100M prize purse + $200M follow-on procurement; responses due 10 Aug, Military Times, 29 Jul). [Reported] The Navy opened the next MUSV 'marketplace' phase (a high-capacity variant RPP from 1 Aug, Defense One) atop an existing 47-vessel-by-2031 acquisition goal; separately a UK-US team (Kraken/Capewell, Royal Navy Project Beehive) completed the first airdrop of a USV from an A400M (The Defense Post/Naval News, 10 Jul). [Reported] AUKUS signed its first Pillar 2 project — joint uncrewed-underwater-vehicle development, first payloads due 2027 (Breaking Defense, 31 May).",
+      "signal": "[Combat-proven] CENTCOM conducted the first US combat use of lethal unmanned surface vessels: three armed Saronic Corsair one-way-attack USVs struck Iran's Bandar Abbas naval base (12 Jul), hitting a Ghadir-class midget submarine and port infrastructure, run as a CENTCOM operation outside the Navy's standing Task Force 59 framework (USNI News, 13 Jul; corroborated by Naval News, TWZ, Stars and Stripes, Military Times, The Aviationist). Saronic followed with a $3.2B 'Port Alpha' shipyard announcement at Port of Brownsville, TX (USNI News, 16 Jul) — production capacity, not an isolated demonstration. [Demonstrated] The Navy's GARC attritable USV detonated against the decommissioned USS Peleliu in a RIMPAC 2026 SINKEX (25-29 Jul; Naval News/TWZ/Military Times) — first GARC live-fire kill, built explicitly on lessons from Ukraine's Black Sea USV campaign; the 16ft BlackSea Technologies craft carries a 1,000lb payload over 700nm at 22kt and is designed to swarm. [Reported] DIU/Navy issued the SWAP-USV solicitation for market-ready attack-drone-carrying USVs ($100M prize purse + $200M follow-on procurement; responses due 10 Aug, Military Times, 29 Jul). [Reported] The Navy opened the next MUSV 'marketplace' phase (a high-capacity variant RPP from 1 Aug, Defense One) atop an existing 47-vessel-by-2031 acquisition goal; separately a UK-US team (Kraken/Capewell, Royal Navy Project Beehive) completed the first airdrop of a USV from an A400M (The Defense Post/Naval News, 10 Jul). [Reported] AUKUS signed its first Pillar 2 project — joint uncrewed-underwater-vehicle development, first payloads due 2027 (Breaking Defense, 31 May). [Reported] Taiwan's NCSIST-Vatn Systems MoU (11 Aug) pairs AI-enabled C2 with low-cost modular S12 AUVs and Taiwan-based assembly (The Defense Post, 18 Aug; corroborated by SCMP and Naval Today). [Combat-use claims — corroborate] Ukraine's USF reported 12 more Russian shadow-fleet vessels struck in early August, claiming 218 total since 6 Jul under Operation MoLoChKa (Kyiv Post, ~17 Aug) — unmanned systems sustaining a maritime blockade of the Kerch Strait.",
       "sowhat": "Five separate maritime-autonomy threads (attack-USV solicitation, AUKUS UUV cooperation, MUSV/airdrop delivery models, armed-USV combat debut, GARC live-fire kill) are one thematic watch line, not five items — held at watchlist with force-development ownership deliberately unassigned because no Army littoral requirement has been identified.",
       "action": "SIO to monitor SWAP-USV and MUSV outcomes; escalate only against the defined Army triggers.",
       "src": [
@@ -602,6 +606,22 @@ window.SIO_DATA = {
           "url": "https://www.navalnews.com/naval-news/2026/08/hii-watcher-autonomous-usv-passes-critical-diu-performance-tests",
           "f": "verified",
           "note": "HII release and DIU memorandum cited; corroborated by Naval Today and Soldier Systems."
+        },
+        {
+          "out": "The Defense Post",
+          "date": "18 Aug 2026",
+          "ttl": "Taiwan Boosts Naval Defense Through Collaboration With Vatn Systems",
+          "url": "https://thedefensepost.com/2026/08/18/taiwan-vatn-systems-naval-modernization/",
+          "f": "verified",
+          "note": "Corroborated by SCMP, Naval Today and Military Embedded Systems."
+        },
+        {
+          "out": "Kyiv Post",
+          "date": "17 Aug 2026",
+          "ttl": "Ukraine Hit 12 More Russian Shadow Fleet Ships in August",
+          "url": "https://www.kyivpost.com/post/81960",
+          "f": "verified",
+          "note": "Ukrainian USF claims; campaign corroborated by Kyiv Independent and United24 Media, tallies not independently verified. Date approximate."
         }
       ],
       "insightSponsor": "SIO",
@@ -1086,7 +1106,7 @@ window.SIO_DATA = {
       "armyRelevance": "Retained only for developments that could plausibly create a force-design lesson, an acquisition-model change, an interoperability opportunity, a co-development/co-production opportunity, a classification/information-sharing precedent, or a concrete Army partnership opportunity. General defence-industry and organisational developments remain in the source feed without joining this line. Informs Army's own concept-design and acquisition-pattern choices (see I-1) but does not itself require an Army decision.",
       "escalationTrigger": "Escalate to a decision if any single thread (e.g. DRPM-UxS consolidation, the Talon Synapse classification-sharing model) produces a concrete interoperability or co-production opportunity Army could join.",
       "decision": "Maintain as a standing comparator line for the I-1 concept-design pilot.",
-      "signal": "[Reported — acquisition-model change] The Pentagon is reportedly shifting AI acquisition from monolithic platforms toward modular, multi-vendor, auditable architectures (Federal News Network, 18 Jun), and suspended CMMC Phase 2 cybersecurity certification requirements pending a 60-day Reform Task Force (13 Jul) — both changing the acquisition model non-traditional vendors face. [Fielded — force-design lesson] A Defense Secretary memo (1 Jul) created the Direct Reporting Portfolio Manager for Unmanned Systems (DRPM-UxS), consolidating nearly all US unmanned programmes under one integrator (~$75B FY27 request); the Army realigned its Mission Autonomy office and DIU restructured around drones/autonomous-warfare, commercial-space 'kill webs' and '10x technologies' teams (USNI/DefenseScoop/Breaking Defense, 1-15 Jul). [Reported — force-design lesson] Israel's IDF Chief of Staff announced (8 Jul) a new General Staff structure for robotics/drones/AI, mirroring the US consolidation. [Fielded — classification/information-sharing precedent] CENTCOM and the UAE stood up Task Force Talon Synapse (28 Jul), the first bilateral AI task force (~20 personnel, Abu Dhabi), with classification-sharing rules flagged as the unresolved constraint. [Demonstrated — interoperability opportunity] Australia's MQ-28 Ghost Bat flew alongside crewed fighters in Valiant Shield 26 (27 Jul); PACAF and the RAAF are exploring 'operator-to-operator' command architectures letting US pilots command Ghost Bat drones directly. [Reported — force-design lesson] Japan's 2026 defence white paper (4 Aug) gives first dedicated treatment to a 'new way of warfare' naming drones and AI as central design elements, shortlisting four drone makers for rapid development. [Reported — acquisition-model change] The US Army shifted its autonomy strategy from a unified government software approach to vendor-led, mission-specific autonomous capabilities (Breaking Defense, 13 Aug). [Reported] SOCOM will test mission-autonomy software under its UxSAI programme with SOFWERX (18 Aug) — a further autonomy-software acquisition and T&E pattern alongside the Army's vendor-led shift.",
+      "signal": "[Reported — acquisition-model change] The Pentagon is reportedly shifting AI acquisition from monolithic platforms toward modular, multi-vendor, auditable architectures (Federal News Network, 18 Jun), and suspended CMMC Phase 2 cybersecurity certification requirements pending a 60-day Reform Task Force (13 Jul) — both changing the acquisition model non-traditional vendors face. [Fielded — force-design lesson] A Defense Secretary memo (1 Jul) created the Direct Reporting Portfolio Manager for Unmanned Systems (DRPM-UxS), consolidating nearly all US unmanned programmes under one integrator (~$75B FY27 request); the Army realigned its Mission Autonomy office and DIU restructured around drones/autonomous-warfare, commercial-space 'kill webs' and '10x technologies' teams (USNI/DefenseScoop/Breaking Defense, 1-15 Jul). [Reported — force-design lesson] Israel's IDF Chief of Staff announced (8 Jul) a new General Staff structure for robotics/drones/AI, mirroring the US consolidation. [Fielded — classification/information-sharing precedent] CENTCOM and the UAE stood up Task Force Talon Synapse (28 Jul), the first bilateral AI task force (~20 personnel, Abu Dhabi), with classification-sharing rules flagged as the unresolved constraint. [Demonstrated — interoperability opportunity] Australia's MQ-28 Ghost Bat flew alongside crewed fighters in Valiant Shield 26 (27 Jul); PACAF and the RAAF are exploring 'operator-to-operator' command architectures letting US pilots command Ghost Bat drones directly. [Reported — force-design lesson] Japan's 2026 defence white paper (4 Aug) gives first dedicated treatment to a 'new way of warfare' naming drones and AI as central design elements, shortlisting four drone makers for rapid development. [Reported — acquisition-model change] The US Army shifted its autonomy strategy from a unified government software approach to vendor-led, mission-specific autonomous capabilities (Breaking Defense, 13 Aug). [Reported] SOCOM will test mission-autonomy software under its UxSAI programme with SOFWERX (18 Aug) — a further autonomy-software acquisition and T&E pattern alongside the Army's vendor-led shift. [Reported — co-development/test-range partnership] Japan and Australia agreed a decade-long arrangement for Japanese missile tests (including hypersonics) on Australian ranges, plus co-development of the 'Boobook' counter-threat laser with a ~$50M Mitsubishi manufacturing facility in Sydney (Bloomberg/AFP, 18 Aug) — a concrete regional precedent for allied test-range access and DE co-production.",
       "sowhat": "A single 'how are peer institutions organising for the AI/autonomy shift' line, useful as a concept-design and acquisition-pattern comparator (feeds I-1's pilot directly). Scope is deliberately narrow: each retained thread maps to one of the six opportunity types in the COS-GS filter; everything else stays in the source feed. This is indicative relevance, not a demonstrated Army requirement, and is held at watchlist accordingly.",
       "action": "SIO to maintain this as a standing comparator line for the I-1 concept-design pilot and flag any thread that matures into a concrete Army interoperability, co-development or partnership opportunity.",
       "src": [
@@ -1209,6 +1229,14 @@ window.SIO_DATA = {
           "ttl": "SOCOM planning to test new mission autonomy software for unmanned systems program",
           "url": "https://defensescoop.com/2026/08/18/mission-autonomy-software-unmanned-systems-special-operations/",
           "f": "verified"
+        },
+        {
+          "out": "Bloomberg",
+          "date": "18 Aug 2026",
+          "ttl": "Japan Agrees to Test Hypersonics, Other Missiles in Australia",
+          "url": "https://www.bloomberg.com/news/articles/2026-08-18/japan-agrees-to-test-hypersonics-other-missiles-in-australia",
+          "f": "paywall",
+          "note": "Corroborated by AFP syndications and The Nightly."
         }
       ],
       "insightSponsor": "SIO",
@@ -1379,6 +1407,51 @@ window.SIO_DATA = {
     },
     {
       "date": "2026-08-18",
+      "out": "Bloomberg",
+      "ttl": "Japan Agrees to Test Hypersonics, Other Missiles in Australia",
+      "sum": "Japan and Australia agreed an enhanced decade-long arrangement giving Japan access to Australian ranges for missile test launches including its hypersonic weapons programme, alongside co-development of the 'Boobook' counter-threat laser for land and littoral platforms, with a ~$50M Mitsubishi subsidiary manufacturing facility in Sydney.",
+      "tech": [
+        "dews"
+      ],
+      "pf": "X",
+      "desk": "APAC",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-18/japan-agrees-to-test-hypersonics-other-missiles-in-australia",
+      "f": "paywall",
+      "serial": "W-5",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "general_press",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": null,
+      "unverifiedClaims": "Body behind paywall; announcement corroborated by AFP syndications (Taipei Times, The Star, FMT) and The Nightly.",
+      "dateLastChecked": "2026-08-22"
+    },
+    {
+      "date": "2026-08-18",
+      "out": "The Defense Post",
+      "ttl": "Taiwan Boosts Naval Defense Through Collaboration With Vatn Systems",
+      "sum": "Taiwan's NCSIST signed an MoU with US startup Vatn Systems to jointly develop AI-enabled command-and-control, field Vatn's low-cost modular S12 autonomous underwater vehicles, and build Taiwan-based supply-chain, assembly and sustainment — attritable undersea autonomy with local production arriving in the region.",
+      "tech": [
+        "robo",
+        "ai"
+      ],
+      "pf": "P5",
+      "desk": "APAC",
+      "url": "https://thedefensepost.com/2026/08/18/taiwan-vatn-systems-naval-modernization/",
+      "f": "verified",
+      "serial": "W-1",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "trade_press",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": null,
+      "unverifiedClaims": null,
+      "dateLastChecked": "2026-08-22"
+    },
+    {
+      "date": "2026-08-18",
       "out": "DefenseScoop",
       "ttl": "SOCOM planning to test new mission autonomy software for unmanned systems program",
       "sum": "SOCOM's PEO for SOF digital applications will test and evaluate mission-autonomy software with SOFWERX under the Unmanned Systems Autonomy and Interoperability (UxSAI) programme — another data point in how US organisations structure autonomy-software ownership, testing and vendor engagement.",
@@ -1398,6 +1471,28 @@ window.SIO_DATA = {
       "confidence": "high",
       "primarySourceUrl": null,
       "unverifiedClaims": null,
+      "dateLastChecked": "2026-08-22"
+    },
+    {
+      "date": "2026-08-17",
+      "out": "Kyiv Post",
+      "ttl": "Ukraine Hit 12 More Russian Shadow Fleet Ships in August",
+      "sum": "Ukraine's Unmanned Systems Forces commander ('Madyar') reported striking 12 more Russian shadow-fleet vessels in the first week of August, effectively blockading the Kerch Strait; Operation MoLoChKa's total since 6 Jul reached 218 vessels across the Azov and Black Seas — unmanned systems executing a sustained maritime-interdiction campaign at scale.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "EU",
+      "url": "https://www.kyivpost.com/post/81960",
+      "f": "verified",
+      "serial": "W-1",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "general_press",
+      "corroborated": true,
+      "confidence": "moderate",
+      "primarySourceUrl": null,
+      "unverifiedClaims": "Vessel counts are Ukrainian USF claims; campaign corroborated by Kyiv Independent and United24 Media reporting, individual strike tallies not independently verified. Article date approximate.",
       "dateLastChecked": "2026-08-22"
     },
     {

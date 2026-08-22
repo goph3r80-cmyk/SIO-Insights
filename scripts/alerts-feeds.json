@@ -1,0 +1,46 @@
+{
+  "comment": "Google Alerts RSS dragnet configuration. Paste each alert's RSS feed URL from Google Alerts (https://www.google.com/alerts — set 'Deliver to: RSS feed', then copy the feed link, https://www.google.com/alerts/feeds/<user-id>/<alert-id>). The 'merged' entry may hold the single combined feed instead; the per-alert entries give better auto-tagging. Keep queries mirrored with the dragnet table in TRAWLERPROMPT.md.",
+  "merged": { "url": "" },
+  "feeds": [
+    {
+      "id": "A1",
+      "url": "",
+      "query": "\"directed energy\" OR \"tactical power\" OR \"sensor-to-shooter\" OR hypersonic OR (\"advanced materials\" AND military)",
+      "tech": ["dews"],
+      "pf": ["P1", "P5", "P3"],
+      "questions": ["Q1", "Q3"]
+    },
+    {
+      "id": "A2",
+      "url": "",
+      "query": "\"military robotics\" OR \"unmanned systems\" OR \"cyber warfare\" OR (\"artificial intelligence\" AND military)",
+      "tech": ["robo", "ai", "data"],
+      "pf": ["P4", "P5", "P1", "P6"],
+      "questions": ["Q1", "Q4", "Q7"]
+    },
+    {
+      "id": "A3",
+      "url": "",
+      "query": "(\"autonomous weapons\" OR \"unmanned surface vessel\" OR \"drone swarm\" OR \"military AI\") AND (\"testing\" OR \"deployment\" OR \"capability\" OR \"unveiled\")",
+      "tech": ["robo", "ai"],
+      "pf": ["P5", "P4"],
+      "questions": ["Q1", "Q6"]
+    },
+    {
+      "id": "A4",
+      "url": "",
+      "query": "(\"directed energy weapon\" OR \"tactical laser\" OR \"high-power microwave\" OR \"electronic warfare\") AND (\"intercept\" OR \"successful test\" OR \"fielded\" OR \"demonstration\")",
+      "tech": ["dews"],
+      "pf": ["P1", "P5"],
+      "questions": ["Q1", "Q2"]
+    },
+    {
+      "id": "A5",
+      "url": "",
+      "query": "(\"grey zone\" OR \"force sustenance\" OR \"military logistics\" OR \"island defense\" OR \"force projection\" OR \"military maneuver\" OR \"expeditionary\") AND (technology OR tech OR system OR autonomous OR software)",
+      "tech": ["robo", "ai", "data"],
+      "pf": ["P2", "P7", "P8"],
+      "questions": ["Q4"]
+    }
+  ]
+}
