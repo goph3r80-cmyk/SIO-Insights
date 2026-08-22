@@ -11,6 +11,41 @@ An automated pipeline for curating defence-technology industry news and analysis
 > regeneration rules are in `GENERATORPROMPT.md` (Schema v2/v2.1/v3.0
 > sections, which supersede the v1 description below where they conflict).
 
+## How it works (v3.0 operating loop)
+
+The organising principle is the persistent Army question, not the news
+cycle: `Army Question → Relevant Data → Insight → Decision → Action →
+Observed Effect → Updated Assessment`. Each edition runs five layers:
+
+1. **Intake** — the tiered source sweep (`TRAWLERPROMPT.md`) plus the
+   Google Alerts keyword dragnet ingested in code
+   (`scripts/ingest-alerts.js`: canonical URLs, dedupe, pre-tagging by
+   question).
+2. **Evidence grading** — every candidate through the
+   `techint-assessment` skill: claim decomposition, source/claim grading,
+   corroboration-vs-syndication, honest maturity placement, and the
+   material-change test.
+3. **Branch analysis** — six TECHINT officers (`techint-officers` skill),
+   one per branch, answer *what changed / why now / so what / so what for
+   Army*, place items on the L0–L7 relevance ladder, and recommend from
+   the full range (ignore → elevate; never defaulting to experiment or
+   procurement).
+4. **Register** — the Generator folds assessed evidence into `data.js`:
+   questions, decision threads with typed direction and four-role
+   ownership (sponsor / FD lead / functional lead / supporting), decision
+   logs, and quiet questions honestly marked unchanged.
+5. **Vetting and publication** — the nine-appointment vetting panel
+   (`sio-vetting-panel` skill) interrogates the product; it ships via PR
+   review to the dashboard; direction given is logged and its outcomes
+   feed the next edition.
+
+The dashboard (`index.html`) renders that order top-down: Question
+Register → material changes → CSIO Direction Required → active threads →
+net-assessment → foundational dependencies → staff actions →
+below-the-line watch → the source feed (kept at the bottom for
+provenance, not as a headline metric). `explainer.html` ("How it works"
+in the dashboard nav) walks through all of this with live examples.
+
 ## What This Is
 
 **SIO Insights** scans open-source defence trade publications, think tanks, and business newswires each cycle to identify emerging industry developments, funding, contracts, and doctrine analysis in defence-tech capability areas (AI, autonomy, EW, space, cyber, materials, etc.). The pipeline deduplicates stories, tags them (capability, region, source credibility), synthesises them into SIO decision products, and exports a structured JS module (`window.SIO_DATA`) ready for downstream dashboard, API, or newsletter applications.

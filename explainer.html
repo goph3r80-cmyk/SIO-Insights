@@ -239,186 +239,210 @@
 <main class="wrap">
 
   <section class="intro">
-    <div class="eyebrow">Explainer</div>
-    <h2>Open-source defence-tech news, turned into a decision brief</h2>
-    <p>SIO Insights scans defence trade press, think tanks and wire services every cycle, tags what it finds, and
-      turns the raw stream into two things: a searchable <strong>feed</strong> of individual stories, and a small set
-      of curated <strong>serials</strong> — SIO's own read on what each cluster of stories means, what it implies for
-      capability development, and what to do about it. Everything below is drawn from the live dataset.</p>
+    <div class="eyebrow">Explainer · v3.0</div>
+    <h2>An Army decision-support system, organised around persistent questions</h2>
+    <p>SIO Insights is no longer a news digest. Its organising principle is the <strong>Army Question Register</strong> —
+      six to ten persistent force-development questions the Army must answer. External news remains an input; every
+      incoming signal is graded, assessed by a branch TECHINT lane, mapped against a registered question, and only
+      escalated when it <em>materially changes</em> something. The fundamental test applied to every development:
+      <strong>does this change what the Army can, should or must do?</strong> The standing intent lives in
+      <code>DOCTRINE.md</code>; everything below is how the live system executes it.</p>
   </section>
 
-  <div class="sec-h"><span class="rn">1</span><h2>The pipeline</h2><span class="rule"></span><span class="sub">Trawler → Generator → data.js → Dashboard</span></div>
+  <div class="sec-h"><span class="rn">1</span><h2>The operating loop</h2><span class="rule"></span><span class="sub">Question → Data → Insight → Decision → Action → Effect → Updated Assessment</span></div>
   <div class="pipeline">
     <div class="stage">
-      <span class="step">STEP 1</span>
-      <h3>Trawler</h3>
-      <p>Web-searches Tier 1–3 trade press, think tanks and wires for capability news in the trawl window. Dedupes
-        multi-outlet coverage to one row per story and flags anything paywalled or unconfirmed.</p>
-      <div class="cad">Output: a raw story table</div>
+      <span class="step">INTAKE</span>
+      <h3>Trawl &amp; dragnet</h3>
+      <p>A tiered sweep of trade press, think tanks, wires and regional desks (<code>TRAWLERPROMPT.md</code>), plus a
+        Google&nbsp;Alerts keyword dragnet ingested in code (<code>scripts/ingest-alerts.js</code>): canonical URLs
+        resolved, duplicates removed, hits pre-tagged by question.</p>
+      <div class="cad">Output: deduped, sourced candidates</div>
     </div>
     <div class="arrow">→</div>
     <div class="stage">
-      <span class="step">STEP 2</span>
-      <h3>Generator</h3>
-      <p>Clusters related stories by theme, writes the SIO framing for each cluster — signal, so-what, action — and
-        cross-links every story back to the cluster it supports.</p>
-      <div class="cad">Output: serials + linked feed</div>
+      <span class="step">GRADE</span>
+      <h3>TECHINT assessment</h3>
+      <p>Every candidate is claim-decomposed and graded — source vs claim, corroboration vs syndication, honest
+        maturity placement, the material-change test (<code>techint-assessment</code> skill). State-media and vendor
+        claims are capped, never laundered into fact.</p>
+      <div class="cad">Output: graded evidence</div>
     </div>
     <div class="arrow">→</div>
     <div class="stage">
-      <span class="step">STEP 3</span>
-      <h3>data.js</h3>
-      <p>A single structured module — <code>window.SIO_DATA</code> — holding the edition date and both collections,
-        validated against a fixed schema before it ships.</p>
-      <div class="cad">Format: browser-global JS module</div>
+      <span class="step">ASSESS</span>
+      <h3>Branch TECHINT officers</h3>
+      <p>Six branch-tuned analysts (<code>techint-officers</code> skill) answer <b>what changed · why now · so what ·
+        so what for Army</b>, place items on the L0–L7 relevance ladder, and recommend from the full range — ignore
+        to elevate, never defaulting to "experiment" or "buy".</p>
+      <div class="cad">Output: branch assessments</div>
     </div>
     <div class="arrow">→</div>
     <div class="stage">
-      <span class="step">STEP 4</span>
-      <h3>Dashboard</h3>
-      <p><a href="./index.html">index.html</a> reads data.js and renders it — filterable by tech, desk and verdict —
-        as the priority brief.</p>
-      <div class="cad">Refresh: daily, via PR review</div>
+      <span class="step">REGISTER</span>
+      <h3>Questions &amp; threads</h3>
+      <p>The Generator (<code>GENERATORPROMPT.md</code>) folds assessed evidence into <code>data.js</code>: the
+        question register, decision threads, typed senior direction, decision history — with quiet questions honestly
+        marked unchanged.</p>
+      <div class="cad">Output: window.SIO_DATA v3</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="stage">
+      <span class="step">VET</span>
+      <h3>Panel, publish, loop</h3>
+      <p>The nine-appointment vetting panel (<code>sio-vetting-panel</code> skill) interrogates the product before it
+        ships via PR review to the <a href="./index.html">dashboard</a>. Direction given is logged, and outcomes flow
+        back as the next edition's evidence.</p>
+      <div class="cad">Output: vetted edition + decision log</div>
     </div>
   </div>
 
-  <div class="sec-h"><span class="rn">2</span><h2>Two collections, two jobs</h2><span class="rule"></span><span class="sub">feed[] vs serials[]</span></div>
+  <div class="sec-h"><span class="rn">2</span><h2>Three collections, three altitudes</h2><span class="rule"></span><span class="sub">questions[] → serials[] (threads) → feed[]</span></div>
   <div class="split">
     <div class="split-col">
-      <h3>Feed — the raw stream</h3>
-      <span class="tag">one row per unique story, newest first</span>
-      <p class="d">Every story the trawler kept, as reported — no SIO interpretation added. Each item carries its own
-        tech tags, desk, portfolio code and credibility flag, and links to the serial it feeds, if any.</p>
+      <h3>Questions — the register</h3>
+      <span class="tag">6–10 persistent Army questions (Q1–Q7…)</span>
+      <p class="d">Each carries the enduring question, its decision horizon, the <b>Army baseline</b> (authorised
+        internal information only — honestly "not established" until it is), the external change, the <b>delta</b>
+        (which Army assumption may need reassessment), split evidence/inference confidence, typed escalation
+        triggers, any direction required, and a decision log that persists after the paper is delivered. Threads and
+        evidence attach to questions — never the other way round.</p>
       <div class="mini-feed">
-        <div class="d1">2026-07-13 · USNI News</div>
-        <div class="t1">VIDEO: 3 Lethal U.S. Drones Attack Iranian Sub, Port Facility</div>
-        <div class="m1">
-          <span class="chip tech t-robo"><span class="dot"></span>Robotics</span>
-          <span class="chip desk">ME</span>
-          <span class="fdot f-verified"></span> verified
-        </div>
+        <div class="t1">Q1 — Affordable Layered C-UAS</div>
+        <div class="m1">How is the changing UAS threat altering the protection architecture, cost exchange and
+          magazine depth required by Army?</div>
       </div>
     </div>
     <div class="split-col">
-      <h3>Serials — the analysis product</h3>
-      <span class="tag">a curated SIO read on a cluster of stories</span>
-      <p class="d">One or more feed items, clustered by theme, written up as a decision-ready product: what the open
-        sources show, why it matters to capability development, and what SIO recommends doing about it.</p>
+      <h3>Threads &amp; feed — the working layers</h3>
+      <span class="tag">decision threads over a provenance feed</span>
+      <p class="d"><b>Serials are decision threads</b> attached to a question: the recommendation, options, baseline
+        deliverable, four-role ownership and evidence for one strand of it. <b>The feed is the evidence base</b> —
+        every kept story with source type, corroboration, confidence and canonical URL. It sits below the decision
+        layer for provenance and analyst use; its size is deliberately <em>not</em> a headline metric.</p>
       <div class="mini-feed">
-        <span class="chip verdict" style="--vc:var(--v-proven)">proven</span>
-        <span class="chip prio-decision" style="margin-left:6px">DECISION</span>
-        <div class="t1" style="margin-top:8px">Assess the maritime autonomous-strike model demonstrated by the Corsair
-          USV strike…</div>
-        <div class="m1"><span class="id">III-8</span> Armed USV combat debut · owner A2 + SIO</div>
+        <span class="chip prio-decision">PRIORITY DIRECTION</span>
+        <div class="t1" style="margin-top:8px">D-1 · Affordable layered counter-UAS architecture → Q1</div>
+        <div class="m1">Sponsor SIO · FD lead G5 · Functional lead A2 · baseline before any trial</div>
       </div>
     </div>
   </div>
 
-  <div class="sec-h"><span class="rn">3</span><h2>The analysis logic</h2><span class="rule"></span><span class="sub">signal → so-what → action</span></div>
-  <p style="max-width:640px; color:var(--muted); font-size:13.5px; margin:-4px 0 16px;">Every serial answers the same
-    three questions in order — <b style="color:var(--ink)">what do the open sources show</b>, <b style="color:var(--ink)">why does it matter
-    to capability development</b>, and <b style="color:var(--ink)">what should we do about it</b>. Here's a real serial from
-    the current edition, annotated field by field.</p>
+  <div class="sec-h"><span class="rn">3</span><h2>The analysis logic</h2><span class="rule"></span><span class="sub">what changed → why now → so what → so what for Army → gaps → action</span></div>
+  <p style="max-width:640px; color:var(--muted); font-size:13.5px; margin:-4px 0 16px;">Every assessment must progress
+    past "Country X demonstrated System Y": <b style="color:var(--ink)">what threshold actually moved</b> (cost, maturity,
+    scale, combat validation), <b style="color:var(--ink)">why it is consequential now</b>, <b style="color:var(--ink)">what
+    changes in operations</b>, <b style="color:var(--ink)">which Army assumption or capability is affected</b>,
+    <b style="color:var(--ink)">what evidence is missing</b>, and <b style="color:var(--ink)">what Army should do next</b>.
+    Here's a thread card from a recent edition, annotated.</p>
 
   <article class="card v-proven">
     <div class="card-top">
-      <span class="id">III-8</span>
-      <span class="chip verdict" style="--vc:var(--v-proven)">proven</span>
-      <span class="chip prio-decision">DECISION</span>
+      <span class="id">W-1</span>
+      <span class="chip prio-monitor">THREAD</span>
+      <span class="chip status">mixed (reported – combat-proven)</span>
       <span class="grow"></span>
       <span class="pf">P5</span>
-      <span class="chip desk">ME</span>
       <span class="chip desk">US</span>
       <span class="chip tech t-robo"><span class="dot"></span>Robotics</span>
     </div>
     <div class="card-body">
-      <div class="dlabel">Armed USV combat debut</div>
-      <div class="decision">Assess the maritime autonomous-strike model demonstrated by the Corsair USV strike,
-        including its command-authority pathway, for portfolio relevance.</div>
+      <div class="dlabel">Maritime autonomy — attritable USV strike &amp; sensing</div>
+      <div class="decision">Hold at watchlist — no Army capability ownership assigned pending a defined littoral
+        requirement.</div>
       <div class="analysis">
-        <div class="field signal"><div class="k">Signal</div><div class="v">CENTCOM conducted the first-ever US
-          combat use of lethal unmanned surface vessels: three armed Saronic Corsair one-way-attack USVs struck
-          Iran's Bandar Abbas naval base on 12 July, hitting a Ghadir-class midget submarine and port infrastructure.
-          The strike was run as a CENTCOM operation outside the Navy's existing Task Force 59 unmanned-systems
-          framework.</div></div>
-        <div class="field sowhat"><div class="k">So what</div><div class="v">Crosses a threshold for maritime
-          Sense-and-Strike ambitions: a lethal robotic surface vessel used in live combat, commanded outside the
-          standing unmanned-systems task force structure — both a template and a threat model for maritime strike
-          autonomy the portfolio should account for.</div></div>
-        <div class="field action"><div class="k">Action</div><div class="v">ASB2 with SIO net-assessment to study the
-          Corsair USV strike as a proof-of-concept for maritime autonomous-strike capability and its command-authority
-          model.</div></div>
+        <div class="field signal"><div class="k">Signal (graded)</div><div class="v"><b>[Combat-proven]</b> First US
+          combat use of lethal USVs — three armed one-way-attack craft struck a naval base, run outside the standing
+          unmanned-systems task-force framework. <b>[Reported]</b> A production-track attritable interceptor USV
+          completed government-led autonomy and degraded-environment assessments. Each claim carries its own maturity
+          tag and provenance.</div></div>
+        <div class="field sowhat"><div class="k">Army relevance</div><div class="v">Stated plainly: <em>indirect</em> —
+          no Army littoral requirement has been identified; current value is the command-authority precedent feeding
+          the human-authority question (Q6). No relevance is asserted that the evidence doesn't support.</div></div>
+        <div class="field action"><div class="k">Escalation trigger</div><div class="v">Escalate only on a defined
+          Army littoral/riverine requirement, an identified use case, a specific participation mechanism, or a
+          force-development sponsor — not because another reporting cycle arrived.</div></div>
       </div>
       <div class="meta">
-        <span><span class="k">Owner</span> <b title="ASB2 — Sense-strike">A2</b> + <b title="SIO — Office-level coordination &amp; net-assessment">SIO</b></span>
-        <span><span class="k">Suspense</span> <b>By 15 Sep</b></span>
-        <span><span class="k">Raised</span> Jul 2026 <span class="k">· age</span> 1</span>
+        <span><span class="k">Sponsor</span> <b>SIO</b></span>
+        <span><span class="k">FD lead</span> Unassigned — pending an Army requirement</span>
+        <span><span class="k">Question</span> <b>Q6</b></span>
       </div>
     </div>
   </article>
 
   <div class="why-frame">
-    <div class="cap">Reading the card</div>
+    <div class="cap">Reading a thread card (v3 fields)</div>
     <div class="why-list">
-      <div class="why-row"><div class="term">Signal</div><div class="expl">What the open sources actually show — facts
-        only, no SIO opinion yet.</div></div>
-      <div class="why-row"><div class="term">So what</div><div class="expl">The bridge from news to relevance: <b>why
-        this matters</b> to capability development, and which portfolio line it touches.</div></div>
-      <div class="why-row"><div class="term">Action</div><div class="expl">The recommended move — <b>who</b> (the
-        owning branch) does <b>what</b> next.</div></div>
-      <div class="why-row"><div class="term">Decision</div><div class="expl">The one-line ask this cycle — what SIO
-        wants a decision-maker to approve, reject, or note.</div></div>
-      <div class="why-row"><div class="term">Verdict</div><div class="expl"><b>proven</b> — this has already been
-        demonstrated or fielded somewhere, not just theorised. (The other values are <b>gap</b>: a real capability
-        hole, and <b>emerging</b>: a trend worth tracking.)</div></div>
-      <div class="why-row"><div class="term">Priority</div><div class="expl"><b>decision</b> — needs a call from a
-        decision-maker this cycle. (The alternative, <b>monitor</b>, means: stay aware, no ask yet.)</div></div>
+      <div class="why-row"><div class="term">Signal</div><div class="expl">The graded evidence — every claim tagged
+        inline with its maturity and provenance (<b>[Fielded]</b>, <b>[Reported — state-linked, corroborate]</b>),
+        organised by threat class or operational effect, never by press release.</div></div>
+      <div class="why-row"><div class="term">Recommendation / Why now / Army problem</div><div class="expl">The
+        decision brief: what is asked, what changed, and the problem stated without inferring internal Army facts —
+        "establish whether existing and planned capabilities adequately address…", never "Army has no X" from open
+        sources.</div></div>
+      <div class="why-row"><div class="term">Options &amp; direction sought</div><div class="expl">Genuine
+        alternatives with trade-offs, and the typed ask — a decision without alternatives goes back.</div></div>
+      <div class="why-row"><div class="term">Watch fields</div><div class="expl">Watch threads carry <b>latest
+        development</b>, <b>change from previous</b> ("unchanged" is a valid, honest answer), <b>Army relevance</b>
+        (stated plainly when not yet established) and an <b>escalation trigger</b> — escalation is event-driven,
+        never calendar-driven.</div></div>
+      <div class="why-row"><div class="term">Ownership</div><div class="expl">Four roles, never one vague owner:
+        <b>Sponsor</b> (usually SIO — keeps the question and evidence), <b>FD lead</b> (G5 where directed; honestly
+        "unassigned" or "TBD by G5" otherwise), <b>Functional lead</b>, <b>Supporting</b>. Relevance never implies
+        authority.</div></div>
+      <div class="why-row"><div class="term">Question link</div><div class="expl">Every thread names the register
+        question it serves. An item that materially affects no question stays in the feed — technological interest
+        is not a promotion criterion.</div></div>
     </div>
   </div>
 
-  <div class="sec-h" style="margin-top:34px"><span class="rn">3a</span><h2>Verdict × priority</h2><span class="rule"></span><span class="sub">how urgency and maturity combine — current edition, 20 serials</span></div>
-  <div class="matrix">
-    <div></div>
-    <div class="hcell">Decision — needs a call</div>
-    <div class="hcell">Monitor — awareness only</div>
-
-    <div class="rcell"><span class="fdot" style="background:var(--v-gap)"></span>Gap</div>
-    <div class="mcell" style="--vc:var(--v-gap)"><div class="n">2</div><div class="lbl">A real capability hole with a
-      live ask — e.g. spectrum-survivable C2</div></div>
-    <div class="mcell" style="--vc:var(--v-gap)"><div class="n">1</div><div class="lbl">A known hole, not yet ready
-      for a decision</div></div>
-
-    <div class="rcell"><span class="fdot" style="background:var(--v-emerging)"></span>Emerging</div>
-    <div class="mcell" style="--vc:var(--v-emerging)"><div class="n">1</div><div class="lbl">A trend firm enough to
-      act on now</div></div>
-    <div class="mcell" style="--vc:var(--v-emerging)"><div class="n">11</div><div class="lbl">A trend worth tracking —
-      most net-assessment and watch items live here</div></div>
-
-    <div class="rcell"><span class="fdot" style="background:var(--v-proven)"></span>Proven</div>
-    <div class="mcell" style="--vc:var(--v-proven)"><div class="n">5</div><div class="lbl">Fielded elsewhere — decide
-      whether and how to adopt</div></div>
-    <div class="mcell empty" style="--vc:var(--v-proven)"><div class="n">0</div><div class="lbl">Fielded but nothing
-      to decide yet</div></div>
-  </div>
-
-  <div class="sec-h"><span class="rn">4</span><h2>The strategic arc</h2><span class="rule"></span><span class="sub">how serial IDs are sectioned</span></div>
+  <div class="sec-h"><span class="rn">4</span><h2>The dashboard bands</h2><span class="rule"></span><span class="sub">how the register is laid out, top to bottom</span></div>
   <div class="arc">
     <div class="arc-step">
-      <span class="rn2">I</span>
-      <h3>Strategic &amp; concept-shaping</h3>
-      <p>Portfolio-level trends and net-assessment — the "how should we think about this" layer. e.g. <span class="id" style="font-size:11px">I-4</span> DRPM-UxS consolidation.</p>
+      <span class="rn2">Q</span>
+      <h3>Question Register → Material changes</h3>
+      <p>The 6–10 persistent questions first, then only what materially changed since last review — the senior
+        reader's whole picture in two panels.</p>
     </div>
     <div class="arrow">→</div>
     <div class="arc-step">
-      <span class="rn2">II</span>
-      <h3>Capability contests &amp; gaps</h3>
-      <p>Things being fought over right now — races and holes with no clear winner yet. e.g. <span class="id" style="font-size:11px">II-2</span> directed-energy counter-swarm.</p>
+      <span class="rn2">D</span>
+      <h3>Direction → Threads → Foundational</h3>
+      <p><b>CSIO Direction Required</b> (typed: priority / capability / resource / policy decisions — max three,
+        fewer preferred), <b>Active Force-Development Threads</b>, <b>Net-Assessment</b> lines, and <b>Foundational
+        Dependencies</b> like the Army data layer.</p>
     </div>
     <div class="arrow">→</div>
     <div class="arc-step">
-      <span class="rn2">III</span>
-      <h3>Proven &amp; fielding</h3>
-      <p>Crossing into real programmes — demonstrated, contracted, or in combat use. e.g. <span class="id" style="font-size:11px">III-8</span> armed USV combat debut.</p>
+      <span class="rn2">S</span>
+      <h3>Staff actions → Below-the-line → Feed</h3>
+      <p>Work progressing under existing authority, background watch items that don't merit senior attention yet,
+        and the full evidence feed at the bottom — provenance, not headline.</p>
+    </div>
+  </div>
+
+  <div class="sec-h"><span class="rn">4a</span><h2>The discipline rules</h2><span class="rule"></span><span class="sub">what keeps this decision-grade</span></div>
+  <div class="why-frame">
+    <div class="cap">Non-negotiables (DOCTRINE.md)</div>
+    <div class="why-list">
+      <div class="why-row"><div class="term">Evidence wall</div><div class="expl">Open sources can establish external
+        threats, maturity and trends — never an internal Army gap, baseline, cost or owner. The chain is external
+        signal → possible implication → <b>internal baseline</b> → confirmed gap.</div></div>
+      <div class="why-row"><div class="term">Baseline before trial</div><div class="expl">Threat → problem → baseline
+        → confirmed gap → options → trial questions → trial. No jumping from foreign demos to funded
+        programmes.</div></div>
+      <div class="why-row"><div class="term">Material-change test</div><div class="expl">An update surfaces only if it
+        changed the threat, maturity, affordability, an assumption, a gap, an opportunity, a course, or a trigger.
+        Otherwise the evidence base updates silently.</div></div>
+      <div class="why-row"><div class="term">Honest maturity &amp; confidence</div><div class="expl">The ladder —
+        reported → demonstrated → operationally&nbsp;evaluated → fielded → combat-proven — applied per claim; one test
+        is never "proven", a parade is never "fielded", and prose never outruns the confidence grade.</div></div>
+      <div class="why-row"><div class="term">Closed loop</div><div class="expl">Direction given → responsible staff →
+        deliverable → result → effect → updated assessment. The register is institutional memory for why decisions
+        were made and what happened after.</div></div>
+      <div class="why-row"><div class="term">Decision-advantage metrics</div><div class="expl">Value is measured in
+        provenance coverage, internal-data coverage and closed-loop rate — never article count.</div></div>
     </div>
   </div>
 
@@ -454,30 +478,45 @@
   </div>
 
   <div class="gloss-grp">
-    <h4>verdict &amp; priority — the two axes above</h4>
+    <h4>tier — where an item sits in the decision layer</h4>
     <div class="term-grid">
-      <div class="term-card"><div class="row1"><span class="chip verdict" style="--vc:var(--v-gap)">gap</span></div><p>A real capability hole open sources reveal.</p></div>
-      <div class="term-card"><div class="row1"><span class="chip verdict" style="--vc:var(--v-emerging)">emerging</span></div><p>A trend worth tracking, not yet decided.</p></div>
-      <div class="term-card"><div class="row1"><span class="chip verdict" style="--vc:var(--v-proven)">proven</span></div><p>Demonstrated or fielded already, elsewhere.</p></div>
-      <div class="term-card"><div class="row1"><span class="chip prio-decision">DECISION</span></div><p>Needs a call from a decision-maker this cycle.</p></div>
-      <div class="term-card"><div class="row1"><span class="chip prio-monitor">MONITOR</span></div><p>Awareness only — no ask yet.</p></div>
+      <div class="term-card"><div class="row1"><span class="chip prio-decision">DECISION</span></div><p>CSIO direction required — a genuine choice with consequences; capped at three, fewer preferred.</p></div>
+      <div class="term-card"><div class="row1"><span class="chip prio-monitor">WATCHLIST</span></div><p>An active force-development or net-assessment thread under a registered question.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">foundational</span></div><p>A dependency every other question rests on (e.g. the Army data layer).</p></div>
+      <div class="term-card"><div class="row1"><span class="val">staff_action</span></div><p>Progressable under existing authority — no CSIO decision needed.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">background</span></div><p>Below-the-line watch — interesting read-across, insufficient for senior attention.</p></div>
     </div>
   </div>
 
   <div class="gloss-grp">
-    <h4>dom — capability lane</h4>
+    <h4>directionType — what kind of senior direction is sought</h4>
     <div class="term-grid">
-      <div class="term-card"><div class="row1"><span class="val">solution</span></div><p>A capability solution — the core "build/buy this" lane.</p></div>
-      <div class="term-card"><div class="row1"><span class="val">safety</span></div><p>Protection and sustainment — keeping capability alive under pressure.</p></div>
-      <div class="term-card"><div class="row1"><span class="val">te</span></div><p>Test &amp; evaluation — proving a capability works before it scales.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">priority_direction</span></div><p>Decide whether an issue warrants focused staff effort.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">capability_decision</span></div><p>A choice between capability solutions or architectures.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">resource_decision</span></div><p>Funding, manpower or programme resources committed.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">policy_doctrine_decision</span></div><p>Policy, authority, doctrine or governance determined.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">staff_action</span></div><p>No decision required — tasked within existing authority.</p></div>
     </div>
   </div>
 
   <div class="gloss-grp">
-    <h4>status</h4>
+    <h4>maturity — the ladder, applied per claim</h4>
     <div class="term-grid">
-      <div class="term-card"><div class="row1"><span class="chip status">open</span></div><p>Still live — being tracked or awaiting a decision.</p></div>
-      <div class="term-card"><div class="row1"><span class="chip status">actioned</span></div><p>Decision taken; retained for record, no longer awaiting a call.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">reported</span></div><p>Announced, revealed, solicited or paraded — existence, not capability.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">demonstrated</span></div><p>A controlled test with an observable result. One test is never "proven".</p></div>
+      <div class="term-card"><div class="row1"><span class="val">operationally_evaluated</span></div><p>Evaluated with operational units under operational conditions.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">fielded</span></div><p>Issued to operating units — a production contract alone doesn't qualify.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">combat_proven</span></div><p>Verified combat employment — for that event's conditions only.</p></div>
+    </div>
+  </div>
+
+  <div class="gloss-grp">
+    <h4>confidence &amp; status</h4>
+    <div class="term-grid">
+      <div class="term-card"><div class="row1"><span class="val">high / moderate / low</span></div><p>Claim-level confidence; state-media and uncorroborated vendor claims cap at low. Questions carry it split: evidence vs inference.</p></div>
+      <div class="term-card"><div class="row1"><span class="chip status">not_started · in_progress</span></div><p>Where the tasked work stands.</p></div>
+      <div class="term-card"><div class="row1"><span class="chip status">overdue</span></div><p>A suspense passed without a delivered output — flagged honestly, never silently rolled.</p></div>
+      <div class="term-card"><div class="row1"><span class="chip status">completed · closed</span></div><p>Delivered, or retired with its decision history preserved.</p></div>
     </div>
   </div>
 
@@ -503,15 +542,38 @@
   </div>
 
   <div class="gloss-grp">
-    <h4>owner — branch shorthand, as used across this dataset</h4>
+    <h4>ownership — four roles, never one vague owner</h4>
+    <div class="term-grid">
+      <div class="term-card"><div class="row1"><span class="val">insightSponsor</span></div><p>Usually SIO — maintains the question, the evidence and the sense-making; triggers staff work.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">fdLead</span></div><p>Force-development lead — G5 where the matter needs cross-branch integration <em>and has been directed</em>; otherwise honestly "TBD by G5" or "Unassigned".</p></div>
+      <div class="term-card"><div class="row1"><span class="val">functionalLead</span></div><p>The relevant capability branch, only where responsibility is known.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">supporting</span></div><p>Contributing stakeholders — named without implying formal ownership.</p></div>
+    </div>
+  </div>
+
+  <div class="gloss-grp">
+    <h4>branch codes, as used across this dataset</h4>
     <div class="term-grid">
       <div class="term-card"><div class="row1"><span class="val">SIO</span></div><p>Office-level coordination and net-assessment; runs concept-shaping work.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">G5</span></div><p>Force development — integration across capabilities, force design, concepts, doctrine, equipping and manpower.</p></div>
       <div class="term-card"><div class="row1"><span class="val">ASB1 · A1</span></div><p>Manoeuvre concepts.</p></div>
       <div class="term-card"><div class="row1"><span class="val">ASB2 · A2</span></div><p>Sense-strike — precision fires, counter-UAS, directed energy.</p></div>
-      <div class="term-card"><div class="row1"><span class="val">ASB3 · A3</span></div><p>PSO, HADR, CT, CUAS, GZ — peace support operations, humanitarian assistance/disaster relief, counter-terrorism, counter-UAS, grey-zone.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">ASB3 · A3</span></div><p>PSO, HADR, CT, CUAS, GZ — peace support, HADR, counter-terrorism, counter-UAS, grey-zone.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">ASB4 · ADIO</span></div><p>Data, digitalisation &amp; AI (formerly ADO) — data integration, cloud, digitalisation front-end planning.</p></div>
       <div class="term-card"><div class="row1"><span class="val">CESS · CS</span></div><p>Sustainment planning.</p></div>
       <div class="term-card"><div class="row1"><span class="val">AOTO · AO</span></div><p>Acquisition / test-to-operations transition.</p></div>
-      <div class="term-card"><div class="row1"><span class="val">ADO · A4</span></div><p>Army Data Office / ASB4 — data integration and cloud, AI, and digitalisation front-end planning.</p></div>
+    </div>
+  </div>
+
+  <div class="gloss-grp">
+    <h4>under the hood — where each layer lives in the repo</h4>
+    <div class="term-grid">
+      <div class="term-card"><div class="row1"><span class="val">DOCTRINE.md</span></div><p>The standing intent — every future change is judged against it.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">TRAWLERPROMPT.md · scripts/ingest-alerts.js</span></div><p>Intake: the tiered sweep and the coded Google&nbsp;Alerts dragnet.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">GENERATORPROMPT.md</span></div><p>The data.js schema (v2 → v3) and regeneration rules.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">.claude/skills/techint-assessment</span></div><p>Evidence grading: claim decomposition, source scales, maturity discipline.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">.claude/skills/techint-officers</span></div><p>Six branch analysts producing the assessments, on the shared TECHINT doctrine.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">.claude/skills/sio-vetting-panel</span></div><p>Nine appointment personas that interrogate every product before it ships.</p></div>
     </div>
   </div>
 
