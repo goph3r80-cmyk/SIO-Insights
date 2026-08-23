@@ -1,9 +1,13 @@
 /* SIO Insights edition data — generated. Replace to refresh. */
 window.SIO_DATA = {
   "edition": "Aug 2026",
-  "feedAsOf": "2026-08-22",
+  "feedAsOf": "2026-08-23",
   "productVersion": "3.0",
   "changelog": [
+    {
+      "date": "2026-08-23",
+      "note": "Edition refresh: sweep to 23 Aug (weekend window — thin, as expected). Three evidence-base additions, none crossing the material-change threshold; the 22 Aug material changes (Q4 ILTM portfolio, Q5 GAO/NGC2) remain the current review's flagged items. D-1/Q1: [Reported — resource commitment] the US Army agreed a ~$400M spend on AeroVironment counter-drone lasers (Bloomberg, 7 Aug; corroborated by trade-press reporting framing high-energy lasers as moving from prototype demonstrations toward a permanent counter-drone weapon) — a funding datum on the DE layer, not a maturity change (fielded performance still to be demonstrated at scale); and [Reported — doctrinal adaptation] the 1st Cavalry Division introduced a counter-UAS qualification at Fort Hood (training from 26 Jul) — notable because its 3rd ABCT was the formation repeatedly defeated by drone operators at Combined Resolve, i.e. observed exercise-to-training adaptation, the mitigation loop the Q1 baseline should capture. W-3/Q5: [Reported] the Army is integrating tactical drones into the NGC2 ecosystem for sensor-to-shooter coordination — comparator evidence of the common data layer carrying a live decision workflow, weighed alongside the GAO caveats already tracked. feedAsOf 2026-08-23; metrics recomputed."
+    },
     {
       "date": "2026-08-22",
       "note": "Recoded branch code ADIO -> ASB4 (AS Br 4, the reprofiled data/digitalisation/AI branch; lineage ADO -> ADIO -> ASB4) across all operative fields: W-3 ownership and tasking (the architecture baseline due 15 Sep 2026 is now tasked to ASB4), W-5 supporting stakeholders, Q5 register fields and metrics notes. Historical changelog entries retain the codes in use at the time. Dashboard owner map, explainer glossary, GENERATORPROMPT branch-code rule and DOCTRINE.md role descriptions updated to match."
@@ -89,7 +93,7 @@ window.SIO_DATA = {
       "deliverable": "Army C-UAS force-development baseline covering: priority UAS threat classes; operational scenarios and assets/echelons requiring protection; existing and planned Army capabilities; residual capability gaps; static versus manoeuvre requirements; kinetic and non-kinetic defeat options; cost-exchange considerations; magazine-depth considerations; integration and C2 requirements; and candidate areas requiring trials",
       "deliverableDate": "2026-09-15",
       "decision": "Endorse affordable layered counter-UAS as an Army force-development priority; direct G5 (ASB2 as functional lead) to deliver the Army C-UAS force-development baseline by 15 Sep 2026. Trial proposal only after the baseline.",
-      "signal": "Evidence is organised by the operational effect or threat class each programme addresses — these programmes collectively demonstrate the layered-defence need and the changing cost exchange, but they do not all solve the same Army threat class. — DEFEAT OF SMALL UAS BY SOFT-KILL (RF/EW): [Fielded] JIATF-401 converted a border-tested evaluation into a three-year, up-to-$500M IDIQ for CACI's SkyValor non-kinetic detect-and-defeat system (RF jamming plus net-capture) after a two-day Yuma demonstration (DefenseScoop, 31 Jul); AeroVironment's Titan task order (~$80M) is fielding AI-enabled RF detect-and-defeat at Air Force bases; the Marine Corps is integrating UGVs into its MADIS counter-drone system (Army Recognition, 27 Jun). — DEFEAT OF SMALL / ONE-WAY-ATTACK UAS BY LOW-COST KINETIC INTERCEPTOR: [Reported] the Army's Next Generation Counter-sUAS Missile RFI (4 Aug) seeks a purpose-built sub-$150K interceptor (responses due 20 Aug); [Combat-proven — single event] Ukraine's Griffen interceptor drone downed a Shahed one-way-attack drone for the first time (Militarnyi, 7 Jul). — CRUISE/BALLISTIC-CLASS AIR DEFENCE AND THE COST-EXCHANGE / MAGAZINE-DEPTH TREND (context for the affordability trade, not small-UAS defeat): [Fielded] the $58.6B FY26-32 Patriot multiyear (30 Jul) and $3B Patriot/THAAD component framework (3 Aug) triple PAC-3 MSE production; [Reported] Lockheed's sub-$2M PAC-3 ACE interceptor (Farnborough, 20 Jul) and the 10-nation coalition behind Ukraine's ~$700K Freyja/FP-7.X (Paris, 14 Jul) hedge against exquisite-interceptor cost; DIU's Ground-Based Affordable Mass call (27 Jul) applies the same cost logic to offensive fires. — COUNTER-SWARM DIRECTED ENERGY: [Demonstrated] the Pentagon's Joint Laser Weapon System programme (Lockheed Aculight, nLIGHT — up to $847M ceiling) is scaling 150kW counter-drone lasers toward 300-500kW cruise-missile defence, and Germany has commissioned a naval laser targeted for fielding by 2029 after 28,000nm of at-sea demonstration. [Reported — state-linked, corroborate] China is showcasing and exporting a man-portable-to-naval laser C-UAS line (Harbin Xinguang 'Lijian', CPMIEC LW-30, Novasky NI-L3K) to Gulf and SE Asian markets — vendor/state claims not independently verified at declared performance levels. — SWARM-CONTROL AUTONOMY LAYER: [Reported] AeroVironment/Applied Intuition's Acuity autonomy software (29 Jul) is moving single-operator, multi-drone swarm control from demonstrator toward the Army Launched Effects programme of record. — ALLIED PRODUCTION MASS AND INTEROPERABILITY: [Reported] NATO's $40B+ five-year counter-drone package (7 Jul) and the €11B EU-Ukraine Drone Deal (15 Jul) fund allied counter-drone mass production and interoperability standards at alliance scale, while Ukraine's drone campaign (1M+ targets struck since January; deep strikes into Russia) continues to define the threat's operational envelope. — THREAT ENVELOPE VS MANOEUVRE FORCES: [Demonstrated — exercise] At Combined Resolve (Hohenfels, Apr-May; WSJ via Meduza, 13 Aug), Ukraine's 412th Unmanned Systems Regiment repeatedly 'destroyed' a ~3,500-strong US armored brigade with recon-cued FPV/bomber drones; US outcomes improved over two weeks through dispersal, concealment, EW and counter-drone systems — direct evidence for the baseline's static-vs-manoeuvre and protected-echelon elements. — DE TRANSITION HURDLES: [Reported] the Pentagon's critical-technologies office wants smaller/lighter/more-efficient DE for airborne and expeditionary use and routine realistic field testing with operating units (Aviation Week, 13 Aug) — naming integration and T&E, not raw power, as the fielding constraints. [Reported — production-track] The Marine Corps is moving to a vehicle-mounted, production-ready Epirus HAVOC high-power-microwave swarm-defeat system (Military Times, 10 Aug) — HPM soft-kill crossing from demonstration toward fielding, notable for effectiveness against fiber-optic-guided drones that defeat RF jamming. — PROTECTION SCENARIOS (fixed sites): [Reported] NORTHCOM's deputy commander warned (SMD Symposium, 13 Aug) that some US military installations have neither the sensors to detect an incoming drone swarm nor the effectors to stop it, against a ~$21B Pentagon request spanning EW, kinetic interceptors, lasers and HPM — evidence that even well-resourced forces treat fixed-site protection as an open gap, reinforcing the baseline's protected-assets/echelons element.",
+      "signal": "Evidence is organised by the operational effect or threat class each programme addresses — these programmes collectively demonstrate the layered-defence need and the changing cost exchange, but they do not all solve the same Army threat class. — DEFEAT OF SMALL UAS BY SOFT-KILL (RF/EW): [Fielded] JIATF-401 converted a border-tested evaluation into a three-year, up-to-$500M IDIQ for CACI's SkyValor non-kinetic detect-and-defeat system (RF jamming plus net-capture) after a two-day Yuma demonstration (DefenseScoop, 31 Jul); AeroVironment's Titan task order (~$80M) is fielding AI-enabled RF detect-and-defeat at Air Force bases; the Marine Corps is integrating UGVs into its MADIS counter-drone system (Army Recognition, 27 Jun). — DEFEAT OF SMALL / ONE-WAY-ATTACK UAS BY LOW-COST KINETIC INTERCEPTOR: [Reported] the Army's Next Generation Counter-sUAS Missile RFI (4 Aug) seeks a purpose-built sub-$150K interceptor (responses due 20 Aug); [Combat-proven — single event] Ukraine's Griffen interceptor drone downed a Shahed one-way-attack drone for the first time (Militarnyi, 7 Jul). — CRUISE/BALLISTIC-CLASS AIR DEFENCE AND THE COST-EXCHANGE / MAGAZINE-DEPTH TREND (context for the affordability trade, not small-UAS defeat): [Fielded] the $58.6B FY26-32 Patriot multiyear (30 Jul) and $3B Patriot/THAAD component framework (3 Aug) triple PAC-3 MSE production; [Reported] Lockheed's sub-$2M PAC-3 ACE interceptor (Farnborough, 20 Jul) and the 10-nation coalition behind Ukraine's ~$700K Freyja/FP-7.X (Paris, 14 Jul) hedge against exquisite-interceptor cost; DIU's Ground-Based Affordable Mass call (27 Jul) applies the same cost logic to offensive fires. — COUNTER-SWARM DIRECTED ENERGY: [Demonstrated] the Pentagon's Joint Laser Weapon System programme (Lockheed Aculight, nLIGHT — up to $847M ceiling) is scaling 150kW counter-drone lasers toward 300-500kW cruise-missile defence, and Germany has commissioned a naval laser targeted for fielding by 2029 after 28,000nm of at-sea demonstration. [Reported — state-linked, corroborate] China is showcasing and exporting a man-portable-to-naval laser C-UAS line (Harbin Xinguang 'Lijian', CPMIEC LW-30, Novasky NI-L3K) to Gulf and SE Asian markets — vendor/state claims not independently verified at declared performance levels. — SWARM-CONTROL AUTONOMY LAYER: [Reported] AeroVironment/Applied Intuition's Acuity autonomy software (29 Jul) is moving single-operator, multi-drone swarm control from demonstrator toward the Army Launched Effects programme of record. — ALLIED PRODUCTION MASS AND INTEROPERABILITY: [Reported] NATO's $40B+ five-year counter-drone package (7 Jul) and the €11B EU-Ukraine Drone Deal (15 Jul) fund allied counter-drone mass production and interoperability standards at alliance scale, while Ukraine's drone campaign (1M+ targets struck since January; deep strikes into Russia) continues to define the threat's operational envelope. — THREAT ENVELOPE VS MANOEUVRE FORCES: [Demonstrated — exercise] At Combined Resolve (Hohenfels, Apr-May; WSJ via Meduza, 13 Aug), Ukraine's 412th Unmanned Systems Regiment repeatedly 'destroyed' a ~3,500-strong US armored brigade with recon-cued FPV/bomber drones; US outcomes improved over two weeks through dispersal, concealment, EW and counter-drone systems — direct evidence for the baseline's static-vs-manoeuvre and protected-echelon elements. — DE TRANSITION HURDLES: [Reported] the Pentagon's critical-technologies office wants smaller/lighter/more-efficient DE for airborne and expeditionary use and routine realistic field testing with operating units (Aviation Week, 13 Aug) — naming integration and T&E, not raw power, as the fielding constraints. [Reported — production-track] The Marine Corps is moving to a vehicle-mounted, production-ready Epirus HAVOC high-power-microwave swarm-defeat system (Military Times, 10 Aug) — HPM soft-kill crossing from demonstration toward fielding, notable for effectiveness against fiber-optic-guided drones that defeat RF jamming. — PROTECTION SCENARIOS (fixed sites): [Reported] NORTHCOM's deputy commander warned (SMD Symposium, 13 Aug) that some US military installations have neither the sensors to detect an incoming drone swarm nor the effectors to stop it, against a ~$21B Pentagon request spanning EW, kinetic interceptors, lasers and HPM — evidence that even well-resourced forces treat fixed-site protection as an open gap, reinforcing the baseline's protected-assets/echelons element. [Reported — resource commitment] The Army agreed a ~$400M spend on AeroVironment counter-drone lasers (Bloomberg, 7 Aug), consistent with reporting that HEL is moving from rotating prototypes toward a permanent element of the counter-drone architecture — a funding datum on the DE layer; fielded performance at scale remains to be demonstrated. [Reported — doctrinal adaptation] The 1st Cavalry Division introduced a counter-UAS qualification at Fort Hood (from 26 Jul) — the division whose armored brigade was repeatedly defeated at Combined Resolve, closing the exercise-to-training loop the baseline's mitigation element should capture.",
       "sowhat": "Every element of a layered C-UAS/sense-strike architecture (sensing, soft-kill, directed energy, kinetic interceptors) is moving from demonstration to production somewhere in the alliance within the same 30-day window, at costs and quantities well characterised in open reporting. Treated as one force-development question, this is the most evidenced and most immediately actionable capability issue this edition — but the external evidence establishes the threat and the cost-exchange trend, not Army's internal baseline. The G5-led baseline step is what converts it from an external signal into a decision-grade confirmed gap.",
       "action": "G5 force-development element to produce the Army C-UAS force-development baseline by 15 Sep 2026, with ASB2 leading the C-UAS/Sense-Strike functional analysis and SIO maintaining the external evidence base as insight sponsor.",
       "src": [
@@ -359,6 +363,22 @@ window.SIO_DATA = {
           "url": "https://www.armyrecognition.com/news/army-news/2026/us-northern-command-warns-drone-defense-gaps-leave-military-bases-exposed-to-domestic-swarm-attacks",
           "f": "verified",
           "note": "Remarks delivered 13 Aug at the Space and Missile Defense Symposium; article date approximate."
+        },
+        {
+          "out": "Bloomberg",
+          "date": "7 Aug 2026",
+          "ttl": "US Army to Spend $400 Million on AeroVironment Anti-Drone Lasers",
+          "url": "https://www.bloomberg.com/news/articles/2026-08-07/us-army-to-spend-400-million-on-aerovironment-anti-drone-lasers",
+          "f": "paywall",
+          "note": "Corroborated by Army Recognition and market reporting; programme scope not established."
+        },
+        {
+          "out": "Army Recognition",
+          "date": "18 Aug 2026",
+          "ttl": "U.S. Army 1st Cavalry Launches New Counter Drone Training to Prepare Soldiers for Modern Warfare",
+          "url": "https://www.armyrecognition.com/news/army-news/2026/u-s-army-1st-cavalry-launches-new-counter-drone-training-to-prepare-soldiers-for-modern-warfare",
+          "f": "verified",
+          "note": "Date approximate; training from 26 Jul."
         }
       ],
       "insightSponsor": "SIO",
@@ -843,12 +863,12 @@ window.SIO_DATA = {
       "dlabel": "Army data layer — foundational dependency",
       "suspense": "ASB4 baseline due 15 Sep 2026",
       "latestDevelopment": "A GAO report (reported 20 Aug) warns information gaps could hinder the Army's NGC2 modernisation planning, and notes NGC2 hardware suffered in extreme heat at the Mojave capstone — an independent watchdog assessment landing three weeks after Army leaders declared the programme 'ready to scale'.",
-      "changeFromPrevious": "Material since 18 Aug review: the comparator picture is now two-sided — a service 'ready to scale' declaration against a GAO warning of information gaps and environmental hardware issues. For the pending SIO/G5 comparison this is a useful discipline: NGC2 lessons carry both a scaling pattern worth studying and documented risks (planning-information gaps, environmental qualification) to weigh when judging which patterns are relevant vs inappropriate. The ASB4 baseline precondition (due 15 Sep) is unchanged.",
+      "changeFromPrevious": "Material since 18 Aug review: the comparator picture is now two-sided — a service 'ready to scale' declaration against a GAO warning of information gaps and environmental hardware issues. For the pending SIO/G5 comparison this is a useful discipline: NGC2 lessons carry both a scaling pattern worth studying and documented risks (planning-information gaps, environmental qualification) to weigh when judging which patterns are relevant vs inappropriate. The ASB4 baseline precondition (due 15 Sep) is unchanged. Further comparator evidence (reported ~20 Aug): tactical drones being integrated into the NGC2 ecosystem at unit level for sensor-to-shooter coordination — the common data layer carrying a live workflow, weighed against the GAO caveats.",
       "armyRelevance": "Foundational — every persistent question in the register depends on whether Army can discover, integrate, govern and expose trusted data to the people and applications that need it, at the required classification, echelon and tempo. This is not an ordinary technology watch item, and it is not 'should Army copy NGC2' — NGC2/Maven are comparators; the starting point is the Singapore Army's operational requirements and existing architecture. This pipeline holds no verified information on the internal systems concerned and will not fabricate the comparison.",
       "escalationTrigger": "Escalate once the ASB4 baseline (due 15 Sep 2026) is received and the SIO/G5 comparison identifies what data exists, where it resides, who owns it, whether it is reusable, how it is exposed, whether it moves across required environments, where duplication exists, what blocks decision workflows, and which NGC2/Maven patterns are relevant vs inappropriate for the Singapore Army.",
       "note": "CSIO critique (6 Aug 2026) directed this entry be reframed against existing Army data architecture rather than approved as a generic NGC2 study. That reframe requires internal Army-architecture facts not available to this open-source pipeline. Per COS-GS vetting (8 Aug 2026), the precondition is converted into a defined internal tasking: ASB4 to provide the current Army Data Store, ENCLAVE, STRONGWATCH and OUTREACH/SYNTEX architecture baseline by 15 Sep 2026 for comparison against relevant NGC2/common-data-layer lessons.",
       "decision": "Foundational dependency (Q5) — ASB4 architecture baseline tasked (due 15 Sep 2026); comparison focuses on the Army decision workflows the data architecture must enable, not technology imitation.",
-      "signal": "[Operationally evaluating] The US Army's Next Generation Command and Control (NGC2) programme moved from prototyping toward delivery: a named common-data-layer baseline (Anduril lead; Palantir edge-to-cloud data mesh) underwent division-scale force-on-force validation at Project Convergence Capstone 6 (July; Army.mil/DefenseScoop, 20-22 Jun). [Reported — single source, not independently corroborated] Project Maven is reported to be transmitting near-fully machine-generated intelligence to commanders using large language models (CSIS, 15 Jun). [Reported] At DoDIIS Worldwide (11 Aug), US military intelligence leaders identified data access within the right security enclaves — not model development — as the biggest obstacle to battlefield AI (GovCIO, 12 Aug): independent corroboration of the data-layer-as-bottleneck thesis this foundational line rests on. [Fielding-track] Army leaders declared NGC2 ready to scale at PC-C6's close (29 Jul), concluding 10 months of prototyping; rollout begins with I Corps headquarters and downtrace units (army.mil, 3 Aug). [Reported — watchdog] GAO warns information gaps could hinder Army NGC2 modernisation plans, and NGC2 hardware suffered in extreme Mojave heat, even as leaders call the capstone a success and prepare wider fielding (DefenseScoop, 20 Aug).",
+      "signal": "[Operationally evaluating] The US Army's Next Generation Command and Control (NGC2) programme moved from prototyping toward delivery: a named common-data-layer baseline (Anduril lead; Palantir edge-to-cloud data mesh) underwent division-scale force-on-force validation at Project Convergence Capstone 6 (July; Army.mil/DefenseScoop, 20-22 Jun). [Reported — single source, not independently corroborated] Project Maven is reported to be transmitting near-fully machine-generated intelligence to commanders using large language models (CSIS, 15 Jun). [Reported] At DoDIIS Worldwide (11 Aug), US military intelligence leaders identified data access within the right security enclaves — not model development — as the biggest obstacle to battlefield AI (GovCIO, 12 Aug): independent corroboration of the data-layer-as-bottleneck thesis this foundational line rests on. [Fielding-track] Army leaders declared NGC2 ready to scale at PC-C6's close (29 Jul), concluding 10 months of prototyping; rollout begins with I Corps headquarters and downtrace units (army.mil, 3 Aug). [Reported — watchdog] GAO warns information gaps could hinder Army NGC2 modernisation plans, and NGC2 hardware suffered in extreme Mojave heat, even as leaders call the capstone a success and prepare wider fielding (DefenseScoop, 20 Aug). [Reported] Unit-level training shows tactical drones integrated into the NGC2 ecosystem, feeding the common data layer for sensor-to-shooter coordination (Army Recognition, ~20 Aug) — comparator evidence of an operating decision workflow on the architecture.",
       "sowhat": "The open-source evidence describes a US programme's maturity, not an Army-specific integration decision. As a foundational enabler, the line is assessed by whether Army's data architecture enables persistent decision workflows — including the workflows this register itself requires.",
       "action": "Tasking: ASB4 to provide the current Army Data Store, ENCLAVE, STRONGWATCH and OUTREACH/SYNTEX architecture baseline by 15 Sep 2026, for comparison against relevant NGC2/common-data-layer lessons. Once the baseline is available, SIO/G5 determine whether a genuine force-development gap or opportunity exists.",
       "src": [
@@ -895,6 +915,14 @@ window.SIO_DATA = {
           "ttl": "GAO warns information gaps could hinder Army's battlefield network modernization plans",
           "url": "https://defensescoop.com/2026/08/20/gao-report-army-ngc2-battlefield-network-modernization/",
           "f": "verified"
+        },
+        {
+          "out": "Army Recognition",
+          "date": "20 Aug 2026",
+          "ttl": "U.S. Army Integrates Tactical Drones into Next Generation Command and Control Network",
+          "url": "https://www.armyrecognition.com/news/army-news/2026/u-s-army-integrates-tactical-drones-into-next-generation-command-and-control-network",
+          "f": "verified",
+          "note": "Date approximate; single-outlet coverage."
         }
       ],
       "insightSponsor": "SIO",
@@ -1388,6 +1416,29 @@ window.SIO_DATA = {
   "feed": [
     {
       "date": "2026-08-20",
+      "out": "Army Recognition",
+      "ttl": "U.S. Army Integrates Tactical Drones into Next Generation Command and Control Network",
+      "sum": "Training reporting shows tactical drones being integrated into the NGC2 ecosystem to feed the common data layer and speed sensor-to-shooter coordination — comparator evidence of NGC2 carrying a live decision workflow, to be weighed alongside the GAO information-gap and environmental-hardware caveats already tracked.",
+      "tech": [
+        "data",
+        "robo"
+      ],
+      "pf": "P6",
+      "desk": "US",
+      "url": "https://www.armyrecognition.com/news/army-news/2026/u-s-army-integrates-tactical-drones-into-next-generation-command-and-control-network",
+      "f": "verified",
+      "serial": "W-3",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "trade_press",
+      "corroborated": false,
+      "confidence": "moderate",
+      "primarySourceUrl": null,
+      "unverifiedClaims": "Article date approximate; single-outlet coverage of unit-level training integration.",
+      "dateLastChecked": "2026-08-23"
+    },
+    {
+      "date": "2026-08-20",
       "out": "DefenseScoop",
       "ttl": "GAO warns information gaps could hinder Army's battlefield network modernization plans",
       "sum": "A GAO report flags issues with the Army's NGC2 effort: while leaders called the Mojave capstone a success and plan wider fielding, GAO warns information gaps could hinder modernisation planning, and NGC2-related hardware suffered in extreme desert heat — an independent assessment tempering the 'ready to scale' narrative.",
@@ -1408,6 +1459,28 @@ window.SIO_DATA = {
       "primarySourceUrl": null,
       "unverifiedClaims": null,
       "dateLastChecked": "2026-08-22"
+    },
+    {
+      "date": "2026-08-18",
+      "out": "Army Recognition",
+      "ttl": "U.S. Army 1st Cavalry Launches New Counter Drone Training to Prepare Soldiers for Modern Warfare",
+      "sum": "The 1st Cavalry Division introduced a newly adapted counter-UAS qualification at Fort Hood (training conducted from 26 Jul) — doctrinal/training adaptation by the division whose 3rd Armored Brigade Combat Team was repeatedly defeated by drone operators at Combined Resolve, closing the exercise-to-training loop.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://www.armyrecognition.com/news/army-news/2026/u-s-army-1st-cavalry-launches-new-counter-drone-training-to-prepare-soldiers-for-modern-warfare",
+      "f": "verified",
+      "serial": "D-1",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "trade_press",
+      "corroborated": false,
+      "confidence": "moderate",
+      "primarySourceUrl": null,
+      "unverifiedClaims": "Article date approximate (training conducted from 26 Jul; single-outlet coverage).",
+      "dateLastChecked": "2026-08-23"
     },
     {
       "date": "2026-08-18",
@@ -1793,6 +1866,28 @@ window.SIO_DATA = {
       "primarySourceUrl": null,
       "unverifiedClaims": null,
       "dateLastChecked": "2026-08-18"
+    },
+    {
+      "date": "2026-08-07",
+      "out": "Bloomberg",
+      "ttl": "US Army to Spend $400 Million on AeroVironment Anti-Drone Lasers",
+      "sum": "The Army agreed a ~$400M arrangement for AeroVironment counter-drone laser systems — a resource commitment consistent with trade-press reporting that the Army intends to make high-energy lasers a permanent element of its counter-drone architecture rather than a rotating prototype effort.",
+      "tech": [
+        "dews"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-07/us-army-to-spend-400-million-on-aerovironment-anti-drone-lasers",
+      "f": "paywall",
+      "serial": "D-1",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "general_press",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": null,
+      "unverifiedClaims": "Body behind paywall; commitment corroborated by Army Recognition and market reporting. Programme scope and delivery schedule not established from available evidence.",
+      "dateLastChecked": "2026-08-23"
     },
     {
       "date": "2026-08-06",
@@ -4286,9 +4381,9 @@ window.SIO_DATA = {
     }
   ],
   "metrics": {
-    "asOf": "2026-08-22",
+    "asOf": "2026-08-23",
     "note": "Decision-advantage metrics per DOCTRINE.md §21 — measured where practicable; information volume is not an outcome. Time-based metrics (signal-to-assessment, assessment-to-direction, decision-to-action) require timestamps captured across future editions and are not yet measurable.",
-    "provenanceTraceablePct": 95,
+    "provenanceTraceablePct": 93,
     "internalDataCoveragePct": 0,
     "internalDataCoverageNote": "0% — every thread currently rests on external evidence alone; internal baselines are tasked (G5 × 2 due 15 Sep 2026, ASB4 due 15 Sep 2026) and this figure is the register's most important number to move.",
     "closedLoop": {
