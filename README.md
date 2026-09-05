@@ -38,6 +38,18 @@ Observed Effect → Updated Assessment`. Each edition runs five layers:
    (`sio-vetting-panel` skill) interrogates the product; it ships via PR
    review to the dashboard; direction given is logged and its outcomes
    feed the next edition.
+6. **Landing zone (v3.1)** — every decision thread names where it enters
+   the real staff system (`capdev-governance` skill): its DCM lifecycle
+   phase (Defence Capability Management: long-term planning → front-end
+   planning → acquisition → transition to O&S → O&S → retirement,
+   evidenced Army-side state only), the staffing instrument that would
+   move it (OCF / OMP / AOR–SON–SOR / AOE / PIP …), and the target forum
+   from the ACDOM governance map (ACDM — monthly, COS-GS-chaired
+   pinnacle cap-dev forum; ASTC for R&T gating; CPRC for resources;
+   ADTC/AOM for doctrine and ops policy; ASSC/AISC/ACC above). Editions
+   nominate at most one or two material changes as ACDM agenda
+   candidates, in decision form; forum outcomes enter the register only
+   on user-supplied evidence.
 
 The dashboard (`index.html`) renders that order top-down: Question
 Register → material changes → CSIO Direction Required → active threads →

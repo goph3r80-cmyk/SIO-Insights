@@ -446,6 +446,254 @@
     </div>
   </div>
 
+  <div class="sec-h"><span class="rn">4b</span><h2>The persona stack</h2><span class="rule"></span><span class="sub">who produces, who judges, who decides</span></div>
+  <style>
+    .orbat-shell { background: var(--surface); border: 1px solid var(--hair); border-radius: var(--radius); padding: 16px 12px 8px; overflow-x: auto; }
+    .orbat-shell svg { display: block; min-width: 880px; max-width: 100%; height: auto; margin: 0 auto; }
+    .orbat-cap { font-size: 13px; color: var(--muted); max-width: 76ch; margin: 10px 4px 0; }
+    .orbat-key { display: flex; flex-wrap: wrap; gap: 12px 20px; margin: 0 0 12px; font-size: 12.5px; color: var(--muted); align-items: center; }
+    .orbat-key .k1 { display: inline-flex; align-items: center; gap: 6px; }
+    .orbat-key .swb { width: 13px; height: 13px; border-radius: 3px; border: 2px solid; background: var(--surface-2); flex: 0 0 auto; }
+    .orbat svg text { font-family: inherit; fill: var(--ink); }
+    .orbat .olbl { font-size: 12px; }
+    .orbat .olbl-s { font-size: 10.5px; fill: var(--muted); }
+    .orbat .olbl-b { font-size: 13px; font-weight: 600; }
+    .orbat .obox { fill: var(--surface-2); stroke-width: 1.5; }
+    .orbat .o-producer { stroke: var(--v-proven); }
+    .orbat .o-judge { stroke: var(--tech-data); }
+    .orbat .o-int { stroke: var(--tech-data); stroke-width: 2.25; }
+    .orbat .o-reg { stroke: var(--ink); stroke-width: 1.75; }
+    .orbat .o-plain { fill: var(--surface); stroke: var(--muted); stroke-width: 1.2; }
+    .orbat .o-doc { fill: none; stroke: var(--muted); stroke-width: 1.2; stroke-dasharray: 5 4; }
+    .orbat .oflow { stroke: var(--ink); stroke-width: 1.3; fill: none; }
+    .orbat .oflow-dir { stroke: var(--accent); stroke-width: 2; fill: none; }
+    .orbat .opair { stroke: var(--v-proven); stroke-width: 1.1; fill: none; stroke-dasharray: 2.5 3.5; opacity: .8; }
+    .orbat .ot-dir { fill: var(--accent); font-weight: 600; }
+  </style>
+  <div class="orbat">
+  <div class="orbat-key">
+    <span class="k1"><span class="swb" style="border-color:var(--v-proven)"></span> produces — TECHINT officers (<code>techint-officers</code>)</span>
+    <span class="k1"><span class="swb" style="border-color:var(--tech-data)"></span> judges — vetting panel (<code>sio-vetting-panel</code>)</span>
+    <span class="k1"><span class="swb" style="border-color:var(--ink)"></span> the register (<code>data.js</code>)</span>
+    <span class="k1"><span class="swb" style="border-color:var(--accent)"></span> direction out / loop back</span>
+    <span class="k1"><span class="swb" style="border-color:var(--muted); border-style:dashed; background:transparent"></span> doctrine (governs)</span>
+  </div>
+  <figure style="margin:0">
+    <div class="orbat-shell">
+    <svg viewBox="0 0 1120 700" role="img" aria-label="Flow diagram: intake and evidence grading feed six TECHINT officer lanes; officers write into the Army Question Register; six paired branch heads vet from the register in pass one; their findings feed three integrators — ACGS Plans, COS-GS, CSIO — in pass two; typed direction flows out and loops back into the register's decision log. A dashed doctrine spine on the left governs every layer.">
+      <defs>
+        <marker id="oarr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z" fill="var(--ink)"/>
+        </marker>
+        <marker id="oarrd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z" fill="var(--accent)"/>
+        </marker>
+        <marker id="oarrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z" fill="var(--muted)"/>
+        </marker>
+      </defs>
+
+      <rect x="20" y="60" width="150" height="560" rx="8" class="o-doc"/>
+      <text x="95" y="84" text-anchor="middle" class="olbl-b" style="fill:var(--muted)">DOCTRINE SPINE</text>
+      <rect x="34" y="100" width="122" height="52" rx="5" class="o-plain"/>
+      <text x="95" y="121" text-anchor="middle" class="olbl-s" style="fill:var(--ink)">DOCTRINE.md</text>
+      <text x="95" y="137" text-anchor="middle" class="olbl-s">outranks everything</text>
+      <rect x="34" y="170" width="122" height="66" rx="5" class="o-plain"/>
+      <text x="95" y="193" text-anchor="middle" class="olbl-s" style="fill:var(--ink)">techint-assessment</text>
+      <text x="95" y="211" text-anchor="middle" class="olbl-s">evidence grading</text>
+      <rect x="34" y="254" width="122" height="66" rx="5" class="o-plain"/>
+      <text x="95" y="277" text-anchor="middle" class="olbl-s" style="fill:var(--ink)">officer-doctrine.md</text>
+      <text x="95" y="295" text-anchor="middle" class="olbl-s">shared TECHINT method</text>
+      <rect x="34" y="338" width="122" height="66" rx="5" class="o-plain"/>
+      <text x="95" y="361" text-anchor="middle" class="olbl-s" style="fill:var(--ink)">master-prompt.md</text>
+      <text x="95" y="379" text-anchor="middle" class="olbl-s">RETUNE authority</text>
+      <text x="95" y="595" text-anchor="middle" class="olbl-s">no persona may override</text>
+      <text x="95" y="609" text-anchor="middle" class="olbl-s">the evidence wall</text>
+      <line x1="170" y1="340" x2="205" y2="340" class="oflow" style="stroke:var(--muted); stroke-dasharray:4 4" marker-end="url(#oarrg)"/>
+      <text x="188" y="330" text-anchor="middle" class="olbl-s">governs</text>
+
+      <rect x="230" y="28" width="200" height="46" rx="6" class="o-plain"/>
+      <text x="330" y="47" text-anchor="middle" class="olbl-b">Intake</text>
+      <text x="330" y="63" text-anchor="middle" class="olbl-s">tiered trawl + alerts dragnet</text>
+      <rect x="470" y="28" width="220" height="46" rx="6" class="o-plain"/>
+      <text x="580" y="47" text-anchor="middle" class="olbl-b">Evidence grading</text>
+      <text x="580" y="63" text-anchor="middle" class="olbl-s">claims · sources · maturity</text>
+      <line x1="430" y1="51" x2="464" y2="51" class="oflow" marker-end="url(#oarr)"/>
+      <line x1="580" y1="74" x2="580" y2="102" class="oflow"/>
+      <line x1="286" y1="102" x2="1010" y2="102" class="oflow"/>
+      <text x="722" y="96" text-anchor="middle" class="olbl-s">graded items, routed by lane</text>
+
+      <g>
+        <line x1="286" y1="102" x2="286" y2="126" class="oflow" marker-end="url(#oarr)"/>
+        <line x1="431" y1="102" x2="431" y2="126" class="oflow" marker-end="url(#oarr)"/>
+        <line x1="576" y1="102" x2="576" y2="126" class="oflow" marker-end="url(#oarr)"/>
+        <line x1="721" y1="102" x2="721" y2="126" class="oflow" marker-end="url(#oarr)"/>
+        <line x1="866" y1="102" x2="866" y2="126" class="oflow" marker-end="url(#oarr)"/>
+        <line x1="1011" y1="102" x2="1011" y2="126" class="oflow" marker-end="url(#oarr)"/>
+      </g>
+      <g>
+        <rect x="224" y="130" width="124" height="64" rx="6" class="obox o-producer"/>
+        <text x="286" y="152" text-anchor="middle" class="olbl-b">TO · AS Br 1</text>
+        <text x="286" y="168" text-anchor="middle" class="olbl-s">concepts ·</text>
+        <text x="286" y="181" text-anchor="middle" class="olbl-s">MUM-T</text>
+        <rect x="369" y="130" width="124" height="64" rx="6" class="obox o-producer"/>
+        <text x="431" y="152" text-anchor="middle" class="olbl-b">TO · AS Br 2</text>
+        <text x="431" y="168" text-anchor="middle" class="olbl-s">sense-strike ·</text>
+        <text x="431" y="181" text-anchor="middle" class="olbl-s">C-UAS · DE · EW</text>
+        <rect x="514" y="130" width="124" height="64" rx="6" class="obox o-producer"/>
+        <text x="576" y="152" text-anchor="middle" class="olbl-b">TO · AS Br 3</text>
+        <text x="576" y="168" text-anchor="middle" class="olbl-s">grey-zone ·</text>
+        <text x="576" y="181" text-anchor="middle" class="olbl-s">partnerships</text>
+        <rect x="659" y="130" width="124" height="64" rx="6" class="obox o-producer"/>
+        <text x="721" y="152" text-anchor="middle" class="olbl-b">TO · AS Br 4</text>
+        <text x="721" y="168" text-anchor="middle" class="olbl-s">data · AI ·</text>
+        <text x="721" y="181" text-anchor="middle" class="olbl-s">software-defined</text>
+        <rect x="804" y="130" width="124" height="64" rx="6" class="obox o-producer"/>
+        <text x="866" y="152" text-anchor="middle" class="olbl-b">TO · CESS</text>
+        <text x="866" y="168" text-anchor="middle" class="olbl-s">sustainment ·</text>
+        <text x="866" y="181" text-anchor="middle" class="olbl-s">power · logistics</text>
+        <rect x="949" y="130" width="124" height="64" rx="6" class="obox o-producer"/>
+        <text x="1011" y="152" text-anchor="middle" class="olbl-b">TO · AOTO</text>
+        <text x="1011" y="168" text-anchor="middle" class="olbl-s">experiments ·</text>
+        <text x="1011" y="181" text-anchor="middle" class="olbl-s">transition · industry</text>
+      </g>
+
+      <g>
+        <line x1="286" y1="194" x2="286" y2="240" class="oflow" marker-end="url(#oarr)"/>
+        <line x1="431" y1="194" x2="431" y2="240" class="oflow" marker-end="url(#oarr)"/>
+        <line x1="576" y1="194" x2="576" y2="240" class="oflow" marker-end="url(#oarr)"/>
+        <line x1="721" y1="194" x2="721" y2="240" class="oflow" marker-end="url(#oarr)"/>
+        <line x1="866" y1="194" x2="866" y2="240" class="oflow" marker-end="url(#oarr)"/>
+        <line x1="1011" y1="194" x2="1011" y2="240" class="oflow" marker-end="url(#oarr)"/>
+        <text x="219" y="224" text-anchor="end" class="olbl-s">assessments →</text>
+      </g>
+
+      <rect x="210" y="246" width="878" height="74" rx="7" class="obox o-reg"/>
+      <text x="649" y="272" text-anchor="middle" class="olbl-b">THE REGISTER — data.js</text>
+      <text x="649" y="291" text-anchor="middle" class="olbl-s">Army Questions Q1–Q7 · decision threads (D / W / F / S / B) · graded evidence feed</text>
+      <text x="649" y="307" text-anchor="middle" class="olbl-s">four-role ownership · material-change test · decision log</text>
+
+      <g>
+        <line x1="286" y1="320" x2="286" y2="366" class="oflow" marker-end="url(#oarr)"/>
+        <line x1="431" y1="320" x2="431" y2="366" class="oflow" marker-end="url(#oarr)"/>
+        <line x1="576" y1="320" x2="576" y2="366" class="oflow" marker-end="url(#oarr)"/>
+        <line x1="721" y1="320" x2="721" y2="366" class="oflow" marker-end="url(#oarr)"/>
+        <line x1="866" y1="320" x2="866" y2="366" class="oflow" marker-end="url(#oarr)"/>
+        <line x1="1011" y1="320" x2="1011" y2="366" class="oflow" marker-end="url(#oarr)"/>
+        <text x="219" y="350" text-anchor="end" class="olbl-s">vet (pass 1) →</text>
+      </g>
+
+      <g>
+        <rect x="224" y="370" width="124" height="64" rx="6" class="obox o-judge"/>
+        <text x="286" y="392" text-anchor="middle" class="olbl-b">Hd AS Br 1</text>
+        <text x="286" y="408" text-anchor="middle" class="olbl-s">concept before kit ·</text>
+        <text x="286" y="421" text-anchor="middle" class="olbl-s">force design</text>
+        <rect x="369" y="370" width="124" height="64" rx="6" class="obox o-judge"/>
+        <text x="431" y="392" text-anchor="middle" class="olbl-b">Hd AS Br 2</text>
+        <text x="431" y="408" text-anchor="middle" class="olbl-s">threat class ·</text>
+        <text x="431" y="421" text-anchor="middle" class="olbl-s">cost exchange</text>
+        <rect x="514" y="370" width="124" height="64" rx="6" class="obox o-judge"/>
+        <text x="576" y="392" text-anchor="middle" class="olbl-b">Hd AS Br 3</text>
+        <text x="576" y="408" text-anchor="middle" class="olbl-s">six-gate filter ·</text>
+        <text x="576" y="421" text-anchor="middle" class="olbl-s">channel economics</text>
+        <rect x="659" y="370" width="124" height="64" rx="6" class="obox o-judge"/>
+        <text x="721" y="392" text-anchor="middle" class="olbl-b">Hd AS Br 4</text>
+        <text x="721" y="408" text-anchor="middle" class="olbl-s">data granularity ·</text>
+        <text x="721" y="421" text-anchor="middle" class="olbl-s">reuse before rebuild</text>
+        <rect x="804" y="370" width="124" height="64" rx="6" class="obox o-judge"/>
+        <text x="866" y="392" text-anchor="middle" class="olbl-b">Hd CESS Br</text>
+        <text x="866" y="408" text-anchor="middle" class="olbl-s">“why no CSS?” ·</text>
+        <text x="866" y="421" text-anchor="middle" class="olbl-s">tail pricing</text>
+        <rect x="949" y="370" width="124" height="64" rx="6" class="obox o-judge"/>
+        <text x="1011" y="392" text-anchor="middle" class="olbl-b">Hd AOTO</text>
+        <text x="1011" y="408" text-anchor="middle" class="olbl-s">pathway or no ·</text>
+        <text x="1011" y="421" text-anchor="middle" class="olbl-s">recommendation</text>
+      </g>
+
+      <g>
+        <path d="M 232 194 L 232 370" class="opair"/>
+        <path d="M 377 194 L 377 370" class="opair"/>
+        <path d="M 522 194 L 522 370" class="opair"/>
+        <path d="M 667 194 L 667 370" class="opair"/>
+        <path d="M 812 194 L 812 370" class="opair"/>
+        <path d="M 957 194 L 957 370" class="opair"/>
+      </g>
+
+      <g>
+        <line x1="286" y1="434" x2="286" y2="458" class="oflow"/>
+        <line x1="431" y1="434" x2="431" y2="458" class="oflow"/>
+        <line x1="576" y1="434" x2="576" y2="458" class="oflow"/>
+        <line x1="721" y1="434" x2="721" y2="458" class="oflow"/>
+        <line x1="866" y1="434" x2="866" y2="458" class="oflow"/>
+        <line x1="1011" y1="434" x2="1011" y2="458" class="oflow"/>
+        <line x1="286" y1="458" x2="1011" y2="458" class="oflow"/>
+        <line x1="648" y1="458" x2="648" y2="486" class="oflow" marker-end="url(#oarr)"/>
+        <text x="660" y="479" text-anchor="start" class="olbl-s">findings feed upward (pass 2)</text>
+      </g>
+
+      <g>
+        <rect x="300" y="490" width="200" height="70" rx="6" class="obox o-int"/>
+        <text x="400" y="513" text-anchor="middle" class="olbl-b">ACGS(Plans)</text>
+        <text x="400" y="530" text-anchor="middle" class="olbl-s">G5 · FD lead by authority ·</text>
+        <text x="400" y="543" text-anchor="middle" class="olbl-s">baseline-first · forum demand</text>
+        <rect x="530" y="490" width="200" height="70" rx="6" class="obox o-int"/>
+        <text x="630" y="513" text-anchor="middle" class="olbl-b">COS-GS</text>
+        <text x="630" y="530" text-anchor="middle" class="olbl-s">materiality for COA/ACC ·</text>
+        <text x="630" y="543" text-anchor="middle" class="olbl-s">scope ↔ money · item class</text>
+        <rect x="760" y="490" width="200" height="70" rx="6" class="obox o-int"/>
+        <text x="860" y="513" text-anchor="middle" class="olbl-b">CSIO</text>
+        <text x="860" y="530" text-anchor="middle" class="olbl-s">decision-grade test ·</text>
+        <text x="860" y="543" text-anchor="middle" class="olbl-s">“does SIO own this fight?”</text>
+      </g>
+
+      <g>
+        <line x1="860" y1="560" x2="860" y2="592" class="oflow-dir" marker-end="url(#oarrd)"/>
+        <rect x="620" y="596" width="480" height="52" rx="6" fill="none" stroke="var(--accent)" stroke-width="1.75"/>
+        <text x="860" y="618" text-anchor="middle" class="olbl-b ot-dir">Typed direction · vetting minute · publish</text>
+        <text x="860" y="635" text-anchor="middle" class="olbl-s">priority / capability / resource / policy decision — or staff action</text>
+        <path d="M 1100 622 L 1112 622 L 1112 283 L 1094 283" class="oflow-dir" marker-end="url(#oarrd)"/>
+        <text x="1108" y="450" text-anchor="middle" class="olbl-s ot-dir" transform="rotate(-90 1108 450)">decisionLog → next edition</text>
+      </g>
+    </svg>
+    </div>
+    <figcaption class="orbat-cap">Fifteen personas, two skill teams, one rule: <b>producer and judge are separate per
+      branch</b>. Each TECHINT officer produces assessments into the register; its paired branch head vets them in the
+      panel's first pass (dashed pair lines — direct support and escalation on named triggers); findings feed the
+      integrator pass, and only typed direction leaves the system, looping back into the decision log as the next
+      edition's evidence. The dashed doctrine spine governs every layer — no persona can override the evidence wall,
+      presume ownership, or skip the material-change test. Persona files live under
+      <code>.claude/skills/techint-officers</code> and <code>.claude/skills/sio-vetting-panel</code>; all are defined
+      by appointment only.</figcaption>
+  </figure>
+  </div>
+
+  <div class="sec-h"><span class="rn">4c</span><h2>The landing zone</h2><span class="rule"></span><span class="sub">where register items enter the real staff system — DCM &amp; ACDOM</span></div>
+  <div class="grid2">
+    <div class="cell">
+      <h3>DCM — the lifecycle</h3>
+      <p>The <b>Defence Capability Management</b> framework is the MINDEF lifecycle process by which a capability
+      need becomes operational and support-system requirements and is managed cradle to retirement:
+      <em>long-term planning → front-end planning → acquisition management → transition to O&amp;S → O&amp;S →
+      retirement</em>. SIO conducts DCM of Army systems and platforms in the system-development lane. Every
+      decision-tier thread now carries a <code>dcmPhase</code> (the <b>Army thread's</b> state, from evidenced
+      internal facts only — never inferred from a foreign system's maturity), a <code>nextInstrument</code> (the
+      staffing document that would move it: OCF, OMP, EMP, AOR/SON/SOR, AOE, PIP…), and a
+      <code>targetForum</code>.</p>
+    </div>
+    <div class="cell">
+      <h3>ACDOM — the governance</h3>
+      <p>The <b>Army Capability Development Operating Manual</b> defines three governance tiers: executive-level
+      working committees (PEO-anchored, with a CSIO–Dir(Land) system-integration forum, WSSC staffing and the
+      equipping management forum); General Staff forums — <b>ACDM</b> (monthly, chaired COS-GS, the pinnacle
+      cap-dev forum), <b>ASTC</b> (CSIO co-chaired R&amp;T gate), CPRC, AOM, ADTC; and Army-level steering
+      committees — ASSC, AISC, ACC. Direction types route accordingly: priority directions and capability
+      decisions to ACDM (R&amp;T gating at ASTC), resource decisions to CPRC/ACDM, policy-doctrine consequences
+      to ADTC/AOM. Each edition nominates at most one or two material changes as <b>ACDM agenda candidates</b>,
+      in decision form; the register records candidacy and evidenced outcomes, never attendance. See the
+      <code>capdev-governance</code> skill.</p>
+    </div>
+  </div>
+
   <div class="sec-h"><span class="rn">5</span><h2>Field &amp; value glossary</h2><span class="rule"></span><span class="sub">every enum, decoded</span></div>
 
   <div class="gloss-grp">
@@ -566,6 +814,18 @@
   </div>
 
   <div class="gloss-grp">
+    <h4>governance &amp; lifecycle — the landing-zone vocabulary</h4>
+    <div class="term-grid">
+      <div class="term-card"><div class="row1"><span class="val">DCM</span></div><p>Defence Capability Management — the MINDEF lifecycle framework; source of the six <code>dcmPhase</code> values.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">ACDOM</span></div><p>Army Capability Development Operating Manual — the operating doctrine for the cap-dev system, its tiers, forums and instruments.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">ACDM</span></div><p>Army Capability Development Meeting — monthly, chaired COS-GS; the pinnacle cap-dev forum. Default landing zone for priority directions and capability decisions.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">ASTC</span></div><p>Army Science &amp; Technology Conference — CSIO co-chaired; gates and prioritises R&amp;T proposals.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">ASSC · ACC</span></div><p>Army Systems Steering Committee and Army Commanders Conference — the Army-tier escalation ladder above ACDM.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">AOR · SON · SOR</span></div><p>Approval of Requirement package (Statement of Need, Specific Operational Requirement, annexes) — the front-end-planning instrument that funds a requirement.</p></div>
+    </div>
+  </div>
+
+  <div class="gloss-grp">
     <h4>under the hood — where each layer lives in the repo</h4>
     <div class="term-grid">
       <div class="term-card"><div class="row1"><span class="val">DOCTRINE.md</span></div><p>The standing intent — every future change is judged against it.</p></div>
@@ -574,6 +834,7 @@
       <div class="term-card"><div class="row1"><span class="val">.claude/skills/techint-assessment</span></div><p>Evidence grading: claim decomposition, source scales, maturity discipline.</p></div>
       <div class="term-card"><div class="row1"><span class="val">.claude/skills/techint-officers</span></div><p>Six branch analysts producing the assessments, on the shared TECHINT doctrine.</p></div>
       <div class="term-card"><div class="row1"><span class="val">.claude/skills/sio-vetting-panel</span></div><p>Nine appointment personas that interrogate every product before it ships.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">.claude/skills/capdev-governance</span></div><p>The landing zone: DCM lifecycle, ACDOM forum map and routing, forum-submission output mode.</p></div>
     </div>
   </div>
 

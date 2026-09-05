@@ -80,6 +80,11 @@ value is the friction.
 ## Conflicts for the author
 - <where personas disagree, and what decision that forces>
 ## Amendments applied / recommended
+## Forum destination
+- <for every CLEARED item carrying a direction: the target forum per
+  the capdev-governance routing (ACDM / ASTC / CPRC / AOM / ADTC /
+  escalation tier), and the instrument it should ride — or "in-branch"
+  for staff actions>
 ```
 
 ## Panel rules

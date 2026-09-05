@@ -298,3 +298,43 @@ data could confirm or reject the hypothesis? **Action** — what happens if
 the assessment is accepted? **Feedback** — how will we know whether the
 resulting action worked? If these cannot be answered, downgrade the item
 rather than overstate its maturity.
+
+## 29. DCM and ACDOM alignment (the landing zone)
+
+SIO Insights serves the Army capability-development machinery, and its
+outputs must speak that machinery's language. Two anchors:
+
+- **DCM** — the Defence Capability Management framework: the MINDEF
+  lifecycle process by which a capability need becomes operational and
+  support-system requirements, managed cradle to retirement. Phases:
+  long-term planning → front-end planning → acquisition management →
+  transition to O&S → O&S → retirement. SIO conducts DCM of Army
+  systems/platforms in the system-development lane.
+- **ACDOM** — the Army Capability Development Operating Manual: the
+  operating doctrine for the cap-dev system, its three governance tiers
+  (executive level; General Staff forums — ACDM, ASTC, CPRC, AOM, ADTC;
+  Army-level steering committees — ASSC, AISC, ACC) and its staffing
+  instruments (OCF, OMP, EMP, AOR/SON/SOR with annexes, AOE, PIP,
+  safety and doctrine documents, equipping/retirement plans).
+
+Standing rules:
+
+1. Every decision-tier serial names its **landing zone**: the DCM phase
+   its Army thread sits in (`dcmPhase`, from evidenced Army-side state
+   only — else null with the baseline flagged), the next instrument
+   that would move it (`nextInstrument`), and the forum where that
+   instrument is decided (`targetForum`).
+2. Direction types route to forums, not to people: priority direction →
+   ACDM; capability decision → ACDM then ASSC/ACC (R&T gating at ASTC);
+   resource decision → CPRC or ACDM; policy/doctrine decision → ADTC or
+   AOM; staff action stays in-branch.
+3. Editions feed the battle rhythm: material-change flags nominate at
+   most one or two ACDM **agenda candidates** per month, in decision
+   form. The register records candidacy and evidenced outcomes only —
+   never attendance, and never a forum decision without user-supplied
+   evidence.
+4. The external maturity ladder grades the technology; `dcmPhase`
+   states the Army thread. The two must never be conflated.
+5. Forum-ready drafting follows the capdev-governance skill's
+   forum-submission mode: appointments only, evidence grades carried
+   through, one paper one decision, vetting-panel pass before delivery.

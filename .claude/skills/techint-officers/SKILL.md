@@ -61,6 +61,11 @@ ARMY → WHAT DO WE NEED TO KNOW → WHAT SHOULD ARMY DO.**
 - `sio-vetting-panel` (skill) — the branch head personas are the
   officers' customers and toughest critics; a good officer product
   pre-answers its own branch head's characteristic questions.
+- `capdev-governance` (skill) — gives officer products their landing
+  zone in the real staff system: INVESTIGATE/ENGAGE feed the ops-tech
+  ideas-generation front end, TEST/EXPERIMENT feed ASTC gating and the
+  rapid-equipping channels, TRANSITION invokes the AOR machinery; an
+  experiment recommendation names its instrument and forum.
 - `DOCTRINE.md` — outranks everything here: no internal Army facts from
   OSINT, no ownership by inference, material-change discipline.
 

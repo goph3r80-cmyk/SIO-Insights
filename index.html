@@ -404,6 +404,21 @@
   var DIRTYPE = { priority_direction:'PRIORITY DIRECTION', capability_decision:'CAPABILITY DECISION', resource_decision:'RESOURCE DECISION', policy_doctrine_decision:'POLICY/DOCTRINE DECISION', staff_action:'STAFF ACTION' };
   var QCAT = { capability:'Capability', foundational:'Foundational enabler', net_assessment:'Net-assessment', policy:'Policy', organisational:'Organisational' };
   var QBY = {}; (D.questions||[]).forEach(function(q){ QBY[q.id]=q; });
+  var FORUMS = D.forums || {};
+  var PHASE = { long_term_planning:'Long-term planning', front_end_planning:'Front-end planning', acquisition_management:'Acquisition management', transition_to_oands:'Transition to O&S', oands:'O&S', retirement:'Retirement' };
+  function forumTag(code){
+    if (!code) return '—';
+    var f = FORUMS[code];
+    return '<span title="'+esc(f ? (f.name+' — '+(f.chair?('chair: '+f.chair+' · '):'')+f.role) : code)+'">'+esc(code)+'</span>';
+  }
+  function landingBlock(s){
+    if (!s.dcmPhase && !s.nextInstrument && !s.targetForum) return '';
+    return '<div class="field"><div class="k">Landing zone</div><div class="v">'
+      + '<b>Forum</b> ' + forumTag(s.targetForum)
+      + ' · <b>DCM phase</b> ' + (s.dcmPhase ? esc(PHASE[s.dcmPhase]||s.dcmPhase) : 'not established (Army-side state unevidenced)')
+      + (s.nextInstrument ? ' · <b>Next instrument</b> ' + esc(s.nextInstrument) : '')
+      + '</div></div>';
+  }
   function qcatOf(s){ var q = s.question && QBY[s.question]; return q ? q.category : null; }
   var GROUPS = [
     { key:'decision', rn:'D', title:'CSIO Direction Required', pred:function(s){ return s.category==='capability' && s.tier==='decision'; } },
@@ -503,7 +518,7 @@
       +     '<div class="field"><div class="k">Army baseline</div><div class="v">'+esc(q.armyBaseline)+'</div></div>'
       +     '<div class="field"><div class="k">External change</div><div class="v">'+esc(q.externalChange)+'</div></div>'
       +     '<div class="field"><div class="k">Delta</div><div class="v">'+esc(q.delta)+'</div></div>'
-      +     (q.directionRequired ? '<div class="field"><div class="k">Direction required</div><div class="v">'+esc(q.directionRequired.statement)+'</div></div>' : '')
+      +     (q.directionRequired ? '<div class="field"><div class="k">Direction required</div><div class="v">'+esc(q.directionRequired.statement)+(q.decisionForum?' <span class="k">[Forum: '+q.decisionForum+']</span>':'')+'</div></div>' : '')
       +     '<div class="field"><div class="k">Next question</div><div class="v">'+esc(q.nextQuestion)+'</div></div>'
       +   '</div>'
       +   qTriggers(q)
@@ -739,6 +754,7 @@
       +     '<div class="field action"><div class="k">Action</div><div class="v">'+esc(s.action)+'</div></div>'
       +   '</div>'
       + '</details>'
+      + landingBlock(s)
       + '<div class="meta">'
       +   '<span><span class="k">Sponsor</span> <b>'+ownerTag(s.insightSponsor)+'</b></span>'
       +   '<span><span class="k">FD lead</span> <b>'+ownerTag(s.fdLead)+'</b></span>'
