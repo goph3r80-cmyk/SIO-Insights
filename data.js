@@ -14,6 +14,10 @@ window.SIO_DATA = {
     },
     {
       "date": "2026-08-22",
+      "note": "Recoded branch code ADIO -> ASB4 (AS Br 4, the reprofiled data/digitalisation/AI branch; lineage ADO -> ADIO -> ASB4) across all operative fields: W-3 ownership and tasking (the architecture baseline due 15 Sep 2026 is now tasked to ASB4), W-5 supporting stakeholders, Q5 register fields and metrics notes. Historical changelog entries retain the codes in use at the time. Dashboard owner map, explainer glossary, GENERATORPROMPT branch-code rule and DOCTRINE.md role descriptions updated to match."
+    },
+    {
+      "date": "2026-08-22",
       "note": "Intake supplement (17-19 Aug alerts batch): 26 dragnet hits triaged; 3 carried (the rest were duplicates of already-tracked items — e.g. the Marines HPM story, nine syndications of one Japan-Australia announcement — or noise). All three are evidence-base updates; no new material changes (Q4/Q5 remain this edition's flagged changes). W-5: Japan and Australia agreed a decade-long arrangement for Japanese missile tests (incl. hypersonics) on Australian ranges plus co-development of the 'Boobook' counter-threat laser with a ~$50M Mitsubishi manufacturing facility in Sydney — a concrete regional co-development/test-range partnership precedent. W-1: Taiwan's NCSIST signed an MoU with US startup Vatn Systems for AI-enabled C2, S12 autonomous underwater vehicles and Taiwan-based assembly — low-cost modular undersea autonomy arriving in Army's region; and Ukraine's Unmanned Systems Forces reported striking 12 more Russian shadow-fleet vessels in early August (Operation MoLoChKa total: 218 vessels since 6 Jul) — unmanned systems executing a sustained maritime blockade at campaign scale. Also this date: added scripts/ingest-alerts.js + scripts/alerts-feeds.json — programmatic Google Alerts RSS ingest (fetch, unwrap redirects, dedupe, pre-tag by question) replacing hand-copied alert digests; dragnet docs updated."
     },
     {
