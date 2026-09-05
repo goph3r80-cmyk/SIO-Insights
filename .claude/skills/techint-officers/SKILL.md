@@ -90,6 +90,12 @@ ARMY → WHAT DO WE NEED TO KNOW → WHAT SHOULD ARMY DO.**
   into existing programme · initiate capability development · scale ·
   elevate for command attention. Never default to "experiment" or
   "procure".
+- **Instrument-readiness.** On any decision-tier thread, close the
+  product with the ladder: which of the next DCM instrument's
+  information requirements (capdev-governance,
+  `references/dcm-lifecycle.md`) this evidence satisfies, which remain
+  open, and whose action closes each — named as the gap, never papered
+  over.
 - **Retuning.** The team's governing derivation/retuning method is
   preserved verbatim in `references/master-prompt.md` — use it (mode
   RETUNE_SKILL) when new corpus or observed failure modes justify

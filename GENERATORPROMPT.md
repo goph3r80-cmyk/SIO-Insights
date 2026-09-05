@@ -676,6 +676,11 @@ it verbatim unless doctrine changes.
   candidates** from the material-change flags, stated in decision form.
   Record candidacy in the changelog note; record forum outcomes only on
   user-supplied evidence, as decisionLog entries.
+- `nextInstrument` is not a label: it implies that instrument's
+  information requirements (capdev-governance,
+  `references/dcm-lifecycle.md`). Decision-tier serial prose states the
+  instrument-readiness ladder — requirements satisfied, requirements
+  open, and whose action closes each (DOCTRINE.md §29 rule 6).
 
 ### Version handshake
 

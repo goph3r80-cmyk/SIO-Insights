@@ -29,6 +29,14 @@ This skill closes that loop.
 
 ## Core rules
 
+0. **DCM and ACDOM are doctrine spine, not plumbing.** The lifecycle
+   defines what information a decision needs and what actions implement
+   it. Every assessment feeding a decision-tier thread states its
+   **instrument-readiness**: which of the next instrument's information
+   requirements (per `references/dcm-lifecycle.md`) the evidence
+   satisfies, which are open, and whose action closes each gap. An
+   assessment that neither satisfies nor names those requirements is
+   analysis, not decision support.
 1. **Every decision-tier serial carries a landing zone.** `dcmPhase`
    (which DCM lifecycle phase the underlying Army thread sits in),
    `nextInstrument` (the staffing instrument that would move it), and
