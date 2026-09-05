@@ -1,9 +1,13 @@
 /* SIO Insights edition data — generated. Replace to refresh. */
 window.SIO_DATA = {
-  "edition": "Aug 2026",
-  "feedAsOf": "2026-08-23",
+  "edition": "Sep 2026",
+  "feedAsOf": "2026-09-05",
   "productVersion": "3.0",
   "changelog": [
+    {
+      "date": "2026-09-05",
+      "note": "Edition roll to Sep 2026 (sweep 24 Aug – 5 Sep; serial ages incremented). Material change (1): Q3 — the PLA's 3 Sep V-Day parade publicly displayed GJ-11-class stealth combat drones (presented in a role alongside manned fighters), an AJX002-class extra-large undersea vehicle, high-energy-laser counter-drone systems, electronic-jamming systems and new hypersonic/strategic weapons, staged with the Russian and DPRK heads of state present — a deliberate deterrence communication that also confirms counter-unmanned, directed-energy and unmanned deep-strike as showcased PLA force categories. Graded per doctrine: paraded = reported (display evidences existence and priority, not fielded performance); independent corroboration of individual systems' status required. Evidence-base updates without escalation: D-1/Q1 adds the official JIATF-401 roundtable (21 Aug) confirming an Army directed-energy pilot spanning HEL and HPM with iterative small-quantity commercial testing and 60-day two-drone / 120-day autonomous-swarming goals; W-2/Q4 adds the strongest burden-distribution datum yet for the last-mile question — in a dedicated Ukrainian ground-robot battalion roughly 19 of every 20 UGV tasks are logistics or casualty evacuation, combat ~2% (War on the Rocks). The 22 Aug material flags (Q4 ILTM, Q5 GAO) are considered reviewed and reset. Internal baselines (G5 ×2, ASB4) remain due 15 Sep — ten days out, statuses unchanged. Also this date: merged main's manual uploads (byte-identical to the delivered 22 Aug files) and removed 18 verified-identical root-level duplicates of the skill files."
+    },
     {
       "date": "2026-08-23",
       "note": "Edition refresh: sweep to 23 Aug (weekend window — thin, as expected). Three evidence-base additions, none crossing the material-change threshold; the 22 Aug material changes (Q4 ILTM portfolio, Q5 GAO/NGC2) remain the current review's flagged items. D-1/Q1: [Reported — resource commitment] the US Army agreed a ~$400M spend on AeroVironment counter-drone lasers (Bloomberg, 7 Aug; corroborated by trade-press reporting framing high-energy lasers as moving from prototype demonstrations toward a permanent counter-drone weapon) — a funding datum on the DE layer, not a maturity change (fielded performance still to be demonstrated at scale); and [Reported — doctrinal adaptation] the 1st Cavalry Division introduced a counter-UAS qualification at Fort Hood (training from 26 Jul) — notable because its 3rd ABCT was the formation repeatedly defeated by drone operators at Combined Resolve, i.e. observed exercise-to-training adaptation, the mitigation loop the Q1 baseline should capture. W-3/Q5: [Reported] the Army is integrating tactical drones into the NGC2 ecosystem for sensor-to-shooter coordination — comparator evidence of the common data layer carrying a live decision workflow, weighed alongside the GAO caveats already tracked. feedAsOf 2026-08-23; metrics recomputed."
@@ -64,7 +68,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 0,
+      "age": 1,
       "supersedes": [
         "II-2",
         "II-4",
@@ -97,7 +101,7 @@ window.SIO_DATA = {
       "deliverable": "Army C-UAS force-development baseline covering: priority UAS threat classes; operational scenarios and assets/echelons requiring protection; existing and planned Army capabilities; residual capability gaps; static versus manoeuvre requirements; kinetic and non-kinetic defeat options; cost-exchange considerations; magazine-depth considerations; integration and C2 requirements; and candidate areas requiring trials",
       "deliverableDate": "2026-09-15",
       "decision": "Endorse affordable layered counter-UAS as an Army force-development priority; direct G5 (ASB2 as functional lead) to deliver the Army C-UAS force-development baseline by 15 Sep 2026. Trial proposal only after the baseline.",
-      "signal": "Evidence is organised by the operational effect or threat class each programme addresses — these programmes collectively demonstrate the layered-defence need and the changing cost exchange, but they do not all solve the same Army threat class. — DEFEAT OF SMALL UAS BY SOFT-KILL (RF/EW): [Fielded] JIATF-401 converted a border-tested evaluation into a three-year, up-to-$500M IDIQ for CACI's SkyValor non-kinetic detect-and-defeat system (RF jamming plus net-capture) after a two-day Yuma demonstration (DefenseScoop, 31 Jul); AeroVironment's Titan task order (~$80M) is fielding AI-enabled RF detect-and-defeat at Air Force bases; the Marine Corps is integrating UGVs into its MADIS counter-drone system (Army Recognition, 27 Jun). — DEFEAT OF SMALL / ONE-WAY-ATTACK UAS BY LOW-COST KINETIC INTERCEPTOR: [Reported] the Army's Next Generation Counter-sUAS Missile RFI (4 Aug) seeks a purpose-built sub-$150K interceptor (responses due 20 Aug); [Combat-proven — single event] Ukraine's Griffen interceptor drone downed a Shahed one-way-attack drone for the first time (Militarnyi, 7 Jul). — CRUISE/BALLISTIC-CLASS AIR DEFENCE AND THE COST-EXCHANGE / MAGAZINE-DEPTH TREND (context for the affordability trade, not small-UAS defeat): [Fielded] the $58.6B FY26-32 Patriot multiyear (30 Jul) and $3B Patriot/THAAD component framework (3 Aug) triple PAC-3 MSE production; [Reported] Lockheed's sub-$2M PAC-3 ACE interceptor (Farnborough, 20 Jul) and the 10-nation coalition behind Ukraine's ~$700K Freyja/FP-7.X (Paris, 14 Jul) hedge against exquisite-interceptor cost; DIU's Ground-Based Affordable Mass call (27 Jul) applies the same cost logic to offensive fires. — COUNTER-SWARM DIRECTED ENERGY: [Demonstrated] the Pentagon's Joint Laser Weapon System programme (Lockheed Aculight, nLIGHT — up to $847M ceiling) is scaling 150kW counter-drone lasers toward 300-500kW cruise-missile defence, and Germany has commissioned a naval laser targeted for fielding by 2029 after 28,000nm of at-sea demonstration. [Reported — state-linked, corroborate] China is showcasing and exporting a man-portable-to-naval laser C-UAS line (Harbin Xinguang 'Lijian', CPMIEC LW-30, Novasky NI-L3K) to Gulf and SE Asian markets — vendor/state claims not independently verified at declared performance levels. — SWARM-CONTROL AUTONOMY LAYER: [Reported] AeroVironment/Applied Intuition's Acuity autonomy software (29 Jul) is moving single-operator, multi-drone swarm control from demonstrator toward the Army Launched Effects programme of record. — ALLIED PRODUCTION MASS AND INTEROPERABILITY: [Reported] NATO's $40B+ five-year counter-drone package (7 Jul) and the €11B EU-Ukraine Drone Deal (15 Jul) fund allied counter-drone mass production and interoperability standards at alliance scale, while Ukraine's drone campaign (1M+ targets struck since January; deep strikes into Russia) continues to define the threat's operational envelope. — THREAT ENVELOPE VS MANOEUVRE FORCES: [Demonstrated — exercise] At Combined Resolve (Hohenfels, Apr-May; WSJ via Meduza, 13 Aug), Ukraine's 412th Unmanned Systems Regiment repeatedly 'destroyed' a ~3,500-strong US armored brigade with recon-cued FPV/bomber drones; US outcomes improved over two weeks through dispersal, concealment, EW and counter-drone systems — direct evidence for the baseline's static-vs-manoeuvre and protected-echelon elements. — DE TRANSITION HURDLES: [Reported] the Pentagon's critical-technologies office wants smaller/lighter/more-efficient DE for airborne and expeditionary use and routine realistic field testing with operating units (Aviation Week, 13 Aug) — naming integration and T&E, not raw power, as the fielding constraints. [Reported — production-track] The Marine Corps is moving to a vehicle-mounted, production-ready Epirus HAVOC high-power-microwave swarm-defeat system (Military Times, 10 Aug) — HPM soft-kill crossing from demonstration toward fielding, notable for effectiveness against fiber-optic-guided drones that defeat RF jamming. — PROTECTION SCENARIOS (fixed sites): [Reported] NORTHCOM's deputy commander warned (SMD Symposium, 13 Aug) that some US military installations have neither the sensors to detect an incoming drone swarm nor the effectors to stop it, against a ~$21B Pentagon request spanning EW, kinetic interceptors, lasers and HPM — evidence that even well-resourced forces treat fixed-site protection as an open gap, reinforcing the baseline's protected-assets/echelons element. [Reported — resource commitment] The Army agreed a ~$400M spend on AeroVironment counter-drone lasers (Bloomberg, 7 Aug), consistent with reporting that HEL is moving from rotating prototypes toward a permanent element of the counter-drone architecture — a funding datum on the DE layer; fielded performance at scale remains to be demonstrated. [Reported — doctrinal adaptation] The 1st Cavalry Division introduced a counter-UAS qualification at Fort Hood (from 26 Jul) — the division whose armored brigade was repeatedly defeated at Combined Resolve, closing the exercise-to-training loop the baseline's mitigation element should capture.",
+      "signal": "Evidence is organised by the operational effect or threat class each programme addresses — these programmes collectively demonstrate the layered-defence need and the changing cost exchange, but they do not all solve the same Army threat class. — DEFEAT OF SMALL UAS BY SOFT-KILL (RF/EW): [Fielded] JIATF-401 converted a border-tested evaluation into a three-year, up-to-$500M IDIQ for CACI's SkyValor non-kinetic detect-and-defeat system (RF jamming plus net-capture) after a two-day Yuma demonstration (DefenseScoop, 31 Jul); AeroVironment's Titan task order (~$80M) is fielding AI-enabled RF detect-and-defeat at Air Force bases; the Marine Corps is integrating UGVs into its MADIS counter-drone system (Army Recognition, 27 Jun). — DEFEAT OF SMALL / ONE-WAY-ATTACK UAS BY LOW-COST KINETIC INTERCEPTOR: [Reported] the Army's Next Generation Counter-sUAS Missile RFI (4 Aug) seeks a purpose-built sub-$150K interceptor (responses due 20 Aug); [Combat-proven — single event] Ukraine's Griffen interceptor drone downed a Shahed one-way-attack drone for the first time (Militarnyi, 7 Jul). — CRUISE/BALLISTIC-CLASS AIR DEFENCE AND THE COST-EXCHANGE / MAGAZINE-DEPTH TREND (context for the affordability trade, not small-UAS defeat): [Fielded] the $58.6B FY26-32 Patriot multiyear (30 Jul) and $3B Patriot/THAAD component framework (3 Aug) triple PAC-3 MSE production; [Reported] Lockheed's sub-$2M PAC-3 ACE interceptor (Farnborough, 20 Jul) and the 10-nation coalition behind Ukraine's ~$700K Freyja/FP-7.X (Paris, 14 Jul) hedge against exquisite-interceptor cost; DIU's Ground-Based Affordable Mass call (27 Jul) applies the same cost logic to offensive fires. — COUNTER-SWARM DIRECTED ENERGY: [Demonstrated] the Pentagon's Joint Laser Weapon System programme (Lockheed Aculight, nLIGHT — up to $847M ceiling) is scaling 150kW counter-drone lasers toward 300-500kW cruise-missile defence, and Germany has commissioned a naval laser targeted for fielding by 2029 after 28,000nm of at-sea demonstration. [Reported — state-linked, corroborate] China is showcasing and exporting a man-portable-to-naval laser C-UAS line (Harbin Xinguang 'Lijian', CPMIEC LW-30, Novasky NI-L3K) to Gulf and SE Asian markets — vendor/state claims not independently verified at declared performance levels. — SWARM-CONTROL AUTONOMY LAYER: [Reported] AeroVironment/Applied Intuition's Acuity autonomy software (29 Jul) is moving single-operator, multi-drone swarm control from demonstrator toward the Army Launched Effects programme of record. — ALLIED PRODUCTION MASS AND INTEROPERABILITY: [Reported] NATO's $40B+ five-year counter-drone package (7 Jul) and the €11B EU-Ukraine Drone Deal (15 Jul) fund allied counter-drone mass production and interoperability standards at alliance scale, while Ukraine's drone campaign (1M+ targets struck since January; deep strikes into Russia) continues to define the threat's operational envelope. — THREAT ENVELOPE VS MANOEUVRE FORCES: [Demonstrated — exercise] At Combined Resolve (Hohenfels, Apr-May; WSJ via Meduza, 13 Aug), Ukraine's 412th Unmanned Systems Regiment repeatedly 'destroyed' a ~3,500-strong US armored brigade with recon-cued FPV/bomber drones; US outcomes improved over two weeks through dispersal, concealment, EW and counter-drone systems — direct evidence for the baseline's static-vs-manoeuvre and protected-echelon elements. — DE TRANSITION HURDLES: [Reported] the Pentagon's critical-technologies office wants smaller/lighter/more-efficient DE for airborne and expeditionary use and routine realistic field testing with operating units (Aviation Week, 13 Aug) — naming integration and T&E, not raw power, as the fielding constraints. [Reported — production-track] The Marine Corps is moving to a vehicle-mounted, production-ready Epirus HAVOC high-power-microwave swarm-defeat system (Military Times, 10 Aug) — HPM soft-kill crossing from demonstration toward fielding, notable for effectiveness against fiber-optic-guided drones that defeat RF jamming. — PROTECTION SCENARIOS (fixed sites): [Reported] NORTHCOM's deputy commander warned (SMD Symposium, 13 Aug) that some US military installations have neither the sensors to detect an incoming drone swarm nor the effectors to stop it, against a ~$21B Pentagon request spanning EW, kinetic interceptors, lasers and HPM — evidence that even well-resourced forces treat fixed-site protection as an open gap, reinforcing the baseline's protected-assets/echelons element. [Reported — resource commitment] The Army agreed a ~$400M spend on AeroVironment counter-drone lasers (Bloomberg, 7 Aug), consistent with reporting that HEL is moving from rotating prototypes toward a permanent element of the counter-drone architecture — a funding datum on the DE layer; fielded performance at scale remains to be demonstrated. [Reported — doctrinal adaptation] The 1st Cavalry Division introduced a counter-UAS qualification at Fort Hood (from 26 Jul) — the division whose armored brigade was repeatedly defeated at Combined Resolve, closing the exercise-to-training loop the baseline's mitigation element should capture. [Official] A JIATF-401 media roundtable (army.mil, 21 Aug) confirmed an Army directed-energy pilot spanning HEL and HPM for drone defeat, run iteratively on small quantities of existing commercial products — with stated goals of two-drone teaming within 60 days and autonomous swarming behaviour within 120 days: an official datum on both the DE layer's pilot posture and the threat side's expected swarming timeline.",
       "sowhat": "Every element of a layered C-UAS/sense-strike architecture (sensing, soft-kill, directed energy, kinetic interceptors) is moving from demonstration to production somewhere in the alliance within the same 30-day window, at costs and quantities well characterised in open reporting. Treated as one force-development question, this is the most evidenced and most immediately actionable capability issue this edition — but the external evidence establishes the threat and the cost-exchange trend, not Army's internal baseline. The G5-led baseline step is what converts it from an external signal into a decision-grade confirmed gap.",
       "action": "G5 force-development element to produce the Army C-UAS force-development baseline by 15 Sep 2026, with ASB2 leading the C-UAS/Sense-Strike functional analysis and SIO maintaining the external evidence base as insight sponsor.",
       "src": [
@@ -383,6 +387,13 @@ window.SIO_DATA = {
           "url": "https://www.armyrecognition.com/news/army-news/2026/u-s-army-1st-cavalry-launches-new-counter-drone-training-to-prepare-soldiers-for-modern-warfare",
           "f": "verified",
           "note": "Date approximate; training from 26 Jul."
+        },
+        {
+          "out": "The Army (army.mil)",
+          "date": "21 Aug 2026",
+          "ttl": "JIATF-401 Counter-UAS and Critical Infrastructure Protection Media Roundtable",
+          "url": "https://www.army.mil/article/294836/jiatf_401_counter_uas_and_critical_infrastructure_protection_media_roundtable_august_21_2026",
+          "f": "verified"
         }
       ],
       "insightSponsor": "SIO",
@@ -409,7 +420,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "overdue",
       "raised": "Apr 2026",
-      "age": 16,
+      "age": 17,
       "supersedes": [
         "II-1"
       ],
@@ -486,7 +497,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 0,
+      "age": 1,
       "supersedes": [
         "D-3",
         "III-7"
@@ -537,7 +548,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 0,
+      "age": 1,
       "supersedes": [
         "II-5",
         "III-4",
@@ -678,7 +689,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 0,
+      "age": 1,
       "supersedes": [
         "II-3",
         "III-3",
@@ -688,12 +699,12 @@ window.SIO_DATA = {
       ],
       "dlabel": "Uncrewed last-mile sustainment under contested conditions",
       "suspense": "Trigger-based — see escalationTrigger",
-      "latestDevelopment": "The US Army awarded six prototype OTAs under the Infantry Last Tactical Mile programme (announced ~12 Aug): autonomous UGVs for resupply and casualty evacuation between rear support areas and the FLOT, four prototypes per vendor, operational assessment with Army units early 2027 — in parallel with the TALUS autonomous-distribution award (10 Aug) and an American Rheinmetall hybrid logistics UGV development (5 Aug; ~500-mile hybrid chassis, 350kW exportable power).",
-      "changeFromPrevious": "Material since 18 Aug review: the ILTM award turns the US comparator from one programme into a portfolio — Project Sustainment (distribution), ILTM (last tactical mile, incl. casevac) and hybrid-power development are now separately funded lines converging on the same contested-resupply problem, all pointed at operational assessment in early 2027. No Army (Singapore) trigger met; comparator evidence continues to accumulate.",
+      "latestDevelopment": "War on the Rocks analysis of fielded Ukrainian practice (~2 Sep): in a brigade fielding a dedicated ground-robot battalion, roughly 19 of every 20 UGV tasks are logistics or casualty evacuation (combat ~2%) — the strongest quantified burden-distribution datum yet for the last-mile sustainment question this line holds.",
+      "changeFromPrevious": "Evidence-base update since last review: the task-share figures quantify what this line has argued qualitatively — sustainment and evacuation dominate the operational employment of ground robots under contested conditions. Unit-reported figures, not independently audited; no Army (Singapore) trigger met.",
       "armyRelevance": "Direct — EW-resilient UGV control, autonomous ground resupply and heavy-lift aerial resupply map onto Army's contested-logistics and forward-sustainment problem. G5 force development should frame the Army requirement, with functional organisations contributing according to their responsibilities; no Army-specific trial is yet underway.",
       "escalationTrigger": "Escalate if G5 frames an Army last-mile-sustainment requirement or a sustainment-autonomy trial is sponsored. DARPA Lift Challenge results (due after 9 Aug) affect only the heavy-lift / aerial-resupply element — they are not a trigger for the wider ground-autonomy portfolio.",
       "decision": "Hold at watchlist — narrowed to uncrewed last-mile sustainment under contested conditions; fixed-process automation split to W-7.",
-      "signal": "[Fielded — adversary/partner] Ground robots face intense EW pressure — Russian wide-area GNSS jammers degrade UGV datalinks and navigation — and Ukraine has fielded a control system (Droid Box, cleared 26 Jun) that detects positioning anomalies and applies countermeasures under jamming/spoofing (Militarnyi/Modern War Institute). [Fielded] Ukraine's Protector UGV is fielded for frontline logistics, against a stated goal of 25,000 ground robotic systems by mid-2026 (Defense Express/United24 Media). [Reported→fielding] Overland AI won a Marine Corps production contract for autonomous ground vehicles (Breaking Defense, 29 Jun) — ground-resupply autonomy crossing into production. [Reported] DARPA's Lift Challenge (100+ teams, 2-9 Aug, $6.5M prizes) targets a 2:1 payload-to-weight ratio for 55lb-class drones lifting 110lb payloads (Military Times, 30 Jul) — the aerial-resupply element of this line. [Reported] DARPA's Rads to Watts programme (7 competing teams) is developing radiovoltaic cells for maintenance-free, multi-year power in soldier-worn, sensor and remote applications (Breaking Defense, 29 Jul) — an enabling-power signal for sustainment autonomy. [Reported — contracted] The US Army's Project Sustainment selected five firms for Medium Autonomous Tactical Logistics platforms (27 Jul) and awarded the Stratom-led TALUS autonomous-distribution prototype (10 Aug) — 24/7 contested-environment resupply keeping soldiers off high-risk routes, field testing with operational units from early 2027. [Reported — contracted] The Army's Infantry Last Tactical Mile programme awarded prototype OTAs to six vendors for resupply/casevac UGVs across the rear-to-FLOT stretch (army.mil, ~12 Aug; four prototypes each, operational assessment early 2027); American Rheinmetall is separately developing hybrid-powered logistics UGVs with a ~500-mile, 350kW-exportable chassis (5 Aug) — addressing the endurance/power constraint on sustainment autonomy.",
+      "signal": "[Fielded — adversary/partner] Ground robots face intense EW pressure — Russian wide-area GNSS jammers degrade UGV datalinks and navigation — and Ukraine has fielded a control system (Droid Box, cleared 26 Jun) that detects positioning anomalies and applies countermeasures under jamming/spoofing (Militarnyi/Modern War Institute). [Fielded] Ukraine's Protector UGV is fielded for frontline logistics, against a stated goal of 25,000 ground robotic systems by mid-2026 (Defense Express/United24 Media). [Reported→fielding] Overland AI won a Marine Corps production contract for autonomous ground vehicles (Breaking Defense, 29 Jun) — ground-resupply autonomy crossing into production. [Reported] DARPA's Lift Challenge (100+ teams, 2-9 Aug, $6.5M prizes) targets a 2:1 payload-to-weight ratio for 55lb-class drones lifting 110lb payloads (Military Times, 30 Jul) — the aerial-resupply element of this line. [Reported] DARPA's Rads to Watts programme (7 competing teams) is developing radiovoltaic cells for maintenance-free, multi-year power in soldier-worn, sensor and remote applications (Breaking Defense, 29 Jul) — an enabling-power signal for sustainment autonomy. [Reported — contracted] The US Army's Project Sustainment selected five firms for Medium Autonomous Tactical Logistics platforms (27 Jul) and awarded the Stratom-led TALUS autonomous-distribution prototype (10 Aug) — 24/7 contested-environment resupply keeping soldiers off high-risk routes, field testing with operational units from early 2027. [Reported — contracted] The Army's Infantry Last Tactical Mile programme awarded prototype OTAs to six vendors for resupply/casevac UGVs across the rear-to-FLOT stretch (army.mil, ~12 Aug; four prototypes each, operational assessment early 2027); American Rheinmetall is separately developing hybrid-powered logistics UGVs with a ~500-mile, 350kW-exportable chassis (5 Aug) — addressing the endurance/power constraint on sustainment autonomy. [Reported — fielded-practice analysis] In a dedicated Ukrainian ground-robot battalion, ~19 of 20 UGV tasks are logistics or casualty evacuation, combat ~2% (War on the Rocks, ~2 Sep) — quantified confirmation that last-mile sustainment and evac are the dominant real-world employment of ground robots.",
       "sowhat": "Narrowed per CSIO direction from a broad ground-autonomy cluster to one force-development question: uncrewed / autonomous last-mile sustainment under contested conditions. Fixed logistics and inventory-process automation is tracked separately (W-7), and counter-UAS-related ground platforms sit under D-1's architecture question.",
       "action": "SIO to maintain the evidence base and report Lift Challenge results against the heavy-lift element only; on escalation, G5 frames the requirement with CESS and other functional stakeholders contributing according to their responsibilities.",
       "src": [
@@ -775,6 +786,14 @@ window.SIO_DATA = {
           "ttl": "US Army Taps Rheinmetall to Build Hybrid Logistics UGVs",
           "url": "https://thedefensepost.com/2026/08/05/us-hybrid-logistics-ugv/",
           "f": "verified"
+        },
+        {
+          "out": "War on the Rocks",
+          "date": "2 Sep 2026",
+          "ttl": "Ukraine's Ground Robots and the Economics of Survival",
+          "url": "https://warontherocks.com/ukraines-ground-robots-and-the-economics-of-survival/",
+          "f": "verified",
+          "note": "Date approximate; unit-reported task-share figures."
         }
       ],
       "insightSponsor": "SIO",
@@ -802,7 +821,7 @@ window.SIO_DATA = {
       "confidence": "moderate",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 0,
+      "age": 1,
       "supersedes": [
         "III-13"
       ],
@@ -860,7 +879,7 @@ window.SIO_DATA = {
       "confidence": "moderate",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 0,
+      "age": 1,
       "supersedes": [
         "III-2"
       ],
@@ -955,7 +974,7 @@ window.SIO_DATA = {
       "confidence": "moderate",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 0,
+      "age": 1,
       "supersedes": [
         "I-3",
         "I-6",
@@ -963,12 +982,12 @@ window.SIO_DATA = {
       ],
       "dlabel": "PRC AI-C2, autonomy & missile net-assessment",
       "suspense": "Trigger-based — see escalationTrigger",
-      "latestDevelopment": "PLA 83rd Group Army footage (China Military Online, 6 Aug) shows UAV-cued PHL-03 300mm rocket strikes on a sea target with rapid detect-engage-displace-re-engage cycles — sensor-to-shooter compression applied to coastal-denial fires, alongside the corroborated Type 054B VLS-capacity imagery (12 Aug) already tracked.",
-      "changeFromPrevious": "Evidence-base update since last review: the PHL-03 drill (state-released footage — intent signalling, corroborate) extends the assessed sensor-to-shooter compression pattern from air operations into coastal-denial fires; the Type 054B imagery remains the period's corroborated data point. Both below the material-change threshold; no escalation.",
+      "latestDevelopment": "The PLA's 3 Sep V-Day parade publicly displayed GJ-11-class stealth combat drones (presented in a manned-unmanned teaming role), an AJX002-class extra-large UUV, high-energy-laser counter-drone systems, electronic-jamming systems and new hypersonic/strategic weapons — staged with the Russian and DPRK heads of state present.",
+      "changeFromPrevious": "Material since last review: the parade is the period's defining signalling event — a deliberate deterrence communication that also confirms counter-unmanned, directed-energy and unmanned deep-strike as showcased PLA force categories, and puts several previously glimpsed systems (GJ-11, extra-large UUV) on public display for the first time. Graded strictly: paraded = reported — display evidences existence and doctrinal priority, not fielded performance; individual system status requires independent corroboration.",
       "armyRelevance": "Net-assessment relevance is actionable now: this line should inform Army design margins, red-teaming and resilience assumptions without waiting for confirmed operational employment — conceptual and threat-assessment work begins on current evidence. Force-development escalation is a separate, higher bar; this is not a direct Army procurement question.",
       "escalationTrigger": "Escalate to force-development consideration only on stronger evidence — independent (non-PRC-state) confirmation of operational fielding, or a clear implication for a specific Army capability. Apparent maturity of the external technology is not by itself grounds to convert this line into a procurement task.",
       "decision": "Maintain as the standing PRC net-assessment line — feeding Army design margins, red-teaming and resilience work now; force-development escalation only on stronger evidence.",
-      "signal": "[Reported, state-linked — corroborate] Commercial AI providers (reported: DeepSeek, Alibaba, Tencent, Zhipu, Huawei-linked infrastructure) are being folded into a national military ecosystem for surveillance, target recognition, war-gaming and C2. PLA Daily (30 Jun) frames a future 'technological strategy' around AI-enabled C2 resistant to EW; Hong Kong reporting describes an 'AI Plus' push into PLA EW while warning PLA training may lag the hardware. A Reuters review (31 Jul) of 80+ Chinese academic papers/patents found PLA-linked units (Unit 96941, NUDT, Academy of Military Sciences) using 'model distillation' to train domestic defence AI on US-model outputs (OpenAI GPT-3.5/GPT-3, Anthropic Claude 3 Haiku) — a route sidestepping US chip export controls. Xi Jinping (Politburo study session, 30 Jul) directed the military to 'strengthen the military application of unmanned intelligent technologies' — elevating this to explicit top-down doctrine. [Reported, state-linked — 3 Aug] A CCTV PLA-99th-anniversary documentary revealed an 'intelligent strike planning system' (team under Senior Colonel Deng Jianping) that prioritises targets, sequences attack waves and assigns unit tasking across hundreds of targets/dozens of formations (SCMP, paywalled). [Reported, state-linked — corroborate] CETC's 'Atlas' system demonstrated ~96-drone single-operator swarm control, and a separate PLA demonstration put ~200 jam-resistant drones under one soldier using an anti-jamming algorithm for comms-independent cooperation — Western analysis assesses these as selective but real PLA bets on battlefield AI. The China-Russia 'Joint Sea-2026' exercise (Qingdao, 6-13 Jul) featured extensive unmanned-surface-vessel and counter-UAS tactics per Russian officials, independently corroborated by Defence Security Asia. [Reported, state-linked — corroborate] China's first confirmed YJ-20 hypersonic anti-ship missile (Mach 6+ cruise, ~1,000-1,500km range) launch came from a Type 052D destroyer rather than the Type 055 flagship (CCTV/Global Times trailer, 29 Jul; independently corroborated by The War Zone and Army Recognition) — with roughly 35 Type 052D hulls in service versus 10 Type 055s, this distributes a flagship-exclusive weapon across the fleet's numerical core. [Reported — corroborated commercial imagery] Vantor imagery of Hudong-Zhonghua shipyard indicates the third Type 054B frigate carries 48 VLS cells vs 32 on the first two hulls (+50%; SCMP 12 Aug, paywalled; corroborated by Bloomberg) — further distribution of missile capacity across the PLAN's numerical core. [Reported, state-linked — corroborate] PLA 83rd Group Army footage shows forward reconnaissance UAVs cueing PHL-03 300mm rocket strikes against a sea target, rehearsing rapid displacement between engagements for launcher survivability (China Military Online via Army Recognition, 6 Aug) — sensor-to-shooter compression extended to coastal-denial fires.",
+      "signal": "[Reported, state-linked — corroborate] Commercial AI providers (reported: DeepSeek, Alibaba, Tencent, Zhipu, Huawei-linked infrastructure) are being folded into a national military ecosystem for surveillance, target recognition, war-gaming and C2. PLA Daily (30 Jun) frames a future 'technological strategy' around AI-enabled C2 resistant to EW; Hong Kong reporting describes an 'AI Plus' push into PLA EW while warning PLA training may lag the hardware. A Reuters review (31 Jul) of 80+ Chinese academic papers/patents found PLA-linked units (Unit 96941, NUDT, Academy of Military Sciences) using 'model distillation' to train domestic defence AI on US-model outputs (OpenAI GPT-3.5/GPT-3, Anthropic Claude 3 Haiku) — a route sidestepping US chip export controls. Xi Jinping (Politburo study session, 30 Jul) directed the military to 'strengthen the military application of unmanned intelligent technologies' — elevating this to explicit top-down doctrine. [Reported, state-linked — 3 Aug] A CCTV PLA-99th-anniversary documentary revealed an 'intelligent strike planning system' (team under Senior Colonel Deng Jianping) that prioritises targets, sequences attack waves and assigns unit tasking across hundreds of targets/dozens of formations (SCMP, paywalled). [Reported, state-linked — corroborate] CETC's 'Atlas' system demonstrated ~96-drone single-operator swarm control, and a separate PLA demonstration put ~200 jam-resistant drones under one soldier using an anti-jamming algorithm for comms-independent cooperation — Western analysis assesses these as selective but real PLA bets on battlefield AI. The China-Russia 'Joint Sea-2026' exercise (Qingdao, 6-13 Jul) featured extensive unmanned-surface-vessel and counter-UAS tactics per Russian officials, independently corroborated by Defence Security Asia. [Reported, state-linked — corroborate] China's first confirmed YJ-20 hypersonic anti-ship missile (Mach 6+ cruise, ~1,000-1,500km range) launch came from a Type 052D destroyer rather than the Type 055 flagship (CCTV/Global Times trailer, 29 Jul; independently corroborated by The War Zone and Army Recognition) — with roughly 35 Type 052D hulls in service versus 10 Type 055s, this distributes a flagship-exclusive weapon across the fleet's numerical core. [Reported — corroborated commercial imagery] Vantor imagery of Hudong-Zhonghua shipyard indicates the third Type 054B frigate carries 48 VLS cells vs 32 on the first two hulls (+50%; SCMP 12 Aug, paywalled; corroborated by Bloomberg) — further distribution of missile capacity across the PLAN's numerical core. [Reported, state-linked — corroborate] PLA 83rd Group Army footage shows forward reconnaissance UAVs cueing PHL-03 300mm rocket strikes against a sea target, rehearsing rapid displacement between engagements for launcher survivability (China Military Online via Army Recognition, 6 Aug) — sensor-to-shooter compression extended to coastal-denial fires. [Reported — paraded, state-orchestrated] The 3 Sep V-Day parade displayed GJ-11 stealth attack drones presented as flying alongside manned fighters, an AJX002 extra-large UUV, HEL counter-drone systems, EW jamming systems and new hypersonic/strategic missiles, with Putin and Kim in attendance (CBS and Western press pool, 3 Sep; pre-parade framing via Global Times and MND). Signalling first: audience and message are as significant as the hardware; parade presence is evidence of existence and priority, not of operational fielding at claimed performance.",
       "sowhat": "One net-assessment line covering how the PLA is fusing commercial-grade AI into C2/strike-planning, fielding autonomous swarm doctrine, and distributing long-range strike capability across its numerically dominant hull classes — three facets of the same adversary capability trajectory that Army's C2, EW and fleet-defence-adjacent concepts should track together, not as three separate awareness lines. Confidence is capped at moderate because a majority of the specific capability claims trace to PRC state media or state-linked footage; independent corroboration exists for the broad trend (Reuters model-distillation review, Western analyst commentary, The War Zone/Army Recognition) but not for every individual performance claim.",
       "action": "A4, with ASB3 and SIO net-assessment in support, to maintain the standing line, feed current assessments into Army red-teaming, design-margin and resilience work now, and flag independently confirmed fielding events for force-development escalation.",
       "src": [
@@ -1096,6 +1115,22 @@ window.SIO_DATA = {
           "url": "https://www.armyrecognition.com/news/navy-news/2026/china-tests-uav-cued-phl-03-maritime-strikes-and-rapid-displacement-tactics-for-coastal-denial-operations",
           "f": "verified",
           "note": "Based on PLA/China Military Online footage — state-released; treat as intent signalling, corroborate. Date approximate."
+        },
+        {
+          "out": "CBS News",
+          "date": "3 Sep 2026",
+          "ttl": "What weapons China showed off in its military parade as Xi Jinping, Vladimir Putin and Kim Jong Un watched",
+          "url": "https://www.cbsnews.com/news/china-military-parade-new-weapons-pictures-laser-icbm-ai-drones-missiles-xi-jinping/",
+          "f": "verified",
+          "note": "Western press-pool coverage; corroborated across outlets. Paraded systems graded reported."
+        },
+        {
+          "out": "Jamestown Foundation",
+          "date": "2 Sep 2026",
+          "ttl": "Guns of September: What a Parade May Reveal About China’s Military Modernization",
+          "url": "https://jamestown.org/guns-of-september-what-a-parade-may-reveal-about-chinas-military-modernization/",
+          "f": "verified",
+          "note": "Analytical framing of the parade’s modernization signals; date approximate."
         }
       ],
       "insightSponsor": "SIO",
@@ -1125,7 +1160,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 0,
+      "age": 1,
       "supersedes": [
         "I-2",
         "I-4",
@@ -1298,7 +1333,7 @@ window.SIO_DATA = {
       "confidence": "moderate",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 0,
+      "age": 1,
       "supersedes": [
         "III-9",
         "III-16"
@@ -1378,7 +1413,7 @@ window.SIO_DATA = {
       "desk": "US",
       "status": "overdue",
       "raised": "Apr 2026",
-      "age": 16,
+      "age": 17,
       "dlabel": "Decision-workflow pilot sprint",
       "suspense": "5 Sep 2026",
       "recommendation": "Run a time-boxed pilot that takes 1-2 named Army questions from the question register through the full decision workflow: define the decision question → identify relevant external and internal data → establish the minimum data view → apply AI-assisted triage/fusion → put the output before the intended staff user → measure time and quality improvements → capture corrections → iterate. The preferred output is a functioning decision workflow with measured results; concept notes are the by-product, not the deliverable.",
@@ -1418,6 +1453,75 @@ window.SIO_DATA = {
     }
   ],
   "feed": [
+    {
+      "date": "2026-09-03",
+      "out": "CBS News",
+      "ttl": "What weapons China showed off in its military parade as Xi Jinping, Vladimir Putin and Kim Jong Un watched",
+      "sum": "The PLA's V-Day parade in Beijing displayed GJ-11 stealth attack drones presented as capable of flying alongside manned fighters, an AJX002 extra-large unmanned underwater vehicle, high-energy-laser counter-drone systems, electronic-jamming systems, counter-unmanned equipment and new hypersonic and strategic missiles, with the Russian and DPRK leaders in attendance — a state-orchestrated capability reveal and deterrence communication.",
+      "tech": [
+        "robo",
+        "ai",
+        "dews"
+      ],
+      "pf": "P2",
+      "desk": "APAC",
+      "url": "https://www.cbsnews.com/news/china-military-parade-new-weapons-pictures-laser-icbm-ai-drones-missiles-xi-jinping/",
+      "f": "verified",
+      "serial": "W-4",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "general_press",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": null,
+      "unverifiedClaims": "Event and display independently corroborated (Western press pool coverage); individual systems’ fielded status and performance are paraded claims — reported, not demonstrated.",
+      "dateLastChecked": "2026-09-05"
+    },
+    {
+      "date": "2026-09-02",
+      "out": "War on the Rocks",
+      "ttl": "Ukraine's Ground Robots and the Economics of Survival",
+      "sum": "Analysis of fielded Ukrainian practice: in a brigade with a dedicated ground-robot battalion, roughly 19 of every 20 UGV tasks are logistics or casualty evacuation, with combat accounting for only ~2% — the clearest quantified evidence yet that sustainment and evacuation, not strike, are the dominant operational employment of ground robots under contested conditions.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P7",
+      "desk": "EU",
+      "url": "https://warontherocks.com/ukraines-ground-robots-and-the-economics-of-survival/",
+      "f": "verified",
+      "serial": "W-2",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "think_tank",
+      "corroborated": false,
+      "confidence": "moderate",
+      "primarySourceUrl": null,
+      "unverifiedClaims": "Article date approximate; task-share figures are unit-reported via the authors, not independently audited.",
+      "dateLastChecked": "2026-09-05"
+    },
+    {
+      "date": "2026-08-21",
+      "out": "The Army (army.mil)",
+      "ttl": "JIATF-401 Counter-UAS and Critical Infrastructure Protection Media Roundtable",
+      "sum": "Official roundtable transcript: the Army is running a directed-energy pilot spanning high-energy lasers and high-power microwaves for drone defeat, testing tangible commercial products in small quantities iteratively — with stated goals of a two-drone teaming flight within 60 days and autonomous swarming behaviour within 120 days.",
+      "tech": [
+        "dews",
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://www.army.mil/article/294836/jiatf_401_counter_uas_and_critical_infrastructure_protection_media_roundtable_august_21_2026",
+      "f": "verified",
+      "serial": "D-1",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "official",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": "https://www.army.mil/article/294836/jiatf_401_counter_uas_and_critical_infrastructure_protection_media_roundtable_august_21_2026",
+      "unverifiedClaims": null,
+      "dateLastChecked": "2026-09-05"
+    },
     {
       "date": "2026-08-20",
       "out": "Army Recognition",
@@ -4242,7 +4346,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which specific Army design assumptions (C2 tempo, EW resilience, dispersal, deception) are most sensitive to the assessed adversary trajectory — a question for red-teaming, not procurement.",
       "status": "active",
-      "materialChange": null
+      "materialChange": "The PLA's 3 Sep V-Day parade — first public display of GJ-11-class stealth combat drones, an AJX002-class extra-large undersea vehicle, HEL counter-drone systems and new hypersonic/strategic weapons, staged with the Russian and DPRK leaders present. A deliberate deterrence communication that also confirms counter-unmanned, DE and unmanned deep-strike as showcased PLA force categories. Paraded = reported, not fielded; performance claims require independent corroboration."
     },
     {
       "id": "Q4",
@@ -4279,7 +4383,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which Army sustainment/inventory processes have the largest measured manpower burden, exposure or error rate? That inventory precedes any technology selection.",
       "status": "active",
-      "materialChange": "The US Army's Infantry Last Tactical Mile award (six vendors, ~12 Aug; operational assessment early 2027) turns the US comparator into a funded portfolio — Project Sustainment (distribution), ILTM (last tactical mile incl. casevac) and hybrid-power UGV development — all converging on the contested-resupply problem this question holds for Army."
+      "materialChange": null
     },
     {
       "id": "Q5",
@@ -4311,7 +4415,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which Army decision workflows (starting with the questions in this register) does the architecture currently enable, and which does it block?",
       "status": "active",
-      "materialChange": "GAO warns information gaps could hinder NGC2 modernisation plans and notes hardware failures in extreme heat (20 Aug) — an independent counterweight to the 'ready to scale' declaration, sharpening which NGC2 patterns the pending ASB4-baseline comparison should treat as proven vs at-risk."
+      "materialChange": null
     },
     {
       "id": "Q6",
@@ -4385,7 +4489,7 @@ window.SIO_DATA = {
     }
   ],
   "metrics": {
-    "asOf": "2026-08-23",
+    "asOf": "2026-09-05",
     "note": "Decision-advantage metrics per DOCTRINE.md §21 — measured where practicable; information volume is not an outcome. Time-based metrics (signal-to-assessment, assessment-to-direction, decision-to-action) require timestamps captured across future editions and are not yet measurable.",
     "provenanceTraceablePct": 93,
     "internalDataCoveragePct": 0,
@@ -4395,6 +4499,6 @@ window.SIO_DATA = {
       "resultCaptured": 0,
       "note": "No senior direction has yet completed the direction → action → observed effect → updated assessment loop; decisionLog fields are in place to capture it."
     },
-    "materialChangesThisEdition": 2
+    "materialChangesThisEdition": 1
   }
 };
