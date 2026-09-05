@@ -667,6 +667,33 @@
   </figure>
   </div>
 
+  <div class="sec-h"><span class="rn">4c</span><h2>The landing zone</h2><span class="rule"></span><span class="sub">where register items enter the real staff system — DCM &amp; ACDOM</span></div>
+  <div class="grid2">
+    <div class="cell">
+      <h3>DCM — the lifecycle</h3>
+      <p>The <b>Defence Capability Management</b> framework is the MINDEF lifecycle process by which a capability
+      need becomes operational and support-system requirements and is managed cradle to retirement:
+      <em>long-term planning → front-end planning → acquisition management → transition to O&amp;S → O&amp;S →
+      retirement</em>. SIO conducts DCM of Army systems and platforms in the system-development lane. Every
+      decision-tier thread now carries a <code>dcmPhase</code> (the <b>Army thread's</b> state, from evidenced
+      internal facts only — never inferred from a foreign system's maturity), a <code>nextInstrument</code> (the
+      staffing document that would move it: OCF, OMP, EMP, AOR/SON/SOR, AOE, PIP…), and a
+      <code>targetForum</code>.</p>
+    </div>
+    <div class="cell">
+      <h3>ACDOM — the governance</h3>
+      <p>The <b>Army Capability Development Operating Manual</b> defines three governance tiers: executive-level
+      working committees (PEO-anchored, with a CSIO–Dir(Land) system-integration forum, WSSC staffing and the
+      equipping management forum); General Staff forums — <b>ACDM</b> (monthly, chaired COS-GS, the pinnacle
+      cap-dev forum), <b>ASTC</b> (CSIO co-chaired R&amp;T gate), CPRC, AOM, ADTC; and Army-level steering
+      committees — ASSC, AISC, ACC. Direction types route accordingly: priority directions and capability
+      decisions to ACDM (R&amp;T gating at ASTC), resource decisions to CPRC/ACDM, policy-doctrine consequences
+      to ADTC/AOM. Each edition nominates at most one or two material changes as <b>ACDM agenda candidates</b>,
+      in decision form; the register records candidacy and evidenced outcomes, never attendance. See the
+      <code>capdev-governance</code> skill.</p>
+    </div>
+  </div>
+
   <div class="sec-h"><span class="rn">5</span><h2>Field &amp; value glossary</h2><span class="rule"></span><span class="sub">every enum, decoded</span></div>
 
   <div class="gloss-grp">
@@ -787,6 +814,18 @@
   </div>
 
   <div class="gloss-grp">
+    <h4>governance &amp; lifecycle — the landing-zone vocabulary</h4>
+    <div class="term-grid">
+      <div class="term-card"><div class="row1"><span class="val">DCM</span></div><p>Defence Capability Management — the MINDEF lifecycle framework; source of the six <code>dcmPhase</code> values.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">ACDOM</span></div><p>Army Capability Development Operating Manual — the operating doctrine for the cap-dev system, its tiers, forums and instruments.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">ACDM</span></div><p>Army Capability Development Meeting — monthly, chaired COS-GS; the pinnacle cap-dev forum. Default landing zone for priority directions and capability decisions.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">ASTC</span></div><p>Army Science &amp; Technology Conference — CSIO co-chaired; gates and prioritises R&amp;T proposals.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">ASSC · ACC</span></div><p>Army Systems Steering Committee and Army Commanders Conference — the Army-tier escalation ladder above ACDM.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">AOR · SON · SOR</span></div><p>Approval of Requirement package (Statement of Need, Specific Operational Requirement, annexes) — the front-end-planning instrument that funds a requirement.</p></div>
+    </div>
+  </div>
+
+  <div class="gloss-grp">
     <h4>under the hood — where each layer lives in the repo</h4>
     <div class="term-grid">
       <div class="term-card"><div class="row1"><span class="val">DOCTRINE.md</span></div><p>The standing intent — every future change is judged against it.</p></div>
@@ -795,6 +834,7 @@
       <div class="term-card"><div class="row1"><span class="val">.claude/skills/techint-assessment</span></div><p>Evidence grading: claim decomposition, source scales, maturity discipline.</p></div>
       <div class="term-card"><div class="row1"><span class="val">.claude/skills/techint-officers</span></div><p>Six branch analysts producing the assessments, on the shared TECHINT doctrine.</p></div>
       <div class="term-card"><div class="row1"><span class="val">.claude/skills/sio-vetting-panel</span></div><p>Nine appointment personas that interrogate every product before it ships.</p></div>
+      <div class="term-card"><div class="row1"><span class="val">.claude/skills/capdev-governance</span></div><p>The landing zone: DCM lifecycle, ACDOM forum map and routing, forum-submission output mode.</p></div>
     </div>
   </div>
 

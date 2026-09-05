@@ -633,3 +633,56 @@ If unanswerable, downgrade the item rather than overstate maturity.
 - `tier` ∈ {`decision`,`watchlist`,`foundational`,`background`,`staff_action`};
   `directionType` valid where present.
 - `decisionLog` arrays present (may be empty) on questions and serials.
+
+## Schema v3.1 — DCM/ACDOM landing zones (5 Sep 2026)
+
+The register now names where each thread lands in the Army
+capability-development machinery (see DOCTRINE.md §29 and the
+capdev-governance skill).
+
+### New top-level: `forums`
+
+A reference map of the governance structure keyed by forum code
+(`ACDM`, `ASTC`, `CPRC`, `AOM`, `ADTC`, `ASSC`, `AISC`, `ACC`, `WSSC`,
+`EMF`), each `{ code, name, tier, chair, cadence, role }`. Chairs are
+appointments only. This map is structural reference data — regenerate
+it verbatim unless doctrine changes.
+
+### New serial fields (decision tier mandatory; others where honest)
+
+- `dcmPhase` — `long_term_planning | front_end_planning |
+  acquisition_management | transition_to_oands | oands | retirement |
+  null`. Describes the **Army thread's** lifecycle state, from evidenced
+  Army-side facts only. Null when unknown (flag the baseline as the
+  precondition) and null for non-system (policy/organisational)
+  threads. Never inferred from external technology maturity.
+- `nextInstrument` — the single staffing instrument that would move the
+  thread (e.g. `"AOR (SON/SOR)"`, `"experiment design → ASTC proposal"`,
+  `"OCF"`), or null.
+- `targetForum` — forum code from `forums` where that instrument is
+  decided, or null. Route by direction type: priority_direction → ACDM;
+  capability_decision → ACDM (R&T gating ASTC; escalation ASSC/ACC);
+  resource_decision → CPRC or ACDM; policy_doctrine_decision → ADTC or
+  AOM; staff_action → null (in-branch).
+
+### New question field
+
+- `decisionForum` — forum code where `directionRequired` would naturally
+  land, or null when no direction is required.
+
+### Edition behaviour
+
+- Each edition may nominate at most one or two **ACDM agenda
+  candidates** from the material-change flags, stated in decision form.
+  Record candidacy in the changelog note; record forum outcomes only on
+  user-supplied evidence, as decisionLog entries.
+
+### v3.1 validation additions
+
+- `forums` present with the ten codes above.
+- Every `targetForum`/`decisionForum` value is null or a key of
+  `forums`.
+- Every `dcmPhase` is null or one of the six phase values.
+- Every decision-tier serial has all three landing-zone fields present
+  (null allowed only with the missing Army baseline flagged in the
+  serial text).
