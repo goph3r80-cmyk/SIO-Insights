@@ -299,10 +299,17 @@ the assessment is accepted? **Feedback** — how will we know whether the
 resulting action worked? If these cannot be answered, downgrade the item
 rather than overstate its maturity.
 
-## 29. DCM and ACDOM alignment (the landing zone)
+## 29. DCM and ACDOM in the doctrine spine (the landing zone and the ladder)
 
-SIO Insights serves the Army capability-development machinery, and its
-outputs must speak that machinery's language. Two anchors:
+DCM and ACDOM are part of the doctrine spine — governing standards on the
+same footing as the evidence wall and the material-change test, not just
+output routing. The premise: **the lifecycle defines what information a
+decision needs and what actions implement it.** At every DCM stage there
+is a decision instrument, and that instrument has information
+requirements; an assessment is therefore judged not only by whether its
+evidence is sound, but by whether it supplies (or honestly names the gap
+to) the information the next instrument needs to decide, and the actions
+that would implement the outcome. Two anchors:
 
 - **DCM** — the Defence Capability Management framework: the MINDEF
   lifecycle process by which a capability need becomes operational and
@@ -338,3 +345,13 @@ Standing rules:
 5. Forum-ready drafting follows the capdev-governance skill's
    forum-submission mode: appointments only, evidence grades carried
    through, one paper one decision, vetting-panel pass before delivery.
+6. **The information-and-action ladder.** Every technology assessment on
+   a decision-tier thread states its instrument-readiness: which of the
+   next instrument's information requirements the evidence already
+   satisfies, which are open, and whose action closes each gap (per the
+   per-phase requirements in the capdev-governance skill). "More
+   evidence needed" is not a finding; "the SOR needs a stated deficiency
+   against the confirmed baseline, and the baseline is the open item" is.
+   Products that neither satisfy nor name the next instrument's
+   requirements are analysis, not decision support — grade them
+   accordingly.
