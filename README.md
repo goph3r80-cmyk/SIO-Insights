@@ -148,17 +148,44 @@ values.
 
 ---
 
+## Publishing an update (the one-channel rule)
+
+Every refresh produces a **matched pair**: `data.js` (content) and the
+files that render and govern it (`index.html`, `explainer.html`, prompts,
+skills, doctrine). They only work as a set — an old dashboard silently
+ignores new data fields, so uploading `data.js` alone *looks* like the
+update did nothing.
+
+**The publish action is merging the update PR.** Each update arrives as
+one pull request carrying both halves; merging it deploys the complete
+set to production via Netlify. Do not upload individual files to `main`
+by hand — if you must, upload the entire delivered set. The dashboard
+now carries a version handshake (`DASHBOARD_SCHEMA` vs
+`data.js productVersion`) and shows a red banner when the halves have
+diverged, naming which half is missing.
+
 ## File Structure
 
 ```
 SIO-Insights/
-├── README.md                  ← You are here
-├── TRAWLER-PROMPT.md          ← Instructions for Step 1 (source list, extraction rules)
-├── GENERATOR-PROMPT.md        ← Instructions for Step 2 (schema, validation, sorting)
-├── data.js                    ← Output (window.SIO_DATA browser module: serials[] + feed[])
-├── index.html                 ← Dashboard that renders data.js (serials + feed)
-├── docs/GITHUB-APP.md         ← GitHub App setup for programmatic/automated refreshes
-└── scripts/webhook-verify.js  ← Webhook signature verification helper
+├── README.md                    ← You are here
+├── DOCTRINE.md                  ← Standing intent — every change is judged against it
+├── TRAWLERPROMPT.md             ← Intake: tiered sweep + Google Alerts dragnet
+├── GENERATORPROMPT.md           ← data.js schema (v2 → v3.1) and regeneration rules
+├── data.js                      ← Output (window.SIO_DATA: questions[] + serials[] + feed[] + forums)
+├── index.html                   ← Dashboard rendering data.js
+├── explainer.html               ← "How it works" walkthrough
+├── netlify.toml                 ← Static publish + no-stale-cache headers
+├── scripts/
+│   ├── ingest-alerts.js         ← Google Alerts RSS ingest (needs feed URLs in alerts-feeds.json)
+│   ├── alerts-feeds.json        ← Dragnet feed config (A1–A5 → question mapping)
+│   └── webhook-verify.js        ← Webhook signature verification helper
+├── docs/GITHUB-APP.md           ← GitHub App setup for programmatic refreshes
+└── .claude/skills/
+    ├── techint-assessment/      ← Evidence grading doctrine
+    ├── techint-officers/        ← Six branch TECHINT analysts
+    ├── sio-vetting-panel/       ← Nine appointment personas (vetting)
+    └── capdev-governance/       ← DCM lifecycle + ACDOM forum routing
 ```
 
 ---

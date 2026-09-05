@@ -677,6 +677,14 @@ it verbatim unless doctrine changes.
   Record candidacy in the changelog note; record forum outcomes only on
   user-supplied evidence, as decisionLog entries.
 
+### Version handshake
+
+`index.html` declares `DASHBOARD_SCHEMA` alongside `data.js`'s
+`productVersion`. The two ship as a matched pair: any schema bump changes
+both in the same commit. If they diverge at runtime the dashboard shows a
+banner naming the half-update instead of failing silently — never
+suppress it; fix the mismatch by publishing the missing half.
+
 ### v3.1 validation additions
 
 - `forums` present with the ten codes above.

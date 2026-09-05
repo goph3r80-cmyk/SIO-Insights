@@ -367,6 +367,20 @@
   if (!D) { document.getElementById('serials').innerHTML =
     '<div class="empty">data.js not found — serve this page from the repo root so <code>./data.js</code> loads.</div>'; return; }
 
+  /* Version handshake — data.js and this dashboard ship as a matched pair.
+     Bump together with GENERATORPROMPT.md schema and data.js productVersion. */
+  var DASHBOARD_SCHEMA = '3.1';
+  (function () {
+    var dv = parseFloat(D.productVersion), hv = parseFloat(DASHBOARD_SCHEMA);
+    if (!isFinite(dv) || dv === hv) return;
+    var b = document.createElement('div');
+    b.setAttribute('style', 'background:#7a2e2e;color:#fff;padding:10px 16px;font:600 13px/1.5 system-ui,sans-serif;text-align:center');
+    b.textContent = dv > hv
+      ? 'Half-update detected: data.js is schema v' + D.productVersion + ' but this dashboard only understands v' + DASHBOARD_SCHEMA + ' — new fields exist in the data but are not rendered. Merge the pending update PR (or upload the full delivered file set, not data.js alone).'
+      : 'Version mismatch: this dashboard expects schema v' + DASHBOARD_SCHEMA + ' but data.js is v' + D.productVersion + ' — some panels may render empty until the matching data.js is published.';
+    document.body.insertBefore(b, document.body.firstChild);
+  })();
+
   var TECH = { ai:'AI', data:'Data', robo:'Robotics', dews:'DE/EMS' };
   var PF = {
     P1:'Full-Spectrum Non-Kinetic Capabilities',
