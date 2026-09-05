@@ -2,8 +2,12 @@
 window.SIO_DATA = {
   "edition": "Sep 2026",
   "feedAsOf": "2026-09-05",
-  "productVersion": "3.0",
+  "productVersion": "3.1",
   "changelog": [
+    {
+      "date": "2026-09-05",
+      "note": "Schema v3.1 — DCM/ACDOM alignment (no evidence changes). Added the capability-development governance layer: a forums reference map (ACDM, ASTC, CPRC, AOM, ADTC, ASSC, AISC, ACC, WSSC, EMF — chairs by appointment only); landing-zone fields on serials (dcmPhase / nextInstrument / targetForum) and questions (decisionForum). Assigned honestly: D-1 and D-2 route to ACDM with their directed G5 baselines named as the next instrument; every dcmPhase is null because no Army-side thread state is evidenced yet (internal baselines due 15 Sep) — the DCM phase describes the Army thread, never the external technology. Q1/Q2 decisionForum = ACDM; all other landing-zone fields null (watchlist/foundational threads carry a phase only when honestly known; staff actions stay in-branch). Doctrine: DOCTRINE.md §29, GENERATORPROMPT.md Schema v3.1, and the new capdev-governance skill (DCM lifecycle, ACDOM forum map, forum-submission output mode)."
+    },
     {
       "date": "2026-09-05",
       "note": "Edition roll to Sep 2026 (sweep 24 Aug – 5 Sep; serial ages incremented). Material change (1): Q3 — the PLA's 3 Sep V-Day parade publicly displayed GJ-11-class stealth combat drones (presented in a role alongside manned fighters), an AJX002-class extra-large undersea vehicle, high-energy-laser counter-drone systems, electronic-jamming systems and new hypersonic/strategic weapons, staged with the Russian and DPRK heads of state present — a deliberate deterrence communication that also confirms counter-unmanned, directed-energy and unmanned deep-strike as showcased PLA force categories. Graded per doctrine: paraded = reported (display evidences existence and priority, not fielded performance); independent corroboration of individual systems' status required. Evidence-base updates without escalation: D-1/Q1 adds the official JIATF-401 roundtable (21 Aug) confirming an Army directed-energy pilot spanning HEL and HPM with iterative small-quantity commercial testing and 60-day two-drone / 120-day autonomous-swarming goals; W-2/Q4 adds the strongest burden-distribution datum yet for the last-mile question — in a dedicated Ukrainian ground-robot battalion roughly 19 of every 20 UGV tasks are logistics or casualty evacuation, combat ~2% (War on the Rocks). The 22 Aug material flags (Q4 ILTM, Q5 GAO) are considered reviewed and reset. Internal baselines (G5 ×2, ASB4) remain due 15 Sep — ten days out, statuses unchanged. Also this date: merged main's manual uploads (byte-identical to the delivered 22 Aug files) and removed 18 verified-identical root-level duplicates of the skill files."
@@ -401,7 +405,10 @@ window.SIO_DATA = {
       "functionalLead": "ASB2",
       "question": "Q1",
       "directionType": "priority_direction",
-      "decisionLog": []
+      "decisionLog": [],
+      "dcmPhase": null,
+      "nextInstrument": "Internal baseline (G5, due 15 Sep 2026) → OCF/AOR entry for the layered C-UAS thread",
+      "targetForum": "ACDM"
     },
     {
       "id": "D-2",
@@ -476,7 +483,10 @@ window.SIO_DATA = {
       "functionalLead": "To be determined by G5",
       "question": "Q2",
       "directionType": "priority_direction",
-      "decisionLog": []
+      "decisionLog": [],
+      "dcmPhase": null,
+      "nextInstrument": "Internal baseline (G5, due 15 Sep 2026) → C2 spectrum-survivability requirements into OCF/AOR machinery",
+      "targetForum": "ACDM"
     },
     {
       "id": "S-1",
@@ -530,7 +540,10 @@ window.SIO_DATA = {
       "functionalLead": "—",
       "question": "Q6",
       "directionType": "staff_action",
-      "decisionLog": []
+      "decisionLog": [],
+      "dcmPhase": null,
+      "nextInstrument": null,
+      "targetForum": null
     },
     {
       "id": "W-1",
@@ -667,7 +680,10 @@ window.SIO_DATA = {
       "fdLead": "Unassigned — to be determined if an Army requirement emerges",
       "functionalLead": "—",
       "question": "Q6",
-      "decisionLog": []
+      "decisionLog": [],
+      "dcmPhase": null,
+      "nextInstrument": null,
+      "targetForum": null
     },
     {
       "id": "W-2",
@@ -800,7 +816,10 @@ window.SIO_DATA = {
       "fdLead": "G5",
       "functionalLead": "CESS",
       "question": "Q4",
-      "decisionLog": []
+      "decisionLog": [],
+      "dcmPhase": null,
+      "nextInstrument": null,
+      "targetForum": null
     },
     {
       "id": "W-7",
@@ -861,7 +880,10 @@ window.SIO_DATA = {
         }
       ],
       "question": "Q4",
-      "decisionLog": []
+      "decisionLog": [],
+      "dcmPhase": null,
+      "nextInstrument": null,
+      "targetForum": null
     },
     {
       "id": "W-3",
@@ -952,7 +974,10 @@ window.SIO_DATA = {
       "fdLead": "G5 — determination pending ASB4 baseline",
       "functionalLead": "ASB4",
       "question": "Q5",
-      "decisionLog": []
+      "decisionLog": [],
+      "dcmPhase": null,
+      "nextInstrument": null,
+      "targetForum": null
     },
     {
       "id": "W-4",
@@ -1137,7 +1162,10 @@ window.SIO_DATA = {
       "fdLead": "N/A at net-assessment stage — G5 determination on any escalation",
       "functionalLead": "A4",
       "question": "Q3",
-      "decisionLog": []
+      "decisionLog": [],
+      "dcmPhase": null,
+      "nextInstrument": null,
+      "targetForum": null
     },
     {
       "id": "W-5",
@@ -1314,7 +1342,10 @@ window.SIO_DATA = {
       "fdLead": "Unassigned — comparator line",
       "functionalLead": "—",
       "question": "Q7",
-      "decisionLog": []
+      "decisionLog": [],
+      "dcmPhase": null,
+      "nextInstrument": null,
+      "targetForum": null
     },
     {
       "id": "W-6",
@@ -1397,7 +1428,10 @@ window.SIO_DATA = {
       "fdLead": "Unassigned",
       "functionalLead": "—",
       "question": null,
-      "decisionLog": []
+      "decisionLog": [],
+      "dcmPhase": null,
+      "nextInstrument": null,
+      "targetForum": null
     },
     {
       "id": "I-1",
@@ -1449,7 +1483,10 @@ window.SIO_DATA = {
       "functionalLead": "SIO Concepts cell",
       "question": "Q7",
       "directionType": "staff_action",
-      "decisionLog": []
+      "decisionLog": [],
+      "dcmPhase": null,
+      "nextInstrument": null,
+      "targetForum": null
     }
   ],
   "feed": [
@@ -4275,7 +4312,8 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which residual gaps survive the baseline, and what trial questions do they define? Trial design should produce decision-relevant measurements (detection probability, classification accuracy, engagement success, leakage, cost per engagement, magazine expenditure, operator workload, integration latency).",
       "status": "active",
-      "materialChange": null
+      "materialChange": null,
+      "decisionForum": "ACDM"
     },
     {
       "id": "Q2",
@@ -4314,7 +4352,8 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which capability lines and design standards does the baseline implicate, and which exercise measurements will replace theoretical assumptions first?",
       "status": "active",
-      "materialChange": null
+      "materialChange": null,
+      "decisionForum": "ACDM"
     },
     {
       "id": "Q3",
@@ -4346,7 +4385,8 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which specific Army design assumptions (C2 tempo, EW resilience, dispersal, deception) are most sensitive to the assessed adversary trajectory — a question for red-teaming, not procurement.",
       "status": "active",
-      "materialChange": "The PLA's 3 Sep V-Day parade — first public display of GJ-11-class stealth combat drones, an AJX002-class extra-large undersea vehicle, HEL counter-drone systems and new hypersonic/strategic weapons, staged with the Russian and DPRK leaders present. A deliberate deterrence communication that also confirms counter-unmanned, DE and unmanned deep-strike as showcased PLA force categories. Paraded = reported, not fielded; performance claims require independent corroboration."
+      "materialChange": "The PLA's 3 Sep V-Day parade — first public display of GJ-11-class stealth combat drones, an AJX002-class extra-large undersea vehicle, HEL counter-drone systems and new hypersonic/strategic weapons, staged with the Russian and DPRK leaders present. A deliberate deterrence communication that also confirms counter-unmanned, DE and unmanned deep-strike as showcased PLA force categories. Paraded = reported, not fielded; performance claims require independent corroboration.",
+      "decisionForum": null
     },
     {
       "id": "Q4",
@@ -4383,7 +4423,8 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which Army sustainment/inventory processes have the largest measured manpower burden, exposure or error rate? That inventory precedes any technology selection.",
       "status": "active",
-      "materialChange": null
+      "materialChange": null,
+      "decisionForum": null
     },
     {
       "id": "Q5",
@@ -4415,7 +4456,8 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which Army decision workflows (starting with the questions in this register) does the architecture currently enable, and which does it block?",
       "status": "active",
-      "materialChange": null
+      "materialChange": null,
+      "decisionForum": null
     },
     {
       "id": "Q6",
@@ -4452,7 +4494,8 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which Army stakeholders own each facet (authority, assurance, legal, CONOPS), per the S-1 stakeholder map — SIO frames; it does not determine policy.",
       "status": "active",
-      "materialChange": null
+      "materialChange": null,
+      "decisionForum": null
     },
     {
       "id": "Q7",
@@ -4485,7 +4528,8 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Does the measured I-1 pilot justify scaling the decision-workflow model across the question register?",
       "status": "active",
-      "materialChange": null
+      "materialChange": null,
+      "decisionForum": null
     }
   ],
   "metrics": {
@@ -4500,5 +4544,87 @@ window.SIO_DATA = {
       "note": "No senior direction has yet completed the direction → action → observed effect → updated assessment loop; decisionLog fields are in place to capture it."
     },
     "materialChangesThisEdition": 1
+  },
+  "forums": {
+    "ACDM": {
+      "code": "ACDM",
+      "name": "Army Capability Development Meeting",
+      "tier": "general_staff",
+      "chair": "COS-GS",
+      "cadence": "monthly",
+      "role": "Pinnacle cap-dev forum: governance, strategic direction, front-end integration at master-planning level, strategic resource steering. Items typically proceed ACDM → ACC."
+    },
+    "ASTC": {
+      "code": "ASTC",
+      "name": "Army Science & Technology Conference",
+      "tier": "general_staff",
+      "chair": "CSIO (co-chair with defence-technology community)",
+      "cadence": "monthly",
+      "role": "Central R&T monitoring; gates and prioritises R&T proposals; accountable to ASSC for R&T developments."
+    },
+    "CPRC": {
+      "code": "CPRC",
+      "name": "Central Plans and Resource Committee",
+      "tier": "general_staff",
+      "chair": "ACGS(Plans)",
+      "cadence": "monthly",
+      "role": "Army-level governance of strategic resources; resource optimisation in force build-up."
+    },
+    "AOM": {
+      "code": "AOM",
+      "name": "Army Operations Meeting",
+      "tier": "general_staff",
+      "chair": "ACGS(Ops)",
+      "cadence": "monthly",
+      "role": "Endorses ops matters: ops-concept formulation, exercise concept/conduct, establishment changes."
+    },
+    "ADTC": {
+      "code": "ADTC",
+      "name": "Army Doctrine and Training Conference",
+      "tier": "general_staff",
+      "chair": "Comd TRADOC",
+      "cadence": "monthly",
+      "role": "Approves doctrine manuals and exercise concepts; anchors modelling & simulation."
+    },
+    "ASSC": {
+      "code": "ASSC",
+      "name": "Army Systems Steering Committee",
+      "tier": "army",
+      "chair": "COA + DS(T) co-chair",
+      "cadence": "per programme rhythm",
+      "role": "Strategic guidance and decisions for Army capital and R&T projects; reviews programme progress through WSSC."
+    },
+    "AISC": {
+      "code": "AISC",
+      "name": "Army Infrastructure Steering Committee",
+      "tier": "army",
+      "chair": "COA + DS(T) co-chair",
+      "cadence": "per programme rhythm",
+      "role": "Steering-committee construct for Army infrastructure projects."
+    },
+    "ACC": {
+      "code": "ACC",
+      "name": "Army Commanders Conference",
+      "tier": "army",
+      "chair": "COA",
+      "cadence": "per Army rhythm",
+      "role": "Final endorsement forum for Army capability-development papers before SAF/MINDEF levels."
+    },
+    "WSSC": {
+      "code": "WSSC",
+      "name": "Weapon Systems Staffing Channel (WSSC)",
+      "tier": "executive",
+      "chair": null,
+      "cadence": "per paper",
+      "role": "Staffing/review channel through which steering committees review programme progress; AOR papers pass here."
+    },
+    "EMF": {
+      "code": "EMF",
+      "name": "Equipping Management Forum",
+      "tier": "executive",
+      "chair": null,
+      "cadence": "per workyear rhythm",
+      "role": "Approves equipping plans, five-year equipping and retirement plans."
+    }
   }
 };
