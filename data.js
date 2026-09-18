@@ -6,6 +6,10 @@ window.SIO_DATA = {
   "changelog": [
     {
       "date": "2026-09-18",
+      "note": "Supplementary sweep, same edition day (second pass targeting Q2/Q5/Q7 after the morning sweep). Material changes (+2, edition total 4): Q5 — NGC2 crossed from prototype to operational fielding (29 Jul 'ready to scale' closing a 10-month prototype phase; first operational version now being readied for I Corps with application down-select underway — official + trade-press corroborated): the comparator unified-data architecture is no longer an experiment, which sharpens, not substitutes for, the overdue ASB4 Army-side baseline. Q7 — the US Army is reverting its dedicated drone unit to conventional infantry with the distribute-don't-centralise rationale stated publicly by the Army CTO: the clearest organisational-design datum yet for the organising question, graded as a stated position/hypothesis since the internal assessment is not public. Q2 swept again: no material external change surfaced (EW/spectrum coverage this window is analytical, not threshold-moving); honestly unchanged. ACDM agenda candidacy unchanged: Q1 remains the single nominated candidate — Q5 and Q7 flags are register-maturing evidence, but their decisions are blocked on the overdue internal inputs (ASB4 baseline; the I-1 pilot read-out), and nominating them without those would violate the baseline-before-decision discipline."
+    },
+    {
+      "date": "2026-09-18",
       "note": "Mid-Sep sweep (6–18 Sep). Material changes (2): Q1 — the US Army's $464.8M E-HEL award to AeroVironment (LOCUST X3 30kW, 2 Sep; corroborated by vendor release) is reported as the first HEL production contract in US history, converting the JIATF-401 pilot logged 21 Aug into a funded production line — the DE layer moves from pilot to production in a comparator force, making production-scale affordability arithmetic obtainable evidence. Q4 — last-mile sustainment autonomy moved on both axes: ~112,000 UGV logistics/evac missions in Ukraine YTD per DELTA-attributed figures (state-linked, unaudited) and a US Army hybrid logistics UGV production award to Rheinmetall (single sighting; corroborate values before use). Evidence updates without escalation: S-1/Q6 — the CCW GGE (31 Aug–4 Sep) agreed non-binding foundational elements on LAWS (characterisation + IHL applicability; human-involvement levels unresolved), with the November Review Conference now a dated trigger for any Army position input; W-4/Q3 — CETC/NUDT multidomain-swarm and operator-ratio claims plus Xi's public direction to accelerate military-AI integration, graded as priority signalling, not fielded performance. The 5 Sep Q3 flag (V-Day parade) is considered reviewed and reset. INTERNAL SUSPENSES PAST DUE: the directed baselines (G5 C-UAS, G5 C2 spectrum-survivability, ASB4 data-architecture — all 15 Sep) and the S-1 staff action have passed suspense with no input received in this pipeline; per the instrument-readiness ladder these remain the binding open requirement on every decision thread, and reporting the overdue suspense is the honest first line of this edition. ACDM agenda candidate (1, per DOCTRINE.md §29): Q1 — decide whether the E-HEL production precedent changes the Army's C-UAS DE-layer posture: reaffirm the baseline-first direction with a new suspense, or direct an interim DE-layer evidence task against production-scale cost data now available. Not nominated: Q4 (held pending the process-owner burden baseline; promoting it without one would violate the problem-first rule)."
     },
     {
@@ -952,13 +956,13 @@ window.SIO_DATA = {
       ],
       "dlabel": "Army data layer — foundational dependency",
       "suspense": "ASB4 baseline due 15 Sep 2026",
-      "latestDevelopment": "A GAO report (reported 20 Aug) warns information gaps could hinder the Army's NGC2 modernisation planning, and notes NGC2 hardware suffered in extreme heat at the Mojave capstone — an independent watchdog assessment landing three weeks after Army leaders declared the programme 'ready to scale'.",
-      "changeFromPrevious": "No external change. Internal: the ASB4 architecture baseline (suspense 15 Sep 2026) is PAST DUE with no input received in this pipeline — this remains the precondition for the Army-side comparison every data/AI thread depends on, and the overdue suspense is reportable.",
+      "latestDevelopment": "NGC2 crossed from prototyping to operational fielding: after the 29 Jul 'ready to scale' declaration closing a 10-month prototype phase (4th and 25th Infantry Divisions, PC-C6), the Army is preparing the first operational NGC2 version for I Corps, down-selecting software applications now (Breaking Defense, ~12 Sep; corroborated by official roundtable). The GAO cautions logged 20 Aug (information gaps, hardware in extreme heat) remain unresolved on the public record.",
+      "changeFromPrevious": "Material since last review: the comparator common-data-layer programme this foundational thread tracks moved from prototype to an operational fielding decision — the strongest maturity signal yet that unified-data C2 architectures are executable at formation scale. Doctrine discipline unchanged: a comparator's maturity never substitutes for the Army-side architecture baseline, and that baseline (ASB4, due 15 Sep) is now PAST DUE — the comparator advancing while the Army-side picture is missing is precisely the condition this question exists to prevent.",
       "armyRelevance": "Foundational — every persistent question in the register depends on whether Army can discover, integrate, govern and expose trusted data to the people and applications that need it, at the required classification, echelon and tempo. This is not an ordinary technology watch item, and it is not 'should Army copy NGC2' — NGC2/Maven are comparators; the starting point is the Singapore Army's operational requirements and existing architecture. This pipeline holds no verified information on the internal systems concerned and will not fabricate the comparison.",
       "escalationTrigger": "Escalate once the ASB4 baseline (due 15 Sep 2026) is received and the SIO/G5 comparison identifies what data exists, where it resides, who owns it, whether it is reusable, how it is exposed, whether it moves across required environments, where duplication exists, what blocks decision workflows, and which NGC2/Maven patterns are relevant vs inappropriate for the Singapore Army.",
       "note": "CSIO critique (6 Aug 2026) directed this entry be reframed against existing Army data architecture rather than approved as a generic NGC2 study. That reframe requires internal Army-architecture facts not available to this open-source pipeline. Per COS-GS vetting (8 Aug 2026), the precondition is converted into a defined internal tasking: ASB4 to provide the current Army Data Store, ENCLAVE, STRONGWATCH and OUTREACH/SYNTEX architecture baseline by 15 Sep 2026 for comparison against relevant NGC2/common-data-layer lessons.",
       "decision": "Foundational dependency (Q5) — ASB4 architecture baseline tasked (due 15 Sep 2026); comparison focuses on the Army decision workflows the data architecture must enable, not technology imitation.",
-      "signal": "[Operationally evaluating] The US Army's Next Generation Command and Control (NGC2) programme moved from prototyping toward delivery: a named common-data-layer baseline (Anduril lead; Palantir edge-to-cloud data mesh) underwent division-scale force-on-force validation at Project Convergence Capstone 6 (July; Army.mil/DefenseScoop, 20-22 Jun). [Reported — single source, not independently corroborated] Project Maven is reported to be transmitting near-fully machine-generated intelligence to commanders using large language models (CSIS, 15 Jun). [Reported] At DoDIIS Worldwide (11 Aug), US military intelligence leaders identified data access within the right security enclaves — not model development — as the biggest obstacle to battlefield AI (GovCIO, 12 Aug): independent corroboration of the data-layer-as-bottleneck thesis this foundational line rests on. [Fielding-track] Army leaders declared NGC2 ready to scale at PC-C6's close (29 Jul), concluding 10 months of prototyping; rollout begins with I Corps headquarters and downtrace units (army.mil, 3 Aug). [Reported — watchdog] GAO warns information gaps could hinder Army NGC2 modernisation plans, and NGC2 hardware suffered in extreme Mojave heat, even as leaders call the capstone a success and prepare wider fielding (DefenseScoop, 20 Aug). [Reported] Unit-level training shows tactical drones integrated into the NGC2 ecosystem, feeding the common data layer for sensor-to-shooter coordination (Army Recognition, ~20 Aug) — comparator evidence of an operating decision workflow on the architecture.",
+      "signal": "[Operationally evaluating] The US Army's Next Generation Command and Control (NGC2) programme moved from prototyping toward delivery: a named common-data-layer baseline (Anduril lead; Palantir edge-to-cloud data mesh) underwent division-scale force-on-force validation at Project Convergence Capstone 6 (July; Army.mil/DefenseScoop, 20-22 Jun). [Reported — single source, not independently corroborated] Project Maven is reported to be transmitting near-fully machine-generated intelligence to commanders using large language models (CSIS, 15 Jun). [Reported] At DoDIIS Worldwide (11 Aug), US military intelligence leaders identified data access within the right security enclaves — not model development — as the biggest obstacle to battlefield AI (GovCIO, 12 Aug): independent corroboration of the data-layer-as-bottleneck thesis this foundational line rests on. [Fielding-track] Army leaders declared NGC2 ready to scale at PC-C6's close (29 Jul), concluding 10 months of prototyping; rollout begins with I Corps headquarters and downtrace units (army.mil, 3 Aug). [Reported — watchdog] GAO warns information gaps could hinder Army NGC2 modernisation plans, and NGC2 hardware suffered in extreme Mojave heat, even as leaders call the capstone a success and prepare wider fielding (DefenseScoop, 20 Aug). [Reported] Unit-level training shows tactical drones integrated into the NGC2 ecosystem, feeding the common data layer for sensor-to-shooter coordination (Army Recognition, ~20 Aug) — comparator evidence of an operating decision workflow on the architecture. [Official + corroborated] NGC2 declared ready to scale (army.mil, 29 Jul) and the first operational version is being readied for I Corps with application down-select underway (Breaking Defense, ~12 Sep) — 60+ vendors on a unified data layer, vendors to be added and replaced over time (an architectural substitution-freedom pattern worth extracting for the Army comparison). GAO's heat and information-gap cautions still stand.",
       "sowhat": "The open-source evidence describes a US programme's maturity, not an Army-specific integration decision. As a foundational enabler, the line is assessed by whether Army's data architecture enables persistent decision workflows — including the workflows this register itself requires.",
       "action": "Tasking: ASB4 to provide the current Army Data Store, ENCLAVE, STRONGWATCH and OUTREACH/SYNTEX architecture baseline by 15 Sep 2026, for comparison against relevant NGC2/common-data-layer lessons. Once the baseline is available, SIO/G5 determine whether a genuine force-development gap or opportunity exists.",
       "src": [
@@ -1013,6 +1017,14 @@ window.SIO_DATA = {
           "url": "https://www.armyrecognition.com/news/army-news/2026/u-s-army-integrates-tactical-drones-into-next-generation-command-and-control-network",
           "f": "verified",
           "note": "Date approximate; single-outlet coverage."
+        },
+        {
+          "out": "Breaking Defense",
+          "date": "12 Sep 2026",
+          "ttl": "Beyond prototypes: Army readies operational NGC2 tech for I Corps",
+          "url": "https://breakingdefense.com/2026/09/beyond-prototypes-army-readies-operational-ngc2-tech-for-i-corps/",
+          "f": "verified",
+          "note": "Corroborated by official army.mil scale declaration; date approximate."
         }
       ],
       "insightSponsor": "SIO",
@@ -1253,12 +1265,12 @@ window.SIO_DATA = {
       ],
       "dlabel": "Allied acquisition, doctrine & vendor-ecosystem shifts",
       "suspense": "Trigger-based — see escalationTrigger",
-      "latestDevelopment": "SOCOM's PEO for SOF digital applications will test and evaluate mission-autonomy software with SOFWERX under the UxSAI programme (DefenseScoop, 18 Aug) — following the Army's 13 Aug shift to vendor-led, mission-specific autonomy, a second data point in how US organisations are structuring autonomy-software ownership and T&E.",
-      "changeFromPrevious": "Evidence-base update since 18 Aug review: the SOCOM UxSAI test plan extends the autonomy-software acquisition-pattern picture; below the material-change threshold on its own.",
+      "latestDevelopment": "The US Army is reverting its dedicated drone unit to a conventional infantry battalion while publicly insisting it is not retreating from drones/autonomy (Breaking Defense, ~11 Sep; corroborated). Stated rationale from the Army CTO: centralising the capability in one unit prevents scaling the learning — distribute the capability, integrate lessons force-wide through the doctrine overhaul.",
+      "changeFromPrevious": "Material since last review: the clearest organisational-design datum yet for this question — a comparator force ran the dedicated-drone-unit experiment and reversed it, with the distribute-don't-centralise rationale on the record. Graded carefully: the public rationale is a leadership position, not a released internal assessment; it transfers as a hypothesis for the Army's own organising question (dedicated units vs distributed capability with a strong doctrine/training spine), not as a conclusion. Relevant to the I-1 pilot's framing and any future force-design option paper.",
       "armyRelevance": "Retained only for developments that could plausibly create a force-design lesson, an acquisition-model change, an interoperability opportunity, a co-development/co-production opportunity, a classification/information-sharing precedent, or a concrete Army partnership opportunity. General defence-industry and organisational developments remain in the source feed without joining this line. Informs Army's own concept-design and acquisition-pattern choices (see I-1) but does not itself require an Army decision.",
       "escalationTrigger": "Escalate to a decision if any single thread (e.g. DRPM-UxS consolidation, the Talon Synapse classification-sharing model) produces a concrete interoperability or co-production opportunity Army could join.",
       "decision": "Maintain as a standing comparator line for the I-1 concept-design pilot.",
-      "signal": "[Reported — acquisition-model change] The Pentagon is reportedly shifting AI acquisition from monolithic platforms toward modular, multi-vendor, auditable architectures (Federal News Network, 18 Jun), and suspended CMMC Phase 2 cybersecurity certification requirements pending a 60-day Reform Task Force (13 Jul) — both changing the acquisition model non-traditional vendors face. [Fielded — force-design lesson] A Defense Secretary memo (1 Jul) created the Direct Reporting Portfolio Manager for Unmanned Systems (DRPM-UxS), consolidating nearly all US unmanned programmes under one integrator (~$75B FY27 request); the Army realigned its Mission Autonomy office and DIU restructured around drones/autonomous-warfare, commercial-space 'kill webs' and '10x technologies' teams (USNI/DefenseScoop/Breaking Defense, 1-15 Jul). [Reported — force-design lesson] Israel's IDF Chief of Staff announced (8 Jul) a new General Staff structure for robotics/drones/AI, mirroring the US consolidation. [Fielded — classification/information-sharing precedent] CENTCOM and the UAE stood up Task Force Talon Synapse (28 Jul), the first bilateral AI task force (~20 personnel, Abu Dhabi), with classification-sharing rules flagged as the unresolved constraint. [Demonstrated — interoperability opportunity] Australia's MQ-28 Ghost Bat flew alongside crewed fighters in Valiant Shield 26 (27 Jul); PACAF and the RAAF are exploring 'operator-to-operator' command architectures letting US pilots command Ghost Bat drones directly. [Reported — force-design lesson] Japan's 2026 defence white paper (4 Aug) gives first dedicated treatment to a 'new way of warfare' naming drones and AI as central design elements, shortlisting four drone makers for rapid development. [Reported — acquisition-model change] The US Army shifted its autonomy strategy from a unified government software approach to vendor-led, mission-specific autonomous capabilities (Breaking Defense, 13 Aug). [Reported] SOCOM will test mission-autonomy software under its UxSAI programme with SOFWERX (18 Aug) — a further autonomy-software acquisition and T&E pattern alongside the Army's vendor-led shift. [Reported — co-development/test-range partnership] Japan and Australia agreed a decade-long arrangement for Japanese missile tests (including hypersonics) on Australian ranges, plus co-development of the 'Boobook' counter-threat laser with a ~$50M Mitsubishi manufacturing facility in Sydney (Bloomberg/AFP, 18 Aug) — a concrete regional precedent for allied test-range access and DE co-production.",
+      "signal": "[Reported — acquisition-model change] The Pentagon is reportedly shifting AI acquisition from monolithic platforms toward modular, multi-vendor, auditable architectures (Federal News Network, 18 Jun), and suspended CMMC Phase 2 cybersecurity certification requirements pending a 60-day Reform Task Force (13 Jul) — both changing the acquisition model non-traditional vendors face. [Fielded — force-design lesson] A Defense Secretary memo (1 Jul) created the Direct Reporting Portfolio Manager for Unmanned Systems (DRPM-UxS), consolidating nearly all US unmanned programmes under one integrator (~$75B FY27 request); the Army realigned its Mission Autonomy office and DIU restructured around drones/autonomous-warfare, commercial-space 'kill webs' and '10x technologies' teams (USNI/DefenseScoop/Breaking Defense, 1-15 Jul). [Reported — force-design lesson] Israel's IDF Chief of Staff announced (8 Jul) a new General Staff structure for robotics/drones/AI, mirroring the US consolidation. [Fielded — classification/information-sharing precedent] CENTCOM and the UAE stood up Task Force Talon Synapse (28 Jul), the first bilateral AI task force (~20 personnel, Abu Dhabi), with classification-sharing rules flagged as the unresolved constraint. [Demonstrated — interoperability opportunity] Australia's MQ-28 Ghost Bat flew alongside crewed fighters in Valiant Shield 26 (27 Jul); PACAF and the RAAF are exploring 'operator-to-operator' command architectures letting US pilots command Ghost Bat drones directly. [Reported — force-design lesson] Japan's 2026 defence white paper (4 Aug) gives first dedicated treatment to a 'new way of warfare' naming drones and AI as central design elements, shortlisting four drone makers for rapid development. [Reported — acquisition-model change] The US Army shifted its autonomy strategy from a unified government software approach to vendor-led, mission-specific autonomous capabilities (Breaking Defense, 13 Aug). [Reported] SOCOM will test mission-autonomy software under its UxSAI programme with SOFWERX (18 Aug) — a further autonomy-software acquisition and T&E pattern alongside the Army's vendor-led shift. [Reported — co-development/test-range partnership] Japan and Australia agreed a decade-long arrangement for Japanese missile tests (including hypersonics) on Australian ranges, plus co-development of the 'Boobook' counter-threat laser with a ~$50M Mitsubishi manufacturing facility in Sydney (Bloomberg/AFP, 18 Aug) — a concrete regional precedent for allied test-range access and DE co-production. [Corroborated — rationale is a stated position] The US Army is converting its drone-focused unit back to infantry, CTO stating it is 'not walking away' from autonomy; theory: centralisation blocks scaling of learning (Breaking Defense ~11 Sep; The Hill, CFR). An organisational experiment's reversal is evidence about the org design, not about the technology.",
       "sowhat": "A single 'how are peer institutions organising for the AI/autonomy shift' line, useful as a concept-design and acquisition-pattern comparator (feeds I-1's pilot directly). Scope is deliberately narrow: each retained thread maps to one of the six opportunity types in the COS-GS filter; everything else stays in the source feed. This is indicative relevance, not a demonstrated Army requirement, and is held at watchlist accordingly.",
       "action": "SIO to maintain this as a standing comparator line for the I-1 concept-design pilot and flag any thread that matures into a concrete Army interoperability, co-development or partnership opportunity.",
       "src": [
@@ -1389,6 +1401,14 @@ window.SIO_DATA = {
           "url": "https://www.bloomberg.com/news/articles/2026-08-18/japan-agrees-to-test-hypersonics-other-missiles-in-australia",
           "f": "paywall",
           "note": "Corroborated by AFP syndications and The Nightly."
+        },
+        {
+          "out": "Breaking Defense",
+          "date": "11 Sep 2026",
+          "ttl": "Army 'not walking away' from UAVs despite reverting drone unit back to infantry",
+          "url": "https://breakingdefense.com/2026/09/army-not-walking-away-from-uavs-despite-reverting-drone-unit-back-to-infantry/",
+          "f": "verified",
+          "note": "Corroborated across outlets; internal assessment behind the decision not public."
         }
       ],
       "insightSponsor": "SIO",
@@ -1564,6 +1584,52 @@ window.SIO_DATA = {
       "confidence": "high",
       "primarySourceUrl": null,
       "unverifiedClaims": "Agreed elements are non-binding and their text characterisation is as relayed by the policy brief; primary GGE session documents should be cited in any Army position paper.",
+      "dateLastChecked": "2026-09-18"
+    },
+    {
+      "date": "2026-09-12",
+      "out": "Breaking Defense",
+      "ttl": "Beyond prototypes: Army readies operational NGC2 tech for I Corps",
+      "sum": "Following the Army's 29 Jul 'ready to scale' declaration at the close of Project Convergence–Capstone 6 (a 10-month prototyping phase with the 4th and 25th Infantry Divisions), the first operational version of NGC2 hardware and software is being prepared for I Corps — headquarters, enablers and downtrace units — with software applications now being down-selected. NGC2 replaces fragmented legacy C2 with a unified data layer; 60+ vendors contribute, with the Army stating it will keep adding and replacing vendors.",
+      "tech": [
+        "data",
+        "ai"
+      ],
+      "pf": "P6",
+      "desk": "US",
+      "url": "https://breakingdefense.com/2026/09/beyond-prototypes-army-readies-operational-ngc2-tech-for-i-corps/",
+      "f": "verified",
+      "serial": "W-3",
+      "saved": false,
+      "flagged": true,
+      "sourceType": "trade_press",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": "https://www.army.mil/article/294284/army_leaders_next_generation_command_and_control_ready_to_scale",
+      "unverifiedClaims": "Scale decision and I Corps fielding plan corroborated (official army.mil roundtable + trade press); date approximate. Operational performance at corps scale not yet evidenced — the GAO heat/information-gap cautions logged 20 Aug still stand.",
+      "dateLastChecked": "2026-09-18"
+    },
+    {
+      "date": "2026-09-11",
+      "out": "Breaking Defense",
+      "ttl": "Army 'not walking away' from UAVs despite reverting drone unit back to infantry",
+      "sum": "The US Army is converting its dedicated drone-focused unit back into a conventional infantry battalion, with the service's chief technology officer stating the Army is 'not slowing down on drones or autonomous systems'. The stated organisational theory: centralising drone capability in one unit prevents scaling the learning across the force — capability should be distributed, with lessons integrated force-wide through doctrine ('drone dominance' overhaul). A comparator force ran the dedicated-unit experiment and reversed it, with the rationale on the record.",
+      "tech": [
+        "robo",
+        "ai"
+      ],
+      "pf": "P4",
+      "desk": "US",
+      "url": "https://breakingdefense.com/2026/09/army-not-walking-away-from-uavs-despite-reverting-drone-unit-back-to-infantry/",
+      "f": "verified",
+      "serial": "W-5",
+      "saved": false,
+      "flagged": true,
+      "sourceType": "trade_press",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": null,
+      "unverifiedClaims": "Reversion corroborated across outlets (The Hill, CFR commentary); the stated rationale is the Army CTO’s public position — the internal assessment behind the decision is not public, so the lesson transfers as a hypothesis to test, not a conclusion to adopt.",
       "dateLastChecked": "2026-09-18"
     },
     {
@@ -4622,7 +4688,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which Army decision workflows (starting with the questions in this register) does the architecture currently enable, and which does it block?",
       "status": "active",
-      "materialChange": null,
+      "materialChange": "The comparator programme this question's foundational dependency tracks — NGC2, a unified-data C2 architecture — moved from a 10-month prototyping phase to an operational fielding decision (first operational version to I Corps; 'ready to scale', official). The maturity premise of the Army-side comparison has changed: the reference architecture is no longer an experiment. The Army-side item is unchanged and overdue — the ASB4 architecture baseline (15 Sep) has not been received, and without it this question cannot progress beyond comparator-watching.",
       "decisionForum": null
     },
     {
@@ -4694,7 +4760,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Does the measured I-1 pilot justify scaling the decision-workflow model across the question register?",
       "status": "active",
-      "materialChange": null,
+      "materialChange": "A comparator force answered this question's core organisational trade-off in public: the US Army is reverting its dedicated drone unit to conventional infantry, with the stated theory that centralising the capability prevents scaling the learning — distributed capability plus a force-wide doctrine overhaul instead. Graded as a hypothesis with a stated rationale (the internal assessment is not public), it is direct evidence for the organising-for-autonomy design space this question holds.",
       "decisionForum": null
     }
   ],
@@ -4709,7 +4775,7 @@ window.SIO_DATA = {
       "resultCaptured": 0,
       "note": "No senior direction has yet completed the direction → action → observed effect → updated assessment loop; decisionLog fields are in place to capture it."
     },
-    "materialChangesThisEdition": 2
+    "materialChangesThisEdition": 4
   },
   "forums": {
     "ACDM": {
