@@ -1,9 +1,13 @@
 /* SIO Insights edition data — generated. Replace to refresh. */
 window.SIO_DATA = {
   "edition": "Sep 2026",
-  "feedAsOf": "2026-09-18",
+  "feedAsOf": "2026-09-25",
   "productVersion": "3.1",
   "changelog": [
+    {
+      "date": "2026-09-25",
+      "note": "Sweep 19–25 Sep (serial ages incremented). Material change (1): Q2 — the US Army's first production awards under the REWSI rapid EW call for solutions (~$196M: MOTH spectrum analyzer $99M, AI-driven Dragonfly EW sensors $96.9M; 11 Sep, single trade source consistent with the April solicitation record) — production-track EM-spectrum sensing in a comparator force, with an April→September call-to-production pathway that is an acquisition-model finding in its own right. Evidence updates without escalation: D-1/Q1 — a 20kW AMP-HEL soldier-tested on an Infantry Squad Vehicle at Fort Bliss (16 Sep; mobility integration demonstrated, no performance data) and JIATF-401's 365-day installation DE posture with military operators (9 Sep) — sustained-operation and operator-burden evidence for the affordability test; W-2/Q4 — Ukraine's UGV scale-up continues (50,000-unit presidential order, 'drone assault units', rifle-armed UGVs in combat testing; figures directional across outlets), with the combat-participation trend noted honestly as qualifying, not overturning, the sustainment-dominant task-share finding. Q3 swept: no item cleared the evidence bar this window (aggregator-sourced claims on PLA autonomy left out pending corroboration). The 18 Sep flags (Q1, Q4, Q5, Q7) are considered reviewed and reset. INTERNAL SUSPENSES: the three directed baselines and the S-1 staff action remain PAST DUE (ten days); no internal input received; internal-data coverage stays 0%. ACDM agenda candidates: Q2 nominated this edition (decide whether the comparator rapid-pathway EW-sensing precedent changes the Army's C2 spectrum-survivability posture — reaffirm the baseline-first direction with a new suspense, or direct an interim spectrum-sensing evidence task); the 18 Sep Q1 candidacy has no recorded forum outcome and remains open."
+    },
     {
       "date": "2026-09-18",
       "note": "Supplementary sweep, same edition day (second pass targeting Q2/Q5/Q7 after the morning sweep). Material changes (+2, edition total 4): Q5 — NGC2 crossed from prototype to operational fielding (29 Jul 'ready to scale' closing a 10-month prototype phase; first operational version now being readied for I Corps with application down-select underway — official + trade-press corroborated): the comparator unified-data architecture is no longer an experiment, which sharpens, not substitutes for, the overdue ASB4 Army-side baseline. Q7 — the US Army is reverting its dedicated drone unit to conventional infantry with the distribute-don't-centralise rationale stated publicly by the Army CTO: the clearest organisational-design datum yet for the organising question, graded as a stated position/hypothesis since the internal assessment is not public. Q2 swept again: no material external change surfaced (EW/spectrum coverage this window is analytical, not threshold-moving); honestly unchanged. ACDM agenda candidacy unchanged: Q1 remains the single nominated candidate — Q5 and Q7 flags are register-maturing evidence, but their decisions are blocked on the overdue internal inputs (ASB4 baseline; the I-1 pilot read-out), and nominating them without those would violate the baseline-before-decision discipline."
@@ -84,7 +88,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 2,
+      "age": 3,
       "supersedes": [
         "II-2",
         "II-4",
@@ -117,7 +121,7 @@ window.SIO_DATA = {
       "deliverable": "Army C-UAS force-development baseline covering: priority UAS threat classes; operational scenarios and assets/echelons requiring protection; existing and planned Army capabilities; residual capability gaps; static versus manoeuvre requirements; kinetic and non-kinetic defeat options; cost-exchange considerations; magazine-depth considerations; integration and C2 requirements; and candidate areas requiring trials",
       "deliverableDate": "2026-09-15",
       "decision": "Endorse affordable layered counter-UAS as an Army force-development priority; direct G5 (ASB2 as functional lead) to deliver the Army C-UAS force-development baseline by 15 Sep 2026. Trial proposal only after the baseline.",
-      "signal": "Evidence is organised by the operational effect or threat class each programme addresses — these programmes collectively demonstrate the layered-defence need and the changing cost exchange, but they do not all solve the same Army threat class. — DEFEAT OF SMALL UAS BY SOFT-KILL (RF/EW): [Fielded] JIATF-401 converted a border-tested evaluation into a three-year, up-to-$500M IDIQ for CACI's SkyValor non-kinetic detect-and-defeat system (RF jamming plus net-capture) after a two-day Yuma demonstration (DefenseScoop, 31 Jul); AeroVironment's Titan task order (~$80M) is fielding AI-enabled RF detect-and-defeat at Air Force bases; the Marine Corps is integrating UGVs into its MADIS counter-drone system (Army Recognition, 27 Jun). — DEFEAT OF SMALL / ONE-WAY-ATTACK UAS BY LOW-COST KINETIC INTERCEPTOR: [Reported] the Army's Next Generation Counter-sUAS Missile RFI (4 Aug) seeks a purpose-built sub-$150K interceptor (responses due 20 Aug); [Combat-proven — single event] Ukraine's Griffen interceptor drone downed a Shahed one-way-attack drone for the first time (Militarnyi, 7 Jul). — CRUISE/BALLISTIC-CLASS AIR DEFENCE AND THE COST-EXCHANGE / MAGAZINE-DEPTH TREND (context for the affordability trade, not small-UAS defeat): [Fielded] the $58.6B FY26-32 Patriot multiyear (30 Jul) and $3B Patriot/THAAD component framework (3 Aug) triple PAC-3 MSE production; [Reported] Lockheed's sub-$2M PAC-3 ACE interceptor (Farnborough, 20 Jul) and the 10-nation coalition behind Ukraine's ~$700K Freyja/FP-7.X (Paris, 14 Jul) hedge against exquisite-interceptor cost; DIU's Ground-Based Affordable Mass call (27 Jul) applies the same cost logic to offensive fires. — COUNTER-SWARM DIRECTED ENERGY: [Demonstrated] the Pentagon's Joint Laser Weapon System programme (Lockheed Aculight, nLIGHT — up to $847M ceiling) is scaling 150kW counter-drone lasers toward 300-500kW cruise-missile defence, and Germany has commissioned a naval laser targeted for fielding by 2029 after 28,000nm of at-sea demonstration. [Reported — state-linked, corroborate] China is showcasing and exporting a man-portable-to-naval laser C-UAS line (Harbin Xinguang 'Lijian', CPMIEC LW-30, Novasky NI-L3K) to Gulf and SE Asian markets — vendor/state claims not independently verified at declared performance levels. — SWARM-CONTROL AUTONOMY LAYER: [Reported] AeroVironment/Applied Intuition's Acuity autonomy software (29 Jul) is moving single-operator, multi-drone swarm control from demonstrator toward the Army Launched Effects programme of record. — ALLIED PRODUCTION MASS AND INTEROPERABILITY: [Reported] NATO's $40B+ five-year counter-drone package (7 Jul) and the €11B EU-Ukraine Drone Deal (15 Jul) fund allied counter-drone mass production and interoperability standards at alliance scale, while Ukraine's drone campaign (1M+ targets struck since January; deep strikes into Russia) continues to define the threat's operational envelope. — THREAT ENVELOPE VS MANOEUVRE FORCES: [Demonstrated — exercise] At Combined Resolve (Hohenfels, Apr-May; WSJ via Meduza, 13 Aug), Ukraine's 412th Unmanned Systems Regiment repeatedly 'destroyed' a ~3,500-strong US armored brigade with recon-cued FPV/bomber drones; US outcomes improved over two weeks through dispersal, concealment, EW and counter-drone systems — direct evidence for the baseline's static-vs-manoeuvre and protected-echelon elements. — DE TRANSITION HURDLES: [Reported] the Pentagon's critical-technologies office wants smaller/lighter/more-efficient DE for airborne and expeditionary use and routine realistic field testing with operating units (Aviation Week, 13 Aug) — naming integration and T&E, not raw power, as the fielding constraints. [Reported — production-track] The Marine Corps is moving to a vehicle-mounted, production-ready Epirus HAVOC high-power-microwave swarm-defeat system (Military Times, 10 Aug) — HPM soft-kill crossing from demonstration toward fielding, notable for effectiveness against fiber-optic-guided drones that defeat RF jamming. — PROTECTION SCENARIOS (fixed sites): [Reported] NORTHCOM's deputy commander warned (SMD Symposium, 13 Aug) that some US military installations have neither the sensors to detect an incoming drone swarm nor the effectors to stop it, against a ~$21B Pentagon request spanning EW, kinetic interceptors, lasers and HPM — evidence that even well-resourced forces treat fixed-site protection as an open gap, reinforcing the baseline's protected-assets/echelons element. [Reported — resource commitment] The Army agreed a ~$400M spend on AeroVironment counter-drone lasers (Bloomberg, 7 Aug), consistent with reporting that HEL is moving from rotating prototypes toward a permanent element of the counter-drone architecture — a funding datum on the DE layer; fielded performance at scale remains to be demonstrated. [Reported — doctrinal adaptation] The 1st Cavalry Division introduced a counter-UAS qualification at Fort Hood (from 26 Jul) — the division whose armored brigade was repeatedly defeated at Combined Resolve, closing the exercise-to-training loop the baseline's mitigation element should capture. [Official] A JIATF-401 media roundtable (army.mil, 21 Aug) confirmed an Army directed-energy pilot spanning HEL and HPM for drone defeat, run iteratively on small quantities of existing commercial products — with stated goals of two-drone teaming within 60 days and autonomous swarming behaviour within 120 days: an official datum on both the DE layer's pilot posture and the threat side's expected swarming timeline. [Official — corroborated] The Army awarded AeroVironment $464.8M under the Enduring-High Energy Laser program for LOCUST X3 30kW systems (DefenseScoop + vendor release, 2 Sep) — the first US HEL production contract, following JIATF-401 White Sands testing; production is a resourcing fact, not an effectiveness fact, and per-engagement economics at production scale remain the open technical question for the affordability test this question carries.",
+      "signal": "Evidence is organised by the operational effect or threat class each programme addresses — these programmes collectively demonstrate the layered-defence need and the changing cost exchange, but they do not all solve the same Army threat class. — DEFEAT OF SMALL UAS BY SOFT-KILL (RF/EW): [Fielded] JIATF-401 converted a border-tested evaluation into a three-year, up-to-$500M IDIQ for CACI's SkyValor non-kinetic detect-and-defeat system (RF jamming plus net-capture) after a two-day Yuma demonstration (DefenseScoop, 31 Jul); AeroVironment's Titan task order (~$80M) is fielding AI-enabled RF detect-and-defeat at Air Force bases; the Marine Corps is integrating UGVs into its MADIS counter-drone system (Army Recognition, 27 Jun). — DEFEAT OF SMALL / ONE-WAY-ATTACK UAS BY LOW-COST KINETIC INTERCEPTOR: [Reported] the Army's Next Generation Counter-sUAS Missile RFI (4 Aug) seeks a purpose-built sub-$150K interceptor (responses due 20 Aug); [Combat-proven — single event] Ukraine's Griffen interceptor drone downed a Shahed one-way-attack drone for the first time (Militarnyi, 7 Jul). — CRUISE/BALLISTIC-CLASS AIR DEFENCE AND THE COST-EXCHANGE / MAGAZINE-DEPTH TREND (context for the affordability trade, not small-UAS defeat): [Fielded] the $58.6B FY26-32 Patriot multiyear (30 Jul) and $3B Patriot/THAAD component framework (3 Aug) triple PAC-3 MSE production; [Reported] Lockheed's sub-$2M PAC-3 ACE interceptor (Farnborough, 20 Jul) and the 10-nation coalition behind Ukraine's ~$700K Freyja/FP-7.X (Paris, 14 Jul) hedge against exquisite-interceptor cost; DIU's Ground-Based Affordable Mass call (27 Jul) applies the same cost logic to offensive fires. — COUNTER-SWARM DIRECTED ENERGY: [Demonstrated] the Pentagon's Joint Laser Weapon System programme (Lockheed Aculight, nLIGHT — up to $847M ceiling) is scaling 150kW counter-drone lasers toward 300-500kW cruise-missile defence, and Germany has commissioned a naval laser targeted for fielding by 2029 after 28,000nm of at-sea demonstration. [Reported — state-linked, corroborate] China is showcasing and exporting a man-portable-to-naval laser C-UAS line (Harbin Xinguang 'Lijian', CPMIEC LW-30, Novasky NI-L3K) to Gulf and SE Asian markets — vendor/state claims not independently verified at declared performance levels. — SWARM-CONTROL AUTONOMY LAYER: [Reported] AeroVironment/Applied Intuition's Acuity autonomy software (29 Jul) is moving single-operator, multi-drone swarm control from demonstrator toward the Army Launched Effects programme of record. — ALLIED PRODUCTION MASS AND INTEROPERABILITY: [Reported] NATO's $40B+ five-year counter-drone package (7 Jul) and the €11B EU-Ukraine Drone Deal (15 Jul) fund allied counter-drone mass production and interoperability standards at alliance scale, while Ukraine's drone campaign (1M+ targets struck since January; deep strikes into Russia) continues to define the threat's operational envelope. — THREAT ENVELOPE VS MANOEUVRE FORCES: [Demonstrated — exercise] At Combined Resolve (Hohenfels, Apr-May; WSJ via Meduza, 13 Aug), Ukraine's 412th Unmanned Systems Regiment repeatedly 'destroyed' a ~3,500-strong US armored brigade with recon-cued FPV/bomber drones; US outcomes improved over two weeks through dispersal, concealment, EW and counter-drone systems — direct evidence for the baseline's static-vs-manoeuvre and protected-echelon elements. — DE TRANSITION HURDLES: [Reported] the Pentagon's critical-technologies office wants smaller/lighter/more-efficient DE for airborne and expeditionary use and routine realistic field testing with operating units (Aviation Week, 13 Aug) — naming integration and T&E, not raw power, as the fielding constraints. [Reported — production-track] The Marine Corps is moving to a vehicle-mounted, production-ready Epirus HAVOC high-power-microwave swarm-defeat system (Military Times, 10 Aug) — HPM soft-kill crossing from demonstration toward fielding, notable for effectiveness against fiber-optic-guided drones that defeat RF jamming. — PROTECTION SCENARIOS (fixed sites): [Reported] NORTHCOM's deputy commander warned (SMD Symposium, 13 Aug) that some US military installations have neither the sensors to detect an incoming drone swarm nor the effectors to stop it, against a ~$21B Pentagon request spanning EW, kinetic interceptors, lasers and HPM — evidence that even well-resourced forces treat fixed-site protection as an open gap, reinforcing the baseline's protected-assets/echelons element. [Reported — resource commitment] The Army agreed a ~$400M spend on AeroVironment counter-drone lasers (Bloomberg, 7 Aug), consistent with reporting that HEL is moving from rotating prototypes toward a permanent element of the counter-drone architecture — a funding datum on the DE layer; fielded performance at scale remains to be demonstrated. [Reported — doctrinal adaptation] The 1st Cavalry Division introduced a counter-UAS qualification at Fort Hood (from 26 Jul) — the division whose armored brigade was repeatedly defeated at Combined Resolve, closing the exercise-to-training loop the baseline's mitigation element should capture. [Official] A JIATF-401 media roundtable (army.mil, 21 Aug) confirmed an Army directed-energy pilot spanning HEL and HPM for drone defeat, run iteratively on small quantities of existing commercial products — with stated goals of two-drone teaming within 60 days and autonomous swarming behaviour within 120 days: an official datum on both the DE layer's pilot posture and the threat side's expected swarming timeline. [Official — corroborated] The Army awarded AeroVironment $464.8M under the Enduring-High Energy Laser program for LOCUST X3 30kW systems (DefenseScoop + vendor release, 2 Sep) — the first US HEL production contract, following JIATF-401 White Sands testing; production is a resourcing fact, not an effectiveness fact, and per-engagement economics at production scale remain the open technical question for the affordability test this question carries. [Reported — corroborated occurrence] A 20kW-class AMP-HEL (LOCUST on a GM Defense ISV) was soldier-tested at Fort Bliss (16 Sep) — the production-contracted laser line extending onto a light manoeuvre platform; and JIATF-401 stated (9 Sep) DE systems will stay on installations 365 days, operated and maintained by military personnel — sustained-operation and operator-burden evidence the affordability test needs. Performance data unreleased; mobility integration demonstrated, not fielded.",
       "sowhat": "Every element of a layered C-UAS/sense-strike architecture (sensing, soft-kill, directed energy, kinetic interceptors) is moving from demonstration to production somewhere in the alliance within the same 30-day window, at costs and quantities well characterised in open reporting. Treated as one force-development question, this is the most evidenced and most immediately actionable capability issue this edition — but the external evidence establishes the threat and the cost-exchange trend, not Army's internal baseline. The G5-led baseline step is what converts it from an external signal into a decision-grade confirmed gap.",
       "action": "G5 force-development element to produce the Army C-UAS force-development baseline by 15 Sep 2026, with ASB2 leading the C-UAS/Sense-Strike functional analysis and SIO maintaining the external evidence base as insight sponsor.",
       "src": [
@@ -418,6 +422,14 @@ window.SIO_DATA = {
           "url": "https://defensescoop.com/2026/09/02/army-awards-aerovironment-nearly-500m-contract-laser-weapons/",
           "f": "verified",
           "note": "Corroborated by vendor release (avinc.com). First HEL production contract; graded as resourcing evidence."
+        },
+        {
+          "out": "Army Recognition",
+          "date": "16 Sep 2026",
+          "ttl": "U.S. Tests Infantry Squad Vehicle-Mounted AMP-HEL High-Energy Laser",
+          "url": "https://www.armyrecognition.com/news/army-news/2026/u-s-tests-infantry-squad-vehicle-mounted-amp-hel-high-energy-laser-for-southern-border-counter-drone-operations",
+          "f": "verified",
+          "note": "Corroborated occurrence; no engagement data released."
         }
       ],
       "insightSponsor": "SIO",
@@ -449,7 +461,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "overdue",
       "raised": "Apr 2026",
-      "age": 18,
+      "age": 19,
       "supersedes": [
         "II-1"
       ],
@@ -473,7 +485,7 @@ window.SIO_DATA = {
       "deliverable": "Army C2 spectrum-survivability baseline covering: current command-post and C2 electromagnetic-signature considerations; primary, alternate, contingency and emergency communications; datalink resilience; anti-jam requirements; degraded-mode operations; network and terminal dependencies; procedural and doctrinal mitigations; implications for existing and planned Army C2 programmes; and test & evaluation requirements",
       "deliverableDate": "2026-09-15",
       "decision": "Endorse spectrum survivability and low-signature operation as Army C2 force-development requirements; direct G5 to deliver the baseline by 15 Sep 2026. No funded programme sought before the baseline.",
-      "signal": "[Fielded — adversary system] Electronic warfare is described as an hourly fight in which fixed C2 assets are treated as liabilities, and it is accelerating: AI-enabled EW (automated signal analysis, adaptive jamming) is maturing fast (DefenseScoop, 11 May / 26 Jun) while peer forces routinely jam and spoof GNSS. Russia has fielded a dedicated counter-Starlink system, Volna Kupol Garant, able to suppress satellite-comms links across roughly 20km² (Reuters via Militarnyi, 8 Jul) — a fielded, not theoretical, EW capability confirming that comms-dependent C2 and uncrewed links are now a contested spectrum target in their own right, not just a navigation/GNSS problem.",
+      "signal": "[Fielded — adversary system] Electronic warfare is described as an hourly fight in which fixed C2 assets are treated as liabilities, and it is accelerating: AI-enabled EW (automated signal analysis, adaptive jamming) is maturing fast (DefenseScoop, 11 May / 26 Jun) while peer forces routinely jam and spoof GNSS. Russia has fielded a dedicated counter-Starlink system, Volna Kupol Garant, able to suppress satellite-comms links across roughly 20km² (Reuters via Militarnyi, 8 Jul) — a fielded, not theoretical, EW capability confirming that comms-dependent C2 and uncrewed links are now a contested spectrum target in their own right, not just a navigation/GNSS problem. [Reported — single trade source, consistent with solicitation record] First REWSI production awards (~$196M: MOTH spectrum analyzer, Dragonfly AI-EW sensors; DefenseScoop, 11 Sep) — production-track EM-spectrum sensing in a comparator force, via an April→September rapid pathway. The acquisition mechanism is as significant as the sensors.",
       "sowhat": "The clearest candidate capability-gap question this edition: the adversary EW threat is fielded, not projected. What remains to be established — and what this decision directs — is the Army-side baseline against which any gap, design standard and resource implication can be confirmed.",
       "action": "G5 to deliver the Army C2 spectrum-survivability baseline by 15 Sep 2026, with C2, EW, communications and operational stakeholders contributing; SIO to maintain the external threat evidence as insight sponsor.",
       "src": [
@@ -498,6 +510,14 @@ window.SIO_DATA = {
           "url": "https://militarnyi.com/en/news/russia-deploys-new-volna-kupol-garant-ew-systems-to-jam-starlink-ukraine-already-destroying-them/",
           "f": "verified",
           "note": "Citing Reuters reporting; Ukrainian MoD adviser Serhii Beskrestnov cited on system parameters."
+        },
+        {
+          "out": "DefenseScoop",
+          "date": "11 Sep 2026",
+          "ttl": "Army awards $196M for sensors in first production contracts under EW-focused call for solutions",
+          "url": "https://defensescoop.com/2026/09/11/army-awards-196m-sensor-production-contracts-electronic-warfare/",
+          "f": "verified",
+          "note": "Single sighting this sweep; award values as reported."
         }
       ],
       "insightSponsor": "SIO",
@@ -509,7 +529,8 @@ window.SIO_DATA = {
       "dcmPhase": null,
       "nextInstrument": "Internal baseline (G5, due 15 Sep 2026) → C2 spectrum-survivability requirements into OCF/AOR machinery",
       "targetForum": "ACDM",
-      "changeFromPrevious": "No external change surfaced this sweep that alters the assessment. Internal: the G5 C2 spectrum-survivability baseline (suspense 15 Sep 2026) is PAST DUE with no internal input received in this pipeline; the instrument-readiness ladder's open items are unchanged and the overdue suspense is reportable."
+      "changeFromPrevious": "Material since last review: the first threshold-moving external datum on this thread in months, and it moves two things at once. Capability: a comparator force is buying EM-spectrum situational awareness (spectrum analysis + AI-driven EW sensing) at production scale — the sensing precondition for the spectrum-survivability requirements this thread carries. Acquisition model: call-for-solutions to production award in ~5 months is a rapid-pathway precedent worth extracting on its own (AOTO lane). Army-side items unchanged: the G5 baseline (15 Sep) remains PAST DUE, ten days on.",
+      "latestDevelopment": "First production awards under the US Army's REWSI rapid call for solutions (11 Sep): ~$196M for EM-spectrum sensing — the MOTH spectrum analyzer ($99M) and AI-driven Dragonfly EW sensors ($96.9M) — awarded five months after the April solicitation."
     },
     {
       "id": "S-1",
@@ -530,7 +551,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 2,
+      "age": 3,
       "supersedes": [
         "D-3",
         "III-7"
@@ -594,7 +615,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 2,
+      "age": 3,
       "supersedes": [
         "II-5",
         "III-4",
@@ -738,7 +759,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 2,
+      "age": 3,
       "supersedes": [
         "II-3",
         "III-3",
@@ -753,7 +774,7 @@ window.SIO_DATA = {
       "armyRelevance": "Direct — EW-resilient UGV control, autonomous ground resupply and heavy-lift aerial resupply map onto Army's contested-logistics and forward-sustainment problem. G5 force development should frame the Army requirement, with functional organisations contributing according to their responsibilities; no Army-specific trial is yet underway.",
       "escalationTrigger": "Escalate if G5 frames an Army last-mile-sustainment requirement or a sustainment-autonomy trial is sponsored. DARPA Lift Challenge results (due after 9 Aug) affect only the heavy-lift / aerial-resupply element — they are not a trigger for the wider ground-autonomy portfolio.",
       "decision": "Hold at watchlist — narrowed to uncrewed last-mile sustainment under contested conditions; fixed-process automation split to W-7.",
-      "signal": "[Fielded — adversary/partner] Ground robots face intense EW pressure — Russian wide-area GNSS jammers degrade UGV datalinks and navigation — and Ukraine has fielded a control system (Droid Box, cleared 26 Jun) that detects positioning anomalies and applies countermeasures under jamming/spoofing (Militarnyi/Modern War Institute). [Fielded] Ukraine's Protector UGV is fielded for frontline logistics, against a stated goal of 25,000 ground robotic systems by mid-2026 (Defense Express/United24 Media). [Reported→fielding] Overland AI won a Marine Corps production contract for autonomous ground vehicles (Breaking Defense, 29 Jun) — ground-resupply autonomy crossing into production. [Reported] DARPA's Lift Challenge (100+ teams, 2-9 Aug, $6.5M prizes) targets a 2:1 payload-to-weight ratio for 55lb-class drones lifting 110lb payloads (Military Times, 30 Jul) — the aerial-resupply element of this line. [Reported] DARPA's Rads to Watts programme (7 competing teams) is developing radiovoltaic cells for maintenance-free, multi-year power in soldier-worn, sensor and remote applications (Breaking Defense, 29 Jul) — an enabling-power signal for sustainment autonomy. [Reported — contracted] The US Army's Project Sustainment selected five firms for Medium Autonomous Tactical Logistics platforms (27 Jul) and awarded the Stratom-led TALUS autonomous-distribution prototype (10 Aug) — 24/7 contested-environment resupply keeping soldiers off high-risk routes, field testing with operational units from early 2027. [Reported — contracted] The Army's Infantry Last Tactical Mile programme awarded prototype OTAs to six vendors for resupply/casevac UGVs across the rear-to-FLOT stretch (army.mil, ~12 Aug; four prototypes each, operational assessment early 2027); American Rheinmetall is separately developing hybrid-powered logistics UGVs with a ~500-mile, 350kW-exportable chassis (5 Aug) — addressing the endurance/power constraint on sustainment autonomy. [Reported — fielded-practice analysis] In a dedicated Ukrainian ground-robot battalion, ~19 of 20 UGV tasks are logistics or casualty evacuation, combat ~2% (War on the Rocks, ~2 Sep) — quantified confirmation that last-mile sustainment and evac are the dominant real-world employment of ground robots. [Reported — state-linked figures] ~112,000 UGV logistics/evac missions in 2026 per DELTA-attributed data (United24, ~8 Sep; unaudited), with ~25,000 UGVs contracted in H1. [Reported — single sighting] US Army awarded Rheinmetall a hybrid logistics UGV contract for battlefield resupply (Army Recognition, ~10 Sep) — procurement entry, not a trial.",
+      "signal": "[Fielded — adversary/partner] Ground robots face intense EW pressure — Russian wide-area GNSS jammers degrade UGV datalinks and navigation — and Ukraine has fielded a control system (Droid Box, cleared 26 Jun) that detects positioning anomalies and applies countermeasures under jamming/spoofing (Militarnyi/Modern War Institute). [Fielded] Ukraine's Protector UGV is fielded for frontline logistics, against a stated goal of 25,000 ground robotic systems by mid-2026 (Defense Express/United24 Media). [Reported→fielding] Overland AI won a Marine Corps production contract for autonomous ground vehicles (Breaking Defense, 29 Jun) — ground-resupply autonomy crossing into production. [Reported] DARPA's Lift Challenge (100+ teams, 2-9 Aug, $6.5M prizes) targets a 2:1 payload-to-weight ratio for 55lb-class drones lifting 110lb payloads (Military Times, 30 Jul) — the aerial-resupply element of this line. [Reported] DARPA's Rads to Watts programme (7 competing teams) is developing radiovoltaic cells for maintenance-free, multi-year power in soldier-worn, sensor and remote applications (Breaking Defense, 29 Jul) — an enabling-power signal for sustainment autonomy. [Reported — contracted] The US Army's Project Sustainment selected five firms for Medium Autonomous Tactical Logistics platforms (27 Jul) and awarded the Stratom-led TALUS autonomous-distribution prototype (10 Aug) — 24/7 contested-environment resupply keeping soldiers off high-risk routes, field testing with operational units from early 2027. [Reported — contracted] The Army's Infantry Last Tactical Mile programme awarded prototype OTAs to six vendors for resupply/casevac UGVs across the rear-to-FLOT stretch (army.mil, ~12 Aug; four prototypes each, operational assessment early 2027); American Rheinmetall is separately developing hybrid-powered logistics UGVs with a ~500-mile, 350kW-exportable chassis (5 Aug) — addressing the endurance/power constraint on sustainment autonomy. [Reported — fielded-practice analysis] In a dedicated Ukrainian ground-robot battalion, ~19 of 20 UGV tasks are logistics or casualty evacuation, combat ~2% (War on the Rocks, ~2 Sep) — quantified confirmation that last-mile sustainment and evac are the dominant real-world employment of ground robots. [Reported — state-linked figures] ~112,000 UGV logistics/evac missions in 2026 per DELTA-attributed data (United24, ~8 Sep; unaudited), with ~25,000 UGVs contracted in H1. [Reported — single sighting] US Army awarded Rheinmetall a hybrid logistics UGV contract for battlefield resupply (Army Recognition, ~10 Sep) — procurement entry, not a trial. [Reported — figures directional] Ukraine's UGV scale-up continues: presidential order for 50,000 UGVs by end-2026, 'drone assault units' integrating UAS/UGV/infantry as combined arms, rifle-armed UGVs in combat testing (Jamestown, ~22 Sep; figures vary across outlets). Watch honestly: the combat-participation trend qualifies, without yet overturning, the sustainment-dominant task-share finding this line rests on — mission data still shows logistics/evac dominance.",
       "sowhat": "Narrowed per CSIO direction from a broad ground-autonomy cluster to one force-development question: uncrewed / autonomous last-mile sustainment under contested conditions. Fixed logistics and inventory-process automation is tracked separately (W-7), and counter-UAS-related ground platforms sit under D-1's architecture question.",
       "action": "SIO to maintain the evidence base and report Lift Challenge results against the heavy-lift element only; on escalation, G5 frames the requirement with CESS and other functional stakeholders contributing according to their responsibilities.",
       "src": [
@@ -859,6 +880,14 @@ window.SIO_DATA = {
           "url": "https://www.armyrecognition.com/news/army-news/2026/u-s-army-awards-rheinmetall-hybrid-logistics-ugv-contract-for-battlefield-resupply",
           "f": "verified",
           "note": "Single sighting; corroborate value/quantities from official announcement before use."
+        },
+        {
+          "out": "Jamestown Foundation",
+          "date": "22 Sep 2026",
+          "ttl": "Ukraine Becomes World Leader in Unmanned Ground Vehicles",
+          "url": "https://jamestown.org/ukraine-becomes-world-leader-in-unmanned-ground-vehicles/",
+          "f": "verified",
+          "note": "Date approximate; procurement figures vary across outlets."
         }
       ],
       "insightSponsor": "SIO",
@@ -889,7 +918,7 @@ window.SIO_DATA = {
       "confidence": "moderate",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 2,
+      "age": 3,
       "supersedes": [
         "III-13"
       ],
@@ -950,7 +979,7 @@ window.SIO_DATA = {
       "confidence": "moderate",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 2,
+      "age": 3,
       "supersedes": [
         "III-2"
       ],
@@ -1056,7 +1085,7 @@ window.SIO_DATA = {
       "confidence": "moderate",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 2,
+      "age": 3,
       "supersedes": [
         "I-3",
         "I-6",
@@ -1253,7 +1282,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 2,
+      "age": 3,
       "supersedes": [
         "I-2",
         "I-4",
@@ -1437,7 +1466,7 @@ window.SIO_DATA = {
       "confidence": "moderate",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 2,
+      "age": 3,
       "supersedes": [
         "III-9",
         "III-16"
@@ -1520,7 +1549,7 @@ window.SIO_DATA = {
       "desk": "US",
       "status": "overdue",
       "raised": "Apr 2026",
-      "age": 18,
+      "age": 19,
       "dlabel": "Decision-workflow pilot sprint",
       "suspense": "5 Sep 2026",
       "recommendation": "Run a time-boxed pilot that takes 1-2 named Army questions from the question register through the full decision workflow: define the decision question → identify relevant external and internal data → establish the minimum data view → apply AI-assisted triage/fusion → put the output before the intended staff user → measure time and quality improvements → capture corrections → iterate. The preferred output is a functioning decision workflow with measured results; concept notes are the by-product, not the deliverable.",
@@ -1563,6 +1592,51 @@ window.SIO_DATA = {
     }
   ],
   "feed": [
+    {
+      "date": "2026-09-22",
+      "out": "Jamestown Foundation",
+      "ttl": "Ukraine Becomes World Leader in Unmanned Ground Vehicles",
+      "sum": "Analysis of Ukraine's UGV scale-up: a presidential order for the state to procure 50,000 UGVs by end-2026 (doubling the ~25,000 contracted in H1), ~280 companies producing 550+ models, and a doctrinal shift — Defence Ministry formation of 'drone assault units' integrating aerial drones, UGVs and infantry as a combined-arms system, marking ground robots' transition from a purely supporting role toward combat participation (including rifle-armed UGVs in combat testing).",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P7",
+      "desk": "EU",
+      "url": "https://jamestown.org/ukraine-becomes-world-leader-in-unmanned-ground-vehicles/",
+      "f": "verified",
+      "serial": "W-2",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "think_tank",
+      "corroborated": true,
+      "confidence": "moderate",
+      "primarySourceUrl": null,
+      "unverifiedClaims": "Date approximate. Procurement figures vary across outlets (25k contracted H1 / 50k ordered by year-end / one outlet reports 30k deployed target) — treat totals as directional until reconciled; the sustainment-dominant task share previously logged still holds in mission data.",
+      "dateLastChecked": "2026-09-25"
+    },
+    {
+      "date": "2026-09-16",
+      "out": "Army Recognition",
+      "ttl": "U.S. Tests Infantry Squad Vehicle-Mounted AMP-HEL High-Energy Laser for Southern Border Counter-Drone Operations",
+      "sum": "Soldiers tested a 20kW-class AMP-HEL — AeroVironment's LOCUST laser mounted on a GM Defense Infantry Squad Vehicle — at Fort Bliss (16 Sep), putting a mobile Group 1–2 counter-drone laser on a light manoeuvre platform in a training environment tied to border operations; separately JIATF-401's director stated (9 Sep) directed-energy systems will remain on installations for 365 days with military personnel operating and maintaining them.",
+      "tech": [
+        "dews",
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://www.armyrecognition.com/news/army-news/2026/u-s-tests-infantry-squad-vehicle-mounted-amp-hel-high-energy-laser-for-southern-border-counter-drone-operations",
+      "f": "verified",
+      "serial": "D-1",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "trade_press",
+      "corroborated": true,
+      "confidence": "moderate",
+      "primarySourceUrl": null,
+      "unverifiedClaims": "Test occurrence corroborated across trade outlets; engagement performance data not released — a mobility integration demonstrated, not a fielded mobile capability.",
+      "dateLastChecked": "2026-09-25"
+    },
     {
       "date": "2026-09-15",
       "out": "Montreal AI Ethics Institute",
@@ -1608,6 +1682,29 @@ window.SIO_DATA = {
       "primarySourceUrl": "https://www.army.mil/article/294284/army_leaders_next_generation_command_and_control_ready_to_scale",
       "unverifiedClaims": "Scale decision and I Corps fielding plan corroborated (official army.mil roundtable + trade press); date approximate. Operational performance at corps scale not yet evidenced — the GAO heat/information-gap cautions logged 20 Aug still stand.",
       "dateLastChecked": "2026-09-18"
+    },
+    {
+      "date": "2026-09-11",
+      "out": "DefenseScoop",
+      "ttl": "Army awards $196M for sensors in first production contracts under EW-focused call for solutions",
+      "sum": "The Army awarded its first production contracts under the Rapid Electromagnetic Warfare and Signals Intelligence (REWSI) call for solutions announced only in April: $99M to Heaviside Industries for the MOTH spectrum analyzer and $96.9M to Research Innovations for AI-driven Dragonfly EW sensors (to be integrated on another vendor's drone) — ~$196M of production-track electromagnetic-spectrum sensing awarded five months after the solicitation opened.",
+      "tech": [
+        "dews",
+        "data"
+      ],
+      "pf": "P3",
+      "desk": "US",
+      "url": "https://defensescoop.com/2026/09/11/army-awards-196m-sensor-production-contracts-electronic-warfare/",
+      "f": "verified",
+      "serial": "D-2",
+      "saved": false,
+      "flagged": true,
+      "sourceType": "trade_press",
+      "corroborated": false,
+      "confidence": "high",
+      "primarySourceUrl": null,
+      "unverifiedClaims": "Single trade-press report in this sweep, consistent with the April REWSI solicitation record; award values as reported. Production quantities and fielding schedule not captured.",
+      "dateLastChecked": "2026-09-25"
     },
     {
       "date": "2026-09-11",
@@ -4544,7 +4641,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which residual gaps survive the baseline, and what trial questions do they define? Trial design should produce decision-relevant measurements (detection probability, classification accuracy, engagement success, leakage, cost per engagement, magazine expenditure, operator workload, integration latency).",
       "status": "active",
-      "materialChange": "HEL counter-drone crossed a maturity threshold: the US Army's $464.8M E-HEL award (LOCUST X3, 30kW, 2 Sep) is reported as the first HEL production contract in US history — the DE layer of a layered C-UAS architecture is now a funded production line in a comparator force, not a pilot. Affordability arithmetic at production scale (cost per engagement, sustainment tail) is now obtainable evidence rather than projection. The Army-side open item is unchanged and now overdue: the directed G5 baseline (15 Sep) has not been received in this pipeline.",
+      "materialChange": null,
       "decisionForum": "ACDM"
     },
     {
@@ -4584,7 +4681,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which capability lines and design standards does the baseline implicate, and which exercise measurements will replace theoretical assumptions first?",
       "status": "active",
-      "materialChange": null,
+      "materialChange": "First threshold-moving external evidence on the spectrum-survivability question in months: the US Army's first production awards under its rapid EW call for solutions (~$196M for spectrum-analysis and AI-driven EW sensing, 11 Sep) — a comparator resourcing the EM-spectrum sensing layer at production scale, via a call-to-award pathway of ~5 months. Two lessons ride one datum: the capability priority (sense the spectrum before surviving it) and the acquisition mechanism (rapid pathway to production). The Army-side item is unchanged and overdue: the directed G5 baseline (15 Sep) has not been received.",
       "decisionForum": "ACDM"
     },
     {
@@ -4655,7 +4752,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which Army sustainment/inventory processes have the largest measured manpower burden, exposure or error rate? That inventory precedes any technology selection.",
       "status": "active",
-      "materialChange": "Last-mile sustainment autonomy moved on two axes in one sweep: employment scale (~112,000 UGV logistics/evac missions in Ukraine this year per DELTA-attributed data — unaudited but consistent with independent reporting) and comparator commitment (US Army hybrid logistics UGV production award to Rheinmetall). The question's premise — sustainment and evacuation are the proven, dominant employment of ground robots — is no longer contestable on evidence volume; what remains Army-side is the burden baseline from process owners.",
+      "materialChange": null,
       "decisionForum": null
     },
     {
@@ -4688,7 +4785,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which Army decision workflows (starting with the questions in this register) does the architecture currently enable, and which does it block?",
       "status": "active",
-      "materialChange": "The comparator programme this question's foundational dependency tracks — NGC2, a unified-data C2 architecture — moved from a 10-month prototyping phase to an operational fielding decision (first operational version to I Corps; 'ready to scale', official). The maturity premise of the Army-side comparison has changed: the reference architecture is no longer an experiment. The Army-side item is unchanged and overdue — the ASB4 architecture baseline (15 Sep) has not been received, and without it this question cannot progress beyond comparator-watching.",
+      "materialChange": null,
       "decisionForum": null
     },
     {
@@ -4760,14 +4857,14 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Does the measured I-1 pilot justify scaling the decision-workflow model across the question register?",
       "status": "active",
-      "materialChange": "A comparator force answered this question's core organisational trade-off in public: the US Army is reverting its dedicated drone unit to conventional infantry, with the stated theory that centralising the capability prevents scaling the learning — distributed capability plus a force-wide doctrine overhaul instead. Graded as a hypothesis with a stated rationale (the internal assessment is not public), it is direct evidence for the organising-for-autonomy design space this question holds.",
+      "materialChange": null,
       "decisionForum": null
     }
   ],
   "metrics": {
-    "asOf": "2026-09-18",
+    "asOf": "2026-09-25",
     "note": "Decision-advantage metrics per DOCTRINE.md §21 — measured where practicable; information volume is not an outcome. Time-based metrics (signal-to-assessment, assessment-to-direction, decision-to-action) require timestamps captured across future editions and are not yet measurable.",
-    "provenanceTraceablePct": 91,
+    "provenanceTraceablePct": 90,
     "internalDataCoveragePct": 0,
     "internalDataCoverageNote": "0% — every thread still rests on external evidence alone. The tasked internal baselines (G5 × 2, ASB4 — all due 15 Sep 2026) are now PAST DUE with no input received in this pipeline; this figure remains the register's most important number to move, and the overdue suspense is itself the first item to report.",
     "closedLoop": {
@@ -4775,7 +4872,7 @@ window.SIO_DATA = {
       "resultCaptured": 0,
       "note": "No senior direction has yet completed the direction → action → observed effect → updated assessment loop; decisionLog fields are in place to capture it."
     },
-    "materialChangesThisEdition": 4
+    "materialChangesThisEdition": 1
   },
   "forums": {
     "ACDM": {
