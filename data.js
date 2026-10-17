@@ -1,9 +1,13 @@
 /* SIO Insights edition data — generated. Replace to refresh. */
 window.SIO_DATA = {
   "edition": "Oct 2026",
-  "feedAsOf": "2026-10-10",
+  "feedAsOf": "2026-10-17",
   "productVersion": "3.1",
   "changelog": [
+    {
+      "date": "2026-10-17",
+      "note": "Sweep 11–17 Oct (AUSA week; serial ages incremented). Material change (1): Q5 — NGC2 formally moved from experimental to fielding phase with nine one-year application-development contracts (~$93.6M, announced AUSA final day), and corroborated reporting CORRECTED the register's 7 Oct single-source figures: the nine-vendor software award is $93.6M within the up-to-$1.8B I Corps package, not $1.8B itself — the 7 Oct verification caveat did its job. Architecture extract: stable single-led common data layer, competed short-contract application layer. Evidence updates without escalation: D-1/Q1 — a public E-HEL fielding timeline (first delivery Q4 FY27 on JLTV, first fielded capability ~early 2028), DE-on-UGV exhibition integrations, and a forming Western autonomous-interceptor segment against Shahed-class threats; W-5/Q7 — the Army ordered the stand-up of its autonomous-warfare command (executing the 2 Oct directive) and AUSA 2026's recap verdict was that autonomy dominated the conference. Q3 swept: nothing cleared the evidence bar this window (a Russian multi-robot voice-control exhibition claim left out as uncorroborated vendor demonstration). The 10 Oct flags (Q1, Q3, Q5, Q7) are considered reviewed and reset; Q5 re-flagged on the new fielding-phase datum. INTERNAL SUSPENSES: baselines now 32 DAYS PAST DUE, no input received; ACDM candidate unchanged — the overdue-baselines governance item. Note for the register's own method: the $1.8B→$93.6M correction is a worked example of why single-secondary figures are flagged, never reused, until corroborated."
+    },
     {
       "date": "2026-10-10",
       "note": "Deep-trawl supplement, same edition day (second pass; 12-angle multi-agent sweep, 56 unique candidates, 54 verified adversarially, curated to 17 register entries). Material changes (+2, edition total 4: Q1, Q3, Q5, Q7): Q1 — the Domestic Shield ten-vendor C-UAS IDIQ batch ($4.15B ceiling, ~$50M obligated, $7B projected; supersedes the standalone Echodyne entry), the SecDef tempo directive (approval delay = operational risk; spectrum/ATO compression), 30 low-cost-interceptor finalists, and the jet-powered-Geran interceptor race — architecture, tempo and cost-exchange moving together. Q7 — the US created top-level autonomy structures (planned four-star Autonomous Warfare Command; Army FASCOM + autonomy acquisition executive; 390A robotics MOS activated) three weeks after distributing its drone unit: distribute employment, centralise enterprise scaling; with South Korea drafting an officer-centred AI/MUM-T force design around a 480k→350k manpower cut (W-7) and the PLA's schools, every comparator moved on the organising question in one quarter. Evidence updates: D-2/Q2 — first integrated tri-system EW demonstration (official) and GAO's assured-PNT slippage audit, converging spectrum survivability with PNT denial (threat side: Geran-4 satellite-free navigation claim); W-4/Q3 — Russian exercise autonomy (Tsentr-2026 UGV employment, Il-76 armed-UGV airdrop); W-1 — US Navy 30-MUSV production OTAs; W-2/Q4 — MAUL CASEVAC UGV unit trials; S-1/Q6 — CRS documents the DoD-Anthropic acceptable-use dispute (vendor use-policies now a live constraint category) alongside congressional human-oversight bills. Completeness critic noted no PLA items this window (covered in the base edition) and no new NGC2 coverage (ditto). ACDM candidate unchanged — the overdue-baselines governance item — with Q7's command-creation precedent noted as the natural next technology candidate once the baselines land. Internal suspenses remain 25 days past due."
@@ -96,7 +100,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 4,
+      "age": 5,
       "supersedes": [
         "II-2",
         "II-4",
@@ -129,7 +133,7 @@ window.SIO_DATA = {
       "deliverable": "Army C-UAS force-development baseline covering: priority UAS threat classes; operational scenarios and assets/echelons requiring protection; existing and planned Army capabilities; residual capability gaps; static versus manoeuvre requirements; kinetic and non-kinetic defeat options; cost-exchange considerations; magazine-depth considerations; integration and C2 requirements; and candidate areas requiring trials",
       "deliverableDate": "2026-09-15",
       "decision": "Endorse affordable layered counter-UAS as an Army force-development priority; direct G5 (ASB2 as functional lead) to deliver the Army C-UAS force-development baseline by 15 Sep 2026. Trial proposal only after the baseline.",
-      "signal": "Evidence is organised by the operational effect or threat class each programme addresses — these programmes collectively demonstrate the layered-defence need and the changing cost exchange, but they do not all solve the same Army threat class. — DEFEAT OF SMALL UAS BY SOFT-KILL (RF/EW): [Fielded] JIATF-401 converted a border-tested evaluation into a three-year, up-to-$500M IDIQ for CACI's SkyValor non-kinetic detect-and-defeat system (RF jamming plus net-capture) after a two-day Yuma demonstration (DefenseScoop, 31 Jul); AeroVironment's Titan task order (~$80M) is fielding AI-enabled RF detect-and-defeat at Air Force bases; the Marine Corps is integrating UGVs into its MADIS counter-drone system (Army Recognition, 27 Jun). — DEFEAT OF SMALL / ONE-WAY-ATTACK UAS BY LOW-COST KINETIC INTERCEPTOR: [Reported] the Army's Next Generation Counter-sUAS Missile RFI (4 Aug) seeks a purpose-built sub-$150K interceptor (responses due 20 Aug); [Combat-proven — single event] Ukraine's Griffen interceptor drone downed a Shahed one-way-attack drone for the first time (Militarnyi, 7 Jul). — CRUISE/BALLISTIC-CLASS AIR DEFENCE AND THE COST-EXCHANGE / MAGAZINE-DEPTH TREND (context for the affordability trade, not small-UAS defeat): [Fielded] the $58.6B FY26-32 Patriot multiyear (30 Jul) and $3B Patriot/THAAD component framework (3 Aug) triple PAC-3 MSE production; [Reported] Lockheed's sub-$2M PAC-3 ACE interceptor (Farnborough, 20 Jul) and the 10-nation coalition behind Ukraine's ~$700K Freyja/FP-7.X (Paris, 14 Jul) hedge against exquisite-interceptor cost; DIU's Ground-Based Affordable Mass call (27 Jul) applies the same cost logic to offensive fires. — COUNTER-SWARM DIRECTED ENERGY: [Demonstrated] the Pentagon's Joint Laser Weapon System programme (Lockheed Aculight, nLIGHT — up to $847M ceiling) is scaling 150kW counter-drone lasers toward 300-500kW cruise-missile defence, and Germany has commissioned a naval laser targeted for fielding by 2029 after 28,000nm of at-sea demonstration. [Reported — state-linked, corroborate] China is showcasing and exporting a man-portable-to-naval laser C-UAS line (Harbin Xinguang 'Lijian', CPMIEC LW-30, Novasky NI-L3K) to Gulf and SE Asian markets — vendor/state claims not independently verified at declared performance levels. — SWARM-CONTROL AUTONOMY LAYER: [Reported] AeroVironment/Applied Intuition's Acuity autonomy software (29 Jul) is moving single-operator, multi-drone swarm control from demonstrator toward the Army Launched Effects programme of record. — ALLIED PRODUCTION MASS AND INTEROPERABILITY: [Reported] NATO's $40B+ five-year counter-drone package (7 Jul) and the €11B EU-Ukraine Drone Deal (15 Jul) fund allied counter-drone mass production and interoperability standards at alliance scale, while Ukraine's drone campaign (1M+ targets struck since January; deep strikes into Russia) continues to define the threat's operational envelope. — THREAT ENVELOPE VS MANOEUVRE FORCES: [Demonstrated — exercise] At Combined Resolve (Hohenfels, Apr-May; WSJ via Meduza, 13 Aug), Ukraine's 412th Unmanned Systems Regiment repeatedly 'destroyed' a ~3,500-strong US armored brigade with recon-cued FPV/bomber drones; US outcomes improved over two weeks through dispersal, concealment, EW and counter-drone systems — direct evidence for the baseline's static-vs-manoeuvre and protected-echelon elements. — DE TRANSITION HURDLES: [Reported] the Pentagon's critical-technologies office wants smaller/lighter/more-efficient DE for airborne and expeditionary use and routine realistic field testing with operating units (Aviation Week, 13 Aug) — naming integration and T&E, not raw power, as the fielding constraints. [Reported — production-track] The Marine Corps is moving to a vehicle-mounted, production-ready Epirus HAVOC high-power-microwave swarm-defeat system (Military Times, 10 Aug) — HPM soft-kill crossing from demonstration toward fielding, notable for effectiveness against fiber-optic-guided drones that defeat RF jamming. — PROTECTION SCENARIOS (fixed sites): [Reported] NORTHCOM's deputy commander warned (SMD Symposium, 13 Aug) that some US military installations have neither the sensors to detect an incoming drone swarm nor the effectors to stop it, against a ~$21B Pentagon request spanning EW, kinetic interceptors, lasers and HPM — evidence that even well-resourced forces treat fixed-site protection as an open gap, reinforcing the baseline's protected-assets/echelons element. [Reported — resource commitment] The Army agreed a ~$400M spend on AeroVironment counter-drone lasers (Bloomberg, 7 Aug), consistent with reporting that HEL is moving from rotating prototypes toward a permanent element of the counter-drone architecture — a funding datum on the DE layer; fielded performance at scale remains to be demonstrated. [Reported — doctrinal adaptation] The 1st Cavalry Division introduced a counter-UAS qualification at Fort Hood (from 26 Jul) — the division whose armored brigade was repeatedly defeated at Combined Resolve, closing the exercise-to-training loop the baseline's mitigation element should capture. [Official] A JIATF-401 media roundtable (army.mil, 21 Aug) confirmed an Army directed-energy pilot spanning HEL and HPM for drone defeat, run iteratively on small quantities of existing commercial products — with stated goals of two-drone teaming within 60 days and autonomous swarming behaviour within 120 days: an official datum on both the DE layer's pilot posture and the threat side's expected swarming timeline. [Official — corroborated] The Army awarded AeroVironment $464.8M under the Enduring-High Energy Laser program for LOCUST X3 30kW systems (DefenseScoop + vendor release, 2 Sep) — the first US HEL production contract, following JIATF-401 White Sands testing; production is a resourcing fact, not an effectiveness fact, and per-engagement economics at production scale remain the open technical question for the affordability test this question carries. [Reported — corroborated occurrence] A 20kW-class AMP-HEL (LOCUST on a GM Defense ISV) was soldier-tested at Fort Bliss (16 Sep) — the production-contracted laser line extending onto a light manoeuvre platform; and JIATF-401 stated (9 Sep) DE systems will stay on installations 365 days, operated and maintained by military personnel — sustained-operation and operator-burden evidence the affordability test needs. Performance data unreleased; mobility integration demonstrated, not fielded. [Corroborated] The Pentagon named the four DE systems for the JIATF-401 year-long base-defence pilot — AV Palletized HEL, Epirus Leonidas HPM, Kord Firefly HEL, Boeing CLWS — across five installations (Military Times, 6 Oct): a deliberate HEL+HPM multi-vendor mix whose pilot results will be the first sustained operator-run DE dataset. [Reported] JIATF-401 also signed a potential $250M radar C-UAS sensing contract (Echodyne, ~1 Oct). [Contracted — official + independent] Domestic Shield: ten C-UAS IDIQs, $4.15B ceiling ($500M ×7, $250M ×2, $150M ×1), ~$50M obligated, $7B projected (DefenseScoop 29 Sep; army.mil release). [Signed directive — effect unproven] SecDef memo (28 Sep): C-UAS approval delay = operational risk; JIATF-401 as synchronization point; 30-day spectrum-authorization streamlining; ATO months→days tasking. [Announced] 30 xTech|Apex Intercept finalists, largest xTech prize pool, low-cost interceptor topics. [Reported/claims] Jet-powered Geran counters: five Ukrainian high-speed interceptor models in test; Quantum Systems-WIY LOI for tens of thousands of Spys interceptors.",
+      "signal": "Evidence is organised by the operational effect or threat class each programme addresses — these programmes collectively demonstrate the layered-defence need and the changing cost exchange, but they do not all solve the same Army threat class. — DEFEAT OF SMALL UAS BY SOFT-KILL (RF/EW): [Fielded] JIATF-401 converted a border-tested evaluation into a three-year, up-to-$500M IDIQ for CACI's SkyValor non-kinetic detect-and-defeat system (RF jamming plus net-capture) after a two-day Yuma demonstration (DefenseScoop, 31 Jul); AeroVironment's Titan task order (~$80M) is fielding AI-enabled RF detect-and-defeat at Air Force bases; the Marine Corps is integrating UGVs into its MADIS counter-drone system (Army Recognition, 27 Jun). — DEFEAT OF SMALL / ONE-WAY-ATTACK UAS BY LOW-COST KINETIC INTERCEPTOR: [Reported] the Army's Next Generation Counter-sUAS Missile RFI (4 Aug) seeks a purpose-built sub-$150K interceptor (responses due 20 Aug); [Combat-proven — single event] Ukraine's Griffen interceptor drone downed a Shahed one-way-attack drone for the first time (Militarnyi, 7 Jul). — CRUISE/BALLISTIC-CLASS AIR DEFENCE AND THE COST-EXCHANGE / MAGAZINE-DEPTH TREND (context for the affordability trade, not small-UAS defeat): [Fielded] the $58.6B FY26-32 Patriot multiyear (30 Jul) and $3B Patriot/THAAD component framework (3 Aug) triple PAC-3 MSE production; [Reported] Lockheed's sub-$2M PAC-3 ACE interceptor (Farnborough, 20 Jul) and the 10-nation coalition behind Ukraine's ~$700K Freyja/FP-7.X (Paris, 14 Jul) hedge against exquisite-interceptor cost; DIU's Ground-Based Affordable Mass call (27 Jul) applies the same cost logic to offensive fires. — COUNTER-SWARM DIRECTED ENERGY: [Demonstrated] the Pentagon's Joint Laser Weapon System programme (Lockheed Aculight, nLIGHT — up to $847M ceiling) is scaling 150kW counter-drone lasers toward 300-500kW cruise-missile defence, and Germany has commissioned a naval laser targeted for fielding by 2029 after 28,000nm of at-sea demonstration. [Reported — state-linked, corroborate] China is showcasing and exporting a man-portable-to-naval laser C-UAS line (Harbin Xinguang 'Lijian', CPMIEC LW-30, Novasky NI-L3K) to Gulf and SE Asian markets — vendor/state claims not independently verified at declared performance levels. — SWARM-CONTROL AUTONOMY LAYER: [Reported] AeroVironment/Applied Intuition's Acuity autonomy software (29 Jul) is moving single-operator, multi-drone swarm control from demonstrator toward the Army Launched Effects programme of record. — ALLIED PRODUCTION MASS AND INTEROPERABILITY: [Reported] NATO's $40B+ five-year counter-drone package (7 Jul) and the €11B EU-Ukraine Drone Deal (15 Jul) fund allied counter-drone mass production and interoperability standards at alliance scale, while Ukraine's drone campaign (1M+ targets struck since January; deep strikes into Russia) continues to define the threat's operational envelope. — THREAT ENVELOPE VS MANOEUVRE FORCES: [Demonstrated — exercise] At Combined Resolve (Hohenfels, Apr-May; WSJ via Meduza, 13 Aug), Ukraine's 412th Unmanned Systems Regiment repeatedly 'destroyed' a ~3,500-strong US armored brigade with recon-cued FPV/bomber drones; US outcomes improved over two weeks through dispersal, concealment, EW and counter-drone systems — direct evidence for the baseline's static-vs-manoeuvre and protected-echelon elements. — DE TRANSITION HURDLES: [Reported] the Pentagon's critical-technologies office wants smaller/lighter/more-efficient DE for airborne and expeditionary use and routine realistic field testing with operating units (Aviation Week, 13 Aug) — naming integration and T&E, not raw power, as the fielding constraints. [Reported — production-track] The Marine Corps is moving to a vehicle-mounted, production-ready Epirus HAVOC high-power-microwave swarm-defeat system (Military Times, 10 Aug) — HPM soft-kill crossing from demonstration toward fielding, notable for effectiveness against fiber-optic-guided drones that defeat RF jamming. — PROTECTION SCENARIOS (fixed sites): [Reported] NORTHCOM's deputy commander warned (SMD Symposium, 13 Aug) that some US military installations have neither the sensors to detect an incoming drone swarm nor the effectors to stop it, against a ~$21B Pentagon request spanning EW, kinetic interceptors, lasers and HPM — evidence that even well-resourced forces treat fixed-site protection as an open gap, reinforcing the baseline's protected-assets/echelons element. [Reported — resource commitment] The Army agreed a ~$400M spend on AeroVironment counter-drone lasers (Bloomberg, 7 Aug), consistent with reporting that HEL is moving from rotating prototypes toward a permanent element of the counter-drone architecture — a funding datum on the DE layer; fielded performance at scale remains to be demonstrated. [Reported — doctrinal adaptation] The 1st Cavalry Division introduced a counter-UAS qualification at Fort Hood (from 26 Jul) — the division whose armored brigade was repeatedly defeated at Combined Resolve, closing the exercise-to-training loop the baseline's mitigation element should capture. [Official] A JIATF-401 media roundtable (army.mil, 21 Aug) confirmed an Army directed-energy pilot spanning HEL and HPM for drone defeat, run iteratively on small quantities of existing commercial products — with stated goals of two-drone teaming within 60 days and autonomous swarming behaviour within 120 days: an official datum on both the DE layer's pilot posture and the threat side's expected swarming timeline. [Official — corroborated] The Army awarded AeroVironment $464.8M under the Enduring-High Energy Laser program for LOCUST X3 30kW systems (DefenseScoop + vendor release, 2 Sep) — the first US HEL production contract, following JIATF-401 White Sands testing; production is a resourcing fact, not an effectiveness fact, and per-engagement economics at production scale remain the open technical question for the affordability test this question carries. [Reported — corroborated occurrence] A 20kW-class AMP-HEL (LOCUST on a GM Defense ISV) was soldier-tested at Fort Bliss (16 Sep) — the production-contracted laser line extending onto a light manoeuvre platform; and JIATF-401 stated (9 Sep) DE systems will stay on installations 365 days, operated and maintained by military personnel — sustained-operation and operator-burden evidence the affordability test needs. Performance data unreleased; mobility integration demonstrated, not fielded. [Corroborated] The Pentagon named the four DE systems for the JIATF-401 year-long base-defence pilot — AV Palletized HEL, Epirus Leonidas HPM, Kord Firefly HEL, Boeing CLWS — across five installations (Military Times, 6 Oct): a deliberate HEL+HPM multi-vendor mix whose pilot results will be the first sustained operator-run DE dataset. [Reported] JIATF-401 also signed a potential $250M radar C-UAS sensing contract (Echodyne, ~1 Oct). [Contracted — official + independent] Domestic Shield: ten C-UAS IDIQs, $4.15B ceiling ($500M ×7, $250M ×2, $150M ×1), ~$50M obligated, $7B projected (DefenseScoop 29 Sep; army.mil release). [Signed directive — effect unproven] SecDef memo (28 Sep): C-UAS approval delay = operational risk; JIATF-401 as synchronization point; 30-day spectrum-authorization streamlining; ATO months→days tasking. [Announced] 30 xTech|Apex Intercept finalists, largest xTech prize pool, low-cost interceptor topics. [Reported/claims] Jet-powered Geran counters: five Ukrainian high-speed interceptor models in test; Quantum Systems-WIY LOI for tens of thousands of Spys interceptors. [AUSA week] Officials put a public timeline on E-HEL: first LOCUST X3 delivery Q4 FY27 on JLTV, first fielded counter-drone capability ~early 2028 (Defense News, 13 Oct) — production-to-fielding stated at ~18 months. Industry showed DE-on-UGV integrations (uncrewed hybrid truck powering a 30kW LOCUST; an autonomous laser on a UGV — exhibition configurations, no contract) and a Western autonomous-interceptor segment against Shahed-class threats is forming. The affordability question now has a dated fielding clock to test against.",
       "sowhat": "Every element of a layered C-UAS/sense-strike architecture (sensing, soft-kill, directed energy, kinetic interceptors) is moving from demonstration to production somewhere in the alliance within the same 30-day window, at costs and quantities well characterised in open reporting. Treated as one force-development question, this is the most evidenced and most immediately actionable capability issue this edition — but the external evidence establishes the threat and the cost-exchange trend, not Army's internal baseline. The G5-led baseline step is what converts it from an external signal into a decision-grade confirmed gap.",
       "action": "G5 force-development element to produce the Army C-UAS force-development baseline by 15 Sep 2026, with ASB2 leading the C-UAS/Sense-Strike functional analysis and SIO maintaining the external evidence base as insight sponsor.",
       "src": [
@@ -461,6 +465,13 @@ window.SIO_DATA = {
           "url": "https://defensescoop.com/2026/10/02/hegseth-issues-new-directive-to-hasten-counter-drone-pursuits/",
           "f": "verified",
           "note": "Memo PDF not directly inspected; reporting corroborated across outlets."
+        },
+        {
+          "out": "Defense News",
+          "date": "13 Oct 2026",
+          "ttl": "US Army targets 2028 for first high-energy laser counter-drone weapons",
+          "url": "https://www.defensenews.com/industry/techwatch/2026/10/13/us-army-targets-2028-for-first-high-energy-laser-counter-drone-weapons/",
+          "f": "verified"
         }
       ],
       "insightSponsor": "SIO",
@@ -492,7 +503,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "overdue",
       "raised": "Apr 2026",
-      "age": 20,
+      "age": 21,
       "supersedes": [
         "II-1"
       ],
@@ -597,7 +608,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 4,
+      "age": 5,
       "supersedes": [
         "D-3",
         "III-7"
@@ -668,7 +679,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 4,
+      "age": 5,
       "supersedes": [
         "II-5",
         "III-4",
@@ -819,7 +830,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 4,
+      "age": 5,
       "supersedes": [
         "II-3",
         "III-3",
@@ -993,7 +1004,7 @@ window.SIO_DATA = {
       "confidence": "moderate",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 4,
+      "age": 5,
       "supersedes": [
         "III-13"
       ],
@@ -1062,19 +1073,19 @@ window.SIO_DATA = {
       "confidence": "moderate",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 4,
+      "age": 5,
       "supersedes": [
         "III-2"
       ],
       "dlabel": "Army data layer — foundational dependency",
       "suspense": "ASB4 baseline due 15 Sep 2026",
-      "latestDevelopment": "NGC2's I Corps expansion converted into money and structure: contracts worth up to $1.8B announced for the Indo-Pacific rollout, initial software awards across nine vendors (7 Oct; single secondary summary — verify figures against the official release). Background reporting: 40+ applications from 60+ vendors on a common data layer, with vendors excluded on failed security requirements.",
-      "changeFromPrevious": "Material since last review: the comparator architecture moved again — from fielding decision (18 Sep flag) to awarded contracts with a stated ceiling and a deliberately plural vendor structure. Two extractable patterns for the pending Army comparison: substitution freedom as policy (nine initial vendors on one data layer; add/replace over time) and security gating as a vendor filter. The Army-side item is unchanged and now 25 days PAST DUE: the ASB4 architecture baseline — the comparator is committing billions while the Army-side picture this question exists to compare against remains unestablished.",
+      "latestDevelopment": "NGC2 declared in its fielding phase: nine companies awarded ~$93.6M in one-year application-development contracts (announced AUSA final day, 14 Oct — this verifies and corrects the 7 Oct single-source item: the nine-vendor award is $93.6M within the up-to-$1.8B I Corps package, not $1.8B itself). Anduril leads the common data baseline; at AUSA the I Corps commander framed NGC2 against the Pacific's 'tyranny of distance and disruption'.",
+      "changeFromPrevious": "Material since last review: the comparator programme formally declared the experimental phase over and the fielding phase begun, and the register's flagged-for-verification figures are now corrected on corroborated reporting ($93.6M app-development awards within the $1.8B ceiling). The verification discipline worked as designed — the 7 Oct caveat caught a figure that needed halving by an order of magnitude. Army-side item unchanged: the ASB4 baseline is now 32 days PAST DUE.",
       "armyRelevance": "Foundational — every persistent question in the register depends on whether Army can discover, integrate, govern and expose trusted data to the people and applications that need it, at the required classification, echelon and tempo. This is not an ordinary technology watch item, and it is not 'should Army copy NGC2' — NGC2/Maven are comparators; the starting point is the Singapore Army's operational requirements and existing architecture. This pipeline holds no verified information on the internal systems concerned and will not fabricate the comparison.",
       "escalationTrigger": "Escalate once the ASB4 baseline (due 15 Sep 2026) is received and the SIO/G5 comparison identifies what data exists, where it resides, who owns it, whether it is reusable, how it is exposed, whether it moves across required environments, where duplication exists, what blocks decision workflows, and which NGC2/Maven patterns are relevant vs inappropriate for the Singapore Army.",
       "note": "CSIO critique (6 Aug 2026) directed this entry be reframed against existing Army data architecture rather than approved as a generic NGC2 study. That reframe requires internal Army-architecture facts not available to this open-source pipeline. Per COS-GS vetting (8 Aug 2026), the precondition is converted into a defined internal tasking: ASB4 to provide the current Army Data Store, ENCLAVE, STRONGWATCH and OUTREACH/SYNTEX architecture baseline by 15 Sep 2026 for comparison against relevant NGC2/common-data-layer lessons.",
       "decision": "Foundational dependency (Q5) — ASB4 architecture baseline tasked (due 15 Sep 2026); comparison focuses on the Army decision workflows the data architecture must enable, not technology imitation.",
-      "signal": "[Operationally evaluating] The US Army's Next Generation Command and Control (NGC2) programme moved from prototyping toward delivery: a named common-data-layer baseline (Anduril lead; Palantir edge-to-cloud data mesh) underwent division-scale force-on-force validation at Project Convergence Capstone 6 (July; Army.mil/DefenseScoop, 20-22 Jun). [Reported — single source, not independently corroborated] Project Maven is reported to be transmitting near-fully machine-generated intelligence to commanders using large language models (CSIS, 15 Jun). [Reported] At DoDIIS Worldwide (11 Aug), US military intelligence leaders identified data access within the right security enclaves — not model development — as the biggest obstacle to battlefield AI (GovCIO, 12 Aug): independent corroboration of the data-layer-as-bottleneck thesis this foundational line rests on. [Fielding-track] Army leaders declared NGC2 ready to scale at PC-C6's close (29 Jul), concluding 10 months of prototyping; rollout begins with I Corps headquarters and downtrace units (army.mil, 3 Aug). [Reported — watchdog] GAO warns information gaps could hinder Army NGC2 modernisation plans, and NGC2 hardware suffered in extreme Mojave heat, even as leaders call the capstone a success and prepare wider fielding (DefenseScoop, 20 Aug). [Reported] Unit-level training shows tactical drones integrated into the NGC2 ecosystem, feeding the common data layer for sensor-to-shooter coordination (Army Recognition, ~20 Aug) — comparator evidence of an operating decision workflow on the architecture. [Official + corroborated] NGC2 declared ready to scale (army.mil, 29 Jul) and the first operational version is being readied for I Corps with application down-select underway (Breaking Defense, ~12 Sep) — 60+ vendors on a unified data layer, vendors to be added and replaced over time (an architectural substitution-freedom pattern worth extracting for the Army comparison). GAO's heat and information-gap cautions still stand. [Reported — single secondary, verify] NGC2 Indo-Pacific expansion contracts up to $1.8B, initial software awards across nine vendors (Army Recognition, 7 Oct); background: 40+ apps/60+ vendors on a common data layer with security-gated vendor entry (Axios, Aug). Architecture-as-strategy evidence: vendor plurality and exit paths are being bought deliberately, not accidentally.",
+      "signal": "[Operationally evaluating] The US Army's Next Generation Command and Control (NGC2) programme moved from prototyping toward delivery: a named common-data-layer baseline (Anduril lead; Palantir edge-to-cloud data mesh) underwent division-scale force-on-force validation at Project Convergence Capstone 6 (July; Army.mil/DefenseScoop, 20-22 Jun). [Reported — single source, not independently corroborated] Project Maven is reported to be transmitting near-fully machine-generated intelligence to commanders using large language models (CSIS, 15 Jun). [Reported] At DoDIIS Worldwide (11 Aug), US military intelligence leaders identified data access within the right security enclaves — not model development — as the biggest obstacle to battlefield AI (GovCIO, 12 Aug): independent corroboration of the data-layer-as-bottleneck thesis this foundational line rests on. [Fielding-track] Army leaders declared NGC2 ready to scale at PC-C6's close (29 Jul), concluding 10 months of prototyping; rollout begins with I Corps headquarters and downtrace units (army.mil, 3 Aug). [Reported — watchdog] GAO warns information gaps could hinder Army NGC2 modernisation plans, and NGC2 hardware suffered in extreme Mojave heat, even as leaders call the capstone a success and prepare wider fielding (DefenseScoop, 20 Aug). [Reported] Unit-level training shows tactical drones integrated into the NGC2 ecosystem, feeding the common data layer for sensor-to-shooter coordination (Army Recognition, ~20 Aug) — comparator evidence of an operating decision workflow on the architecture. [Official + corroborated] NGC2 declared ready to scale (army.mil, 29 Jul) and the first operational version is being readied for I Corps with application down-select underway (Breaking Defense, ~12 Sep) — 60+ vendors on a unified data layer, vendors to be added and replaced over time (an architectural substitution-freedom pattern worth extracting for the Army comparison). GAO's heat and information-gap cautions still stand. [Reported — single secondary, verify] NGC2 Indo-Pacific expansion contracts up to $1.8B, initial software awards across nine vendors (Army Recognition, 7 Oct); background: 40+ apps/60+ vendors on a common data layer with security-gated vendor entry (Axios, Aug). Architecture-as-strategy evidence: vendor plurality and exit paths are being bought deliberately, not accidentally. [Corroborated — corrects 7 Oct figures] Nine firms, ~$93.6M one-year NGC2 app-development contracts; program moved from experimental to fielding phase (Defense News, 14 Oct); common data baseline led by one vendor with app plurality above it — the layered architecture pattern (stable data layer, competed application layer) is the extract for the pending Army comparison.",
       "sowhat": "The open-source evidence describes a US programme's maturity, not an Army-specific integration decision. As a foundational enabler, the line is assessed by whether Army's data architecture enables persistent decision workflows — including the workflows this register itself requires.",
       "action": "Tasking: ASB4 to provide the current Army Data Store, ENCLAVE, STRONGWATCH and OUTREACH/SYNTEX architecture baseline by 15 Sep 2026, for comparison against relevant NGC2/common-data-layer lessons. Once the baseline is available, SIO/G5 determine whether a genuine force-development gap or opportunity exists.",
       "src": [
@@ -1145,6 +1156,21 @@ window.SIO_DATA = {
           "url": "https://www.armyrecognition.com/news/army-news/2026/u-s-army-expands-1-8-billion-ai-battle-network-to-connect-forces-and-weapons-across-the-pacific",
           "f": "verified",
           "note": "Single secondary summary; verify ceiling and vendor list against official release."
+        },
+        {
+          "out": "Defense News",
+          "date": "14 Oct 2026",
+          "ttl": "US Army taps 9 companies to build next-gen command and control software",
+          "url": "https://www.defensenews.com/industry/techwatch/2026/10/14/us-army-taps-9-companies-to-build-next-gen-command-and-control-software/",
+          "f": "verified",
+          "note": "Corrects the 7 Oct $1.8B/nine-vendor conflation."
+        },
+        {
+          "out": "DefenseScoop",
+          "date": "13 Oct 2026",
+          "ttl": "As Army I Corps gets parts of NGC2 ecosystem, 'tyranny of distance and disruption' in the Pacific are top of mind",
+          "url": "https://defensescoop.com/2026/10/13/army-i-corps-next-generation-command-and-control-ngc2/",
+          "f": "verified"
         }
       ],
       "insightSponsor": "SIO",
@@ -1176,7 +1202,7 @@ window.SIO_DATA = {
       "confidence": "moderate",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 4,
+      "age": 5,
       "supersedes": [
         "I-3",
         "I-6",
@@ -1404,7 +1430,7 @@ window.SIO_DATA = {
       "confidence": "high",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 4,
+      "age": 5,
       "supersedes": [
         "I-2",
         "I-4",
@@ -1421,7 +1447,7 @@ window.SIO_DATA = {
       "armyRelevance": "Retained only for developments that could plausibly create a force-design lesson, an acquisition-model change, an interoperability opportunity, a co-development/co-production opportunity, a classification/information-sharing precedent, or a concrete Army partnership opportunity. General defence-industry and organisational developments remain in the source feed without joining this line. Informs Army's own concept-design and acquisition-pattern choices (see I-1) but does not itself require an Army decision.",
       "escalationTrigger": "Escalate to a decision if any single thread (e.g. DRPM-UxS consolidation, the Talon Synapse classification-sharing model) produces a concrete interoperability or co-production opportunity Army could join.",
       "decision": "Maintain as a standing comparator line for the I-1 concept-design pilot.",
-      "signal": "[Reported — acquisition-model change] The Pentagon is reportedly shifting AI acquisition from monolithic platforms toward modular, multi-vendor, auditable architectures (Federal News Network, 18 Jun), and suspended CMMC Phase 2 cybersecurity certification requirements pending a 60-day Reform Task Force (13 Jul) — both changing the acquisition model non-traditional vendors face. [Fielded — force-design lesson] A Defense Secretary memo (1 Jul) created the Direct Reporting Portfolio Manager for Unmanned Systems (DRPM-UxS), consolidating nearly all US unmanned programmes under one integrator (~$75B FY27 request); the Army realigned its Mission Autonomy office and DIU restructured around drones/autonomous-warfare, commercial-space 'kill webs' and '10x technologies' teams (USNI/DefenseScoop/Breaking Defense, 1-15 Jul). [Reported — force-design lesson] Israel's IDF Chief of Staff announced (8 Jul) a new General Staff structure for robotics/drones/AI, mirroring the US consolidation. [Fielded — classification/information-sharing precedent] CENTCOM and the UAE stood up Task Force Talon Synapse (28 Jul), the first bilateral AI task force (~20 personnel, Abu Dhabi), with classification-sharing rules flagged as the unresolved constraint. [Demonstrated — interoperability opportunity] Australia's MQ-28 Ghost Bat flew alongside crewed fighters in Valiant Shield 26 (27 Jul); PACAF and the RAAF are exploring 'operator-to-operator' command architectures letting US pilots command Ghost Bat drones directly. [Reported — force-design lesson] Japan's 2026 defence white paper (4 Aug) gives first dedicated treatment to a 'new way of warfare' naming drones and AI as central design elements, shortlisting four drone makers for rapid development. [Reported — acquisition-model change] The US Army shifted its autonomy strategy from a unified government software approach to vendor-led, mission-specific autonomous capabilities (Breaking Defense, 13 Aug). [Reported] SOCOM will test mission-autonomy software under its UxSAI programme with SOFWERX (18 Aug) — a further autonomy-software acquisition and T&E pattern alongside the Army's vendor-led shift. [Reported — co-development/test-range partnership] Japan and Australia agreed a decade-long arrangement for Japanese missile tests (including hypersonics) on Australian ranges, plus co-development of the 'Boobook' counter-threat laser with a ~$50M Mitsubishi manufacturing facility in Sydney (Bloomberg/AFP, 18 Aug) — a concrete regional precedent for allied test-range access and DE co-production. [Corroborated — rationale is a stated position] The US Army is converting its drone-focused unit back to infantry, CTO stating it is 'not walking away' from autonomy; theory: centralisation blocks scaling of learning (Breaking Defense ~11 Sep; The Hill, CFR). An organisational experiment's reversal is evidence about the org design, not about the technology. [Comparator contrast] The PLA is building dedicated drone/AI warfare schools (30 Sep) while the US Army distributes drone capability into conventional units after reversing its dedicated-unit experiment (18 Sep edition) — the two comparator forces have now answered this question's org-design trade-off in opposite directions, which is itself the finding: the design space is live, and neither answer is settled evidence for the Army. [Announced intent] Autonomous Warfare Command: planned 12th combatant command, four-star, service-like authorities, target 1 Oct 2027, congressionally contingent (DefenseScoop, 30 Sep). [Directed — signed memo + official release] Army FASCOM + autonomy acquisition executive (army.mil, 2 Oct): autonomy fielding across fires, combat vehicles, watercraft resupply, crewed-uncrewed teaming. [Demonstrated] 390A Robotics Technician MOS activated, first 10 warrants graduated (1-2 Oct). The org-design finding: distributed employment + centralised enterprise scaling.",
+      "signal": "[Reported — acquisition-model change] The Pentagon is reportedly shifting AI acquisition from monolithic platforms toward modular, multi-vendor, auditable architectures (Federal News Network, 18 Jun), and suspended CMMC Phase 2 cybersecurity certification requirements pending a 60-day Reform Task Force (13 Jul) — both changing the acquisition model non-traditional vendors face. [Fielded — force-design lesson] A Defense Secretary memo (1 Jul) created the Direct Reporting Portfolio Manager for Unmanned Systems (DRPM-UxS), consolidating nearly all US unmanned programmes under one integrator (~$75B FY27 request); the Army realigned its Mission Autonomy office and DIU restructured around drones/autonomous-warfare, commercial-space 'kill webs' and '10x technologies' teams (USNI/DefenseScoop/Breaking Defense, 1-15 Jul). [Reported — force-design lesson] Israel's IDF Chief of Staff announced (8 Jul) a new General Staff structure for robotics/drones/AI, mirroring the US consolidation. [Fielded — classification/information-sharing precedent] CENTCOM and the UAE stood up Task Force Talon Synapse (28 Jul), the first bilateral AI task force (~20 personnel, Abu Dhabi), with classification-sharing rules flagged as the unresolved constraint. [Demonstrated — interoperability opportunity] Australia's MQ-28 Ghost Bat flew alongside crewed fighters in Valiant Shield 26 (27 Jul); PACAF and the RAAF are exploring 'operator-to-operator' command architectures letting US pilots command Ghost Bat drones directly. [Reported — force-design lesson] Japan's 2026 defence white paper (4 Aug) gives first dedicated treatment to a 'new way of warfare' naming drones and AI as central design elements, shortlisting four drone makers for rapid development. [Reported — acquisition-model change] The US Army shifted its autonomy strategy from a unified government software approach to vendor-led, mission-specific autonomous capabilities (Breaking Defense, 13 Aug). [Reported] SOCOM will test mission-autonomy software under its UxSAI programme with SOFWERX (18 Aug) — a further autonomy-software acquisition and T&E pattern alongside the Army's vendor-led shift. [Reported — co-development/test-range partnership] Japan and Australia agreed a decade-long arrangement for Japanese missile tests (including hypersonics) on Australian ranges, plus co-development of the 'Boobook' counter-threat laser with a ~$50M Mitsubishi manufacturing facility in Sydney (Bloomberg/AFP, 18 Aug) — a concrete regional precedent for allied test-range access and DE co-production. [Corroborated — rationale is a stated position] The US Army is converting its drone-focused unit back to infantry, CTO stating it is 'not walking away' from autonomy; theory: centralisation blocks scaling of learning (Breaking Defense ~11 Sep; The Hill, CFR). An organisational experiment's reversal is evidence about the org design, not about the technology. [Comparator contrast] The PLA is building dedicated drone/AI warfare schools (30 Sep) while the US Army distributes drone capability into conventional units after reversing its dedicated-unit experiment (18 Sep edition) — the two comparator forces have now answered this question's org-design trade-off in opposite directions, which is itself the finding: the design space is live, and neither answer is settled evidence for the Army. [Announced intent] Autonomous Warfare Command: planned 12th combatant command, four-star, service-like authorities, target 1 Oct 2027, congressionally contingent (DefenseScoop, 30 Sep). [Directed — signed memo + official release] Army FASCOM + autonomy acquisition executive (army.mil, 2 Oct): autonomy fielding across fires, combat vehicles, watercraft resupply, crewed-uncrewed teaming. [Demonstrated] 390A Robotics Technician MOS activated, first 10 warrants graduated (1-2 Oct). The org-design finding: distributed employment + centralised enterprise scaling. [Execution step] The Army ordered the stand-up of its unmanned/autonomous warfare command (memo: 'define joint needs and integrate Service-provided forces in support of geographic combatant commanders' — Army Times, 13 Oct), executing the 2 Oct FASCOM directive; and AUSA 2026's recap verdict was that autonomy dominated the comparator army's flagship conference end to end — the institutional attention datum behind every thread in this lane.",
       "sowhat": "A single 'how are peer institutions organising for the AI/autonomy shift' line, useful as a concept-design and acquisition-pattern comparator (feeds I-1's pilot directly). Scope is deliberately narrow: each retained thread maps to one of the six opportunity types in the COS-GS filter; everything else stays in the source feed. This is indicative relevance, not a demonstrated Army requirement, and is held at watchlist accordingly.",
       "action": "SIO to maintain this as a standing comparator line for the I-1 concept-design pilot and flag any thread that matures into a concrete Army interoperability, co-development or partnership opportunity.",
       "src": [
@@ -1576,6 +1602,13 @@ window.SIO_DATA = {
           "url": "https://www.army.mil/article/295913/army_announces_futures_and_autonomous_systems_command",
           "f": "verified",
           "note": "Official release; directed, not yet executed."
+        },
+        {
+          "out": "Army Times",
+          "date": "13 Oct 2026",
+          "ttl": "US Army to stand up command for unmanned and autonomous warfare",
+          "url": "https://www.armytimes.com/news/your-military/2026/10/13/us-army-to-stand-up-command-for-unmanned-and-autonomous-warfare/",
+          "f": "verified"
         }
       ],
       "insightSponsor": "SIO",
@@ -1604,7 +1637,7 @@ window.SIO_DATA = {
       "confidence": "moderate",
       "status": "in_progress",
       "raised": "Aug 2026",
-      "age": 4,
+      "age": 5,
       "supersedes": [
         "III-9",
         "III-16"
@@ -1687,7 +1720,7 @@ window.SIO_DATA = {
       "desk": "US",
       "status": "overdue",
       "raised": "Apr 2026",
-      "age": 20,
+      "age": 21,
       "dlabel": "Decision-workflow pilot sprint",
       "suspense": "5 Sep 2026",
       "recommendation": "Run a time-boxed pilot that takes 1-2 named Army questions from the question register through the full decision workflow: define the decision question → identify relevant external and internal data → establish the minimum data view → apply AI-assisted triage/fusion → put the output before the intended staff user → measure time and quality improvements → capture corrections → iterate. The preferred output is a functioning decision workflow with measured results; concept notes are the by-product, not the deliverable.",
@@ -1730,6 +1763,142 @@ window.SIO_DATA = {
     }
   ],
   "feed": [
+    {
+      "date": "2026-10-16",
+      "out": "Army Times",
+      "ttl": "Recap: Autonomy dominates the US Army's 2026 conference in Washington",
+      "sum": "AUSA 2026 (12–14 Oct) recap: autonomy was the organising theme of the comparator army's flagship conference — commands, contracts, uncrewed platforms and counter-drone systems throughout — a one-line barometer of where the institution's attention and industry's offerings have converged this year.",
+      "tech": [
+        "robo",
+        "ai"
+      ],
+      "pf": "P4",
+      "desk": "US",
+      "url": "https://www.armytimes.com/recap/ausa/2026/10/16/recap-autonomy-dominates-the-us-armys-2026-conference-in-washington/",
+      "f": "verified",
+      "serial": "W-5",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "trade_press",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": null,
+      "unverifiedClaims": null,
+      "dateLastChecked": "2026-10-17"
+    },
+    {
+      "date": "2026-10-15",
+      "out": "Army Recognition",
+      "ttl": "U.S. and European Firms Expand Air Defense Against Shahed Drones With Autonomous Interceptors",
+      "sum": "US and European firms are expanding autonomous-interceptor offerings against Shahed-class one-way-attack drones (AUSA examples: Powerus Guardian autonomous interceptor, MBDA/Fortem FireThorn) — the counter-interceptor industry this register logged on the Ukrainian side (five models in test; German-Ukrainian LOI) now has a visible Western commercial segment. Date approximate.",
+      "tech": [
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://www.armyrecognition.com/news/aerospace-news/2026/us-and-european-firms-expand-air-defense-against-shahed-drones-with-autonomous-interceptors",
+      "f": "verified",
+      "serial": "D-1",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "trade_press",
+      "corroborated": false,
+      "confidence": "moderate",
+      "primarySourceUrl": null,
+      "unverifiedClaims": "Vendor capability claims; no fielded performance; date approximate.",
+      "dateLastChecked": "2026-10-17"
+    },
+    {
+      "date": "2026-10-14",
+      "out": "Defense News",
+      "ttl": "US Army taps 9 companies to build next-gen command and control software",
+      "sum": "The Army awarded nine companies approximately $93.6M in one-year contracts for NGC2 application development, announced on AUSA's final day, with the program stated to be moving from the experimental phase to the fielding phase. This verifies and corrects the register's 7 Oct single-source item: the nine-vendor software award is $93.6M of one-year contracts within the up-to-$1.8B I Corps package, not $1.8B itself; Anduril leads the common data baseline (June decision) with the architecture built on its data layer.",
+      "tech": [
+        "data",
+        "ai"
+      ],
+      "pf": "P6",
+      "desk": "US",
+      "url": "https://www.defensenews.com/industry/techwatch/2026/10/14/us-army-taps-9-companies-to-build-next-gen-command-and-control-software/",
+      "f": "verified",
+      "serial": "W-3",
+      "saved": false,
+      "flagged": true,
+      "sourceType": "trade_press",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": null,
+      "unverifiedClaims": "Individual company awards and task scopes not itemised in available reporting.",
+      "dateLastChecked": "2026-10-17"
+    },
+    {
+      "date": "2026-10-14",
+      "out": "Defence Blog",
+      "ttl": "Uncrewed truck with anti-drone laser shown at AUSA",
+      "sum": "Industry integrations at AUSA put counter-drone lasers on uncrewed ground platforms: Harbinger's uncrewed Praesidia hybrid truck powering a LOCUST X3 30kW laser (American Rheinmetall booth), and Aurelius Systems' Archimedes autonomous laser on an American Rheinmetall UGV — exhibition integrations with no stated contract or test, but a visible convergence of two register threads (DE effectors, uncrewed platforms) into self-contained counter-drone nodes.",
+      "tech": [
+        "dews",
+        "robo"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://defence-blog.com/uncrewed-truck-with-anti-drone-laser-shown-at-ausa/",
+      "f": "verified",
+      "serial": "D-1",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "trade_press",
+      "corroborated": true,
+      "confidence": "moderate",
+      "primarySourceUrl": null,
+      "unverifiedClaims": "Exhibition configurations; vendors state no contract or test attached; power/endurance on the hybrid platform unverified.",
+      "dateLastChecked": "2026-10-17"
+    },
+    {
+      "date": "2026-10-13",
+      "out": "Defense News",
+      "ttl": "US Army targets 2028 for first high-energy laser counter-drone weapons",
+      "sum": "At AUSA, Army officials put a public fielding timeline on the E-HEL production award: first LOCUST X3 delivery slated by Q4 FY2027, mounted on JLTV, with the first weapons ready for counter-drone operations by early 2028 after testing. A planning-grade maturity datum: the production-to-fielding gap for HEL counter-drone is now a stated ~18 months.",
+      "tech": [
+        "dews"
+      ],
+      "pf": "P5",
+      "desk": "US",
+      "url": "https://www.defensenews.com/industry/techwatch/2026/10/13/us-army-targets-2028-for-first-high-energy-laser-counter-drone-weapons/",
+      "f": "verified",
+      "serial": "D-1",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "trade_press",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": null,
+      "unverifiedClaims": "Timeline is official statement of intent, not delivery. Secondary reporting cites an $86M initial / $847M ceiling structure for the award — unverified against a primary source; the corroborated figure remains the $464.8M announcement value.",
+      "dateLastChecked": "2026-10-17"
+    },
+    {
+      "date": "2026-10-13",
+      "out": "Army Times",
+      "ttl": "US Army to stand up command for unmanned and autonomous warfare",
+      "sum": "The Army ordered creation of its autonomous-systems command, with the establishing memo stating it will 'define joint needs and integrate Service-provided forces in support of geographic combatant commanders' — the execution step on the FASCOM directive this register logged 2 Oct, following the Pentagon-level AutoWarCom announcement. Directed and now being stood up; not yet an operating organisation.",
+      "tech": [
+        "robo",
+        "ai"
+      ],
+      "pf": "P4",
+      "desk": "US",
+      "url": "https://www.armytimes.com/news/your-military/2026/10/13/us-army-to-stand-up-command-for-unmanned-and-autonomous-warfare/",
+      "f": "verified",
+      "serial": "W-5",
+      "saved": false,
+      "flagged": false,
+      "sourceType": "trade_press",
+      "corroborated": true,
+      "confidence": "high",
+      "primarySourceUrl": null,
+      "unverifiedClaims": null,
+      "dateLastChecked": "2026-10-17"
+    },
     {
       "date": "2026-10-08",
       "out": "European Pravda (eurointegration.com.ua)",
@@ -5274,7 +5443,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which residual gaps survive the baseline, and what trial questions do they define? Trial design should produce decision-relevant measurements (detection probability, classification accuracy, engagement success, leakage, cost per engagement, magazine expenditure, operator workload, integration latency).",
       "status": "active",
-      "materialChange": "The US C-UAS architecture scaled an order of magnitude in a fortnight: a ten-vendor, $4.15B-ceiling IDIQ marketplace under Domestic Shield (projected to $7B; ~$50M actually obligated — intent, not capability), a SecDef directive making approval delay itself an operational risk and compressing spectrum/ATO timelines, and 30 low-cost-interceptor finalists — while jet-powered one-way-attack drones reset interceptor economics on the threat side. The lesson set for the Army question is structural: marketplace procurement, tempo-as-policy, and a cost-exchange race that is now bidirectional. Army-side baseline remains past due.",
+      "materialChange": null,
       "decisionForum": "ACDM"
     },
     {
@@ -5347,7 +5516,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which specific Army design assumptions (C2 tempo, EW resilience, dispersal, deception) are most sensitive to the assessed adversary trajectory — a question for red-teaming, not procurement.",
       "status": "active",
-      "materialChange": "The counter-unmanned and directed-energy categories displayed at the 3 Sep parade are now evidenced in live-fire PLA brigade training (CCTV-origin, ~5 Oct): a ladder step from displayed to demonstrated-in-training, with the usual state-media caveat that performance is unverifiable. Behind it, an institutional layer: new PLA schools and colleges dedicated to drone/AI warfare (30 Sep), and a quantified adaptation benchmark (CSIS: ~4 months to absorb Ukraine drone lessons analytically, ~1 year+ to hardware/force structure, counter-drone fastest). The net-assessment picture moves from showcased capability to practising, institutionalising force.",
+      "materialChange": null,
       "decisionForum": null
     },
     {
@@ -5418,7 +5587,7 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Which Army decision workflows (starting with the questions in this register) does the architecture currently enable, and which does it block?",
       "status": "active",
-      "materialChange": "The comparator data-layer architecture moved from fielding decision to awarded money: NGC2 Indo-Pacific expansion contracts up to $1.8B with initial software awards across nine vendors (7 Oct; single secondary summary — figures to be verified). The extractable patterns are architectural: vendor plurality on a common data layer as deliberate substitution-freedom policy, and security-gated vendor entry. The Army-side item is unchanged and 25 days overdue: the ASB4 architecture baseline this question cannot progress without.",
+      "materialChange": "The comparator data-layer programme declared its experimental phase over: NGC2 moved to the fielding phase with nine application-development contracts (~$93.6M, one-year) atop a single-vendor-led common data baseline — and corroborated reporting corrected the register's 7 Oct figures (the nine-vendor award is $93.6M within the up-to-$1.8B package, not $1.8B). Architecture extract for the Army comparison: a stable, single-led data layer with a competed, short-contract application layer above it. The ASB4 baseline this question needs is now 32 days past due.",
       "decisionForum": null
     },
     {
@@ -5490,22 +5659,22 @@ window.SIO_DATA = {
       "decisionLog": [],
       "nextQuestion": "Does the measured I-1 pilot justify scaling the decision-workflow model across the question register?",
       "status": "active",
-      "materialChange": "Three weeks after reverting its dedicated drone unit to infantry, the US created dedicated top-level autonomy structures: a planned four-star Autonomous Warfare Command (congressionally contingent, target Oct 2027) and an Army Futures and Autonomous Systems Command with its own autonomy acquisition executive — resolving the apparent contradiction into a legible design: distribute employment, centralise enterprise scaling and acquisition. Simultaneously South Korea is drafting an officer-centred, AI-based MUM-T force structure around a 480k→350k cut, and the PLA opened autonomy schools. Every comparator moved on this question's core trade-off within one quarter; all are directed intent, not stood-up organisations.",
+      "materialChange": null,
       "decisionForum": null
     }
   ],
   "metrics": {
-    "asOf": "2026-10-10",
+    "asOf": "2026-10-17",
     "note": "Decision-advantage metrics per DOCTRINE.md §21 — measured where practicable; information volume is not an outcome. Time-based metrics (signal-to-assessment, assessment-to-direction, decision-to-action) require timestamps captured across future editions and are not yet measurable.",
     "provenanceTraceablePct": 89,
     "internalDataCoveragePct": 0,
-    "internalDataCoverageNote": "0% — every thread still rests on external evidence alone. The tasked internal baselines (G5 × 2, ASB4) are now 25 days PAST DUE with no input received in this pipeline; the register's standing recommendation is to escalate closure of these suspenses as an ACDM item rather than continue reporting around the gap.",
+    "internalDataCoverageNote": "0% — every thread still rests on external evidence alone. The tasked internal baselines (G5 × 2, ASB4) are now 32 days PAST DUE with no input received in this pipeline; the standing recommendation remains to escalate closure of these suspenses as an ACDM governance item.",
     "closedLoop": {
       "directed": 0,
       "resultCaptured": 0,
       "note": "No senior direction has yet completed the direction → action → observed effect → updated assessment loop; decisionLog fields are in place to capture it."
     },
-    "materialChangesThisEdition": 4
+    "materialChangesThisEdition": 1
   },
   "forums": {
     "ACDM": {
