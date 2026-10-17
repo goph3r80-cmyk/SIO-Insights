@@ -148,6 +148,19 @@ values.
 
 ---
 
+## The operating team and rollout
+
+The product is run by a four-role team (`.claude/skills/sio-team/`):
+**Researcher** (intake, grading, deep trawls, verification debts) →
+**Writer** (register, editions, staff products, matched-pair rule) →
+**Reviewer** (stage-one doctrine/quality gate) → the **vetting panel**
+(stage-two appointment judgment), conducted by the **Orchestrator**
+(battle rhythm, one-channel publishing, escalations). Cadence is hybrid:
+a weekly scheduled edition plus monthly deep trawls and on-demand staff
+products. The staged plan for SIO branch adoption — access-control gate
+first, then onboarding, pilot officers, and branch steady state — lives
+in `docs/ROLLOUT.md`.
+
 ## Publishing an update (the one-channel rule)
 
 Every refresh produces a **matched pair**: `data.js` (content) and the
