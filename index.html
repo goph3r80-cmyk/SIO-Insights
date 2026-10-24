@@ -91,7 +91,11 @@
   .tile {
     background:var(--surface); border:1px solid var(--hair); border-radius:var(--radius);
     padding:14px 16px; box-shadow:var(--shadow); position:relative; overflow:hidden;
+    font:inherit; text-align:left; color:inherit; cursor:pointer; width:100%; display:block;
+    transition:border-color .15s ease, transform .15s ease;
   }
+  .tile:hover { border-color:var(--accent); transform:translateY(-1px); }
+  .tile:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
   .tile .n { font-size:26px; font-weight:680; letter-spacing:-.02em; font-variant-numeric:tabular-nums; }
   .tile .l { font-size:11.5px; text-transform:uppercase; letter-spacing:.07em; color:var(--muted); margin-top:2px; }
   .tile::before { content:""; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--tint,var(--accent)); }
@@ -128,7 +132,7 @@
   }
 
   /* Section heads */
-  .sec-h { display:flex; align-items:center; gap:12px; margin:30px 4px 12px; }
+  .sec-h { display:flex; align-items:center; gap:12px; margin:30px 4px 12px; scroll-margin-top:16px; }
   .sec-h .rn { font-family:ui-monospace,Menlo,monospace; font-weight:700; color:var(--accent);
     font-size:13px; border:1.5px solid var(--accent); border-radius:6px; padding:2px 8px; }
   .sec-h h2 { font-size:15px; margin:0; font-weight:620; letter-spacing:-.005em; }
@@ -494,14 +498,32 @@
   var nFound = D.serials.filter(function(s){return s.tier==='foundational';}).length;
   var nChanged = (D.questions||[]).filter(function(q){return q.materialChange;}).length;
   var nOverdue = D.serials.filter(function(s){return s.status==='overdue';}).length;
+  var overdueIds = D.serials.filter(function(s){return s.status==='overdue';}).map(function(s){return s.id;});
   document.getElementById('tiles').innerHTML =
-    tile('', nQ, 'Army questions') +
-    tile('dec', nDec, 'CSIO direction required') +
-    tile('gap', nThreads, 'Active threads') +
-    tile('prov', nFound, 'Foundational dependencies') +
-    tile('', nChanged, 'Material changes') +
-    tile('feed', nOverdue, 'Overdue actions');
-  function tile(c,n,l){ return '<div class="tile '+c+'"><div class="n">'+n+'</div><div class="l">'+l+'</div></div>'; }
+    tile('', nQ, 'Army questions', 'sec:questions') +
+    tile('dec', nDec, 'CSIO direction required', 'sec:band-D') +
+    tile('gap', nThreads, 'Active threads', 'sec:band-W') +
+    tile('prov', nFound, 'Foundational dependencies', 'sec:band-F') +
+    tile('', nChanged, 'Material changes', 'sec:changes') +
+    tile('feed', nOverdue, 'Overdue actions', 'overdue');
+  function tile(c,n,l,jump){ return '<button type="button" class="tile '+c+'" data-jump="'+jump+'" title="Jump to '+l.toLowerCase()+'"><div class="n">'+n+'</div><div class="l">'+l+'</div></button>'; }
+  document.getElementById('tiles').addEventListener('click', function (e) {
+    var el = e.target.closest('[data-jump]'); if (!el) return;
+    var j = el.getAttribute('data-jump');
+    if (j === 'overdue') {
+      var first = null;
+      overdueIds.forEach(function (id) {
+        var card = document.getElementById('serial-' + id);
+        if (!card) return;
+        if (!first) first = card;
+        card.classList.remove('flash'); void card.offsetWidth; card.classList.add('flash');
+      });
+      if (first) first.scrollIntoView({ behavior:'smooth', block:'center' });
+      return;
+    }
+    var t = document.getElementById(j.slice(4));
+    if (t) t.scrollIntoView({ behavior:'smooth', block:'start' });
+  });
 
   /* Army Question Register */
   function qTriggers(q){
@@ -833,7 +855,7 @@
         .sort(function(a,b){ return (+(a.id.split('-')[1]||0)) - (+(b.id.split('-')[1]||0)); });
       if (!group.length) return;
       any = true;
-      var h = '<div class="sec-h"><span class="rn">'+g.rn+'</span><h2>'+g.title+'</h2>'
+      var h = '<div class="sec-h" id="band-'+g.rn+'"><span class="rn">'+g.rn+'</span><h2>'+g.title+'</h2>'
         + '<span class="rule"></span><span class="ct">'+group.length+'</span></div>';
       host.insertAdjacentHTML('beforeend', h + '<div class="cards">' + group.map(serialCard).join('') + '</div>');
     });
