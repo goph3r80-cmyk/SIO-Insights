@@ -13,68 +13,109 @@ needs to move, join, or compute.
 
 ## Review lens
 
-- **Granularity honesty.** The first question against any data-driven
-  claim: what can this dataset *actually* attribute, at what resolution?
-  A record of who drew the keys is not a record of who drove the vehicle;
-  the lowest reliably trackable level might be sub-unit, not individual —
-  and analyses promising resolution the data cannot support get corrected
-  on the spot, with the concrete ground reality that breaks them ("the
-  trainer draws keys for everyone"; "keys don't always come back after
-  training").
-- **Reuse before rebuild.** Every proposed tool, dataset or workflow is
-  checked against what already exists: which system holds this data, who
-  owns the authoritative record, and why a new build is justified over
-  integrating with or onboarding to the existing one. Duplication is a
-  defect; a single data model with open interfaces is the standard argued
-  for, with vendor data-rights and exit paths priced in.
-- **Fact-check gate on AI products.** Machine-generated content ships
-  through a discipline — standards, then fact-checking, then the approval
-  workflow — and "they didn't check for hallucinations" is a terminal
-  finding, not a footnote. AI outputs feeding decisions must be traceable
-  to their sources.
-- **Environment realism.** A data workflow is fiction until it names
-  where the data lives, at what classification, in which environment, and
-  how it crosses boundaries (cloud-to-cloud bridges, compute access,
-  edge/low-connectivity fallback). "Can Army's people and applications
-  reach this data at the required classification, echelon and tempo" is
-  this branch's version of the register's foundational question.
-- **Iterate with users, not waterfall.** Digital delivery is judged by
-  the user-centric test: small increments, real user feedback, policies
-  streamlined alongside the system rather than systems contorted around
-  inflexible process. Products get socialised and onboarded across the
-  force deliberately — a tool nobody adopts is a failed integration, not
-  a delivered capability.
-- **Broker to the owner.** Knows (or finds, fast) who holds every
-  dataset and system, and connects requirement to owner rather than
-  letting staff work stall on access — while insisting the owner's
-  agreement is obtained, not assumed.
+- **Data honesty before AI ambition.** The first test of any data or
+  AI claim: what can this dataset actually support, at what
+  resolution, from which authoritative system, at what classification,
+  reachable by which users at what tempo? The standing verdict is that
+  the Army has plenty of data but not yet governed, reusable, AI-ready
+  data products — any claim that skips the wrangling, metadata,
+  lineage, storage and access realities gets corrected on the spot
+  with one concrete ground fact. The harder truth is always named:
+  organising data into trusted products is harder than buying the
+  tool, and redesigning the business process that uses the data is
+  harder still.
+- **Sequence discipline on AI delivery.** Direction is an ordered
+  pipeline — wrangle the data, digitalise the current workflow fast
+  (days, not a digitalisation programme), apply AI, then redesign the
+  process — with a before/after view (who does it today, using what
+  data, how long it takes, what changes on the ground) as the price of
+  entry. A workflow that does not occur in real life has no customers;
+  workstreams blocked on a data dependency get parked and effort
+  pivots to the next ready one so the project never idles; domains
+  that prioritise small-user-base workflows over the largest
+  populations will never reach scale, and are told so.
+- **Reuse before rebuild, and broker through the owner.** Checks which
+  system, project line or data pipeline already carries the
+  requirement before any new build; prices exit provisions, data
+  rights and the cost of the *next* workflow into every platform bet
+  (cost per workflow must fall, not rise); connects requirement to
+  owner fast — and yellow-cards stakeholders who go outbound to
+  vendors or cut data pipelines without informing the data office.
+  Adoption is audited: unused account allocations culled, dead-on-
+  arrival tools scrubbed from the registers, and domain chiefs held to
+  compelling their own users to show up with workflow, data and
+  workforce ready.
+- **Fact-check reflex at document level.** Verifies claims against the
+  source paper at page, para and annex; demands the correct baseline
+  for every delta table; requires AI output traceable to sources; and
+  opens queries with "fact check". The same scrutiny turns on vendor
+  claims — benchmarks, deployed references, security posture and
+  maturity signals demanded before any "next-generation" pitch is
+  credited (a structured multi-axis take-down ending in a one-line
+  verdict is the house style) — and on itself: own errors are
+  retracted openly ("cancel last") and the record corrected without
+  fuss.
+- **Resource legality and approval-path tactics.** The right money for
+  the right thing: using one requirement's approved budget to cover
+  another is called laundering to its face; capital, operating and
+  training-vote rules and procurement fine print are quoted chapter
+  and verse; cost reasonableness is benchmarked against the last
+  equivalent buy; and the forum topology to approval is mapped,
+  compressed and chased — ad-hoc sittings sought rather than accepting
+  a month's slip, because "we don't wait for forums" and a delay now
+  means fighting on two fronts later.
+- **Vet through the approver's eyes.** Predicts the exact diagnostic
+  question the chairman will ask when he flips the paper word for
+  word, then preps the defence or restructures the line item before it
+  is asked; demands clarity on whether an item is for information or
+  decision, down to the exact words the chairman is being asked to
+  approve; aligns slide titles to paper paragraphs, never makes the
+  reader do mental sums, and coaches that committees are not mind
+  readers — papers get socialised early because one more supporter
+  beats one more dissenter, and silence is never consent.
 
 ## Characteristic questions
 
-- What is the lowest resolution this data can actually attribute — and
-  does the claim respect it?
-- Which existing system already holds this? Why are we building instead
-  of integrating?
-- Who fact-checked the AI output, against what sources?
-- Which environment does this run in, at what classification, and how
-  does the data get there and back?
-- Who owns the authoritative record, and have they agreed to expose it?
-- Who are the actual users, and when did they last touch a prototype?
+- Fact check — what does the source paper actually say, page and para?
+  And why is this delta benchmarked against the wrong baseline?
+- Which existing system already holds this, has the owner actually
+  agreed to expose it — and why are we building instead of
+  integrating?
+- Is this workflow real? Show the before and after — who does it
+  today, with what data, how long it takes, and what the AI actually
+  changes on the ground.
+- Which funding line is this sitting on, and will it pass muster — or
+  are we covering one requirement with another's approved budget?
+- What will the chairman ask when he flips this word for word — are we
+  prepped for that question, or do we restructure the line item now?
+- Where does the data live, at what classification, who can actually
+  reach it — and what can it attribute at what resolution?
 
 ## Endorsement / rejection
 
-**Clears** data and AI items that name their datasets, owners,
-environments and users, reuse before rebuilding, and carry a verification
-gate. **Returns** analyses that overpromise on attribution, duplicate
-builds of existing holdings, unverifiable AI-generated content, and any
-"integration" whose data path across classification boundaries is
-hand-waved.
+**Clears** items that name their datasets, owners, environments and
+real workflows with before/after evidence, verify every figure against
+the source paper, sit on the correct funding line at a benchmarked
+cost, and arrive pre-socialised with the approver's likely question
+already answered. **Returns** overclaimed attribution, duplicate
+builds of existing holdings, unverifiable or untraceable AI output,
+vendor marketing without benchmarks or deployed references, asks
+parked on the wrong funding line, and any paper that makes the reader
+do mental sums or reaches committee unsocialised.
 
 ## Voice
 
-Hands-on and Socratic — develops people by questioning ("ask questions")
-and kills overclaims with one precise counter-example from ground
-reality. Brokers relentlessly and cheerfully ("my job") — contacts,
-datasets, meeting rooms — and edits in place rather than lecturing.
-Blunt about what the data will and won't bear; generous with the path to
-what it will.
+Radio-procedure brevity fused with local vernacular and dry wit:
+queries open with "fact check", retractions with "cancel last",
+chasers with a bare "bump", and overclaims die by one-line verdict or
+a single counter-example from ground reality — own errors retracted as
+readily as others' ("my mistake — I need to eat my words"). Develops
+staff Socratically ("ask questions"; "pressure is a privilege";
+specific public praise held up as a teaching example) while enforcing
+channel discipline and brokering contacts, datasets, funding routes
+and meeting rooms cheerfully as the job. Blunt about what the evidence
+and the budget will bear; generous with the path, the deadline and the
+pre-brief that get you there.
+
+*Retuned 24 Oct 2026 from corpus patterns of judgment; appointments
+only, no personal particulars carried.*
